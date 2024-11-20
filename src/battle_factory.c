@@ -19,6 +19,10 @@
 #include "constants/moves.h"
 #include "constants/items.h"
 
+// #include "constants/battle_frontier_generator.h"
+#include "config/battle_frontier_generator.h"
+#include "battle_frontier_generator.h"
+
 static bool8 sPerformedRentalSwap;
 
 static void InitFactoryChallenge(void);
@@ -329,6 +333,13 @@ static void GenerateOpponentMons(void)
     if (gSaveBlock2Ptr->frontier.curChallengeBattleNum < FRONTIER_STAGES_PER_CHALLENGE - 1)
         gSaveBlock2Ptr->frontier.trainerIds[gSaveBlock2Ptr->frontier.curChallengeBattleNum] = trainerId;
 
+    #if BFG_FLAG_FRONTIER_GENERATOR != 0
+    if (FlagGet(BFG_FLAG_FRONTIER_GENERATOR)) {
+        GenerateFacilityOpponentMons(trainerId, firstMonId, challengeNum, winStreak);
+        return;
+    }
+    #endif
+
     i = 0;
     while (i != FRONTIER_PARTY_SIZE)
     {
@@ -384,6 +395,13 @@ static void SetOpponentGfxVar(void)
 
 static void SetRentalsToOpponentParty(void)
 {
+    #if BFG_FLAG_FRONTIER_GENERATOR != 0
+    if (FlagGet(BFG_FLAG_FRONTIER_GENERATOR)) {
+        SetRentalsToFacilityOpponentParty();
+        return;
+    }
+    #endif
+
     u8 i;
 
     if (gSaveBlock2Ptr->frontier.lvlMode != FRONTIER_LVL_TENT)
@@ -403,6 +421,13 @@ static void SetRentalsToOpponentParty(void)
 
 static void SetPlayerAndOpponentParties(void)
 {
+    #if BFG_FLAG_FRONTIER_GENERATOR != 0
+    if (FlagGet(BFG_FLAG_FRONTIER_GENERATOR)) {
+        SetFacilityPlayerAndOpponentParties();
+        return;
+    }
+    #endif
+
     int i;
     u8 monLevel;
     u16 monId;
@@ -492,6 +517,13 @@ static void GenerateInitialRentalMons(void)
     }
     rentalRank = GetNumPastRentalsRank(factoryBattleMode, factoryLvlMode);
 
+    #if BFG_FLAG_FRONTIER_GENERATOR != 0
+    if (FlagGet(BFG_FLAG_FRONTIER_GENERATOR)) {
+        GenerateFacilityInitialRentalMons(firstMonId, challengeNum, rentalRank);
+        return;
+    }
+    #endif
+
     currSpecies = SPECIES_NONE;
     i = 0;
     while (i != PARTY_SIZE)
@@ -552,6 +584,14 @@ static void GetOpponentMostCommonMonType(void)
     u8 typeCounts[NUMBER_OF_MON_TYPES];
     u8 mostCommonTypes[2];
 
+    #if BFG_FLAG_FRONTIER_GENERATOR != 0
+    if (FlagGet(BFG_FLAG_FRONTIER_GENERATOR)) {
+        // TODO: Generate actual type-checking system
+        gSpecialVar_Result = NUMBER_OF_MON_TYPES;
+        return;
+    }
+    #endif
+
     gFacilityTrainerMons = gBattleFrontierMons;
 
     // Count the number of times each type occurs in the opponent's party.
@@ -600,6 +640,14 @@ static void GetOpponentBattleStyle(void)
 {
     u8 i, j, count;
     u8 stylePoints[FACTORY_NUM_STYLES];
+
+    #if BFG_FLAG_FRONTIER_GENERATOR != 0
+    if (FlagGet(BFG_FLAG_FRONTIER_GENERATOR)) {
+        // TODO: Generate actual style-checking system
+        gSpecialVar_Result = FACTORY_NUM_STYLES;
+        return;
+    }
+    #endif
 
     count = 0;
     gFacilityTrainerMons = gBattleFrontierMons;
@@ -656,6 +704,16 @@ bool8 InBattleFactory(void)
 static void RestorePlayerPartyHeldItems(void)
 {
     u8 i;
+
+    #if BFG_FLAG_FRONTIER_GENERATOR != 0
+    if (FlagGet(BFG_FLAG_FRONTIER_GENERATOR)) {
+        u8 lvlMode = gSaveBlock2Ptr->frontier.lvlMode;
+        u8 battleMode = VarGet(VAR_FRONTIER_BATTLE_MODE);
+        u8 challengeNum = gSaveBlock2Ptr->frontier.factoryWinStreaks[battleMode][lvlMode] / FRONTIER_STAGES_PER_CHALLENGE;
+        RestoreFacilityPlayerPartyHeldItems(challengeNum);
+        return;
+    }
+    #endif
 
     if (gSaveBlock2Ptr->frontier.lvlMode != FRONTIER_LVL_TENT)
         gFacilityTrainerMons = gBattleFrontierMons;

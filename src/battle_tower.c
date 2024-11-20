@@ -74,7 +74,6 @@ static void FillTrainerParty(u16 trainerId, u8 firstMonId, u8 monCount);
 static void FillTentTrainerParty_(u16 trainerId, u8 firstMonId, u8 monCount);
 static void FillFactoryFrontierTrainerParty(u16 trainerId, u8 firstMonId);
 static void FillFactoryTentTrainerParty(u16 trainerId, u8 firstMonId);
-static u8 GetFrontierTrainerFixedIvs(u16 trainerId);
 static void FillPartnerParty(u16 trainerId);
 #if FREE_BATTLE_TOWER_E_READER == FALSE
 static void SetEReaderTrainerChecksum(struct BattleTowerEReaderTrainer *ereaderTrainer);
@@ -1087,6 +1086,16 @@ void SetBattleFacilityTrainerGfxId(u16 trainerId, u8 tempVarId)
     }
     else if (trainerId < FRONTIER_TRAINERS_COUNT)
     {
+        DebugPrintf("Generating battle frontier trainer team ...");
+
+        // Use Frontier Generator (If flag set)
+        #if BFG_FLAG_FRONTIER_GENERATOR != 0
+        if (FlagGet(BFG_FLAG_FRONTIER_GENERATOR)) {
+            GenerateTrainerParty(trainerId, firstMonId, monCount, level);
+            return;
+        }
+        #endif
+
         facilityClass = gFacilityTrainers[trainerId].facilityClass;
     }
     else if (trainerId < TRAINER_RECORD_MIXING_APPRENTICE)
@@ -1832,17 +1841,20 @@ static void FillFactoryFrontierTrainerParty(u16 trainerId, u8 firstMonId)
     u8 fixedIV;
     u32 otID;
 
+    // Default value
+    u8 challengeNum = 0;
+
     if (trainerId < FRONTIER_TRAINERS_COUNT)
     {
     // By mistake Battle Tower's Level 50 challenge number is used to determine the IVs for Battle Factory.
     #ifdef BUGFIX
         u8 lvlMode = gSaveBlock2Ptr->frontier.lvlMode;
         u8 battleMode = VarGet(VAR_FRONTIER_BATTLE_MODE);
-        u8 challengeNum = gSaveBlock2Ptr->frontier.factoryWinStreaks[battleMode][lvlMode] / FRONTIER_STAGES_PER_CHALLENGE;
+        challengeNum = gSaveBlock2Ptr->frontier.factoryWinStreaks[battleMode][lvlMode] / FRONTIER_STAGES_PER_CHALLENGE;
     #else
         u8 UNUSED lvlMode = gSaveBlock2Ptr->frontier.lvlMode;
         u8 battleMode = VarGet(VAR_FRONTIER_BATTLE_MODE);
-        u8 challengeNum = gSaveBlock2Ptr->frontier.towerWinStreaks[battleMode][FRONTIER_LVL_50] / FRONTIER_STAGES_PER_CHALLENGE;
+        challengeNum = gSaveBlock2Ptr->frontier.towerWinStreaks[battleMode][FRONTIER_LVL_50] / FRONTIER_STAGES_PER_CHALLENGE;
     #endif
         if (gSaveBlock2Ptr->frontier.curChallengeBattleNum < FRONTIER_STAGES_PER_CHALLENGE - 1)
             fixedIV = GetFactoryMonFixedIV(challengeNum, FALSE);
@@ -1869,6 +1881,14 @@ static void FillFactoryFrontierTrainerParty(u16 trainerId, u8 firstMonId)
 
     level = SetFacilityPtrsGetLevel();
     otID = T1_READ_32(gSaveBlock2Ptr->playerTrainerId);
+
+    #if BFG_FLAG_FRONTIER_GENERATOR != 0
+    if (FlagGet(BFG_FLAG_FRONTIER_GENERATOR)) {
+        FillFacilityTrainerParty(trainerId, otID, firstMonId, challengeNum, level, fixedIV);
+        return;
+    }
+    #endif
+
     for (i = 0; i < FRONTIER_PARTY_SIZE; i++)
     {
         u16 monId = gFrontierTempParty[i];
@@ -1884,6 +1904,13 @@ static void FillFactoryTentTrainerParty(u16 trainerId, u8 firstMonId)
     u8 level = TENT_MIN_LEVEL;
     u8 fixedIV = 0;
     u32 otID = T1_READ_32(gSaveBlock2Ptr->playerTrainerId);
+
+    #if BFG_FLAG_FRONTIER_GENERATOR != 0
+    if (FlagGet(BFG_FLAG_FRONTIER_GENERATOR)) {
+        FillFacilityTrainerParty(trainerId, otID, firstMonId, 0, level, fixedIV);
+        return;
+    }
+    #endif
 
     for (i = 0; i < FRONTIER_PARTY_SIZE; i++)
     {
@@ -3360,7 +3387,7 @@ s32 GetHighestLevelInPlayerParty(void)
 
 // Frontier Trainer parties are roughly scaled in difficulty with higher trainer IDs, so scale IVs as well
 // Duplicated in Battle Dome as GetDomeTrainerMonIvs
-static u8 GetFrontierTrainerFixedIvs(u16 trainerId)
+u8 GetFrontierTrainerFixedIvs(u16 trainerId)
 {
     u8 fixedIv;
 
@@ -3464,6 +3491,15 @@ static void FillTentTrainerParty_(u16 trainerId, u8 firstMonId, u8 monCount)
     const u16 *monSet = NULL;
     u32 otID = 0;
     u16 monId;
+
+    DebugPrintf("Generating battle tent trainer team ...");
+
+    #if BFG_FLAG_FRONTIER_GENERATOR != 0
+    if (FlagGet(BFG_FLAG_FRONTIER_GENERATOR)) {
+        GenerateTrainerParty(trainerId, firstMonId, monCount, level);
+        return;
+    }
+    #endif
 
     monSet = gFacilityTrainers[gTrainerBattleOpponent_A].monSet;
 
