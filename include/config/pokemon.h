@@ -2,7 +2,7 @@
 #define GUARD_CONFIG_POKEMON_H
 
 // Custom intro species
-#define P_INTRO_SPECIES             SPECIES_LOTAD // Species displayed during the Prof. Birch intro cutscene
+#define P_INTRO_SPECIES             SPECIES_ZORUA_HISUIAN // Species displayed during the Prof. Birch intro cutscene
 
 // Species data settings
 #define P_UPDATED_TYPES             GEN_LATEST  // Since Gen 6, several Pokémon were changed to be partially or fully Fairy type.
