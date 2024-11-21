@@ -126,7 +126,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .levelUpLearnset = sDartrixLevelUpLearnset,
         .teachableLearnset = sDartrixTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 34, SPECIES_DECIDUEYE},
-                                {EVO_NONE, 0, SPECIES_DECIDUEYE_HISUIAN}),
+                                {EVO_ITEM, ITEM_LINKING_CORD, SPECIES_DECIDUEYE_HISUIAN}),
     },
 
     [SPECIES_DECIDUEYE] =
@@ -1119,7 +1119,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .teachableLearnset = sCharjabugTeachableLearnset,
         .evolutions = EVOLUTION({EVO_MAPSEC, MAPSEC_NEW_MAUVILLE, SPECIES_VIKAVOLT},
                                 {EVO_ITEM, ITEM_THUNDER_STONE, SPECIES_VIKAVOLT},
-                                {EVO_NONE, 0, SPECIES_VIKAVOLT_TOTEM}),
+                                {EVO_ITEM, ITEM_BIG_MUSHROOM, SPECIES_VIKAVOLT_TOTEM}),
     },
 
     [SPECIES_VIKAVOLT] =
@@ -1688,7 +1688,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .teachableLearnset = sCutieflyTeachableLearnset,
         .eggMoveLearnset = sCutieflyEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 25, SPECIES_RIBOMBEE},
-                                {EVO_NONE, 0, SPECIES_RIBOMBEE_TOTEM}),
+                                {EVO_ITEM, ITEM_BIG_MUSHROOM, SPECIES_RIBOMBEE_TOTEM}),
     },
 
     [SPECIES_RIBOMBEE] =
@@ -2550,7 +2550,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .teachableLearnset = sDewpiderTeachableLearnset,
         .eggMoveLearnset = sDewpiderEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 22, SPECIES_ARAQUANID},
-                                {EVO_NONE, 0, SPECIES_ARAQUANID_TOTEM}),
+                                {EVO_ITEM, ITEM_BIG_MUSHROOM, SPECIES_ARAQUANID_TOTEM}),
     },
 
     [SPECIES_ARAQUANID] =
@@ -2733,7 +2733,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .teachableLearnset = sFomantisTeachableLearnset,
         .eggMoveLearnset = sFomantisEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL_DAY, 34, SPECIES_LURANTIS},
-                                {EVO_NONE, 0, SPECIES_LURANTIS_TOTEM}),
+                                {EVO_ITEM, ITEM_BIG_MUSHROOM, SPECIES_LURANTIS_TOTEM}),
     },
 
     [SPECIES_LURANTIS] =
@@ -3044,7 +3044,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .teachableLearnset = sSalanditTeachableLearnset,
         .eggMoveLearnset = sSalanditEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL_FEMALE, 33, SPECIES_SALAZZLE},
-                                {EVO_NONE, 0, SPECIES_SALAZZLE_TOTEM}),
+                                {EVO_ITEM, ITEM_BIG_MUSHROOM, SPECIES_SALAZZLE_TOTEM}),
     },
 
     [SPECIES_SALAZZLE] =
@@ -5030,7 +5030,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .levelUpLearnset = sHakamoOLevelUpLearnset,
         .teachableLearnset = sHakamoOTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 45, SPECIES_KOMMO_O},
-                                {EVO_NONE, 0, SPECIES_KOMMO_O_TOTEM}),
+                                {EVO_ITEM, ITEM_BIG_MUSHROOM, SPECIES_KOMMO_O_TOTEM}),
     },
 
     [SPECIES_KOMMO_O] =

@@ -538,7 +538,10 @@ static void Task_HandleScrollingMultichoiceInput(u8 taskId)
 
 static void Task_HandleMultichoiceInput(u8 taskId)
 {
-    s8 selection;
+    // Selection has been made
+    bool8 selected = FALSE;
+
+    s8 selection; 
     s16 *data = gTasks[taskId].data;
 
     if (!gPaletteFade.active)
@@ -559,6 +562,7 @@ static void Task_HandleMultichoiceInput(u8 taskId)
                 DrawLinkServicesMultichoiceMenu(tMultichoiceId);
             }
 
+            // Selection made
             if (selection != MENU_NOTHING_CHOSEN)
             {
                 if (selection == MENU_B_PRESSED)
@@ -567,11 +571,35 @@ static void Task_HandleMultichoiceInput(u8 taskId)
                         return;
                     PlaySE(SE_SELECT);
                     gSpecialVar_Result = MULTI_B_PRESSED;
+                    selected = TRUE;
                 }
                 else
                 {
                     gSpecialVar_Result = selection;
+                    selected = TRUE;
                 }
+            }
+            else // No selection yet
+            {   
+                // Ignore 'b' press
+                if (tIgnoreBPress)
+                    return;
+                else if (JOY_NEW(R_BUTTON)){
+                    // Right button pressed
+                    gSpecialVar_Result = MULTI_R_PRESSED;
+                    PlaySE(SE_SELECT);
+                    selected = TRUE;
+                }
+                else if (JOY_NEW(L_BUTTON)){
+                    // Left button pressed
+                    gSpecialVar_Result = MULTI_L_PRESSED;
+                    PlaySE(SE_SELECT);
+                    selected = TRUE;
+                }
+            }
+
+            // Selection made
+            if (selected){
                 ClearToTransparentAndRemoveWindow(tWindowId);
                 DestroyTask(taskId);
                 ScriptContext_Enable();
@@ -1145,4 +1173,47 @@ int ScriptMenu_AdjustLeftCoordFromWidth(int left, int width)
     }
 
     return adjustedLeft;
+}
+
+void DrawMultichoiceMenuCustom(u8 left, u8 top, u8 multichoiceId, u8 ignoreBPress, u8 cursorPos, const struct MenuAction *actions, int count){
+    int i, windowId, width = 0;
+    u8 newWidth;
+    for (i = 0; i < count; i++){
+        width = DisplayTextAndGetWidth(actions[i].text, width);
+    }
+    newWidth = ConvertPixelWidthToTileWidth(width);
+    left = ScriptMenu_AdjustLeftCoordFromWidth(left, newWidth);
+    windowId = CreateWindowFromRect(left, top, newWidth, count * 2);
+    SetStandardWindowBorderStyle(windowId, 0);
+    PrintMenuTable(windowId, count, actions);
+    InitMenuInUpperLeftCornerNormal(windowId, count, cursorPos);
+    ScheduleBgCopyTilemapToVram(0);
+    InitMultichoiceCheckWrap(ignoreBPress, count, windowId, multichoiceId);
+}
+
+bool8 ScriptMenu_MultichoiceGridCustom(u8 left, u8 top, u8 cursorPos, bool8 ignoreBPress, u8 columnCount, const struct MenuAction *actions, int count){
+    if (FuncIsActiveTask(Task_HandleMultichoiceGridInput) == TRUE){
+        return FALSE;
+    }
+    else{
+        u8 taskId;
+        u8 rowCount, newWidth;
+        int i, width;
+        gSpecialVar_Result = 0xFF;
+        width = 0;
+        for (i = 0; i < count; i++){
+            width = DisplayTextAndGetWidth(actions[i].text, width);
+        }
+        newWidth = ConvertPixelWidthToTileWidth(width);
+        left = ScriptMenu_AdjustLeftCoordFromWidth(left, columnCount * newWidth);
+        rowCount = count / columnCount;
+        taskId = CreateTask(Task_HandleMultichoiceGridInput, 80);
+        gTasks[taskId].data[4] = ignoreBPress;
+        gTasks[taskId].data[6] = CreateWindowFromRect(left, top, columnCount * newWidth, rowCount * 2);
+        SetStandardWindowBorderStyle(gTasks[taskId].data[6], 0);
+        PrintMenuGridTable(gTasks[taskId].data[6], newWidth * 8, columnCount, rowCount, actions);
+        InitMenuActionGrid(gTasks[taskId].data[6], newWidth * 8, columnCount, rowCount, cursorPos);
+        CopyWindowToVram(gTasks[taskId].data[6], COPYWIN_FULL);
+        return TRUE;
+    }
 }

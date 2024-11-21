@@ -2,7 +2,7 @@
 #define GUARD_CONFIG_BATTLE_FRONTIER_GENERATOR_H
 
 // *** GENERAL ***
-#define BFG_FLAG_FRONTIER_GENERATOR FLAG_UNUSED_0x020 // Flag to enable or disable random generator
+#define BFG_FLAG_FRONTIER_GENERATOR FLAG_BATTLE_FRONTIER_GENERATOR // Flag to enable or disable random generator
 
 #define BFG_TEST_SET_GENERATION TRUE // Test set generation
 #define BFG_TEST_PRINT_RESULTS FALSE // Print test results
@@ -11,31 +11,35 @@
 #define BFG_TEST_SET_SPECIES SPECIES_VENUSAUR
 #define BFG_TEST_SET_SPECIES_MEGA SPECIES_VENUSAUR
 
-#define BFG_FLAG_FRONTIER_ALLOW_MEGA 0 // Flag to enable or disable Mega Evolution
-#define BFG_FLAG_FRONTIER_ALLOW_GMAX 0 // Flag to enable or disable Gigantamax
-#define BFG_FLAG_FRONTIER_ALLOW_ZMOVE 0 // Flag to enable or disable Z Moves
+#define BFG_FLAG_FRONTIER_ALLOW_MEGA FLAG_BATTLE_FRONTIER_ALLOW_MEGA // Flag to enable or disable Mega Evolution
+#define BFG_FLAG_FRONTIER_ALLOW_GMAX FLAG_BATTLE_FRONTIER_ALLOW_GMAX // Flag to enable or disable Gigantamax
+#define BFG_FLAG_FRONTIER_ALLOW_TERA FLAG_BATTLE_FRONTIER_ALLOW_TERA // Flag to enable or disable Gigantamax
+#define BFG_FLAG_FRONTIER_ALLOW_ZMOVE FLAG_BATTLE_FRONTIER_ALLOW_ZMOVE // Flag to enable or disable Z Moves
 
-#define BFG_TEAM_GENERATION_METHOD BFG_TEAM_GENERATOR_FILTERED_RANKING
-#define BFG_VAR_TEAM_GENERATION_METHOD 0 // Used if BFG_TEAM_GENERATION_METHOD is set to 'BFG_TEAM_GENERATOR_VARIABLE'
+#define BFG_TEAM_GENERATION_METHOD BFG_TEAM_GENERATOR_VARIABLE
+#define BFG_VAR_TEAM_GENERATION_METHOD VAR_FRONTIER_METHOD // Used if BFG_TEAM_GENERATION_METHOD is set to 'BFG_TEAM_GENERATOR_VARIABLE'
+
+#define BFG_FLAG_FRONTIER_FIXED_IV FLAG_BATTLE_FRONTIER_FIXED_IV // Flag to enable or disable fixed IVs
 
 // If this variable is set, a random seed will be generated
 // and saved for generating consistent battle factory sets
 // randomly. If this is not set, the challenge number + 
 // trainer ID will be combined to create the seed which
 // *may* fail to produce sufficiently randomised results.
-#define BFG_VAR_FACTORY_GENERATOR_SEED 0
-
-#define BFG_FLAG_FRONTIER_FIXED_IV 0 // Flag to enable or disable fixed IVs
+#define BFG_VAR_FACTORY_GENERATOR_SEED VAR_FACTORY_GENERATOR_SEED
 
 // Run 'move_ratings.py' as part of build pipeline
-#define BFG_GENERATE_MOVE_RATINGS TRUE    // Generate battle_frontier_generator_move_ratings.h
+#define BFG_GENERATE_MOVE_RATINGS FALSE    // Generate battle_frontier_generator_move_ratings.h
 
 // Run 'trainer_mons.py' as part of build pipeline
-#define BFG_GENERATE_TRAINER_MONS TRUE    // Generate battle_frontier_generator_trainer_class_mons.h
+#define BFG_GENERATE_TRAINER_MONS FALSE    // Generate battle_frontier_generator_trainer_class_mons.h
 
-#define BFG_RANDOM_RANGE_FIXED FALSE    // Fixed value for RANDOM_RANGE()
-#define BFG_RANDOM_CHANCE_FIXED FALSE   // Fixed value for RANDOM_CHANCE()
-#define BFG_RANDOM_BOOL_FIXED FALSE     // Fixed value for RANDOM_BOOL()
+// #define BFG_RANDOM_RANGE_FIXED FALSE    // Fixed value for RANDOM_RANGE()
+// #define BFG_RANDOM_CHANCE_FIXED FALSE   // Fixed value for RANDOM_CHANCE()
+// #define BFG_RANDOM_BOOL_FIXED FALSE     // Fixed value for RANDOM_BOOL()
+
+#define BFG_RANDOM_STAB_TERA_CHANCE 2   // 1/2 chance for stab tera
+#define BFG_RANDOM_TERA_CHANCE 4        // 1/4 chance for non-stab tera
 
 #define BFG_RANDOM_STAB_TERA_CHANCE 2   // 1/2 chance for stab tera
 #define BFG_RANDOM_TERA_CHANCE 4        // 1/4 chance for non-stab tera
@@ -44,7 +48,7 @@
 #define BFG_RANDOM_DYNAMAX_CHANCE 4     // 1/x Chance for a Pokemon to Dynamax
 
 #define BFG_RANDOM_OFFSET_MIN 0        // Min. Value for RANDOM_OFFSET()
-#define BFG_RANDOM_OFFSET_MAX 0        // Max. Value for RANDOM_OFFSET()
+#define BFG_RANDOM_OFFSET_MAX 10        // Max. Value for RANDOM_OFFSET()
 
 // *** BATTLE FACTORY ***
 
@@ -101,25 +105,25 @@
 
 // Attack Power Scaling
 
-#define BFG_IV_MIN_ATK_0 BFG_ATK_MIN
-#define BFG_IV_MIN_ATK_3 BFG_ATK_MIN
-#define BFG_IV_MIN_ATK_6 BFG_ATK_MIN
-#define BFG_IV_MIN_ATK_9 BFG_ATK_MIN
-#define BFG_IV_MIN_ATK_12 BFG_ATK_MIN
-#define BFG_IV_MIN_ATK_15 BFG_ATK_MIN
-#define BFG_IV_MIN_ATK_18 BFG_ATK_MIN
-#define BFG_IV_MIN_ATK_21 BFG_ATK_MIN
-#define BFG_IV_MIN_ATK_MAX BFG_ATK_MIN
+#define BFG_IV_MIN_ATK_0 20
+#define BFG_IV_MIN_ATK_3 25
+#define BFG_IV_MIN_ATK_6 30
+#define BFG_IV_MIN_ATK_9 35
+#define BFG_IV_MIN_ATK_12 40
+#define BFG_IV_MIN_ATK_15 45
+#define BFG_IV_MIN_ATK_18 50
+#define BFG_IV_MIN_ATK_21 55
+#define BFG_IV_MIN_ATK_MAX 60
 
-#define BFG_IV_MAX_ATK_0 BFG_ATK_MAX
-#define BFG_IV_MAX_ATK_3 BFG_ATK_MAX
-#define BFG_IV_MAX_ATK_6 BFG_ATK_MAX
-#define BFG_IV_MAX_ATK_9 BFG_ATK_MAX
-#define BFG_IV_MAX_ATK_12 BFG_ATK_MAX
-#define BFG_IV_MAX_ATK_15 BFG_ATK_MAX
-#define BFG_IV_MAX_ATK_18 BFG_ATK_MAX
-#define BFG_IV_MAX_ATK_21 BFG_ATK_MAX
-#define BFG_IV_MAX_ATK_MAX BFG_ATK_MAX
+#define BFG_IV_MAX_ATK_0 60
+#define BFG_IV_MAX_ATK_3 75
+#define BFG_IV_MAX_ATK_6 90
+#define BFG_IV_MAX_ATK_9 105
+#define BFG_IV_MAX_ATK_12 120
+#define BFG_IV_MAX_ATK_15 135
+#define BFG_IV_MAX_ATK_18 150
+#define BFG_IV_MAX_ATK_21 165
+#define BFG_IV_MAX_ATK_MAX 180
 
 // Hidden Ability Scaling
 

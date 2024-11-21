@@ -254,9 +254,13 @@ void ItemUseOutOfBattle_Bike(u8 taskId)
 
 static void ItemUseOnFieldCB_Bike(u8 taskId)
 {
-    if (ItemId_GetSecondaryId(gSpecialVar_ItemId) == MACH_BIKE)
+    // Get Bike Mode (Last Used Bike)
+    const bool8 bikeMode = FlagGet(FLAG_LAST_USED_BIKE);
+
+    // LAST_USED_MACH_BIKE
+    if (bikeMode == LAST_USED_MACH_BIKE)
         GetOnOffBike(PLAYER_AVATAR_FLAG_MACH_BIKE);
-    else // ACRO_BIKE
+    else // LAST_USED_ACRO_BIKE
         GetOnOffBike(PLAYER_AVATAR_FLAG_ACRO_BIKE);
     ScriptUnfreezeObjectEvents();
     UnlockPlayerFieldControls();
@@ -1435,6 +1439,18 @@ void ItemUseOutOfBattle_CannotUse(u8 taskId)
     DisplayDadsAdviceCannotUseItemMessage(taskId, gTasks[taskId].tUsingRegisteredKeyItem);
 }
 
+void ItemUseOutOfBattle_ReduceIV(u8 taskId)
+{
+    gItemUseCB = ItemUseCB_ReduceIV;
+    SetUpItemUseCallback(taskId);
+}
+
+void ItemUseOutOfBattle_IncreaseIV(u8 taskId)
+{
+    gItemUseCB = ItemUseCB_IncreaseIV;
+    SetUpItemUseCallback(taskId);
+}
+
 static bool32 IsValidLocationForVsSeeker(void)
 {
     u16 mapGroup = gSaveBlock1Ptr->location.mapGroup;
@@ -1497,6 +1513,46 @@ void FieldUseFunc_VsSeeker(u8 taskId)
 void Task_ItemUse_CloseMessageBoxAndReturnToField_VsSeeker(u8 taskId)
 {
     Task_CloseCantUseKeyItemMessage(taskId);
+}
+
+
+// For swapping a Pokemon's ball
+void ItemUseOutOfBattle_Pokeball(u8 taskId)
+{
+    gItemUseCB = ItemUseCB_Pokeball;
+    SetUpItemUseCallback(taskId);
+}
+
+void ItemUseOutOfBattle_DynamaxBand(u8 taskId) {
+    // Check if the dynamax battle flag is set
+    const bool8 canDynamax = FlagGet(FLAG_DYNAMAX_BATTLE);
+
+    // Dynamaxing is enabled
+    if (canDynamax) {
+        // Turn dynamax off
+        PlaySE(SE_PC_OFF);
+        if (!gTasks[taskId].data[2]) // to account for pressing select in the overworld
+            DisplayItemMessageOnField(taskId, gText_DynamaxBandOff, Task_CloseCantUseKeyItemMessage);
+        else
+            DisplayItemMessage(taskId, FONT_NORMAL, gText_DynamaxBandOff, CloseItemMessage);
+    } 
+    else // Dynamaxing is disabled
+    {
+        // Turn dynamax on
+        PlaySE(SE_SELECT);
+        if (!gTasks[taskId].data[2]) // to account for pressing select in the overworld
+            DisplayItemMessageOnField(taskId, gText_DynamaxBandOn, Task_CloseCantUseKeyItemMessage);
+        else
+            DisplayItemMessage(taskId, FONT_NORMAL, gText_DynamaxBandOn, CloseItemMessage);
+    }
+
+    FlagToggle(FLAG_DYNAMAX_BATTLE);
+}
+
+void ItemUseOutOfBattle_TeraShard(u8 taskId)
+{
+    gItemUseCB = ItemUseCB_TeraShard;
+    SetUpItemUseCallback(taskId);
 }
 
 #undef tUsingRegisteredKeyItem

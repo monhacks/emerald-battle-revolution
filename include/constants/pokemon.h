@@ -82,6 +82,13 @@
 #define STAT_SPDEF   5
 #define NUM_STATS    6
 
+// For Silver Bottle Cap
+#define STAT_ALL_MAX   6
+
+// For Min. IV Berries
+#define STAT_ATK_MIN   6
+#define STAT_SPE_MIN   7
+
 #define STAT_ACC     6 // Only in battles.
 #define STAT_EVASION 7 // Only in battles.
 
@@ -168,7 +175,8 @@
 #define LEVEL_UP_MOVE_LV   0xFE00
 #define LEVEL_UP_MOVE_END  0xFFFF
 
-#define MAX_LEVEL_UP_MOVES       20
+#define MAX_LEVEL_UP_MOVES  20
+#define MAX_TUTOR_MOVES     0xFF
 
 #define MON_MALE       0x00
 #define MON_FEMALE     0xFE

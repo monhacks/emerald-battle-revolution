@@ -39,6 +39,9 @@
 #include "constants/event_objects.h"
 #include "party_menu.h"
 
+#include "config/battle_frontier.h"
+#include "data/battle_frontier/battle_frontier_banned_species.h"
+
 struct FrontierBrainMon
 {
     u16 species;
@@ -1907,22 +1910,84 @@ static void AppendIfValid(u16 species, u16 heldItem, u16 hp, u8 lvlMode, u8 monL
 
     if (species == SPECIES_EGG || species == SPECIES_NONE)
         return;
-    if (gSpeciesInfo[species].isFrontierBanned)
-        return;
-    if (lvlMode == FRONTIER_LVL_50 && monLevel > FRONTIER_MAX_LEVEL_50)
-        return;
 
-    for (i = 0; i < *count && speciesArray[i] != species; i++)
-        ;
-    if (i != *count)
-        return;
+    // Check banned species true/false
+    bool8 checkBannedSpecies = TRUE;
+    bool8 useCustomBanlist = FALSE;
 
-    if (heldItem != 0)
+    // Custom banlist reference
+    static const u16 * customBanlist; 
+
+    switch(lvlMode)
     {
-        for (i = 0; i < *count && itemsArray[i] != heldItem; i++)
+        case FRONTIER_LVL_50:
+            if (BF_BATTLE_FRONTIER_LEVEL_50_ALLOW_BANNED_SPECIES)
+                checkBannedSpecies = FALSE;
+            else if (BF_BATTLE_FRONTIER_LEVEL_50_CUSTOM_BANNED_SPECIES)
+            {
+                customBanlist = sFrontierLvl50CustomBannedSpeciesList;
+                useCustomBanlist = TRUE;
+            }
+        break;
+        case FRONTIER_LVL_OPEN:
+            if (BF_BATTLE_FRONTIER_LEVEL_OPEN_ALLOW_BANNED_SPECIES)
+                checkBannedSpecies = FALSE;
+            else if (BF_BATTLE_FRONTIER_LEVEL_OPEN_CUSTOM_BANNED_SPECIES)
+            {
+                customBanlist = sFrontierLvlOpenCustomBannedSpeciesList;
+                useCustomBanlist = TRUE;
+            }
+        break;
+        case FRONTIER_LVL_TENT:
+            if (BF_BATTLE_FRONTIER_LEVEL_TENT_ALLOW_BANNED_SPECIES)
+                checkBannedSpecies = FALSE;
+            else if (BF_BATTLE_FRONTIER_LEVEL_TENT_CUSTOM_BANNED_SPECIES)
+            {
+                customBanlist = sFrontierLvlTentCustomBannedSpeciesList;
+                useCustomBanlist = TRUE;
+            }
+        break;
+    }
+    
+    // Banned species check enabled
+    if (checkBannedSpecies)
+    {
+        // Use custom banlist
+        if (useCustomBanlist)
+        {
+            for(i=0; (customBanlist[i] != SPECIES_NONE) && customBanlist[i] != GET_BASE_SPECIES_ID(species) && IsSpeciesEnabled(customBanlist[i]); i++)
+                ;
+
+            if (customBanlist[i] != SPECIES_NONE)
+                return; 
+        } 
+        else if (gSpeciesInfo[species].isFrontierBanned)
+            return;
+    }
+
+    // Level scaling is not enabled
+    if (BF_ENABLE_LEVEL_SCALING == FALSE){
+        if (lvlMode == FRONTIER_LVL_50 && monLevel > FRONTIER_MAX_LEVEL_50)
+            return;
+    }
+
+    // If duplicate species checking is enabled
+    if (BF_ALLOW_DUPLICATE_SPECIES == FALSE){
+        for (i = 0; i < *count && speciesArray[i] != species; i++)
             ;
         if (i != *count)
             return;
+    }
+
+    // If duplicate items checking is enabled
+    if (BF_ALLOW_DUPLICATE_ITEMS == FALSE){
+        if (heldItem != 0)
+        {
+            for (i = 0; i < *count && itemsArray[i] != heldItem; i++)
+                ;
+            if (i != *count)
+                return;
+        }
     }
 
     speciesArray[*count] = species;
@@ -2150,7 +2215,7 @@ static void ResetSketchedMoves(void)
                 if (k == MAX_MON_MOVES)
                     SetMonMoveSlot(&gPlayerParty[i], MOVE_SKETCH, j);
             }
-            gSaveBlock1Ptr->playerParty[gSaveBlock2Ptr->frontier.selectedPartyMons[i] - 1] = gPlayerParty[i];
+            // gSaveBlock1Ptr->playerParty[gSaveBlock2Ptr->frontier.selectedPartyMons[i] - 1] = gPlayerParty[i];
         }
     }
 }

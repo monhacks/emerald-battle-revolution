@@ -27,6 +27,7 @@
 #include "constants/abilities.h"
 #include "constants/items.h"
 #include "constants/battle_frontier.h"
+#include "config/battle_frontier.h"
 
 static void CB2_ReturnFromChooseHalfParty(void);
 static void CB2_ReturnFromChooseBattleFrontierParty(void);
@@ -224,9 +225,11 @@ void ReducePlayerPartyToSelectedMons(void)
 
     // copy the selected Pokémon according to the order.
     for (i = 0; i < MAX_FRONTIER_PARTY_SIZE; i++)
-        if (gSelectedOrderFromParty[i]) // as long as the order keeps going (did the player select 1 mon? 2? 3?), do not stop
+        if (gSelectedOrderFromParty[i]) { // as long as the order keeps going (did the player select 1 mon? 2? 3?), do not stop
             party[i] = gPlayerParty[gSelectedOrderFromParty[i] - 1]; // index is 0 based, not literal
-
+            // Ensure level scaling is met
+            CalculateMonStats(&party[i]);
+        }
     CpuFill32(0, gPlayerParty, sizeof gPlayerParty);
 
     // overwrite the first 4 with the order copied to.
@@ -274,23 +277,75 @@ void HasGigantamaxFactor(struct ScriptContext *ctx)
         gSpecialVar_Result = FALSE;
 }
 
+#define GIGANTAMAX_ALLOWED_SPECIES 34
+
+// Species which are allowed to be gigantamaxed
+static const u16 sGigantamaxFactorAllowedSpecies[GIGANTAMAX_ALLOWED_SPECIES] = {
+    SPECIES_VENUSAUR,
+    SPECIES_BLASTOISE,
+    SPECIES_CHARIZARD,
+    SPECIES_BUTTERFREE,
+    SPECIES_PIKACHU,
+    SPECIES_MEOWTH,
+    SPECIES_MACHAMP,
+    SPECIES_GENGAR,
+    SPECIES_KINGLER,
+    SPECIES_LAPRAS,
+    SPECIES_EEVEE,
+    SPECIES_SNORLAX,
+    SPECIES_GARBODOR,
+    SPECIES_MELMETAL,
+    SPECIES_RILLABOOM,
+    SPECIES_CINDERACE,
+    SPECIES_INTELEON,
+    SPECIES_CORVIKNIGHT,
+    SPECIES_ORBEETLE,
+    SPECIES_DREDNAW,
+    SPECIES_COALOSSAL,
+    SPECIES_FLAPPLE,
+    SPECIES_APPLETUN,
+    SPECIES_SANDACONDA,
+    SPECIES_TOXTRICITY_AMPED,
+    SPECIES_TOXTRICITY_LOW_KEY,
+    SPECIES_CENTISKORCH,
+    SPECIES_HATTERENE,
+    SPECIES_GRIMMSNARL,
+    SPECIES_ALCREMIE,
+    SPECIES_COPPERAJAH,
+    SPECIES_DURALUDON,
+    SPECIES_URSHIFU_SINGLE_STRIKE_STYLE,
+    SPECIES_URSHIFU_RAPID_STRIKE_STYLE,
+};
+
 void ToggleGigantamaxFactor(struct ScriptContext *ctx)
 {
+    u32 i;
     u32 partyIndex = VarGet(ScriptReadHalfword(ctx));
+    u32 species;
 
     gSpecialVar_Result = FALSE;
 
     if (partyIndex < PARTY_SIZE)
     {
         bool32 gigantamaxFactor;
+        bool32 canGigantamax = FALSE;
 
-        if (gSpeciesInfo[SanitizeSpeciesId(GetMonData(&gPlayerParty[partyIndex], MON_DATA_SPECIES))].isMythical)
-            return;
+        species = GetMonData(&gPlayerParty[partyIndex], MON_DATA_SPECIES);
+        for (i = 0; i < GIGANTAMAX_ALLOWED_SPECIES; i++)
+        {
+            if (species == sGigantamaxFactorAllowedSpecies[i]) {
+                canGigantamax = TRUE;
+                break;
+            }
+        }
 
-        gigantamaxFactor = GetMonData(&gPlayerParty[partyIndex], MON_DATA_GIGANTAMAX_FACTOR);
-        gigantamaxFactor = !gigantamaxFactor;
-        SetMonData(&gPlayerParty[partyIndex], MON_DATA_GIGANTAMAX_FACTOR, &gigantamaxFactor);
-        gSpecialVar_Result = TRUE;
+        // Gigantamax-enabled species
+        if (canGigantamax) {
+            gigantamaxFactor = GetMonData(&gPlayerParty[partyIndex], MON_DATA_GIGANTAMAX_FACTOR);
+            gigantamaxFactor = !gigantamaxFactor;
+            SetMonData(&gPlayerParty[partyIndex], MON_DATA_GIGANTAMAX_FACTOR, &gigantamaxFactor);
+            gSpecialVar_Result = TRUE;
+        }
     }
 }
 

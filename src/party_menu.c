@@ -76,8 +76,16 @@
 #include "constants/rgb.h"
 #include "constants/songs.h"
 
+#include "config/item.h"
+#include "move_relearner.h"
+#include "naming_screen.h"
+#include "config/battle_frontier.h"
+
+#include "data/battle_frontier/battle_frontier_banned_species.h"
+
 enum {
     MENU_SUMMARY,
+    MENU_NICKNAME, // [LOuroboros] Nickname your Pokémon from the party menu
     MENU_SWITCH,
     MENU_CANCEL1,
     MENU_ITEM,
@@ -104,6 +112,7 @@ enum {
     MENU_CATALOG_MOWER,
     MENU_CHANGE_FORM,
     MENU_CHANGE_ABILITY,
+    MENU_MOVES, // [Diego Mertens] Move Relearner as an option in the Pokémon Party Screen
     MENU_FIELD_MOVES
 };
 
@@ -206,7 +215,7 @@ struct PartyMenuInternal
     u32 spriteIdCancelPokeball:7;
     u32 messageId:14;
     u8 windowId[3];
-    u8 actions[8];
+    u8 actions[10];
     u8 numActions;
     // In vanilla Emerald, only the first 0xB0 hwords (0x160 bytes) are actually used.
     // However, a full 0x100 hwords (0x200 bytes) are allocated.
@@ -473,6 +482,8 @@ static void ShiftMoveSlot(struct Pokemon *, u8, u8);
 static void BlitBitmapToPartyWindow_LeftColumn(u8, u8, u8, u8, u8, bool8);
 static void BlitBitmapToPartyWindow_RightColumn(u8, u8, u8, u8, u8, bool8);
 static void CursorCb_Summary(u8);
+static void CursorCb_Moves(u8);
+static void CursorCb_Nickname(u8);
 static void CursorCb_Switch(u8);
 static void CursorCb_Cancel1(u8);
 static void CursorCb_Item(u8);
@@ -506,6 +517,7 @@ static bool8 SetUpFieldMove_Dive(void);
 void TryItemHoldFormChange(struct Pokemon *mon);
 static void ShowMoveSelectWindow(u8 slot);
 static void Task_HandleWhichMoveInput(u8 taskId);
+static void ChangePokemonNicknamePartyScreen_CB(void);
 
 // static const data
 #include "data/party_menu.h"
@@ -1418,6 +1430,9 @@ void Task_HandleChooseMonInput(u8 taskId)
         case B_BUTTON: // Selected Cancel / pressed B
             HandleChooseMonCancel(taskId, slotPtr);
             break;
+        case SELECT_BUTTON: // [LOuroboros] Quick Swap
+            DestroyTask(taskId);
+            break;
         case START_BUTTON:
             if (sPartyMenuInternal->chooseHalf)
             {
@@ -1619,6 +1634,23 @@ static void Task_HandleCancelChooseMonYesNoInput(u8 taskId)
     }
 }
 
+// [LOuroboros] Quick Swap
+static bool8 IsInvalidPartyMenuActionType(u8 partyMenuType)
+{
+    return (partyMenuType == PARTY_ACTION_SEND_OUT
+         || partyMenuType == PARTY_ACTION_CANT_SWITCH
+         || partyMenuType == PARTY_ACTION_USE_ITEM
+         || partyMenuType == PARTY_ACTION_ABILITY_PREVENTS
+         || partyMenuType == PARTY_ACTION_GIVE_ITEM
+         || partyMenuType == PARTY_ACTION_GIVE_PC_ITEM
+         || partyMenuType == PARTY_ACTION_GIVE_MAILBOX_MAIL
+         || partyMenuType == PARTY_ACTION_SOFTBOILED
+         || partyMenuType == PARTY_ACTION_CHOOSE_AND_CLOSE
+         || partyMenuType == PARTY_ACTION_MOVE_TUTOR
+         || partyMenuType == PARTY_ACTION_MINIGAME
+         || partyMenuType == PARTY_ACTION_REUSABLE_ITEM);
+}
+
 static u16 PartyMenuButtonHandler(s8 *slotPtr)
 {
     s8 movementDir;
@@ -1655,6 +1687,21 @@ static u16 PartyMenuButtonHandler(s8 *slotPtr)
 
     if (JOY_NEW(START_BUTTON))
         return START_BUTTON;
+
+    // [LOuroboros] Quick Swap
+    if (JOY_NEW(SELECT_BUTTON) && CalculatePlayerPartyCount() >= 2 && !IsInvalidPartyMenuActionType(gPartyMenu.action))
+    {
+        if (gPartyMenu.menuType != PARTY_MENU_TYPE_FIELD)
+            return 0;
+        if (*slotPtr == PARTY_SIZE + 1)
+            return 0;
+        if (gPartyMenu.action != PARTY_ACTION_SWITCH)
+        {
+            CreateTask(CursorCb_Switch, 1);
+            return SELECT_BUTTON;
+        }
+        return A_BUTTON; // Select is allowed to act as the A Button while CursorCb_Switch is active.
+    }
 
     if (movementDir)
     {
@@ -2796,6 +2843,12 @@ static void SetPartyMonFieldSelectionActions(struct Pokemon *mons, u8 slotId)
     sPartyMenuInternal->numActions = 0;
     AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, MENU_SUMMARY);
 
+    // If allow renaming traded mons, or mon is not traded
+    if (P_ALLOW_RENAME_TRADED || !IsTradedMon(&mons[slotId])){
+        // [LOuroboros] Nickname your Pokémon from the party menu
+        AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, MENU_NICKNAME);
+    }
+
     // Add field moves to action list
     for (i = 0; i < MAX_MON_MOVES; i++)
     {
@@ -2813,6 +2866,12 @@ static void SetPartyMonFieldSelectionActions(struct Pokemon *mons, u8 slotId)
     {
         if (GetMonData(&mons[1], MON_DATA_SPECIES) != SPECIES_NONE)
             AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, MENU_SWITCH);
+        
+        // [Diego Mertens] Move Relearner as an option in the Pokémon Party Screen
+        if (GetNumberOfRelearnableMoves(&mons[slotId]) != 0) {
+			AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, MENU_MOVES);
+		}
+
         if (ItemIsMail(GetMonData(&mons[slotId], MON_DATA_HELD_ITEM)))
             AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, MENU_MAIL);
         else
@@ -2962,6 +3021,44 @@ static void CursorCb_Summary(u8 taskId)
 {
     PlaySE(SE_SELECT);
     sPartyMenuInternal->exitCallback = CB2_ShowPokemonSummaryScreen;
+    Task_ClosePartyMenu(taskId);
+}
+
+
+// [Diego Mertens] Move Relearner as an option in the Pokémon Party Screen
+static void CursorCb_Moves(u8 taskId)
+{
+    PlaySE(SE_SELECT);
+	FlagSet(FLAG_TEMP_5); // FLAG_PARTY_MOVES
+    gSpecialVar_0x8004 = gPartyMenu.slotId;
+	gSpecialVar_0x8005 = GetNumberOfRelearnableMoves(&gPlayerParty[gSpecialVar_0x8004]);
+	DisplayPartyPokemonDataForRelearner(gSpecialVar_0x8004);
+	TeachMoveRelearnerMove();
+    sPartyMenuInternal->exitCallback = TeachMoveRelearnerMove;
+    Task_ClosePartyMenu(taskId);
+}
+
+ // [LOuroboros] Nickname your Pokémon from the party menu
+static void ChangePokemonNicknamePartyScreen_CB(void)
+{
+    SetMonData(&gPlayerParty[gSpecialVar_0x8004], MON_DATA_NICKNAME, gStringVar2);
+    CB2_ReturnToPartyMenuFromSummaryScreen();
+}
+
+// [LOuroboros] Nickname your Pokémon from the party menu
+static void ChangePokemonNicknamePartyScreen(void)
+{
+    GetMonData(&gPlayerParty[gSpecialVar_0x8004], MON_DATA_NICKNAME, gStringVar3);
+    GetMonData(&gPlayerParty[gSpecialVar_0x8004], MON_DATA_NICKNAME, gStringVar2);
+    DoNamingScreen(NAMING_SCREEN_NICKNAME, gStringVar2, GetMonData(&gPlayerParty[gSpecialVar_0x8004], MON_DATA_SPECIES, NULL), GetMonGender(&gPlayerParty[gSpecialVar_0x8004]), GetMonData(&gPlayerParty[gSpecialVar_0x8004], MON_DATA_PERSONALITY, NULL), ChangePokemonNicknamePartyScreen_CB);
+}
+
+ // [LOuroboros] Nickname your Pokémon from the party menu
+static void CursorCb_Nickname(u8 taskId)
+{
+    PlaySE(SE_SELECT);
+    gSpecialVar_0x8004 = gPartyMenu.slotId;
+    sPartyMenuInternal->exitCallback = ChangePokemonNicknamePartyScreen;
     Task_ClosePartyMenu(taskId);
 }
 
@@ -5453,13 +5550,22 @@ static void Task_PartyMenuReplaceMove(u8 taskId)
 {
     struct Pokemon *mon;
     u16 move;
+    // Old pp value
+    u8 oldPP;
 
     if (IsPartyMenuTextPrinterActive() != TRUE)
     {
         mon = &gPlayerParty[gPartyMenu.slotId];
         RemoveMonPPBonus(mon, GetMoveSlotToReplace());
+        // Get the current pp for the move
+        oldPP = GetMonData(mon, MON_DATA_PP1 + GetMoveSlotToReplace(), NULL);
         move = gPartyMenu.data1;
         SetMonMoveSlot(mon, move, GetMoveSlotToReplace());
+        // If the new move has more power points than the move has currently
+        if (GetMonData(mon, MON_DATA_PP1 + GetMoveSlotToReplace(), NULL) > oldPP){
+            // Revert the power points for the move back to the previous number
+            SetMonData(mon, MON_DATA_PP1 + GetMoveSlotToReplace(), &oldPP);
+        }
         Task_LearnedMove(taskId);
     }
 }
@@ -6932,29 +7038,89 @@ static bool8 GetBattleEntryEligibility(struct Pokemon *mon)
 {
     u32 species;
 
-    if (GetMonData(mon, MON_DATA_IS_EGG)
-        || GetMonData(mon, MON_DATA_LEVEL) > GetBattleEntryLevelCap()
-        || (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(BATTLE_FRONTIER_BATTLE_PYRAMID_LOBBY)
-            && gSaveBlock1Ptr->location.mapNum == MAP_NUM(BATTLE_FRONTIER_BATTLE_PYRAMID_LOBBY)
-            && GetMonData(mon, MON_DATA_HELD_ITEM) != ITEM_NONE))
-    {
+    // Check banned species true/false
+    bool8 checkBannedSpecies = TRUE;
+    bool8 useCustomBanlist = FALSE;
+
+    // Custom banlist reference
+    static const u16 * customBanlist; 
+
+    // Get the level mode for the format
+    u16 lvlMode = gSpecialVar_0x8004;
+
+    // If the Pokemon is an egg, or it is holding an item (Battle Pyramid Only)
+    if (GetMonData(mon, MON_DATA_IS_EGG) || (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(BATTLE_FRONTIER_BATTLE_PYRAMID_LOBBY)
+        && gSaveBlock1Ptr->location.mapNum == MAP_NUM(BATTLE_FRONTIER_BATTLE_PYRAMID_LOBBY)
+        && GetMonData(mon, MON_DATA_HELD_ITEM) != ITEM_NONE))
         return FALSE;
-    }
+
+    // If level scaling is disabled
+    if (BF_ENABLE_LEVEL_SCALING == FALSE)
+        if (GetMonData(mon, MON_DATA_LEVEL) > GetBattleEntryLevelCap())
+            return FALSE;
 
     switch (VarGet(VAR_FRONTIER_FACILITY))
     {
-    case FACILITY_MULTI_OR_EREADER:
-        if (GetMonData(mon, MON_DATA_HP) != 0)
-            return TRUE;
-        return FALSE;
-    case FACILITY_UNION_ROOM:
-        return TRUE;
-    default: // Battle Frontier
-        species = GetMonData(mon, MON_DATA_SPECIES);
-        if (gSpeciesInfo[species].isFrontierBanned)
+        case FACILITY_MULTI_OR_EREADER:
+            if (GetMonData(mon, MON_DATA_HP) != 0)
+                return TRUE;
             return FALSE;
-        return TRUE;
+        case FACILITY_UNION_ROOM:
+            return TRUE;
+        default: // Battle Frontier
+            switch(lvlMode)
+            {
+                case FRONTIER_LVL_50:
+                    if (BF_BATTLE_FRONTIER_LEVEL_50_ALLOW_BANNED_SPECIES)
+                        checkBannedSpecies = FALSE;
+                    else if (BF_BATTLE_FRONTIER_LEVEL_50_CUSTOM_BANNED_SPECIES)
+                    {
+                        customBanlist = sFrontierLvl50CustomBannedSpeciesList;
+                        useCustomBanlist = TRUE;
+                    }
+                break;
+                case FRONTIER_LVL_OPEN:
+                    if (BF_BATTLE_FRONTIER_LEVEL_OPEN_ALLOW_BANNED_SPECIES)
+                        checkBannedSpecies = FALSE;
+                    else if (BF_BATTLE_FRONTIER_LEVEL_OPEN_CUSTOM_BANNED_SPECIES)
+                    {
+                        customBanlist = sFrontierLvlOpenCustomBannedSpeciesList;
+                        useCustomBanlist = TRUE;
+                    }
+                break;
+                case FRONTIER_LVL_TENT:
+                    if (BF_BATTLE_FRONTIER_LEVEL_TENT_ALLOW_BANNED_SPECIES)
+                        checkBannedSpecies = FALSE;
+                    else if (BF_BATTLE_FRONTIER_LEVEL_TENT_CUSTOM_BANNED_SPECIES)
+                    {
+                        customBanlist = sFrontierLvlTentCustomBannedSpeciesList;
+                        useCustomBanlist = TRUE;
+                    }
+                break;
+            }
+
+            // Allow banned species is not set
+            if (checkBannedSpecies)
+            {
+                species = GetMonData(mon, MON_DATA_SPECIES);
+
+                // Use custom banlist
+                if (useCustomBanlist)
+                {
+                    s32 i;
+                    for(i=0; (customBanlist[i] != SPECIES_NONE) && customBanlist[i] != GET_BASE_SPECIES_ID(species) && IsSpeciesEnabled(customBanlist[i]); i++)
+                        ;
+                        
+                    if (customBanlist[i] != SPECIES_NONE)
+                        return FALSE; 
+                }
+                // Use default banlist
+                else if (gSpeciesInfo[species].isFrontierBanned)
+                    return FALSE;
+            }
     }
+        
+    return TRUE;
 }
 
 static u8 CheckBattleEntriesAndGetMessage(void)
@@ -7766,5 +7932,343 @@ void IsLastMonThatKnowsSurf(void)
         }
         if (AnyStorageMonWithMove(move) != TRUE)
             gSpecialVar_Result = !P_CAN_FORGET_HIDDEN_MOVE;
+    }
+}
+
+void ItemUseCB_ReduceIV(u8 taskId, TaskFunc task)
+{
+    struct Pokemon *mon = &gPlayerParty[gPartyMenu.slotId];
+    u16 item = gSpecialVar_ItemId;
+    u8 modifier;
+    u8 health = GetMonData(mon, MON_DATA_HP_IV);
+    u8 attack = GetMonData(mon, MON_DATA_ATK_IV);
+    u8 defense = GetMonData(mon, MON_DATA_DEF_IV);
+    u8 speed = GetMonData(mon, MON_DATA_SPEED_IV);
+    u8 spAttack = GetMonData(mon, MON_DATA_SPATK_IV);
+    u8 spDefense = GetMonData(mon, MON_DATA_SPDEF_IV);
+    bool8 didActivate = FALSE;
+
+    switch (ItemId_GetSecondaryId(item))
+    {
+    case STAT_HP:
+        if (health != 0)
+        {
+            modifier = (health >= I_IV_ITEM_DECREASE) ? (health - I_IV_ITEM_DECREASE) : 0;
+            SetMonData(mon, MON_DATA_HP_IV, &modifier);
+            StringCopy(gStringVar2, gText_HP3);
+            didActivate = TRUE;
+        }
+        break;
+    case STAT_ATK:
+        if (attack != 0)
+        {
+            modifier = (attack >= I_IV_ITEM_DECREASE) ? (attack - I_IV_ITEM_DECREASE) : 0;
+            SetMonData(mon, MON_DATA_ATK_IV, &modifier);
+            StringCopy(gStringVar2, gText_Attack3);
+            didActivate = TRUE;
+        }
+        break;
+    case STAT_DEF:
+        if (defense != 0)
+        {
+            modifier = (defense >= I_IV_ITEM_DECREASE) ? (defense - I_IV_ITEM_DECREASE) : 0;
+            SetMonData(mon, MON_DATA_DEF_IV, &modifier);
+            StringCopy(gStringVar2, gText_Defense3);
+            didActivate = TRUE;
+        }
+        break;
+    case STAT_SPEED:
+        if (speed != 0)
+        {
+            modifier = (speed >= I_IV_ITEM_DECREASE) ? (speed - I_IV_ITEM_DECREASE) : 0;
+            SetMonData(mon, MON_DATA_SPEED_IV, &modifier);
+            StringCopy(gStringVar2, gText_Speed2);
+            didActivate = TRUE;
+        }
+        break;
+    case STAT_SPATK:
+        if (spAttack != 0)
+        {
+            modifier = (spAttack >= I_IV_ITEM_DECREASE) ? (spAttack - I_IV_ITEM_DECREASE) : 0;
+            SetMonData(mon, MON_DATA_SPATK_IV, &modifier);
+            StringCopy(gStringVar2, gText_SpAtk3);
+            didActivate = TRUE;
+        }
+        break;
+    case STAT_SPDEF:
+        if (spDefense != 0)
+        {
+            modifier = (spDefense >= I_IV_ITEM_DECREASE) ? (spDefense - I_IV_ITEM_DECREASE) : 0;
+            SetMonData(mon, MON_DATA_SPDEF_IV, &modifier);
+            StringCopy(gStringVar2, gText_SpDef3);
+            didActivate = TRUE;
+        }
+        break;
+    case STAT_ATK_MIN: // 0 Atk IV
+        if (attack != 0)
+        {
+            modifier = 0;
+            SetMonData(mon, MON_DATA_ATK_IV, &modifier);
+            StringCopy(gStringVar2, gText_Attack3);
+            didActivate = TRUE;
+        }
+        break;
+    case STAT_SPE_MIN: // 0 Spe IV
+        if (speed != 0)
+        {
+            modifier = 0;
+            SetMonData(mon, MON_DATA_SPEED_IV, &modifier);
+            StringCopy(gStringVar2, gText_Speed2);
+            didActivate = TRUE;
+        }
+        break;
+    }
+
+    if (didActivate)
+    {
+        gPartyMenuUseExitCallback = TRUE;
+        PlaySE(SE_USE_ITEM);
+        RemoveBagItem(item, 1);
+        AdjustFriendship(mon, FRIENDSHIP_EVENT_BERRY);
+        GetMonNickname(mon, gStringVar1);
+        StringExpandPlaceholders(gStringVar4, gText_PkmnFriendlyBaseVar2Fell);
+        DisplayPartyMenuMessage(gStringVar4, TRUE);
+        ScheduleBgCopyTilemapToVram(2);
+        gTasks[taskId].func = task;
+
+        // [ghoulslash] Repeated medicine use
+        if (gPartyMenu.menuType == PARTY_MENU_TYPE_FIELD && CheckBagHasItem(item, 1))
+            gTasks[taskId].func = Task_ReturnToChooseMonAfterText;
+        else
+            gTasks[taskId].func = task;
+    }
+    else
+    {
+        gPartyMenuUseExitCallback = FALSE;
+        PlaySE(SE_SELECT);
+        DisplayPartyMenuMessage(gText_WontHaveEffect, TRUE);
+        ScheduleBgCopyTilemapToVram(2);
+        gTasks[taskId].func = task;
+    }
+}
+
+void ItemUseCB_IncreaseIV(u8 taskId, TaskFunc task)
+{
+    struct Pokemon *mon = &gPlayerParty[gPartyMenu.slotId];
+    u16 item = gSpecialVar_ItemId;
+    u8 modifier;
+    u8 health = GetMonData(mon, MON_DATA_HP_IV);
+    u8 attack = GetMonData(mon, MON_DATA_ATK_IV);
+    u8 defense = GetMonData(mon, MON_DATA_DEF_IV);
+    u8 speed = GetMonData(mon, MON_DATA_SPEED_IV);
+    u8 spAttack = GetMonData(mon, MON_DATA_SPATK_IV);
+    u8 spDefense = GetMonData(mon, MON_DATA_SPDEF_IV);
+    bool8 didActivate = FALSE;
+
+    switch (ItemId_GetSecondaryId(item))
+    {
+    case STAT_HP:
+        if (health != MAX_PER_STAT_IVS)
+        {
+            modifier = (health <= (MAX_PER_STAT_IVS - I_IV_ITEM_INCREASE)) ? (health + I_IV_ITEM_INCREASE) : MAX_PER_STAT_IVS;
+            SetMonData(mon, MON_DATA_HP_IV, &modifier);
+            StringCopy(gStringVar2, gText_HP3);
+            didActivate = TRUE;
+        }
+        break;
+    case STAT_ATK:
+        if (attack != MAX_PER_STAT_IVS)
+        {
+            modifier = (attack <= (MAX_PER_STAT_IVS - I_IV_ITEM_INCREASE)) ? (attack + I_IV_ITEM_INCREASE) : MAX_PER_STAT_IVS;
+            SetMonData(mon, MON_DATA_ATK_IV, &modifier);
+            StringCopy(gStringVar2, gText_Attack3);
+            didActivate = TRUE;
+        }
+        break;
+    case STAT_DEF:
+        if (defense != MAX_PER_STAT_IVS)
+        {
+            modifier = (defense <= (MAX_PER_STAT_IVS - I_IV_ITEM_INCREASE)) ? (defense + I_IV_ITEM_INCREASE) : MAX_PER_STAT_IVS;
+            SetMonData(mon, MON_DATA_DEF_IV, &modifier);
+            StringCopy(gStringVar2, gText_Defense3);
+            didActivate = TRUE;
+        }
+        break;
+    case STAT_SPEED:
+        if (speed != MAX_PER_STAT_IVS)
+        {
+            modifier = (speed <= (MAX_PER_STAT_IVS - I_IV_ITEM_INCREASE)) ? (speed + I_IV_ITEM_INCREASE) : MAX_PER_STAT_IVS;
+            SetMonData(mon, MON_DATA_SPEED_IV, &modifier);
+            StringCopy(gStringVar2, gText_Speed2);
+            didActivate = TRUE;
+        }
+        break;
+    case STAT_SPATK:
+        if (spAttack != MAX_PER_STAT_IVS)
+        {
+            modifier = (spAttack <= (MAX_PER_STAT_IVS - I_IV_ITEM_INCREASE)) ? (spAttack + I_IV_ITEM_INCREASE) : MAX_PER_STAT_IVS;
+            SetMonData(mon, MON_DATA_SPATK_IV, &modifier);
+            StringCopy(gStringVar2, gText_SpAtk3);
+            didActivate = TRUE;
+        }
+        break;
+    case STAT_SPDEF:
+        if (spDefense != MAX_PER_STAT_IVS)
+        {
+            modifier = (spDefense <= (MAX_PER_STAT_IVS - I_IV_ITEM_INCREASE)) ? (spDefense + I_IV_ITEM_INCREASE) : MAX_PER_STAT_IVS;
+            SetMonData(mon, MON_DATA_SPDEF_IV, &modifier);
+            StringCopy(gStringVar2, gText_SpDef3);
+            didActivate = TRUE;
+        }
+        break;
+    case STAT_ALL_MAX: // 31iv all stats
+        modifier = 31; // Max iv.
+        if (health != MAX_PER_STAT_IVS){
+            // Max. HP stat
+            SetMonData(mon, MON_DATA_HP_IV, &modifier);
+            didActivate = TRUE;
+        }
+        if (attack != MAX_PER_STAT_IVS){
+            // Max Atk. Stat
+            SetMonData(mon, MON_DATA_ATK_IV, &modifier);
+            didActivate = TRUE;
+        }
+        if (defense != MAX_PER_STAT_IVS){
+            // Max Def. Stat
+            SetMonData(mon, MON_DATA_DEF_IV, &modifier);
+            didActivate = TRUE;
+        }
+        if (speed != MAX_PER_STAT_IVS){
+            // Max Speed Stat
+            SetMonData(mon, MON_DATA_SPEED_IV, &modifier);
+            didActivate = TRUE;
+        }
+        if (spAttack != MAX_PER_STAT_IVS){
+            // Max SpAtk Stat
+            SetMonData(mon, MON_DATA_SPATK_IV, &modifier);
+            didActivate = TRUE;
+        }
+        if (spDefense != MAX_PER_STAT_IVS){
+            // Max SpDef stat
+            SetMonData(mon, MON_DATA_SPDEF_IV, &modifier);
+            didActivate = TRUE;
+        }
+        StringCopy(gStringVar2, gText_All);
+        break;
+    }
+
+    if (didActivate)
+    {
+        gPartyMenuUseExitCallback = TRUE;
+        PlaySE(SE_USE_ITEM);
+        RemoveBagItem(item, 1);
+        AdjustFriendship(mon, FRIENDSHIP_EVENT_BERRY);
+        GetMonNickname(mon, gStringVar1);
+        StringExpandPlaceholders(gStringVar4, gText_PkmnBaseVar2StatIncreased);
+        DisplayPartyMenuMessage(gStringVar4, TRUE);
+        ScheduleBgCopyTilemapToVram(2);
+        gTasks[taskId].func = task;
+
+        // [ghoulslash] Repeated medicine use
+        if (gPartyMenu.menuType == PARTY_MENU_TYPE_FIELD && CheckBagHasItem(item, 1))
+            gTasks[taskId].func = Task_ReturnToChooseMonAfterText;
+        else
+            gTasks[taskId].func = task;
+    }
+    else
+    {
+        gPartyMenuUseExitCallback = FALSE;
+        PlaySE(SE_SELECT);
+        DisplayPartyMenuMessage(gText_WontHaveEffect, TRUE);
+        ScheduleBgCopyTilemapToVram(2);
+        gTasks[taskId].func = task;
+    }
+}
+
+// For swapping a Pokemon's ball
+void ItemUseCB_Pokeball(u8 taskId, TaskFunc task){
+    
+    struct Pokemon *mon = &gPlayerParty[gPartyMenu.slotId];
+    u16 item = gSpecialVar_ItemId;
+    bool8 didActivate = FALSE;
+
+    // Get the id for the current ball
+    u8 oldBall = GetMonData(mon, MON_DATA_POKEBALL);
+
+    // Get the id for the new ball
+    u8 newBall = (ItemId_GetSecondaryId(item) + FIRST_BALL);
+
+    // New and old balls don't match
+    if (newBall != oldBall){
+        // Switch on the old ball
+        switch(oldBall){
+            case ITEM_CHERISH_BALL:
+                if (I_REPLACE_CHERISH_BALL)
+                    didActivate = TRUE; // Allow replacement
+                break;
+            case ITEM_MASTER_BALL:
+                if (I_REPLACE_MASTER_BALL)
+                    didActivate = TRUE; // Allow replacement
+                break;
+            default:
+                didActivate = TRUE; // Allow replacement
+        }
+    }
+
+    // Item activated
+    if (didActivate) {
+        // Update the ball for the pokemon
+        SetMonData(mon, MON_DATA_POKEBALL, &newBall);
+        gPartyMenuUseExitCallback = TRUE;
+        PlaySE(SE_USE_ITEM);
+        RemoveBagItem(item, 1);
+        GetMonNickname(mon, gStringVar1);
+        StringExpandPlaceholders(gStringVar4, gText_PkmnBallChanged);
+        DisplayPartyMenuMessage(gStringVar4, TRUE);
+        ScheduleBgCopyTilemapToVram(2);
+        // Return the old ball
+        if (I_RETURN_OLD_BALL)
+            AddBagItem(oldBall, 1);
+        gTasks[taskId].func = task;
+    }
+    else // Item not activated
+    { 
+        gPartyMenuUseExitCallback = FALSE;
+        PlaySE(SE_SELECT);
+        DisplayPartyMenuMessage(gText_WontHaveEffect, TRUE);
+        ScheduleBgCopyTilemapToVram(2);
+        gTasks[taskId].func = task;
+    }
+}
+
+void ItemUseCB_TeraShard(u8 taskId, TaskFunc task)
+{
+    struct Pokemon *mon = &gPlayerParty[gPartyMenu.slotId];
+    u16 item = gSpecialVar_ItemId;
+
+    // Get the tera type for the item
+    u8 newType = teraShardTypeLookup[item];
+    u8 oldType = GetMonData(mon, MON_DATA_TERA_TYPE);
+
+    // New type does not match
+    if (newType != oldType) {
+        // Update the ball for the pokemon
+        SetMonData(mon, MON_DATA_TERA_TYPE, &newType);
+        gPartyMenuUseExitCallback = TRUE;
+        PlaySE(SE_USE_ITEM);
+        RemoveBagItem(item, 1);
+        GetMonNickname(mon, gStringVar1);
+        StringExpandPlaceholders(gStringVar4, gText_PkmnTeraTypeChanged);
+        DisplayPartyMenuMessage(gStringVar4, TRUE);
+        ScheduleBgCopyTilemapToVram(2);
+        gTasks[taskId].func = task;
+    }
+    else // Item not activated
+    { 
+        gPartyMenuUseExitCallback = FALSE;
+        PlaySE(SE_SELECT);
+        DisplayPartyMenuMessage(gText_WontHaveEffect, TRUE);
+        ScheduleBgCopyTilemapToVram(2);
+        gTasks[taskId].func = task;
     }
 }

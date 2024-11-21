@@ -51,15 +51,22 @@
 #define P_TWO_FRAME_FRONT_SPRITES        TRUE        // In Pokémon Emerald, Pokémon front sprites always consist of two frames. This config can revert it to only use the first frame, as is the case in the other Gen 3 games.
 #define P_ONLY_OBTAINABLE_SHINIES        FALSE       // If TRUE, Pokémon encountered in the Battle Pyramid won't be shiny.
 #define P_NO_SHINIES_WITHOUT_POKEBALLS   FALSE       // If TRUE, Pokémon encountered when the player is out of Poké Balls won't be shiny
+// #define P_SHOW_DYNAMIC_TYPES             TRUE        // If TRUE, moves with dynamic type changes will be reflected as their current type in battle/summary screens.
 
 // Learnset helper toggles
-#define P_LEARNSET_HELPER_TEACHABLE TRUE        // If TRUE, teachable_learnsets.h will be populated by tools/learnset_helpers/teachable.py using the included JSON files based on available TMs and tutors.
+#define P_LEARNSET_HELPER_TEACHABLE FALSE        // If TRUE, teachable_learnsets.h will be populated by tools/learnset_helpers/teachable.py using the included JSON files based on available TMs and tutors.
 
 // Flag settings
 // To use the following features in scripting, replace the 0s with the flag ID you're assigning it to.
 // Eg: Replace with FLAG_UNUSED_0x264 so you can use that flag to toggle the feature.
-#define P_FLAG_FORCE_SHINY      0     // If this flag is set, all wild and gift Pokémon will forced into being Shiny.
-#define P_FLAG_FORCE_NO_SHINY   0     // If this flag is set, all wild and gift Pokémon will forced into NOT being Shiny.
+#define P_FLAG_FORCE_SHINY      FLAG_FORCE_SHINY       // If this flag is set, all wild and gift Pokémon will forced into being Shiny.
+#define P_FLAG_FORCE_NO_SHINY   FLAG_FORCE_NO_SHINY    // If this flag is set, all wild and gift Pokémon will forced into NOT being Shiny.
+
+// [voloved] Allow Move Relearner to Teach Moves that Pre-Evolutions Know
+#define P_MAX_LEVEL_DIFF_PRE_EV 5
+
+// [LOuroboros] Nickname your Pokémon from the party menu
+#define P_ALLOW_RENAME_TRADED TRUE // Rename traded Pokemon from party menu
 
 // Go here if you want to disable specific families of Pokémon.
 #include "config/species_enabled.h"

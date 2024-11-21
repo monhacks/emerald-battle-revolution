@@ -41,6 +41,8 @@
 #include "text.h"
 #include "trainer_hill.h"
 #include "util.h"
+#include "wild_encounter.h"
+#include "move_relearner.h"
 #include "constants/abilities.h"
 #include "constants/battle_frontier.h"
 #include "constants/battle_move_effects.h"
@@ -58,6 +60,8 @@
 #include "constants/trainers.h"
 #include "constants/union_room.h"
 #include "constants/weather.h"
+
+#include "config/battle_frontier.h"
 #include "wild_encounter.h"
 
 #define FRIENDSHIP_EVO_THRESHOLD ((P_FRIENDSHIP_EVO_THRESHOLD >= GEN_9) ? 160 : 220)
@@ -87,6 +91,7 @@ EWRAM_DATA static struct MonSpritesGfxManager *sMonSpritesGfxManagers[MON_SPR_GF
 EWRAM_DATA static u8 sTriedEvolving = 0;
 EWRAM_DATA u16 gFollowerSteps = 0;
 
+#include "data/tmhm_moves.h"
 #include "data/moves_info.h"
 #include "data/abilities.h"
 
@@ -103,6 +108,35 @@ static const struct CombinedMove sCombinedMoves[2] =
 {
     {MOVE_EMBER, MOVE_GUST, MOVE_HEAT_WAVE},
     {0xFFFF, 0xFFFF, 0xFFFF}
+};
+
+
+#define FRONTIER_BGM_COUNT 19
+
+// Songs which can be selected by the player
+// to play during matches at the Battle Frontier
+static const u16 customFrontierSongs[FRONTIER_BGM_COUNT] = {
+    // RBY Music
+    MUS_VS_FRONTIER_BRAIN,
+    MUS_VS_MEW,
+    MUS_VS_WILD,
+    MUS_VS_AQUA_MAGMA,
+    MUS_VS_TRAINER,
+    MUS_VS_GYM_LEADER,
+    MUS_VS_CHAMPION,
+    MUS_VS_REGI,
+    MUS_VS_KYOGRE_GROUDON,
+    MUS_VS_RIVAL,
+    MUS_VS_ELITE_FOUR,
+    MUS_VS_AQUA_MAGMA_LEADER,
+    // FRLG Music
+    MUS_RG_VS_GYM_LEADER,
+    MUS_RG_VS_TRAINER,
+    MUS_RG_VS_WILD,
+    MUS_RG_VS_CHAMPION,
+    MUS_RG_VS_DEOXYS,
+    MUS_RG_VS_MEWTWO,
+    MUS_RG_VS_LEGEND,
 };
 
 // NOTE: The order of the elements in the array below is irrelevant.
@@ -927,6 +961,7 @@ static const s8 sFriendshipEventModifiers[][3] =
     [FRIENDSHIP_EVENT_FAINT_SMALL]     = {-1, -1, -1},
     [FRIENDSHIP_EVENT_FAINT_FIELD_PSN] = {-5, -5, -10},
     [FRIENDSHIP_EVENT_FAINT_LARGE]     = {-5, -5, -10},
+    [FRIENDSHIP_EVENT_BERRY]           = { 5,  3,  2},
 };
 
 #define HM_MOVES_END 0xFFFF
@@ -1784,6 +1819,46 @@ void CalculateMonStats(struct Pokemon *mon)
     u16 species = GetMonData(mon, MON_DATA_SPECIES, NULL);
     u8 friendship = GetMonData(mon, MON_DATA_FRIENDSHIP, NULL);
     s32 level = GetLevelFromMonExp(mon);
+
+    // Level scaling is set, and is enabled in image
+    if (BF_ENABLE_LEVEL_SCALING){
+        
+        // Get the battle frontier fixed level
+        s8 scaleLevel = FlagGet(FLAG_FORCE_FRONTIER_LEVEL_SCALING);
+
+        // Level scaling flag is set
+        if (scaleLevel){
+            // Level Scaling Placeholders
+            bool8 scaleUp = FALSE;
+            bool8 scaleLevel = 100;
+
+            // Get the level mode from the frontier save block
+            const u8 levelMode = gSaveBlock2Ptr->frontier.lvlMode;
+
+            // Switch on level mode
+            switch(levelMode){
+                case FRONTIER_LVL_50: // Level 50
+                    scaleUp = BF_BATTLE_FRONTIER_LEVEL_50_SCALE_UP;
+                    scaleLevel = BF_BATTLE_FRONTIER_LEVEL_50_SCALE_LEVEL;
+                    break;
+                case FRONTIER_LVL_OPEN: // Open (Level 100)
+                    scaleUp = BF_BATTLE_FRONTIER_LEVEL_OPEN_SCALE_UP;
+                    scaleLevel = BF_BATTLE_FRONTIER_LEVEL_OPEN_SCALE_LEVEL;
+                    break;
+                case FRONTIER_LVL_TENT: // Battle Tent (Special)
+                    scaleUp = BF_BATTLE_FRONTIER_LEVEL_TENT_SCALE_UP;
+                    scaleLevel = BF_BATTLE_FRONTIER_LEVEL_TENT_SCALE_LEVEL;
+                    break;
+            }
+
+            // If Pokemon is above level limit, or it is below AND level scaling up is enabled
+            if ((level > scaleLevel) || (level < scaleLevel && scaleUp)){
+                // Set level to the scaled level
+                level = scaleLevel;
+            }
+        }
+    }
+
     s32 newMaxHP;
 
     u8 nature = GetMonData(mon, MON_DATA_HIDDEN_NATURE, NULL);
@@ -4417,6 +4492,7 @@ u16 GetEvolutionTargetSpecies(struct Pokemon *mon, u8 mode, u16 evolutionItem, s
     u16 species = GetMonData(mon, MON_DATA_SPECIES, 0);
     u16 heldItem = GetMonData(mon, MON_DATA_HELD_ITEM, 0);
     u32 personality = GetMonData(mon, MON_DATA_PERSONALITY, 0);
+    bool32 gigantamax = GetMonData(mon, MON_DATA_GIGANTAMAX_FACTOR, 0);
     u8 level;
     u16 friendship;
     u8 beauty = GetMonData(mon, MON_DATA_BEAUTY, 0);
@@ -4426,7 +4502,8 @@ u16 GetEvolutionTargetSpecies(struct Pokemon *mon, u8 mode, u16 evolutionItem, s
     u16 evolutionTracker = GetMonData(mon, MON_DATA_EVOLUTION_TRACKER, 0);
     const struct Evolution *evolutions = GetSpeciesEvolutions(species);
 
-    if (evolutions == NULL)
+    // No evolutions, or species is gigantamax
+    if (evolutions == NULL || gigantamax == TRUE)
         return SPECIES_NONE;
 
     if (tradePartner != NULL)
@@ -5569,41 +5646,102 @@ u8 CanLearnTeachableMove(u16 species, u16 move)
 
 u8 GetMoveRelearnerMoves(struct Pokemon *mon, u16 *moves)
 {
-    u16 learnedMoves[4];
+    u16 learnedMoves[MAX_MON_MOVES];
     u8 numMoves = 0;
-    u16 species = GetMonData(mon, MON_DATA_SPECIES, 0);
+    u16 species = GetMonData(mon, MON_DATA_SPECIES_OR_EGG, 0);
     u8 level = GetMonData(mon, MON_DATA_LEVEL, 0);
+    
+    // [voloved] Allow Move Relearner to Teach Moves that Pre-Evolutions Know
+    u8 preEvLvl = (level > P_MAX_LEVEL_DIFF_PRE_EV) ? (level - P_MAX_LEVEL_DIFF_PRE_EV) : 1;
     const struct LevelUpMove *learnset = GetSpeciesLevelUpLearnset(species);
-    int i, j, k;
+
+    const u16 *teachable = GetSpeciesTeachableLearnset(species);
+
+    // Move Relearner Mode
+    // 0: Relearn Moves, 1: Tutor / Egg Moves Only
+    bool8 mode = FlagGet(FLAG_MOVE_TUTOR_LEARNSET);
+
+    // 0: Normal Behavior, 1: Ignore Level Requirements
+    bool8 ignoreLevel = FlagGet(FLAG_MOVE_TUTOR_IGNORE_LEVEL);
+
+    // Iterators
+    int i, j, k, l, m;
+
+    // If egg, no relearner moves
+    if (species == SPECIES_EGG)
+        return 0;
 
     for (i = 0; i < MAX_MON_MOVES; i++)
         learnedMoves[i] = GetMonData(mon, MON_DATA_MOVE1 + i, 0);
 
-    for (i = 0; i < MAX_LEVEL_UP_MOVES; i++)
-    {
-        u16 moveLevel;
+    // Teachable Moves
+    if (mode == TRUE){
+        // Loop until we reach the end of the teachable list
+        for (i = 0; (numMoves < MAX_TUTOR_MOVES) && (teachable[i] != MOVE_UNAVAILABLE); i++){
 
-        if (learnset[i].move == LEVEL_UP_MOVE_END)
-            break;
+            // Check if the mon already knows the move
+            for (j = 0; j < MAX_MON_MOVES && learnedMoves[j] != teachable[i]; j++);
 
-        moveLevel = learnset[i].level;
-
-        if (moveLevel <= level)
-        {
-            for (j = 0; j < MAX_MON_MOVES && learnedMoves[j] != learnset[i].move; j++)
-                ;
-
+            // Move not already known
             if (j == MAX_MON_MOVES)
             {
-                for (k = 0; k < numMoves && moves[k] != learnset[i].move; k++)
-                    ;
+                // Check if move is already in the moves list
+                for (k = 0; k < numMoves && moves[k] != teachable[i]; k++);
 
-                if (k == numMoves)
-                    moves[numMoves++] = learnset[i].move;
+                // Not in the list
+                if (k == numMoves){
+
+                    // Check if the move is not in the relearnable moves list
+                    for (l = 0; (learnset[l].move != LEVEL_UP_MOVE_END && learnset[l].move != teachable[i]); l++);
+
+                    // Not in the relearn moves list
+                    if (learnset[l].move == LEVEL_UP_MOVE_END){
+
+                        // Check if the move is not in the tm/hm moves list
+                        for(m = 0; m < TMHM_COUNT && sTMHMMoves[m] != teachable[i]; m++); 
+
+                        // Not in tm/hm list
+                        if (m == TMHM_COUNT)
+                            moves[numMoves++] = teachable[i];
+                    }
+                }
+            }
+        }
+    } 
+    else // Relearn Moves
+    {
+        for (i = 0; (numMoves < MAX_TUTOR_MOVES); i++)
+        {
+            u16 moveLevel;
+
+            if (learnset[i].move == LEVEL_UP_MOVE_END){
+                i = 0;
+                level = preEvLvl;
+                species = GetSpeciesPreEvolution(species);
+            }
+
+            // No species found, exit
+            if (species == SPECIES_NONE)
+                break;
+
+            moveLevel = learnset[i].level;
+
+            // Ignore level is set, or level requirement is met
+            if ((ignoreLevel == TRUE) || (moveLevel <= level))
+            {
+                for (j = 0; j < MAX_MON_MOVES && learnedMoves[j] != learnset[i].move; j++);
+
+                if (j == MAX_MON_MOVES)
+                {
+                    for (k = 0; k < numMoves && moves[k] != learnset[i].move; k++)
+                        ;
+
+                    if (k == numMoves)
+                        moves[numMoves++] = learnset[i].move;
+                }
             }
         }
     }
-
     return numMoves;
 }
 
@@ -5621,46 +5759,10 @@ u8 GetLevelUpMovesBySpecies(u16 species, u16 *moves)
 
 u8 GetNumberOfRelearnableMoves(struct Pokemon *mon)
 {
-    u16 learnedMoves[MAX_MON_MOVES];
-    u16 moves[MAX_LEVEL_UP_MOVES];
-    u8 numMoves = 0;
-    u16 species = GetMonData(mon, MON_DATA_SPECIES_OR_EGG, 0);
-    u8 level = GetMonData(mon, MON_DATA_LEVEL, 0);
-    const struct LevelUpMove *learnset = GetSpeciesLevelUpLearnset(species);
-    int i, j, k;
+    // Max relearner moves placeholder
+    u16 moves[MAX_RELEARNER_MOVES];
 
-    if (species == SPECIES_EGG)
-        return 0;
-
-    for (i = 0; i < MAX_MON_MOVES; i++)
-        learnedMoves[i] = GetMonData(mon, MON_DATA_MOVE1 + i, 0);
-
-    for (i = 0; i < MAX_LEVEL_UP_MOVES; i++)
-    {
-        u16 moveLevel;
-
-        if (learnset[i].move == LEVEL_UP_MOVE_END)
-            break;
-
-        moveLevel = learnset[i].level;
-
-        if (moveLevel <= level)
-        {
-            for (j = 0; j < MAX_MON_MOVES && learnedMoves[j] != learnset[i].move; j++)
-                ;
-
-            if (j == MAX_MON_MOVES)
-            {
-                for (k = 0; k < numMoves && moves[k] != learnset[i].move; k++)
-                    ;
-
-                if (k == numMoves)
-                    moves[numMoves++] = learnset[i].move;
-            }
-        }
-    }
-
-    return numMoves;
+    return GetMoveRelearnerMoves(mon, (u16*)(&moves));
 }
 
 u16 SpeciesToPokedexNum(u16 species)
@@ -5688,7 +5790,19 @@ bool32 IsSpeciesInHoennDex(u16 species)
 
 u16 GetBattleBGM(void)
 {
-    if (gBattleTypeFlags & BATTLE_TYPE_LEGENDARY)
+    // Get custom battle frontier bgm
+    const u16 frontierBGM = VarGet(VAR_FRONTIER_BGM);
+
+    // Custom battle frontier bgm is set
+    if (frontierBGM > 0 && 
+        frontierBGM <= FRONTIER_BGM_COUNT && (
+        gBattleTypeFlags & BATTLE_TYPE_FRONTIER || 
+        gBattleTypeFlags & BATTLE_TYPE_TRAINER_HILL
+    )){
+        // Return the selected custom battle frontier song
+        return customFrontierSongs[frontierBGM - 1];
+    }
+    else if (gBattleTypeFlags & BATTLE_TYPE_LEGENDARY)
     {
         switch (GetMonData(&gEnemyParty[0], MON_DATA_SPECIES, NULL))
         {
@@ -6890,6 +7004,26 @@ u16 GetSpeciesPreEvolution(u16 species)
     }
 
     return SPECIES_NONE;
+}
+
+// [Jirachii/LOuroboros] Show hidden power type in summary screen / battle menu
+u8 GetMonHiddenPowerType(struct Pokemon *mon){
+
+    // Get the hidden power type bits for the Pokemon
+    u8 typeBits  = ((GetMonData(mon, MON_DATA_HP_IV) & 1) << 0)
+        | ((GetMonData(mon, MON_DATA_ATK_IV) & 1) << 1)
+        | ((GetMonData(mon, MON_DATA_DEF_IV) & 1) << 2)
+        | ((GetMonData(mon, MON_DATA_SPEED_IV) & 1) << 3)
+        | ((GetMonData(mon, MON_DATA_SPATK_IV) & 1) << 4)
+        | ((GetMonData(mon, MON_DATA_SPDEF_IV) & 1) << 5);
+
+    // Calculate hidden power type 
+    u8 type = (15 * typeBits) / 63 + 1;
+
+    if (type >= TYPE_MYSTERY)
+        type++;
+
+    return type;
 }
 
 const u8 *GetMoveName(u16 moveId)

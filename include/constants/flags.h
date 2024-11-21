@@ -42,32 +42,32 @@
 #define TEMP_FLAGS_END   FLAG_TEMP_1F
 #define NUM_TEMP_FLAGS   (TEMP_FLAGS_END - TEMP_FLAGS_START + 1)
 
-#define FLAG_UNUSED_0x020    0x20 // Unused Flag
-#define FLAG_UNUSED_0x021    0x21 // Unused Flag
-#define FLAG_UNUSED_0x022    0x22 // Unused Flag
-#define FLAG_UNUSED_0x023    0x23 // Unused Flag
-#define FLAG_UNUSED_0x024    0x24 // Unused Flag
-#define FLAG_UNUSED_0x025    0x25 // Unused Flag
-#define FLAG_UNUSED_0x026    0x26 // Unused Flag
-#define FLAG_UNUSED_0x027    0x27 // Unused Flag
-#define FLAG_UNUSED_0x028    0x28 // Unused Flag
-#define FLAG_UNUSED_0x029    0x29 // Unused Flag
-#define FLAG_UNUSED_0x02A    0x2A // Unused Flag
-#define FLAG_UNUSED_0x02B    0x2B // Unused Flag
-#define FLAG_UNUSED_0x02C    0x2C // Unused Flag
-#define FLAG_UNUSED_0x02D    0x2D // Unused Flag
-#define FLAG_UNUSED_0x02E    0x2E // Unused Flag
-#define FLAG_UNUSED_0x02F    0x2F // Unused Flag
-#define FLAG_UNUSED_0x030    0x30 // Unused Flag
-#define FLAG_UNUSED_0x031    0x31 // Unused Flag
-#define FLAG_UNUSED_0x032    0x32 // Unused Flag
-#define FLAG_UNUSED_0x033    0x33 // Unused Flag
-#define FLAG_UNUSED_0x034    0x34 // Unused Flag
-#define FLAG_UNUSED_0x035    0x35 // Unused Flag
-#define FLAG_UNUSED_0x036    0x36 // Unused Flag
-#define FLAG_UNUSED_0x037    0x37 // Unused Flag
-#define FLAG_UNUSED_0x038    0x38 // Unused Flag
-#define FLAG_UNUSED_0x039    0x39 // Unused Flag
+#define FLAG_RECEIVED_OVAL_CHARM            0x20 // Oval Charm Obtained
+#define FLAG_RECEIVED_SHINY_CHARM           0x21 // Shiny Charm Obtained
+#define FLAG_RECEIVED_CATCHING_CHARM        0x22 // Catching Charm Obtained
+#define FLAG_RECEIVED_EXP_CHARM             0x23 // Experience Charm Obtained
+#define FLAG_MOVE_TUTOR_LEARNSET            0x24 // Learn egg/tutor moves instead of relearn moves
+#define FLAG_MOVE_TUTOR_IGNORE_LEVEL        0x25 // Reteach any moves regardless of level
+#define FLAG_BATTLE_FRONTIER_GENERATOR      0x26 // Battle Frontier Set Generator enabled/disabled
+#define FLAG_BATTLE_FRONTIER_ALLOW_MEGA     0x27 // Battle Frontier allow Mega Evolutions
+#define FLAG_BATTLE_FRONTIER_ALLOW_GMAX     0x28 // Battle Frontier allow Gigantamax Formes
+#define FLAG_BATTLE_FRONTIER_ALLOW_ZMOVE    0x29 // Battle Frontier allow Z-Moves
+#define FLAG_BATTLE_FRONTIER_ALLOW_TERA     0x2A // Battle Frontier allow Terastalisation
+#define FLAG_BATTLE_FRONTIER_FIXED_IV       0x2B // Battle Frontier fixed IVs flag
+#define FLAG_EXP_SHARE_ENABLED              0x2C // Exp.Share enabled or disabled
+#define FLAG_RECEIVED_BATTLE_MECHANIC_ITEMS 0x2D // ?? I forgot
+#define FLAG_ITEM_MEGA_RING_OBTAINED        0x2E // Mega Ring Obtained
+#define FLAG_ITEM_Z_POWER_RING_OBTAINED     0x2F // Z Power Ring Obtained
+#define FLAG_ITEM_DYNAMAX_BAND_OBTAINED     0x30 // Dynamax Band Obtained
+#define FLAG_ITEM_TERA_ORB_OBTAINED         0x31 // Tera Orb Obtained
+#define FLAG_LAST_USED_BIKE                 0x32 // Last-Used Bike
+#define FLAG_TERA_ORB_NO_COST               0x33 // Tera Orb Always Charged
+#define FLAG_TERA_ORB_CHARGED               0x34 // Tera Orb Charged
+#define FLAG_FORCE_FRONTIER_LEVEL_SCALING   0x35 // Enable Level Scaling
+#define FLAG_FORCE_NO_SHINY                 0x36 // Force non-shiny
+#define FLAG_FORCE_SHINY                    0x37 // Force shiny
+#define FLAG_DYNAMAX_BATTLE                 0x38 // Both players can dynamax
+#define FLAG_AI_VS_AI_BATTLE                0x39 // Player controlled by ai
 #define FLAG_UNUSED_0x03A    0x3A // Unused Flag
 #define FLAG_UNUSED_0x03B    0x3B // Unused Flag
 #define FLAG_UNUSED_0x03C    0x3C // Unused Flag
