@@ -230,6 +230,7 @@ void ReducePlayerPartyToSelectedMons(void)
             // Ensure level scaling is met
             CalculateMonStats(&party[i]);
         }
+        
     CpuFill32(0, gPlayerParty, sizeof gPlayerParty);
 
     // overwrite the first 4 with the order copied to.

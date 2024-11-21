@@ -75,7 +75,6 @@
 #include "constants/party_menu.h"
 #include "constants/rgb.h"
 #include "constants/songs.h"
-
 #include "config/item.h"
 #include "move_relearner.h"
 #include "naming_screen.h"
@@ -364,7 +363,6 @@ static void Task_UpdateHeldItemSprite(u8);
 static void Task_HandleSelectionMenuInput(u8);
 static void CB2_ShowPokemonSummaryScreen(void);
 static void UpdatePartyToBattleOrder(void);
-static void CB2_ReturnToPartyMenuFromSummaryScreen(void);
 static void SlidePartyMenuBoxOneStep(u8);
 static void Task_SlideSelectedSlotsOffscreen(u8);
 static void SwitchPartyMon(void);
@@ -2866,12 +2864,10 @@ static void SetPartyMonFieldSelectionActions(struct Pokemon *mons, u8 slotId)
     {
         if (GetMonData(&mons[1], MON_DATA_SPECIES) != SPECIES_NONE)
             AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, MENU_SWITCH);
-        
         // [Diego Mertens] Move Relearner as an option in the Pokémon Party Screen
         if (GetNumberOfRelearnableMoves(&mons[slotId]) != 0) {
 			AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, MENU_MOVES);
 		}
-
         if (ItemIsMail(GetMonData(&mons[slotId], MON_DATA_HELD_ITEM)))
             AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, MENU_MAIL);
         else
@@ -3024,7 +3020,6 @@ static void CursorCb_Summary(u8 taskId)
     Task_ClosePartyMenu(taskId);
 }
 
-
 // [Diego Mertens] Move Relearner as an option in the Pokémon Party Screen
 static void CursorCb_Moves(u8 taskId)
 {
@@ -3075,10 +3070,9 @@ static void CB2_ShowPokemonSummaryScreen(void)
     }
 }
 
-static void CB2_ReturnToPartyMenuFromSummaryScreen(void)
+void CB2_ReturnToPartyMenuFromSummaryScreen(void)
 {
     gPaletteFade.bufferTransferDisabled = TRUE;
-    gPartyMenu.slotId = gLastViewedMonIndex;
     InitPartyMenu(gPartyMenu.menuType, KEEP_PARTY_LAYOUT, gPartyMenu.action, TRUE, PARTY_MSG_DO_WHAT_WITH_MON, Task_TryCreateSelectionWindow, gPartyMenu.exitCallback);
 }
 
@@ -7144,17 +7138,24 @@ static u8 CheckBattleEntriesAndGetMessage(void)
     if (facility == FACILITY_UNION_ROOM || facility == FACILITY_MULTI_OR_EREADER)
         return 0xFF;
 
-    maxBattlers = GetMaxBattleEntries();
-    for (i = 0; i < maxBattlers - 1; i++)
-    {
-        u16 species = GetMonData(&party[order[i] - 1], MON_DATA_SPECIES);
-        u16 item = GetMonData(&party[order[i] - 1], MON_DATA_HELD_ITEM);
-        for (j = i + 1; j < maxBattlers; j++)
+    // If either of these flags are set, perform the loop
+    if (BF_ALLOW_DUPLICATE_ITEMS || BF_ALLOW_DUPLICATE_SPECIES){
+        maxBattlers = GetMaxBattleEntries();
+        for (i = 0; i < maxBattlers - 1; i++)
         {
-            if (species == GetMonData(&party[order[j] - 1], MON_DATA_SPECIES))
-                return PARTY_MSG_MONS_CANT_BE_SAME;
-            if (item != ITEM_NONE && item == GetMonData(&party[order[j] - 1], MON_DATA_HELD_ITEM))
-                return PARTY_MSG_NO_SAME_HOLD_ITEMS;
+            u16 species = GetMonData(&party[order[i] - 1], MON_DATA_SPECIES);
+            u16 item = GetMonData(&party[order[i] - 1], MON_DATA_HELD_ITEM);
+            for (j = i + 1; j < maxBattlers; j++)
+            {
+                // Allow duplicate species is set to false
+                if (BF_ALLOW_DUPLICATE_SPECIES == FALSE)
+                    if (species == GetMonData(&party[order[j] - 1], MON_DATA_SPECIES))
+                        return PARTY_MSG_MONS_CANT_BE_SAME;
+                // Allow duplicate items is set to false
+                if (BF_ALLOW_DUPLICATE_ITEMS == FALSE)
+                    if (item != ITEM_NONE && item == GetMonData(&party[order[j] - 1], MON_DATA_HELD_ITEM))
+                        return PARTY_MSG_NO_SAME_HOLD_ITEMS;
+            }
         }
     }
 

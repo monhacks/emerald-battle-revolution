@@ -38,8 +38,8 @@
 #include "constants/items.h"
 #include "constants/event_objects.h"
 #include "party_menu.h"
-
 #include "config/battle_frontier.h"
+
 #include "data/battle_frontier/battle_frontier_banned_species.h"
 
 struct FrontierBrainMon

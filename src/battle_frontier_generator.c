@@ -12,6 +12,7 @@
 #include "battle_ai_util.h"
 #include "battle_frontier_generator.h"
 #include "config/battle_frontier_generator.h"
+#include "config/battle_frontier.h"
 
 #include "constants/battle_frontier_generator.h"
 #include "constants/battle_move_effects.h"
@@ -26,6 +27,7 @@
 #include "constants/items.h"
 
 #include "data/pokemon/natures.h"
+#include "data/battle_frontier/battle_frontier_banned_species.h"
 #include "data/battle_frontier/battle_frontier_generator.h"
 
 #include "data/battle_frontier/battle_frontier_generator_trainer_class_mons.h"

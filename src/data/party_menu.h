@@ -694,7 +694,7 @@ struct
 {
     [MENU_SUMMARY] = {gText_Summary5, CursorCb_Summary},
     [MENU_NICKNAME] = {gText_Nickname, CursorCb_Nickname},
-    [MENU_MOVES] = {gText_Moves_Menu, CursorCb_Moves},
+    [MENU_MOVES] = {gText_Moves_Menu, CursorCb_Moves}, // [Diego Mertens] Move Relearner as an option in the Pokémon Party Screen
     [MENU_SWITCH] = {gText_Switch2, CursorCb_Switch},
     [MENU_CANCEL1] = {gText_Cancel2, CursorCb_Cancel1},
     [MENU_ITEM] = {gText_Item, CursorCb_Item},
