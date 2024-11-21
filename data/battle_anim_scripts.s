@@ -27767,8 +27767,11 @@ Status_Infestation:
 
 General_HeldItemEffect:
 	loadspritegfx ANIM_TAG_THIN_RING
+.if B_FAST_HELD_ITEM_EFFECT != TRUE
 	loadspritegfx ANIM_TAG_SPARKLE_2
+.endif
 	delay 0
+.if B_FAST_HELD_ITEM_EFFECT != TRUE
 	playsewithpan SE_M_TAKE_DOWN, SOUND_PAN_ATTACKER
 	createvisualtask AnimTask_RotateMonToSideAndRestore, 2, 16, 128, ANIM_ATTACKER, 2
 	waitforvisualfinish
@@ -27781,6 +27784,7 @@ General_HeldItemEffect:
 	playsewithpan SE_M_MORNING_SUN, SOUND_PAN_ATTACKER
 	call GrantingStarsEffect
 	waitforvisualfinish
+.endif
 	playsewithpan SE_SHINY, SOUND_PAN_ATTACKER
 	createsprite gSimplePaletteBlendSpriteTemplate, ANIM_ATTACKER, 2, F_PAL_ATTACKER, 3, 7, 0, RGB(17, 31, 25)
 	createsprite gThinRingExpandingSpriteTemplate, ANIM_ATTACKER, 3, 0, 0, 0, 0
