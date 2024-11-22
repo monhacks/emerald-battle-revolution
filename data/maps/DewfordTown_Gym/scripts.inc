@@ -154,6 +154,7 @@ DewfordTown_Gym_EventScript_BrawlyDefeated::
 	setvar VAR_0x8008, 2
 	call Common_EventScript_SetGymTrainers
 	call DewfordTown_Gym_EventScript_GiveBulkUp
+	call DewfordTown_Gym_EventScript_GiveZPowerRing
 	closemessage
 	delay 30
 	playfanfare MUS_REGISTER_MATCH_CALL
@@ -457,3 +458,36 @@ DewfordTown_Gym_Text_BrawlyRematchNeedTwoMons:
 	.string "that can battle.\p"
 	.string "I'm sorry, but I'd like you to come back\n"
 	.string "with at least two POKéMON.$"
+
+DewfordTown_Gym_EventScript_GiveZPowerRing::
+	goto_if_unset FLAG_ITEM_Z_POWER_RING_OBTAINED, DewfordTown_Gym_EventScript_GiveZPowerRing_1
+	return
+
+DewfordTown_Gym_EventScript_GiveZPowerRing_1:
+	msgbox DewfordTown_Gym_EventScript_GiveZPowerRing_Text_0
+	giveitem ITEM_Z_POWER_RING
+	msgbox DewfordTown_Gym_EventScript_GiveZPowerRing_Text_1
+	msgbox DewfordTown_Gym_EventScript_GiveZPowerRing_Text_2
+	msgbox DewfordTown_Gym_EventScript_GiveZPowerRing_Text_3
+	setflag FLAG_ITEM_Z_POWER_RING_OBTAINED
+	return
+
+
+DewfordTown_Gym_EventScript_GiveZPowerRing_Text_0:
+	.string "Also, as a trainer with two gym badges,\n"
+	.string "you've earned this.$"
+
+DewfordTown_Gym_EventScript_GiveZPowerRing_Text_1:
+	.string "This item will allow your POKéMON to\n"
+	.string "unleash a powerful Z-Move once per\l"
+	.string "battle, when holding the Z-Crystal of\l"
+	.string "the correct type!$"
+
+DewfordTown_Gym_EventScript_GiveZPowerRing_Text_2:
+	.string "Some POKéMON even have access to\n"
+	.string "exclusive Z-Moves!$"
+
+DewfordTown_Gym_EventScript_GiveZPowerRing_Text_3:
+	.string "Z-Crystals will now be available at most\n"
+	.string "POKéMARTs - Even those you've already\l"
+	.string "visited.$"

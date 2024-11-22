@@ -160,18 +160,6 @@ RustboroCity_DevonCorp_3F_EventScript_MrStone::
 	release
 	end
 
-RustboroCity_DevonCorp_3F_EventScript_GiveExpShare::
-	msgbox RustboroCity_DevonCorp_3F_Text_ThankYouForDeliveringLetter, MSGBOX_DEFAULT
-	giveitem ITEM_EXP_SHARE
-	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
-	setflag FLAG_RECEIVED_EXP_SHARE
-	msgbox RustboroCity_DevonCorp_3F_Text_ExplainExpShare, MSGBOX_DEFAULT
-	closemessage
-	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
-	waitmovement 0
-	release
-	end
-
 RustboroCity_DevonCorp_3F_EventScript_MrStoneAfterFavor::
 	msgbox RustboroCity_DevonCorp_3F_Text_NotFamiliarWithTrends, MSGBOX_DEFAULT
 	closemessage
@@ -250,15 +238,6 @@ RustboroCity_DevonCorp_3F_Text_ThankYouForDeliveringLetter:
 	.string "This is my way of thanking you.\n"
 	.string "It should help you, a TRAINER.$"
 
-RustboroCity_DevonCorp_3F_Text_ExplainExpShare:
-	.string "MR. STONE: A POKéMON holding that\n"
-	.string "EXP. SHARE will be given some of the\l"
-	.string "EXP Points from battle.\p"
-	.string "It will get EXP Points even if it didn't\n"
-	.string "actually battle.\p"
-	.string "I would say EXP. SHARE is quite useful\n"
-	.string "for raising weak POKéMON.$"
-
 RustboroCity_DevonCorp_3F_Text_NotFamiliarWithTrends:
 	.string "MR. STONE: Since my youth, I've immersed\n"
 	.string "myself in work.\p"
@@ -306,3 +285,34 @@ RustboroCity_DevonCorp_3F_Text_RareRocksDisplay:
 	.string "It's a collection of rare rocks and\n"
 	.string "stones assembled by the PRESIDENT.$"
 
+RustboroCity_DevonCorp_3F_EventScript_GiveExpShare::
+	msgbox RustboroCity_DevonCorp_3F_Text_ThankYouForDeliveringLetter, MSGBOX_DEFAULT
+	goto_if_unset FLAG_RECEIVED_EXP_SHARE, RustboroCity_DevonCorp_3F_EventScript_GiveExpShare_2
+	giveitem ITEM_ULTRA_BALL
+	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
+RustboroCity_DevonCorp_3F_EventScript_GiveExpShare_1:
+	closemessage
+	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
+	waitmovement 0
+	release
+	end
+
+RustboroCity_DevonCorp_3F_EventScript_GiveExpShare_2:
+	giveitem ITEM_EXP_SHARE
+	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
+	setflag FLAG_RECEIVED_EXP_SHARE
+	call RustboroCity_DevonCorp_3F_Text_ExplainExpShare
+	goto RustboroCity_DevonCorp_3F_EventScript_GiveExpShare_1
+
+
+RustboroCity_DevonCorp_3F_Text_ExplainExpShare::
+	msgbox RustboroCity_DevonCorp_3F_Text_ExplainExpShare_Text_0
+	return
+
+
+RustboroCity_DevonCorp_3F_Text_ExplainExpShare_Text_0:
+	.string "When experience is gained in a POKéMON\n"
+	.string "battle, this item will share experience\l"
+	.string "with your entire party. This effect can\l"
+	.string "be toggled at any time in the KEY ITEMS\l"
+	.string "menu.$"

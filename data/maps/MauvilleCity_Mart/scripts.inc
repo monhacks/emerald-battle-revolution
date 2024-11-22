@@ -6,26 +6,8 @@ MauvilleCity_Mart_EventScript_Clerk::
 	faceplayer
 	message gText_HowMayIServeYou
 	waitmessage
-	pokemart MauvilleCity_Mart_Pokemart
+	pokemart 0
 	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
-	release
-	end
-
-	.align 2
-MauvilleCity_Mart_Pokemart:
-	.2byte ITEM_POKE_BALL
-	.2byte ITEM_GREAT_BALL
-	.2byte ITEM_SUPER_POTION
-	.2byte ITEM_ANTIDOTE
-	.2byte ITEM_PARALYZE_HEAL
-	.2byte ITEM_AWAKENING
-	.2byte ITEM_X_SPEED
-	.2byte ITEM_X_ATTACK
-	.2byte ITEM_X_DEFENSE
-	.2byte ITEM_GUARD_SPEC
-	.2byte ITEM_DIRE_HIT
-	.2byte ITEM_X_ACCURACY
-	.2byte ITEM_NONE
 	release
 	end
 
@@ -51,3 +33,111 @@ MauvilleCity_Mart_Text_DecisionsDetermineBattle:
 	.string "The TRAINER's decisions determine how\n"
 	.string "battles turn out, I think.$"
 
+MauvilleCity_Mart_EventScript_Clerk2::
+	lock
+	faceplayer
+	goto_if_set FLAG_BADGE03_GET, MauvilleCity_Mart_EventScript_Clerk2_2
+	msgbox MauvilleCity_Mart_EventScript_Clerk2_Text_0
+MauvilleCity_Mart_EventScript_Clerk2_1:
+	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
+	release
+	end
+
+MauvilleCity_Mart_EventScript_Clerk2_2:
+	message gText_HowMayIServeYou
+	waitmessage
+	goto_if_set FLAG_BADGE04_GET, MauvilleCity_Mart_EventScript_Clerk2_5
+	pokemart MauvilleCity_Mart_Pokemart_Clerk2
+	goto MauvilleCity_Mart_EventScript_Clerk2_1
+
+MauvilleCity_Mart_EventScript_Clerk2_5:
+	goto_if_set FLAG_BADGE06_GET, MauvilleCity_Mart_EventScript_Clerk2_8
+	pokemart MauvilleCity_Mart_Pokemart_Clerk2_Expanded
+	goto MauvilleCity_Mart_EventScript_Clerk2_1
+
+MauvilleCity_Mart_EventScript_Clerk2_8:
+	pokemart MauvilleCity_Mart_Pokemart_Clerk2_Expanded2
+	goto MauvilleCity_Mart_EventScript_Clerk2_1
+
+
+	.align 2
+MauvilleCity_Mart_Pokemart_Clerk2:
+	.2byte ITEM_AMPHAROSITE
+	.2byte ITEM_MANECTITE
+	.2byte ITEM_SABLENITE
+	.2byte ITEM_BANETTITE
+	.2byte ITEM_SPELL_TAG
+	.2byte ITEM_ELECTRIC_GEM
+	.2byte ITEM_GHOST_GEM
+	.2byte ITEM_MAGNET
+	.2byte ITEM_ELECTIRIZER
+	.2byte ITEM_MAGMARIZER
+	.2byte ITEM_SUN_STONE
+	.2byte ITEM_MOON_STONE
+	.2byte ITEM_SHINY_STONE
+	.2byte ITEM_ABILITY_SHIELD
+	.2byte ITEM_EJECT_BUTTON
+	.2byte ITEM_DESTINY_KNOT
+	.2byte ITEM_MUSCLE_BAND
+	.2byte ITEM_MIRROR_HERB
+	.2byte ITEM_ZOOM_LENS
+	.2byte ITEM_EVERSTONE
+	.2byte ITEM_NONE
+
+	.align 2
+MauvilleCity_Mart_Pokemart_Clerk2_Expanded:
+	.2byte ITEM_MANECTITE
+	.2byte ITEM_SABLENITE
+	.2byte ITEM_BANETTITE
+	.2byte ITEM_MAWILITE
+	.2byte ITEM_ELECTRIUM_Z
+	.2byte ITEM_GHOSTIUM_Z
+	.2byte ITEM_SPELL_TAG
+	.2byte ITEM_ELECTRIC_GEM
+	.2byte ITEM_GHOST_GEM
+	.2byte ITEM_MAGNET
+	.2byte ITEM_ELECTIRIZER
+	.2byte ITEM_MAGMARIZER
+	.2byte ITEM_SUN_STONE
+	.2byte ITEM_MOON_STONE
+	.2byte ITEM_SHINY_STONE
+	.2byte ITEM_ABILITY_SHIELD
+	.2byte ITEM_EJECT_BUTTON
+	.2byte ITEM_DESTINY_KNOT
+	.2byte ITEM_MUSCLE_BAND
+	.2byte ITEM_MIRROR_HERB
+	.2byte ITEM_ZOOM_LENS
+	.2byte ITEM_EVERSTONE
+	.2byte ITEM_NONE
+
+	.align 2
+MauvilleCity_Mart_Pokemart_Clerk2_Expanded2:
+	.2byte ITEM_ELECTRIC_TERA_SHARD
+	.2byte ITEM_GHOST_TERA_SHARD
+	.2byte ITEM_MANECTITE
+	.2byte ITEM_SABLENITE
+	.2byte ITEM_BANETTITE
+	.2byte ITEM_MAWILITE
+	.2byte ITEM_ELECTRIUM_Z
+	.2byte ITEM_GHOSTIUM_Z
+	.2byte ITEM_SPELL_TAG
+	.2byte ITEM_ELECTRIC_GEM
+	.2byte ITEM_GHOST_GEM
+	.2byte ITEM_MAGNET
+	.2byte ITEM_ELECTIRIZER
+	.2byte ITEM_MAGMARIZER
+	.2byte ITEM_SUN_STONE
+	.2byte ITEM_MOON_STONE
+	.2byte ITEM_SHINY_STONE
+	.2byte ITEM_ABILITY_SHIELD
+	.2byte ITEM_EJECT_BUTTON
+	.2byte ITEM_DESTINY_KNOT
+	.2byte ITEM_MUSCLE_BAND
+	.2byte ITEM_MIRROR_HERB
+	.2byte ITEM_ZOOM_LENS
+	.2byte ITEM_EVERSTONE
+	.2byte ITEM_NONE
+
+MauvilleCity_Mart_EventScript_Clerk2_Text_0:
+	.string "I'm afraid we are all out of stock at the\n"
+	.string "moment, sorry!$"

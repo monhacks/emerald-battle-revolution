@@ -1,0 +1,272 @@
+.set LOCALID_NURSE, 1
+
+BattleFrontier_Underground_B2F_PokeCenter_1F_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, BattleFrontier_Underground_B2F_PokeCenter_1F_OnTransition
+	map_script MAP_SCRIPT_ON_RESUME, CableClub_OnResume
+	.byte 0
+
+BattleFrontier_Underground_B2F_PokeCenter_1F_OnTransition:
+	setrespawn HEAL_LOCATION_BATTLE_FRONTIER_UNDERGROUND
+	end
+
+BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_Nurse::
+	setvar VAR_0x800B, LOCALID_NURSE
+	call Common_EventScript_PkmnCenterNurse
+	waitmessage
+	waitbuttonpress
+	release
+	end
+
+BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_Gentleman::
+	lock
+	faceplayer
+	msgbox BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_Gentleman_Text_0
+	goto BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GentlemanCheckBattlePoints
+	return
+
+
+BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GentlemanCheckBattlePoints::
+	specialvar VAR_TEMP_1, GetFrontierBattlePoints
+	compare VAR_TEMP_1, 50
+	goto_if_ge BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GentlemanCheckBattlePoints_2
+BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GentlemanCheckBattlePoints_1:
+	msgbox BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GentlemanCheckBattlePoints_Text_0
+	goto BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GentlemanEnd
+	return
+
+BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GentlemanCheckBattlePoints_2:
+	goto BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GentlemanCheckSelection
+	goto BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GentlemanCheckBattlePoints_1
+
+
+BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GentlemanCheckSelection::
+	msgbox BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GentlemanCheckSelection_Text_0
+	special ShowBattlePointsWindow
+	multichoice2 18, 0, BattleFrontier_Underground_B2F_PokeCenter_1F_Text_Gentleman
+	switch VAR_RESULT
+	case 0, BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GentlemanCheckSelection_3
+	case 1, BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GentlemanCheckSelection_4
+	special CloseBattlePointsWindow
+	goto BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GentlemanEnd
+BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GentlemanCheckSelection_1:
+	setvar VAR_0x8004, 50
+	msgbox BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GentlemanCheckSelection_Text_1
+	special TakeFrontierBattlePoints
+	playse SE_SHOP
+	special UpdateBattlePointsWindow
+	waitse
+	special CloseBattlePointsWindow
+	msgbox BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GentlemanCheckSelection_Text_2
+	msgbox BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GentlemanCheckSelection_Text_3
+	yesnobox 0, 8
+	compare VAR_RESULT, YES
+	goto_if_eq BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GentlemanCheckSelection_7
+BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GentlemanCheckSelection_6:
+	goto BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GentlemanEnd
+	return
+
+BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GentlemanCheckSelection_3:
+	giveitem ITEM_CHERISH_BALL
+	goto BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GentlemanCheckSelection_1
+
+BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GentlemanCheckSelection_4:
+	giveitem ITEM_GOLD_BOTTLE_CAP
+	goto BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GentlemanCheckSelection_1
+
+BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GentlemanCheckSelection_7:
+	goto BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GentlemanCheckBattlePoints
+	goto BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GentlemanCheckSelection_6
+
+
+BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GentlemanEnd::
+	msgbox BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GentlemanEnd_Text_0
+	release
+	end
+
+
+BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpert::
+	lock
+	faceplayer
+	msgbox BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpert_Text_0
+	msgbox BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpert_Text_1
+	goto BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpertCheckMoney
+	return
+
+
+BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpertCheckMoney::
+	showmoneybox 0, 0
+	checkmoney 500
+	compare VAR_RESULT, TRUE
+	goto_if_eq BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpertCheckMoney_2
+BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpertCheckMoney_1:
+	goto BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpertCantAfford
+	return
+
+BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpertCheckMoney_2:
+	goto BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpertSelectMon
+	goto BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpertCheckMoney_1
+
+
+BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpertSelectMon::
+	msgbox BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpertSelectMon_Text_0
+	special ChooseMonForMoveRelearner
+	waitstate
+	showmoneybox 0, 0
+	compare VAR_0x8004, PARTY_NOTHING_CHOSEN
+	goto_if_eq BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpertSelectMon_2
+BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpertSelectMon_1:
+	special IsSelectedMonEgg
+	compare VAR_RESULT, TRUE
+	goto_if_eq BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpertSelectMon_5
+BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpertSelectMon_4:
+	hasgigantamaxfactor VAR_0x8004
+	compare VAR_RESULT, TRUE
+	goto_if_eq BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpertSelectMon_8
+	msgbox BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpertSelectMon_Text_2
+BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpertSelectMon_7:
+	yesnobox 0, 8
+	compare VAR_RESULT, YES
+	goto_if_eq BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpertSelectMon_12
+	hidemoneybox
+	goto BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpertEnd
+BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpertSelectMon_11:
+	hidemoneybox
+	goto BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpertAsk
+	return
+
+BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpertSelectMon_2:
+	goto BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpertEnd
+	goto BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpertSelectMon_1
+
+BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpertSelectMon_5:
+	goto BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpertCantTeachEgg
+	goto BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpertSelectMon_4
+
+BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpertSelectMon_8:
+	msgbox BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpertSelectMon_Text_1
+	goto BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpertSelectMon_7
+
+BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpertSelectMon_12:
+	togglegigantamaxfactor VAR_0x8004
+	compare VAR_RESULT, TRUE
+	goto_if_eq BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpertSelectMon_15
+	msgbox BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpertSelectMon_Text_5
+	goto BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpertSelectMon_11
+
+BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpertSelectMon_15:
+	msgbox BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpertSelectMon_Text_3
+	msgbox BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpertSelectMon_Text_4
+	removemoney 500
+	playse SE_SHOP
+	updatemoneybox
+	waitse
+	goto BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpertSelectMon_11
+
+
+BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpertAsk::
+	msgbox BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpertAsk_Text_0
+	yesnobox 0, 8
+	compare VAR_RESULT, YES
+	goto_if_eq BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpertAsk_1
+	goto BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpertEnd
+	return
+
+BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpertAsk_1:
+	goto BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpertCheckMoney
+	return
+
+
+BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpertCantAfford::
+	msgbox BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpertCantAfford_Text_0
+	goto FallarborTown_MoveRelearnersHouse_EventScript_MoveTutorEnd
+	return
+
+
+BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpertCantTeachEgg::
+	msgbox BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpertCantTeachEgg_Text_0
+	goto BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpertEnd
+	return
+
+
+BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpertEnd::
+	msgbox BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpertEnd_Text_0
+	release
+	end
+
+
+BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_Gentleman_Text_0:
+	.string "Good to see you. I offer rare items in\n"
+	.string "exchange for battle points.$"
+
+BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GentlemanCheckBattlePoints_Text_0:
+	.string "You'll need at least 50 BP before you\n"
+	.string "can buy anything from me.$"
+
+BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GentlemanCheckSelection_Text_0:
+	.string "What would you like? All of my items\n"
+	.string "cost 50 BP.$"
+
+BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GentlemanCheckSelection_Text_1:
+	.string "I'll take your payment now, please.$"
+
+BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GentlemanCheckSelection_Text_2:
+	.string "Thank you for that.$"
+
+BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GentlemanCheckSelection_Text_3:
+	.string "Would you like anything else?$"
+
+BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GentlemanEnd_Text_0:
+	.string "Please come see me again.$"
+
+BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpert_Text_0:
+	.string "Hello, I'm the Gigantamax Expert! I can\n"
+	.string "change the gigantamax factor of your\l"
+	.string "POKéMON.$"
+
+BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpert_Text_1:
+	.string "My services cost a mere ¥500 per\n"
+	.string "POKéMON.$"
+
+BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpertSelectMon_Text_0:
+	.string "Which POKéMON would you like me to\n"
+	.string "change?$"
+
+BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpertSelectMon_Text_1:
+	.string "Would you like me to remove the\n"
+	.string "Gigantamax factor from this POKéMON?$"
+
+BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpertSelectMon_Text_2:
+	.string "Would you like me to add the Gigantamax\n"
+	.string "factor to this POKéMON?$"
+
+BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpertSelectMon_Text_3:
+	.string "Done! Your POKéMON's gigantamax factor\n"
+	.string "has been changed.$"
+
+BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpertSelectMon_Text_4:
+	.string "I'll accept your payment now, please.$"
+
+BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpertSelectMon_Text_5:
+	.string "Sorry, I was unable to change the\n"
+	.string "gigantamax factor of this POKéMON!$"
+
+BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpertAsk_Text_0:
+	.string "Would you like me to teach anything\n"
+	.string "else?$"
+
+BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpertCantAfford_Text_0:
+	.string "Sorry, you need ¥500 for me to change\n"
+	.string "your POKéMON's gigantamax state!$"
+
+BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpertCantTeachEgg_Text_0:
+	.string "I can't change the gigantamax status\n"
+	.string "of an egg!$"
+
+BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpertEnd_Text_0:
+	.string "Please come back again soon!$"
+
+BattleFrontier_Underground_B2F_PokeCenter_1F_Text_Gentleman::
+	.string "CHERISH BALL$"
+	.string "GOLD BOTTLE CAP$"
+	.string "NOTHING$"
+	.string "$"

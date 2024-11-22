@@ -6,25 +6,8 @@ VerdanturfTown_Mart_EventScript_Clerk::
 	faceplayer
 	message gText_HowMayIServeYou
 	waitmessage
-	pokemart VerdanturfTown_Mart_Pokemart
+	pokemart 0
 	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
-	release
-	end
-
-	.align 2
-VerdanturfTown_Mart_Pokemart:
-	.2byte ITEM_GREAT_BALL
-	.2byte ITEM_NEST_BALL
-	.2byte ITEM_SUPER_POTION
-	.2byte ITEM_ANTIDOTE
-	.2byte ITEM_PARALYZE_HEAL
-	.2byte ITEM_AWAKENING
-	.2byte ITEM_BURN_HEAL
-	.2byte ITEM_ICE_HEAL
-	.2byte ITEM_REPEL
-	.2byte ITEM_X_SP_ATK
-	.2byte ITEM_FLUFFY_TAIL
-	.2byte ITEM_NONE
 	release
 	end
 
@@ -58,3 +41,104 @@ VerdanturfTown_Mart_Text_NestBallOnWeakenedPokemon:
 	.string "VERDANTURF is the only place you can\n"
 	.string "buy it.$"
 
+VerdanturfTown_Mart_EventScript_Clerk2::
+	lock
+	faceplayer
+	goto_if_set FLAG_BADGE03_GET, VerdanturfTown_Mart_EventScript_Clerk2_2
+	msgbox VerdanturfTown_Mart_EventScript_Clerk2_Text_0
+VerdanturfTown_Mart_EventScript_Clerk2_1:
+	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
+	release
+	end
+
+VerdanturfTown_Mart_EventScript_Clerk2_2:
+	message gText_HowMayIServeYou
+	waitmessage
+	goto_if_set FLAG_BADGE04_GET, VerdanturfTown_Mart_EventScript_Clerk2_5
+	pokemart VerdanturfTown_Mart_Pokemart_Clerk2
+	goto VerdanturfTown_Mart_EventScript_Clerk2_1
+
+VerdanturfTown_Mart_EventScript_Clerk2_5:
+	goto_if_set FLAG_BADGE06_GET, VerdanturfTown_Mart_EventScript_Clerk2_8
+	pokemart VerdanturfTown_Mart_Pokemart_Clerk2_Expanded
+	goto VerdanturfTown_Mart_EventScript_Clerk2_1
+
+VerdanturfTown_Mart_EventScript_Clerk2_8:
+	pokemart VerdanturfTown_Mart_Pokemart_Clerk2_Expanded2
+	goto VerdanturfTown_Mart_EventScript_Clerk2_1
+
+
+	.align 2
+VerdanturfTown_Mart_Pokemart_Clerk2:
+	.2byte ITEM_BUG_GEM
+	.2byte ITEM_FAIRY_GEM
+	.2byte ITEM_SILVER_POWDER
+	.2byte ITEM_FAIRY_FEATHER
+	.2byte ITEM_WHIPPED_DREAM
+	.2byte ITEM_STRAWBERRY_SWEET
+	.2byte ITEM_LOVE_SWEET
+	.2byte ITEM_BERRY_SWEET
+	.2byte ITEM_CLOVER_SWEET
+	.2byte ITEM_FLOWER_SWEET
+	.2byte ITEM_STAR_SWEET
+	.2byte ITEM_RIBBON_SWEET
+	.2byte ITEM_FLAME_ORB
+	.2byte ITEM_TOXIC_ORB
+	.2byte ITEM_LIFE_ORB
+	.2byte ITEM_NONE
+
+	.align 2
+VerdanturfTown_Mart_Pokemart_Clerk2_Expanded:
+	.2byte ITEM_GARDEVOIRITE
+	.2byte ITEM_HERACRONITE
+	.2byte ITEM_BEEDRILLITE
+	.2byte ITEM_GALLADITE
+	.2byte ITEM_BUGINIUM_Z
+	.2byte ITEM_FAIRIUM_Z
+	.2byte ITEM_BUG_GEM
+	.2byte ITEM_FAIRY_GEM
+	.2byte ITEM_SILVER_POWDER
+	.2byte ITEM_FAIRY_FEATHER
+	.2byte ITEM_WHIPPED_DREAM
+	.2byte ITEM_STRAWBERRY_SWEET
+	.2byte ITEM_LOVE_SWEET
+	.2byte ITEM_BERRY_SWEET
+	.2byte ITEM_CLOVER_SWEET
+	.2byte ITEM_FLOWER_SWEET
+	.2byte ITEM_STAR_SWEET
+	.2byte ITEM_RIBBON_SWEET
+	.2byte ITEM_FLAME_ORB
+	.2byte ITEM_TOXIC_ORB
+	.2byte ITEM_LIFE_ORB
+	.2byte ITEM_NONE
+
+	.align 2
+VerdanturfTown_Mart_Pokemart_Clerk2_Expanded2:
+	.2byte ITEM_BUG_TERA_SHARD
+	.2byte ITEM_FAIRY_TERA_SHARD
+	.2byte ITEM_GARDEVOIRITE
+	.2byte ITEM_HERACRONITE
+	.2byte ITEM_BEEDRILLITE
+	.2byte ITEM_GALLADITE
+	.2byte ITEM_BUGINIUM_Z
+	.2byte ITEM_FAIRIUM_Z
+	.2byte ITEM_BUG_GEM
+	.2byte ITEM_FAIRY_GEM
+	.2byte ITEM_SILVER_POWDER
+	.2byte ITEM_FAIRY_FEATHER
+	.2byte ITEM_WHIPPED_DREAM
+	.2byte ITEM_STRAWBERRY_SWEET
+	.2byte ITEM_LOVE_SWEET
+	.2byte ITEM_BERRY_SWEET
+	.2byte ITEM_CLOVER_SWEET
+	.2byte ITEM_FLOWER_SWEET
+	.2byte ITEM_STAR_SWEET
+	.2byte ITEM_RIBBON_SWEET
+	.2byte ITEM_FLAME_ORB
+	.2byte ITEM_TOXIC_ORB
+	.2byte ITEM_LIFE_ORB
+	.2byte ITEM_NONE
+
+VerdanturfTown_Mart_EventScript_Clerk2_Text_0:
+	.string "I'm afraid we are all out of stock at the\n"
+	.string "moment, sorry!$"

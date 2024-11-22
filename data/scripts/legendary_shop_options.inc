@@ -1,0 +1,1978 @@
+Auto_EventScript_Legendary_Shop_Controls::
+	msgbox Auto_EventScript_Legendary_Shop_Controls_Text_0
+	goto Auto_EventScript_Legendary_Shop_Page1
+	return
+
+
+Auto_EventScript_Legendary_Shop_Page1::
+	multichoice2 0, 0, Auto_Text_Legendary_Shop_Page1
+	switch VAR_RESULT
+	case 0, Auto_EventScript_Legendary_Shop_Page1_2
+	case 1, Auto_EventScript_Legendary_Shop_Page1_3
+	case 2, Auto_EventScript_Legendary_Shop_Page1_4
+	case 3, Auto_EventScript_Legendary_Shop_Page1_5
+	case 4, Auto_EventScript_Legendary_Shop_Page1_6
+	case MULTI_L_PRESSED, Auto_EventScript_Legendary_Shop_Page1_7
+	case MULTI_R_PRESSED, Auto_EventScript_Legendary_Shop_Page1_8
+	goto Auto_EventScript_Legendary_Shop_End
+	return
+
+Auto_EventScript_Legendary_Shop_Page1_2:
+	goto Auto_EventScript_Legendary_Shop_Bug_Page1
+	return
+
+Auto_EventScript_Legendary_Shop_Page1_3:
+	goto Auto_EventScript_Legendary_Shop_Dark_Page1
+	return
+
+Auto_EventScript_Legendary_Shop_Page1_4:
+	goto Auto_EventScript_Legendary_Shop_Dragon_Page1
+	return
+
+Auto_EventScript_Legendary_Shop_Page1_5:
+	goto Auto_EventScript_Legendary_Shop_Electric_Page1
+	return
+
+Auto_EventScript_Legendary_Shop_Page1_6:
+	goto Auto_EventScript_Legendary_Shop_Fairy_Page1
+	return
+
+Auto_EventScript_Legendary_Shop_Page1_7:
+	goto Auto_EventScript_Legendary_Shop_Page4
+	return
+
+Auto_EventScript_Legendary_Shop_Page1_8:
+	goto Auto_EventScript_Legendary_Shop_Page2
+	return
+
+
+Auto_EventScript_Legendary_Shop_Page2::
+	multichoice2 0, 0, Auto_Text_Legendary_Shop_Page2
+	switch VAR_RESULT
+	case 0, Auto_EventScript_Legendary_Shop_Page2_2
+	case 1, Auto_EventScript_Legendary_Shop_Page2_3
+	case 2, Auto_EventScript_Legendary_Shop_Page2_4
+	case 3, Auto_EventScript_Legendary_Shop_Page2_5
+	case 4, Auto_EventScript_Legendary_Shop_Page2_6
+	case MULTI_L_PRESSED, Auto_EventScript_Legendary_Shop_Page2_7
+	case MULTI_R_PRESSED, Auto_EventScript_Legendary_Shop_Page2_8
+	goto Auto_EventScript_Legendary_Shop_End
+	return
+
+Auto_EventScript_Legendary_Shop_Page2_2:
+	goto Auto_EventScript_Legendary_Shop_Fighting_Page1
+	return
+
+Auto_EventScript_Legendary_Shop_Page2_3:
+	goto Auto_EventScript_Legendary_Shop_Fire_Page1
+	return
+
+Auto_EventScript_Legendary_Shop_Page2_4:
+	goto Auto_EventScript_Legendary_Shop_Flying_Page1
+	return
+
+Auto_EventScript_Legendary_Shop_Page2_5:
+	goto Auto_EventScript_Legendary_Shop_Ghost_Page1
+	return
+
+Auto_EventScript_Legendary_Shop_Page2_6:
+	goto Auto_EventScript_Legendary_Shop_Grass_Page1
+	return
+
+Auto_EventScript_Legendary_Shop_Page2_7:
+	goto Auto_EventScript_Legendary_Shop_Page1
+	return
+
+Auto_EventScript_Legendary_Shop_Page2_8:
+	goto Auto_EventScript_Legendary_Shop_Page3
+	return
+
+
+Auto_EventScript_Legendary_Shop_Page3::
+	multichoice2 0, 0, Auto_Text_Legendary_Shop_Page3
+	switch VAR_RESULT
+	case 0, Auto_EventScript_Legendary_Shop_Page3_2
+	case 1, Auto_EventScript_Legendary_Shop_Page3_3
+	case 2, Auto_EventScript_Legendary_Shop_Page3_4
+	case 3, Auto_EventScript_Legendary_Shop_Page3_5
+	case 4, Auto_EventScript_Legendary_Shop_Page3_6
+	case MULTI_L_PRESSED, Auto_EventScript_Legendary_Shop_Page3_7
+	case MULTI_R_PRESSED, Auto_EventScript_Legendary_Shop_Page3_8
+	goto Auto_EventScript_Legendary_Shop_End
+	return
+
+Auto_EventScript_Legendary_Shop_Page3_2:
+	goto Auto_EventScript_Legendary_Shop_Ground_Page1
+	return
+
+Auto_EventScript_Legendary_Shop_Page3_3:
+	goto Auto_EventScript_Legendary_Shop_Ice_Page1
+	return
+
+Auto_EventScript_Legendary_Shop_Page3_4:
+	goto Auto_EventScript_Legendary_Shop_Normal_Page1
+	return
+
+Auto_EventScript_Legendary_Shop_Page3_5:
+	goto Auto_EventScript_Legendary_Shop_Poison_Page1
+	return
+
+Auto_EventScript_Legendary_Shop_Page3_6:
+	goto Auto_EventScript_Legendary_Shop_Psychic_Page1
+	return
+
+Auto_EventScript_Legendary_Shop_Page3_7:
+	goto Auto_EventScript_Legendary_Shop_Page2
+	return
+
+Auto_EventScript_Legendary_Shop_Page3_8:
+	goto Auto_EventScript_Legendary_Shop_Page4
+	return
+
+
+Auto_EventScript_Legendary_Shop_Page4::
+	multichoice2 0, 0, Auto_Text_Legendary_Shop_Page4
+	switch VAR_RESULT
+	case 0, Auto_EventScript_Legendary_Shop_Page4_2
+	case 1, Auto_EventScript_Legendary_Shop_Page4_3
+	case 2, Auto_EventScript_Legendary_Shop_Page4_4
+	case MULTI_L_PRESSED, Auto_EventScript_Legendary_Shop_Page4_5
+	case MULTI_R_PRESSED, Auto_EventScript_Legendary_Shop_Page4_6
+	goto Auto_EventScript_Legendary_Shop_End
+	return
+
+Auto_EventScript_Legendary_Shop_Page4_2:
+	goto Auto_EventScript_Legendary_Shop_Rock_Page1
+	return
+
+Auto_EventScript_Legendary_Shop_Page4_3:
+	goto Auto_EventScript_Legendary_Shop_Steel_Page1
+	return
+
+Auto_EventScript_Legendary_Shop_Page4_4:
+	goto Auto_EventScript_Legendary_Shop_Water_Page1
+	return
+
+Auto_EventScript_Legendary_Shop_Page4_5:
+	goto Auto_EventScript_Legendary_Shop_Page3
+	return
+
+Auto_EventScript_Legendary_Shop_Page4_6:
+	goto Auto_EventScript_Legendary_Shop_Page1
+	return
+
+
+Auto_EventScript_Legendary_Shop_Rock_Page1::
+	multichoice2 0, 0, Auto_Text_Legendary_Shop_Rock_Page1
+	switch VAR_RESULT
+	case 0, Auto_EventScript_Legendary_Shop_Rock_Page1_2
+	case 1, Auto_EventScript_Legendary_Shop_Rock_Page1_3
+	case 2, Auto_EventScript_Legendary_Shop_Rock_Page1_4
+	case 3, Auto_EventScript_Legendary_Shop_Rock_Page1_5
+	case 4, Auto_EventScript_Legendary_Shop_Rock_Page1_6
+	case MULTI_L_PRESSED, Auto_EventScript_Legendary_Shop_Rock_Page1_7
+	case MULTI_R_PRESSED, Auto_EventScript_Legendary_Shop_Rock_Page1_8
+	goto Auto_EventScript_Legendary_Shop_Page4
+	return
+
+Auto_EventScript_Legendary_Shop_Rock_Page1_2:
+	givemon SPECIES_DIANCIE, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Rock_Page1_3:
+	givemon SPECIES_NIHILEGO, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Rock_Page1_4:
+	givemon SPECIES_REGIROCK, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Rock_Page1_5:
+	givemon SPECIES_STAKATAKA, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Rock_Page1_6:
+	givemon SPECIES_TERRAKION, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Rock_Page1_7:
+	goto Auto_EventScript_Legendary_Shop_Rock_Page1
+	return
+
+Auto_EventScript_Legendary_Shop_Rock_Page1_8:
+	goto Auto_EventScript_Legendary_Shop_Rock_Page1
+	return
+
+
+Auto_EventScript_Legendary_Shop_Steel_Page1::
+	multichoice2 0, 0, Auto_Text_Legendary_Shop_Steel_Page1
+	switch VAR_RESULT
+	case 0, Auto_EventScript_Legendary_Shop_Steel_Page1_2
+	case 1, Auto_EventScript_Legendary_Shop_Steel_Page1_3
+	case 2, Auto_EventScript_Legendary_Shop_Steel_Page1_4
+	case 3, Auto_EventScript_Legendary_Shop_Steel_Page1_5
+	case 4, Auto_EventScript_Legendary_Shop_Steel_Page1_6
+	case MULTI_L_PRESSED, Auto_EventScript_Legendary_Shop_Steel_Page1_7
+	case MULTI_R_PRESSED, Auto_EventScript_Legendary_Shop_Steel_Page1_8
+	goto Auto_EventScript_Legendary_Shop_Page4
+	return
+
+Auto_EventScript_Legendary_Shop_Steel_Page1_2:
+	givemon SPECIES_CELESTEELA, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Steel_Page1_3:
+	givemon SPECIES_COBALION, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Steel_Page1_4:
+	givemon SPECIES_DIALGA, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Steel_Page1_5:
+	givemon SPECIES_GENESECT, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Steel_Page1_6:
+	givemon SPECIES_HEATRAN, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Steel_Page1_7:
+	goto Auto_EventScript_Legendary_Shop_Steel_Page3
+	return
+
+Auto_EventScript_Legendary_Shop_Steel_Page1_8:
+	goto Auto_EventScript_Legendary_Shop_Steel_Page2
+	return
+
+
+Auto_EventScript_Legendary_Shop_Steel_Page2::
+	multichoice2 0, 0, Auto_Text_Legendary_Shop_Steel_Page2
+	switch VAR_RESULT
+	case 0, Auto_EventScript_Legendary_Shop_Steel_Page2_2
+	case 1, Auto_EventScript_Legendary_Shop_Steel_Page2_3
+	case 2, Auto_EventScript_Legendary_Shop_Steel_Page2_4
+	case 3, Auto_EventScript_Legendary_Shop_Steel_Page2_5
+	case 4, Auto_EventScript_Legendary_Shop_Steel_Page2_6
+	case MULTI_L_PRESSED, Auto_EventScript_Legendary_Shop_Steel_Page2_7
+	case MULTI_R_PRESSED, Auto_EventScript_Legendary_Shop_Steel_Page2_8
+	goto Auto_EventScript_Legendary_Shop_Page4
+	return
+
+Auto_EventScript_Legendary_Shop_Steel_Page2_2:
+	givemon SPECIES_JIRACHI, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Steel_Page2_3:
+	givemon SPECIES_KARTANA, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Steel_Page2_4:
+	givemon SPECIES_MAGEARNA, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Steel_Page2_5:
+	givemon SPECIES_MELMETAL, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Steel_Page2_6:
+	givemon SPECIES_REGISTEEL, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Steel_Page2_7:
+	goto Auto_EventScript_Legendary_Shop_Steel_Page1
+	return
+
+Auto_EventScript_Legendary_Shop_Steel_Page2_8:
+	goto Auto_EventScript_Legendary_Shop_Steel_Page3
+	return
+
+
+Auto_EventScript_Legendary_Shop_Steel_Page3::
+	multichoice2 0, 0, Auto_Text_Legendary_Shop_Steel_Page3
+	switch VAR_RESULT
+	case 0, Auto_EventScript_Legendary_Shop_Steel_Page3_2
+	case MULTI_L_PRESSED, Auto_EventScript_Legendary_Shop_Steel_Page3_3
+	case MULTI_R_PRESSED, Auto_EventScript_Legendary_Shop_Steel_Page3_4
+	goto Auto_EventScript_Legendary_Shop_Page4
+	return
+
+Auto_EventScript_Legendary_Shop_Steel_Page3_2:
+	givemon SPECIES_STAKATAKA, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Steel_Page3_3:
+	goto Auto_EventScript_Legendary_Shop_Steel_Page2
+	return
+
+Auto_EventScript_Legendary_Shop_Steel_Page3_4:
+	goto Auto_EventScript_Legendary_Shop_Steel_Page1
+	return
+
+
+Auto_EventScript_Legendary_Shop_Water_Page1::
+	multichoice2 0, 0, Auto_Text_Legendary_Shop_Water_Page1
+	switch VAR_RESULT
+	case 0, Auto_EventScript_Legendary_Shop_Water_Page1_2
+	case 1, Auto_EventScript_Legendary_Shop_Water_Page1_3
+	case 2, Auto_EventScript_Legendary_Shop_Water_Page1_4
+	case 3, Auto_EventScript_Legendary_Shop_Water_Page1_5
+	case 4, Auto_EventScript_Legendary_Shop_Water_Page1_6
+	case MULTI_L_PRESSED, Auto_EventScript_Legendary_Shop_Water_Page1_7
+	case MULTI_R_PRESSED, Auto_EventScript_Legendary_Shop_Water_Page1_8
+	goto Auto_EventScript_Legendary_Shop_Page4
+	return
+
+Auto_EventScript_Legendary_Shop_Water_Page1_2:
+	givemon SPECIES_KELDEO, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Water_Page1_3:
+	givemon SPECIES_KYOGRE, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Water_Page1_4:
+	givemon SPECIES_MANAPHY, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Water_Page1_5:
+	givemon SPECIES_PALKIA, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Water_Page1_6:
+	givemon SPECIES_PHIONE, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Water_Page1_7:
+	goto Auto_EventScript_Legendary_Shop_Water_Page2
+	return
+
+Auto_EventScript_Legendary_Shop_Water_Page1_8:
+	goto Auto_EventScript_Legendary_Shop_Water_Page2
+	return
+
+
+Auto_EventScript_Legendary_Shop_Water_Page2::
+	multichoice2 0, 0, Auto_Text_Legendary_Shop_Water_Page2
+	switch VAR_RESULT
+	case 0, Auto_EventScript_Legendary_Shop_Water_Page2_2
+	case 1, Auto_EventScript_Legendary_Shop_Water_Page2_3
+	case 2, Auto_EventScript_Legendary_Shop_Water_Page2_4
+	case MULTI_L_PRESSED, Auto_EventScript_Legendary_Shop_Water_Page2_5
+	case MULTI_R_PRESSED, Auto_EventScript_Legendary_Shop_Water_Page2_6
+	goto Auto_EventScript_Legendary_Shop_Page4
+	return
+
+Auto_EventScript_Legendary_Shop_Water_Page2_2:
+	givemon SPECIES_SUICUNE, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Water_Page2_3:
+	givemon SPECIES_TAPU_FINI, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Water_Page2_4:
+	givemon SPECIES_VOLCANION, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Water_Page2_5:
+	goto Auto_EventScript_Legendary_Shop_Water_Page1
+	return
+
+Auto_EventScript_Legendary_Shop_Water_Page2_6:
+	goto Auto_EventScript_Legendary_Shop_Water_Page1
+	return
+
+
+Auto_EventScript_Legendary_Shop_Ground_Page1::
+	multichoice2 0, 0, Auto_Text_Legendary_Shop_Ground_Page1
+	switch VAR_RESULT
+	case 0, Auto_EventScript_Legendary_Shop_Ground_Page1_2
+	case 1, Auto_EventScript_Legendary_Shop_Ground_Page1_3
+	case 2, Auto_EventScript_Legendary_Shop_Ground_Page1_4
+	case 3, Auto_EventScript_Legendary_Shop_Ground_Page1_5
+	case MULTI_L_PRESSED, Auto_EventScript_Legendary_Shop_Ground_Page1_6
+	case MULTI_R_PRESSED, Auto_EventScript_Legendary_Shop_Ground_Page1_7
+	goto Auto_EventScript_Legendary_Shop_Page3
+	return
+
+Auto_EventScript_Legendary_Shop_Ground_Page1_2:
+	givemon SPECIES_GROUDON, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Ground_Page1_3:
+	givemon SPECIES_LANDORUS, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Ground_Page1_4:
+	givemon SPECIES_TING_LU, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Ground_Page1_5:
+	givemon SPECIES_ZYGARDE, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Ground_Page1_6:
+	goto Auto_EventScript_Legendary_Shop_Ground_Page1
+	return
+
+Auto_EventScript_Legendary_Shop_Ground_Page1_7:
+	goto Auto_EventScript_Legendary_Shop_Ground_Page1
+	return
+
+
+Auto_EventScript_Legendary_Shop_Ice_Page1::
+	multichoice2 0, 0, Auto_Text_Legendary_Shop_Ice_Page1
+	switch VAR_RESULT
+	case 0, Auto_EventScript_Legendary_Shop_Ice_Page1_2
+	case 1, Auto_EventScript_Legendary_Shop_Ice_Page1_3
+	case 2, Auto_EventScript_Legendary_Shop_Ice_Page1_4
+	case 3, Auto_EventScript_Legendary_Shop_Ice_Page1_5
+	case 4, Auto_EventScript_Legendary_Shop_Ice_Page1_6
+	case MULTI_L_PRESSED, Auto_EventScript_Legendary_Shop_Ice_Page1_7
+	case MULTI_R_PRESSED, Auto_EventScript_Legendary_Shop_Ice_Page1_8
+	goto Auto_EventScript_Legendary_Shop_Page3
+	return
+
+Auto_EventScript_Legendary_Shop_Ice_Page1_2:
+	givemon SPECIES_ARTICUNO, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Ice_Page1_3:
+	givemon SPECIES_CHIEN_PAO, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Ice_Page1_4:
+	givemon SPECIES_GLASTRIER, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Ice_Page1_5:
+	givemon SPECIES_KYUREM, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Ice_Page1_6:
+	givemon SPECIES_REGICE, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Ice_Page1_7:
+	goto Auto_EventScript_Legendary_Shop_Ice_Page1
+	return
+
+Auto_EventScript_Legendary_Shop_Ice_Page1_8:
+	goto Auto_EventScript_Legendary_Shop_Ice_Page1
+	return
+
+
+Auto_EventScript_Legendary_Shop_Normal_Page1::
+	multichoice2 0, 0, Auto_Text_Legendary_Shop_Normal_Page1
+	switch VAR_RESULT
+	case 0, Auto_EventScript_Legendary_Shop_Normal_Page1_2
+	case 1, Auto_EventScript_Legendary_Shop_Normal_Page1_3
+	case 2, Auto_EventScript_Legendary_Shop_Normal_Page1_4
+	case 3, Auto_EventScript_Legendary_Shop_Normal_Page1_5
+	case 4, Auto_EventScript_Legendary_Shop_Normal_Page1_6
+	case MULTI_L_PRESSED, Auto_EventScript_Legendary_Shop_Normal_Page1_7
+	case MULTI_R_PRESSED, Auto_EventScript_Legendary_Shop_Normal_Page1_8
+	goto Auto_EventScript_Legendary_Shop_Page3
+	return
+
+Auto_EventScript_Legendary_Shop_Normal_Page1_2:
+	givemon SPECIES_ARCEUS, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Normal_Page1_3:
+	givemon SPECIES_MELOETTA, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Normal_Page1_4:
+	givemon SPECIES_REGIGIGAS, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Normal_Page1_5:
+	givemon SPECIES_TERAPAGOS, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Normal_Page1_6:
+	givemon SPECIES_TYPE_NULL, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Normal_Page1_7:
+	goto Auto_EventScript_Legendary_Shop_Normal_Page1
+	return
+
+Auto_EventScript_Legendary_Shop_Normal_Page1_8:
+	goto Auto_EventScript_Legendary_Shop_Normal_Page1
+	return
+
+
+Auto_EventScript_Legendary_Shop_Poison_Page1::
+	multichoice2 0, 0, Auto_Text_Legendary_Shop_Poison_Page1
+	switch VAR_RESULT
+	case 0, Auto_EventScript_Legendary_Shop_Poison_Page1_2
+	case 1, Auto_EventScript_Legendary_Shop_Poison_Page1_3
+	case 2, Auto_EventScript_Legendary_Shop_Poison_Page1_4
+	case 3, Auto_EventScript_Legendary_Shop_Poison_Page1_5
+	case MULTI_L_PRESSED, Auto_EventScript_Legendary_Shop_Poison_Page1_6
+	case MULTI_R_PRESSED, Auto_EventScript_Legendary_Shop_Poison_Page1_7
+	goto Auto_EventScript_Legendary_Shop_Page3
+	return
+
+Auto_EventScript_Legendary_Shop_Poison_Page1_2:
+	givemon SPECIES_ETERNATUS, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Poison_Page1_3:
+	givemon SPECIES_NIHILEGO, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Poison_Page1_4:
+	givemon SPECIES_PECHARUNT, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Poison_Page1_5:
+	givemon SPECIES_POIPOLE, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Poison_Page1_6:
+	goto Auto_EventScript_Legendary_Shop_Poison_Page1
+	return
+
+Auto_EventScript_Legendary_Shop_Poison_Page1_7:
+	goto Auto_EventScript_Legendary_Shop_Poison_Page1
+	return
+
+
+Auto_EventScript_Legendary_Shop_Psychic_Page1::
+	multichoice2 0, 0, Auto_Text_Legendary_Shop_Psychic_Page1
+	switch VAR_RESULT
+	case 0, Auto_EventScript_Legendary_Shop_Psychic_Page1_2
+	case 1, Auto_EventScript_Legendary_Shop_Psychic_Page1_3
+	case 2, Auto_EventScript_Legendary_Shop_Psychic_Page1_4
+	case 3, Auto_EventScript_Legendary_Shop_Psychic_Page1_5
+	case 4, Auto_EventScript_Legendary_Shop_Psychic_Page1_6
+	case MULTI_L_PRESSED, Auto_EventScript_Legendary_Shop_Psychic_Page1_7
+	case MULTI_R_PRESSED, Auto_EventScript_Legendary_Shop_Psychic_Page1_8
+	goto Auto_EventScript_Legendary_Shop_Page3
+	return
+
+Auto_EventScript_Legendary_Shop_Psychic_Page1_2:
+	givemon SPECIES_AZELF, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Psychic_Page1_3:
+	givemon SPECIES_CALYREX, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Psychic_Page1_4:
+	givemon SPECIES_CELEBI, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Psychic_Page1_5:
+	givemon SPECIES_CRESSELIA, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Psychic_Page1_6:
+	givemon SPECIES_DEOXYS, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Psychic_Page1_7:
+	goto Auto_EventScript_Legendary_Shop_Psychic_Page4
+	return
+
+Auto_EventScript_Legendary_Shop_Psychic_Page1_8:
+	goto Auto_EventScript_Legendary_Shop_Psychic_Page2
+	return
+
+
+Auto_EventScript_Legendary_Shop_Psychic_Page2::
+	multichoice2 0, 0, Auto_Text_Legendary_Shop_Psychic_Page2
+	switch VAR_RESULT
+	case 0, Auto_EventScript_Legendary_Shop_Psychic_Page2_2
+	case 1, Auto_EventScript_Legendary_Shop_Psychic_Page2_3
+	case 2, Auto_EventScript_Legendary_Shop_Psychic_Page2_4
+	case 3, Auto_EventScript_Legendary_Shop_Psychic_Page2_5
+	case 4, Auto_EventScript_Legendary_Shop_Psychic_Page2_6
+	case MULTI_L_PRESSED, Auto_EventScript_Legendary_Shop_Psychic_Page2_7
+	case MULTI_R_PRESSED, Auto_EventScript_Legendary_Shop_Psychic_Page2_8
+	goto Auto_EventScript_Legendary_Shop_Page3
+	return
+
+Auto_EventScript_Legendary_Shop_Psychic_Page2_2:
+	givemon SPECIES_HOOPA, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Psychic_Page2_3:
+	givemon SPECIES_JIRACHI, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Psychic_Page2_4:
+	givemon SPECIES_LATIAS, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Psychic_Page2_5:
+	givemon SPECIES_LATIOS, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Psychic_Page2_6:
+	givemon SPECIES_LUGIA, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Psychic_Page2_7:
+	goto Auto_EventScript_Legendary_Shop_Psychic_Page1
+	return
+
+Auto_EventScript_Legendary_Shop_Psychic_Page2_8:
+	goto Auto_EventScript_Legendary_Shop_Psychic_Page3
+	return
+
+
+Auto_EventScript_Legendary_Shop_Psychic_Page3::
+	multichoice2 0, 0, Auto_Text_Legendary_Shop_Psychic_Page3
+	switch VAR_RESULT
+	case 0, Auto_EventScript_Legendary_Shop_Psychic_Page3_2
+	case 1, Auto_EventScript_Legendary_Shop_Psychic_Page3_3
+	case 2, Auto_EventScript_Legendary_Shop_Psychic_Page3_4
+	case 3, Auto_EventScript_Legendary_Shop_Psychic_Page3_5
+	case 4, Auto_EventScript_Legendary_Shop_Psychic_Page3_6
+	case MULTI_L_PRESSED, Auto_EventScript_Legendary_Shop_Psychic_Page3_7
+	case MULTI_R_PRESSED, Auto_EventScript_Legendary_Shop_Psychic_Page3_8
+	goto Auto_EventScript_Legendary_Shop_Page3
+	return
+
+Auto_EventScript_Legendary_Shop_Psychic_Page3_2:
+	givemon SPECIES_MELOETTA, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Psychic_Page3_3:
+	givemon SPECIES_MESPRIT, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Psychic_Page3_4:
+	givemon SPECIES_MEW, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Psychic_Page3_5:
+	givemon SPECIES_MEWTWO, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Psychic_Page3_6:
+	givemon SPECIES_NECROZMA, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Psychic_Page3_7:
+	goto Auto_EventScript_Legendary_Shop_Psychic_Page2
+	return
+
+Auto_EventScript_Legendary_Shop_Psychic_Page3_8:
+	goto Auto_EventScript_Legendary_Shop_Psychic_Page4
+	return
+
+
+Auto_EventScript_Legendary_Shop_Psychic_Page4::
+	multichoice2 0, 0, Auto_Text_Legendary_Shop_Psychic_Page4
+	switch VAR_RESULT
+	case 0, Auto_EventScript_Legendary_Shop_Psychic_Page4_2
+	case 1, Auto_EventScript_Legendary_Shop_Psychic_Page4_3
+	case 2, Auto_EventScript_Legendary_Shop_Psychic_Page4_4
+	case MULTI_L_PRESSED, Auto_EventScript_Legendary_Shop_Psychic_Page4_5
+	case MULTI_R_PRESSED, Auto_EventScript_Legendary_Shop_Psychic_Page4_6
+	goto Auto_EventScript_Legendary_Shop_Page3
+	return
+
+Auto_EventScript_Legendary_Shop_Psychic_Page4_2:
+	givemon SPECIES_TAPU_LELE, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Psychic_Page4_3:
+	givemon SPECIES_UXIE, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Psychic_Page4_4:
+	givemon SPECIES_VICTINI, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Psychic_Page4_5:
+	goto Auto_EventScript_Legendary_Shop_Psychic_Page3
+	return
+
+Auto_EventScript_Legendary_Shop_Psychic_Page4_6:
+	goto Auto_EventScript_Legendary_Shop_Psychic_Page1
+	return
+
+
+Auto_EventScript_Legendary_Shop_Fighting_Page1::
+	multichoice2 0, 0, Auto_Text_Legendary_Shop_Fighting_Page1
+	switch VAR_RESULT
+	case 0, Auto_EventScript_Legendary_Shop_Fighting_Page1_2
+	case 1, Auto_EventScript_Legendary_Shop_Fighting_Page1_3
+	case 2, Auto_EventScript_Legendary_Shop_Fighting_Page1_4
+	case 3, Auto_EventScript_Legendary_Shop_Fighting_Page1_5
+	case 4, Auto_EventScript_Legendary_Shop_Fighting_Page1_6
+	case MULTI_L_PRESSED, Auto_EventScript_Legendary_Shop_Fighting_Page1_7
+	case MULTI_R_PRESSED, Auto_EventScript_Legendary_Shop_Fighting_Page1_8
+	goto Auto_EventScript_Legendary_Shop_Page2
+	return
+
+Auto_EventScript_Legendary_Shop_Fighting_Page1_2:
+	givemon SPECIES_BUZZWOLE, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Fighting_Page1_3:
+	givemon SPECIES_COBALION, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Fighting_Page1_4:
+	givemon SPECIES_KELDEO, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Fighting_Page1_5:
+	givemon SPECIES_KORAIDON, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Fighting_Page1_6:
+	givemon SPECIES_KUBFU, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Fighting_Page1_7:
+	goto Auto_EventScript_Legendary_Shop_Fighting_Page2
+	return
+
+Auto_EventScript_Legendary_Shop_Fighting_Page1_8:
+	goto Auto_EventScript_Legendary_Shop_Fighting_Page2
+	return
+
+
+Auto_EventScript_Legendary_Shop_Fighting_Page2::
+	multichoice2 0, 0, Auto_Text_Legendary_Shop_Fighting_Page2
+	switch VAR_RESULT
+	case 0, Auto_EventScript_Legendary_Shop_Fighting_Page2_2
+	case 1, Auto_EventScript_Legendary_Shop_Fighting_Page2_3
+	case 2, Auto_EventScript_Legendary_Shop_Fighting_Page2_4
+	case 3, Auto_EventScript_Legendary_Shop_Fighting_Page2_5
+	case 4, Auto_EventScript_Legendary_Shop_Fighting_Page2_6
+	case MULTI_L_PRESSED, Auto_EventScript_Legendary_Shop_Fighting_Page2_7
+	case MULTI_R_PRESSED, Auto_EventScript_Legendary_Shop_Fighting_Page2_8
+	goto Auto_EventScript_Legendary_Shop_Page2
+	return
+
+Auto_EventScript_Legendary_Shop_Fighting_Page2_2:
+	givemon SPECIES_MARSHADOW, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Fighting_Page2_3:
+	givemon SPECIES_PHEROMOSA, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Fighting_Page2_4:
+	givemon SPECIES_TERRAKION, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Fighting_Page2_5:
+	givemon SPECIES_VIRIZION, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Fighting_Page2_6:
+	givemon SPECIES_ZAMAZENTA, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Fighting_Page2_7:
+	goto Auto_EventScript_Legendary_Shop_Fighting_Page1
+	return
+
+Auto_EventScript_Legendary_Shop_Fighting_Page2_8:
+	goto Auto_EventScript_Legendary_Shop_Fighting_Page1
+	return
+
+
+Auto_EventScript_Legendary_Shop_Fire_Page1::
+	multichoice2 0, 0, Auto_Text_Legendary_Shop_Fire_Page1
+	switch VAR_RESULT
+	case 0, Auto_EventScript_Legendary_Shop_Fire_Page1_2
+	case 1, Auto_EventScript_Legendary_Shop_Fire_Page1_3
+	case 2, Auto_EventScript_Legendary_Shop_Fire_Page1_4
+	case 3, Auto_EventScript_Legendary_Shop_Fire_Page1_5
+	case 4, Auto_EventScript_Legendary_Shop_Fire_Page1_6
+	case MULTI_L_PRESSED, Auto_EventScript_Legendary_Shop_Fire_Page1_7
+	case MULTI_R_PRESSED, Auto_EventScript_Legendary_Shop_Fire_Page1_8
+	goto Auto_EventScript_Legendary_Shop_Page2
+	return
+
+Auto_EventScript_Legendary_Shop_Fire_Page1_2:
+	givemon SPECIES_BLACEPHALON, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Fire_Page1_3:
+	givemon SPECIES_CHI_YU, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Fire_Page1_4:
+	givemon SPECIES_ENTEI, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Fire_Page1_5:
+	givemon SPECIES_HEATRAN, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Fire_Page1_6:
+	givemon SPECIES_HO_OH, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Fire_Page1_7:
+	goto Auto_EventScript_Legendary_Shop_Fire_Page2
+	return
+
+Auto_EventScript_Legendary_Shop_Fire_Page1_8:
+	goto Auto_EventScript_Legendary_Shop_Fire_Page2
+	return
+
+
+Auto_EventScript_Legendary_Shop_Fire_Page2::
+	multichoice2 0, 0, Auto_Text_Legendary_Shop_Fire_Page2
+	switch VAR_RESULT
+	case 0, Auto_EventScript_Legendary_Shop_Fire_Page2_2
+	case 1, Auto_EventScript_Legendary_Shop_Fire_Page2_3
+	case 2, Auto_EventScript_Legendary_Shop_Fire_Page2_4
+	case 3, Auto_EventScript_Legendary_Shop_Fire_Page2_5
+	case MULTI_L_PRESSED, Auto_EventScript_Legendary_Shop_Fire_Page2_6
+	case MULTI_R_PRESSED, Auto_EventScript_Legendary_Shop_Fire_Page2_7
+	goto Auto_EventScript_Legendary_Shop_Page2
+	return
+
+Auto_EventScript_Legendary_Shop_Fire_Page2_2:
+	givemon SPECIES_MOLTRES, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Fire_Page2_3:
+	givemon SPECIES_RESHIRAM, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Fire_Page2_4:
+	givemon SPECIES_VICTINI, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Fire_Page2_5:
+	givemon SPECIES_VOLCANION, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Fire_Page2_6:
+	goto Auto_EventScript_Legendary_Shop_Fire_Page1
+	return
+
+Auto_EventScript_Legendary_Shop_Fire_Page2_7:
+	goto Auto_EventScript_Legendary_Shop_Fire_Page1
+	return
+
+
+Auto_EventScript_Legendary_Shop_Flying_Page1::
+	multichoice2 0, 0, Auto_Text_Legendary_Shop_Flying_Page1
+	switch VAR_RESULT
+	case 0, Auto_EventScript_Legendary_Shop_Flying_Page1_2
+	case 1, Auto_EventScript_Legendary_Shop_Flying_Page1_3
+	case 2, Auto_EventScript_Legendary_Shop_Flying_Page1_4
+	case 3, Auto_EventScript_Legendary_Shop_Flying_Page1_5
+	case 4, Auto_EventScript_Legendary_Shop_Flying_Page1_6
+	case MULTI_L_PRESSED, Auto_EventScript_Legendary_Shop_Flying_Page1_7
+	case MULTI_R_PRESSED, Auto_EventScript_Legendary_Shop_Flying_Page1_8
+	goto Auto_EventScript_Legendary_Shop_Page2
+	return
+
+Auto_EventScript_Legendary_Shop_Flying_Page1_2:
+	givemon SPECIES_ARTICUNO, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Flying_Page1_3:
+	givemon SPECIES_CELESTEELA, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Flying_Page1_4:
+	givemon SPECIES_ENAMORUS, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Flying_Page1_5:
+	givemon SPECIES_HO_OH, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Flying_Page1_6:
+	givemon SPECIES_LANDORUS, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Flying_Page1_7:
+	goto Auto_EventScript_Legendary_Shop_Flying_Page3
+	return
+
+Auto_EventScript_Legendary_Shop_Flying_Page1_8:
+	goto Auto_EventScript_Legendary_Shop_Flying_Page2
+	return
+
+
+Auto_EventScript_Legendary_Shop_Flying_Page2::
+	multichoice2 0, 0, Auto_Text_Legendary_Shop_Flying_Page2
+	switch VAR_RESULT
+	case 0, Auto_EventScript_Legendary_Shop_Flying_Page2_2
+	case 1, Auto_EventScript_Legendary_Shop_Flying_Page2_3
+	case 2, Auto_EventScript_Legendary_Shop_Flying_Page2_4
+	case 3, Auto_EventScript_Legendary_Shop_Flying_Page2_5
+	case 4, Auto_EventScript_Legendary_Shop_Flying_Page2_6
+	case MULTI_L_PRESSED, Auto_EventScript_Legendary_Shop_Flying_Page2_7
+	case MULTI_R_PRESSED, Auto_EventScript_Legendary_Shop_Flying_Page2_8
+	goto Auto_EventScript_Legendary_Shop_Page2
+	return
+
+Auto_EventScript_Legendary_Shop_Flying_Page2_2:
+	givemon SPECIES_LUGIA, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Flying_Page2_3:
+	givemon SPECIES_MOLTRES, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Flying_Page2_4:
+	givemon SPECIES_RAYQUAZA, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Flying_Page2_5:
+	givemon SPECIES_THUNDURUS, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Flying_Page2_6:
+	givemon SPECIES_TORNADUS, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Flying_Page2_7:
+	goto Auto_EventScript_Legendary_Shop_Flying_Page1
+	return
+
+Auto_EventScript_Legendary_Shop_Flying_Page2_8:
+	goto Auto_EventScript_Legendary_Shop_Flying_Page3
+	return
+
+
+Auto_EventScript_Legendary_Shop_Flying_Page3::
+	multichoice2 0, 0, Auto_Text_Legendary_Shop_Flying_Page3
+	switch VAR_RESULT
+	case 0, Auto_EventScript_Legendary_Shop_Flying_Page3_2
+	case 1, Auto_EventScript_Legendary_Shop_Flying_Page3_3
+	case MULTI_L_PRESSED, Auto_EventScript_Legendary_Shop_Flying_Page3_4
+	case MULTI_R_PRESSED, Auto_EventScript_Legendary_Shop_Flying_Page3_5
+	goto Auto_EventScript_Legendary_Shop_Page2
+	return
+
+Auto_EventScript_Legendary_Shop_Flying_Page3_2:
+	givemon SPECIES_YVELTAL, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Flying_Page3_3:
+	givemon SPECIES_ZAPDOS, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Flying_Page3_4:
+	goto Auto_EventScript_Legendary_Shop_Flying_Page2
+	return
+
+Auto_EventScript_Legendary_Shop_Flying_Page3_5:
+	goto Auto_EventScript_Legendary_Shop_Flying_Page1
+	return
+
+
+Auto_EventScript_Legendary_Shop_Ghost_Page1::
+	multichoice2 0, 0, Auto_Text_Legendary_Shop_Ghost_Page1
+	switch VAR_RESULT
+	case 0, Auto_EventScript_Legendary_Shop_Ghost_Page1_2
+	case 1, Auto_EventScript_Legendary_Shop_Ghost_Page1_3
+	case 2, Auto_EventScript_Legendary_Shop_Ghost_Page1_4
+	case 3, Auto_EventScript_Legendary_Shop_Ghost_Page1_5
+	case 4, Auto_EventScript_Legendary_Shop_Ghost_Page1_6
+	case MULTI_L_PRESSED, Auto_EventScript_Legendary_Shop_Ghost_Page1_7
+	case MULTI_R_PRESSED, Auto_EventScript_Legendary_Shop_Ghost_Page1_8
+	goto Auto_EventScript_Legendary_Shop_Page2
+	return
+
+Auto_EventScript_Legendary_Shop_Ghost_Page1_2:
+	givemon SPECIES_BLACEPHALON, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Ghost_Page1_3:
+	givemon SPECIES_GIRATINA, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Ghost_Page1_4:
+	givemon SPECIES_HOOPA, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Ghost_Page1_5:
+	givemon SPECIES_MARSHADOW, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Ghost_Page1_6:
+	givemon SPECIES_PECHARUNT, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Ghost_Page1_7:
+	goto Auto_EventScript_Legendary_Shop_Ghost_Page2
+	return
+
+Auto_EventScript_Legendary_Shop_Ghost_Page1_8:
+	goto Auto_EventScript_Legendary_Shop_Ghost_Page2
+	return
+
+
+Auto_EventScript_Legendary_Shop_Ghost_Page2::
+	multichoice2 0, 0, Auto_Text_Legendary_Shop_Ghost_Page2
+	switch VAR_RESULT
+	case 0, Auto_EventScript_Legendary_Shop_Ghost_Page2_2
+	case MULTI_L_PRESSED, Auto_EventScript_Legendary_Shop_Ghost_Page2_3
+	case MULTI_R_PRESSED, Auto_EventScript_Legendary_Shop_Ghost_Page2_4
+	goto Auto_EventScript_Legendary_Shop_Page2
+	return
+
+Auto_EventScript_Legendary_Shop_Ghost_Page2_2:
+	givemon SPECIES_SPECTRIER, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Ghost_Page2_3:
+	goto Auto_EventScript_Legendary_Shop_Ghost_Page1
+	return
+
+Auto_EventScript_Legendary_Shop_Ghost_Page2_4:
+	goto Auto_EventScript_Legendary_Shop_Ghost_Page1
+	return
+
+
+Auto_EventScript_Legendary_Shop_Grass_Page1::
+	multichoice2 0, 0, Auto_Text_Legendary_Shop_Grass_Page1
+	switch VAR_RESULT
+	case 0, Auto_EventScript_Legendary_Shop_Grass_Page1_2
+	case 1, Auto_EventScript_Legendary_Shop_Grass_Page1_3
+	case 2, Auto_EventScript_Legendary_Shop_Grass_Page1_4
+	case 3, Auto_EventScript_Legendary_Shop_Grass_Page1_5
+	case 4, Auto_EventScript_Legendary_Shop_Grass_Page1_6
+	case MULTI_L_PRESSED, Auto_EventScript_Legendary_Shop_Grass_Page1_7
+	case MULTI_R_PRESSED, Auto_EventScript_Legendary_Shop_Grass_Page1_8
+	goto Auto_EventScript_Legendary_Shop_Page2
+	return
+
+Auto_EventScript_Legendary_Shop_Grass_Page1_2:
+	givemon SPECIES_CALYREX, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Grass_Page1_3:
+	givemon SPECIES_CELEBI, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Grass_Page1_4:
+	givemon SPECIES_KARTANA, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Grass_Page1_5:
+	givemon SPECIES_SHAYMIN, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Grass_Page1_6:
+	givemon SPECIES_TAPU_BULU, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Grass_Page1_7:
+	goto Auto_EventScript_Legendary_Shop_Grass_Page2
+	return
+
+Auto_EventScript_Legendary_Shop_Grass_Page1_8:
+	goto Auto_EventScript_Legendary_Shop_Grass_Page2
+	return
+
+
+Auto_EventScript_Legendary_Shop_Grass_Page2::
+	multichoice2 0, 0, Auto_Text_Legendary_Shop_Grass_Page2
+	switch VAR_RESULT
+	case 0, Auto_EventScript_Legendary_Shop_Grass_Page2_2
+	case 1, Auto_EventScript_Legendary_Shop_Grass_Page2_3
+	case 2, Auto_EventScript_Legendary_Shop_Grass_Page2_4
+	case MULTI_L_PRESSED, Auto_EventScript_Legendary_Shop_Grass_Page2_5
+	case MULTI_R_PRESSED, Auto_EventScript_Legendary_Shop_Grass_Page2_6
+	goto Auto_EventScript_Legendary_Shop_Page2
+	return
+
+Auto_EventScript_Legendary_Shop_Grass_Page2_2:
+	givemon SPECIES_VIRIZION, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Grass_Page2_3:
+	givemon SPECIES_WO_CHIEN, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Grass_Page2_4:
+	givemon SPECIES_ZARUDE, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Grass_Page2_5:
+	goto Auto_EventScript_Legendary_Shop_Grass_Page1
+	return
+
+Auto_EventScript_Legendary_Shop_Grass_Page2_6:
+	goto Auto_EventScript_Legendary_Shop_Grass_Page1
+	return
+
+
+Auto_EventScript_Legendary_Shop_Bug_Page1::
+	multichoice2 0, 0, Auto_Text_Legendary_Shop_Bug_Page1
+	switch VAR_RESULT
+	case 0, Auto_EventScript_Legendary_Shop_Bug_Page1_2
+	case 1, Auto_EventScript_Legendary_Shop_Bug_Page1_3
+	case 2, Auto_EventScript_Legendary_Shop_Bug_Page1_4
+	case MULTI_L_PRESSED, Auto_EventScript_Legendary_Shop_Bug_Page1_5
+	case MULTI_R_PRESSED, Auto_EventScript_Legendary_Shop_Bug_Page1_6
+	goto Auto_EventScript_Legendary_Shop_Page1
+	return
+
+Auto_EventScript_Legendary_Shop_Bug_Page1_2:
+	givemon SPECIES_BUZZWOLE, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Bug_Page1_3:
+	givemon SPECIES_GENESECT, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Bug_Page1_4:
+	givemon SPECIES_PHEROMOSA, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Bug_Page1_5:
+	goto Auto_EventScript_Legendary_Shop_Bug_Page1
+	return
+
+Auto_EventScript_Legendary_Shop_Bug_Page1_6:
+	goto Auto_EventScript_Legendary_Shop_Bug_Page1
+	return
+
+
+Auto_EventScript_Legendary_Shop_Dark_Page1::
+	multichoice2 0, 0, Auto_Text_Legendary_Shop_Dark_Page1
+	switch VAR_RESULT
+	case 0, Auto_EventScript_Legendary_Shop_Dark_Page1_2
+	case 1, Auto_EventScript_Legendary_Shop_Dark_Page1_3
+	case 2, Auto_EventScript_Legendary_Shop_Dark_Page1_4
+	case 3, Auto_EventScript_Legendary_Shop_Dark_Page1_5
+	case 4, Auto_EventScript_Legendary_Shop_Dark_Page1_6
+	case MULTI_L_PRESSED, Auto_EventScript_Legendary_Shop_Dark_Page1_7
+	case MULTI_R_PRESSED, Auto_EventScript_Legendary_Shop_Dark_Page1_8
+	goto Auto_EventScript_Legendary_Shop_Page1
+	return
+
+Auto_EventScript_Legendary_Shop_Dark_Page1_2:
+	givemon SPECIES_CHI_YU, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Dark_Page1_3:
+	givemon SPECIES_CHIEN_PAO, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Dark_Page1_4:
+	givemon SPECIES_DARKRAI, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Dark_Page1_5:
+	givemon SPECIES_GUZZLORD, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Dark_Page1_6:
+	givemon SPECIES_TING_LU, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Dark_Page1_7:
+	goto Auto_EventScript_Legendary_Shop_Dark_Page2
+	return
+
+Auto_EventScript_Legendary_Shop_Dark_Page1_8:
+	goto Auto_EventScript_Legendary_Shop_Dark_Page2
+	return
+
+
+Auto_EventScript_Legendary_Shop_Dark_Page2::
+	multichoice2 0, 0, Auto_Text_Legendary_Shop_Dark_Page2
+	switch VAR_RESULT
+	case 0, Auto_EventScript_Legendary_Shop_Dark_Page2_2
+	case 1, Auto_EventScript_Legendary_Shop_Dark_Page2_3
+	case 2, Auto_EventScript_Legendary_Shop_Dark_Page2_4
+	case MULTI_L_PRESSED, Auto_EventScript_Legendary_Shop_Dark_Page2_5
+	case MULTI_R_PRESSED, Auto_EventScript_Legendary_Shop_Dark_Page2_6
+	goto Auto_EventScript_Legendary_Shop_Page1
+	return
+
+Auto_EventScript_Legendary_Shop_Dark_Page2_2:
+	givemon SPECIES_WO_CHIEN, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Dark_Page2_3:
+	givemon SPECIES_YVELTAL, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Dark_Page2_4:
+	givemon SPECIES_ZARUDE, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Dark_Page2_5:
+	goto Auto_EventScript_Legendary_Shop_Dark_Page1
+	return
+
+Auto_EventScript_Legendary_Shop_Dark_Page2_6:
+	goto Auto_EventScript_Legendary_Shop_Dark_Page1
+	return
+
+
+Auto_EventScript_Legendary_Shop_Dragon_Page1::
+	multichoice2 0, 0, Auto_Text_Legendary_Shop_Dragon_Page1
+	switch VAR_RESULT
+	case 0, Auto_EventScript_Legendary_Shop_Dragon_Page1_2
+	case 1, Auto_EventScript_Legendary_Shop_Dragon_Page1_3
+	case 2, Auto_EventScript_Legendary_Shop_Dragon_Page1_4
+	case 3, Auto_EventScript_Legendary_Shop_Dragon_Page1_5
+	case 4, Auto_EventScript_Legendary_Shop_Dragon_Page1_6
+	case MULTI_L_PRESSED, Auto_EventScript_Legendary_Shop_Dragon_Page1_7
+	case MULTI_R_PRESSED, Auto_EventScript_Legendary_Shop_Dragon_Page1_8
+	goto Auto_EventScript_Legendary_Shop_Page1
+	return
+
+Auto_EventScript_Legendary_Shop_Dragon_Page1_2:
+	givemon SPECIES_DIALGA, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Dragon_Page1_3:
+	givemon SPECIES_ETERNATUS, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Dragon_Page1_4:
+	givemon SPECIES_GIRATINA, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Dragon_Page1_5:
+	givemon SPECIES_GUZZLORD, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Dragon_Page1_6:
+	givemon SPECIES_KORAIDON, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Dragon_Page1_7:
+	goto Auto_EventScript_Legendary_Shop_Dragon_Page3
+	return
+
+Auto_EventScript_Legendary_Shop_Dragon_Page1_8:
+	goto Auto_EventScript_Legendary_Shop_Dragon_Page2
+	return
+
+
+Auto_EventScript_Legendary_Shop_Dragon_Page2::
+	multichoice2 0, 0, Auto_Text_Legendary_Shop_Dragon_Page2
+	switch VAR_RESULT
+	case 0, Auto_EventScript_Legendary_Shop_Dragon_Page2_2
+	case 1, Auto_EventScript_Legendary_Shop_Dragon_Page2_3
+	case 2, Auto_EventScript_Legendary_Shop_Dragon_Page2_4
+	case 3, Auto_EventScript_Legendary_Shop_Dragon_Page2_5
+	case 4, Auto_EventScript_Legendary_Shop_Dragon_Page2_6
+	case MULTI_L_PRESSED, Auto_EventScript_Legendary_Shop_Dragon_Page2_7
+	case MULTI_R_PRESSED, Auto_EventScript_Legendary_Shop_Dragon_Page2_8
+	goto Auto_EventScript_Legendary_Shop_Page1
+	return
+
+Auto_EventScript_Legendary_Shop_Dragon_Page2_2:
+	givemon SPECIES_KYUREM, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Dragon_Page2_3:
+	givemon SPECIES_LATIAS, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Dragon_Page2_4:
+	givemon SPECIES_LATIOS, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Dragon_Page2_5:
+	givemon SPECIES_MIRAIDON, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Dragon_Page2_6:
+	givemon SPECIES_PALKIA, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Dragon_Page2_7:
+	goto Auto_EventScript_Legendary_Shop_Dragon_Page1
+	return
+
+Auto_EventScript_Legendary_Shop_Dragon_Page2_8:
+	goto Auto_EventScript_Legendary_Shop_Dragon_Page3
+	return
+
+
+Auto_EventScript_Legendary_Shop_Dragon_Page3::
+	multichoice2 0, 0, Auto_Text_Legendary_Shop_Dragon_Page3
+	switch VAR_RESULT
+	case 0, Auto_EventScript_Legendary_Shop_Dragon_Page3_2
+	case 1, Auto_EventScript_Legendary_Shop_Dragon_Page3_3
+	case 2, Auto_EventScript_Legendary_Shop_Dragon_Page3_4
+	case 3, Auto_EventScript_Legendary_Shop_Dragon_Page3_5
+	case 4, Auto_EventScript_Legendary_Shop_Dragon_Page3_6
+	case MULTI_L_PRESSED, Auto_EventScript_Legendary_Shop_Dragon_Page3_7
+	case MULTI_R_PRESSED, Auto_EventScript_Legendary_Shop_Dragon_Page3_8
+	goto Auto_EventScript_Legendary_Shop_Page1
+	return
+
+Auto_EventScript_Legendary_Shop_Dragon_Page3_2:
+	givemon SPECIES_RAYQUAZA, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Dragon_Page3_3:
+	givemon SPECIES_REGIDRAGO, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Dragon_Page3_4:
+	givemon SPECIES_RESHIRAM, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Dragon_Page3_5:
+	givemon SPECIES_ZEKROM, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Dragon_Page3_6:
+	givemon SPECIES_ZYGARDE, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Dragon_Page3_7:
+	goto Auto_EventScript_Legendary_Shop_Dragon_Page2
+	return
+
+Auto_EventScript_Legendary_Shop_Dragon_Page3_8:
+	goto Auto_EventScript_Legendary_Shop_Dragon_Page1
+	return
+
+
+Auto_EventScript_Legendary_Shop_Electric_Page1::
+	multichoice2 0, 0, Auto_Text_Legendary_Shop_Electric_Page1
+	switch VAR_RESULT
+	case 0, Auto_EventScript_Legendary_Shop_Electric_Page1_2
+	case 1, Auto_EventScript_Legendary_Shop_Electric_Page1_3
+	case 2, Auto_EventScript_Legendary_Shop_Electric_Page1_4
+	case 3, Auto_EventScript_Legendary_Shop_Electric_Page1_5
+	case 4, Auto_EventScript_Legendary_Shop_Electric_Page1_6
+	case MULTI_L_PRESSED, Auto_EventScript_Legendary_Shop_Electric_Page1_7
+	case MULTI_R_PRESSED, Auto_EventScript_Legendary_Shop_Electric_Page1_8
+	goto Auto_EventScript_Legendary_Shop_Page1
+	return
+
+Auto_EventScript_Legendary_Shop_Electric_Page1_2:
+	givemon SPECIES_MIRAIDON, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Electric_Page1_3:
+	givemon SPECIES_RAIKOU, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Electric_Page1_4:
+	givemon SPECIES_REGIELEKI, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Electric_Page1_5:
+	givemon SPECIES_TAPU_KOKO, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Electric_Page1_6:
+	givemon SPECIES_THUNDURUS, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Electric_Page1_7:
+	goto Auto_EventScript_Legendary_Shop_Electric_Page2
+	return
+
+Auto_EventScript_Legendary_Shop_Electric_Page1_8:
+	goto Auto_EventScript_Legendary_Shop_Electric_Page2
+	return
+
+
+Auto_EventScript_Legendary_Shop_Electric_Page2::
+	multichoice2 0, 0, Auto_Text_Legendary_Shop_Electric_Page2
+	switch VAR_RESULT
+	case 0, Auto_EventScript_Legendary_Shop_Electric_Page2_2
+	case 1, Auto_EventScript_Legendary_Shop_Electric_Page2_3
+	case 2, Auto_EventScript_Legendary_Shop_Electric_Page2_4
+	case 3, Auto_EventScript_Legendary_Shop_Electric_Page2_5
+	case MULTI_L_PRESSED, Auto_EventScript_Legendary_Shop_Electric_Page2_6
+	case MULTI_R_PRESSED, Auto_EventScript_Legendary_Shop_Electric_Page2_7
+	goto Auto_EventScript_Legendary_Shop_Page1
+	return
+
+Auto_EventScript_Legendary_Shop_Electric_Page2_2:
+	givemon SPECIES_XURKITREE, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Electric_Page2_3:
+	givemon SPECIES_ZAPDOS, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Electric_Page2_4:
+	givemon SPECIES_ZEKROM, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Electric_Page2_5:
+	givemon SPECIES_ZERAORA, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Electric_Page2_6:
+	goto Auto_EventScript_Legendary_Shop_Electric_Page1
+	return
+
+Auto_EventScript_Legendary_Shop_Electric_Page2_7:
+	goto Auto_EventScript_Legendary_Shop_Electric_Page1
+	return
+
+
+Auto_EventScript_Legendary_Shop_Fairy_Page1::
+	multichoice2 0, 0, Auto_Text_Legendary_Shop_Fairy_Page1
+	switch VAR_RESULT
+	case 0, Auto_EventScript_Legendary_Shop_Fairy_Page1_2
+	case 1, Auto_EventScript_Legendary_Shop_Fairy_Page1_3
+	case 2, Auto_EventScript_Legendary_Shop_Fairy_Page1_4
+	case 3, Auto_EventScript_Legendary_Shop_Fairy_Page1_5
+	case 4, Auto_EventScript_Legendary_Shop_Fairy_Page1_6
+	case MULTI_L_PRESSED, Auto_EventScript_Legendary_Shop_Fairy_Page1_7
+	case MULTI_R_PRESSED, Auto_EventScript_Legendary_Shop_Fairy_Page1_8
+	goto Auto_EventScript_Legendary_Shop_Page1
+	return
+
+Auto_EventScript_Legendary_Shop_Fairy_Page1_2:
+	givemon SPECIES_DIANCIE, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Fairy_Page1_3:
+	givemon SPECIES_ENAMORUS, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Fairy_Page1_4:
+	givemon SPECIES_MAGEARNA, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Fairy_Page1_5:
+	givemon SPECIES_TAPU_BULU, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Fairy_Page1_6:
+	givemon SPECIES_TAPU_FINI, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Fairy_Page1_7:
+	goto Auto_EventScript_Legendary_Shop_Fairy_Page2
+	return
+
+Auto_EventScript_Legendary_Shop_Fairy_Page1_8:
+	goto Auto_EventScript_Legendary_Shop_Fairy_Page2
+	return
+
+
+Auto_EventScript_Legendary_Shop_Fairy_Page2::
+	multichoice2 0, 0, Auto_Text_Legendary_Shop_Fairy_Page2
+	switch VAR_RESULT
+	case 0, Auto_EventScript_Legendary_Shop_Fairy_Page2_2
+	case 1, Auto_EventScript_Legendary_Shop_Fairy_Page2_3
+	case 2, Auto_EventScript_Legendary_Shop_Fairy_Page2_4
+	case 3, Auto_EventScript_Legendary_Shop_Fairy_Page2_5
+	case MULTI_L_PRESSED, Auto_EventScript_Legendary_Shop_Fairy_Page2_6
+	case MULTI_R_PRESSED, Auto_EventScript_Legendary_Shop_Fairy_Page2_7
+	goto Auto_EventScript_Legendary_Shop_Page1
+	return
+
+Auto_EventScript_Legendary_Shop_Fairy_Page2_2:
+	givemon SPECIES_TAPU_KOKO, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Fairy_Page2_3:
+	givemon SPECIES_TAPU_LELE, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Fairy_Page2_4:
+	givemon SPECIES_XERNEAS, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Fairy_Page2_5:
+	givemon SPECIES_ZACIAN, 1
+	goto Common_EventScript_Legendary_Shop_CheckPurchase
+	return
+
+Auto_EventScript_Legendary_Shop_Fairy_Page2_6:
+	goto Auto_EventScript_Legendary_Shop_Fairy_Page1
+	return
+
+Auto_EventScript_Legendary_Shop_Fairy_Page2_7:
+	goto Auto_EventScript_Legendary_Shop_Fairy_Page1
+	return
+
+
+Auto_EventScript_Legendary_Shop_Controls_Text_0:
+	.string "L: Previous Page                    R: Next Page\nA: Confirm                    B: Go Back$"
+
+Auto_Text_Legendary_Shop_Page1::
+	.string "BUG$"
+	.string "DARK$"
+	.string "DRAGON$"
+	.string "ELECTRIC$"
+	.string "FAIRY$"
+	.string "Go Back$"
+	.string "$"
+
+Auto_Text_Legendary_Shop_Page2::
+	.string "FIGHTING$"
+	.string "FIRE$"
+	.string "FLYING$"
+	.string "GHOST$"
+	.string "GRASS$"
+	.string "Go Back$"
+	.string "$"
+
+Auto_Text_Legendary_Shop_Page3::
+	.string "GROUND$"
+	.string "ICE$"
+	.string "NORMAL$"
+	.string "POISON$"
+	.string "PSYCHIC$"
+	.string "Go Back$"
+	.string "$"
+
+Auto_Text_Legendary_Shop_Page4::
+	.string "ROCK$"
+	.string "STEEL$"
+	.string "WATER$"
+	.string "Go Back$"
+	.string "$"
+
+Auto_Text_Legendary_Shop_Rock_Page1::
+	.string "DIANCIE$"
+	.string "NIHILEGO$"
+	.string "REGIROCK$"
+	.string "STAKATAKA$"
+	.string "TERRAKION$"
+	.string "Go Back$"
+	.string "$"
+
+Auto_Text_Legendary_Shop_Steel_Page1::
+	.string "CELESTEELA$"
+	.string "COBALION$"
+	.string "DIALGA$"
+	.string "GENESECT$"
+	.string "HEATRAN$"
+	.string "Go Back$"
+	.string "$"
+
+Auto_Text_Legendary_Shop_Steel_Page2::
+	.string "JIRACHI$"
+	.string "KARTANA$"
+	.string "MAGEARNA$"
+	.string "MELMETAL$"
+	.string "REGISTEEL$"
+	.string "Go Back$"
+	.string "$"
+
+Auto_Text_Legendary_Shop_Steel_Page3::
+	.string "STAKATAKA$"
+	.string "Go Back$"
+	.string "$"
+
+Auto_Text_Legendary_Shop_Water_Page1::
+	.string "KELDEO$"
+	.string "KYOGRE$"
+	.string "MANAPHY$"
+	.string "PALKIA$"
+	.string "PHIONE$"
+	.string "Go Back$"
+	.string "$"
+
+Auto_Text_Legendary_Shop_Water_Page2::
+	.string "SUICUNE$"
+	.string "TAPU FINI$"
+	.string "VOLCANION$"
+	.string "Go Back$"
+	.string "$"
+
+Auto_Text_Legendary_Shop_Ground_Page1::
+	.string "GROUDON$"
+	.string "LANDORUS$"
+	.string "TING-LU$"
+	.string "ZYGARDE$"
+	.string "Go Back$"
+	.string "$"
+
+Auto_Text_Legendary_Shop_Ice_Page1::
+	.string "ARTICUNO$"
+	.string "CHIEN-PAO$"
+	.string "GLASTRIER$"
+	.string "KYUREM$"
+	.string "REGICE$"
+	.string "Go Back$"
+	.string "$"
+
+Auto_Text_Legendary_Shop_Normal_Page1::
+	.string "ARCEUS$"
+	.string "MELOETTA$"
+	.string "REGIGIGAS$"
+	.string "TERAPAGOS$"
+	.string "TYPE: NULL$"
+	.string "Go Back$"
+	.string "$"
+
+Auto_Text_Legendary_Shop_Poison_Page1::
+	.string "ETERNATUS$"
+	.string "NIHILEGO$"
+	.string "PECHARUNT$"
+	.string "POIPOLE$"
+	.string "Go Back$"
+	.string "$"
+
+Auto_Text_Legendary_Shop_Psychic_Page1::
+	.string "AZELF$"
+	.string "CALYREX$"
+	.string "CELEBI$"
+	.string "CRESSELIA$"
+	.string "DEOXYS$"
+	.string "Go Back$"
+	.string "$"
+
+Auto_Text_Legendary_Shop_Psychic_Page2::
+	.string "HOOPA$"
+	.string "JIRACHI$"
+	.string "LATIAS$"
+	.string "LATIOS$"
+	.string "LUGIA$"
+	.string "Go Back$"
+	.string "$"
+
+Auto_Text_Legendary_Shop_Psychic_Page3::
+	.string "MELOETTA$"
+	.string "MESPRIT$"
+	.string "MEW$"
+	.string "MEWTWO$"
+	.string "NECROZMA$"
+	.string "Go Back$"
+	.string "$"
+
+Auto_Text_Legendary_Shop_Psychic_Page4::
+	.string "TAPU LELE$"
+	.string "UXIE$"
+	.string "VICTINI$"
+	.string "Go Back$"
+	.string "$"
+
+Auto_Text_Legendary_Shop_Fighting_Page1::
+	.string "BUZZWOLE$"
+	.string "COBALION$"
+	.string "KELDEO$"
+	.string "KORAIDON$"
+	.string "KUBFU$"
+	.string "Go Back$"
+	.string "$"
+
+Auto_Text_Legendary_Shop_Fighting_Page2::
+	.string "MARSHADOW$"
+	.string "PHEROMOSA$"
+	.string "TERRAKION$"
+	.string "VIRIZION$"
+	.string "ZAMAZENTA$"
+	.string "Go Back$"
+	.string "$"
+
+Auto_Text_Legendary_Shop_Fire_Page1::
+	.string "BLACEPHALON$"
+	.string "CHI-YU$"
+	.string "ENTEI$"
+	.string "HEATRAN$"
+	.string "HO-OH$"
+	.string "Go Back$"
+	.string "$"
+
+Auto_Text_Legendary_Shop_Fire_Page2::
+	.string "MOLTRES$"
+	.string "RESHIRAM$"
+	.string "VICTINI$"
+	.string "VOLCANION$"
+	.string "Go Back$"
+	.string "$"
+
+Auto_Text_Legendary_Shop_Flying_Page1::
+	.string "ARTICUNO$"
+	.string "CELESTEELA$"
+	.string "ENAMORUS$"
+	.string "HO-OH$"
+	.string "LANDORUS$"
+	.string "Go Back$"
+	.string "$"
+
+Auto_Text_Legendary_Shop_Flying_Page2::
+	.string "LUGIA$"
+	.string "MOLTRES$"
+	.string "RAYQUAZA$"
+	.string "THUNDURUS$"
+	.string "TORNADUS$"
+	.string "Go Back$"
+	.string "$"
+
+Auto_Text_Legendary_Shop_Flying_Page3::
+	.string "YVELTAL$"
+	.string "ZAPDOS$"
+	.string "Go Back$"
+	.string "$"
+
+Auto_Text_Legendary_Shop_Ghost_Page1::
+	.string "BLACEPHALON$"
+	.string "GIRATINA$"
+	.string "HOOPA$"
+	.string "MARSHADOW$"
+	.string "PECHARUNT$"
+	.string "Go Back$"
+	.string "$"
+
+Auto_Text_Legendary_Shop_Ghost_Page2::
+	.string "SPECTRIER$"
+	.string "Go Back$"
+	.string "$"
+
+Auto_Text_Legendary_Shop_Grass_Page1::
+	.string "CALYREX$"
+	.string "CELEBI$"
+	.string "KARTANA$"
+	.string "SHAYMIN$"
+	.string "TAPU BULU$"
+	.string "Go Back$"
+	.string "$"
+
+Auto_Text_Legendary_Shop_Grass_Page2::
+	.string "VIRIZION$"
+	.string "WO-CHIEN$"
+	.string "ZARUDE$"
+	.string "Go Back$"
+	.string "$"
+
+Auto_Text_Legendary_Shop_Bug_Page1::
+	.string "BUZZWOLE$"
+	.string "GENESECT$"
+	.string "PHEROMOSA$"
+	.string "Go Back$"
+	.string "$"
+
+Auto_Text_Legendary_Shop_Dark_Page1::
+	.string "CHI-YU$"
+	.string "CHIEN-PAO$"
+	.string "DARKRAI$"
+	.string "GUZZLORD$"
+	.string "TING-LU$"
+	.string "Go Back$"
+	.string "$"
+
+Auto_Text_Legendary_Shop_Dark_Page2::
+	.string "WO-CHIEN$"
+	.string "YVELTAL$"
+	.string "ZARUDE$"
+	.string "Go Back$"
+	.string "$"
+
+Auto_Text_Legendary_Shop_Dragon_Page1::
+	.string "DIALGA$"
+	.string "ETERNATUS$"
+	.string "GIRATINA$"
+	.string "GUZZLORD$"
+	.string "KORAIDON$"
+	.string "Go Back$"
+	.string "$"
+
+Auto_Text_Legendary_Shop_Dragon_Page2::
+	.string "KYUREM$"
+	.string "LATIAS$"
+	.string "LATIOS$"
+	.string "MIRAIDON$"
+	.string "PALKIA$"
+	.string "Go Back$"
+	.string "$"
+
+Auto_Text_Legendary_Shop_Dragon_Page3::
+	.string "RAYQUAZA$"
+	.string "REGIDRAGO$"
+	.string "RESHIRAM$"
+	.string "ZEKROM$"
+	.string "ZYGARDE$"
+	.string "Go Back$"
+	.string "$"
+
+Auto_Text_Legendary_Shop_Electric_Page1::
+	.string "MIRAIDON$"
+	.string "RAIKOU$"
+	.string "REGIELEKI$"
+	.string "TAPU KOKO$"
+	.string "THUNDURUS$"
+	.string "Go Back$"
+	.string "$"
+
+Auto_Text_Legendary_Shop_Electric_Page2::
+	.string "XURKITREE$"
+	.string "ZAPDOS$"
+	.string "ZEKROM$"
+	.string "ZERAORA$"
+	.string "Go Back$"
+	.string "$"
+
+Auto_Text_Legendary_Shop_Fairy_Page1::
+	.string "DIANCIE$"
+	.string "ENAMORUS$"
+	.string "MAGEARNA$"
+	.string "TAPU BULU$"
+	.string "TAPU FINI$"
+	.string "Go Back$"
+	.string "$"
+
+Auto_Text_Legendary_Shop_Fairy_Page2::
+	.string "TAPU KOKO$"
+	.string "TAPU LELE$"
+	.string "XERNEAS$"
+	.string "ZACIAN$"
+	.string "Go Back$"
+	.string "$"

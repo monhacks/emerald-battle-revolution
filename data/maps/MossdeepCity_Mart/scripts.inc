@@ -6,23 +6,8 @@ MossdeepCity_Mart_EventScript_Clerk::
 	faceplayer
 	message gText_HowMayIServeYou
 	waitmessage
-	pokemart MossdeepCity_Mart_Pokemart
+	pokemart 0
 	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
-	release
-	end
-
-	.align 2
-MossdeepCity_Mart_Pokemart:
-	.2byte ITEM_ULTRA_BALL
-	.2byte ITEM_NET_BALL
-	.2byte ITEM_DIVE_BALL
-	.2byte ITEM_HYPER_POTION
-	.2byte ITEM_FULL_HEAL
-	.2byte ITEM_REVIVE
-	.2byte ITEM_MAX_REPEL
-	.2byte ITEM_X_ATTACK
-	.2byte ITEM_X_DEFENSE
-	.2byte ITEM_NONE
 	release
 	end
 
@@ -58,3 +43,53 @@ MossdeepCity_Mart_Text_NetAndDiveBallsRare:
 	.string "A DIVE BALL works best on POKéMON\n"
 	.string "at the bottom of the sea.$"
 
+MossdeepCity_Mart_EventScript_Clerk2::
+	lock
+	faceplayer
+	goto_if_set FLAG_BADGE06_GET, MossdeepCity_Mart_EventScript_Clerk2_2
+	msgbox MossdeepCity_Mart_EventScript_Clerk2_Text_0
+MossdeepCity_Mart_EventScript_Clerk2_1:
+	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
+	release
+	end
+
+MossdeepCity_Mart_EventScript_Clerk2_2:
+	message gText_HowMayIServeYou
+	waitmessage
+	pokemart MossdeepCity_Mart_Pokemart_Clerk2
+	goto MossdeepCity_Mart_EventScript_Clerk2_1
+
+
+	.align 2
+MossdeepCity_Mart_Pokemart_Clerk2:
+	.2byte ITEM_DECIDIUM_Z
+	.2byte ITEM_INCINIUM_Z
+	.2byte ITEM_PRIMARIUM_Z
+	.2byte ITEM_AERODACTYLITE
+	.2byte ITEM_HOUNDOOMINITE
+	.2byte ITEM_MEDICHAMITE
+	.2byte ITEM_ABSOLITE
+	.2byte ITEM_PROTECTIVE_PADS
+	.2byte ITEM_WEAKNESS_POLICY
+	.2byte ITEM_DEEP_SEA_SCALE
+	.2byte ITEM_DEEP_SEA_TOOTH
+	.2byte ITEM_BLUNDER_POLICY
+	.2byte ITEM_ADRENALINE_ORB
+	.2byte ITEM_WISE_GLASSES
+	.2byte ITEM_ROCKY_HELMET
+	.2byte ITEM_LIGHT_CLAY
+	.2byte ITEM_PEAT_BLOCK
+	.2byte ITEM_METRONOME
+	.2byte ITEM_ELECTRIC_SEED
+	.2byte ITEM_PSYCHIC_SEED
+	.2byte ITEM_GRASSY_SEED
+	.2byte ITEM_MISTY_SEED
+	.2byte ITEM_LUMINOUS_MOSS
+	.2byte ITEM_CELL_BATTERY
+	.2byte ITEM_ABSORB_BULB
+	.2byte ITEM_SNOWBALL
+	.2byte ITEM_NONE
+
+MossdeepCity_Mart_EventScript_Clerk2_Text_0:
+	.string "I'm afraid we are all out of stock at the\n"
+	.string "moment, sorry!$"

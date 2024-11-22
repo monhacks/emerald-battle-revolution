@@ -35,6 +35,7 @@ BattleFrontier_BattlePalaceLobby_EventScript_QuitWithoutSaving::
 	palace_set PALACE_DATA_WIN_STREAK_ACTIVE, FALSE
 	frontier_set FRONTIER_DATA_CHALLENGE_STATUS, 0
 	setvar VAR_TEMP_CHALLENGE_STATUS, 255
+	clearflag FLAG_FORCE_FRONTIER_LEVEL_SCALING
 	releaseall
 	end
 
@@ -73,6 +74,7 @@ BattleFrontier_BattlePalaceLobby_EventScript_LostChallenge::
 	end
 
 BattleFrontier_BattlePalaceLobby_EventScript_SaveAfterChallenge::
+	clearflag FLAG_FORCE_FRONTIER_LEVEL_SCALING
 	frontier_checkairshow
 	special LoadPlayerParty
 	special HealPlayerParty
@@ -180,6 +182,7 @@ BattleFrontier_BattlePalaceLobby_EventScript_SaveBeforeChallenge::
 	goto_if_eq VAR_RESULT, 0, BattleFrontier_BattlePalaceLobby_EventScript_CancelChallengeSaveFailed
 BattleFrontier_BattlePalaceLobby_EventScript_EnterChallenge::
 	special SavePlayerParty
+	setflag FLAG_FORCE_FRONTIER_LEVEL_SCALING
 	frontier_setpartyorder FRONTIER_PARTY_SIZE
 	msgbox BattleFrontier_BattlePalaceLobby_Text_FollowMe, MSGBOX_DEFAULT
 	closemessage
@@ -650,4 +653,3 @@ BattleFrontier_BattlePalaceLobby_Text_ExplainRulesWhenInDanger:
 	.string "nature when it is in trouble.\p"
 	.string "If a POKéMON begins behaving oddly\n"
 	.string "in a pinch, watch it carefully.$"
-

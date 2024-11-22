@@ -28,6 +28,7 @@ FallarborTown_BattleTentLobby_EventScript_GetChallengeStatus::
 
 FallarborTown_BattleTentLobby_EventScript_QuitWithoutSaving::
 	lockall
+	clearflag FLAG_FORCE_FRONTIER_LEVEL_SCALING
 	msgbox FallarborTown_BattleTentLobby_Text_DidntSaveBeforeQuitting, MSGBOX_DEFAULT
 	closemessage
 	frontier_set FRONTIER_DATA_CHALLENGE_STATUS, 0
@@ -48,6 +49,7 @@ FallarborTown_BattleTentLobby_EventScript_WonChallenge::
 	waitse
 
 FallarborTown_BattleTentLobby_EventScript_GivePrize::
+	clearflag FLAG_FORCE_FRONTIER_LEVEL_SCALING
 	msgbox FallarborTown_BattleTentLobby_Text_PresentYouWithPrize, MSGBOX_DEFAULT
 	fallarbortent_giveprize
 	switch VAR_RESULT
@@ -64,6 +66,7 @@ FallarborTown_BattleTentLobby_EventScript_GivePrize::
 	end
 
 FallarborTown_BattleTentLobby_EventScript_NoRoomForPrize::
+	clearflag FLAG_FORCE_FRONTIER_LEVEL_SCALING
 	msgbox FallarborTown_BattleTentLobby_Text_BagFullReturnForPrize, MSGBOX_DEFAULT
 	waitmessage
 	closemessage
@@ -79,6 +82,7 @@ FallarborTown_BattleTentLobby_EventScript_PrizeWaiting::
 
 FallarborTown_BattleTentLobby_EventScript_LostChallenge::
 	lockall
+	clearflag FLAG_FORCE_FRONTIER_LEVEL_SCALING
 	message FallarborTown_BattleTentLobby_Text_ThankYouWaitWhileSaving
 	waitmessage
 	frontier_set FRONTIER_DATA_LVL_MODE, FRONTIER_LVL_50
@@ -153,6 +157,7 @@ FallarborTown_BattleTentLobby_EventScript_SaveBeforeChallenge::
 	goto_if_eq VAR_RESULT, 0, FallarborTown_BattleTentLobby_EventScript_CancelChallengeSaveFailed
 FallarborTown_BattleTentLobby_EventScript_EnterChallenge::
 	special SavePlayerParty
+	setflag FLAG_FORCE_FRONTIER_LEVEL_SCALING
 	frontier_setpartyorder FRONTIER_PARTY_SIZE
 	msgbox FallarborTown_BattleTentLobby_Text_GuideYouToBattleTent, MSGBOX_DEFAULT
 	closemessage
@@ -345,4 +350,3 @@ FallarborTown_BattleTentLobby_Text_ScottMakeChallenge:
 	.string "SCOTT: Instead of wasting your\n"
 	.string "time with the likes of me, why not\l"
 	.string "make a challenge?$"
-

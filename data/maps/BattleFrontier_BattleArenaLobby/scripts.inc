@@ -34,6 +34,7 @@ BattleFrontier_BattleArenaLobby_EventScript_QuitWithoutSaving::
 	arena_set ARENA_DATA_WIN_STREAK_ACTIVE, FALSE
 	frontier_set FRONTIER_DATA_CHALLENGE_STATUS, 0
 	setvar VAR_TEMP_CHALLENGE_STATUS, 255
+	clearflag FLAG_FORCE_FRONTIER_LEVEL_SCALING
 	releaseall
 	end
 
@@ -72,6 +73,7 @@ BattleFrontier_BattleArenaLobby_EventScript_LostChallenge::
 	end
 
 BattleFrontier_BattleArenaLobby_EventScript_SaveAfterChallenge::
+	clearflag FLAG_FORCE_FRONTIER_LEVEL_SCALING
 	frontier_checkairshow
 	special LoadPlayerParty
 	special HealPlayerParty
@@ -162,6 +164,7 @@ BattleFrontier_BattleArenaLobby_EventScript_SaveBeforeChallenge::
 	goto_if_eq VAR_RESULT, 0, BattleFrontier_BattleArenaLobby_EventScript_CancelChallengeSaveFailed
 BattleFrontier_BattleArenaLobby_EventScript_EnterChallenge::
 	special SavePlayerParty
+	setflag FLAG_FORCE_FRONTIER_LEVEL_SCALING
 	frontier_setpartyorder FRONTIER_PARTY_SIZE
 	msgbox BattleFrontier_BattleArenaLobby_Text_GuideYouToArena, MSGBOX_DEFAULT
 	closemessage

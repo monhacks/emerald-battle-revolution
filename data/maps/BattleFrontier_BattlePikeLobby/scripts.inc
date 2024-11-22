@@ -26,6 +26,7 @@ BattleFrontier_BattlePikeLobby_EventScript_GetChallengeStatus::
 	end
 
 BattleFrontier_BattlePikeLobby_EventScript_QuitWithoutSaving::
+	clearflag FLAG_FORCE_FRONTIER_LEVEL_SCALING
 	special HealPlayerParty
 	pike_resethelditems
 	lockall
@@ -50,6 +51,7 @@ BattleFrontier_BattlePikeLobby_EventScript_DefeatedQueen::
 	msgbox BattleFrontier_BattlePikeLobby_Text_SnatchedVictoryFromQueen, MSGBOX_DEFAULT
 	waitmessage
 BattleFrontier_BattlePikeLobby_EventScript_GiveBattlePoints::
+	clearflag FLAG_FORCE_FRONTIER_LEVEL_SCALING
 	msgbox BattleFrontier_BattlePikeLobby_Text_AwardYouTheseBattlePoints, MSGBOX_DEFAULT
 	frontier_givepoints
 	msgbox BattleFrontier_Text_ObtainedXBattlePoints, MSGBOX_GETPOINTS
@@ -74,6 +76,7 @@ BattleFrontier_BattlePikeLobby_EventScript_GiveBattlePoints::
 
 BattleFrontier_BattlePikeLobby_EventScript_LostChallenge::
 	lockall
+	clearflag FLAG_FORCE_FRONTIER_LEVEL_SCALING
 	message BattleFrontier_BattlePikeLobby_Text_ChallengeEndedRecordResults
 	waitmessage
 	frontier_checkairshow
@@ -151,6 +154,7 @@ BattleFrontier_BattlePikeLobby_EventScript_SaveBeforeChallenge::
 	pike_savehelditems
 	goto_if_eq VAR_RESULT, 0, BattleFrontier_BattlePikeLobby_EventScript_CancelChallengeSaveFailed
 	special SavePlayerParty
+	setflag FLAG_FORCE_FRONTIER_LEVEL_SCALING
 	frontier_setpartyorder FRONTIER_PARTY_SIZE
 	msgbox BattleFrontier_BattlePikeLobby_Text_StepThisWay, MSGBOX_DEFAULT
 	closemessage
@@ -434,4 +438,3 @@ BattleFrontier_BattlePikeLobby_Text_ExplainMonOrderRules:
 	.string "changed.\p"
 	.string "The sequence must be set before\n"
 	.string "starting your challenge.$"
-

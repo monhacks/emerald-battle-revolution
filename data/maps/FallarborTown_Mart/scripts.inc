@@ -6,26 +6,8 @@ FallarborTown_Mart_EventScript_Clerk::
 	faceplayer
 	message gText_HowMayIServeYou
 	waitmessage
-	pokemart FallarborTown_Mart_Pokemart
+	pokemart 0
 	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
-	release
-	end
-
-	.align 2
-FallarborTown_Mart_Pokemart:
-	.2byte ITEM_GREAT_BALL
-	.2byte ITEM_SUPER_POTION
-	.2byte ITEM_ANTIDOTE
-	.2byte ITEM_PARALYZE_HEAL
-	.2byte ITEM_ESCAPE_ROPE
-	.2byte ITEM_SUPER_REPEL
-	.2byte ITEM_X_SP_ATK
-	.2byte ITEM_X_SPEED
-	.2byte ITEM_X_ATTACK
-	.2byte ITEM_X_DEFENSE
-	.2byte ITEM_DIRE_HIT
-	.2byte ITEM_GUARD_SPEC
-	.2byte ITEM_NONE
 	release
 	end
 
@@ -64,3 +46,103 @@ FallarborTown_Mart_Text_SellNuggetIFound:
 	.string "I suppose I'll have to sell it, seeing\l"
 	.string "as how it has no other use.$"
 
+FallarborTown_Mart_EventScript_Clerk2::
+	lock
+	faceplayer
+	goto_if_set FLAG_BADGE03_GET, FallarborTown_Mart_EventScript_Clerk2_2
+	msgbox FallarborTown_Mart_EventScript_Clerk2_Text_0
+FallarborTown_Mart_EventScript_Clerk2_1:
+	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
+	release
+	end
+
+FallarborTown_Mart_EventScript_Clerk2_2:
+	message gText_HowMayIServeYou
+	waitmessage
+	goto_if_set FLAG_BADGE04_GET, FallarborTown_Mart_EventScript_Clerk2_5
+	pokemart FallarborTown_Mart_Pokemart_Clerk2
+	goto FallarborTown_Mart_EventScript_Clerk2_1
+
+FallarborTown_Mart_EventScript_Clerk2_5:
+	goto_if_set FLAG_BADGE06_GET, FallarborTown_Mart_EventScript_Clerk2_8
+	pokemart FallarborTown_Mart_Pokemart_Clerk2_Expanded
+	goto FallarborTown_Mart_EventScript_Clerk2_1
+
+FallarborTown_Mart_EventScript_Clerk2_8:
+	pokemart FallarborTown_Mart_Pokemart_Clerk2_Expanded2
+	goto FallarborTown_Mart_EventScript_Clerk2_1
+
+
+	.align 2
+FallarborTown_Mart_Pokemart_Clerk2:
+	.2byte ITEM_ICIUM_Z
+	.2byte ITEM_DARKINIUM_Z
+	.2byte ITEM_ICE_GEM
+	.2byte ITEM_DARK_GEM
+	.2byte ITEM_NEVER_MELT_ICE
+	.2byte ITEM_BLACK_GLASSES
+	.2byte ITEM_UNREMARKABLE_TEACUP
+	.2byte ITEM_MASTERPIECE_TEACUP
+	.2byte ITEM_REAPER_CLOTH
+	.2byte ITEM_CRACKED_POT
+	.2byte ITEM_CHIPPED_POT
+	.2byte ITEM_PROTECTOR
+	.2byte ITEM_MENTAL_HERB
+	.2byte ITEM_BERSERK_GENE
+	.2byte ITEM_GRIP_CLAW
+	.2byte ITEM_SACHET
+	.2byte ITEM_NONE
+
+	.align 2
+FallarborTown_Mart_Pokemart_Clerk2_Expanded:
+	.2byte ITEM_SHARPEDONITE
+	.2byte ITEM_GYARADOSITE
+	.2byte ITEM_GLALITITE
+	.2byte ITEM_ABOMASITE
+	.2byte ITEM_ICIUM_Z
+	.2byte ITEM_DARKINIUM_Z
+	.2byte ITEM_ICE_GEM
+	.2byte ITEM_DARK_GEM
+	.2byte ITEM_NEVER_MELT_ICE
+	.2byte ITEM_BLACK_GLASSES
+	.2byte ITEM_UNREMARKABLE_TEACUP
+	.2byte ITEM_MASTERPIECE_TEACUP
+	.2byte ITEM_REAPER_CLOTH
+	.2byte ITEM_CRACKED_POT
+	.2byte ITEM_CHIPPED_POT
+	.2byte ITEM_PROTECTOR
+	.2byte ITEM_MENTAL_HERB
+	.2byte ITEM_BERSERK_GENE
+	.2byte ITEM_GRIP_CLAW
+	.2byte ITEM_SACHET
+	.2byte ITEM_NONE
+
+	.align 2
+FallarborTown_Mart_Pokemart_Clerk2_Expanded2:
+	.2byte ITEM_ICE_TERA_SHARD
+	.2byte ITEM_DARK_TERA_SHARD
+	.2byte ITEM_SHARPEDONITE
+	.2byte ITEM_GYARADOSITE
+	.2byte ITEM_GLALITITE
+	.2byte ITEM_ABOMASITE
+	.2byte ITEM_ICIUM_Z
+	.2byte ITEM_DARKINIUM_Z
+	.2byte ITEM_ICE_GEM
+	.2byte ITEM_DARK_GEM
+	.2byte ITEM_NEVER_MELT_ICE
+	.2byte ITEM_BLACK_GLASSES
+	.2byte ITEM_UNREMARKABLE_TEACUP
+	.2byte ITEM_MASTERPIECE_TEACUP
+	.2byte ITEM_REAPER_CLOTH
+	.2byte ITEM_CRACKED_POT
+	.2byte ITEM_CHIPPED_POT
+	.2byte ITEM_PROTECTOR
+	.2byte ITEM_MENTAL_HERB
+	.2byte ITEM_BERSERK_GENE
+	.2byte ITEM_GRIP_CLAW
+	.2byte ITEM_SACHET
+	.2byte ITEM_NONE
+
+FallarborTown_Mart_EventScript_Clerk2_Text_0:
+	.string "I'm afraid we are all out of stock at the\n"
+	.string "moment, sorry!$"

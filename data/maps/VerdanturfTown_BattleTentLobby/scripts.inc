@@ -28,6 +28,7 @@ VerdanturfTown_BattleTentLobby_EventScript_GetChallengeStatus::
 
 VerdanturfTown_BattleTentLobby_EventScript_QuitWithoutSaving::
 	lockall
+	clearflag FLAG_FORCE_FRONTIER_LEVEL_SCALING
 	msgbox BattleFrontier_BattlePalaceLobby_Text_FailedToSaveBeforeEndingChallenge, MSGBOX_DEFAULT
 	closemessage
 	frontier_set FRONTIER_DATA_CHALLENGE_STATUS, 0
@@ -48,6 +49,7 @@ VerdanturfTown_BattleTentLobby_EventScript_WonChallenge::
 	waitse
 
 VerdanturfTown_BattleTentLobby_EventScript_GivePrize::
+	clearflag FLAG_FORCE_FRONTIER_LEVEL_SCALING
 	msgbox VerdanturfTown_BattleTentLobby_Text_PresentYouWithPrize, MSGBOX_DEFAULT
 	verdanturftent_giveprize
 	switch VAR_RESULT
@@ -64,6 +66,7 @@ VerdanturfTown_BattleTentLobby_EventScript_GivePrize::
 	end
 
 VerdanturfTown_BattleTentLobby_EventScript_NoRoomForPrize::
+	clearflag FLAG_FORCE_FRONTIER_LEVEL_SCALING
 	msgbox BattleFrontier_BattlePalaceLobby_Text_NoSpaceForPrize, MSGBOX_DEFAULT
 	waitmessage
 	closemessage
@@ -79,6 +82,7 @@ VerdanturfTown_BattleTentLobby_EventScript_PrizeWaiting::
 
 VerdanturfTown_BattleTentLobby_EventScript_LostChallenge::
 	lockall
+	clearflag FLAG_FORCE_FRONTIER_LEVEL_SCALING
 	message VerdanturfTown_BattleTentLobby_Text_ResultsWillBeRecorded
 	waitmessage
 	frontier_set FRONTIER_DATA_LVL_MODE, FRONTIER_LVL_50
@@ -154,6 +158,7 @@ VerdanturfTown_BattleTentLobby_EventScript_SaveBeforeChallenge::
 	goto_if_eq VAR_RESULT, 0, VerdanturfTown_BattleTentLobby_EventScript_CancelChallengeSaveFailed
 VerdanturfTown_BattleTentLobby_EventScript_EnterChallenge::
 	special SavePlayerParty
+	setflag FLAG_FORCE_FRONTIER_LEVEL_SCALING
 	frontier_setpartyorder FRONTIER_PARTY_SIZE
 	msgbox VerdanturfTown_BattleTentLobby_Text_NowFollowMe, MSGBOX_DEFAULT
 	closemessage

@@ -248,50 +248,8 @@ TrainerHill_Entrance_EventScript_Clerk::
 	faceplayer
 	message gText_HowMayIServeYou
 	waitmessage
-	goto_if_set FLAG_SYS_GAME_CLEAR, TrainerHill_Entrance_EventScript_ExpandedPokemart
-	pokemart TrainerHill_Entrance_Pokemart_Basic
+	pokemart 0
 	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
-	release
-	end
-
-	.align 2
-TrainerHill_Entrance_Pokemart_Basic:
-	.2byte ITEM_SUPER_POTION
-	.2byte ITEM_ANTIDOTE
-	.2byte ITEM_PARALYZE_HEAL
-	.2byte ITEM_AWAKENING
-	.2byte ITEM_X_SPEED
-	.2byte ITEM_X_SP_ATK
-	.2byte ITEM_X_ATTACK
-	.2byte ITEM_X_DEFENSE
-	.2byte ITEM_DIRE_HIT
-	.2byte ITEM_GUARD_SPEC
-	.2byte ITEM_X_ACCURACY
-	.2byte ITEM_NONE
-	release
-	end
-
-TrainerHill_Entrance_EventScript_ExpandedPokemart::
-	pokemart TrainerHill_Entrance_Pokemart_Expanded
-	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
-	release
-	end
-
-	.align 2
-TrainerHill_Entrance_Pokemart_Expanded:
-	.2byte ITEM_HYPER_POTION
-	.2byte ITEM_MAX_POTION
-	.2byte ITEM_FULL_RESTORE
-	.2byte ITEM_FULL_HEAL
-	.2byte ITEM_REVIVE
-	.2byte ITEM_X_SPEED
-	.2byte ITEM_X_SP_ATK
-	.2byte ITEM_X_ATTACK
-	.2byte ITEM_X_DEFENSE
-	.2byte ITEM_DIRE_HIT
-	.2byte ITEM_GUARD_SPEC
-	.2byte ITEM_X_ACCURACY
-	.2byte ITEM_NONE
 	release
 	end
 
@@ -457,3 +415,68 @@ TrainerHill_Entrance_Text_DoYouKnowWhenTheyOpen:
 TrainerHill_Elevator_Text_ReturnToReception:
 	.string "Would you like to return to\n"
 	.string "the reception counter?$"
+
+TrainerHill_Entrance_EventScript_Clerk2::
+	lock
+	faceplayer
+	message gText_HowMayIServeYou
+	waitmessage
+	goto_if_set FLAG_IS_CHAMPION, TrainerHill_Entrance_EventScript_Clerk2_2
+	msgbox TrainerHill_Entrance_EventScript_Clerk2_Text_0
+TrainerHill_Entrance_EventScript_Clerk2_1:
+	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
+	release
+	end
+
+TrainerHill_Entrance_EventScript_Clerk2_2:
+	pokemart TrainerHill_Entrance_Pokemart_Clerk2
+	goto TrainerHill_Entrance_EventScript_Clerk2_1
+
+
+	.align 2
+TrainerHill_Entrance_Pokemart_Clerk2:
+	.2byte ITEM_FRESH_START_MOCHI
+	.2byte ITEM_HEALTH_MOCHI
+	.2byte ITEM_HEALTH_FEATHER
+	.2byte ITEM_MUSCLE_MOCHI
+	.2byte ITEM_MUSCLE_FEATHER
+	.2byte ITEM_RESIST_MOCHI
+	.2byte ITEM_RESIST_FEATHER
+	.2byte ITEM_GENIUS_MOCHI
+	.2byte ITEM_GENIUS_FEATHER
+	.2byte ITEM_CLEVER_MOCHI
+	.2byte ITEM_CLEVER_FEATHER
+	.2byte ITEM_SWIFT_MOCHI
+	.2byte ITEM_SWIFT_FEATHER
+	.2byte ITEM_PP_UP
+	.2byte ITEM_PP_MAX
+	.2byte ITEM_ABILITY_CAPSULE
+	.2byte ITEM_ABILITY_PATCH
+	.2byte ITEM_DURIN_BERRY
+	.2byte ITEM_BELUE_BERRY
+	.2byte ITEM_LONELY_MINT
+	.2byte ITEM_ADAMANT_MINT
+	.2byte ITEM_NAUGHTY_MINT
+	.2byte ITEM_BRAVE_MINT
+	.2byte ITEM_BOLD_MINT
+	.2byte ITEM_IMPISH_MINT
+	.2byte ITEM_LAX_MINT
+	.2byte ITEM_RELAXED_MINT
+	.2byte ITEM_MODEST_MINT
+	.2byte ITEM_MILD_MINT
+	.2byte ITEM_RASH_MINT
+	.2byte ITEM_QUIET_MINT
+	.2byte ITEM_CALM_MINT
+	.2byte ITEM_GENTLE_MINT
+	.2byte ITEM_CAREFUL_MINT
+	.2byte ITEM_SASSY_MINT
+	.2byte ITEM_TIMID_MINT
+	.2byte ITEM_HASTY_MINT
+	.2byte ITEM_JOLLY_MINT
+	.2byte ITEM_NAIVE_MINT
+	.2byte ITEM_SERIOUS_MINT
+	.2byte ITEM_NONE
+
+TrainerHill_Entrance_EventScript_Clerk2_Text_0:
+	.string "I'm afraid we are all out of stock at the\n"
+	.string "moment, sorry!$"

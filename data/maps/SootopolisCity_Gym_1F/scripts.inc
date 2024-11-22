@@ -104,6 +104,7 @@ SootopolisCity_Gym_1F_EventScript_JuanDefeated::
 	setvar VAR_0x8008, 8
 	call Common_EventScript_SetGymTrainers
 	call SootopolisCity_Gym_1F_EventScript_GiveWaterPulse
+	call SootopolisCity_Gym_1F_EventScript_GiveDynamaxBand
 	closemessage
 	delay 30
 	playfanfare MUS_REGISTER_MATCH_CALL
@@ -317,3 +318,51 @@ SootopolisCity_Gym_1F_Text_JuanRematchNeedTwoMons:
 	.string "I wish that you would return with\n"
 	.string "two, perhaps more, POKéMON, please.$"
 
+SootopolisCity_Gym_1F_EventScript_GiveDynamaxBand::
+	goto_if_unset FLAG_ITEM_DYNAMAX_BAND_OBTAINED, SootopolisCity_Gym_1F_EventScript_GiveDynamaxBand_1
+	return
+
+SootopolisCity_Gym_1F_EventScript_GiveDynamaxBand_1:
+	msgbox SootopolisCity_Gym_1F_EventScript_GiveDynamaxBand_Text_0
+	giveitem ITEM_DYNAMAX_BAND
+	msgbox SootopolisCity_Gym_1F_EventScript_GiveDynamaxBand_Text_1
+	msgbox SootopolisCity_Gym_1F_EventScript_GiveDynamaxBand_Text_2
+	msgbox SootopolisCity_Gym_1F_EventScript_GiveDynamaxBand_Text_3
+	msgbox SootopolisCity_Gym_1F_EventScript_GiveDynamaxBand_Text_4
+	msgbox SootopolisCity_Gym_1F_EventScript_GiveDynamaxBand_Text_5
+	setflag FLAG_ITEM_DYNAMAX_BAND_OBTAINED
+	return
+
+
+SootopolisCity_Gym_1F_EventScript_GiveDynamaxBand_Text_0:
+	.string "Also, as a trainer with all eight gym\n"
+	.string "badges, you've earned this.$"
+
+SootopolisCity_Gym_1F_EventScript_GiveDynamaxBand_Text_1:
+	.string "This item will allow your POKéMON to\n"
+	.string "transform into a powerful Dynamax form\l"
+	.string "for three turns, once per battle.$"
+
+SootopolisCity_Gym_1F_EventScript_GiveDynamaxBand_Text_2:
+	.string "This will increase their hit points, and\n"
+	.string "change moves into their MAX move type.\l"
+	.string "Some POKéMON even have unique\l"
+	.string "gigantamax formes!$"
+
+SootopolisCity_Gym_1F_EventScript_GiveDynamaxBand_Text_3:
+	.string "To enable dynamaxing, you'll need to use\n"
+	.string "the dynamax band in your bag - But, you\l"
+	.string "won't be able to use megas, z-moves or\l"
+	.string "tera formes while it's turned on.$"
+
+SootopolisCity_Gym_1F_EventScript_GiveDynamaxBand_Text_4:
+	.string "You may also encounter opponents who\n"
+	.string "dynamax their POKéMON while your band\l"
+	.string "is enabled. If you want to use megas,\l"
+	.string "z-moves and tera again simply turn the\l"
+	.string "dynamax band off.$"
+
+SootopolisCity_Gym_1F_EventScript_GiveDynamaxBand_Text_5:
+	.string "Dynamax candy will also now be available\n"
+	.string "at most POKéMARTs - Even those you've\l"
+	.string "already visited.$"

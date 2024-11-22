@@ -36,6 +36,7 @@ FortreeCity_Gym_EventScript_WinonaDefeated::
 	setvar VAR_0x8008, 6
 	call Common_EventScript_SetGymTrainers
 	call FortreeCity_Gym_EventScript_GiveAerialAce
+	call FortreeCity_Gym_EventScript_GiveTeraOrb
 	closemessage
 	delay 30
 	playfanfare MUS_REGISTER_MATCH_CALL
@@ -317,3 +318,42 @@ FortreeCity_Gym_Text_WinonaRematchNeedTwoMons:
 	.string "POKéMON with you?\p"
 	.string "Please return with two POKéMON\n"
 	.string "at the very least.$"
+
+FortreeCity_Gym_EventScript_GiveTeraOrb::
+	goto_if_unset FLAG_ITEM_TERA_ORB_OBTAINED, FortreeCity_Gym_EventScript_GiveTeraOrb_1
+	return
+
+FortreeCity_Gym_EventScript_GiveTeraOrb_1:
+	msgbox FortreeCity_Gym_EventScript_GiveTeraOrb_Text_0
+	giveitem ITEM_TERA_ORB
+	msgbox FortreeCity_Gym_EventScript_GiveTeraOrb_Text_1
+	msgbox FortreeCity_Gym_EventScript_GiveTeraOrb_Text_2
+	msgbox FortreeCity_Gym_EventScript_GiveTeraOrb_Text_3
+	msgbox FortreeCity_Gym_EventScript_GiveTeraOrb_Text_4
+	setflag FLAG_ITEM_TERA_ORB_OBTAINED
+	return
+
+
+FortreeCity_Gym_EventScript_GiveTeraOrb_Text_0:
+	.string "Also, as a trainer with six gym badges,\n"
+	.string "you've earned this.$"
+
+FortreeCity_Gym_EventScript_GiveTeraOrb_Text_1:
+	.string "This item will allow your POKéMON to\n"
+	.string "change its type into its Terastal type,\l"
+	.string "once per battle.$"
+
+FortreeCity_Gym_EventScript_GiveTeraOrb_Text_2:
+	.string "This can be used to change to a new\n"
+	.string "type, or provide even stronger damage\l"
+	.string "for same-type transformations!$"
+
+FortreeCity_Gym_EventScript_GiveTeraOrb_Text_3:
+	.string "Most POKéMON have a Tera Type matching\n"
+	.string "either their primary or secondary type.$"
+
+FortreeCity_Gym_EventScript_GiveTeraOrb_Text_4:
+	.string "Tera Shards can be used to change the\n"
+	.string "type of a POKéMON, and will be available\l"
+	.string "at most POKéMARTs - Even those you've\l"
+	.string "already visited.$"

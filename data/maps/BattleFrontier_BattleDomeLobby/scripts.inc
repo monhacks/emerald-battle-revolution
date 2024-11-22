@@ -41,6 +41,7 @@ BattleFrontier_BattleDomeLobby_EventScript_QuitWithoutSaving::
 	dome_set DOME_DATA_ATTEMPTED_CHALLENGE, TRUE
 	frontier_set FRONTIER_DATA_CHALLENGE_STATUS, 0
 	setvar VAR_TEMP_CHALLENGE_STATUS, 255
+	clearflag FLAG_FORCE_FRONTIER_LEVEL_SCALING
 	releaseall
 	end
 
@@ -55,6 +56,7 @@ BattleFrontier_BattleDomeLobby_EventScript_WonChallenge::
 BattleFrontier_BattleDomeLobby_EventScript_DefeatedAce::
 	msgbox BattleFrontier_BattleDomeLobby_Text_CongratsDefeatedTucker, MSGBOX_DEFAULT
 BattleFrontier_BattleDomeLobby_EventScript_GiveBattlePoints::
+	clearflag FLAG_FORCE_FRONTIER_LEVEL_SCALING
 	msgbox BattleFrontier_BattleDomeLobby_Text_AwardTheseBattlePoints, MSGBOX_DEFAULT
 	frontier_givepoints
 	msgbox BattleFrontier_Text_ObtainedXBattlePoints, MSGBOX_GETPOINTS
@@ -73,6 +75,7 @@ BattleFrontier_BattleDomeLobby_EventScript_GiveBattlePoints::
 
 BattleFrontier_BattleDomeLobby_EventScript_LostChallenge::
 	lockall
+	clearflag FLAG_FORCE_FRONTIER_LEVEL_SCALING
 	msgbox BattleFrontier_BattleDomeLobby_Text_ThankYouForPlaying, MSGBOX_DEFAULT
 	message BattleFrontier_BattleDomeLobby_Text_RecordWillBeSaved
 	waitmessage
@@ -190,6 +193,7 @@ BattleFrontier_BattleDomeLobby_EventScript_SaveBeforeChallenge::
 	dome_inittrainers
 BattleFrontier_BattleDomeLobby_EventScript_EnterChallenge::
 	special SavePlayerParty
+	setflag FLAG_FORCE_FRONTIER_LEVEL_SCALING
 	frontier_setpartyorder FRONTIER_PARTY_SIZE
 	dome_settrainers
 	msgbox BattleFrontier_BattleDomeLobby_Text_ShowYouToBattleDome, MSGBOX_DEFAULT
