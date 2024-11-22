@@ -23,6 +23,9 @@
 #include "constants/items.h"
 #include "constants/moves.h"
 
+#include "config/battle_frontier_generator.h"
+#include "battle_frontier_generator.h"
+
 static u8 GetMaxPowerTier(u32 move);
 
 struct GMaxMove
@@ -79,6 +82,11 @@ bool32 CanDynamax(u32 battler)
     // Prevents Zigzagoon from dynamaxing in vanilla.
     if (gBattleTypeFlags & BATTLE_TYPE_FIRST_BATTLE && GetBattlerSide(battler) == B_SIDE_OPPONENT)
         return FALSE;
+
+    #if BFG_FLAG_FRONTIER_GENERATOR != 0
+    if ((gBattleTypeFlags & BATTLE_TYPE_FRONTIER) && FlagGet(BFG_FLAG_FRONTIER_GENERATOR) && (FrontierBattlerCanDynamax(&(GetSideParty(GetBattlerSide(battler))[gBattlerPartyIndexes[battler]])) == FALSE))
+        return FALSE;
+    #endif
 
     // Check if Player has a Dynamax Band.
     if (!TESTING && (GetBattlerPosition(battler) == B_POSITION_PLAYER_LEFT

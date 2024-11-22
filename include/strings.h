@@ -2972,6 +2972,7 @@ extern const u8 gText_CheckMapOfHoenn[];
 extern const u8 gText_CheckPokemonInDetail[];
 extern const u8 gText_CallRegisteredTrainer[];
 extern const u8 gText_CheckObtainedRibbons[];
+extern const u8 gText_Pokenav_Access_PC[];
 extern const u8 gText_PutAwayPokenav[];
 extern const u8 gText_CheckPartyPokemonInDetail[];
 extern const u8 gText_CheckAllPokemonInDetail[];
@@ -2982,6 +2983,7 @@ extern const u8 gText_FindCutePokemon[];
 extern const u8 gText_FindSmartPokemon[];
 extern const u8 gText_FindToughPokemon[];
 extern const u8 gText_ReturnToConditionMenu[];
+extern const u8 gText_Pokenav_Cannot_Access_PC[];
 extern const u8 gText_NoRibbonWinners[];
 
 // PokéNav
@@ -3040,11 +3042,22 @@ extern const u8 gText_ExpShareOff[];
 
 extern const u8 gText_BasePointsResetToZero[];
 
+// Berries
 extern const u8 gText_Fertilize[];
 extern const u8 gText_PlantBerry[];
 
 // Map name pop-up
 extern const u8 gText_AM[];
 extern const u8 gText_PM[];
+
+// Custom
+extern const u8 gText_Moves_Menu[];
+extern const u8 gText_Nickname[];
+
+extern const u8 gText_PkmnBallChanged[];
+extern const u8 gText_PkmnTeraTypeChanged[];
+
+extern const u8 gText_DynamaxBandOn[];
+extern const u8 gText_DynamaxBandOff[];
 
 #endif // GUARD_STRINGS_H

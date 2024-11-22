@@ -16,6 +16,10 @@
 #include "constants/abilities.h"
 #include "constants/hold_effects.h"
 #include "constants/rgb.h"
+#include "config/dynamax.h"
+
+#include "config/battle_frontier_generator.h"
+#include "battle_frontier_generator.h"
 
 // Sets flags and variables upon a battler's Terastallization.
 void ActivateTera(u32 battler)
@@ -67,6 +71,11 @@ bool32 CanTerastallize(u32 battler)
     if (gBattleTypeFlags & BATTLE_TYPE_FIRST_BATTLE && GetBattlerSide(battler) == B_SIDE_OPPONENT)
         return FALSE;
 
+    #if BFG_FLAG_FRONTIER_GENERATOR != 0
+    if ((gBattleTypeFlags & BATTLE_TYPE_FRONTIER) && FlagGet(BFG_FLAG_FRONTIER_GENERATOR) && (FrontierBattlerCanTerastalise() == FALSE))
+        return FALSE; // Battler cannot terastalise
+    #endif
+    
     if (TESTING || GetBattlerSide(battler) == B_SIDE_OPPONENT)
     {
         // Skip all other checks in this block, go to HasTrainerUsedGimmick

@@ -33,6 +33,7 @@
 #include "battle_debug.h"
 #include "data.h"
 #include "pokemon_summary_screen.h"
+#include "event_data.h"
 #include "constants/songs.h"
 #include "constants/items.h"
 #include "constants/species.h"
@@ -41,6 +42,12 @@
 #include "constants/battle_move_effects.h"
 #include "constants/abilities.h"
 #include "constants/moves.h"
+#include "config/battle_frontier.h"
+#include "config/dynamax.h"
+
+#include "config/battle_frontier_generator.h"
+#include "battle_frontier_generator.h"
+#include "event_data.h"
 
 #define STAT_STAGE(battler, stat) (gBattleMons[battler].statStages[stat - 1])
 
@@ -171,6 +178,10 @@ bool32 IsViableZMove(u32 battler, u32 move)
     int moveSlotIndex;
 
     item = gBattleMons[battler].item;
+    
+    // Check if Z Moves are blocked by dynamax battle
+    if (!DB_ALLOW_Z_MOVES && FlagGet(FLAG_DYNAMAX_BATTLE))
+        return FALSE;
 
     if (gBattleStruct->gimmick.usableGimmick[battler] != GIMMICK_Z_MOVE)
         return FALSE;

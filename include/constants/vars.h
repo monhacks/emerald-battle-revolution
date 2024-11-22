@@ -94,7 +94,7 @@
 #define VAR_CRUISE_STEP_COUNT                            0x404A
 #define VAR_POKELOT_RND1                                 0x404B
 #define VAR_POKELOT_RND2                                 0x404C
-#define VAR_LAST_REPEL_OR_LURE_USED                      0x404D // Last repel / lure type used
+#define VAR_POKELOT_PRIZE_PLACE                          0x404D 
 #define VAR_UNUSED_0x404E                                0x404E // Unused Var
 #define VAR_LOTAD_SIZE_RECORD                            0x404F
 #define VAR_LITTLEROOT_TOWN_STATE                        0x4050
@@ -267,7 +267,7 @@
 #define VAR_FRONTIER_BGM                                 0x40F7 // Custom Frontier / Trainer Hill Battle BGM (Default: 0)
 #define VAR_FRONTIER_METHOD                              0x40F8 // Modern Battle Frontier Team Generation Method (Default: 0)
 #define VAR_FACTORY_GENERATOR_SEED                       0x40F9 // Battle Factory Seed
-#define VAR_UNUSED_0x40FA                                0x40FA // Unused Var
+#define VAR_LAST_REPEL_OR_LURE_USED                      0x40FA // Last repel / lure type used
 #define VAR_UNUSED_0x40FB                                0x40FB // Unused Var
 #define VAR_UNUSED_0x40FC                                0x40FC // Unused Var
 #define VAR_UNUSED_0x40FD                                0x40FD // Unused Var

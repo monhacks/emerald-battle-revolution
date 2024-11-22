@@ -48,6 +48,10 @@
 #include "constants/trainers.h"
 #include "constants/weather.h"
 #include "constants/pokemon.h"
+#include "config/dynamax.h"
+
+#include "config/battle_frontier_generator.h"
+#include "battle_frontier_generator.h"
 
 /*
 NOTE: The data and functions in this file up until (but not including) sSoundMovesTable
@@ -10652,6 +10656,15 @@ bool32 DoesSpeciesUseHoldItemToChangeForm(u16 species, u16 heldItemId)
 bool32 CanMegaEvolve(u32 battler)
 {
     u32 holdEffect = GetBattlerHoldEffect(battler, FALSE);
+        
+    // Check if Mega Evolution is blocked by dynamax battle
+    if ((!DB_ALLOW_MEGA_EVOLUTION) && FlagGet(FLAG_DYNAMAX_BATTLE))
+        return FALSE;
+
+    #if BFG_FLAG_FRONTIER_GENERATOR != 0
+    if ((gBattleTypeFlags & BATTLE_TYPE_FRONTIER) && FlagGet(BFG_FLAG_FRONTIER_GENERATOR) && (FrontierBattlerCanMegaEvolve() == FALSE))
+        return FALSE; // Battler cannot mega evolve
+    #endif
 
     // Check if Player has a Mega Ring.
     if (!TESTING
@@ -10690,6 +10703,15 @@ bool32 CanMegaEvolve(u32 battler)
 bool32 CanUltraBurst(u32 battler)
 {
     u32 holdEffect = GetBattlerHoldEffect(battler, FALSE);
+
+    // Check if Z Moves are blocked by dynamax battle
+    if (!DB_ALLOW_Z_MOVES && FlagGet(FLAG_DYNAMAX_BATTLE))
+        return FALSE;
+
+    #if BFG_FLAG_FRONTIER_GENERATOR != 0
+    if ((gBattleTypeFlags & BATTLE_TYPE_FRONTIER) && FlagGet(BFG_FLAG_FRONTIER_GENERATOR) && (FrontierBattlerCanUseZMove() == FALSE))
+        return FALSE; // Battler cannot mega evolve
+    #endif
 
     // Check if Player has a Z-Ring
     if (!TESTING && (GetBattlerPosition(battler) == B_POSITION_PLAYER_LEFT
