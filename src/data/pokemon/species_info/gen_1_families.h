@@ -1981,7 +1981,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggMoveLearnset = sRattataAlolanEggMoveLearnset,
         .formSpeciesIdTable = sRattataFormSpeciesIdTable,
         .evolutions = EVOLUTION({EVO_LEVEL_NIGHT, 20, SPECIES_RATICATE_ALOLAN},
-                                {EVO_ITEM, ITEM_BIG_MUSHROOM, SPECIES_RATICATE_ALOLAN_TOTEM}),
+                                {EVO_NONE, 0, SPECIES_RATICATE_ALOLAN_TOTEM}),
     },
 
     [SPECIES_RATICATE_ALOLAN] =
@@ -11690,7 +11690,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggMoveLearnset = sCuboneEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 28, SPECIES_MAROWAK},
                                 {EVO_ITEM, ITEM_LINKING_CORD, SPECIES_MAROWAK_ALOLAN},
-                                {EVO_ITEM, ITEM_BIG_MUSHROOM, SPECIES_MAROWAK_ALOLAN_TOTEM}),
+                                {EVO_NONE, 0, SPECIES_MAROWAK_ALOLAN_TOTEM}),
     },
 
     [SPECIES_MAROWAK] =

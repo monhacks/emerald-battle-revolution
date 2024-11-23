@@ -369,7 +369,6 @@ script BattleFrontier_Underground_B1F_EventScript_TMHMShop_Visitor1 {
     faceplayer
     msgbox(format("Wow, they have the complete set of TMs and HMs here!"))
     msgbox(format("I found a few while exploring, but I'll have to buy the rest when I need them."))
-    msgbox(format("Just remember, you won't be able to pick them up if you find them later!"))
     release
     end
 }

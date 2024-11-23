@@ -28,6 +28,7 @@ static bool32 DoesItemHavePluralName(u16);
 EWRAM_DATA struct BagPocket gBagPockets[POCKETS_COUNT] = {0};
 
 #include "data/pokemon/item_effects.h"
+#include "config/item.h"
 #include "data/items.h"
 
 static u16 GetBagItemQuantity(u16 *quantity)

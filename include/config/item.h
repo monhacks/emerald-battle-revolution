@@ -25,7 +25,7 @@
 #define I_IV_ITEM_DECREASE 1
 
 // TM config
-#define I_REUSABLE_TMS          TRUE        // In Gen5-8, TMs are reusable. Setting this to TRUE will make all vanilla TMs reusable, though they can also be cherry-picked by setting their importance to 1.
+#define I_REUSABLE_TMS          FALSE        // In Gen5-8, TMs are reusable. Setting this to TRUE will make all vanilla TMs reusable, though they can also be cherry-picked by setting their importance to 1.
 
 // Exp. Share config
 // To use this feature, replace the 0 with the flag ID you're assigning it to.
@@ -58,5 +58,8 @@
 #define I_FISHING_CHAIN             TRUE  // Introduced in XY, hooking the same Pokémon repeatedly will increase the odds of that mon being shiny. NOTE: This implementation is an approximation of the actual feature, as XY have not been throughoutly documented or datamined.
 #define I_FISHING_MINIGAME          GEN_3 // Each generation uses a variation of reeling in Pokémon once they have been hooked.
 #define I_FISHING_PROXIMITY         FALSE // Introduced in XY, fishing away from other people in enclosed areas will increase the chances of a Pokémon being hooked. NOTE: This implementation is an approximation of the actual feature, as XY have not been throughoutly documented or datamined.
+
+// Custom Item Prices
+#include "item_prices.h"
 
 #endif // GUARD_CONFIG_ITEM_H
