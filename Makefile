@@ -480,6 +480,9 @@ $(OBJ_DIR)/sym_ewram.ld: sym_ewram.txt
 $(DATA_SRC_SUBDIR)/pokemon/teachable_learnsets.h: $(DATA_ASM_BUILDDIR)/event_scripts.o
 	python3 tools/learnset_helpers/teachable.py
 
+# Declare 'bfg' as a phony target
+.PHONY: bfg
+
 # Battle Frontier Generator Stuff
 BFG_TOOLS = ./tools/bfg_helpers
 BFG_DATA_FILES = $(wildcard $(BFG_TOOLS)/data/*.json) $(wildcard $(BFG_TOOLS)/custom/*.json)
@@ -491,6 +494,29 @@ $(DATA_SRC_SUBDIR)/battle_frontier/battle_frontier_generator_move_ratings.h: $(B
 # Generate Modern Battle Frontier Trainer Class Mons Lists
 $(DATA_SRC_SUBDIR)/battle_frontier/battle_frontier_generator_trainer_class_mons.h: $(BFG_DATA_FILES) $(BFG_TOOLS)/trainer_mons.py
 	python3 $(BFG_TOOLS)/trainer_mons.py 
+
+# Rule to run both commands under the 'bfg' target
+bfg:
+	python3 $(BFG_TOOLS)/move_ratings.py
+	python3 $(BFG_TOOLS)/trainer_mons.py
+
+EBR_SAMPLE_FILES = $(wildcard $(BFG_TOOLS)/sample/*.team) $(wildcard $(BFG_TOOLS)/sample/*.set)
+EBR_SELECT_FILES = $(wildcard $(BFG_TOOLS)/select/*.json)
+
+# EBR Prereqs
+.PHONY: ebr
+
+# Simple NPC Builder
+npc: ; python3 $(BFG_TOOLS)/npc_builder.py
+
+# Sample Set / Teams Shop Builder
+shop: ; python3 $(BFG_TOOLS)/shop_builder.py
+sample: ; python3 $(BFG_TOOLS)/sample_builder.py
+
+# Multi-Select Menu Builder
+select: shop sample ; python3 $(BFG_TOOLS)/multi_select.py
+
+ebr: npc select bfg
 
 # NOTE: Based on C_DEP above, but without NODEP and KEEP_TEMPS handling.
 define TEST_DEP

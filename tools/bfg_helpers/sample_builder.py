@@ -27,11 +27,23 @@ TEAMS_OUTFILE = "sample_teams.json"
 # individual Pokemon from the teams
 # shop with the provided name
 # To ignore this, set to None
-SETS_FROM_TEAMS_FOLDER = "FROM TEAMS"
+
+# Automatic Set Formatting
+AUTO_FORMATTED_SETS = True
+
+# Create sets from teams
+SETS_FROM_TEAMS = True
+
+# Ignore duplicate sets
+ALLOW_DUPLICATES = False
 
 # Goto Purchase Jump Scripts
 SETS_GOTO = "goto(Common_EventScript_Sample_Sets_CheckPurchase)"
 TEAMS_GOTO = "goto(Common_EventScript_Sample_Team_CheckPurchase)"
+
+# If SIMPLE_SET_FORMATTING = False, sets
+# from sample teams will be placed in this folder
+SETS_FROM_TEAMS_FOLDER = "FROM TEAMS"
 
 if __name__ == "__main__":
 
@@ -40,6 +52,9 @@ if __name__ == "__main__":
 
     # Teams dict
     sample_teams = []
+
+    # Auto-Formatted Sets
+    formatted_sets = []
 
     # Get list of input files
     files = os.listdir(INPUT_FOLDER)
@@ -87,33 +102,32 @@ if __name__ == "__main__":
                         # Generate the givemon string and add it to the list
                         givemon_list.append(givemon.get_givemon_str(set))
 
-                        # Sets from teams folder defined
-                        if SETS_FROM_TEAMS_FOLDER:
-                            
-                            # Get the species name
-                            name = set["species"]
+                        # Create sets from teams
+                        if SETS_FROM_TEAMS == True:
 
-                            # Check species for name property
-                            if "name" in set["other"]:
-                                # Override default name
-                                name = set["other"]["name"]
+                            # Automatic Formatting
+                            if AUTO_FORMATTED_SETS:
+                                
+                                # Add set to simple sets
+                                # (For post-processing)
+                                formatted_sets.append(set)
 
-                            # Check species for note property
-                            if "note" in set["other"]:
-                                # Add note to the name
-                                name = f"{name} ({set['other']['note']})"
+                            else: # Manual Formatting
 
-                            # Create an extended folder for the from-teams samples
-                            extended_names = [SETS_FROM_TEAMS_FOLDER] + full_names
+                                # Get the set/species name
+                                name = common.get_set_name(set)
 
-                            # Add name to names list
-                            extended_names.append(name)
+                                # Create an extended folder for the from-teams samples
+                                extended_names = [SETS_FROM_TEAMS_FOLDER] + full_names
 
-                            # Generate the givemon string (Including sets goto jump)
-                            givemon_str = f"{givemon.get_givemon_str(set)};{SETS_GOTO}"
+                                # Add name to names list
+                                extended_names.append(name)
 
-                            # Add the sample sets to the table
-                            common.insert_data(sample_sets, extended_names, givemon_str)
+                                # Generate the givemon string (Including sets goto jump)
+                                givemon_str = f"{givemon.get_givemon_str(set)};{SETS_GOTO}"
+
+                                # Add the sample sets to the table
+                                common.insert_data(sample_sets, extended_names, givemon_str)
 
                     # Combine the givemon string (Including team goto jump)
                     givemon_str = f"{';'.join(givemon_list)};{TEAMS_GOTO}"
@@ -127,26 +141,35 @@ if __name__ == "__main__":
                     # Loop over the sets
                     for set in sets:
 
-                        # Get the species name
-                        name = set["species"]
+                        # Auto-Formatted Sets
+                        if AUTO_FORMATTED_SETS:
 
-                        # Check species for name property
-                        if "name" in set["other"]:
-                            # Override default name
-                            name = set["other"]["name"]
+                            # Add set to simple sets
+                            # (For post-processing)
+                            formatted_sets.append(set)
 
-                        # Check species for note property
-                        if "note" in set["other"]:
-                            # Add note to the name
-                            name = f"{name} ({set['other']['note']})"
+                        else: # Manually Formatted Sets
 
-                        # Add name to names list
-                        full_names.append(name)
+                            # Get the species name
+                            name = set["species"]
 
-                        # Generate the givemon string (Including sets goto jump)
-                        givemon_str = f"{givemon.get_givemon_str(set)};{SETS_GOTO}"
+                            # Check species for name property
+                            if "name" in set["other"]:
+                                # Override default name
+                                name = set["other"]["name"]
 
-                        common.insert_data(sample_sets, full_names, givemon_str)
+                            # Check species for note property
+                            if "note" in set["other"]:
+                                # Add note to the name
+                                name = f"{name} ({set['other']['note']})"
+
+                            # Add name to names list
+                            full_names.append(name)
+
+                            # Generate the givemon string (Including sets goto jump)
+                            givemon_str = f"{givemon.get_givemon_str(set)};{SETS_GOTO}"
+
+                            common.insert_data(sample_sets, full_names, givemon_str)
 
                 else:  # Unhandled extension
                     raise Exception(
@@ -156,6 +179,45 @@ if __name__ == "__main__":
             except Exception as e:
                 print(f"Failed for file {file_name}! Error: {str(e)}")
 
+    # Auto-formatted sets enabled
+    if AUTO_FORMATTED_SETS:
+
+        # Duplicate Sets
+        duplicates = []
+
+        # Auto-formatted sets
+        for set in formatted_sets:
+
+            # Get the set/species name
+            name = common.get_set_name(set)
+
+            # Get the set/species spread
+            spread = common.get_set_spread(set)
+
+            # Create names list
+            names = [name, spread]
+
+            # Allow duplicates is disabled
+            if ALLOW_DUPLICATES == False:
+
+                # Key for checking duplicates
+                key = f"{name}@{spread}"
+
+                # Set already exists
+                if key in duplicates:
+
+                    # Skip the set
+                    continue
+
+                # Add the key to the list
+                duplicates.append(key)
+
+            # Generate the givemon string (Including sets goto jump)
+            givemon_str = f"{givemon.get_givemon_str(set)};{SETS_GOTO}"
+
+            # Add the sample sets to the table
+            common.insert_data(sample_sets, names, givemon_str)
+           
     # Create output directory (if not exists)
     os.makedirs(OUTPUT_DIRECTORY, exist_ok=True)
 

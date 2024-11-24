@@ -1,3 +1,36 @@
+NATURES = {
+    # Attack Boosting
+    "HARDY": {"pos": "atk", "neg": "atk"},
+    "LONELY": {"pos": "atk", "neg": "def"},
+    "BRAVE": {"pos": "atk", "neg": "spe"},
+    "ADAMANT": {"pos": "atk", "neg": "spa"},
+    "NAUGHTY": {"pos": "atk", "neg": "spd"},
+    # Defense Boosting
+    "BOLD": {"pos": "def", "neg": "atk"},
+    "DOCILE": {"pos": "def", "neg": "def"},
+    "RELAXED": {"pos": "def", "neg": "spe"},
+    "IMPISH": {"pos": "def", "neg": "spa"},
+    "LAX": {"pos": "def", "neg": "spd"},
+    # Speed Boosting
+    "TIMID": {"pos": "spe", "neg": "atk"},
+    "HASTY": {"pos": "spe", "neg": "def"},
+    "SERIOUS": {"pos": "spe", "neg": "spe"},
+    "JOLLY": {"pos": "spe", "neg": "spa"},
+    "NAIVE": {"pos": "spe", "neg": "spd"},
+    # Sp. Attack Boosting
+    "MODEST": {"pos": "spa", "neg": "atk"},
+    "MILD": {"pos": "spa", "neg": "def"},
+    "QUIET": {"pos": "spa", "neg": "spe"},
+    "BASHFUL": {"pos": "spa", "neg": "spa"},
+    "RASH": {"pos": "spa", "neg": "spd"},
+    # Sp. Defense Boosting
+    "CALM": {"pos": "spd", "neg": "atk"},
+    "GENTLE": {"pos": "spd", "neg": "def"},
+    "SASSY": {"pos": "spd", "neg": "spe"},
+    "CAREFUL": {"pos": "spd", "neg": "spa"},
+    "QUIRKY": {"pos": "spd", "neg": "spd"},
+}
+
 # Strings to be replaced
 # This list will need to be updated whenever an incompatibility
 # is found between the list of names in both the Showdown! Data
@@ -15,7 +48,7 @@ REPLACE_CONSTANT = {
     "URSHIFU_RAPID_STRIKE": "URSHIFU_RAPID_STRIKE_STYLE",
     "OGERPON_HEARTHFLAME": "OGERPON_HEARTHFLAME_MASK",
     "OGERPON_WELLSPRING": "OGERPON_WELLSPRING_MASK",
-    "INDEEDEE_F": "INDEEDEE_FEMALE"
+    "INDEEDEE_F": "INDEEDEE_FEMALE",
 }
 
 

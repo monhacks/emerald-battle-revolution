@@ -9,6 +9,64 @@ CONFIG_FILE = "./include/config/battle_frontier_generator.h"
 # Species filename, for retrieving species constants
 SPECIES_FILE = "./include/constants/species.h"
 
+def get_set_spread(set):
+
+    # Spread string
+    # Will be joined later
+    spread_str = []
+
+    # Nature lookup table key
+    key = set["nature"].upper()
+
+    # Get set nature
+    nature = None
+    if key in data.NATURES:
+        nature = data.NATURES[key]
+    else:
+        nature = data.NATURES["QUIRKY"]
+
+    # Spread evs
+    spread = set["evs"]
+
+    # Loop over the spread items (in-order)
+    for key in ["hp","atk","def","spa","spd","spe"]:
+
+        # Convert num to string
+        string = str(spread[key])
+
+        # Add '+' if boosted
+        if nature['pos'] == key:
+            string = f"{string}+"
+            
+        # Add '-' if reduced
+        elif nature['neg'] == key:
+            string = f"{string}-"
+
+        # Add string to spread
+        spread_str.append(string)
+
+    # Return joined string
+    return "/".join(spread_str)
+
+def get_set_name(set, use_custom_name = False):
+
+    # Get the species name
+    name = set["species"]
+
+    # Use custom name
+    if use_custom_name:
+        # Check species for name property
+        if "name" in set["other"]:
+            # Override default name
+            name = set["other"]["name"]
+
+        # Check species for note property
+        if "note" in set["other"]:
+            # Add note to the name
+            name = f"{name} ({set['other']['note']})"
+
+    # Return set name
+    return name
 
 def get_species_constants():
 
@@ -152,7 +210,6 @@ def is_tagged(species, tag):
 
 def is_forme(species, forme):
     return "forme" in species and species["forme"] == forme
-
 
 def insert_data(data, path, value):
 
