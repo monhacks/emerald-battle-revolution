@@ -102,7 +102,6 @@ void MoveDeleterForgetMove(void);
 void BufferMoveDeleterNicknameAndMove(void);
 void GetNumMovesSelectedMonHas(void);
 void MoveDeleterChooseMoveToForget(void);
-bool32 IsItemFlute(u16 item);
 
 void ItemUseCB_ReduceIV(u8 taskId, TaskFunc task);
 void ItemUseCB_IncreaseIV(u8 taskId, TaskFunc task);
