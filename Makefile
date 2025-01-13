@@ -166,6 +166,7 @@ RAMSCRGEN := tools/ramscrgen/ramscrgen$(EXE)
 FIX := tools/gbafix/gbafix$(EXE)
 MAPJSON := tools/mapjson/mapjson$(EXE)
 JSONPROC := tools/jsonproc/jsonproc$(EXE)
+SCRIPT := tools/poryscript/poryscript$(EXE)
 PATCHELF := tools/patchelf/patchelf$(EXE)
 ROMTEST ?= $(shell { command -v mgba-rom-test || command -v tools/mgba/mgba-rom-test$(EXE); } 2>/dev/null)
 ROMTESTHYDRA := tools/mgba-rom-test-hydra/mgba-rom-test-hydra$(EXE)
@@ -343,6 +344,7 @@ include songs.mk
 $(CRY_SUBDIR)/uncomp_%.bin: $(CRY_SUBDIR)/uncomp_%.aif ; $(AIF) $< $@
 $(CRY_SUBDIR)/%.bin: $(CRY_SUBDIR)/%.aif ; $(AIF) $< $@ --compress
 sound/%.bin: sound/%.aif ; $(AIF) $< $@
+data/%.inc: data/%.pory; $(SCRIPT) -i $< -o $@ -fc tools/poryscript/font_config.json -cc tools/poryscript/command_config.json
 
 COMPETITIVE_PARTY_SYNTAX := $(shell PATH="$(PATH)"; echo 'COMPETITIVE_PARTY_SYNTAX' | $(CPP) $(CPPFLAGS) -imacros include/global.h | tail -n1)
 ifeq ($(COMPETITIVE_PARTY_SYNTAX),1)
@@ -479,44 +481,6 @@ $(OBJ_DIR)/sym_ewram.ld: sym_ewram.txt
 # NOTE: Depending on event_scripts.o is hacky, but we want to depend on everything event_scripts.s depends on without having to alter scaninc
 $(DATA_SRC_SUBDIR)/pokemon/teachable_learnsets.h: $(DATA_ASM_BUILDDIR)/event_scripts.o
 	python3 tools/learnset_helpers/teachable.py
-
-# Declare 'bfg' as a phony target
-.PHONY: bfg
-
-# Battle Frontier Generator Stuff
-BFG_TOOLS = ./tools/bfg_helpers
-BFG_DATA_FILES = $(wildcard $(BFG_TOOLS)/data/*.json) $(wildcard $(BFG_TOOLS)/custom/*.json)
-
-# Generate Modern Battle Frontier Move Ratings List
-$(DATA_SRC_SUBDIR)/battle_frontier/battle_frontier_generator_move_ratings.h: $(BFG_DATA_FILES) $(BFG_TOOLS)/move_ratings.py
-	python3 $(BFG_TOOLS)/move_ratings.py
-
-# Generate Modern Battle Frontier Trainer Class Mons Lists
-$(DATA_SRC_SUBDIR)/battle_frontier/battle_frontier_generator_trainer_class_mons.h: $(BFG_DATA_FILES) $(BFG_TOOLS)/trainer_mons.py
-	python3 $(BFG_TOOLS)/trainer_mons.py 
-
-# Rule to run both commands under the 'bfg' target
-bfg:
-	python3 $(BFG_TOOLS)/move_ratings.py
-	python3 $(BFG_TOOLS)/trainer_mons.py
-
-EBR_SAMPLE_FILES = $(wildcard $(BFG_TOOLS)/sample/*.team) $(wildcard $(BFG_TOOLS)/sample/*.set)
-EBR_SELECT_FILES = $(wildcard $(BFG_TOOLS)/select/*.json)
-
-# EBR Prereqs
-.PHONY: ebr
-
-# Simple NPC Builder
-npc: ; python3 $(BFG_TOOLS)/npc_builder.py
-
-# Sample Set / Teams Shop Builder
-shop: ; python3 $(BFG_TOOLS)/shop_builder.py
-sample: ; python3 $(BFG_TOOLS)/sample_builder.py
-
-# Multi-Select Menu Builder
-select: shop sample ; python3 $(BFG_TOOLS)/multi_select.py
-
-ebr: npc select bfg
 
 # NOTE: Based on C_DEP above, but without NODEP and KEEP_TEMPS handling.
 define TEST_DEP

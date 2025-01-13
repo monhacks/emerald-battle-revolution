@@ -32,7 +32,7 @@ TEAMS_OUTFILE = "sample_teams.json"
 AUTO_FORMATTED_SETS = True
 
 # Create sets from teams
-SETS_FROM_TEAMS = True
+SETS_FROM_TEAMS = False
 
 # Ignore duplicate sets
 ALLOW_DUPLICATES = False
@@ -68,7 +68,7 @@ if __name__ == "__main__":
         # standard_mega_gardevoir.team
 
         # Split filename, extension from file info
-        no_extension, extension = file_name.split(".")
+        no_extension, extension = file_name.rsplit(".", 1)
 
         # Combine the file path for the input file
         file_path = os.path.join(INPUT_FOLDER, file_name)

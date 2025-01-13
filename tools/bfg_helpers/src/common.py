@@ -193,6 +193,7 @@ def get_species_id(species_name):
         .replace("'", "")
         .replace(":", "")
         .replace("_", "")
+        .replace(".", "")
     )
 
 
