@@ -154,7 +154,6 @@ bool8 GetSeenMon(void);
 bool8 GetCaughtMon(void);
 void SetSeenMon(void);
 void SetCaughtMon(void);
-bool8 CheckPartyForMon(void);
 
 void Special_ShowDiploma(void)
 {

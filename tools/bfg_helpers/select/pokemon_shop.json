@@ -197,7 +197,7 @@
       },
       {
         "name": "Grimer-Alola",
-        "action": "givemon(SPECIES_GRIMER_ALOLAN,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
+        "action": "givemon(SPECIES_GRIMER_ALOLA,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
       },
       {
         "name": "Houndour",
@@ -221,11 +221,11 @@
       },
       {
         "name": "Meowth-Alola",
-        "action": "givemon(SPECIES_MEOWTH_ALOLAN,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
+        "action": "givemon(SPECIES_MEOWTH_ALOLA,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
       },
       {
         "name": "Moltres-Galar",
-        "action": "givemon(SPECIES_MOLTRES_GALARIAN,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
+        "action": "givemon(SPECIES_MOLTRES_GALAR,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
       },
       {
         "name": "Morpeko",
@@ -253,11 +253,11 @@
       },
       {
         "name": "Qwilfish-Hisui",
-        "action": "givemon(SPECIES_QWILFISH_HISUIAN,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
+        "action": "givemon(SPECIES_QWILFISH_HISUI,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
       },
       {
         "name": "Rattata-Alola",
-        "action": "givemon(SPECIES_RATTATA_ALOLAN,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
+        "action": "givemon(SPECIES_RATTATA_ALOLA,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
       },
       {
         "name": "Roaring Moon",
@@ -293,7 +293,7 @@
       },
       {
         "name": "Zigzagoon-Galar",
-        "action": "givemon(SPECIES_ZIGZAGOON_GALARIAN,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
+        "action": "givemon(SPECIES_ZIGZAGOON_GALAR,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
       },
       {
         "name": "Zorua",
@@ -439,7 +439,7 @@
       },
       {
         "name": "Geodude-Alola",
-        "action": "givemon(SPECIES_GEODUDE_ALOLAN,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
+        "action": "givemon(SPECIES_GEODUDE_ALOLA,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
       },
       {
         "name": "Helioptile",
@@ -535,7 +535,7 @@
       },
       {
         "name": "Voltorb-Hisui",
-        "action": "givemon(SPECIES_VOLTORB_HISUIAN,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
+        "action": "givemon(SPECIES_VOLTORB_HISUI,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
       },
       {
         "name": "Wattrel",
@@ -681,7 +681,7 @@
       },
       {
         "name": "Farfetchd-Galar",
-        "action": "givemon(SPECIES_FARFETCHD_GALARIAN,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
+        "action": "givemon(SPECIES_FARFETCHD_GALAR,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
       },
       {
         "name": "Flamigo",
@@ -757,7 +757,7 @@
       },
       {
         "name": "Sneasel-Hisui",
-        "action": "givemon(SPECIES_SNEASEL_HISUIAN,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
+        "action": "givemon(SPECIES_SNEASEL_HISUI,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
       },
       {
         "name": "Stufful",
@@ -777,7 +777,7 @@
       },
       {
         "name": "Zapdos-Galar",
-        "action": "givemon(SPECIES_ZAPDOS_GALARIAN,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
+        "action": "givemon(SPECIES_ZAPDOS_GALAR,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
       }
     ]
   },
@@ -822,7 +822,7 @@
       },
       {
         "name": "Growlithe-Hisui",
-        "action": "givemon(SPECIES_GROWLITHE_HISUIAN,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
+        "action": "givemon(SPECIES_GROWLITHE_HISUI,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
       },
       {
         "name": "Heatmor",
@@ -923,7 +923,7 @@
       },
       {
         "name": "Articuno-Galar",
-        "action": "givemon(SPECIES_ARTICUNO_GALARIAN,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
+        "action": "givemon(SPECIES_ARTICUNO_GALAR,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
       },
       {
         "name": "Bombirdier",
@@ -1007,7 +1007,7 @@
       },
       {
         "name": "Moltres-Galar",
-        "action": "givemon(SPECIES_MOLTRES_GALARIAN,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
+        "action": "givemon(SPECIES_MOLTRES_GALAR,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
       },
       {
         "name": "Murkrow",
@@ -1107,7 +1107,7 @@
       },
       {
         "name": "Zapdos-Galar",
-        "action": "givemon(SPECIES_ZAPDOS_GALARIAN,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
+        "action": "givemon(SPECIES_ZAPDOS_GALAR,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
       },
       {
         "name": "Zubat",
@@ -1124,7 +1124,7 @@
       },
       {
         "name": "Corsola-Galar",
-        "action": "givemon(SPECIES_CORSOLA_GALARIAN,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
+        "action": "givemon(SPECIES_CORSOLA_GALAR,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
       },
       {
         "name": "Dhelmise",
@@ -1224,11 +1224,11 @@
       },
       {
         "name": "Yamask-Galar",
-        "action": "givemon(SPECIES_YAMASK_GALARIAN,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
+        "action": "givemon(SPECIES_YAMASK_GALAR,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
       },
       {
         "name": "Zorua-Hisui",
-        "action": "givemon(SPECIES_ZORUA_HISUIAN,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
+        "action": "givemon(SPECIES_ZORUA_HISUI,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
       }
     ]
   },
@@ -1441,7 +1441,7 @@
       },
       {
         "name": "Voltorb-Hisui",
-        "action": "givemon(SPECIES_VOLTORB_HISUIAN,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
+        "action": "givemon(SPECIES_VOLTORB_HISUI,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
       }
     ]
   },
@@ -1466,7 +1466,7 @@
       },
       {
         "name": "Diglett-Alola",
-        "action": "givemon(SPECIES_DIGLETT_ALOLAN,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
+        "action": "givemon(SPECIES_DIGLETT_ALOLA,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
       },
       {
         "name": "Drilbur",
@@ -1554,7 +1554,7 @@
       },
       {
         "name": "Stunfisk-Galar",
-        "action": "givemon(SPECIES_STUNFISK_GALARIAN,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
+        "action": "givemon(SPECIES_STUNFISK_GALAR,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
       },
       {
         "name": "Swinub",
@@ -1574,11 +1574,11 @@
       },
       {
         "name": "Wooper-Paldea",
-        "action": "givemon(SPECIES_WOOPER_PALDEAN,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
+        "action": "givemon(SPECIES_WOOPER_PALDEA,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
       },
       {
         "name": "Yamask-Galar",
-        "action": "givemon(SPECIES_YAMASK_GALARIAN,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
+        "action": "givemon(SPECIES_YAMASK_GALAR,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
       }
     ]
   },
@@ -1615,7 +1615,7 @@
       },
       {
         "name": "Darumaka-Galar",
-        "action": "givemon(SPECIES_DARUMAKA_GALARIAN,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
+        "action": "givemon(SPECIES_DARUMAKA_GALAR,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
       },
       {
         "name": "Delibird",
@@ -1639,7 +1639,7 @@
       },
       {
         "name": "Sandshrew-Alola",
-        "action": "givemon(SPECIES_SANDSHREW_ALOLAN,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
+        "action": "givemon(SPECIES_SANDSHREW_ALOLA,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
       },
       {
         "name": "Smoochum",
@@ -1675,7 +1675,7 @@
       },
       {
         "name": "Vulpix-Alola",
-        "action": "givemon(SPECIES_VULPIX_ALOLAN,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
+        "action": "givemon(SPECIES_VULPIX_ALOLA,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
       }
     ]
   },
@@ -1860,7 +1860,7 @@
       },
       {
         "name": "Rattata-Alola",
-        "action": "givemon(SPECIES_RATTATA_ALOLAN,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
+        "action": "givemon(SPECIES_RATTATA_ALOLA,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
       },
       {
         "name": "Rufflet",
@@ -1960,11 +1960,11 @@
       },
       {
         "name": "Zigzagoon-Galar",
-        "action": "givemon(SPECIES_ZIGZAGOON_GALARIAN,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
+        "action": "givemon(SPECIES_ZIGZAGOON_GALAR,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
       },
       {
         "name": "Zorua-Hisui",
-        "action": "givemon(SPECIES_ZORUA_HISUIAN,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
+        "action": "givemon(SPECIES_ZORUA_HISUI,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
       }
     ]
   },
@@ -2013,7 +2013,7 @@
       },
       {
         "name": "Grimer-Alola",
-        "action": "givemon(SPECIES_GRIMER_ALOLAN,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
+        "action": "givemon(SPECIES_GRIMER_ALOLA,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
       },
       {
         "name": "Gulpin",
@@ -2057,7 +2057,7 @@
       },
       {
         "name": "Qwilfish-Hisui",
-        "action": "givemon(SPECIES_QWILFISH_HISUIAN,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
+        "action": "givemon(SPECIES_QWILFISH_HISUI,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
       },
       {
         "name": "Salandit",
@@ -2081,7 +2081,7 @@
       },
       {
         "name": "Sneasel-Hisui",
-        "action": "givemon(SPECIES_SNEASEL_HISUIAN,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
+        "action": "givemon(SPECIES_SNEASEL_HISUI,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
       },
       {
         "name": "Spinarak",
@@ -2121,7 +2121,7 @@
       },
       {
         "name": "Wooper-Paldea",
-        "action": "givemon(SPECIES_WOOPER_PALDEAN,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
+        "action": "givemon(SPECIES_WOOPER_PALDEA,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
       },
       {
         "name": "Zubat",
@@ -2138,7 +2138,7 @@
       },
       {
         "name": "Articuno-Galar",
-        "action": "givemon(SPECIES_ARTICUNO_GALARIAN,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
+        "action": "givemon(SPECIES_ARTICUNO_GALAR,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
       },
       {
         "name": "Baltoy",
@@ -2242,7 +2242,7 @@
       },
       {
         "name": "Ponyta-Galar",
-        "action": "givemon(SPECIES_PONYTA_GALARIAN,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
+        "action": "givemon(SPECIES_PONYTA_GALAR,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
       },
       {
         "name": "Ralts",
@@ -2262,7 +2262,7 @@
       },
       {
         "name": "Slowpoke-Galar",
-        "action": "givemon(SPECIES_SLOWPOKE_GALARIAN,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
+        "action": "givemon(SPECIES_SLOWPOKE_GALAR,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
       },
       {
         "name": "Smoochum",
@@ -2351,7 +2351,7 @@
       },
       {
         "name": "Geodude-Alola",
-        "action": "givemon(SPECIES_GEODUDE_ALOLAN,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
+        "action": "givemon(SPECIES_GEODUDE_ALOLA,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
       },
       {
         "name": "Glimmet",
@@ -2359,7 +2359,7 @@
       },
       {
         "name": "Growlithe-Hisui",
-        "action": "givemon(SPECIES_GROWLITHE_HISUIAN,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
+        "action": "givemon(SPECIES_GROWLITHE_HISUI,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
       },
       {
         "name": "Iron Boulder",
@@ -2476,7 +2476,7 @@
       },
       {
         "name": "Diglett-Alola",
-        "action": "givemon(SPECIES_DIGLETT_ALOLAN,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
+        "action": "givemon(SPECIES_DIGLETT_ALOLA,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
       },
       {
         "name": "Duraludon",
@@ -2520,7 +2520,7 @@
       },
       {
         "name": "Meowth-Galar",
-        "action": "givemon(SPECIES_MEOWTH_GALARIAN,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
+        "action": "givemon(SPECIES_MEOWTH_GALAR,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
       },
       {
         "name": "Orthworm",
@@ -2532,7 +2532,7 @@
       },
       {
         "name": "Sandshrew-Alola",
-        "action": "givemon(SPECIES_SANDSHREW_ALOLAN,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
+        "action": "givemon(SPECIES_SANDSHREW_ALOLA,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
       },
       {
         "name": "Shieldon",
@@ -2544,7 +2544,7 @@
       },
       {
         "name": "Stunfisk-Galar",
-        "action": "givemon(SPECIES_STUNFISK_GALARIAN,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
+        "action": "givemon(SPECIES_STUNFISK_GALAR,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
       },
       {
         "name": "Tinkatink",

@@ -1696,37 +1696,38 @@ static void Task_HandleInput(u8 taskId)
             BeginCloseSummaryScreen(taskId);
         }
         // show IVs/EVs/stats on button presses
-        else if (gMain.newKeys & R_BUTTON)
+        else if (JOY_NEW(R_BUTTON))
         {
             if (sMonSummaryScreen->currPageIndex == PSS_PAGE_SKILLS)
             {
                 BufferIvOrEvStats(0);
             }
         }
-        else if (gMain.newKeys & L_BUTTON)
+        else if (JOY_NEW(L_BUTTON))
         {
             if (sMonSummaryScreen->currPageIndex == PSS_PAGE_SKILLS)
             {
                 BufferIvOrEvStats(1);
             }
         }
-        else if (gMain.newKeys & START_BUTTON)
+        else if (JOY_NEW(START_BUTTON))
         {
             if (sMonSummaryScreen->currPageIndex == PSS_PAGE_SKILLS)
             {
                 BufferIvOrEvStats(2);
             }
-        }
-        else if (JOY_NEW(START_BUTTON)
-                && ShouldShowMoveRelearner()
-                && (sMonSummaryScreen->currPageIndex == PSS_PAGE_BATTLE_MOVES || sMonSummaryScreen->currPageIndex == PSS_PAGE_CONTEST_MOVES))
-        {
-            sMonSummaryScreen->callback = CB2_InitLearnMove;
-            gSpecialVar_0x8004 = sMonSummaryScreen->curMonIndex;
-            gOriginSummaryScreenPage = sMonSummaryScreen->currPageIndex;
-            StopPokemonAnimations();
-            PlaySE(SE_SELECT);
-            BeginCloseSummaryScreen(taskId);
+            else if (
+                ShouldShowMoveRelearner()
+                && (sMonSummaryScreen->currPageIndex == PSS_PAGE_BATTLE_MOVES || sMonSummaryScreen->currPageIndex == PSS_PAGE_CONTEST_MOVES)
+            )
+            {
+                sMonSummaryScreen->callback = CB2_InitLearnMove;
+                gSpecialVar_0x8004 = sMonSummaryScreen->curMonIndex;
+                gOriginSummaryScreenPage = sMonSummaryScreen->currPageIndex;
+                StopPokemonAnimations();
+                PlaySE(SE_SELECT);
+                BeginCloseSummaryScreen(taskId);
+            }
         }
         else if (DEBUG_POKEMON_SPRITE_VISUALIZER && JOY_NEW(SELECT_BUTTON) && !gMain.inBattle)
         {

@@ -405,7 +405,7 @@ Auto_EventScript_Pokemon_Shop_Rock_Page3_3:
 
 Auto_EventScript_Pokemon_Shop_Rock_Page3_4:
 # 171 "data/scripts/pokemon_shop_options.pory"
-	givemon SPECIES_GEODUDE_ALOLAN, 1
+	givemon SPECIES_GEODUDE_ALOLA, 1
 # 172 "data/scripts/pokemon_shop_options.pory"
 	goto Common_EventScript_Pokemon_Shop_CheckPurchase
 	return
@@ -419,7 +419,7 @@ Auto_EventScript_Pokemon_Shop_Rock_Page3_5:
 
 Auto_EventScript_Pokemon_Shop_Rock_Page3_6:
 # 177 "data/scripts/pokemon_shop_options.pory"
-	givemon SPECIES_GROWLITHE_HISUIAN, 1
+	givemon SPECIES_GROWLITHE_HISUI, 1
 # 178 "data/scripts/pokemon_shop_options.pory"
 	goto Common_EventScript_Pokemon_Shop_CheckPurchase
 	return
@@ -815,7 +815,7 @@ Auto_EventScript_Pokemon_Shop_Steel_Page1_5:
 
 Auto_EventScript_Pokemon_Shop_Steel_Page1_6:
 # 345 "data/scripts/pokemon_shop_options.pory"
-	givemon SPECIES_DIGLETT_ALOLAN, 1
+	givemon SPECIES_DIGLETT_ALOLA, 1
 # 346 "data/scripts/pokemon_shop_options.pory"
 	goto Common_EventScript_Pokemon_Shop_CheckPurchase
 	return
@@ -994,7 +994,7 @@ Auto_EventScript_Pokemon_Shop_Steel_Page4::
 
 Auto_EventScript_Pokemon_Shop_Steel_Page4_2:
 # 420 "data/scripts/pokemon_shop_options.pory"
-	givemon SPECIES_MEOWTH_GALARIAN, 1
+	givemon SPECIES_MEOWTH_GALAR, 1
 # 421 "data/scripts/pokemon_shop_options.pory"
 	goto Common_EventScript_Pokemon_Shop_CheckPurchase
 	return
@@ -1015,7 +1015,7 @@ Auto_EventScript_Pokemon_Shop_Steel_Page4_4:
 
 Auto_EventScript_Pokemon_Shop_Steel_Page4_5:
 # 429 "data/scripts/pokemon_shop_options.pory"
-	givemon SPECIES_SANDSHREW_ALOLAN, 1
+	givemon SPECIES_SANDSHREW_ALOLA, 1
 # 430 "data/scripts/pokemon_shop_options.pory"
 	goto Common_EventScript_Pokemon_Shop_CheckPurchase
 	return
@@ -1070,7 +1070,7 @@ Auto_EventScript_Pokemon_Shop_Steel_Page5_2:
 
 Auto_EventScript_Pokemon_Shop_Steel_Page5_3:
 # 452 "data/scripts/pokemon_shop_options.pory"
-	givemon SPECIES_STUNFISK_GALARIAN, 1
+	givemon SPECIES_STUNFISK_GALAR, 1
 # 453 "data/scripts/pokemon_shop_options.pory"
 	goto Common_EventScript_Pokemon_Shop_CheckPurchase
 	return
@@ -2168,7 +2168,7 @@ Auto_EventScript_Pokemon_Shop_Ground_Page1_5:
 
 Auto_EventScript_Pokemon_Shop_Ground_Page1_6:
 # 916 "data/scripts/pokemon_shop_options.pory"
-	givemon SPECIES_DIGLETT_ALOLAN, 1
+	givemon SPECIES_DIGLETT_ALOLA, 1
 # 917 "data/scripts/pokemon_shop_options.pory"
 	goto Common_EventScript_Pokemon_Shop_CheckPurchase
 	return
@@ -2492,7 +2492,7 @@ Auto_EventScript_Pokemon_Shop_Ground_Page6_2:
 
 Auto_EventScript_Pokemon_Shop_Ground_Page6_3:
 # 1052 "data/scripts/pokemon_shop_options.pory"
-	givemon SPECIES_STUNFISK_GALARIAN, 1
+	givemon SPECIES_STUNFISK_GALAR, 1
 # 1053 "data/scripts/pokemon_shop_options.pory"
 	goto Common_EventScript_Pokemon_Shop_CheckPurchase
 	return
@@ -2557,14 +2557,14 @@ Auto_EventScript_Pokemon_Shop_Ground_Page7_2:
 
 Auto_EventScript_Pokemon_Shop_Ground_Page7_3:
 # 1081 "data/scripts/pokemon_shop_options.pory"
-	givemon SPECIES_WOOPER_PALDEAN, 1
+	givemon SPECIES_WOOPER_PALDEA, 1
 # 1082 "data/scripts/pokemon_shop_options.pory"
 	goto Common_EventScript_Pokemon_Shop_CheckPurchase
 	return
 
 Auto_EventScript_Pokemon_Shop_Ground_Page7_4:
 # 1084 "data/scripts/pokemon_shop_options.pory"
-	givemon SPECIES_YAMASK_GALARIAN, 1
+	givemon SPECIES_YAMASK_GALAR, 1
 # 1085 "data/scripts/pokemon_shop_options.pory"
 	goto Common_EventScript_Pokemon_Shop_CheckPurchase
 	return
@@ -2688,7 +2688,7 @@ Auto_EventScript_Pokemon_Shop_Ice_Page2_3:
 
 Auto_EventScript_Pokemon_Shop_Ice_Page2_4:
 # 1136 "data/scripts/pokemon_shop_options.pory"
-	givemon SPECIES_DARUMAKA_GALARIAN, 1
+	givemon SPECIES_DARUMAKA_GALAR, 1
 # 1137 "data/scripts/pokemon_shop_options.pory"
 	goto Common_EventScript_Pokemon_Shop_CheckPurchase
 	return
@@ -2764,7 +2764,7 @@ Auto_EventScript_Pokemon_Shop_Ice_Page3_4:
 
 Auto_EventScript_Pokemon_Shop_Ice_Page3_5:
 # 1168 "data/scripts/pokemon_shop_options.pory"
-	givemon SPECIES_SANDSHREW_ALOLAN, 1
+	givemon SPECIES_SANDSHREW_ALOLA, 1
 # 1169 "data/scripts/pokemon_shop_options.pory"
 	goto Common_EventScript_Pokemon_Shop_CheckPurchase
 	return
@@ -2891,7 +2891,7 @@ Auto_EventScript_Pokemon_Shop_Ice_Page5_3:
 
 Auto_EventScript_Pokemon_Shop_Ice_Page5_4:
 # 1223 "data/scripts/pokemon_shop_options.pory"
-	givemon SPECIES_VULPIX_ALOLAN, 1
+	givemon SPECIES_VULPIX_ALOLA, 1
 # 1224 "data/scripts/pokemon_shop_options.pory"
 	goto Common_EventScript_Pokemon_Shop_CheckPurchase
 	return
@@ -3512,7 +3512,7 @@ Auto_EventScript_Pokemon_Shop_Normal_Page9_5:
 
 Auto_EventScript_Pokemon_Shop_Normal_Page9_6:
 # 1484 "data/scripts/pokemon_shop_options.pory"
-	givemon SPECIES_RATTATA_ALOLAN, 1
+	givemon SPECIES_RATTATA_ALOLA, 1
 # 1485 "data/scripts/pokemon_shop_options.pory"
 	goto Common_EventScript_Pokemon_Shop_CheckPurchase
 	return
@@ -3857,7 +3857,7 @@ Auto_EventScript_Pokemon_Shop_Normal_Page14_5:
 
 Auto_EventScript_Pokemon_Shop_Normal_Page14_6:
 # 1629 "data/scripts/pokemon_shop_options.pory"
-	givemon SPECIES_ZIGZAGOON_GALARIAN, 1
+	givemon SPECIES_ZIGZAGOON_GALAR, 1
 # 1630 "data/scripts/pokemon_shop_options.pory"
 	goto Common_EventScript_Pokemon_Shop_CheckPurchase
 	return
@@ -3890,7 +3890,7 @@ Auto_EventScript_Pokemon_Shop_Normal_Page15::
 
 Auto_EventScript_Pokemon_Shop_Normal_Page15_2:
 # 1646 "data/scripts/pokemon_shop_options.pory"
-	givemon SPECIES_ZORUA_HISUIAN, 1
+	givemon SPECIES_ZORUA_HISUI, 1
 # 1647 "data/scripts/pokemon_shop_options.pory"
 	goto Common_EventScript_Pokemon_Shop_CheckPurchase
 	return
@@ -4069,7 +4069,7 @@ Auto_EventScript_Pokemon_Shop_Poison_Page3::
 
 Auto_EventScript_Pokemon_Shop_Poison_Page3_2:
 # 1721 "data/scripts/pokemon_shop_options.pory"
-	givemon SPECIES_GRIMER_ALOLAN, 1
+	givemon SPECIES_GRIMER_ALOLA, 1
 # 1722 "data/scripts/pokemon_shop_options.pory"
 	goto Common_EventScript_Pokemon_Shop_CheckPurchase
 	return
@@ -4214,7 +4214,7 @@ Auto_EventScript_Pokemon_Shop_Poison_Page5_2:
 
 Auto_EventScript_Pokemon_Shop_Poison_Page5_3:
 # 1782 "data/scripts/pokemon_shop_options.pory"
-	givemon SPECIES_QWILFISH_HISUIAN, 1
+	givemon SPECIES_QWILFISH_HISUI, 1
 # 1783 "data/scripts/pokemon_shop_options.pory"
 	goto Common_EventScript_Pokemon_Shop_CheckPurchase
 	return
@@ -4290,7 +4290,7 @@ Auto_EventScript_Pokemon_Shop_Poison_Page6_3:
 
 Auto_EventScript_Pokemon_Shop_Poison_Page6_4:
 # 1814 "data/scripts/pokemon_shop_options.pory"
-	givemon SPECIES_SNEASEL_HISUIAN, 1
+	givemon SPECIES_SNEASEL_HISUI, 1
 # 1815 "data/scripts/pokemon_shop_options.pory"
 	goto Common_EventScript_Pokemon_Shop_CheckPurchase
 	return
@@ -4426,7 +4426,7 @@ Auto_EventScript_Pokemon_Shop_Poison_Page8_3:
 
 Auto_EventScript_Pokemon_Shop_Poison_Page8_4:
 # 1872 "data/scripts/pokemon_shop_options.pory"
-	givemon SPECIES_WOOPER_PALDEAN, 1
+	givemon SPECIES_WOOPER_PALDEA, 1
 # 1873 "data/scripts/pokemon_shop_options.pory"
 	goto Common_EventScript_Pokemon_Shop_CheckPurchase
 	return
@@ -4481,7 +4481,7 @@ Auto_EventScript_Pokemon_Shop_Psychic_Page1_2:
 
 Auto_EventScript_Pokemon_Shop_Psychic_Page1_3:
 # 1895 "data/scripts/pokemon_shop_options.pory"
-	givemon SPECIES_ARTICUNO_GALARIAN, 1
+	givemon SPECIES_ARTICUNO_GALAR, 1
 # 1896 "data/scripts/pokemon_shop_options.pory"
 	goto Common_EventScript_Pokemon_Shop_CheckPurchase
 	return
@@ -4833,7 +4833,7 @@ Auto_EventScript_Pokemon_Shop_Psychic_Page6_3:
 
 Auto_EventScript_Pokemon_Shop_Psychic_Page6_4:
 # 2043 "data/scripts/pokemon_shop_options.pory"
-	givemon SPECIES_PONYTA_GALARIAN, 1
+	givemon SPECIES_PONYTA_GALAR, 1
 # 2044 "data/scripts/pokemon_shop_options.pory"
 	goto Common_EventScript_Pokemon_Shop_CheckPurchase
 	return
@@ -4902,7 +4902,7 @@ Auto_EventScript_Pokemon_Shop_Psychic_Page7_3:
 
 Auto_EventScript_Pokemon_Shop_Psychic_Page7_4:
 # 2072 "data/scripts/pokemon_shop_options.pory"
-	givemon SPECIES_SLOWPOKE_GALARIAN, 1
+	givemon SPECIES_SLOWPOKE_GALAR, 1
 # 2073 "data/scripts/pokemon_shop_options.pory"
 	goto Common_EventScript_Pokemon_Shop_CheckPurchase
 	return
@@ -5087,7 +5087,7 @@ Auto_EventScript_Pokemon_Shop_Fighting_Page1_5:
 
 Auto_EventScript_Pokemon_Shop_Fighting_Page1_6:
 # 2153 "data/scripts/pokemon_shop_options.pory"
-	givemon SPECIES_FARFETCHD_GALARIAN, 1
+	givemon SPECIES_FARFETCHD_GALAR, 1
 # 2154 "data/scripts/pokemon_shop_options.pory"
 	goto Common_EventScript_Pokemon_Shop_CheckPurchase
 	return
@@ -5356,7 +5356,7 @@ Auto_EventScript_Pokemon_Shop_Fighting_Page5_4:
 
 Auto_EventScript_Pokemon_Shop_Fighting_Page5_5:
 # 2266 "data/scripts/pokemon_shop_options.pory"
-	givemon SPECIES_SNEASEL_HISUIAN, 1
+	givemon SPECIES_SNEASEL_HISUI, 1
 # 2267 "data/scripts/pokemon_shop_options.pory"
 	goto Common_EventScript_Pokemon_Shop_CheckPurchase
 	return
@@ -5423,7 +5423,7 @@ Auto_EventScript_Pokemon_Shop_Fighting_Page6_4:
 
 Auto_EventScript_Pokemon_Shop_Fighting_Page6_5:
 # 2295 "data/scripts/pokemon_shop_options.pory"
-	givemon SPECIES_ZAPDOS_GALARIAN, 1
+	givemon SPECIES_ZAPDOS_GALAR, 1
 # 2296 "data/scripts/pokemon_shop_options.pory"
 	goto Common_EventScript_Pokemon_Shop_CheckPurchase
 	return
@@ -5561,7 +5561,7 @@ Auto_EventScript_Pokemon_Shop_Fire_Page2_5:
 
 Auto_EventScript_Pokemon_Shop_Fire_Page2_6:
 # 2353 "data/scripts/pokemon_shop_options.pory"
-	givemon SPECIES_GROWLITHE_HISUIAN, 1
+	givemon SPECIES_GROWLITHE_HISUI, 1
 # 2354 "data/scripts/pokemon_shop_options.pory"
 	goto Common_EventScript_Pokemon_Shop_CheckPurchase
 	return
@@ -5925,7 +5925,7 @@ Auto_EventScript_Pokemon_Shop_Flying_Page1_3:
 
 Auto_EventScript_Pokemon_Shop_Flying_Page1_4:
 # 2509 "data/scripts/pokemon_shop_options.pory"
-	givemon SPECIES_ARTICUNO_GALARIAN, 1
+	givemon SPECIES_ARTICUNO_GALAR, 1
 # 2510 "data/scripts/pokemon_shop_options.pory"
 	goto Common_EventScript_Pokemon_Shop_CheckPurchase
 	return
@@ -6208,7 +6208,7 @@ Auto_EventScript_Pokemon_Shop_Flying_Page5_4:
 
 Auto_EventScript_Pokemon_Shop_Flying_Page5_5:
 # 2628 "data/scripts/pokemon_shop_options.pory"
-	givemon SPECIES_MOLTRES_GALARIAN, 1
+	givemon SPECIES_MOLTRES_GALAR, 1
 # 2629 "data/scripts/pokemon_shop_options.pory"
 	goto Common_EventScript_Pokemon_Shop_CheckPurchase
 	return
@@ -6553,7 +6553,7 @@ Auto_EventScript_Pokemon_Shop_Flying_Page10_4:
 
 Auto_EventScript_Pokemon_Shop_Flying_Page10_5:
 # 2773 "data/scripts/pokemon_shop_options.pory"
-	givemon SPECIES_ZAPDOS_GALARIAN, 1
+	givemon SPECIES_ZAPDOS_GALAR, 1
 # 2774 "data/scripts/pokemon_shop_options.pory"
 	goto Common_EventScript_Pokemon_Shop_CheckPurchase
 	return
@@ -6608,7 +6608,7 @@ Auto_EventScript_Pokemon_Shop_Ghost_Page1_2:
 
 Auto_EventScript_Pokemon_Shop_Ghost_Page1_3:
 # 2796 "data/scripts/pokemon_shop_options.pory"
-	givemon SPECIES_CORSOLA_GALARIAN, 1
+	givemon SPECIES_CORSOLA_GALAR, 1
 # 2797 "data/scripts/pokemon_shop_options.pory"
 	goto Common_EventScript_Pokemon_Shop_CheckPurchase
 	return
@@ -6949,14 +6949,14 @@ Auto_EventScript_Pokemon_Shop_Ghost_Page6_2:
 
 Auto_EventScript_Pokemon_Shop_Ghost_Page6_3:
 # 2941 "data/scripts/pokemon_shop_options.pory"
-	givemon SPECIES_YAMASK_GALARIAN, 1
+	givemon SPECIES_YAMASK_GALAR, 1
 # 2942 "data/scripts/pokemon_shop_options.pory"
 	goto Common_EventScript_Pokemon_Shop_CheckPurchase
 	return
 
 Auto_EventScript_Pokemon_Shop_Ghost_Page6_4:
 # 2944 "data/scripts/pokemon_shop_options.pory"
-	givemon SPECIES_ZORUA_HISUIAN, 1
+	givemon SPECIES_ZORUA_HISUI, 1
 # 2945 "data/scripts/pokemon_shop_options.pory"
 	goto Common_EventScript_Pokemon_Shop_CheckPurchase
 	return
@@ -7688,7 +7688,7 @@ Auto_EventScript_Pokemon_Shop_Grass_Page11_2:
 
 Auto_EventScript_Pokemon_Shop_Grass_Page11_3:
 # 3254 "data/scripts/pokemon_shop_options.pory"
-	givemon SPECIES_VOLTORB_HISUIAN, 1
+	givemon SPECIES_VOLTORB_HISUI, 1
 # 3255 "data/scripts/pokemon_shop_options.pory"
 	goto Common_EventScript_Pokemon_Shop_CheckPurchase
 	return
@@ -8392,7 +8392,7 @@ Auto_EventScript_Pokemon_Shop_Dark_Page2::
 
 Auto_EventScript_Pokemon_Shop_Dark_Page2_2:
 # 3552 "data/scripts/pokemon_shop_options.pory"
-	givemon SPECIES_GRIMER_ALOLAN, 1
+	givemon SPECIES_GRIMER_ALOLA, 1
 # 3553 "data/scripts/pokemon_shop_options.pory"
 	goto Common_EventScript_Pokemon_Shop_CheckPurchase
 	return
@@ -8468,14 +8468,14 @@ Auto_EventScript_Pokemon_Shop_Dark_Page3_2:
 
 Auto_EventScript_Pokemon_Shop_Dark_Page3_3:
 # 3584 "data/scripts/pokemon_shop_options.pory"
-	givemon SPECIES_MEOWTH_ALOLAN, 1
+	givemon SPECIES_MEOWTH_ALOLA, 1
 # 3585 "data/scripts/pokemon_shop_options.pory"
 	goto Common_EventScript_Pokemon_Shop_CheckPurchase
 	return
 
 Auto_EventScript_Pokemon_Shop_Dark_Page3_4:
 # 3587 "data/scripts/pokemon_shop_options.pory"
-	givemon SPECIES_MOLTRES_GALARIAN, 1
+	givemon SPECIES_MOLTRES_GALAR, 1
 # 3588 "data/scripts/pokemon_shop_options.pory"
 	goto Common_EventScript_Pokemon_Shop_CheckPurchase
 	return
@@ -8558,7 +8558,7 @@ Auto_EventScript_Pokemon_Shop_Dark_Page4_5:
 
 Auto_EventScript_Pokemon_Shop_Dark_Page4_6:
 # 3622 "data/scripts/pokemon_shop_options.pory"
-	givemon SPECIES_QWILFISH_HISUIAN, 1
+	givemon SPECIES_QWILFISH_HISUI, 1
 # 3623 "data/scripts/pokemon_shop_options.pory"
 	goto Common_EventScript_Pokemon_Shop_CheckPurchase
 	return
@@ -8599,7 +8599,7 @@ Auto_EventScript_Pokemon_Shop_Dark_Page5::
 
 Auto_EventScript_Pokemon_Shop_Dark_Page5_2:
 # 3639 "data/scripts/pokemon_shop_options.pory"
-	givemon SPECIES_RATTATA_ALOLAN, 1
+	givemon SPECIES_RATTATA_ALOLA, 1
 # 3640 "data/scripts/pokemon_shop_options.pory"
 	goto Common_EventScript_Pokemon_Shop_CheckPurchase
 	return
@@ -8696,7 +8696,7 @@ Auto_EventScript_Pokemon_Shop_Dark_Page6_5:
 
 Auto_EventScript_Pokemon_Shop_Dark_Page6_6:
 # 3680 "data/scripts/pokemon_shop_options.pory"
-	givemon SPECIES_ZIGZAGOON_GALARIAN, 1
+	givemon SPECIES_ZIGZAGOON_GALAR, 1
 # 3681 "data/scripts/pokemon_shop_options.pory"
 	goto Common_EventScript_Pokemon_Shop_CheckPurchase
 	return
@@ -9196,7 +9196,7 @@ Auto_EventScript_Pokemon_Shop_Electric_Page2_4:
 
 Auto_EventScript_Pokemon_Shop_Electric_Page2_5:
 # 3894 "data/scripts/pokemon_shop_options.pory"
-	givemon SPECIES_GEODUDE_ALOLAN, 1
+	givemon SPECIES_GEODUDE_ALOLA, 1
 # 3895 "data/scripts/pokemon_shop_options.pory"
 	goto Common_EventScript_Pokemon_Shop_CheckPurchase
 	return
@@ -9534,7 +9534,7 @@ Auto_EventScript_Pokemon_Shop_Electric_Page7_3:
 
 Auto_EventScript_Pokemon_Shop_Electric_Page7_4:
 # 4036 "data/scripts/pokemon_shop_options.pory"
-	givemon SPECIES_VOLTORB_HISUIAN, 1
+	givemon SPECIES_VOLTORB_HISUI, 1
 # 4037 "data/scripts/pokemon_shop_options.pory"
 	goto Common_EventScript_Pokemon_Shop_CheckPurchase
 	return

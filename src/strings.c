@@ -1571,12 +1571,6 @@ const u8 gText_PkmnTeraTypeChanged[] = _("{STR_VAR_1}'s tera type has been chang
 const u8 gText_DynamaxBandOn[] = _("The Dynamax Band has been turned on.{PAUSE_UNTIL_PRESS}");
 const u8 gText_DynamaxBandOff[] = _("The Dynamax Band has been turned off.{PAUSE_UNTIL_PRESS}");
 
-// [Diego Mertens] Move Relearner as an option in the Pokémon Party Screen
-const u8 gText_Moves_Menu[] = _("MOVES");
-
- // [LOuroboros] Nickname your Pokémon from the party menu
-const u8 gText_Nickname[] = _("NICKNAME");
-
 const u8 gText_Fertilize[] = _("FERTILIZE");
 const u8 gText_PlantBerry[] = _("PLANT BERRY");
 const u8 gText_AM[] = _("AM");
