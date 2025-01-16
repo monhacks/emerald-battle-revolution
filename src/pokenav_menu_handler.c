@@ -10,6 +10,8 @@
 #include "overworld.h"
 #include "event_scripts.h"
 
+#include "config/overworld.h"
+
 struct Pokenav_Menu
 {
     u16 menuType;
@@ -391,7 +393,7 @@ static u32 HandleConditionMenuInput(struct Pokenav_Menu *menu)
             return POKENAV_MENU_FUNC_OPEN_CONDITION_SEARCH;
         // [devolov] Add PC Access in PokeNav
         case POKENAV_MENUITEM_CONDITION_ACCESS_PC:
-            if(Overworld_MapTypeAllowsTeleportAndFly(gMapHeader.mapType)){
+            if((OW_POKENAV_ALLOW_USE_PC_INDOORS) || (Overworld_MapTypeAllowsTeleportAndFly(gMapHeader.mapType))){
                 gSysPcFromPokenav = TRUE;
                 // Reusing from debug menu to gracefully close PC when done.
                 CreateTask(Task_WaitFadeAccessPC, 0);
