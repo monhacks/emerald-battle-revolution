@@ -2,20 +2,21 @@ script Common_EventScript_Sample_Team_Shop {
     lock
     faceplayer
     msgbox(format("Hello and welcome to the Battle Team Shop!"))
-    msgbox(format("You can buy pre-made teams here for many different formats and playstyles!"))
+    msgbox(format("You can buy pre-made teams with three to four POKéMON here!"))
+    msgbox(format("For now, our selection is limited to DOUBLE BATTLE teams only."))
     goto(Common_EventScript_Sample_Team_CheckMoney)
 }
 
 script Common_EventScript_Sample_Team_CheckMoney {
     showmoneybox(18, 0)
-    checkmoney(60000)
+    checkmoney(50000)
     if (var(VAR_RESULT) == TRUE) {
-        msgbox(format("All teams cost a mere ¥60000. What would you like?"))
+        msgbox(format("All teams cost a mere ¥50000. What would you like?"))
         goto(Auto_EventScript_Sample_Teams_Controls)
     }
     else # Player does not have enough money
     {
-        msgbox(format("Oh, sorry! You need at least ¥60000 to buy anything here!"))
+        msgbox(format("Oh, sorry! You need at least ¥50000 to buy anything here!"))
         goto(Auto_EventScript_Sample_Teams_End)
     }
 }
@@ -40,7 +41,7 @@ script Common_EventScript_Sample_Team_CheckPurchase {
             goto(Auto_EventScript_Sample_Teams_End)
     }
     msgbox(format("I'll take your payment now, please."))
-    removemoney(60000)
+    removemoney(50000)
     updatemoneybox
     playse(SE_SHOP)
     waitse

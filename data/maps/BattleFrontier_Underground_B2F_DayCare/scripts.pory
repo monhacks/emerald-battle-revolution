@@ -39,7 +39,7 @@ script BattleFrontier_Underground_B2F_DayCare_EventScript_BreedingHelperChoice {
             msgbox(format("Be careful, though - if he says that they would rather play with other POKéMON than each other, you will never get any eggs from them!"))
             msgbox(format("Well, that's the basics. I hope that helps!"))
         case 1: # Stats
-            msgbox(format("Sure! Once you have the learnt the basics, you might want to start breeding Pokemon with better stats."))
+            msgbox(format("Sure! Once you have the learnt the basics, you might want to start breeding POKéMON with better stats."))
             msgbox(format("Normally, the parents will randomly pass down one stat between them - the others will all be random."))
             msgbox(format("However, when you give one of the parents a destiny knot, this will make the child inherit five stats instead!"))
             msgbox(format("This means that generally, breeding parents with high stats will result in children with strong stats as well."))
@@ -49,8 +49,8 @@ script BattleFrontier_Underground_B2F_DayCare_EventScript_BreedingHelperChoice {
             msgbox(format("Sure! Some POKéMON have moves called Egg Moves which they don't normally learn - They can be taught these moves by breeding with other POKéMON"))
             msgbox(format("These moves can be passed down from either parent, as long as at least one of them knows the move being passed down."))
             msgbox(format("You can also use this method to share moves between POKéMON without breeding!"))
-            msgbox(format("By giving the mirror herb item to the Pokemon which has the move you want to share, and then putting it in the day care with a Pokemon which is able to learn it, the second Pokemon will learn the move instantly."))
-            msgbox(format("The two Pokemon do not even need to share an egg group, and the mirror herb is not consumed!"))
+            msgbox(format("By giving the mirror herb item to the POKéMON which has the move you want to share, and then putting it in the day care with a POKéMON which is able to learn it, the second POKéMON will learn the move instantly."))
+            msgbox(format("The two POKéMON do not even need to share an egg group, and the mirror herb is not consumed!"))
             msgbox(format("Well, that's about all I can teach you about sharing moves. I hope that helps!"))
         default:
             goto(BattleFrontier_Underground_B2F_DayCare_EventScript_BreedingHelperEnd)

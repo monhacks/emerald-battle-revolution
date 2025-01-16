@@ -195,7 +195,7 @@ Common_EventScript_Legendary_Shop_Text_0:
 
 Common_EventScript_Legendary_Shop_CheckMoney_Text_0:
 # 12 "data/scripts/legendary_shop.pory"
-	.string "All Pokemon cost a mere ¥12000.$"
+	.string "All POKéMON cost a mere ¥12000.$"
 
 Common_EventScript_Legendary_Shop_CheckMoney_Text_1:
 # 17 "data/scripts/legendary_shop.pory"
@@ -205,7 +205,7 @@ Common_EventScript_Legendary_Shop_CheckMoney_Text_1:
 Common_EventScript_Legendary_Shop_CheckGoldBottleCap_Text_0:
 # 25 "data/scripts/legendary_shop.pory"
 	.string "Oh, you have a gold bottle cap! Would\n"
-	.string "you redeem it for a shiny Pokemon?$"
+	.string "you redeem it for a shiny POKéMON?$"
 
 Common_EventScript_Legendary_Shop_CheckGoldBottleCap_Text_1:
 # 41 "data/scripts/legendary_shop.pory"

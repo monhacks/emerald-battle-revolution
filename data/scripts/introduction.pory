@@ -530,9 +530,9 @@ script Introduction_EventScript_SetupSandboxMode {
 script Introduction_EventScript_SetupSandboxModeComplete {
 	msgbox(format("All done!"))
 
-	msgbox(format("If you want to customise your Battle Frontier Experience, speak to the clerks near the counter at any of the Battle Facilities - They can help you change music, opponent team generation, allowed Pokemon formes, and more!"))
+	msgbox(format("If you want to customise your Battle Frontier Experience, speak to the clerks near the counter at any of the Battle Facilities - They can help you change music, opponent team generation, allowed POKéMON formes, and more!"))
 	msgbox(format("Mega Evolutions, Gigantamax Formes, and Z-Moves will all be allowed by default - But you may choose to turn them off manually."))
-	msgbox(format("You will also face new, randomly-generated Pokemon in the Battle Frontier by default - However, you may swap back to the original Battle Frontier sets at any time."))
+	msgbox(format("You will also face new, randomly-generated POKéMON in the Battle Frontier by default - However, you may swap back to the original Battle Frontier sets at any time."))
 
 	msgbox(format("If you aren't sure where to start, consider heading right to the all-new BATTLE FRONTIER UNDERGROUND where you can put together your own team to battle with, or buy a pre-made team from the BATTLE SPOT LOBBY!"))
 	msgbox(format("Otherwise, you can head left to the BATTLE FACTORY to get right into the action!"))

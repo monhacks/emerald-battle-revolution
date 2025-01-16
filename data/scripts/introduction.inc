@@ -1037,7 +1037,7 @@ Introduction_EventScript_SetupSandboxModeComplete_Text_1:
 	.string "clerks near the counter at any of the\l"
 	.string "Battle Facilities - They can help you\l"
 	.string "change music, opponent team\l"
-	.string "generation, allowed Pokemon formes, and\l"
+	.string "generation, allowed POKéMON formes, and\l"
 	.string "more!$"
 
 Introduction_EventScript_SetupSandboxModeComplete_Text_2:
@@ -1050,7 +1050,7 @@ Introduction_EventScript_SetupSandboxModeComplete_Text_2:
 Introduction_EventScript_SetupSandboxModeComplete_Text_3:
 # 535 "data/scripts/introduction.pory"
 	.string "You will also face new,\n"
-	.string "randomly-generated Pokemon in the\l"
+	.string "randomly-generated POKéMON in the\l"
 	.string "Battle Frontier by default - However,\l"
 	.string "you may swap back to the original\l"
 	.string "Battle Frontier sets at any time.$"
