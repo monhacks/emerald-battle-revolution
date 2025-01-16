@@ -328,7 +328,7 @@ BattleFrontier_Underground_B2F_DayCare_EventScript_BreedingHelperChoice_Text_8:
 # 42 "data/maps/BattleFrontier_Underground_B2F_DayCare/scripts.pory"
 	.string "Sure! Once you have the learnt the\n"
 	.string "basics, you might want to start\l"
-	.string "breeding Pokemon with better stats.$"
+	.string "breeding POKéMON with better stats.$"
 
 BattleFrontier_Underground_B2F_DayCare_EventScript_BreedingHelperChoice_Text_9:
 # 43 "data/maps/BattleFrontier_Underground_B2F_DayCare/scripts.pory"
@@ -382,15 +382,15 @@ BattleFrontier_Underground_B2F_DayCare_EventScript_BreedingHelperChoice_Text_16:
 BattleFrontier_Underground_B2F_DayCare_EventScript_BreedingHelperChoice_Text_17:
 # 52 "data/maps/BattleFrontier_Underground_B2F_DayCare/scripts.pory"
 	.string "By giving the mirror herb item to the\n"
-	.string "Pokemon which has the move you want to\l"
+	.string "POKéMON which has the move you want to\l"
 	.string "share, and then putting it in the day\l"
-	.string "care with a Pokemon which is able to\l"
-	.string "learn it, the second Pokemon will learn\l"
+	.string "care with a POKéMON which is able to\l"
+	.string "learn it, the second POKéMON will learn\l"
 	.string "the move instantly.$"
 
 BattleFrontier_Underground_B2F_DayCare_EventScript_BreedingHelperChoice_Text_18:
 # 53 "data/maps/BattleFrontier_Underground_B2F_DayCare/scripts.pory"
-	.string "The two Pokemon do not even need to\n"
+	.string "The two POKéMON do not even need to\n"
 	.string "share an egg group, and the mirror herb\l"
 	.string "is not consumed!$"
 

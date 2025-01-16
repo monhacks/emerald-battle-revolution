@@ -63,9 +63,7 @@
     ],
     "ChemistShop_Visitor3": [
       "If you want to make a simple ev spreads, all you need is 7 of two different types of ev training medicine, and one feather for the leftover stat.",
-      "If you want to make more complicated spreads, you might want to use a calculator!",
-      "You might find this website useful!",
-      "www.dragapult.xyz/ebr-ev-spread-utility"
+      "If you want to make more complicated spreads, you might want to use a calculator!"
     ],
     "OtherShop_Visitor1": [
       "Have you entered a DYNAMAX BATTLE yet?",
@@ -88,10 +86,9 @@
       "Don't share this with anyone else!"
     ],
     "TrainingShop_Visitor2": [
-      "Sometimes, it can be really hard to come up with a good EV spread.",
-      "However, there are programs out there that can help you!",
-      "You might find the this website useful!",
-      "www.dragapult.xyz/coverage-calculator"
+      "Berries are extremely useful for training POKéMON!",
+      "Some of them can be used to raise your POKéMON's base stats, and others can even be used to reduce them instead.",
+      "Rely on them when making more advanced EV spreads!"
     ],
     "TrainingShop_Visitor3": [
       "Did you know? Sometimes, it's beneficial to have lower stats on your POKéMON!",
@@ -233,7 +230,7 @@
       "I hope they add some single battle teams soon, though."
     ],
     "Visitor2": [
-      "The sample sets shop is really useful if you want to try some new Pokemon, but aren't sure how to train them.",
+      "The sample sets shop is really useful if you want to try some new POKéMON, but aren't sure how to train them.",
       "It's a great way to save time when experimenting or building a new team!"
     ],
     "Visitor3": [

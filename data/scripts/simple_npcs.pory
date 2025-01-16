@@ -143,8 +143,6 @@ script BattleFrontier_Underground_B1F_EventScript_ChemistShop_Visitor3 {
     faceplayer
     msgbox(format("If you want to make a simple ev spreads, all you need is 7 of two different types of ev training medicine, and one feather for the leftover stat."))
     msgbox(format("If you want to make more complicated spreads, you might want to use a calculator!"))
-    msgbox(format("You might find this website useful!"))
-    msgbox(format("www.dragapult.xyz/ebr-ev-spread-utility"))
     release
     end
 }
@@ -191,10 +189,9 @@ script BattleFrontier_Underground_B1F_EventScript_TrainingShop_Visitor1 {
 script BattleFrontier_Underground_B1F_EventScript_TrainingShop_Visitor2 {
     lock
     faceplayer
-    msgbox(format("Sometimes, it can be really hard to come up with a good EV spread."))
-    msgbox(format("However, there are programs out there that can help you!"))
-    msgbox(format("You might find the this website useful!"))
-    msgbox(format("www.dragapult.xyz/coverage-calculator"))
+    msgbox(format("Berries are extremely useful for training POKéMON!"))
+    msgbox(format("Some of them can be used to raise your POKéMON's base stats, and others can even be used to reduce them instead."))
+    msgbox(format("Rely on them when making more advanced EV spreads!"))
     release
     end
 }
@@ -504,7 +501,7 @@ script BattleFrontier_Underground_B2F_BattleSpot_1F_EventScript_Visitor1 {
 script BattleFrontier_Underground_B2F_BattleSpot_1F_EventScript_Visitor2 {
     lock
     faceplayer
-    msgbox(format("The sample sets shop is really useful if you want to try some new Pokemon, but aren't sure how to train them."))
+    msgbox(format("The sample sets shop is really useful if you want to try some new POKéMON, but aren't sure how to train them."))
     msgbox(format("It's a great way to save time when experimenting or building a new team!"))
     release
     end
