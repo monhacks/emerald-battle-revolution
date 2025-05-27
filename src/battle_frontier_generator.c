@@ -2531,29 +2531,29 @@ bool32 GenerateTrainerPokemonHandleForme(struct Pokemon * mon, u16 speciesId, st
             }; break;
             case SPECIES_VIVILLON: {
                 if (RANDOM_CHANCE(BFG_FORME_CHANCE_VIVILLON))
-                    speciesId = RANDOM_RANGE(SPECIES_VIVILLON_POLAR, SPECIES_FLABEBE_YELLOW_FLOWER);
+                    speciesId = RANDOM_RANGE(SPECIES_VIVILLON_POLAR, SPECIES_FLABEBE_YELLOW);
             }; break;
             case SPECIES_FLABEBE: {
                 if (RANDOM_CHANCE(BFG_FORME_CHANCE_FLABEBE_FLOETTE_FLORGES))
-                    speciesId = RANDOM_RANGE(SPECIES_FLABEBE_YELLOW_FLOWER, SPECIES_FLOETTE_YELLOW_FLOWER);
+                    speciesId = RANDOM_RANGE(SPECIES_FLABEBE_YELLOW, SPECIES_FLOETTE_YELLOW);
             }; break;
             case SPECIES_FLOETTE: {
                 if (RANDOM_CHANCE(BFG_FORME_CHANCE_FLABEBE_FLOETTE_FLORGES))
-                    speciesId = RANDOM_RANGE(SPECIES_FLOETTE_YELLOW_FLOWER, SPECIES_FLORGES_YELLOW_FLOWER);
+                    speciesId = RANDOM_RANGE(SPECIES_FLOETTE_YELLOW, SPECIES_FLORGES_YELLOW);
             }; break;
             case SPECIES_FLORGES: {
                 if (RANDOM_CHANCE(BFG_FORME_CHANCE_FLABEBE_FLOETTE_FLORGES))
-                    speciesId = RANDOM_RANGE(SPECIES_FLORGES_YELLOW_FLOWER, SPECIES_FURFROU_HEART_TRIM);
+                    speciesId = RANDOM_RANGE(SPECIES_FLORGES_YELLOW, SPECIES_FURFROU_HEART);
             }; break;
             case SPECIES_FURFROU: {
                 if (RANDOM_CHANCE(BFG_FORME_CHANCE_FURFROU))
-                    speciesId = RANDOM_RANGE(SPECIES_FURFROU_HEART_TRIM, SPECIES_MEOWSTIC_FEMALE);
+                    speciesId = RANDOM_RANGE(SPECIES_FURFROU_HEART, SPECIES_MEOWSTIC_F);
             }; break;
             case SPECIES_MEOWSTIC: {
                 if (RANDOM_CHANCE(BFG_FORME_CHANCE_MEOWSTIC))
-                    speciesId = SPECIES_MEOWSTIC_FEMALE;
+                    speciesId = SPECIES_MEOWSTIC_F;
                 else 
-                    speciesId = SPECIES_MEOWSTIC_MALE;
+                    speciesId = SPECIES_MEOWSTIC_M;
             }; break;
             case SPECIES_PUMPKABOO: {
                 if (RANDOM_CHANCE(BFG_FORME_CHANCE_PUMPKABOO_GOURGEIST))
@@ -2647,9 +2647,9 @@ bool32 GenerateTrainerPokemonHandleForme(struct Pokemon * mon, u16 speciesId, st
             }; break;
             case SPECIES_INDEEDEE: {
                 if (RANDOM_CHANCE(BFG_FORME_CHANCE_INDEEDEE))
-                    speciesId = SPECIES_INDEEDEE_FEMALE;
+                    speciesId = SPECIES_INDEEDEE_F;
                 else
-                    speciesId = SPECIES_INDEEDEE_MALE;
+                    speciesId = SPECIES_INDEEDEE_M;
             }; break;
             case SPECIES_ZACIAN: {
                 if ((700 <= (properties->maxBST))) 
@@ -2673,15 +2673,15 @@ bool32 GenerateTrainerPokemonHandleForme(struct Pokemon * mon, u16 speciesId, st
             }; break;
             case SPECIES_BASCULEGION: {
                 if (RANDOM_CHANCE(BFG_FORME_CHANCE_BASCULEGION))
-                    speciesId = SPECIES_BASCULEGION_FEMALE;
+                    speciesId = SPECIES_BASCULEGION_F;
                 else 
-                    speciesId = SPECIES_BASCULEGION_MALE;
+                    speciesId = SPECIES_BASCULEGION_M;
             }; break;
             case SPECIES_OINKOLOGNE: {
                 if (RANDOM_CHANCE(BFG_FORME_CHANCE_OINKOLOGNE))
-                    speciesId = SPECIES_OINKOLOGNE_FEMALE;
+                    speciesId = SPECIES_OINKOLOGNE_F;
                 else 
-                    speciesId = SPECIES_OINKOLOGNE_MALE;
+                    speciesId = SPECIES_OINKOLOGNE_M;
             }; break;
             case SPECIES_MAUSHOLD: {
                 if (RANDOM_CHANCE(BFG_FORME_CHANCE_MAUSHOLD))
@@ -2706,7 +2706,7 @@ bool32 GenerateTrainerPokemonHandleForme(struct Pokemon * mon, u16 speciesId, st
             case SPECIES_OGERPON: {
                 if (RANDOM_CHANCE(BFG_FORME_CHANCE_OGERPON)) 
                 {
-                    speciesId = RANDOM_RANGE(SPECIES_OGERPON_WELLSPRING, SPECIES_OGERPON_TEAL_MASK_TERA);
+                    speciesId = RANDOM_RANGE(SPECIES_OGERPON_WELLSPRING, SPECIES_OGERPON_TEAL_TERA);
                     // Required hold item
                     switch(speciesId) 
                     {
