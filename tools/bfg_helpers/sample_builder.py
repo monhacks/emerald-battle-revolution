@@ -158,7 +158,7 @@ if __name__ == "__main__":
                                 # Override default name
                                 name = set["other"]["name"]
 
-                            # Check species for note property
+                            # Check species for note
                             if "note" in set["other"]:
                                 # Add note to the name
                                 name = f"{name} ({set['other']['note']})"
@@ -188,11 +188,21 @@ if __name__ == "__main__":
         # Auto-formatted sets
         for set in formatted_sets:
 
-            # Get the set/species name
-            name = common.get_set_name(set)
+            # Get the species name
+            name = set["species"]
+
+            # Check species for name property
+            if "name" in set["other"]:
+                # Override default name
+                name = set["other"]["name"]
 
             # Get the set/species spread
             spread = common.get_set_spread(set)
+
+            # Check species for note
+            if "note" in set["other"]:
+                # Add note to the spread
+                spread = f"{spread} ({set['other']['note']})"
 
             # Create names list
             names = [name, spread]
