@@ -53,6 +53,7 @@ extern u8 gLocalLinkPlayerId;
 extern u8 gFieldLinkPlayerCount;
 extern bool8 gSysPcFromPokenav;
 extern bool8 gExitStairsMovementDisabled;
+extern bool8 gSkipShowMonAnim;
 
 extern const struct UCoords32 gDirectionToVectors[];
 
