@@ -1075,10 +1075,6 @@
 #define EFFECT_ITEM_INCREASE_ALL_STATS      11
 #define EFFECT_ITEM_USE_POKE_FLUTE          12
 
-// For use with FLAG_ITEM_BIKE_MODE
-#define LAST_USED_ACRO_BIKE 0
-#define LAST_USED_MACH_BIKE 1
-
 // Enigma Berry dummy constant
 #define EFFECT_ITEM_ENIGMA_BERRY_EREADER    1
 

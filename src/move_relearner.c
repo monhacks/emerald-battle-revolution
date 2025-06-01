@@ -27,7 +27,6 @@
 #include "task.h"
 #include "constants/rgb.h"
 #include "constants/songs.h"
-#include "party_menu.h"
 
 /*
  * Move relearner state machine
@@ -739,7 +738,6 @@ static void DoMoveRelearnerMain(void)
                 
                 StringCopy(gStringVar3, GetMoveName(moveId));
                 RemoveMonPPBonus(&gPlayerParty[sMoveRelearnerStruct->partyMon], sMoveRelearnerStruct->moveSlot);
-
                 SetMonMoveSlot(&gPlayerParty[sMoveRelearnerStruct->partyMon], GetCurrentSelectedMove(), sMoveRelearnerStruct->moveSlot);
                 u8 newPP = GetMonData(&gPlayerParty[sMoveRelearnerStruct->partyMon], MON_DATA_PP1 + sMoveRelearnerStruct->moveSlot);
                 if (!P_SUMMARY_MOVE_RELEARNER_FULL_PP && gOriginSummaryScreenPage != 0 && originalPP < newPP)
@@ -969,7 +967,7 @@ void MoveRelearnerShowHideHearts(s32 moveId)
     }
     else
     {
-        numHearts = (u8)(gContestEffects[gMovesInfo[moveId].contestEffect].appeal / 10);
+        numHearts = (u8)(gContestEffects[GetMoveContestEffect(moveId)].appeal / 10);
 
         if (numHearts == 0xFF)
             numHearts = 0;
@@ -983,7 +981,7 @@ void MoveRelearnerShowHideHearts(s32 moveId)
             gSprites[sMoveRelearnerStruct->heartSpriteIds[i]].invisible = FALSE;
         }
 
-        numHearts = (u8)(gContestEffects[gMovesInfo[moveId].contestEffect].jam / 10);
+        numHearts = (u8)(gContestEffects[GetMoveContestEffect(moveId)].jam / 10);
 
         if (numHearts == 0xFF)
             numHearts = 0;
@@ -1007,7 +1005,6 @@ void MoveRelearnerShowHideCategoryIcon(s32 moveId)
             DestroySprite(&gSprites[sMoveRelearnerStruct->categoryIconSpriteId]);
 
         sMoveRelearnerStruct->categoryIconSpriteId = 0xFF;
-        gSprites[sMoveRelearnerStruct->categoryIconSpriteId].invisible = TRUE;
     }
     else
     {

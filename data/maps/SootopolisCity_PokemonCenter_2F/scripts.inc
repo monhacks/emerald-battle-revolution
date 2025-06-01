@@ -17,3 +17,4 @@ SootopolisCity_PokemonCenter_2F_EventScript_TradeCenter::
 SootopolisCity_PokemonCenter_2F_EventScript_RecordCorner::
 	call CableClub_EventScript_RecordCorner
 	end
+

@@ -199,3 +199,4 @@ SootopolisCity_LotadAndSeedotHouse_Text_BiggestLotadInHistory:
 	.string "{STR_VAR_2}'s {STR_VAR_3} colossus!\p"
 	.string "A LOTAD bigger than a SEEDOT\n"
 	.string "always wanted!$"
+

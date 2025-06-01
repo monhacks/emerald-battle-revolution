@@ -10,3 +10,4 @@ Underwater_MarineCave_OnTransition:
 Underwater_MarineCave_OnResume:
 	setdivewarp MAP_MARINE_CAVE_ENTRANCE, 10, 17
 	end
+

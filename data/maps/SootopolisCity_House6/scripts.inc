@@ -50,3 +50,4 @@ SootopolisCity_House6_Text_DontWantThisDoll:
 
 SootopolisCity_House6_Text_LovePlushDolls:
 	.string "I love plush DOLLS!$"
+

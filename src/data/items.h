@@ -13532,6 +13532,8 @@ const struct Item gItemsInfo[] =
     {
         .name = _("Adamant Crystal"),
         .price = IP_PRICE_FORME_ITEM,
+        .holdEffect = HOLD_EFFECT_ADAMANT_ORB,
+        .holdEffectParam = 20,
         .description = COMPOUND_STRING(
             "A large, glowing gem\n"
             "that lets Dialga\n"
@@ -13548,6 +13550,8 @@ const struct Item gItemsInfo[] =
     {
         .name = _("Griseous Core"),
         .price = IP_PRICE_FORME_ITEM,
+        .holdEffect = HOLD_EFFECT_GRISEOUS_ORB,
+        .holdEffectParam = 20,
         .description = COMPOUND_STRING(
             "A large, glowing gem\n"
             "that lets Giratina\n"
@@ -13564,6 +13568,8 @@ const struct Item gItemsInfo[] =
     {
         .name = _("Lustrous Globe"),
         .price = IP_PRICE_FORME_ITEM,
+        .holdEffect = HOLD_EFFECT_LUSTROUS_ORB,
+        .holdEffectParam = 20,
         .description = COMPOUND_STRING(
             "A large, glowing gem\n"
             "that lets Palkia\n"

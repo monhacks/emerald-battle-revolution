@@ -54,3 +54,4 @@ FortreeCity_PokemonCenter_1F_Text_DoYouKnowAboutPokenav:
 	.string "want a rematch with you.\p"
 	.string "It's really nifty! Those DEVON guys\n"
 	.string "sure know what they're doing!$"
+

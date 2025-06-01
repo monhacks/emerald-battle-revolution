@@ -67,3 +67,4 @@ Route110_TrickHousePuzzle4_Text_PaulaDefeat:
 
 Route110_TrickHousePuzzle4_Text_PaulaPostBattle:
 	.string "Has anyone made it to the end?$"
+

@@ -94,3 +94,4 @@ MtChimney_CableCarStation_Text_StepThisWay:
 
 MtChimney_CableCarStation_Text_RideAnotherTime:
 	.string "Please ride with us another time.$"
+

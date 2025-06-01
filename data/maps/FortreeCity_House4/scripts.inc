@@ -94,3 +94,4 @@ FortreeCity_House4_Text_FriendsFarAwayThanksToWingull:
 
 FortreeCity_House4_Text_Wingull:
 	.string "WINGULL: Pihyoh!$"
+

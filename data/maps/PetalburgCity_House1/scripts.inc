@@ -25,3 +25,4 @@ PetalburgCity_House1_Text_GoOnAdventure:
 	.string "And, sometimes, even get a little\n"
 	.string "homesick…\p"
 	.string "It must be fabulous to travel!$"
+

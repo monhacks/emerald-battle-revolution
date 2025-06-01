@@ -132,3 +132,4 @@ MtPyre_2F_Text_ZanderPostBattle:
 	.string "I get freaked out every time I see\n"
 	.string "anything move…\p"
 	.string "I shouldn't have come here to train…$"
+

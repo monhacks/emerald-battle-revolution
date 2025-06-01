@@ -29,3 +29,4 @@ MauvilleCity_PokemonCenter_2F_Text_Youngster:
 	.string "for everyone to see.\p"
 	.string "It's embarrassing if you lose more\n"
 	.string "often than you win…$"
+

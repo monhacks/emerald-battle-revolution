@@ -35,3 +35,4 @@ Route133_EventScript_Conor::
 	trainerbattle_single TRAINER_CONOR, Route133_Text_ConorIntro, Route133_Text_ConorDefeat
 	msgbox Route133_Text_ConorPostBattle, MSGBOX_AUTOCLOSE
 	end
+

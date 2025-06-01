@@ -239,3 +239,4 @@ FallarborTown_BattleTentBattleRoom_EventScript_SetUpObjects::
 	removeobject LOCALID_OPPONENT
 	setvar VAR_TEMP_1, 1
 	end
+

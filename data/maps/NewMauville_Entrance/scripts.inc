@@ -55,3 +55,4 @@ NewMauville_Entrance_Text_UseBasementKey:
 NewMauville_Entrance_Text_UsedBasementKey:
 	.string "{PLAYER} used the BASEMENT KEY.\p"
 	.string "The door opened!$"
+

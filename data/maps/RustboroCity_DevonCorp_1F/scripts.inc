@@ -143,3 +143,4 @@ RustboroCity_DevonCorp_1F_Text_ProductDisplay:
 	.string "“Recently, DEVON has begun marketing\n"
 	.string "tools for POKéMON TRAINERS, including\l"
 	.string "POKé BALLS and POKéNAV systems.”$"
+

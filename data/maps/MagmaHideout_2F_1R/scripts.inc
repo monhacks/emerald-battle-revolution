@@ -72,3 +72,4 @@ MagmaHideout_2F_1R_Text_Grunt5Defeat:
 
 MagmaHideout_2F_1R_Text_Grunt5PostBattle:
 	.string "Actually, I'm no expert at battling…$"
+
