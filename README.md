@@ -242,6 +242,11 @@ If you experience any issues with the application, or would like to suggest impr
 Please see below for the Emerald Battle Revolution project changelog. For changes related to
 the PokeEmerald Expanded project, please see the [PokeEmerald Changelog](./CHANGELOG.md).
 
+### Ver. 3.0.1
+
+Changed Birch's speech to an Emerald Battle Revolution intro, changed the 
+demo Pokemon to Incineroar
+
 ### Ver. 3.0.0
 
 **Major overhaul, legacy save compatibility has not been preserved**
