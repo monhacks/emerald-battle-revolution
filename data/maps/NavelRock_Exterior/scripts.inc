@@ -5,3 +5,4 @@ NavelRock_Exterior_MapScripts::
 NavelRock_Exterior_OnTransition:
 	setflag FLAG_ARRIVED_AT_NAVEL_ROCK
 	end
+

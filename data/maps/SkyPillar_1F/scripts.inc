@@ -9,3 +9,4 @@ SkyPillar_1F_OnTransition:
 SkyPillar_1F_EventScript_CleanFloor::
 	setmaplayoutindex LAYOUT_SKY_PILLAR_1F_CLEAN
 	return
+

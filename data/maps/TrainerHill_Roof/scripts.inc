@@ -59,3 +59,4 @@ TrainerHill_Roof_EventScript_AlreadyReceivedPrize::
 	msgbox TrainerHill_Roof_Text_ArriveZippierNextTime, MSGBOX_DEFAULT
 	release
 	end
+

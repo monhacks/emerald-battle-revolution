@@ -9,3 +9,4 @@ EverGrandeCity_Hall4_OnWarp:
 EverGrandeCity_Hall4_EventScript_TurnPlayerNorth::
 	turnobject OBJ_EVENT_ID_PLAYER, DIR_NORTH
 	end
+

@@ -17,3 +17,4 @@ VerdanturfTown_PokemonCenter_2F_EventScript_TradeCenter::
 VerdanturfTown_PokemonCenter_2F_EventScript_RecordCorner::
 	call CableClub_EventScript_RecordCorner
 	end
+

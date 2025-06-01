@@ -342,3 +342,4 @@ Route110_TrickHousePuzzle3_Text_AlanPostBattle:
 	.string "I don't get it.\n"
 	.string "How many traps are in this house?\p"
 	.string "You may be the one to solve that.$"
+

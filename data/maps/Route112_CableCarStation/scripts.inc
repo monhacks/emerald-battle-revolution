@@ -95,3 +95,4 @@ Route112_CableCarStation_Text_StepThisWay:
 
 Route112_CableCarStation_Text_RideAnotherTime:
 	.string "Please ride with us another time.$"
+

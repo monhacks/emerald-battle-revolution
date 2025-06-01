@@ -180,3 +180,4 @@ MeteorFalls_1F_2R_Text_JayRematchNotEnoughMons:
 	.string "TRAINER?\p"
 	.string "If you'd care to battle with us, you'll\n"
 	.string "have to come back with more POKéMON.$"
+

@@ -5,3 +5,4 @@ TerraCave_Entrance_MapScripts::
 TerraCave_Entrance_OnTransition:
 	setflag FLAG_ARRIVED_AT_TERRA_CAVE_ENTRANCE
 	end
+

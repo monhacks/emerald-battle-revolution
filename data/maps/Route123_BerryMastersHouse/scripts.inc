@@ -127,3 +127,4 @@ Route123_BerryMastersHouse_EventScript_GaveBerry::
 	msgbox Route123_BerryMastersHouse_Text_JoyNeverGoesOutOfMyLife, MSGBOX_DEFAULT
 	release
 	end
+

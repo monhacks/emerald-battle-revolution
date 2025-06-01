@@ -180,3 +180,4 @@ SootopolisCity_Gym_B1F_Text_BriannaDefeat:
 SootopolisCity_Gym_B1F_Text_BriannaPostBattle:
 	.string "You couldn't lay a finger on JUAN,\n"
 	.string "I'm sure. Giggle…$"
+

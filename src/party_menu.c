@@ -1436,9 +1436,6 @@ void Task_HandleChooseMonInput(u8 taskId)
         case B_BUTTON: // Selected Cancel / pressed B
             HandleChooseMonCancel(taskId, slotPtr);
             break;
-        case SELECT_BUTTON: // [LOuroboros] Quick Swap
-            DestroyTask(taskId);
-            break;
         case START_BUTTON:
             if (sPartyMenuInternal->chooseHalf)
             {
@@ -1688,23 +1685,6 @@ static void Task_HandleCancelChooseMonYesNoInput(u8 taskId)
     }
 }
 
-// [LOuroboros] Quick Swap
-static bool8 IsInvalidPartyMenuActionType(u8 partyMenuType)
-{
-    return (partyMenuType == PARTY_ACTION_SEND_OUT
-         || partyMenuType == PARTY_ACTION_CANT_SWITCH
-         || partyMenuType == PARTY_ACTION_USE_ITEM
-         || partyMenuType == PARTY_ACTION_ABILITY_PREVENTS
-         || partyMenuType == PARTY_ACTION_GIVE_ITEM
-         || partyMenuType == PARTY_ACTION_GIVE_PC_ITEM
-         || partyMenuType == PARTY_ACTION_GIVE_MAILBOX_MAIL
-         || partyMenuType == PARTY_ACTION_SOFTBOILED
-         || partyMenuType == PARTY_ACTION_CHOOSE_AND_CLOSE
-         || partyMenuType == PARTY_ACTION_MOVE_TUTOR
-         || partyMenuType == PARTY_ACTION_MINIGAME
-         || partyMenuType == PARTY_ACTION_REUSABLE_ITEM);
-}
-
 static u16 PartyMenuButtonHandler(s8 *slotPtr)
 {
     s8 movementDir;
@@ -1741,21 +1721,6 @@ static u16 PartyMenuButtonHandler(s8 *slotPtr)
 
     if (JOY_NEW(START_BUTTON))
         return START_BUTTON;
-
-    // [LOuroboros] Quick Swap
-    if (JOY_NEW(SELECT_BUTTON) && CalculatePlayerPartyCount() >= 2 && !IsInvalidPartyMenuActionType(gPartyMenu.action))
-    {
-        if (gPartyMenu.menuType != PARTY_MENU_TYPE_FIELD)
-            return 0;
-        if (*slotPtr == PARTY_SIZE + 1)
-            return 0;
-        if (gPartyMenu.action != PARTY_ACTION_SWITCH)
-        {
-            CreateTask(CursorCb_Switch, 1);
-            return SELECT_BUTTON;
-        }
-        return A_BUTTON; // Select is allowed to act as the A Button while CursorCb_Switch is active.
-    }
 
     if (movementDir && gPlayerPartyCount != 0)
     {
@@ -7180,7 +7145,7 @@ static u8 CheckBattleEntriesAndGetMessage(void)
         return 0xFF;
 
     // If either of these flags are set, perform the loop
-    if (BF_ALLOW_DUPLICATE_ITEMS || BF_ALLOW_DUPLICATE_SPECIES){
+    if ((BF_ALLOW_DUPLICATE_ITEMS == FALSE) || (BF_ALLOW_DUPLICATE_SPECIES == FALSE)){
         maxBattlers = GetMaxBattleEntries();
         for (i = 0; i < maxBattlers - 1; i++)
         {

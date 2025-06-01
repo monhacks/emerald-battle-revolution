@@ -54,3 +54,4 @@ Ferry_Movement_DepartIslandBoardWest:
 SouthernIsland_Exterior_EventScript_Sign::
 	msgbox SouthernIsland_Exterior_Text_Sign, MSGBOX_SIGN
 	end
+

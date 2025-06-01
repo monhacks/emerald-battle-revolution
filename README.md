@@ -134,7 +134,6 @@ rate of $9800 to 1 BP.
 * Party slots can be swapped with Select
 * Move Relearner can teach pre-evolution moves
 * Move Relearner (basic) added to Party Menu
-* PC Accessible from PokeNav (Condition->Access PC)
 * Two-In-One-Bike (Swap moves using Right Bumper)
 
 #### Battle Frontier
@@ -240,8 +239,22 @@ If you experience any issues with the application, or would like to suggest impr
 
 ## Changelog
 
-Please see below for the Dragapult Emerald project changelog. For changes related to
+Please see below for the Emerald Battle Revolution project changelog. For changes related to
 the PokeEmerald Expanded project, please see the [PokeEmerald Changelog](./CHANGELOG.md).
+
+### Ver. 3.0.0
+
+**Major overhaul, legacy save compatibility has not been preserved**
+
+Unfortunately, the old save file format will no longer be supported for this project, and we will
+be using the traditional save structure moving forward.
+
+This is somewhat of a soft-reset for the project, and many features I felt were unnecessary to maintain
+have been removed. All primary features of the project (i.e. easy training, pokemon acquiring, etc.) have
+been preserved.
+
+We have updated to the latest version of the Pokeemerald-expansion project *at the time of merging*, which
+is `1.11.2`. 
 
 ### Ver. 2.1.2
 

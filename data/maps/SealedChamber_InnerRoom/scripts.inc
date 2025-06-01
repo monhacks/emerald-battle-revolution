@@ -70,3 +70,4 @@ SealedChamber_InnerRoom_EventScript_BrailleStoryPart6::
 	braillemsgbox SealedChamber_InnerRoom_Braille_OpenDoorEternalPokemonWaits
 	releaseall
 	end
+

@@ -172,3 +172,4 @@ SSTidalRooms_Text_ExplainSnatch:
 	.string "SNATCH steals the beneficial effects\n"
 	.string "of certain moves before they can be\l"
 	.string "used by a foe or ally.$"
+

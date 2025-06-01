@@ -95,8 +95,6 @@ EWRAM_DATA static struct MonSpritesGfxManager *sMonSpritesGfxManagers[MON_SPR_GF
 EWRAM_DATA static u8 sTriedEvolving = 0;
 EWRAM_DATA u16 gFollowerSteps = 0;
 
-#include "data/tmhm_moves.h"
-#include "data/moves_info.h"
 #include "data/abilities.h"
 
 // Used in an unreferenced function in RS.
@@ -5722,7 +5720,7 @@ u8 GetMoveRelearnerMoves(struct Pokemon *mon, u16 *moves)
     bool8 ignoreLevel = FlagGet(FLAG_MOVE_TUTOR_IGNORE_LEVEL);
 
     // Iterators
-    int i, j, k, l, m;
+    int i, j, k, l;
 
     // If egg, no relearner moves
     if (species == SPECIES_EGG)
@@ -5753,13 +5751,7 @@ u8 GetMoveRelearnerMoves(struct Pokemon *mon, u16 *moves)
 
                     // Not in the relearn moves list
                     if (learnset[l].move == LEVEL_UP_MOVE_END){
-
-                        // Check if the move is not in the tm/hm moves list
-                        for(m = 0; m < TMHM_COUNT && sTMHMMoves[m] != teachable[i]; m++); 
-
-                        // Not in tm/hm list
-                        if (m == TMHM_COUNT)
-                            moves[numMoves++] = teachable[i];
+                        moves[numMoves++] = teachable[i];
                     }
                 }
             }

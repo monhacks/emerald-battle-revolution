@@ -128,3 +128,4 @@ Route121_SafariZoneEntrance_Movement_EnterSafariZone:
 Route121_SafariZoneEntrance_EventScript_TrainerTipSign::
 	msgbox Route121_SafariZoneEntrance_Text_TrainerTip, MSGBOX_SIGN
 	end
+

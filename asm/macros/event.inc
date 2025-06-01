@@ -2182,7 +2182,7 @@
 	@ - per_row is the number of options displayed on each horizontal row.
 	@ - cursorPos is the cursor's starting position.
 	.macro multichoice2 x:req, y:req, choices:req, ignoreBPress=0, per_row=1, cursorPos=0
-	.byte 0xe3
+	.byte SCR_OP_MULTICHOICE2
 	.byte \x
 	.byte \y
 	.4byte \choices
@@ -2388,7 +2388,7 @@
 	.2byte \y
 	.2byte \dest
 	.endm
-
+	
 	@ Returns the state of the Pokedex Seen Flag to VAR_RESULT for the Pokemon with speciesId
 	.macro getseenmon species:req
 	callnative Scrcmd_getsetpokedexflag, requests_effects=1
@@ -2415,6 +2415,14 @@
 	callnative Scrcmd_getsetpokedexflag, requests_effects=1
 	.2byte \species
 	.2byte FLAG_SET_CAUGHT
+	.endm
+	
+	@ Changes the caught ball of a selected Pokémon
+	.macro setmonball ballId:req
+	special ChoosePartyMon
+	waitstate
+	setvar VAR_TEMP_1, \ballId
+	special SetMonBall
 	.endm
 
 	@ Check if the Player has speciesId in their party. OPEN_PARTY_SCREEN will have the player select a mon from their party. NO_PARTY_SCREEN will automatically check every mon in the player's party.

@@ -23,7 +23,6 @@
 #include "window.h"
 #include "config/overworld.h"
 #include "constants/songs.h"
-#include "config/text.h"
 
 struct MenuInfoIcon
 {
@@ -77,9 +76,9 @@ const u16 gStandardMenuPalette[] = INCBIN_U16("graphics/interface/std_menu.gbapa
 
 static const u8 sTextSpeedFrameDelays[] =
 {
-    [OPTIONS_TEXT_SPEED_SLOW] = TEXT_SPEED_SLOW_DELAY,
-    [OPTIONS_TEXT_SPEED_MID]  = TEXT_SPEED_MID_DELAY,
-    [OPTIONS_TEXT_SPEED_FAST] = TEXT_SPEED_FAST_DELAY
+    [OPTIONS_TEXT_SPEED_SLOW] = 8,
+    [OPTIONS_TEXT_SPEED_MID]  = 4,
+    [OPTIONS_TEXT_SPEED_FAST] = 1
 };
 
 static const struct WindowTemplate sStandardTextBox_WindowTemplates[] =

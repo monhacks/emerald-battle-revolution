@@ -8,3 +8,4 @@ GraniteCave_B1F_SetHoleWarp:
 	setstepcallback STEP_CB_CRACKED_FLOOR
 	setholewarp MAP_GRANITE_CAVE_B2F
 	end
+

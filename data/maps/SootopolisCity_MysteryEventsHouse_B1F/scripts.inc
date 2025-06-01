@@ -72,3 +72,4 @@ SootopolisCity_MysteryEventsHouse_B1F_Movement_PlayerExitBasement:
 	walk_up
 	delay_8
 	step_end
+

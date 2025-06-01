@@ -152,10 +152,6 @@ static void BufferFanClubTrainerName_(u8 whichLinkTrainer, u8 whichNPCTrainer);
 #endif //FREE_LINK_BATTLE_RECORDS
 
 void SetMonBall(void);
-bool8 GetSeenMon(void);
-bool8 GetCaughtMon(void);
-void SetSeenMon(void);
-void SetCaughtMon(void);
 
 static const u8 sText_BigGuy[] = _("Big guy");
 static const u8 sText_BigGirl[] = _("Big girl");
@@ -1085,11 +1081,6 @@ static void PCTurnOnEffect(struct Task *task)
 static void PCTurnOnEffect_SetMetatile(s16 isScreenOn, s8 dx, s8 dy)
 {
     u16 metatileId = 0;
-        
-    // [devolov] Add PC Access in PokeNav
-    if(gSysPcFromPokenav)
-        return;
-
     if (isScreenOn)
     {
         // Screen is on, set it off
@@ -1124,12 +1115,6 @@ static void PCTurnOffEffect(void)
     s8 dx = 0;
     s8 dy = 0;
     u16 metatileId = 0;
-
-    // [devolov] Add PC Access in PokeNav
-    if(gSysPcFromPokenav){
-        gSysPcFromPokenav = FALSE;
-        return;
-    }
 
     // Get where the PC should be, depending on where the player is looking.
     u8 playerDirection = GetPlayerFacingDirection();
@@ -4313,27 +4298,6 @@ void SetMonBall(void)
 {
     u16 ballId = VarGet(VAR_TEMP_1);
     SetMonData(&gPlayerParty[gSpecialVar_0x8004], MON_DATA_POKEBALL, &ballId);
-}
-
-bool8 GetSeenMon(void)
-{
-    return GetSetPokedexFlag(SpeciesToNationalPokedexNum(VarGet(VAR_TEMP_1)), FLAG_GET_SEEN);
-}
-
-bool8 GetCaughtMon(void)
-{
-    return GetSetPokedexFlag(SpeciesToNationalPokedexNum(VarGet(VAR_TEMP_1)), FLAG_GET_CAUGHT);
-}
-
-void SetSeenMon(void)
-{
-    GetSetPokedexFlag(SpeciesToNationalPokedexNum(VarGet(VAR_TEMP_1)), FLAG_SET_SEEN);
-}
-
-void SetCaughtMon(void)
-{
-    GetSetPokedexFlag(SpeciesToNationalPokedexNum(VarGet(VAR_TEMP_1)), FLAG_SET_SEEN);
-    GetSetPokedexFlag(SpeciesToNationalPokedexNum(VarGet(VAR_TEMP_1)), FLAG_SET_CAUGHT);
 }
 
 void GetObjectPosition(u16* xPointer, u16* yPointer, u32 localId, u32 useTemplate)
