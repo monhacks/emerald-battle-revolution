@@ -48,6 +48,9 @@
 #include "constants/items.h"
 #include "difficulty.h"
 
+#include "config/ebr.h"
+#include "ebr_init.h"
+
 extern const u8 EventScript_ResetAllMapFlags[];
 
 static void ClearFrontierRecord(void);
@@ -128,9 +131,15 @@ static void ClearFrontierRecord(void)
     gSaveBlock2Ptr->frontier.opponentNames[1][0] = EOS;
 }
 
+// Game Start Warp Function
+
 static void WarpToTruck(void)
 {
+    #if EBR_QUICK_START_ENABLED == TRUE
+    SetWarpDestination(MAP_GROUP(BATTLE_FRONTIER_OUTSIDE_EAST), MAP_NUM(BATTLE_FRONTIER_OUTSIDE_EAST), 0, -1, -1);
+    #else
     SetWarpDestination(MAP_GROUP(INSIDE_OF_TRUCK), MAP_NUM(INSIDE_OF_TRUCK), WARP_ID_NONE, -1, -1);
+    #endif
     WarpIntoMap();
 }
 
@@ -211,6 +220,9 @@ void NewGameInitData(void)
     SetCurrentDifficultyLevel(DIFFICULTY_NORMAL);
     ResetItemFlags();
     ResetDexNav();
+
+    // EBR Quick Start
+    EbrQuickStart();
 }
 
 static void ResetMiniGamesRecords(void)
