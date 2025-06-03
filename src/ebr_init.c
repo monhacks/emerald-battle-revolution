@@ -1,9 +1,11 @@
 #include "global.h"
 #include "money.h"
 #include "item.h"
+#include "move.h"
 
 #include "event_data.h"
 #include "new_game.h"
+#include "pokedex.h"
 
 #include "constants/battle_frontier_generator.h"
 #include "config/battle_frontier_generator.h"
@@ -13,11 +15,14 @@
 #include "ebr_init.h"
 
 #if EBR_QUICK_START_ENABLED == TRUE
-static void SetEbrFlags(void);
-static void SetEbrVars(void);
-static void GiveEbrItems(void);
-static void GiveEbrMons(void);
-#endif
+static void SetQuickStartFlags(void);
+static void SetQuickStartVars(void);
+static void GiveQuickStartItems(void);
+
+static void UpdatePokedex(struct Pokemon * mon);
+static void GiveVolcarona(void);
+static void GiveSmeargle(void);
+#endif // EBR_QUICK_START_ENABLED
 
 void EbrQuickStart(void) 
 {
@@ -25,10 +30,15 @@ void EbrQuickStart(void)
     #if EBR_QUICK_START_ENABLED == TRUE
 
     // Basic Setup
-    SetEbrFlags();
-    SetEbrVars();
-    GiveEbrItems();
-    GiveEbrMons();
+    SetQuickStartFlags();
+    SetQuickStartVars();
+    GiveQuickStartItems();
+
+	// Battle Lead
+	GiveVolcarona();
+
+	// HM Slave
+	GiveSmeargle();
 
     // Give the player's starting funds
     AddMoney(&gSaveBlock1Ptr->money, EBR_QUICK_START_MONEY);
@@ -40,7 +50,7 @@ void EbrQuickStart(void)
 }
 
 #if EBR_QUICK_START_ENABLED == TRUE
-static void SetEbrFlags(void)
+static void SetQuickStartFlags(void)
 {
     // Running Shoes
     FlagSet(FLAG_SYS_B_DASH);
@@ -441,6 +451,10 @@ static void SetEbrFlags(void)
 	FlagSet(FLAG_ARRIVED_ON_FARAWAY_ISLAND);
 	FlagSet(FLAG_LANDMARK_TRAINER_HILL);
 
+	// Tera Orb
+	FlagSet(FLAG_TERA_ORB_CHARGED);
+	FlagSet(FLAG_TERA_ORB_NO_COST);
+
 	// (New!) Battle Frontier Generator Flags
 	FlagSet(FLAG_BATTLE_FRONTIER_GENERATOR);
 	FlagSet(FLAG_BATTLE_FRONTIER_ALLOW_MEGA);
@@ -450,7 +464,7 @@ static void SetEbrFlags(void)
 	FlagSet(FLAG_BATTLE_FRONTIER_GENERATOR);
 }
 
-static void SetEbrVars(void)
+static void SetQuickStartVars(void)
 {
     // Location States
 	VarSet(VAR_BIRCH_STATE, 4);
@@ -524,7 +538,7 @@ static void SetEbrVars(void)
     VarSet(VAR_FRONTIER_METHOD, BFG_TEAM_GENERATOR_FILTERED_RANKING);
 }
 
-static void GiveEbrItems(void)
+static void GiveQuickStartItems(void)
 {
     // Battle Mechanic Key Items
     AddBagItem(ITEM_MEGA_RING, 1);
@@ -564,33 +578,105 @@ static void GiveEbrItems(void)
     // Other items may be added later :)
 }
 
-static void GiveEbrMons(void)
-{
-    // Placeholders for game-start mons
-    struct Pokemon volcarona, swampert;
+static void UpdatePokedex(struct Pokemon * mon) {
+	// Update Pokedex flags	
+	u16 species = GetMonData(mon, MON_DATA_SPECIES, NULL);
+    u32 personality = GetMonData(mon, MON_DATA_PERSONALITY, NULL);
+    species = SpeciesToNationalPokedexNum(species);
 
-    // Create Player's Volcarona
-    CreateMonWithNature(
-        &volcarona, 
-        SPECIES_VOLCARONA, 
-        100, 
-        31, 
-        NATURE_MODEST
-    );
+    GetSetPokedexFlag(species, FLAG_SET_SEEN);
+    HandleSetPokedexFlag(species, FLAG_SET_CAUGHT, personality);
+}
 
-    // Give the mon to the player
+static void GiveVolcarona(void) {
+
+	// Flame Body / Battle Lead
+	struct Pokemon volcarona;
+
+	CreateMonWithNature(
+		&volcarona, 
+		SPECIES_VOLCARONA, 
+		100, 
+		31, 
+		NATURE_MODEST
+	);
+
+	// Moves
+	u16 moves[] = {MOVE_FIERY_DANCE, MOVE_GIGA_DRAIN, MOVE_BUG_BUZZ, MOVE_QUIVER_DANCE};
+	SetMonData(&volcarona, MON_DATA_MOVE1, &moves[0]);
+	SetMonData(&volcarona, MON_DATA_MOVE2, &moves[1]);
+	SetMonData(&volcarona, MON_DATA_MOVE3, &moves[2]);
+	SetMonData(&volcarona, MON_DATA_MOVE4, &moves[3]);
+
+	// Restore PP to full
+	MonRestorePP(&volcarona);
+
+	// Ability
+	u16 ability = 0; // Flame Body
+	SetMonData(&volcarona, MON_DATA_ABILITY_NUM, &ability);
+
+	// Item
+	u16 item = ITEM_LEFTOVERS;
+	SetMonData(&volcarona, MON_DATA_HELD_ITEM, &item);
+
+	// Tera Type
+	u16 tera = TYPE_GRASS;
+	SetMonData(&volcarona, MON_DATA_TERA_TYPE, &tera);
+
+	// EVs
+	u8 evMin = 4;
+	u8 evMax = 252;
+	SetMonData(&volcarona, MON_DATA_HP_EV, &evMax);
+	SetMonData(&volcarona, MON_DATA_SPATK_EV, &evMax);
+	SetMonData(&volcarona, MON_DATA_DEF_EV, &evMin);
+
     GiveMonToPlayer(&volcarona);
+	UpdatePokedex(&volcarona);
+}
 
-    // Create Player's Swampert
+static void GiveSmeargle(void) {
+
+	// HM Slave Supporter
+	struct Pokemon smeargle;
+
     CreateMonWithNature(
-        &swampert, 
-        SPECIES_SWAMPERT, 
+        &smeargle, 
+        SPECIES_SMEARGLE, 
         100, 
         31, 
-        NATURE_BRAVE
+        NATURE_SASSY
     );
 
-    // Give the mon to the player
-    GiveMonToPlayer(&swampert);
+	// Moves
+	u16 moves[] = {MOVE_WATERFALL, MOVE_DIVE, MOVE_SURF, MOVE_FLY};
+	SetMonData(&smeargle, MON_DATA_MOVE1, &moves[0]);
+	SetMonData(&smeargle, MON_DATA_MOVE2, &moves[1]);
+	SetMonData(&smeargle, MON_DATA_MOVE3, &moves[2]);
+	SetMonData(&smeargle, MON_DATA_MOVE4, &moves[3]);
+
+	// Restore PP to full
+	MonRestorePP(&smeargle);
+
+	// Ability
+	u16 ability = 2; // Moody
+	SetMonData(&smeargle, MON_DATA_ABILITY_NUM, &ability);
+
+	// Item
+	u16 item = ITEM_LEFTOVERS;
+	SetMonData(&smeargle, MON_DATA_HELD_ITEM, &item); 
+
+	// Tera Type
+	u16 tera = TYPE_WATER;
+	SetMonData(&smeargle, MON_DATA_TERA_TYPE, &tera);
+
+	// EVs
+	u8 evMin = 4;
+	u8 evMax = 252;
+	SetMonData(&smeargle, MON_DATA_HP_EV, &evMax);
+	SetMonData(&smeargle, MON_DATA_DEF_EV, &evMax);
+	SetMonData(&smeargle, MON_DATA_SPDEF_EV, &evMin);
+
+    GiveMonToPlayer(&smeargle);
+	UpdatePokedex(&smeargle);
 }
 #endif
