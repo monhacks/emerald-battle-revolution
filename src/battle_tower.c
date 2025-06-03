@@ -40,6 +40,9 @@
 #include "constants/event_objects.h"
 #include "constants/moves.h"
 
+#include "config/battle_frontier_generator.h"
+#include "battle_frontier_generator.h"
+
 // EWRAM vars.
 EWRAM_DATA const struct BattleFrontierTrainer *gFacilityTrainers = NULL;
 EWRAM_DATA const struct TrainerMon *gFacilityTrainerMons = NULL;
@@ -1086,16 +1089,6 @@ void SetBattleFacilityTrainerGfxId(u16 trainerId, u8 tempVarId)
     }
     else if (trainerId < FRONTIER_TRAINERS_COUNT)
     {
-        DebugPrintf("Generating battle frontier trainer team ...");
-
-        // Use Frontier Generator (If flag set)
-        #if BFG_FLAG_FRONTIER_GENERATOR != 0
-        if (FlagGet(BFG_FLAG_FRONTIER_GENERATOR)) {
-            GenerateTrainerParty(trainerId, firstMonId, monCount, level);
-            return;
-        }
-        #endif
-
         facilityClass = gFacilityTrainers[trainerId].facilityClass;
     }
     else if (trainerId < TRAINER_RECORD_MIXING_APPRENTICE)
