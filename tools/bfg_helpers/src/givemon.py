@@ -24,7 +24,7 @@ DEFAULT_POKEBALL = "ITEM_SPORT_BALL"
 STATS = ["hp", "atk", "def", "spe", "spa", "spd"]
 
 # Other args (last 3, follow same format)
-OTHER_ARGS = ["shiny", "gigantamax", "tera type"]
+OTHER_ARGS = ["shiny", "gigantamax"]
 
 # Get showdown data files
 MOVES, POKEMON = showdown.get_showdown_data()
@@ -173,6 +173,15 @@ def get_givemon_str(pokemon):
                 args.append("TRUE")
             else:
                 args.append("FALSE")
+
+    # Tera Type provided
+    if "tera type" in other:
+        # Set tera type to provided type
+        tera_type = other['tera type'].upper()
+        args.append(f"TYPE_{tera_type}")
+    else: 
+        # Use default type
+        args.append("FALSE")
 
     # Return give-mon string
     return f"givemon({','.join(args)})"

@@ -1158,7 +1158,6 @@ EventScript_VsSeekerChargingDone::
 	.include "data/scripts/sample_sets_options.inc"
 	.include "data/scripts/sample_teams.inc"
 	.include "data/scripts/sample_teams_options.inc"
-	.include "data/scripts/introduction.inc"
 	.include "data/scripts/currency_converter.inc"
 	.include "data/scripts/frontier_controller.inc"
 	.include "data/scripts/simple_npcs.inc"

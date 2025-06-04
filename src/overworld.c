@@ -73,6 +73,8 @@
 #include "constants/trainer_hill.h"
 #include "constants/weather.h"
 
+#include "config/ebr.h"
+
 STATIC_ASSERT((B_FLAG_FOLLOWERS_DISABLED == 0 || OW_FOLLOWERS_ENABLED), FollowersFlagAssignedWithoutEnablingThem);
 
 struct CableClubPlayer
@@ -1615,7 +1617,9 @@ void CB2_NewGame(void)
     PlayTimeCounter_Start();
     ScriptContext_Init();
     UnlockPlayerFieldControls();
+    #if EBR_QUICK_START_ENABLED == FALSE
     gFieldCallback = ExecuteTruckSequence;
+    #endif
     gFieldCallback2 = NULL;
     DoMapLoadLoop(&gMain.state);
     SetFieldVBlankCallback();
