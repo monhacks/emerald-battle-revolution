@@ -25,7 +25,6 @@
 
 // Other Items
 #define IP_PRICE_FOSSIL 2000
-#define IP_PRICE_KEY_ITEM 1000
 #define IP_PRICE_EVO_STONE 1000
 #define IP_PRICE_TERA_SHARD 1000
 

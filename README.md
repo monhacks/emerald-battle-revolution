@@ -147,23 +147,23 @@ rate of $9800 to 1 BP.
 
 Please see below for the list of features which are supported in each Battle Frontier facility.
 
-| Facility Name  | Level Scaling   | New Species   | Doubles Mode | 4 Pokémon (Doubles) | Total |
-| -------------- | --------------- | ------------- | ------------ | ------------------- | ----- |
-| Battle Arena   | Yes             | Yes           | No           | N/A                 | 2/3   |
-| Battle Dome    | Yes             | No            | Yes          | No                  | 2/4   |
-| Battle Factory | Yes             | Yes           | Yes          | No                  | 3/4   |
-| Battle Palace  | Yes             | Yes           | Yes          | No                  | 3/4   |
-| Battle Pike    | Yes             | Yes           | N/A          | N/A                 | 2/2   |
-| Battle Pyramid | Yes             | Yes           | No           | N/A                 | 2/3   |
-| Battle Tower   | Yes             | Yes           | Yes          | Yes                 | 4/4   |
+| Facility Name  | Level Scaling   | New Species   | 4 Pokémon (Doubles) | Total |
+| -------------- | --------------- | ------------- | ------------------- | ----- |
+| Battle Arena   | Yes             | Yes           | N/A                 | 2/2   |
+| Battle Dome    | Yes             | No            | No                  | 2/3   |
+| Battle Factory | Yes             | Yes           | No                  | 3/3   |
+| Battle Palace  | Yes             | Yes           | No                  | 3/3   |
+| Battle Pike    | Yes             | Yes           | N/A                 | 2/2   |
+| Battle Pyramid | Yes             | Yes           | N/A                 | 2/2   |
+| Battle Tower   | Yes             | Yes           | Yes                 | 3/3   |
 
 Please see below for the list of features which are supported in each Battle Tent.
 
-| Facility Name   | Level Scaling   | New Species   | Doubles Mode | 4 Pokémon (Doubles) | Total |
-| --------------- | --------------- | ------------- | ------------ | ------------------- | ----- |
-| Fallarbor  Tent | Yes             | Yes           | No           | N/A                 | 2/3   |
-| Slateport  Tent | Yes             | Yes           | No           | N/A                 | 2/3   |
-| Verdanturf Tent | Yes             | Yes           | No           | N/A                 | 2/3   |
+| Facility Name   | Level Scaling   | New Species   | Total |
+| --------------- | --------------- | ------------- | ----- |
+| Fallarbor  Tent | Yes             | Yes           | 2/2   |
+| Slateport  Tent | Yes             | Yes           | 2/2   |
+| Verdanturf Tent | Yes             | Yes           | 2/2   |
 
 ## Future Changes
 For a list of future changes which are intended for this project, 
@@ -185,6 +185,9 @@ If you experience any issues with the application, or would like to suggest impr
 * [Github Issues & Milestones](https://github.com/damon-murdoch/dragapult-emerald/milestones)
 
 ## Credits
+
+Not all of the below features have persisted in the latest version, but these tutorials helped 
+me learn the codebase and otherwise contributed to development of the project greatly. 
 
 * The entire [PokeEmerald-Expansion development team](https://github.com/rh-hideout/pokeemerald-expansion/wiki/Credits/_edit), for developing and maintaining the incredible source image this project uses
 
@@ -242,10 +245,21 @@ If you experience any issues with the application, or would like to suggest impr
 Please see below for the Emerald Battle Revolution project changelog. For changes related to
 the PokeEmerald Expanded project, please see the [PokeEmerald Changelog](./CHANGELOG.md).
 
+### Ver. 3.1.1
+
+Merged upstream changes
+
+### Ver. 3.1.0
+
+Speech updated, makefile updated, tera type added to samples, config changes, other changes
+
+### Ver. 3.0.2
+
+Implemented quick start, removed truck start
+
 ### Ver. 3.0.1
 
-Changed Birch's speech to an Emerald Battle Revolution intro, changed the 
-demo Pokemon to Incineroar
+Changed Birch's speech to an Emerald Battle Revolution intro, changed the demo Pokemon to Incineroar
 
 ### Ver. 3.0.0
 

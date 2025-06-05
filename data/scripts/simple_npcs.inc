@@ -576,164 +576,94 @@ BattleFrontier_Underground_B1F_EventScript_PokeBall_Visitor1::
 	end
 
 
-BattleFrontier_Underground_B1F_EventScript_NewKeyItem_Visitor1::
-# 406 "data/scripts/simple_npcs.pory"
-	lock
-# 407 "data/scripts/simple_npcs.pory"
-	faceplayer
-# 408 "data/scripts/simple_npcs.pory"
-	msgbox BattleFrontier_Underground_B1F_EventScript_NewKeyItem_Visitor1_Text_0
-# 409 "data/scripts/simple_npcs.pory"
-	msgbox BattleFrontier_Underground_B1F_EventScript_NewKeyItem_Visitor1_Text_1
-# 410 "data/scripts/simple_npcs.pory"
-	release
-	end
-
-
 BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_Visitor1::
-# 418 "data/scripts/simple_npcs.pory"
+# 408 "data/scripts/simple_npcs.pory"
 	lock
-# 419 "data/scripts/simple_npcs.pory"
+# 409 "data/scripts/simple_npcs.pory"
 	faceplayer
-# 420 "data/scripts/simple_npcs.pory"
+# 410 "data/scripts/simple_npcs.pory"
 	msgbox BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_Visitor1_Text_0
-# 421 "data/scripts/simple_npcs.pory"
+# 411 "data/scripts/simple_npcs.pory"
 	msgbox BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_Visitor1_Text_1
-# 422 "data/scripts/simple_npcs.pory"
+# 412 "data/scripts/simple_npcs.pory"
 	msgbox BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_Visitor1_Text_2
-# 423 "data/scripts/simple_npcs.pory"
+# 413 "data/scripts/simple_npcs.pory"
 	release
 	end
 
 
 BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_Visitor2::
-# 429 "data/scripts/simple_npcs.pory"
+# 419 "data/scripts/simple_npcs.pory"
 	lock
-# 430 "data/scripts/simple_npcs.pory"
+# 420 "data/scripts/simple_npcs.pory"
 	faceplayer
-# 431 "data/scripts/simple_npcs.pory"
+# 421 "data/scripts/simple_npcs.pory"
 	msgbox BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_Visitor2_Text_0
-# 432 "data/scripts/simple_npcs.pory"
+# 422 "data/scripts/simple_npcs.pory"
 	msgbox BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_Visitor2_Text_1
-# 433 "data/scripts/simple_npcs.pory"
+# 423 "data/scripts/simple_npcs.pory"
 	msgbox BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_Visitor2_Text_2
-# 434 "data/scripts/simple_npcs.pory"
+# 424 "data/scripts/simple_npcs.pory"
 	release
 	end
 
 
 BattleFrontier_Underground_B2F_PokeCenter_2F_EventScript_Visitor1::
-# 442 "data/scripts/simple_npcs.pory"
+# 432 "data/scripts/simple_npcs.pory"
 	lock
-# 443 "data/scripts/simple_npcs.pory"
+# 433 "data/scripts/simple_npcs.pory"
 	faceplayer
-# 444 "data/scripts/simple_npcs.pory"
+# 434 "data/scripts/simple_npcs.pory"
 	msgbox BattleFrontier_Underground_B2F_PokeCenter_2F_EventScript_Visitor1_Text_0
-# 445 "data/scripts/simple_npcs.pory"
+# 435 "data/scripts/simple_npcs.pory"
 	msgbox BattleFrontier_Underground_B2F_PokeCenter_2F_EventScript_Visitor1_Text_1
-# 446 "data/scripts/simple_npcs.pory"
+# 436 "data/scripts/simple_npcs.pory"
 	msgbox BattleFrontier_Underground_B2F_PokeCenter_2F_EventScript_Visitor1_Text_2
-# 447 "data/scripts/simple_npcs.pory"
+# 437 "data/scripts/simple_npcs.pory"
 	release
 	end
 
 
 BattleFrontier_Underground_B2F_PokeCenter_2F_EventScript_Visitor2::
-# 453 "data/scripts/simple_npcs.pory"
+# 443 "data/scripts/simple_npcs.pory"
 	lock
-# 454 "data/scripts/simple_npcs.pory"
+# 444 "data/scripts/simple_npcs.pory"
 	faceplayer
-# 455 "data/scripts/simple_npcs.pory"
+# 445 "data/scripts/simple_npcs.pory"
 	msgbox BattleFrontier_Underground_B2F_PokeCenter_2F_EventScript_Visitor2_Text_0
-# 456 "data/scripts/simple_npcs.pory"
+# 446 "data/scripts/simple_npcs.pory"
 	msgbox BattleFrontier_Underground_B2F_PokeCenter_2F_EventScript_Visitor2_Text_1
-# 457 "data/scripts/simple_npcs.pory"
-	release
-	end
-
-
-BattleFrontier_Underground_B2F_BattleSpot_1F_EventScript_Placeholder1::
-# 465 "data/scripts/simple_npcs.pory"
-	lock
-# 466 "data/scripts/simple_npcs.pory"
-	faceplayer
-# 467 "data/scripts/simple_npcs.pory"
-	msgbox BattleFrontier_Underground_B2F_BattleSpot_1F_EventScript_Placeholder1_Text_0
-# 468 "data/scripts/simple_npcs.pory"
-	msgbox BattleFrontier_Underground_B2F_BattleSpot_1F_EventScript_Placeholder1_Text_1
-# 469 "data/scripts/simple_npcs.pory"
-	msgbox BattleFrontier_Underground_B2F_BattleSpot_1F_EventScript_Placeholder1_Text_2
-# 470 "data/scripts/simple_npcs.pory"
-	msgbox BattleFrontier_Underground_B2F_BattleSpot_1F_EventScript_Placeholder1_Text_3
-# 471 "data/scripts/simple_npcs.pory"
-	msgbox BattleFrontier_Underground_B2F_BattleSpot_1F_EventScript_Placeholder1_Text_4
-# 472 "data/scripts/simple_npcs.pory"
-	release
-	end
-
-
-BattleFrontier_Underground_B2F_BattleSpot_1F_EventScript_Placeholder2::
-# 478 "data/scripts/simple_npcs.pory"
-	lock
-# 479 "data/scripts/simple_npcs.pory"
-	faceplayer
-# 480 "data/scripts/simple_npcs.pory"
-	msgbox BattleFrontier_Underground_B2F_BattleSpot_1F_EventScript_Placeholder1_Text_0
-# 481 "data/scripts/simple_npcs.pory"
-	msgbox BattleFrontier_Underground_B2F_BattleSpot_1F_EventScript_Placeholder2_Text_0
-# 482 "data/scripts/simple_npcs.pory"
-	msgbox BattleFrontier_Underground_B2F_BattleSpot_1F_EventScript_Placeholder2_Text_1
-# 483 "data/scripts/simple_npcs.pory"
-	msgbox BattleFrontier_Underground_B2F_BattleSpot_1F_EventScript_Placeholder1_Text_3
-# 484 "data/scripts/simple_npcs.pory"
-	msgbox BattleFrontier_Underground_B2F_BattleSpot_1F_EventScript_Placeholder1_Text_4
-# 485 "data/scripts/simple_npcs.pory"
+# 447 "data/scripts/simple_npcs.pory"
 	release
 	end
 
 
 BattleFrontier_Underground_B2F_BattleSpot_1F_EventScript_Visitor1::
-# 491 "data/scripts/simple_npcs.pory"
+# 455 "data/scripts/simple_npcs.pory"
 	lock
-# 492 "data/scripts/simple_npcs.pory"
+# 456 "data/scripts/simple_npcs.pory"
 	faceplayer
-# 493 "data/scripts/simple_npcs.pory"
+# 457 "data/scripts/simple_npcs.pory"
 	msgbox BattleFrontier_Underground_B2F_BattleSpot_1F_EventScript_Visitor1_Text_0
-# 494 "data/scripts/simple_npcs.pory"
+# 458 "data/scripts/simple_npcs.pory"
 	msgbox BattleFrontier_Underground_B2F_BattleSpot_1F_EventScript_Visitor1_Text_1
-# 495 "data/scripts/simple_npcs.pory"
+# 459 "data/scripts/simple_npcs.pory"
 	msgbox BattleFrontier_Underground_B2F_BattleSpot_1F_EventScript_Visitor1_Text_2
-# 496 "data/scripts/simple_npcs.pory"
+# 460 "data/scripts/simple_npcs.pory"
 	release
 	end
 
 
 BattleFrontier_Underground_B2F_BattleSpot_1F_EventScript_Visitor2::
-# 502 "data/scripts/simple_npcs.pory"
+# 466 "data/scripts/simple_npcs.pory"
 	lock
-# 503 "data/scripts/simple_npcs.pory"
+# 467 "data/scripts/simple_npcs.pory"
 	faceplayer
-# 504 "data/scripts/simple_npcs.pory"
+# 468 "data/scripts/simple_npcs.pory"
 	msgbox BattleFrontier_Underground_B2F_BattleSpot_1F_EventScript_Visitor2_Text_0
-# 505 "data/scripts/simple_npcs.pory"
+# 469 "data/scripts/simple_npcs.pory"
 	msgbox BattleFrontier_Underground_B2F_BattleSpot_1F_EventScript_Visitor2_Text_1
-# 506 "data/scripts/simple_npcs.pory"
-	release
-	end
-
-
-BattleFrontier_Underground_B2F_BattleSpot_1F_EventScript_Visitor3::
-# 512 "data/scripts/simple_npcs.pory"
-	lock
-# 513 "data/scripts/simple_npcs.pory"
-	faceplayer
-# 514 "data/scripts/simple_npcs.pory"
-	msgbox BattleFrontier_Underground_B2F_BattleSpot_1F_EventScript_Visitor3_Text_0
-# 515 "data/scripts/simple_npcs.pory"
-	msgbox BattleFrontier_Underground_B2F_BattleSpot_1F_EventScript_Visitor3_Text_1
-# 516 "data/scripts/simple_npcs.pory"
-	msgbox BattleFrontier_Underground_B2F_BattleSpot_1F_EventScript_Visitor3_Text_2
-# 517 "data/scripts/simple_npcs.pory"
+# 470 "data/scripts/simple_npcs.pory"
 	release
 	end
 
@@ -1256,142 +1186,84 @@ BattleFrontier_Underground_B1F_EventScript_PokeBall_Visitor1_Text_2:
 # 399 "data/scripts/simple_npcs.pory"
 	.string "Try it out for yourself!$"
 
-BattleFrontier_Underground_B1F_EventScript_NewKeyItem_Visitor1_Text_0:
-# 408 "data/scripts/simple_npcs.pory"
-	.string "Wow, this place has so many unique items\n"
-	.string "- and you only need to buy them once!$"
-
-BattleFrontier_Underground_B1F_EventScript_NewKeyItem_Visitor1_Text_1:
-# 409 "data/scripts/simple_npcs.pory"
-	.string "Which one will you be picking up first?$"
-
 BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_Visitor1_Text_0:
-# 420 "data/scripts/simple_npcs.pory"
+# 410 "data/scripts/simple_npcs.pory"
 	.string "If you want to try a new style of\n"
 	.string "battling, maybe look at changing the\l"
-	.string "battle ban lists, or even trying a new\l"
+	.string "battle ban lists - or even trying a new\l"
 	.string "ruleset!$"
 
 BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_Visitor1_Text_1:
-# 421 "data/scripts/simple_npcs.pory"
+# 411 "data/scripts/simple_npcs.pory"
 	.string "You can even play against the old\n"
 	.string "battle frontier sets if you'd like, too.$"
 
 BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_Visitor1_Text_2:
-# 422 "data/scripts/simple_npcs.pory"
+# 412 "data/scripts/simple_npcs.pory"
 	.string "The possibilities are endless!$"
 
 BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_Visitor2_Text_0:
-# 431 "data/scripts/simple_npcs.pory"
+# 421 "data/scripts/simple_npcs.pory"
 	.string "How do you feel about dynamax battles?$"
 
 BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_Visitor2_Text_1:
-# 432 "data/scripts/simple_npcs.pory"
+# 422 "data/scripts/simple_npcs.pory"
 	.string "Some people prefer them over normal\n"
 	.string "battles.$"
 
 BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_Visitor2_Text_2:
-# 433 "data/scripts/simple_npcs.pory"
+# 423 "data/scripts/simple_npcs.pory"
 	.string "Me? I just like the cool Gigantamax\n"
 	.string "formes!$"
 
 BattleFrontier_Underground_B2F_PokeCenter_2F_EventScript_Visitor1_Text_0:
-# 444 "data/scripts/simple_npcs.pory"
+# 434 "data/scripts/simple_npcs.pory"
 	.string "Have you ever played in a tournament\n"
 	.string "before?$"
 
 BattleFrontier_Underground_B2F_PokeCenter_2F_EventScript_Visitor1_Text_1:
-# 445 "data/scripts/simple_npcs.pory"
+# 435 "data/scripts/simple_npcs.pory"
 	.string "I've heard they hold them in a place far\n"
 	.string "away from here.$"
 
 BattleFrontier_Underground_B2F_PokeCenter_2F_EventScript_Visitor1_Text_2:
-# 446 "data/scripts/simple_npcs.pory"
+# 436 "data/scripts/simple_npcs.pory"
 	.string "You can even qualify for the world\n"
 	.string "championships!$"
 
 BattleFrontier_Underground_B2F_PokeCenter_2F_EventScript_Visitor2_Text_0:
-# 455 "data/scripts/simple_npcs.pory"
+# 445 "data/scripts/simple_npcs.pory"
 	.string "I've won lots of games at the Battle\n"
 	.string "Frontier, but I'm not sure I'm ready for\l"
 	.string "union room battles just yet ...$"
 
 BattleFrontier_Underground_B2F_PokeCenter_2F_EventScript_Visitor2_Text_1:
-# 456 "data/scripts/simple_npcs.pory"
+# 446 "data/scripts/simple_npcs.pory"
 	.string "I guess the only way to find out is to\n"
 	.string "try!$"
 
-BattleFrontier_Underground_B2F_BattleSpot_1F_EventScript_Placeholder1_Text_0:
-# 467 "data/scripts/simple_npcs.pory"
-	.string "Welcome to the Battle Spot!$"
-
-BattleFrontier_Underground_B2F_BattleSpot_1F_EventScript_Placeholder1_Text_1:
-# 468 "data/scripts/simple_npcs.pory"
-	.string "This is the door for the rating battles\n"
-	.string "facility.$"
-
-BattleFrontier_Underground_B2F_BattleSpot_1F_EventScript_Placeholder1_Text_2:
-# 469 "data/scripts/simple_npcs.pory"
-	.string "Start from the 1500s, and rise to the\n"
-	.string "top of the 2000s!$"
-
-BattleFrontier_Underground_B2F_BattleSpot_1F_EventScript_Placeholder1_Text_3:
-# 470 "data/scripts/simple_npcs.pory"
-	.string "At the moment, this facility is closed\n"
-	.string "for development.$"
-
-BattleFrontier_Underground_B2F_BattleSpot_1F_EventScript_Placeholder1_Text_4:
-# 471 "data/scripts/simple_npcs.pory"
-	.string "Please come back soon!$"
-
-BattleFrontier_Underground_B2F_BattleSpot_1F_EventScript_Placeholder2_Text_0:
-# 481 "data/scripts/simple_npcs.pory"
-	.string "This is the door for the ranked battles\n"
-	.string "facility.$"
-
-BattleFrontier_Underground_B2F_BattleSpot_1F_EventScript_Placeholder2_Text_1:
-# 482 "data/scripts/simple_npcs.pory"
-	.string "Rise through the ranks to the top of\n"
-	.string "the Master Ball Tier!$"
-
 BattleFrontier_Underground_B2F_BattleSpot_1F_EventScript_Visitor1_Text_0:
-# 493 "data/scripts/simple_npcs.pory"
+# 457 "data/scripts/simple_npcs.pory"
 	.string "Have you had a look at the sample teams\n"
 	.string "shop yet?$"
 
 BattleFrontier_Underground_B2F_BattleSpot_1F_EventScript_Visitor1_Text_1:
-# 494 "data/scripts/simple_npcs.pory"
+# 458 "data/scripts/simple_npcs.pory"
 	.string "It's a great way to get started if you\n"
 	.string "aren't sure what to use!$"
 
 BattleFrontier_Underground_B2F_BattleSpot_1F_EventScript_Visitor1_Text_2:
-# 495 "data/scripts/simple_npcs.pory"
+# 459 "data/scripts/simple_npcs.pory"
 	.string "I hope they add some single battle\n"
 	.string "teams soon, though.$"
 
 BattleFrontier_Underground_B2F_BattleSpot_1F_EventScript_Visitor2_Text_0:
-# 504 "data/scripts/simple_npcs.pory"
+# 468 "data/scripts/simple_npcs.pory"
 	.string "The sample sets shop is really useful if\n"
 	.string "you want to try some new POKéMON, but\l"
 	.string "aren't sure how to train them.$"
 
 BattleFrontier_Underground_B2F_BattleSpot_1F_EventScript_Visitor2_Text_1:
-# 505 "data/scripts/simple_npcs.pory"
+# 469 "data/scripts/simple_npcs.pory"
 	.string "It's a great way to save time when\n"
 	.string "experimenting or building a new team!$"
-
-BattleFrontier_Underground_B2F_BattleSpot_1F_EventScript_Visitor3_Text_0:
-# 514 "data/scripts/simple_npcs.pory"
-	.string "From what I've heard, battles in this\n"
-	.string "facility will be filled with challenging\l"
-	.string "opponents!$"
-
-BattleFrontier_Underground_B2F_BattleSpot_1F_EventScript_Visitor3_Text_1:
-# 515 "data/scripts/simple_npcs.pory"
-	.string "Progress will be based on your win-loss\n"
-	.string "rating rather than relying on win\l"
-	.string "streaks only.$"
-
-BattleFrontier_Underground_B2F_BattleSpot_1F_EventScript_Visitor3_Text_2:
-# 516 "data/scripts/simple_npcs.pory"
-	.string "I'm so excited for it to open!$"

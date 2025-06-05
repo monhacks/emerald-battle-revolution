@@ -2280,7 +2280,7 @@ const struct Item gItemsInfo[] =
             "instantly from a\n"
             "cave or a dungeon."),
         #if I_KEY_ESCAPE_ROPE >= GEN_8
-            .price = IP_PRICE_KEY_ITEM,
+            .price = 0,
             .importance = 1,
             .pocket = POCKET_KEY_ITEMS,
         #else
@@ -8241,7 +8241,7 @@ const struct Item gItemsInfo[] =
         .name = _("Exp. Share"),
         .holdEffect = HOLD_EFFECT_EXP_SHARE,
         #if I_EXP_SHARE_ITEM >= GEN_6
-            .price = IP_PRICE_KEY_ITEM,
+            .price = 0,
             .description = COMPOUND_STRING(
                 "This device gives\n"
                 "exp. to other\n"
@@ -11936,7 +11936,7 @@ const struct Item gItemsInfo[] =
     [ITEM_OVAL_CHARM] =
     {
         .name = _("Oval Charm"),
-        .price = IP_PRICE_KEY_ITEM,
+        .price = 0,
         .importance = 1,
         .description = COMPOUND_STRING(
             "Raises the chance\n"
@@ -11952,7 +11952,7 @@ const struct Item gItemsInfo[] =
     [ITEM_SHINY_CHARM] =
     {
         .name = _("Shiny Charm"),
-        .price = IP_PRICE_KEY_ITEM,
+        .price = 0,
         .importance = 1,
         .description = COMPOUND_STRING(
             "A charm that will\n"
@@ -11968,7 +11968,7 @@ const struct Item gItemsInfo[] =
     [ITEM_CATCHING_CHARM] =
     {
         .name = _("Catching Charm"),
-        .price = IP_PRICE_KEY_ITEM,
+        .price = 0,
         .importance = 1,
         .description = COMPOUND_STRING(
             "A charm that raises\n"
@@ -11984,7 +11984,7 @@ const struct Item gItemsInfo[] =
     [ITEM_EXP_CHARM] =
     {
         .name = _("Exp. Charm"),
-        .price = IP_PRICE_KEY_ITEM,
+        .price = 0,
         .importance = 1,
         .description = COMPOUND_STRING(
             "A charm that raises\n"
@@ -12002,7 +12002,7 @@ const struct Item gItemsInfo[] =
     [ITEM_ROTOM_CATALOG] =
     {
         .name = _("Rotom Catalog"),
-        .price = IP_PRICE_KEY_ITEM,
+        .price = 0,
         .importance = 1,
         .description = COMPOUND_STRING(
             "A catalog full of\n"
@@ -12018,7 +12018,7 @@ const struct Item gItemsInfo[] =
     [ITEM_GRACIDEA] =
     {
         .name = _("Gracidea"),
-        .price = IP_PRICE_KEY_ITEM,
+        .price = 0,
         .importance = 1,
         .description = COMPOUND_STRING(
             "Bouquets made with\n"
@@ -12035,7 +12035,7 @@ const struct Item gItemsInfo[] =
     {
         .name = _("Reveal Glass"),
         .pluralName = _("Reveal Glasses"),
-        .price = IP_PRICE_KEY_ITEM,
+        .price = 0,
         .importance = 1,
         .description = COMPOUND_STRING(
             "This glass returns\n"
@@ -12052,7 +12052,7 @@ const struct Item gItemsInfo[] =
     {
         .name = _("DNA Splicers"),
         .pluralName = _("DNA Splicers"),
-        .price = IP_PRICE_KEY_ITEM,
+        .price = 0,
         .importance = 1,
         .description = COMPOUND_STRING(
             "Splicer that fuses\n"
@@ -12068,7 +12068,7 @@ const struct Item gItemsInfo[] =
     [ITEM_ZYGARDE_CUBE] =
     {
         .name = _("Zygarde Cube"),
-        .price = IP_PRICE_KEY_ITEM,
+        .price = 0,
         .importance = 1,
         .description = COMPOUND_STRING(
             "An item to store\n"
@@ -12084,7 +12084,7 @@ const struct Item gItemsInfo[] =
     [ITEM_PRISON_BOTTLE] =
     {
         .name = _("Prison Bottle"),
-        .price = IP_PRICE_KEY_ITEM,
+        .price = 0,
         .importance = 1,
         .description = COMPOUND_STRING(
             "A bottle used to\n"
@@ -12100,7 +12100,7 @@ const struct Item gItemsInfo[] =
     [ITEM_N_SOLARIZER] =
     {
         .name = _("N-Solarizer"),
-        .price = IP_PRICE_KEY_ITEM,
+        .price = 0,
         .importance = 1,
         .description = COMPOUND_STRING(
             "A device to fuse\n"
@@ -12116,7 +12116,7 @@ const struct Item gItemsInfo[] =
     [ITEM_N_LUNARIZER] =
     {
         .name = _("N-Lunarizer"),
-        .price = IP_PRICE_KEY_ITEM,
+        .price = 0,
         .importance = 1,
         .description = COMPOUND_STRING(
             "A device to fuse\n"
@@ -12133,7 +12133,7 @@ const struct Item gItemsInfo[] =
     {
         .name = _("Reins of Unity"),
         .pluralName = _("Reins of Unity"),
-        .price = IP_PRICE_KEY_ITEM,
+        .price = 0,
         .importance = 1,
         .description = COMPOUND_STRING(
             "Reins that unite\n"
@@ -12151,7 +12151,7 @@ const struct Item gItemsInfo[] =
     [ITEM_MEGA_RING] =
     {
         .name = _("Mega Ring"),
-        .price = IP_PRICE_KEY_ITEM,
+        .price = 0,
         .importance = 1,
         .description = COMPOUND_STRING(
             "Enables {PKMN} holding\n"
@@ -12167,7 +12167,7 @@ const struct Item gItemsInfo[] =
     [ITEM_Z_POWER_RING] =
     {
         .name = _("Z-Power Ring"),
-        .price = IP_PRICE_KEY_ITEM,
+        .price = 0,
         .importance = 1,
         .description = COMPOUND_STRING(
             "A strange ring\n"
@@ -12183,7 +12183,7 @@ const struct Item gItemsInfo[] =
     [ITEM_DYNAMAX_BAND] =
     {
         .name = _("Dynamax Band"),
-        .price = IP_PRICE_KEY_ITEM,
+        .price = 0,
         .description = COMPOUND_STRING(
             "A band carrying a\n"
             "Wishing Star that\n"
@@ -12216,7 +12216,7 @@ const struct Item gItemsInfo[] =
     [ITEM_MACH_BIKE] =
     {
         .name = _("Mach Bike"),
-        .price = IP_PRICE_KEY_ITEM,
+        .price = 0,
         .description = COMPOUND_STRING(
             "A folding bicycle\n"
             "that doubles your\n"
@@ -12233,7 +12233,7 @@ const struct Item gItemsInfo[] =
     [ITEM_ACRO_BIKE] =
     {
         .name = _("Acro Bike"),
-        .price = IP_PRICE_KEY_ITEM,
+        .price = 0,
         .description = COMPOUND_STRING(
             "A folding bicycle\n"
             "capable of jumps\n"
@@ -12250,7 +12250,7 @@ const struct Item gItemsInfo[] =
     [ITEM_OLD_ROD] =
     {
         .name = _("Old Rod"),
-        .price = IP_PRICE_KEY_ITEM,
+        .price = 0,
         .description = COMPOUND_STRING(
             "Use by any body of\n"
             "water to fish for\n"
@@ -12267,7 +12267,7 @@ const struct Item gItemsInfo[] =
     [ITEM_GOOD_ROD] =
     {
         .name = _("Good Rod"),
-        .price = IP_PRICE_KEY_ITEM,
+        .price = 0,
         .description = COMPOUND_STRING(
             "A decent fishing\n"
             "rod for catching\n"
@@ -12284,7 +12284,7 @@ const struct Item gItemsInfo[] =
     [ITEM_SUPER_ROD] =
     {
         .name = _("Super Rod"),
-        .price = IP_PRICE_KEY_ITEM,
+        .price = 0,
         .description = COMPOUND_STRING(
             "The best fishing\n"
             "rod for catching\n"
@@ -12301,7 +12301,7 @@ const struct Item gItemsInfo[] =
     [ITEM_DOWSING_MACHINE] =
     {
         .name = _("Dowsing Machine"),
-        .price = IP_PRICE_KEY_ITEM,
+        .price = 0,
         .description = COMPOUND_STRING(
             "A device that\n"
             "signals an invisible\n"
@@ -12402,7 +12402,7 @@ const struct Item gItemsInfo[] =
     [ITEM_COIN_CASE] =
     {
         .name = _("Coin Case"),
-        .price = IP_PRICE_KEY_ITEM,
+        .price = 0,
         .description = COMPOUND_STRING(
             "A case that holds\n"
             "up to 9,999 Coins."),
@@ -12417,7 +12417,7 @@ const struct Item gItemsInfo[] =
     [ITEM_POWDER_JAR] =
     {
         .name = _("Powder Jar"),
-        .price = IP_PRICE_KEY_ITEM,
+        .price = 0,
         .description = COMPOUND_STRING(
             "Stores Berry\n"
             "Powder made using\n"
@@ -12433,7 +12433,7 @@ const struct Item gItemsInfo[] =
     [ITEM_WAILMER_PAIL] =
     {
         .name = _("Wailmer Pail"),
-        .price = IP_PRICE_KEY_ITEM,
+        .price = 0,
         .description = COMPOUND_STRING(
             "A tool used for\n"
             "watering Berries\n"
@@ -12465,7 +12465,7 @@ const struct Item gItemsInfo[] =
     [ITEM_POKEBLOCK_CASE] =
     {
         .name = _("{POKEBLOCK} Case"),
-        .price = IP_PRICE_KEY_ITEM,
+        .price = 0,
         .description = COMPOUND_STRING(
             "A case for holding\n"
             "{POKEBLOCK}s made with\n"
@@ -12481,7 +12481,7 @@ const struct Item gItemsInfo[] =
     [ITEM_SOOT_SACK] =
     {
         .name = _("Soot Sack"),
-        .price = IP_PRICE_KEY_ITEM,
+        .price = 0,
         .description = COMPOUND_STRING(
             "A sack used to\n"
             "gather and hold\n"
@@ -12548,7 +12548,7 @@ const struct Item gItemsInfo[] =
     [ITEM_SS_TICKET] =
     {
         .name = _("S.S. Ticket"),
-        .price = IP_PRICE_KEY_ITEM,
+        .price = 0,
         .description = COMPOUND_STRING(
             "The ticket required\n"
             "for sailing on a\n"
@@ -12564,7 +12564,7 @@ const struct Item gItemsInfo[] =
     [ITEM_EON_TICKET] =
     {
         .name = _("Eon Ticket"),
-        .price = IP_PRICE_KEY_ITEM,
+        .price = 0,
         .description = COMPOUND_STRING(
             "The ticket for a\n"
             "ferry to a distant\n"
@@ -12581,7 +12581,7 @@ const struct Item gItemsInfo[] =
     [ITEM_MYSTIC_TICKET] =
     {
         .name = _("Mystic Ticket"),
-        .price = IP_PRICE_KEY_ITEM,
+        .price = 0,
         .description = COMPOUND_STRING(
             "A ticket required\n"
             "to board the ship\n"
@@ -12597,7 +12597,7 @@ const struct Item gItemsInfo[] =
     [ITEM_AURORA_TICKET] =
     {
         .name = _("Aurora Ticket"),
-        .price = IP_PRICE_KEY_ITEM,
+        .price = 0,
         .description = COMPOUND_STRING(
             "A ticket required\n"
             "to board the ship\n"
@@ -12613,7 +12613,7 @@ const struct Item gItemsInfo[] =
     [ITEM_OLD_SEA_MAP] =
     {
         .name = _("Old Sea Map"),
-        .price = IP_PRICE_KEY_ITEM,
+        .price = 0,
         .description = COMPOUND_STRING(
             "A faded sea chart\n"
             "that shows the way\n"
@@ -12663,7 +12663,7 @@ const struct Item gItemsInfo[] =
     {
         .name = _("Go-Goggles"),
         .pluralName = _("Go-Goggles"),
-        .price = IP_PRICE_KEY_ITEM,
+        .price = 0,
         .description = COMPOUND_STRING(
             "Nifty goggles that\n"
             "protect eyes from\n"
@@ -12679,7 +12679,7 @@ const struct Item gItemsInfo[] =
     [ITEM_DEVON_SCOPE] =
     {
         .name = _("Devon Scope"),
-        .price = IP_PRICE_KEY_ITEM,
+        .price = 0,
         .description = COMPOUND_STRING(
             "A device by Devon\n"
             "that signals any\n"
@@ -13248,7 +13248,7 @@ const struct Item gItemsInfo[] =
     {
         .name = _("Scroll of Darkness"),
         .pluralName = _("Scrolls of Darkness"),
-        .price = IP_PRICE_KEY_ITEM,
+        .price = 0,
         .description = COMPOUND_STRING(
             "A peculiar scroll\n"
             "with secrets of\n"
@@ -13266,7 +13266,7 @@ const struct Item gItemsInfo[] =
     {
         .name = _("Scroll of Waters"),
         .pluralName = _("Scrolls of Waters"),
-        .price = IP_PRICE_KEY_ITEM,
+        .price = 0,
         .description = COMPOUND_STRING(
             "A peculiar scroll\n"
             "with secrets of\n"
@@ -13283,7 +13283,7 @@ const struct Item gItemsInfo[] =
     [ITEM_TERA_ORB] =
     {
         .name = _("Tera Orb"),
-        .price = IP_PRICE_KEY_ITEM,
+        .price = 0,
         .description = COMPOUND_STRING(
             "Energy charges can\n"
             "be used to cause\n"
@@ -13881,7 +13881,7 @@ const struct Item gItemsInfo[] =
     [ITEM_GLIMMERING_CHARM] =
     {
         .name = _("Glimmering Charm"),
-        .price = IP_PRICE_KEY_ITEM,
+        .price = 0,
         .importance = 1,
         .description = COMPOUND_STRING(
             "A charm that will\n"
