@@ -3,9 +3,13 @@
 Please see below for the Emerald Battle Revolution project changelog. For changes related to
 the PokeEmerald Expanded project, please see the [PokeEmerald Changelog](./CHANGELOG.md).
 
+## Ver. 3.1.3
+
+Updated config, increased hard-mode battle point earnings
+
 ## Ver. 3.1.2
 
-Merged upstream changes, split changelog into seperate file
+Merged upstream changes, split changelog into seperate file, updated heal locations
 
 ## Ver. 3.1.1
 

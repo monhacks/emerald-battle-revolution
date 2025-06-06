@@ -42,6 +42,9 @@
 
 #include "data/battle_frontier/battle_frontier_banned_species.h"
 
+#include "config/battle_frontier_generator.h"
+#include "config/ebr.h"
+
 struct FrontierBrainMon
 {
     u16 species;
@@ -1896,6 +1899,15 @@ static void GiveBattlePoints(void)
         challengeNum = gSaveBlock2Ptr->frontier.pyramidWinStreaks[lvlMode] / FRONTIER_STAGES_PER_CHALLENGE;
         break;
     }
+
+    #if BFG_FLAG_FRONTIER_GENERATOR != 0 && BFG_FLAG_FRONTIER_FIXED_IV != 0
+    // If modern frontier generator is enabled, and hard mode is also enabled
+    if (FlagGet(BFG_FLAG_FRONTIER_GENERATOR) && FlagGet(BFG_FLAG_FRONTIER_FIXED_IV)) 
+    {
+        // Add 5 to challengeNum (min. 49 games)
+        challengeNum += EBR_HARD_MODE_BONUS;
+    }
+    #endif
 
     if (challengeNum != 0)
         challengeNum--;

@@ -455,6 +455,9 @@ static void SetQuickStartFlags(void)
 	FlagSet(FLAG_TERA_ORB_CHARGED);
 	FlagSet(FLAG_TERA_ORB_NO_COST);
 
+	// Fly from Map / PokeNav
+	FlagSet(FLAG_POKE_RIDER);
+
 	// (New!) Battle Frontier Generator Flags
 	FlagSet(FLAG_BATTLE_FRONTIER_GENERATOR);
 	FlagSet(FLAG_BATTLE_FRONTIER_ALLOW_MEGA);
@@ -575,6 +578,15 @@ static void GiveQuickStartItems(void)
     AddBagItem(ITEM_POWDER_JAR, 1);
     AddBagItem(ITEM_WAILMER_PAIL, 1);
     AddBagItem(ITEM_POKEBLOCK_CASE, 1);
+
+	// Charms (e.g. Shiny Charm)
+	#if EBR_QUICK_START_CHARMS == TRUE
+		AddBagItem(ITEM_OVAL_CHARM, 1);
+		AddBagItem(ITEM_SHINY_CHARM, 1);
+		AddBagItem(ITEM_CATCHING_CHARM, 1);
+		AddBagItem(ITEM_EXP_CHARM, 1);
+		// AddBagItem(ITEM_GLIMMERING_CHARM, 1);
+	#endif
 
 	// Event-Exclusive Items
 	#if EBR_QUICK_START_EVENT_ITEMS == TRUE

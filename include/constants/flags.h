@@ -56,7 +56,7 @@
 #define FLAG_BATTLE_FRONTIER_ALLOW_TERA     0x2A // Battle Frontier allow Terastalisation
 #define FLAG_BATTLE_FRONTIER_FIXED_IV       0x2B // Battle Frontier fixed IVs flag
 #define FLAG_EXP_SHARE_ENABLED              0x2C // Exp.Share enabled or disabled
-#define FLAG_UNUSED_0x02D    0x2D // Unused Flag
+#define FLAG_POKE_RIDER                     0x2D // Flag to fly from map/pokenav
 #define FLAG_UNUSED_0x02E    0x2E // Unused Flag
 #define FLAG_UNUSED_0x02F    0x2F // Unused Flag
 #define FLAG_UNUSED_0x030    0x30 // Unused Flag

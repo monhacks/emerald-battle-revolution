@@ -3,8 +3,12 @@
 
 #define EBR_QUICK_START_ENABLED     TRUE    // If true, use quick start routine at battle frontier
 #define EBR_QUICK_START_MONEY       500000  // Player Starting Money
+
+#define EBR_QUICK_START_CHARMS      TRUE    // Shiny Charm, etc. given via quick start
 #define EBR_QUICK_START_EVENT_ITEMS TRUE    // Event-exclusive items given via quick start
 
-#define EBR_POKEMON_BOX_LINK_ENABLED    TRUE    // Pokemon Box Link Item Enabled
+#define EBR_POKEMON_BOX_LINK_ENABLED    FALSE    // Pokemon Box Link Item Enabled
+
+#define EBR_HARD_MODE_BONUS 5   // Bonus 'challengeNum' added to BP earned playing hard mode
 
 #endif // GUARD_CONFIG_EBR_H
