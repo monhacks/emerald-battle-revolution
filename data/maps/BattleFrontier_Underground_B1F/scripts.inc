@@ -1377,40 +1377,40 @@ BattleFrontier_Underground_B1F_Mart_TMHMClerk2:
 # 739 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 BattleFrontier_Underground_B1F_Mart_GeneralClerk:
 # 740 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
-	.2byte ITEM_HYPER_POTION
+	.2byte ITEM_POKE_BALL
 # 741 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
-	.2byte ITEM_MAX_POTION
+	.2byte ITEM_GREAT_BALL
 # 742 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
-	.2byte ITEM_FULL_RESTORE
+	.2byte ITEM_ULTRA_BALL
 # 743 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
-	.2byte ITEM_FULL_HEAL
+	.2byte ITEM_HYPER_POTION
 # 744 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
-	.2byte ITEM_REVIVE
+	.2byte ITEM_MAX_POTION
 # 745 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
-	.2byte ITEM_MAX_REPEL
+	.2byte ITEM_FULL_RESTORE
 # 746 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
-	.2byte ITEM_PROTEIN
+	.2byte ITEM_FULL_HEAL
 # 747 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
-	.2byte ITEM_CALCIUM
+	.2byte ITEM_REVIVE
 # 748 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
-	.2byte ITEM_IRON
+	.2byte ITEM_MAX_REPEL
 # 749 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
-	.2byte ITEM_ZINC
+	.2byte ITEM_PROTEIN
 # 750 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
-	.2byte ITEM_CARBOS
+	.2byte ITEM_CALCIUM
 # 751 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+	.2byte ITEM_IRON
+# 752 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+	.2byte ITEM_ZINC
+# 753 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+	.2byte ITEM_CARBOS
+# 754 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_HP_UP
 	.2byte ITEM_NONE
 
 	.align 2
-# 754 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
-BattleFrontier_Underground_B1F_Mart_PokeballClerk:
-# 755 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
-	.2byte ITEM_POKE_BALL
-# 756 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
-	.2byte ITEM_GREAT_BALL
 # 757 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
-	.2byte ITEM_ULTRA_BALL
+BattleFrontier_Underground_B1F_Mart_PokeballClerk:
 # 758 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_MASTER_BALL
 # 759 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
