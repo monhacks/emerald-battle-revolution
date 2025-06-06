@@ -2,6 +2,7 @@
 #define GUARD_POKEMON_H
 
 #include "sprite.h"
+#include "constants/form_change_types.h"
 #include "config/pokemon.h"
 #include "constants/items.h"
 #include "constants/regions.h"

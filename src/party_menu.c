@@ -5585,22 +5585,13 @@ static void Task_PartyMenuReplaceMove(u8 taskId)
 {
     struct Pokemon *mon;
     u16 move;
-    // Old pp value
-    u8 oldPP;
 
     if (IsPartyMenuTextPrinterActive() != TRUE)
     {
         mon = &gPlayerParty[gPartyMenu.slotId];
         RemoveMonPPBonus(mon, GetMoveSlotToReplace());
-        // Get the current pp for the move
-        oldPP = GetMonData(mon, MON_DATA_PP1 + GetMoveSlotToReplace(), NULL);
         move = gPartyMenu.data1;
         SetMonMoveSlot(mon, move, GetMoveSlotToReplace());
-        // If the new move has more power points than the move has currently
-        if (GetMonData(mon, MON_DATA_PP1 + GetMoveSlotToReplace(), NULL) > oldPP){
-            // Revert the power points for the move back to the previous number
-            SetMonData(mon, MON_DATA_PP1 + GetMoveSlotToReplace(), &oldPP);
-        }
         Task_LearnedMove(taskId);
     }
 }
@@ -7100,17 +7091,13 @@ static bool8 GetBattleEntryEligibility(struct Pokemon *mon)
     u16 lvlMode = gSpecialVar_0x8004;
 
     // If the Pokemon is an egg, or it is holding an item (Battle Pyramid Only)
-    if (GetMonData(mon, MON_DATA_IS_EGG) || (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(BATTLE_FRONTIER_BATTLE_PYRAMID_LOBBY)
-        && gSaveBlock1Ptr->location.mapNum == MAP_NUM(BATTLE_FRONTIER_BATTLE_PYRAMID_LOBBY)
-        && GetMonData(mon, MON_DATA_HELD_ITEM) != ITEM_NONE))
-
     if (GetMonData(mon, MON_DATA_IS_EGG)
-        || GetMonData(mon, MON_DATA_LEVEL) > GetBattleEntryLevelCap()
         || (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(MAP_BATTLE_FRONTIER_BATTLE_PYRAMID_LOBBY)
             && gSaveBlock1Ptr->location.mapNum == MAP_NUM(MAP_BATTLE_FRONTIER_BATTLE_PYRAMID_LOBBY)
             && GetMonData(mon, MON_DATA_HELD_ITEM) != ITEM_NONE))
     {
         return FALSE;
+    }
 
     // If level scaling is disabled
     if (BF_ENABLE_LEVEL_SCALING == FALSE)
@@ -8021,7 +8008,7 @@ void ItemUseCB_ReduceIV(u8 taskId, TaskFunc task)
     u8 spDefense = GetMonData(mon, MON_DATA_SPDEF_IV);
     bool8 didActivate = FALSE;
 
-    switch (ItemId_GetSecondaryId(item))
+    switch (GetItemSecondaryId(item))
     {
     case STAT_HP:
         if (health != 0)
@@ -8138,7 +8125,7 @@ void ItemUseCB_IncreaseIV(u8 taskId, TaskFunc task)
     u8 spDefense = GetMonData(mon, MON_DATA_SPDEF_IV);
     bool8 didActivate = FALSE;
 
-    switch (ItemId_GetSecondaryId(item))
+    switch (GetItemSecondaryId(item))
     {
     case STAT_HP:
         if (health != MAX_PER_STAT_IVS)
