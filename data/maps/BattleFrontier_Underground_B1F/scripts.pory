@@ -194,44 +194,23 @@ script BattleFrontier_Underground_B1F_EventScript_TMHMClerk2 {
 	end
 }
 
+script BattleFrontier_Underground_B1F_EventScript_GeneralClerk {
+    lock
+	faceplayer
+	message(gText_HowMayIServeYou)
+	waitmessage
+	pokemart(BattleFrontier_Underground_B1F_Mart_GeneralClerk)
+	msgbox(gText_PleaseComeAgain, MSGBOX_DEFAULT)
+	release
+	end
+}
+
 script BattleFrontier_Underground_B1F_EventScript_PokeballClerk {
     lock
 	faceplayer
 	message(gText_HowMayIServeYou)
 	waitmessage
 	pokemart(BattleFrontier_Underground_B1F_Mart_PokeballClerk)
-	msgbox(gText_PleaseComeAgain, MSGBOX_DEFAULT)
-	release
-	end
-}
-script BattleFrontier_Underground_B1F_EventScript_GeneralClerk {
-    lock
-	faceplayer
-	message(gText_HowMayIServeYou)
-	waitmessage
-	pokemart(0)
-	msgbox(gText_PleaseComeAgain, MSGBOX_DEFAULT)
-	release
-	end
-}
-
-script BattleFrontier_Underground_B1F_EventScript_OldKeyItemClerk {
-    lock
-	faceplayer
-	message(gText_HowMayIServeYou)
-	waitmessage
-	pokemart(BattleFrontier_Underground_B1F_Mart_OldKeyItemClerk)
-	msgbox(gText_PleaseComeAgain, MSGBOX_DEFAULT)
-	release
-	end
-}
-
-script BattleFrontier_Underground_B1F_EventScript_NewKeyItemClerk {
-    lock
-	faceplayer
-	message(gText_HowMayIServeYou)
-	waitmessage
-	pokemart(BattleFrontier_Underground_B1F_Mart_NewKeyItemClerk)
 	msgbox(gText_PleaseComeAgain, MSGBOX_DEFAULT)
 	release
 	end
@@ -728,10 +707,6 @@ mart BattleFrontier_Underground_B1F_Mart_TMHMClerk1 {
     ITEM_TM23
     ITEM_TM24
     ITEM_TM25
-    ITEM_HM01
-    ITEM_HM02
-    ITEM_HM03
-    ITEM_HM04
 }
 mart BattleFrontier_Underground_B1F_Mart_TMHMClerk2 {
     ITEM_TM26
@@ -759,54 +734,27 @@ mart BattleFrontier_Underground_B1F_Mart_TMHMClerk2 {
     ITEM_TM48
     ITEM_TM49
     ITEM_TM50
-    ITEM_HM05
-    ITEM_HM06
-    ITEM_HM07
-    ITEM_HM08
 }
 
-mart BattleFrontier_Underground_B1F_Mart_OldKeyItemClerk {
-    ITEM_EXP_SHARE
-    ITEM_ACRO_BIKE
-    ITEM_SOOT_SACK
-    ITEM_OLD_ROD
-    ITEM_GOOD_ROD
-    ITEM_SUPER_ROD
-    ITEM_POWDER_JAR
-    ITEM_WAILMER_PAIL
-    ITEM_POKEBLOCK_CASE
-    ITEM_DOWSING_MACHINE
-    # ITEM_POKEMON_BOX_LINK
-    ITEM_SS_TICKET
-    ITEM_EON_TICKET
-    ITEM_MYSTIC_TICKET
-    ITEM_AURORA_TICKET
-    ITEM_OLD_SEA_MAP
-    ITEM_GO_GOGGLES
-    ITEM_DEVON_SCOPE
-    ITEM_METEORITE
-}
-
-mart BattleFrontier_Underground_B1F_Mart_NewKeyItemClerk {
-    ITEM_MEGA_RING
-    ITEM_Z_POWER_RING
-    ITEM_DYNAMAX_BAND
-    ITEM_TERA_ORB
-    ITEM_ROTOM_CATALOG
-    ITEM_GRACIDEA
-    ITEM_REVEAL_GLASS
-    ITEM_DNA_SPLICERS
-    ITEM_ZYGARDE_CUBE
-    ITEM_PRISON_BOTTLE
-    ITEM_N_SOLARIZER
-    ITEM_N_LUNARIZER
-    ITEM_REINS_OF_UNITY
-}
-
-mart BattleFrontier_Underground_B1F_Mart_PokeballClerk {
+mart BattleFrontier_Underground_B1F_Mart_GeneralClerk {
     ITEM_POKE_BALL
     ITEM_GREAT_BALL
     ITEM_ULTRA_BALL
+	ITEM_HYPER_POTION
+	ITEM_MAX_POTION
+	ITEM_FULL_RESTORE
+	ITEM_FULL_HEAL
+	ITEM_REVIVE
+	ITEM_MAX_REPEL
+	ITEM_PROTEIN
+	ITEM_CALCIUM
+	ITEM_IRON
+	ITEM_ZINC
+	ITEM_CARBOS
+	ITEM_HP_UP
+}
+
+mart BattleFrontier_Underground_B1F_Mart_PokeballClerk {
     ITEM_MASTER_BALL
     ITEM_PREMIER_BALL
     ITEM_HEAL_BALL

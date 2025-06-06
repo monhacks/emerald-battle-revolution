@@ -455,6 +455,9 @@ static void SetQuickStartFlags(void)
 	FlagSet(FLAG_TERA_ORB_CHARGED);
 	FlagSet(FLAG_TERA_ORB_NO_COST);
 
+	// Fly from Map / PokeNav
+	FlagSet(FLAG_POKE_RIDER);
+
 	// (New!) Battle Frontier Generator Flags
 	FlagSet(FLAG_BATTLE_FRONTIER_GENERATOR);
 	FlagSet(FLAG_BATTLE_FRONTIER_ALLOW_MEGA);
@@ -541,6 +544,7 @@ static void SetQuickStartVars(void)
 static void GiveQuickStartItems(void)
 {
     // Battle Mechanic Key Items
+	AddBagItem(ITEM_TERA_ORB, 1);
     AddBagItem(ITEM_MEGA_RING, 1);
     AddBagItem(ITEM_Z_POWER_RING, 1);
     AddBagItem(ITEM_DYNAMAX_BAND, 1);
@@ -557,6 +561,8 @@ static void GiveQuickStartItems(void)
     AddBagItem(ITEM_REINS_OF_UNITY, 1);
 
     // Story / Other Key Items
+    AddBagItem(ITEM_EXP_SHARE, 1);
+    AddBagItem(ITEM_ACRO_BIKE, 1);
     AddBagItem(ITEM_MACH_BIKE, 1);
     AddBagItem(ITEM_OLD_ROD, 1);
     AddBagItem(ITEM_GOOD_ROD, 1);
@@ -569,7 +575,42 @@ static void GiveQuickStartItems(void)
     AddBagItem(ITEM_MAGMA_EMBLEM, 1);
     AddBagItem(ITEM_SS_TICKET, 1);
     AddBagItem(ITEM_COIN_CASE, 1);
+    AddBagItem(ITEM_POWDER_JAR, 1);
+    AddBagItem(ITEM_WAILMER_PAIL, 1);
+    AddBagItem(ITEM_POKEBLOCK_CASE, 1);
+
+	// Charms (e.g. Shiny Charm)
+	#if EBR_QUICK_START_CHARMS == TRUE
+		AddBagItem(ITEM_OVAL_CHARM, 1);
+		AddBagItem(ITEM_SHINY_CHARM, 1);
+		AddBagItem(ITEM_CATCHING_CHARM, 1);
+		AddBagItem(ITEM_EXP_CHARM, 1);
+		// AddBagItem(ITEM_GLIMMERING_CHARM, 1);
+	#endif
+
+	// Event-Exclusive Items
+	#if EBR_QUICK_START_EVENT_ITEMS == TRUE
+		AddBagItem(ITEM_EON_TICKET, 1);
+		AddBagItem(ITEM_MYSTIC_TICKET, 1);
+		AddBagItem(ITEM_AURORA_TICKET, 1);
+		AddBagItem(ITEM_OLD_SEA_MAP, 1);
+	#endif
+
+	// Box Access via item
+	#if EBR_POKEMON_BOX_LINK_ENABLED == TRUE
+		AddBagItem(ITEM_POKEMON_BOX_LINK, 1);
+	#endif
     
+    // HMs
+	AddBagItem(ITEM_HM01, 1);
+    AddBagItem(ITEM_HM02, 1);
+    AddBagItem(ITEM_HM03, 1);
+    AddBagItem(ITEM_HM04, 1);
+    AddBagItem(ITEM_HM05, 1);
+    AddBagItem(ITEM_HM06, 1);
+    AddBagItem(ITEM_HM07, 1);
+    AddBagItem(ITEM_HM08, 1);
+
     // If escape rope is a key item
     #if I_KEY_ESCAPE_ROPE >= GEN_9
     AddBagItem(I_KEY_ESCAPE_ROPE, 1);

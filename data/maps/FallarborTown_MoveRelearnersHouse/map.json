@@ -15,7 +15,8 @@
   "connections": null,
   "object_events": [
     {
-      "graphics_id": "OBJ_EVENT_GFX_EXPERT_M",
+      "local_id": "LOCALID_MOVE_RELEARNER",
+      "graphics_id": "OBJ_EVENT_GFX_FAT_MAN",
       "x": 4,
       "y": 4,
       "elevation": 3,
@@ -28,6 +29,7 @@
       "flag": "0"
     },
     {
+      "local_id": "LOCALID_MOVE_TUTOR",
       "graphics_id": "OBJ_EVENT_GFX_EXPERT_F",
       "x": 7,
       "y": 4,

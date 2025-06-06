@@ -46,7 +46,7 @@
 #define P_GENDER_DIFFERENCES            TRUE        // If TRUE, Pokémon will have graphical-only differences when they're female. Female *forms* such as Meowstic are not affected by this.
 #define P_CUSTOM_GENDER_DIFF_ICONS      TRUE        // If TRUE, will give more Pokémon custom icons for their female differences, i.e. Hippopotas and Hippowdon
 #define P_ARCEUS_UNIQUE_FORM_ICONS      GEN_LATEST  // Since Gen 9, Arceus additionally changes its icon to reflect its current form.
-#define P_FOOTPRINTS                    TRUE        // If TRUE, Pokémon will have footprints (as was the case up to Gen 5 and in BDSP). Disabling this saves some ROM space.
+#define P_FOOTPRINTS                    FALSE        // If TRUE, Pokémon will have footprints (as was the case up to Gen 5 and in BDSP). Disabling this saves some ROM space.
 #define P_TWO_FRAME_FRONT_SPRITES       TRUE        // In Pokémon Emerald, Pokémon front sprites always consist of two frames. This config can revert it to only use the first frame, as is the case in the other Gen 3 games.
 #define P_GBA_STYLE_SPECIES_GFX         FALSE       // By default, Pokémon sprites use Gen 4/5's style. This config can revert them back to GBA-style. NOTE: B_ENEMY_MON_SHADOW_STYLE is disabled when using these sprites for now.
 #define P_GBA_STYLE_SPECIES_ICONS       FALSE       // By default, Pokémon have their updated icons. This config can revert them back to GBA-style.
@@ -66,7 +66,8 @@
 #define P_SILVALLY_TYPE_CHANGE_Z_CRYSTAL TRUE  
 
 // Learnset helper toggles
-#define P_LEARNSET_HELPER_TEACHABLE FALSE        // If TRUE, teachable_learnsets.h will be populated by tools/learnset_helpers/teachable.py using the included JSON files based on available TMs and tutors.
+#define P_LEARNSET_HELPER_TEACHABLE      FALSE   // If TRUE, teachable_learnsets.h will be populated by tools/learnset_helpers/make_teachables.py using the included JSON files based on available TMs and tutors.
+#define P_TUTOR_MOVES_ARRAY              FALSE  // If TRUE, generates a gTutorMoves array automatically using make_teachables.py. (generally not needed, but the HGSS Pokedex has an optional use for it)
 
 // Flag settings
 // To use the following features in scripting, replace the 0s with the flag ID you're assigning it to.

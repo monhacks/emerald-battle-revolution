@@ -47,6 +47,7 @@
 #include "constants/map_groups.h"
 #include "constants/items.h"
 #include "difficulty.h"
+#include "follower_npc.h"
 
 #include "config/ebr.h"
 #include "ebr_init.h"
@@ -136,9 +137,9 @@ static void ClearFrontierRecord(void)
 static void WarpToTruck(void)
 {
     #if EBR_QUICK_START_ENABLED == TRUE
-    SetWarpDestination(MAP_GROUP(BATTLE_FRONTIER_OUTSIDE_EAST), MAP_NUM(BATTLE_FRONTIER_OUTSIDE_EAST), 0, -1, -1);
+    SetWarpDestination(MAP_GROUP(MAP_BATTLE_FRONTIER_OUTSIDE_EAST), MAP_NUM(MAP_BATTLE_FRONTIER_OUTSIDE_EAST), 0, -1, -1);
     #else
-    SetWarpDestination(MAP_GROUP(INSIDE_OF_TRUCK), MAP_NUM(INSIDE_OF_TRUCK), WARP_ID_NONE, -1, -1);
+    SetWarpDestination(MAP_GROUP(MAP_INSIDE_OF_TRUCK), MAP_NUM(MAP_INSIDE_OF_TRUCK), WARP_ID_NONE, -1, -1);
     #endif
     WarpIntoMap();
 }
@@ -220,7 +221,8 @@ void NewGameInitData(void)
     SetCurrentDifficultyLevel(DIFFICULTY_NORMAL);
     ResetItemFlags();
     ResetDexNav();
-
+    ClearFollowerNPCData();
+    
     // EBR Quick Start
     EbrQuickStart();
 }
