@@ -2,8 +2,8 @@ Charizard @ Charizardite Y
 Ability: Blaze
 IVs: 0 Atk
 EVs: 204 HP / 108 Def / 4 SpA / 4 SpD / 188 Spe
-Tera type: Fire
-Modest nature
+Tera type: Grass
+Modest Nature
 - Protect
 - Scorching Sands
 - Flamethrower
@@ -12,19 +12,19 @@ Modest nature
 Landorus-Therian @ Choice Scarf
 Ability: Intimidate
 EVs: 4 HP / 196 Atk / 4 Def / 52 SpD / 252 Spe
-Tera type: Ground
-Adamant nature
+Tera type: Flying
+Adamant Nature
 - U-Turn
-- Stomping Tantrum
 - Earthquake
 - Rock Slide
+- Tera Blast
 
 Flutter Mane @ Fairium Z
 Ability: Protosynthesis
 IVs: 0 Atk
 EVs: 140 HP / 188 Def / 36 SpA / 4 SpD / 140 Spe
 Tera type: Fairy
-Modest nature
+Modest Nature
 - Protect
 - Dazzling Gleam
 - Shadow Ball
@@ -34,7 +34,7 @@ Iron Hands @ Assault Vest
 Ability: Quark Drive
 EVs: 60 HP / 156 Atk / 36 Def / 252 SpD / 4 Spe
 Tera type: Grass
-Adamant nature
+Adamant Nature
 - Drain Punch
 - Wild Charge
 - Heavy Slam

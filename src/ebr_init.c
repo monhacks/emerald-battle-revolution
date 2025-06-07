@@ -15,6 +15,9 @@
 #include "ebr_init.h"
 
 #if EBR_QUICK_START_ENABLED == TRUE
+
+#define AddBagItemIfNotOwned(item) if (CheckBagHasItem(item, 1) == FALSE) {AddBagItem(item, 1);}
+
 static void SetQuickStartFlags(void);
 static void SetQuickStartVars(void);
 static void GiveQuickStartItems(void);
@@ -24,11 +27,10 @@ static void GiveVolcarona(void);
 static void GiveSmeargle(void);
 #endif // EBR_QUICK_START_ENABLED
 
-void EbrQuickStart(void) 
+void InitQuickStart(void) 
 {
     // Quick Start Enabled
     #if EBR_QUICK_START_ENABLED == TRUE
-
     // Basic Setup
     SetQuickStartFlags();
     SetQuickStartVars();
@@ -45,8 +47,20 @@ void EbrQuickStart(void)
     
     // Enable National Dex
     EnableNationalPokedex();
-
     #endif
+}
+
+void RefreshQuickStart(void) {
+	// Quick Start Enabled
+    #if EBR_QUICK_START_ENABLED == TRUE
+	// Basic Setup
+    SetQuickStartFlags();
+    SetQuickStartVars();
+    GiveQuickStartItems();
+
+	// Enable National Dex
+    EnableNationalPokedex();
+	#endif
 }
 
 #if EBR_QUICK_START_ENABLED == TRUE
@@ -544,76 +558,76 @@ static void SetQuickStartVars(void)
 static void GiveQuickStartItems(void)
 {
     // Battle Mechanic Key Items
-	AddBagItem(ITEM_TERA_ORB, 1);
-    AddBagItem(ITEM_MEGA_RING, 1);
-    AddBagItem(ITEM_Z_POWER_RING, 1);
-    AddBagItem(ITEM_DYNAMAX_BAND, 1);
+	AddBagItemIfNotOwned(ITEM_TERA_ORB);
+    AddBagItemIfNotOwned(ITEM_MEGA_RING);
+    AddBagItemIfNotOwned(ITEM_Z_POWER_RING);
+    AddBagItemIfNotOwned(ITEM_DYNAMAX_BAND);
 
     // Form-changing Key Items
-    AddBagItem(ITEM_ROTOM_CATALOG, 1);
-    AddBagItem(ITEM_GRACIDEA, 1);
-    AddBagItem(ITEM_REVEAL_GLASS, 1);
-    AddBagItem(ITEM_DNA_SPLICERS, 1);
-    AddBagItem(ITEM_ZYGARDE_CUBE, 1);
-    AddBagItem(ITEM_PRISON_BOTTLE, 1);
-    AddBagItem(ITEM_N_SOLARIZER, 1);
-    AddBagItem(ITEM_N_LUNARIZER, 1);
-    AddBagItem(ITEM_REINS_OF_UNITY, 1);
+    AddBagItemIfNotOwned(ITEM_ROTOM_CATALOG);
+    AddBagItemIfNotOwned(ITEM_GRACIDEA);
+    AddBagItemIfNotOwned(ITEM_REVEAL_GLASS);
+    AddBagItemIfNotOwned(ITEM_DNA_SPLICERS);
+    AddBagItemIfNotOwned(ITEM_ZYGARDE_CUBE);
+    AddBagItemIfNotOwned(ITEM_PRISON_BOTTLE);
+    AddBagItemIfNotOwned(ITEM_N_SOLARIZER);
+    AddBagItemIfNotOwned(ITEM_N_LUNARIZER);
+    AddBagItemIfNotOwned(ITEM_REINS_OF_UNITY);
 
     // Story / Other Key Items
-    AddBagItem(ITEM_EXP_SHARE, 1);
-    AddBagItem(ITEM_ACRO_BIKE, 1);
-    AddBagItem(ITEM_MACH_BIKE, 1);
-    AddBagItem(ITEM_OLD_ROD, 1);
-    AddBagItem(ITEM_GOOD_ROD, 1);
-    AddBagItem(ITEM_SUPER_ROD, 1);
-    AddBagItem(ITEM_DOWSING_MACHINE, 1);
-    AddBagItem(ITEM_SOOT_SACK, 1);
-    AddBagItem(ITEM_METEORITE, 1);
-    AddBagItem(ITEM_GO_GOGGLES, 1);
-    AddBagItem(ITEM_DEVON_SCOPE, 1);
-    AddBagItem(ITEM_MAGMA_EMBLEM, 1);
-    AddBagItem(ITEM_SS_TICKET, 1);
-    AddBagItem(ITEM_COIN_CASE, 1);
-    AddBagItem(ITEM_POWDER_JAR, 1);
-    AddBagItem(ITEM_WAILMER_PAIL, 1);
-    AddBagItem(ITEM_POKEBLOCK_CASE, 1);
+    AddBagItemIfNotOwned(ITEM_EXP_SHARE);
+    AddBagItemIfNotOwned(ITEM_ACRO_BIKE);
+    AddBagItemIfNotOwned(ITEM_MACH_BIKE);
+    AddBagItemIfNotOwned(ITEM_OLD_ROD);
+    AddBagItemIfNotOwned(ITEM_GOOD_ROD);
+    AddBagItemIfNotOwned(ITEM_SUPER_ROD);
+    AddBagItemIfNotOwned(ITEM_DOWSING_MACHINE);
+    AddBagItemIfNotOwned(ITEM_SOOT_SACK);
+    AddBagItemIfNotOwned(ITEM_METEORITE);
+    AddBagItemIfNotOwned(ITEM_GO_GOGGLES);
+    AddBagItemIfNotOwned(ITEM_DEVON_SCOPE);
+    AddBagItemIfNotOwned(ITEM_MAGMA_EMBLEM);
+    AddBagItemIfNotOwned(ITEM_SS_TICKET);
+    AddBagItemIfNotOwned(ITEM_COIN_CASE);
+    AddBagItemIfNotOwned(ITEM_POWDER_JAR);
+    AddBagItemIfNotOwned(ITEM_WAILMER_PAIL);
+    AddBagItemIfNotOwned(ITEM_POKEBLOCK_CASE);
 
 	// Charms (e.g. Shiny Charm)
 	#if EBR_QUICK_START_CHARMS == TRUE
-		AddBagItem(ITEM_OVAL_CHARM, 1);
-		AddBagItem(ITEM_SHINY_CHARM, 1);
-		AddBagItem(ITEM_CATCHING_CHARM, 1);
-		AddBagItem(ITEM_EXP_CHARM, 1);
-		// AddBagItem(ITEM_GLIMMERING_CHARM, 1);
+		AddBagItemIfNotOwned(ITEM_OVAL_CHARM);
+		AddBagItemIfNotOwned(ITEM_SHINY_CHARM);
+		AddBagItemIfNotOwned(ITEM_CATCHING_CHARM);
+		AddBagItemIfNotOwned(ITEM_EXP_CHARM);
+		// AddBagItemIfNotOwned(ITEM_GLIMMERING_CHARM)
 	#endif
 
 	// Event-Exclusive Items
 	#if EBR_QUICK_START_EVENT_ITEMS == TRUE
-		AddBagItem(ITEM_EON_TICKET, 1);
-		AddBagItem(ITEM_MYSTIC_TICKET, 1);
-		AddBagItem(ITEM_AURORA_TICKET, 1);
-		AddBagItem(ITEM_OLD_SEA_MAP, 1);
+		AddBagItemIfNotOwned(ITEM_EON_TICKET);
+		AddBagItemIfNotOwned(ITEM_MYSTIC_TICKET);
+		AddBagItemIfNotOwned(ITEM_AURORA_TICKET);
+		AddBagItemIfNotOwned(ITEM_OLD_SEA_MAP);
 	#endif
 
 	// Box Access via item
 	#if EBR_POKEMON_BOX_LINK_ENABLED == TRUE
-		AddBagItem(ITEM_POKEMON_BOX_LINK, 1);
+		AddBagItemIfNotOwned(ITEM_POKEMON_BOX_LINK);
 	#endif
     
     // HMs
-	AddBagItem(ITEM_HM01, 1);
-    AddBagItem(ITEM_HM02, 1);
-    AddBagItem(ITEM_HM03, 1);
-    AddBagItem(ITEM_HM04, 1);
-    AddBagItem(ITEM_HM05, 1);
-    AddBagItem(ITEM_HM06, 1);
-    AddBagItem(ITEM_HM07, 1);
-    AddBagItem(ITEM_HM08, 1);
+	AddBagItemIfNotOwned(ITEM_HM01);
+    AddBagItemIfNotOwned(ITEM_HM02);
+    AddBagItemIfNotOwned(ITEM_HM03);
+    AddBagItemIfNotOwned(ITEM_HM04);
+    AddBagItemIfNotOwned(ITEM_HM05);
+    AddBagItemIfNotOwned(ITEM_HM06);
+    AddBagItemIfNotOwned(ITEM_HM07);
+    AddBagItemIfNotOwned(ITEM_HM08);
 
     // If escape rope is a key item
     #if I_KEY_ESCAPE_ROPE >= GEN_9
-    AddBagItem(I_KEY_ESCAPE_ROPE, 1);
+    AddBagItemIfNotOwned(I_KEY_ESCAPE_ROPE);
     #endif
 
     // Other items may be added later :)

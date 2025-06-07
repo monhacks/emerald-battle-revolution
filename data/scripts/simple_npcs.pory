@@ -142,7 +142,6 @@ script BattleFrontier_Underground_B1F_EventScript_ChemistShop_Visitor3 {
     lock
     faceplayer
     msgbox(format("If you want to make a simple ev spreads, all you need is 7 of two different types of ev training medicine, and one feather for the leftover stat."))
-    msgbox(format("If you want to make more complicated spreads, you might want to use a calculator!"))
     release
     end
 }
@@ -241,16 +240,6 @@ script BattleFrontier_Underground_B1F_EventScript_BerryShop_Visitor3 {
     end
 }
 
-# PokemonCenter_Visitor1
-script BattleFrontier_Underground_B1F_EventScript_PokemonCenter_Visitor1 {
-    lock
-    faceplayer
-    msgbox(format("Have you been into the POKéMON CENTRE yet? There are some interesting people in there!"))
-    msgbox(format("You can have your POKéMON's GIGANTAMAX factor changed, or even trade BATTLE POINTS for rare items!"))
-    release
-    end
-}
-
 # GameCorner_Visitor1
 script BattleFrontier_Underground_B1F_EventScript_GameCorner_Visitor1 {
     lock
@@ -279,7 +268,6 @@ script BattleFrontier_Underground_B1F_EventScript_BattleDomeEntrance_Visitor1 {
     faceplayer
     msgbox(format("You see that vending machine over there? You can use that to convert BATTLE POINTS to money!"))
     msgbox(format("You can't buy anything down here with BP, so you'll need to convert it first."))
-    msgbox(format("If you don't have a team yet, maybe try your luck at the BATTLE FACTORY?"))
     release
     end
 }
@@ -288,8 +276,8 @@ script BattleFrontier_Underground_B1F_EventScript_BattleDomeEntrance_Visitor1 {
 script BattleFrontier_Underground_B1F_EventScript_BattleSpotEntrance_Visitor1 {
     lock
     faceplayer
-    msgbox(format("Just downstairs from here is the Battle Spot - The new battle facility currently under construction."))
-    msgbox(format("You can't battle yet, but you can already buy pre-trained POKéMON and teams - be sure to check it out!"))
+    msgbox(format("Just inside here is the Rental Hall - Where you can buy pre-trained POKéMON, or even an entire team!"))
+    msgbox(format("If you are stuck or just want to try something new, definitely give it a look!"))
     release
     end
 }
@@ -299,7 +287,7 @@ script BattleFrontier_Underground_B1F_EventScript_GemShop_Visitor1 {
     lock
     faceplayer
     msgbox(format("Gems are great! They boost the power of a POKéMON's move of the same type once by 30%, but are only used if the move connects!"))
-    msgbox(format("Think of it like a Z-Move, but you can use multiple per match, and doesn't go through protect."))
+    msgbox(format("They pair great with Unburden and Acrobatics, too."))
     msgbox(format("Definitely think about using them!"))
     release
     end
@@ -341,9 +329,7 @@ script BattleFrontier_Underground_B1F_EventScript_ZCrystal_Visitor1 {
     lock
     faceplayer
     msgbox(format("Z-Crystals are incredible - There is one for every type, and some POKéMON even have unique Z-Moves!"))
-    msgbox(format("Be careful, though - If you use one into an immunity, it'll be wasted - and it only deals 1/4 through protect!"))
-    msgbox(format("If you don't have a Z-Ring already, you can buy one from the KEY ITEM shop at the bottom-right side of the mall."))
-    msgbox(format("Isn't the risk-reward balance thrilling?"))
+    msgbox(format("Be careful, though - If you use one into an immunity, it'll be wasted - and it only deals 1/4 damage through protect!"))
     release
     end
 }

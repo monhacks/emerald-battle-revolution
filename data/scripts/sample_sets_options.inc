@@ -31,32 +31,32 @@ Auto_EventScript_Sample_Sets_Page1::
 
 Auto_EventScript_Sample_Sets_Page1_2:
 # 15 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Amoonguss_Page1
+	goto Auto_EventScript_Sample_Sets_Aegislash_Page1
 	return
 
 Auto_EventScript_Sample_Sets_Page1_3:
 # 17 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Archaludon_Page1
+	goto Auto_EventScript_Sample_Sets_Amoonguss_Page1
 	return
 
 Auto_EventScript_Sample_Sets_Page1_4:
 # 19 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Calyrex_Page1
+	goto Auto_EventScript_Sample_Sets_Arcanine_Page1
 	return
 
 Auto_EventScript_Sample_Sets_Page1_5:
 # 21 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Charizard_Page1
+	goto Auto_EventScript_Sample_Sets_Archaludon_Page1
 	return
 
 Auto_EventScript_Sample_Sets_Page1_6:
 # 23 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Chi_Yu_Page1
+	goto Auto_EventScript_Sample_Sets_Basculegion_Page1
 	return
 
 Auto_EventScript_Sample_Sets_Page1_7:
 # 25 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Page10
+	goto Auto_EventScript_Sample_Sets_Page12
 	return
 
 Auto_EventScript_Sample_Sets_Page1_8:
@@ -90,27 +90,27 @@ Auto_EventScript_Sample_Sets_Page2::
 
 Auto_EventScript_Sample_Sets_Page2_2:
 # 39 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Chien_Pao_Page1
+	goto Auto_EventScript_Sample_Sets_Calyrex_Page1
 	return
 
 Auto_EventScript_Sample_Sets_Page2_3:
 # 41 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Cresselia_Page1
+	goto Auto_EventScript_Sample_Sets_Charizard_Page1
 	return
 
 Auto_EventScript_Sample_Sets_Page2_4:
 # 43 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Farigiraf_Page1
+	goto Auto_EventScript_Sample_Sets_Chi_Yu_Page1
 	return
 
 Auto_EventScript_Sample_Sets_Page2_5:
 # 45 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Flutter_Mane_Page1
+	goto Auto_EventScript_Sample_Sets_Chien_Pao_Page1
 	return
 
 Auto_EventScript_Sample_Sets_Page2_6:
 # 47 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Gardevoir_Page1
+	goto Auto_EventScript_Sample_Sets_Cresselia_Page1
 	return
 
 Auto_EventScript_Sample_Sets_Page2_7:
@@ -149,27 +149,27 @@ Auto_EventScript_Sample_Sets_Page3::
 
 Auto_EventScript_Sample_Sets_Page3_2:
 # 63 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Gengar_Page1
+	goto Auto_EventScript_Sample_Sets_Farigiraf_Page1
 	return
 
 Auto_EventScript_Sample_Sets_Page3_3:
 # 65 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Gholdengo_Page1
+	goto Auto_EventScript_Sample_Sets_Flutter_Mane_Page1
 	return
 
 Auto_EventScript_Sample_Sets_Page3_4:
 # 67 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Groudon_Page1
+	goto Auto_EventScript_Sample_Sets_Gardevoir_Page1
 	return
 
 Auto_EventScript_Sample_Sets_Page3_5:
 # 69 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Hatterene_Page1
+	goto Auto_EventScript_Sample_Sets_Garganacl_Page1
 	return
 
 Auto_EventScript_Sample_Sets_Page3_6:
 # 71 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Incineroar_Page1
+	goto Auto_EventScript_Sample_Sets_Gengar_Page1
 	return
 
 Auto_EventScript_Sample_Sets_Page3_7:
@@ -208,27 +208,27 @@ Auto_EventScript_Sample_Sets_Page4::
 
 Auto_EventScript_Sample_Sets_Page4_2:
 # 87 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Indeedee_F_Page1
+	goto Auto_EventScript_Sample_Sets_Gholdengo_Page1
 	return
 
 Auto_EventScript_Sample_Sets_Page4_3:
 # 89 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Iron_Hands_Page1
+	goto Auto_EventScript_Sample_Sets_Groudon_Page1
 	return
 
 Auto_EventScript_Sample_Sets_Page4_4:
 # 91 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Kangaskhan_Page1
+	goto Auto_EventScript_Sample_Sets_Hatterene_Page1
 	return
 
 Auto_EventScript_Sample_Sets_Page4_5:
 # 93 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Kingambit_Page1
+	goto Auto_EventScript_Sample_Sets_Heatran_Page1
 	return
 
 Auto_EventScript_Sample_Sets_Page4_6:
 # 95 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Koraidon_Page1
+	goto Auto_EventScript_Sample_Sets_Incineroar_Page1
 	return
 
 Auto_EventScript_Sample_Sets_Page4_7:
@@ -267,27 +267,27 @@ Auto_EventScript_Sample_Sets_Page5::
 
 Auto_EventScript_Sample_Sets_Page5_2:
 # 111 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Kyogre_Page1
+	goto Auto_EventScript_Sample_Sets_Indeedee_F_Page1
 	return
 
 Auto_EventScript_Sample_Sets_Page5_3:
 # 113 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Lando_T_Page1
+	goto Auto_EventScript_Sample_Sets_Iron_Bundle_Page1
 	return
 
 Auto_EventScript_Sample_Sets_Page5_4:
 # 115 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Landorus_Page1
+	goto Auto_EventScript_Sample_Sets_Iron_Hands_Page1
 	return
 
 Auto_EventScript_Sample_Sets_Page5_5:
 # 117 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Lunala_Page1
+	goto Auto_EventScript_Sample_Sets_Kangaskhan_Page1
 	return
 
 Auto_EventScript_Sample_Sets_Page5_6:
 # 119 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Manectric_Page1
+	goto Auto_EventScript_Sample_Sets_Kartana_Page1
 	return
 
 Auto_EventScript_Sample_Sets_Page5_7:
@@ -326,27 +326,27 @@ Auto_EventScript_Sample_Sets_Page6::
 
 Auto_EventScript_Sample_Sets_Page6_2:
 # 135 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Metagross_Page1
+	goto Auto_EventScript_Sample_Sets_Kingambit_Page1
 	return
 
 Auto_EventScript_Sample_Sets_Page6_3:
 # 137 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Miraidon_Page1
+	goto Auto_EventScript_Sample_Sets_Koraidon_Page1
 	return
 
 Auto_EventScript_Sample_Sets_Page6_4:
 # 139 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Ogerpon_Cs_Page1
+	goto Auto_EventScript_Sample_Sets_Kyogre_Page1
 	return
 
 Auto_EventScript_Sample_Sets_Page6_5:
 # 141 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Ogerpon_Hf_Page1
+	goto Auto_EventScript_Sample_Sets_Lando_T_Page1
 	return
 
 Auto_EventScript_Sample_Sets_Page6_6:
 # 143 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Ogerpon_Ws_Page1
+	goto Auto_EventScript_Sample_Sets_Landorus_Page1
 	return
 
 Auto_EventScript_Sample_Sets_Page6_7:
@@ -385,27 +385,27 @@ Auto_EventScript_Sample_Sets_Page7::
 
 Auto_EventScript_Sample_Sets_Page7_2:
 # 159 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Pelipper_Page1
+	goto Auto_EventScript_Sample_Sets_Latias_Page1
 	return
 
 Auto_EventScript_Sample_Sets_Page7_3:
 # 161 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Porygon2_Page1
+	goto Auto_EventScript_Sample_Sets_Lunala_Page1
 	return
 
 Auto_EventScript_Sample_Sets_Page7_4:
 # 163 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Raging_Bolt_Page1
+	goto Auto_EventScript_Sample_Sets_Manectric_Page1
 	return
 
 Auto_EventScript_Sample_Sets_Page7_5:
 # 165 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Regidrago_Page1
+	goto Auto_EventScript_Sample_Sets_Mawile_Page1
 	return
 
 Auto_EventScript_Sample_Sets_Page7_6:
 # 167 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Rillaboom_Page1
+	goto Auto_EventScript_Sample_Sets_Metagross_Page1
 	return
 
 Auto_EventScript_Sample_Sets_Page7_7:
@@ -444,27 +444,27 @@ Auto_EventScript_Sample_Sets_Page8::
 
 Auto_EventScript_Sample_Sets_Page8_2:
 # 183 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Roaring_Moon_Page1
+	goto Auto_EventScript_Sample_Sets_Miraidon_Page1
 	return
 
 Auto_EventScript_Sample_Sets_Page8_3:
 # 185 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Salamence_Page1
+	goto Auto_EventScript_Sample_Sets_Ogerpon_Cs_Page1
 	return
 
 Auto_EventScript_Sample_Sets_Page8_4:
 # 187 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Ting_Lu_Page1
+	goto Auto_EventScript_Sample_Sets_Ogerpon_Hf_Page1
 	return
 
 Auto_EventScript_Sample_Sets_Page8_5:
 # 189 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Torkoal_Page1
+	goto Auto_EventScript_Sample_Sets_Ogerpon_Ws_Page1
 	return
 
 Auto_EventScript_Sample_Sets_Page8_6:
 # 191 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Tornadus_Page1
+	goto Auto_EventScript_Sample_Sets_Pelipper_Page1
 	return
 
 Auto_EventScript_Sample_Sets_Page8_7:
@@ -503,27 +503,27 @@ Auto_EventScript_Sample_Sets_Page9::
 
 Auto_EventScript_Sample_Sets_Page9_2:
 # 207 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Ursaluna_Page1
+	goto Auto_EventScript_Sample_Sets_Politoed_Page1
 	return
 
 Auto_EventScript_Sample_Sets_Page9_3:
 # 209 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Ursaluna_Bloodmoon_Page1
+	goto Auto_EventScript_Sample_Sets_Porygon2_Page1
 	return
 
 Auto_EventScript_Sample_Sets_Page9_4:
 # 211 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Urshifu_Rs_Page1
+	goto Auto_EventScript_Sample_Sets_Raging_Bolt_Page1
 	return
 
 Auto_EventScript_Sample_Sets_Page9_5:
 # 213 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Urshifu_Ss_Page1
+	goto Auto_EventScript_Sample_Sets_Regidrago_Page1
 	return
 
 Auto_EventScript_Sample_Sets_Page9_6:
 # 215 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Xerneas_Page1
+	goto Auto_EventScript_Sample_Sets_Rillaboom_Page1
 	return
 
 Auto_EventScript_Sample_Sets_Page9_7:
@@ -547,1942 +547,2627 @@ Auto_EventScript_Sample_Sets_Page10::
 # 232 "data/scripts/sample_sets_options.pory"
 	case 1, Auto_EventScript_Sample_Sets_Page10_3
 # 234 "data/scripts/sample_sets_options.pory"
-	case MULTI_L_PRESSED, Auto_EventScript_Sample_Sets_Page10_4
+	case 2, Auto_EventScript_Sample_Sets_Page10_4
 # 236 "data/scripts/sample_sets_options.pory"
-	case MULTI_R_PRESSED, Auto_EventScript_Sample_Sets_Page10_5
-# 239 "data/scripts/sample_sets_options.pory"
+	case 3, Auto_EventScript_Sample_Sets_Page10_5
+# 238 "data/scripts/sample_sets_options.pory"
+	case 4, Auto_EventScript_Sample_Sets_Page10_6
+# 240 "data/scripts/sample_sets_options.pory"
+	case MULTI_L_PRESSED, Auto_EventScript_Sample_Sets_Page10_7
+# 242 "data/scripts/sample_sets_options.pory"
+	case MULTI_R_PRESSED, Auto_EventScript_Sample_Sets_Page10_8
+# 245 "data/scripts/sample_sets_options.pory"
 	goto Auto_EventScript_Sample_Sets_End
 	return
 
 Auto_EventScript_Sample_Sets_Page10_2:
 # 231 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Zacian_Page1
+	goto Auto_EventScript_Sample_Sets_Roaring_Moon_Page1
 	return
 
 Auto_EventScript_Sample_Sets_Page10_3:
 # 233 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Zamazenta_Page1
+	goto Auto_EventScript_Sample_Sets_Salamence_Page1
 	return
 
 Auto_EventScript_Sample_Sets_Page10_4:
 # 235 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Page9
+	goto Auto_EventScript_Sample_Sets_Talonflame_Page1
 	return
 
 Auto_EventScript_Sample_Sets_Page10_5:
 # 237 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Ting_Lu_Page1
+	return
+
+Auto_EventScript_Sample_Sets_Page10_6:
+# 239 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Tinkaton_Page1
+	return
+
+Auto_EventScript_Sample_Sets_Page10_7:
+# 241 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Page9
+	return
+
+Auto_EventScript_Sample_Sets_Page10_8:
+# 243 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Page11
+	return
+
+
+Auto_EventScript_Sample_Sets_Page11::
+# 251 "data/scripts/sample_sets_options.pory"
+	multichoice2 0, 0, Auto_Text_Sample_Sets_Page11
+# 252 "data/scripts/sample_sets_options.pory"
+	switch VAR_RESULT
+# 254 "data/scripts/sample_sets_options.pory"
+	case 0, Auto_EventScript_Sample_Sets_Page11_2
+# 256 "data/scripts/sample_sets_options.pory"
+	case 1, Auto_EventScript_Sample_Sets_Page11_3
+# 258 "data/scripts/sample_sets_options.pory"
+	case 2, Auto_EventScript_Sample_Sets_Page11_4
+# 260 "data/scripts/sample_sets_options.pory"
+	case 3, Auto_EventScript_Sample_Sets_Page11_5
+# 262 "data/scripts/sample_sets_options.pory"
+	case 4, Auto_EventScript_Sample_Sets_Page11_6
+# 264 "data/scripts/sample_sets_options.pory"
+	case MULTI_L_PRESSED, Auto_EventScript_Sample_Sets_Page11_7
+# 266 "data/scripts/sample_sets_options.pory"
+	case MULTI_R_PRESSED, Auto_EventScript_Sample_Sets_Page11_8
+# 269 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_End
+	return
+
+Auto_EventScript_Sample_Sets_Page11_2:
+# 255 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Torkoal_Page1
+	return
+
+Auto_EventScript_Sample_Sets_Page11_3:
+# 257 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Tornadus_Page1
+	return
+
+Auto_EventScript_Sample_Sets_Page11_4:
+# 259 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Tyranitar_Page1
+	return
+
+Auto_EventScript_Sample_Sets_Page11_5:
+# 261 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Ursaluna_Page1
+	return
+
+Auto_EventScript_Sample_Sets_Page11_6:
+# 263 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Ursaluna_Bloodmoon_Page1
+	return
+
+Auto_EventScript_Sample_Sets_Page11_7:
+# 265 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Page10
+	return
+
+Auto_EventScript_Sample_Sets_Page11_8:
+# 267 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Page12
+	return
+
+
+Auto_EventScript_Sample_Sets_Page12::
+# 275 "data/scripts/sample_sets_options.pory"
+	multichoice2 0, 0, Auto_Text_Sample_Sets_Page12
+# 276 "data/scripts/sample_sets_options.pory"
+	switch VAR_RESULT
+# 278 "data/scripts/sample_sets_options.pory"
+	case 0, Auto_EventScript_Sample_Sets_Page12_2
+# 280 "data/scripts/sample_sets_options.pory"
+	case 1, Auto_EventScript_Sample_Sets_Page12_3
+# 282 "data/scripts/sample_sets_options.pory"
+	case 2, Auto_EventScript_Sample_Sets_Page12_4
+# 284 "data/scripts/sample_sets_options.pory"
+	case 3, Auto_EventScript_Sample_Sets_Page12_5
+# 286 "data/scripts/sample_sets_options.pory"
+	case 4, Auto_EventScript_Sample_Sets_Page12_6
+# 288 "data/scripts/sample_sets_options.pory"
+	case MULTI_L_PRESSED, Auto_EventScript_Sample_Sets_Page12_7
+# 290 "data/scripts/sample_sets_options.pory"
+	case MULTI_R_PRESSED, Auto_EventScript_Sample_Sets_Page12_8
+# 293 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_End
+	return
+
+Auto_EventScript_Sample_Sets_Page12_2:
+# 279 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Urshifu_Rs_Page1
+	return
+
+Auto_EventScript_Sample_Sets_Page12_3:
+# 281 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Urshifu_Ss_Page1
+	return
+
+Auto_EventScript_Sample_Sets_Page12_4:
+# 283 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Xerneas_Page1
+	return
+
+Auto_EventScript_Sample_Sets_Page12_5:
+# 285 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Zacian_Page1
+	return
+
+Auto_EventScript_Sample_Sets_Page12_6:
+# 287 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Zamazenta_Page1
+	return
+
+Auto_EventScript_Sample_Sets_Page12_7:
+# 289 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Page11
+	return
+
+Auto_EventScript_Sample_Sets_Page12_8:
+# 291 "data/scripts/sample_sets_options.pory"
 	goto Auto_EventScript_Sample_Sets_Page1
 	return
 
 
-Auto_EventScript_Sample_Sets_Zacian_Page1::
-# 245 "data/scripts/sample_sets_options.pory"
-	multichoice2 0, 0, Auto_Text_Sample_Sets_Zacian_Page1
-# 246 "data/scripts/sample_sets_options.pory"
-	switch VAR_RESULT
-# 248 "data/scripts/sample_sets_options.pory"
-	case 0, Auto_EventScript_Sample_Sets_Zacian_Page1_2
-# 251 "data/scripts/sample_sets_options.pory"
-	case 1, Auto_EventScript_Sample_Sets_Zacian_Page1_3
-# 254 "data/scripts/sample_sets_options.pory"
-	case MULTI_L_PRESSED, Auto_EventScript_Sample_Sets_Zacian_Page1_4
-# 256 "data/scripts/sample_sets_options.pory"
-	case MULTI_R_PRESSED, Auto_EventScript_Sample_Sets_Zacian_Page1_5
-# 259 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Page10
-	return
-
-Auto_EventScript_Sample_Sets_Zacian_Page1_2:
-# 249 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_ZACIAN, 65, ITEM_RUSTED_SWORD, ITEM_SPORT_BALL, NATURE_ADAMANT, 0, 0, 252, 76, 4, 164, 0, 12, 31, 31, 31, 31, 31, 31, MOVE_PROTECT, MOVE_BEHEMOTH_BLADE, MOVE_PLAY_ROUGH, MOVE_TERA_BLAST, FALSE, FALSE, TYPE_GROUND
-# 250 "data/scripts/sample_sets_options.pory"
-	goto Common_EventScript_Sample_Sets_CheckPurchase
-	return
-
-Auto_EventScript_Sample_Sets_Zacian_Page1_3:
-# 252 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_ZACIAN, 65, ITEM_RUSTED_SWORD, ITEM_SPORT_BALL, NATURE_ADAMANT, 0, 0, 252, 76, 4, 164, 0, 12, 31, 31, 31, 31, 31, 31, MOVE_PROTECT, MOVE_IRON_HEAD, MOVE_SACRED_SWORD, MOVE_PLAY_ROUGH, FALSE, FALSE, TYPE_STELLAR
-# 253 "data/scripts/sample_sets_options.pory"
-	goto Common_EventScript_Sample_Sets_CheckPurchase
-	return
-
-Auto_EventScript_Sample_Sets_Zacian_Page1_4:
-# 255 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Zacian_Page1
-	return
-
-Auto_EventScript_Sample_Sets_Zacian_Page1_5:
-# 257 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Zacian_Page1
-	return
-
-
-Auto_EventScript_Sample_Sets_Zamazenta_Page1::
-# 265 "data/scripts/sample_sets_options.pory"
-	multichoice2 0, 0, Auto_Text_Sample_Sets_Zamazenta_Page1
-# 266 "data/scripts/sample_sets_options.pory"
-	switch VAR_RESULT
-# 268 "data/scripts/sample_sets_options.pory"
-	case 0, Auto_EventScript_Sample_Sets_Zamazenta_Page1_2
-# 271 "data/scripts/sample_sets_options.pory"
-	case MULTI_L_PRESSED, Auto_EventScript_Sample_Sets_Zamazenta_Page1_3
-# 273 "data/scripts/sample_sets_options.pory"
-	case MULTI_R_PRESSED, Auto_EventScript_Sample_Sets_Zamazenta_Page1_4
-# 276 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Page10
-	return
-
-Auto_EventScript_Sample_Sets_Zamazenta_Page1_2:
-# 269 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_ZAMAZENTA, 65, ITEM_RUSTED_SHIELD, ITEM_SPORT_BALL, NATURE_IMPISH, 0, 0, 76, 0, 244, 188, 0, 0, 31, 31, 31, 31, 31, 31, MOVE_PROTECT, MOVE_WIDE_GUARD, MOVE_HEAVY_SLAM, MOVE_BODY_PRESS, FALSE, FALSE, TYPE_DRAGON
-# 270 "data/scripts/sample_sets_options.pory"
-	goto Common_EventScript_Sample_Sets_CheckPurchase
-	return
-
-Auto_EventScript_Sample_Sets_Zamazenta_Page1_3:
-# 272 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Zamazenta_Page1
-	return
-
-Auto_EventScript_Sample_Sets_Zamazenta_Page1_4:
-# 274 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Zamazenta_Page1
-	return
-
-
-Auto_EventScript_Sample_Sets_Ursaluna_Page1::
-# 282 "data/scripts/sample_sets_options.pory"
-	multichoice2 0, 0, Auto_Text_Sample_Sets_Ursaluna_Page1
-# 283 "data/scripts/sample_sets_options.pory"
-	switch VAR_RESULT
-# 285 "data/scripts/sample_sets_options.pory"
-	case 0, Auto_EventScript_Sample_Sets_Ursaluna_Page1_2
-# 288 "data/scripts/sample_sets_options.pory"
-	case 1, Auto_EventScript_Sample_Sets_Ursaluna_Page1_3
-# 291 "data/scripts/sample_sets_options.pory"
-	case MULTI_L_PRESSED, Auto_EventScript_Sample_Sets_Ursaluna_Page1_4
-# 293 "data/scripts/sample_sets_options.pory"
-	case MULTI_R_PRESSED, Auto_EventScript_Sample_Sets_Ursaluna_Page1_5
-# 296 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Page9
-	return
-
-Auto_EventScript_Sample_Sets_Ursaluna_Page1_2:
-# 286 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_URSALUNA, 65, ITEM_FLAME_ORB, ITEM_SPORT_BALL, NATURE_BRAVE, 0, 0, 140, 236, 0, 0, 0, 132, 31, 31, 31, 0, 31, 31, MOVE_PROTECT, MOVE_FACADE, MOVE_EARTHQUAKE, MOVE_HEADLONG_RUSH, FALSE, FALSE, TYPE_GHOST
-# 287 "data/scripts/sample_sets_options.pory"
-	goto Common_EventScript_Sample_Sets_CheckPurchase
-	return
-
-Auto_EventScript_Sample_Sets_Ursaluna_Page1_3:
-# 289 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_URSALUNA, 65, ITEM_FLAME_ORB, ITEM_SPORT_BALL, NATURE_ADAMANT, 0, 0, 140, 236, 4, 12, 0, 116, 31, 31, 31, 31, 31, 31, MOVE_PROTECT, MOVE_FACADE, MOVE_EARTHQUAKE, MOVE_HEADLONG_RUSH, FALSE, FALSE, TYPE_GHOST
-# 290 "data/scripts/sample_sets_options.pory"
-	goto Common_EventScript_Sample_Sets_CheckPurchase
-	return
-
-Auto_EventScript_Sample_Sets_Ursaluna_Page1_4:
-# 292 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Ursaluna_Page1
-	return
-
-Auto_EventScript_Sample_Sets_Ursaluna_Page1_5:
-# 294 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Ursaluna_Page1
-	return
-
-
-Auto_EventScript_Sample_Sets_Ursaluna_Bloodmoon_Page1::
-# 302 "data/scripts/sample_sets_options.pory"
-	multichoice2 0, 0, Auto_Text_Sample_Sets_Ursaluna_Bloodmoon_Page1
-# 303 "data/scripts/sample_sets_options.pory"
-	switch VAR_RESULT
-# 305 "data/scripts/sample_sets_options.pory"
-	case 0, Auto_EventScript_Sample_Sets_Ursaluna_Bloodmoon_Page1_2
-# 308 "data/scripts/sample_sets_options.pory"
-	case 1, Auto_EventScript_Sample_Sets_Ursaluna_Bloodmoon_Page1_3
-# 311 "data/scripts/sample_sets_options.pory"
-	case 2, Auto_EventScript_Sample_Sets_Ursaluna_Bloodmoon_Page1_4
-# 314 "data/scripts/sample_sets_options.pory"
-	case MULTI_L_PRESSED, Auto_EventScript_Sample_Sets_Ursaluna_Bloodmoon_Page1_5
-# 316 "data/scripts/sample_sets_options.pory"
-	case MULTI_R_PRESSED, Auto_EventScript_Sample_Sets_Ursaluna_Bloodmoon_Page1_6
-# 319 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Page9
-	return
-
-Auto_EventScript_Sample_Sets_Ursaluna_Bloodmoon_Page1_2:
-# 306 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_URSALUNA_BLOODMOON, 65, ITEM_LIFE_ORB, ITEM_SPORT_BALL, NATURE_MODEST, 0, 0, 244, 0, 4, 12, 196, 52, 31, 0, 31, 31, 31, 31, MOVE_PROTECT, MOVE_EARTH_POWER, MOVE_HYPER_VOICE, MOVE_BLOOD_MOON, FALSE, FALSE, TYPE_NORMAL
-# 307 "data/scripts/sample_sets_options.pory"
-	goto Common_EventScript_Sample_Sets_CheckPurchase
-	return
-
-Auto_EventScript_Sample_Sets_Ursaluna_Bloodmoon_Page1_3:
-# 309 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_URSALUNA_BLOODMOON, 65, ITEM_LIFE_ORB, ITEM_SPORT_BALL, NATURE_QUIET, 0, 0, 244, 0, 0, 0, 196, 68, 31, 0, 31, 0, 31, 31, MOVE_PROTECT, MOVE_EARTH_POWER, MOVE_HYPER_VOICE, MOVE_BLOOD_MOON, FALSE, FALSE, TYPE_NORMAL
-# 310 "data/scripts/sample_sets_options.pory"
-	goto Common_EventScript_Sample_Sets_CheckPurchase
-	return
-
-Auto_EventScript_Sample_Sets_Ursaluna_Bloodmoon_Page1_4:
-# 312 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_URSALUNA_BLOODMOON, 65, ITEM_LIFE_ORB, ITEM_SPORT_BALL, NATURE_MODEST, 0, 0, 4, 0, 4, 252, 196, 52, 31, 0, 31, 31, 31, 31, MOVE_PROTECT, MOVE_EARTH_POWER, MOVE_HYPER_VOICE, MOVE_BLOOD_MOON, FALSE, FALSE, TYPE_NORMAL
-# 313 "data/scripts/sample_sets_options.pory"
-	goto Common_EventScript_Sample_Sets_CheckPurchase
-	return
-
-Auto_EventScript_Sample_Sets_Ursaluna_Bloodmoon_Page1_5:
-# 315 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Ursaluna_Bloodmoon_Page1
-	return
-
-Auto_EventScript_Sample_Sets_Ursaluna_Bloodmoon_Page1_6:
-# 317 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Ursaluna_Bloodmoon_Page1
-	return
-
-
 Auto_EventScript_Sample_Sets_Urshifu_Rs_Page1::
-# 325 "data/scripts/sample_sets_options.pory"
+# 299 "data/scripts/sample_sets_options.pory"
 	multichoice2 0, 0, Auto_Text_Sample_Sets_Urshifu_Rs_Page1
-# 326 "data/scripts/sample_sets_options.pory"
+# 300 "data/scripts/sample_sets_options.pory"
 	switch VAR_RESULT
-# 328 "data/scripts/sample_sets_options.pory"
+# 302 "data/scripts/sample_sets_options.pory"
 	case 0, Auto_EventScript_Sample_Sets_Urshifu_Rs_Page1_2
-# 331 "data/scripts/sample_sets_options.pory"
+# 305 "data/scripts/sample_sets_options.pory"
 	case 1, Auto_EventScript_Sample_Sets_Urshifu_Rs_Page1_3
-# 334 "data/scripts/sample_sets_options.pory"
+# 308 "data/scripts/sample_sets_options.pory"
 	case 2, Auto_EventScript_Sample_Sets_Urshifu_Rs_Page1_4
-# 337 "data/scripts/sample_sets_options.pory"
+# 311 "data/scripts/sample_sets_options.pory"
 	case MULTI_L_PRESSED, Auto_EventScript_Sample_Sets_Urshifu_Rs_Page1_5
-# 339 "data/scripts/sample_sets_options.pory"
+# 313 "data/scripts/sample_sets_options.pory"
 	case MULTI_R_PRESSED, Auto_EventScript_Sample_Sets_Urshifu_Rs_Page1_6
-# 342 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Page9
+# 316 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Page12
 	return
 
 Auto_EventScript_Sample_Sets_Urshifu_Rs_Page1_2:
-# 329 "data/scripts/sample_sets_options.pory"
+# 303 "data/scripts/sample_sets_options.pory"
 	givemon SPECIES_URSHIFU_RAPID_STRIKE, 65, ITEM_FOCUS_SASH, ITEM_SPORT_BALL, NATURE_ADAMANT, 0, 1, 0, 252, 0, 252, 0, 4, 31, 31, 31, 31, 31, 31, MOVE_PROTECT, MOVE_AQUA_JET, MOVE_CLOSE_COMBAT, MOVE_SURGING_STRIKES, FALSE, FALSE, TYPE_WATER
-# 330 "data/scripts/sample_sets_options.pory"
+# 304 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
 
 Auto_EventScript_Sample_Sets_Urshifu_Rs_Page1_3:
-# 332 "data/scripts/sample_sets_options.pory"
+# 306 "data/scripts/sample_sets_options.pory"
 	givemon SPECIES_URSHIFU_RAPID_STRIKE, 65, ITEM_MYSTIC_WATER, ITEM_SPORT_BALL, NATURE_ADAMANT, 0, 1, 12, 156, 4, 252, 0, 84, 31, 31, 31, 31, 31, 31, MOVE_PROTECT, MOVE_AQUA_JET, MOVE_CLOSE_COMBAT, MOVE_SURGING_STRIKES, FALSE, FALSE, TYPE_WATER
-# 333 "data/scripts/sample_sets_options.pory"
+# 307 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
 
 Auto_EventScript_Sample_Sets_Urshifu_Rs_Page1_4:
-# 335 "data/scripts/sample_sets_options.pory"
+# 309 "data/scripts/sample_sets_options.pory"
 	givemon SPECIES_URSHIFU_RAPID_STRIKE, 65, ITEM_CHOICE_SCARF, ITEM_SPORT_BALL, NATURE_ADAMANT, 0, 0, 12, 156, 4, 252, 0, 84, 31, 31, 31, 31, 31, 31, MOVE_U_TURN, MOVE_AQUA_JET, MOVE_CLOSE_COMBAT, MOVE_SURGING_STRIKES, FALSE, FALSE, TYPE_WATER
-# 336 "data/scripts/sample_sets_options.pory"
+# 310 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
 
 Auto_EventScript_Sample_Sets_Urshifu_Rs_Page1_5:
-# 338 "data/scripts/sample_sets_options.pory"
+# 312 "data/scripts/sample_sets_options.pory"
 	goto Auto_EventScript_Sample_Sets_Urshifu_Rs_Page1
 	return
 
 Auto_EventScript_Sample_Sets_Urshifu_Rs_Page1_6:
-# 340 "data/scripts/sample_sets_options.pory"
+# 314 "data/scripts/sample_sets_options.pory"
 	goto Auto_EventScript_Sample_Sets_Urshifu_Rs_Page1
 	return
 
 
 Auto_EventScript_Sample_Sets_Urshifu_Ss_Page1::
-# 348 "data/scripts/sample_sets_options.pory"
+# 322 "data/scripts/sample_sets_options.pory"
 	multichoice2 0, 0, Auto_Text_Sample_Sets_Urshifu_Ss_Page1
-# 349 "data/scripts/sample_sets_options.pory"
+# 323 "data/scripts/sample_sets_options.pory"
 	switch VAR_RESULT
-# 351 "data/scripts/sample_sets_options.pory"
+# 325 "data/scripts/sample_sets_options.pory"
 	case 0, Auto_EventScript_Sample_Sets_Urshifu_Ss_Page1_2
-# 354 "data/scripts/sample_sets_options.pory"
+# 328 "data/scripts/sample_sets_options.pory"
 	case 1, Auto_EventScript_Sample_Sets_Urshifu_Ss_Page1_3
-# 357 "data/scripts/sample_sets_options.pory"
+# 331 "data/scripts/sample_sets_options.pory"
 	case MULTI_L_PRESSED, Auto_EventScript_Sample_Sets_Urshifu_Ss_Page1_4
-# 359 "data/scripts/sample_sets_options.pory"
+# 333 "data/scripts/sample_sets_options.pory"
 	case MULTI_R_PRESSED, Auto_EventScript_Sample_Sets_Urshifu_Ss_Page1_5
-# 362 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Page9
+# 336 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Page12
 	return
 
 Auto_EventScript_Sample_Sets_Urshifu_Ss_Page1_2:
-# 352 "data/scripts/sample_sets_options.pory"
+# 326 "data/scripts/sample_sets_options.pory"
 	givemon SPECIES_URSHIFU, 65, ITEM_CHOICE_BAND, ITEM_SPORT_BALL, NATURE_ADAMANT, 0, 1, 0, 236, 0, 252, 0, 20, 31, 31, 31, 31, 31, 31, MOVE_U_TURN, MOVE_WICKED_BLOW, MOVE_CLOSE_COMBAT, MOVE_SUCKER_PUNCH, FALSE, FALSE, TYPE_DARK
-# 353 "data/scripts/sample_sets_options.pory"
+# 327 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
 
 Auto_EventScript_Sample_Sets_Urshifu_Ss_Page1_3:
-# 355 "data/scripts/sample_sets_options.pory"
+# 329 "data/scripts/sample_sets_options.pory"
 	givemon SPECIES_URSHIFU, 65, ITEM_FOCUS_SASH, ITEM_SPORT_BALL, NATURE_ADAMANT, 0, 0, 0, 252, 0, 252, 0, 4, 31, 31, 31, 31, 31, 31, MOVE_PROTECT, MOVE_WICKED_BLOW, MOVE_CLOSE_COMBAT, MOVE_SUCKER_PUNCH, FALSE, FALSE, TYPE_GHOST
-# 356 "data/scripts/sample_sets_options.pory"
+# 330 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
 
 Auto_EventScript_Sample_Sets_Urshifu_Ss_Page1_4:
-# 358 "data/scripts/sample_sets_options.pory"
+# 332 "data/scripts/sample_sets_options.pory"
 	goto Auto_EventScript_Sample_Sets_Urshifu_Ss_Page1
 	return
 
 Auto_EventScript_Sample_Sets_Urshifu_Ss_Page1_5:
-# 360 "data/scripts/sample_sets_options.pory"
+# 334 "data/scripts/sample_sets_options.pory"
 	goto Auto_EventScript_Sample_Sets_Urshifu_Ss_Page1
 	return
 
 
 Auto_EventScript_Sample_Sets_Xerneas_Page1::
-# 368 "data/scripts/sample_sets_options.pory"
+# 342 "data/scripts/sample_sets_options.pory"
 	multichoice2 0, 0, Auto_Text_Sample_Sets_Xerneas_Page1
-# 369 "data/scripts/sample_sets_options.pory"
+# 343 "data/scripts/sample_sets_options.pory"
 	switch VAR_RESULT
-# 371 "data/scripts/sample_sets_options.pory"
+# 345 "data/scripts/sample_sets_options.pory"
 	case 0, Auto_EventScript_Sample_Sets_Xerneas_Page1_2
-# 374 "data/scripts/sample_sets_options.pory"
+# 348 "data/scripts/sample_sets_options.pory"
 	case 1, Auto_EventScript_Sample_Sets_Xerneas_Page1_3
-# 377 "data/scripts/sample_sets_options.pory"
+# 351 "data/scripts/sample_sets_options.pory"
 	case MULTI_L_PRESSED, Auto_EventScript_Sample_Sets_Xerneas_Page1_4
-# 379 "data/scripts/sample_sets_options.pory"
+# 353 "data/scripts/sample_sets_options.pory"
 	case MULTI_R_PRESSED, Auto_EventScript_Sample_Sets_Xerneas_Page1_5
-# 382 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Page9
+# 356 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Page12
 	return
 
 Auto_EventScript_Sample_Sets_Xerneas_Page1_2:
-# 372 "data/scripts/sample_sets_options.pory"
+# 346 "data/scripts/sample_sets_options.pory"
 	givemon SPECIES_XERNEAS, 65, ITEM_POWER_HERB, ITEM_SPORT_BALL, NATURE_TIMID, 0, 0, 4, 0, 4, 252, 244, 4, 31, 0, 31, 31, 31, 31, MOVE_MOONBLAST, MOVE_DAZZLING_GLEAM, MOVE_GEOMANCY, MOVE_PROTECT, FALSE, FALSE, FALSE
-# 373 "data/scripts/sample_sets_options.pory"
+# 347 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
 
 Auto_EventScript_Sample_Sets_Xerneas_Page1_3:
-# 375 "data/scripts/sample_sets_options.pory"
+# 349 "data/scripts/sample_sets_options.pory"
 	givemon SPECIES_XERNEAS, 65, ITEM_POWER_HERB, ITEM_SPORT_BALL, NATURE_TIMID, 0, 0, 44, 0, 20, 252, 188, 4, 31, 0, 31, 31, 31, 31, MOVE_PROTECT, MOVE_GEOMANCY, MOVE_DAZZLING_GLEAM, MOVE_MOONBLAST, FALSE, FALSE, FALSE
-# 376 "data/scripts/sample_sets_options.pory"
+# 350 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
 
 Auto_EventScript_Sample_Sets_Xerneas_Page1_4:
-# 378 "data/scripts/sample_sets_options.pory"
+# 352 "data/scripts/sample_sets_options.pory"
 	goto Auto_EventScript_Sample_Sets_Xerneas_Page1
 	return
 
 Auto_EventScript_Sample_Sets_Xerneas_Page1_5:
-# 380 "data/scripts/sample_sets_options.pory"
+# 354 "data/scripts/sample_sets_options.pory"
 	goto Auto_EventScript_Sample_Sets_Xerneas_Page1
 	return
 
 
-Auto_EventScript_Sample_Sets_Roaring_Moon_Page1::
+Auto_EventScript_Sample_Sets_Zacian_Page1::
+# 362 "data/scripts/sample_sets_options.pory"
+	multichoice2 0, 0, Auto_Text_Sample_Sets_Zacian_Page1
+# 363 "data/scripts/sample_sets_options.pory"
+	switch VAR_RESULT
+# 365 "data/scripts/sample_sets_options.pory"
+	case 0, Auto_EventScript_Sample_Sets_Zacian_Page1_2
+# 368 "data/scripts/sample_sets_options.pory"
+	case 1, Auto_EventScript_Sample_Sets_Zacian_Page1_3
+# 371 "data/scripts/sample_sets_options.pory"
+	case MULTI_L_PRESSED, Auto_EventScript_Sample_Sets_Zacian_Page1_4
+# 373 "data/scripts/sample_sets_options.pory"
+	case MULTI_R_PRESSED, Auto_EventScript_Sample_Sets_Zacian_Page1_5
+# 376 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Page12
+	return
+
+Auto_EventScript_Sample_Sets_Zacian_Page1_2:
+# 366 "data/scripts/sample_sets_options.pory"
+	givemon SPECIES_ZACIAN, 65, ITEM_RUSTED_SWORD, ITEM_SPORT_BALL, NATURE_ADAMANT, 0, 0, 252, 76, 4, 164, 0, 12, 31, 31, 31, 31, 31, 31, MOVE_PROTECT, MOVE_BEHEMOTH_BLADE, MOVE_PLAY_ROUGH, MOVE_TERA_BLAST, FALSE, FALSE, TYPE_GROUND
+# 367 "data/scripts/sample_sets_options.pory"
+	goto Common_EventScript_Sample_Sets_CheckPurchase
+	return
+
+Auto_EventScript_Sample_Sets_Zacian_Page1_3:
+# 369 "data/scripts/sample_sets_options.pory"
+	givemon SPECIES_ZACIAN, 65, ITEM_RUSTED_SWORD, ITEM_SPORT_BALL, NATURE_ADAMANT, 0, 0, 252, 76, 4, 164, 0, 12, 31, 31, 31, 31, 31, 31, MOVE_PROTECT, MOVE_IRON_HEAD, MOVE_SACRED_SWORD, MOVE_PLAY_ROUGH, FALSE, FALSE, TYPE_STELLAR
+# 370 "data/scripts/sample_sets_options.pory"
+	goto Common_EventScript_Sample_Sets_CheckPurchase
+	return
+
+Auto_EventScript_Sample_Sets_Zacian_Page1_4:
+# 372 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Zacian_Page1
+	return
+
+Auto_EventScript_Sample_Sets_Zacian_Page1_5:
+# 374 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Zacian_Page1
+	return
+
+
+Auto_EventScript_Sample_Sets_Zamazenta_Page1::
+# 382 "data/scripts/sample_sets_options.pory"
+	multichoice2 0, 0, Auto_Text_Sample_Sets_Zamazenta_Page1
+# 383 "data/scripts/sample_sets_options.pory"
+	switch VAR_RESULT
+# 385 "data/scripts/sample_sets_options.pory"
+	case 0, Auto_EventScript_Sample_Sets_Zamazenta_Page1_2
 # 388 "data/scripts/sample_sets_options.pory"
-	multichoice2 0, 0, Auto_Text_Sample_Sets_Roaring_Moon_Page1
-# 389 "data/scripts/sample_sets_options.pory"
-	switch VAR_RESULT
-# 391 "data/scripts/sample_sets_options.pory"
-	case 0, Auto_EventScript_Sample_Sets_Roaring_Moon_Page1_2
-# 394 "data/scripts/sample_sets_options.pory"
-	case MULTI_L_PRESSED, Auto_EventScript_Sample_Sets_Roaring_Moon_Page1_3
-# 396 "data/scripts/sample_sets_options.pory"
-	case MULTI_R_PRESSED, Auto_EventScript_Sample_Sets_Roaring_Moon_Page1_4
-# 399 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Page8
-	return
-
-Auto_EventScript_Sample_Sets_Roaring_Moon_Page1_2:
-# 392 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_ROARING_MOON, 65, ITEM_BOOSTER_ENERGY, ITEM_SPORT_BALL, NATURE_JOLLY, 0, 0, 4, 220, 28, 252, 0, 4, 31, 31, 31, 31, 31, 31, MOVE_PROTECT, MOVE_TAILWIND, MOVE_ACROBATICS, MOVE_KNOCK_OFF, FALSE, FALSE, TYPE_FLYING
+	case MULTI_L_PRESSED, Auto_EventScript_Sample_Sets_Zamazenta_Page1_3
+# 390 "data/scripts/sample_sets_options.pory"
+	case MULTI_R_PRESSED, Auto_EventScript_Sample_Sets_Zamazenta_Page1_4
 # 393 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Page12
+	return
+
+Auto_EventScript_Sample_Sets_Zamazenta_Page1_2:
+# 386 "data/scripts/sample_sets_options.pory"
+	givemon SPECIES_ZAMAZENTA, 65, ITEM_RUSTED_SHIELD, ITEM_SPORT_BALL, NATURE_IMPISH, 0, 0, 76, 0, 244, 188, 0, 0, 31, 31, 31, 31, 31, 31, MOVE_PROTECT, MOVE_WIDE_GUARD, MOVE_HEAVY_SLAM, MOVE_BODY_PRESS, FALSE, FALSE, TYPE_DRAGON
+# 387 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
 
-Auto_EventScript_Sample_Sets_Roaring_Moon_Page1_3:
-# 395 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Roaring_Moon_Page1
+Auto_EventScript_Sample_Sets_Zamazenta_Page1_3:
+# 389 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Zamazenta_Page1
 	return
 
-Auto_EventScript_Sample_Sets_Roaring_Moon_Page1_4:
-# 397 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Roaring_Moon_Page1
-	return
-
-
-Auto_EventScript_Sample_Sets_Salamence_Page1::
-# 405 "data/scripts/sample_sets_options.pory"
-	multichoice2 0, 0, Auto_Text_Sample_Sets_Salamence_Page1
-# 406 "data/scripts/sample_sets_options.pory"
-	switch VAR_RESULT
-# 408 "data/scripts/sample_sets_options.pory"
-	case 0, Auto_EventScript_Sample_Sets_Salamence_Page1_2
-# 411 "data/scripts/sample_sets_options.pory"
-	case 1, Auto_EventScript_Sample_Sets_Salamence_Page1_3
-# 414 "data/scripts/sample_sets_options.pory"
-	case MULTI_L_PRESSED, Auto_EventScript_Sample_Sets_Salamence_Page1_4
-# 416 "data/scripts/sample_sets_options.pory"
-	case MULTI_R_PRESSED, Auto_EventScript_Sample_Sets_Salamence_Page1_5
-# 419 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Page8
-	return
-
-Auto_EventScript_Sample_Sets_Salamence_Page1_2:
-# 409 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_SALAMENCE, 65, ITEM_SALAMENCITE, ITEM_SPORT_BALL, NATURE_NAIVE, 0, 0, 0, 44, 0, 212, 252, 0, 31, 31, 31, 31, 31, 31, MOVE_PROTECT, MOVE_TAILWIND, MOVE_HYPER_VOICE, MOVE_DOUBLE_EDGE, FALSE, FALSE, TYPE_WATER
-# 410 "data/scripts/sample_sets_options.pory"
-	goto Common_EventScript_Sample_Sets_CheckPurchase
-	return
-
-Auto_EventScript_Sample_Sets_Salamence_Page1_3:
-# 412 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_SALAMENCE, 65, ITEM_SALAMENCITE, ITEM_SPORT_BALL, NATURE_ADAMANT, 0, 0, 252, 36, 4, 92, 0, 124, 31, 31, 31, 31, 31, 31, MOVE_PROTECT, MOVE_ROOST, MOVE_DOUBLE_EDGE, MOVE_DRAGON_DANCE, FALSE, FALSE, TYPE_WATER
-# 413 "data/scripts/sample_sets_options.pory"
-	goto Common_EventScript_Sample_Sets_CheckPurchase
-	return
-
-Auto_EventScript_Sample_Sets_Salamence_Page1_4:
-# 415 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Salamence_Page1
-	return
-
-Auto_EventScript_Sample_Sets_Salamence_Page1_5:
-# 417 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Salamence_Page1
-	return
-
-
-Auto_EventScript_Sample_Sets_Ting_Lu_Page1::
-# 425 "data/scripts/sample_sets_options.pory"
-	multichoice2 0, 0, Auto_Text_Sample_Sets_Ting_Lu_Page1
-# 426 "data/scripts/sample_sets_options.pory"
-	switch VAR_RESULT
-# 428 "data/scripts/sample_sets_options.pory"
-	case 0, Auto_EventScript_Sample_Sets_Ting_Lu_Page1_2
-# 431 "data/scripts/sample_sets_options.pory"
-	case MULTI_L_PRESSED, Auto_EventScript_Sample_Sets_Ting_Lu_Page1_3
-# 433 "data/scripts/sample_sets_options.pory"
-	case MULTI_R_PRESSED, Auto_EventScript_Sample_Sets_Ting_Lu_Page1_4
-# 436 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Page8
-	return
-
-Auto_EventScript_Sample_Sets_Ting_Lu_Page1_2:
-# 429 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_TING_LU, 65, ITEM_ROCKY_HELMET, ITEM_SPORT_BALL, NATURE_IMPISH, 0, 0, 52, 4, 196, 4, 0, 252, 31, 31, 31, 31, 31, 31, MOVE_PROTECT, MOVE_SAND_TOMB, MOVE_RUINATION, MOVE_BODY_PRESS, FALSE, FALSE, TYPE_POISON
-# 430 "data/scripts/sample_sets_options.pory"
-	goto Common_EventScript_Sample_Sets_CheckPurchase
-	return
-
-Auto_EventScript_Sample_Sets_Ting_Lu_Page1_3:
-# 432 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Ting_Lu_Page1
-	return
-
-Auto_EventScript_Sample_Sets_Ting_Lu_Page1_4:
-# 434 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Ting_Lu_Page1
+Auto_EventScript_Sample_Sets_Zamazenta_Page1_4:
+# 391 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Zamazenta_Page1
 	return
 
 
 Auto_EventScript_Sample_Sets_Torkoal_Page1::
-# 442 "data/scripts/sample_sets_options.pory"
+# 399 "data/scripts/sample_sets_options.pory"
 	multichoice2 0, 0, Auto_Text_Sample_Sets_Torkoal_Page1
-# 443 "data/scripts/sample_sets_options.pory"
+# 400 "data/scripts/sample_sets_options.pory"
 	switch VAR_RESULT
-# 445 "data/scripts/sample_sets_options.pory"
+# 402 "data/scripts/sample_sets_options.pory"
 	case 0, Auto_EventScript_Sample_Sets_Torkoal_Page1_2
-# 448 "data/scripts/sample_sets_options.pory"
+# 405 "data/scripts/sample_sets_options.pory"
 	case 1, Auto_EventScript_Sample_Sets_Torkoal_Page1_3
-# 451 "data/scripts/sample_sets_options.pory"
+# 408 "data/scripts/sample_sets_options.pory"
 	case MULTI_L_PRESSED, Auto_EventScript_Sample_Sets_Torkoal_Page1_4
-# 453 "data/scripts/sample_sets_options.pory"
+# 410 "data/scripts/sample_sets_options.pory"
 	case MULTI_R_PRESSED, Auto_EventScript_Sample_Sets_Torkoal_Page1_5
-# 456 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Page8
+# 413 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Page11
 	return
 
 Auto_EventScript_Sample_Sets_Torkoal_Page1_2:
-# 446 "data/scripts/sample_sets_options.pory"
+# 403 "data/scripts/sample_sets_options.pory"
 	givemon SPECIES_TORKOAL, 65, ITEM_CHARCOAL, ITEM_SPORT_BALL, NATURE_QUIET, 1, 1, 204, 0, 0, 0, 196, 108, 31, 0, 31, 0, 31, 31, MOVE_PROTECT, MOVE_ERUPTION, MOVE_HEAT_WAVE, MOVE_EARTH_POWER, FALSE, FALSE, TYPE_FIRE
-# 447 "data/scripts/sample_sets_options.pory"
+# 404 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
 
 Auto_EventScript_Sample_Sets_Torkoal_Page1_3:
-# 449 "data/scripts/sample_sets_options.pory"
+# 406 "data/scripts/sample_sets_options.pory"
 	givemon SPECIES_TORKOAL, 65, ITEM_CHOICE_SPECS, ITEM_SPORT_BALL, NATURE_QUIET, 1, 0, 204, 0, 0, 0, 196, 108, 31, 0, 31, 0, 31, 31, MOVE_ERUPTION, MOVE_HEAT_WAVE, MOVE_WEATHER_BALL, MOVE_EARTH_POWER, FALSE, FALSE, TYPE_FIRE
-# 450 "data/scripts/sample_sets_options.pory"
+# 407 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
 
 Auto_EventScript_Sample_Sets_Torkoal_Page1_4:
-# 452 "data/scripts/sample_sets_options.pory"
+# 409 "data/scripts/sample_sets_options.pory"
 	goto Auto_EventScript_Sample_Sets_Torkoal_Page1
 	return
 
 Auto_EventScript_Sample_Sets_Torkoal_Page1_5:
-# 454 "data/scripts/sample_sets_options.pory"
+# 411 "data/scripts/sample_sets_options.pory"
 	goto Auto_EventScript_Sample_Sets_Torkoal_Page1
 	return
 
 
 Auto_EventScript_Sample_Sets_Tornadus_Page1::
-# 462 "data/scripts/sample_sets_options.pory"
+# 419 "data/scripts/sample_sets_options.pory"
 	multichoice2 0, 0, Auto_Text_Sample_Sets_Tornadus_Page1
-# 463 "data/scripts/sample_sets_options.pory"
+# 420 "data/scripts/sample_sets_options.pory"
 	switch VAR_RESULT
-# 465 "data/scripts/sample_sets_options.pory"
+# 422 "data/scripts/sample_sets_options.pory"
 	case 0, Auto_EventScript_Sample_Sets_Tornadus_Page1_2
-# 468 "data/scripts/sample_sets_options.pory"
+# 425 "data/scripts/sample_sets_options.pory"
 	case 1, Auto_EventScript_Sample_Sets_Tornadus_Page1_3
-# 471 "data/scripts/sample_sets_options.pory"
+# 428 "data/scripts/sample_sets_options.pory"
 	case 2, Auto_EventScript_Sample_Sets_Tornadus_Page1_4
-# 474 "data/scripts/sample_sets_options.pory"
+# 431 "data/scripts/sample_sets_options.pory"
 	case MULTI_L_PRESSED, Auto_EventScript_Sample_Sets_Tornadus_Page1_5
-# 476 "data/scripts/sample_sets_options.pory"
+# 433 "data/scripts/sample_sets_options.pory"
 	case MULTI_R_PRESSED, Auto_EventScript_Sample_Sets_Tornadus_Page1_6
-# 479 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Page8
+# 436 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Page11
 	return
 
 Auto_EventScript_Sample_Sets_Tornadus_Page1_2:
-# 466 "data/scripts/sample_sets_options.pory"
+# 423 "data/scripts/sample_sets_options.pory"
 	givemon SPECIES_TORNADUS, 65, ITEM_COVERT_CLOAK, ITEM_SPORT_BALL, NATURE_BOLD, 0, 0, 196, 0, 228, 4, 4, 76, 31, 0, 31, 31, 31, 31, MOVE_TAUNT, MOVE_TAILWIND, MOVE_RAIN_DANCE, MOVE_BLEAKWIND_STORM, FALSE, FALSE, TYPE_DARK
-# 467 "data/scripts/sample_sets_options.pory"
+# 424 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
 
 Auto_EventScript_Sample_Sets_Tornadus_Page1_3:
-# 469 "data/scripts/sample_sets_options.pory"
+# 426 "data/scripts/sample_sets_options.pory"
 	givemon SPECIES_TORNADUS, 65, ITEM_ROCKY_HELMET, ITEM_SPORT_BALL, NATURE_BOLD, 0, 0, 196, 0, 228, 4, 4, 76, 31, 0, 31, 31, 31, 31, MOVE_PROTECT, MOVE_TAILWIND, MOVE_RAIN_DANCE, MOVE_BLEAKWIND_STORM, FALSE, FALSE, TYPE_DARK
-# 470 "data/scripts/sample_sets_options.pory"
+# 427 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
 
 Auto_EventScript_Sample_Sets_Tornadus_Page1_4:
-# 472 "data/scripts/sample_sets_options.pory"
+# 429 "data/scripts/sample_sets_options.pory"
 	givemon SPECIES_TORNADUS, 65, ITEM_FOCUS_SASH, ITEM_SPORT_BALL, NATURE_TIMID, 0, 0, 4, 0, 0, 252, 252, 0, 31, 0, 31, 31, 31, 31, MOVE_PROTECT, MOVE_TAILWIND, MOVE_RAIN_DANCE, MOVE_BLEAKWIND_STORM, FALSE, FALSE, TYPE_DARK
-# 473 "data/scripts/sample_sets_options.pory"
+# 430 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
 
 Auto_EventScript_Sample_Sets_Tornadus_Page1_5:
-# 475 "data/scripts/sample_sets_options.pory"
+# 432 "data/scripts/sample_sets_options.pory"
 	goto Auto_EventScript_Sample_Sets_Tornadus_Page1
 	return
 
 Auto_EventScript_Sample_Sets_Tornadus_Page1_6:
-# 477 "data/scripts/sample_sets_options.pory"
+# 434 "data/scripts/sample_sets_options.pory"
 	goto Auto_EventScript_Sample_Sets_Tornadus_Page1
 	return
 
 
-Auto_EventScript_Sample_Sets_Pelipper_Page1::
-# 485 "data/scripts/sample_sets_options.pory"
-	multichoice2 0, 0, Auto_Text_Sample_Sets_Pelipper_Page1
-# 486 "data/scripts/sample_sets_options.pory"
+Auto_EventScript_Sample_Sets_Tyranitar_Page1::
+# 442 "data/scripts/sample_sets_options.pory"
+	multichoice2 0, 0, Auto_Text_Sample_Sets_Tyranitar_Page1
+# 443 "data/scripts/sample_sets_options.pory"
 	switch VAR_RESULT
-# 488 "data/scripts/sample_sets_options.pory"
-	case 0, Auto_EventScript_Sample_Sets_Pelipper_Page1_2
-# 491 "data/scripts/sample_sets_options.pory"
-	case MULTI_L_PRESSED, Auto_EventScript_Sample_Sets_Pelipper_Page1_3
-# 493 "data/scripts/sample_sets_options.pory"
-	case MULTI_R_PRESSED, Auto_EventScript_Sample_Sets_Pelipper_Page1_4
-# 496 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Page7
+# 445 "data/scripts/sample_sets_options.pory"
+	case 0, Auto_EventScript_Sample_Sets_Tyranitar_Page1_2
+# 448 "data/scripts/sample_sets_options.pory"
+	case MULTI_L_PRESSED, Auto_EventScript_Sample_Sets_Tyranitar_Page1_3
+# 450 "data/scripts/sample_sets_options.pory"
+	case MULTI_R_PRESSED, Auto_EventScript_Sample_Sets_Tyranitar_Page1_4
+# 453 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Page11
 	return
 
-Auto_EventScript_Sample_Sets_Pelipper_Page1_2:
+Auto_EventScript_Sample_Sets_Tyranitar_Page1_2:
+# 446 "data/scripts/sample_sets_options.pory"
+	givemon SPECIES_TYRANITAR, 65, ITEM_TYRANITARITE, ITEM_SPORT_BALL, NATURE_JOLLY, 0, 1, 44, 164, 20, 252, 0, 28, 31, 31, 31, 31, 31, 31, MOVE_ROCK_SLIDE, MOVE_CRUNCH, MOVE_DRAGON_DANCE, MOVE_PROTECT, FALSE, FALSE, FALSE
+# 447 "data/scripts/sample_sets_options.pory"
+	goto Common_EventScript_Sample_Sets_CheckPurchase
+	return
+
+Auto_EventScript_Sample_Sets_Tyranitar_Page1_3:
+# 449 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Tyranitar_Page1
+	return
+
+Auto_EventScript_Sample_Sets_Tyranitar_Page1_4:
+# 451 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Tyranitar_Page1
+	return
+
+
+Auto_EventScript_Sample_Sets_Ursaluna_Page1::
+# 459 "data/scripts/sample_sets_options.pory"
+	multichoice2 0, 0, Auto_Text_Sample_Sets_Ursaluna_Page1
+# 460 "data/scripts/sample_sets_options.pory"
+	switch VAR_RESULT
+# 462 "data/scripts/sample_sets_options.pory"
+	case 0, Auto_EventScript_Sample_Sets_Ursaluna_Page1_2
+# 465 "data/scripts/sample_sets_options.pory"
+	case 1, Auto_EventScript_Sample_Sets_Ursaluna_Page1_3
+# 468 "data/scripts/sample_sets_options.pory"
+	case MULTI_L_PRESSED, Auto_EventScript_Sample_Sets_Ursaluna_Page1_4
+# 470 "data/scripts/sample_sets_options.pory"
+	case MULTI_R_PRESSED, Auto_EventScript_Sample_Sets_Ursaluna_Page1_5
+# 473 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Page11
+	return
+
+Auto_EventScript_Sample_Sets_Ursaluna_Page1_2:
+# 463 "data/scripts/sample_sets_options.pory"
+	givemon SPECIES_URSALUNA, 65, ITEM_FLAME_ORB, ITEM_SPORT_BALL, NATURE_BRAVE, 0, 0, 140, 236, 0, 0, 0, 132, 31, 31, 31, 0, 31, 31, MOVE_PROTECT, MOVE_FACADE, MOVE_EARTHQUAKE, MOVE_HEADLONG_RUSH, FALSE, FALSE, TYPE_GHOST
+# 464 "data/scripts/sample_sets_options.pory"
+	goto Common_EventScript_Sample_Sets_CheckPurchase
+	return
+
+Auto_EventScript_Sample_Sets_Ursaluna_Page1_3:
+# 466 "data/scripts/sample_sets_options.pory"
+	givemon SPECIES_URSALUNA, 65, ITEM_FLAME_ORB, ITEM_SPORT_BALL, NATURE_ADAMANT, 0, 0, 140, 236, 4, 12, 0, 116, 31, 31, 31, 31, 31, 31, MOVE_PROTECT, MOVE_FACADE, MOVE_EARTHQUAKE, MOVE_HEADLONG_RUSH, FALSE, FALSE, TYPE_GHOST
+# 467 "data/scripts/sample_sets_options.pory"
+	goto Common_EventScript_Sample_Sets_CheckPurchase
+	return
+
+Auto_EventScript_Sample_Sets_Ursaluna_Page1_4:
+# 469 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Ursaluna_Page1
+	return
+
+Auto_EventScript_Sample_Sets_Ursaluna_Page1_5:
+# 471 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Ursaluna_Page1
+	return
+
+
+Auto_EventScript_Sample_Sets_Ursaluna_Bloodmoon_Page1::
+# 479 "data/scripts/sample_sets_options.pory"
+	multichoice2 0, 0, Auto_Text_Sample_Sets_Ursaluna_Bloodmoon_Page1
+# 480 "data/scripts/sample_sets_options.pory"
+	switch VAR_RESULT
+# 482 "data/scripts/sample_sets_options.pory"
+	case 0, Auto_EventScript_Sample_Sets_Ursaluna_Bloodmoon_Page1_2
+# 485 "data/scripts/sample_sets_options.pory"
+	case 1, Auto_EventScript_Sample_Sets_Ursaluna_Bloodmoon_Page1_3
+# 488 "data/scripts/sample_sets_options.pory"
+	case 2, Auto_EventScript_Sample_Sets_Ursaluna_Bloodmoon_Page1_4
+# 491 "data/scripts/sample_sets_options.pory"
+	case MULTI_L_PRESSED, Auto_EventScript_Sample_Sets_Ursaluna_Bloodmoon_Page1_5
+# 493 "data/scripts/sample_sets_options.pory"
+	case MULTI_R_PRESSED, Auto_EventScript_Sample_Sets_Ursaluna_Bloodmoon_Page1_6
+# 496 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Page11
+	return
+
+Auto_EventScript_Sample_Sets_Ursaluna_Bloodmoon_Page1_2:
+# 483 "data/scripts/sample_sets_options.pory"
+	givemon SPECIES_URSALUNA_BLOODMOON, 65, ITEM_LIFE_ORB, ITEM_SPORT_BALL, NATURE_MODEST, 0, 0, 244, 0, 4, 12, 196, 52, 31, 0, 31, 31, 31, 31, MOVE_PROTECT, MOVE_EARTH_POWER, MOVE_HYPER_VOICE, MOVE_BLOOD_MOON, FALSE, FALSE, TYPE_NORMAL
+# 484 "data/scripts/sample_sets_options.pory"
+	goto Common_EventScript_Sample_Sets_CheckPurchase
+	return
+
+Auto_EventScript_Sample_Sets_Ursaluna_Bloodmoon_Page1_3:
+# 486 "data/scripts/sample_sets_options.pory"
+	givemon SPECIES_URSALUNA_BLOODMOON, 65, ITEM_LIFE_ORB, ITEM_SPORT_BALL, NATURE_QUIET, 0, 0, 244, 0, 0, 0, 196, 68, 31, 0, 31, 0, 31, 31, MOVE_PROTECT, MOVE_EARTH_POWER, MOVE_HYPER_VOICE, MOVE_BLOOD_MOON, FALSE, FALSE, TYPE_NORMAL
+# 487 "data/scripts/sample_sets_options.pory"
+	goto Common_EventScript_Sample_Sets_CheckPurchase
+	return
+
+Auto_EventScript_Sample_Sets_Ursaluna_Bloodmoon_Page1_4:
 # 489 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_PELIPPER, 65, ITEM_FOCUS_SASH, ITEM_SPORT_BALL, NATURE_MODEST, 1, 0, 0, 0, 4, 252, 252, 0, 31, 31, 31, 31, 31, 31, MOVE_PROTECT, MOVE_WIDE_GUARD, MOVE_WEATHER_BALL, MOVE_HURRICANE, FALSE, FALSE, TYPE_GHOST
+	givemon SPECIES_URSALUNA_BLOODMOON, 65, ITEM_LIFE_ORB, ITEM_SPORT_BALL, NATURE_MODEST, 0, 0, 4, 0, 4, 252, 196, 52, 31, 0, 31, 31, 31, 31, MOVE_PROTECT, MOVE_EARTH_POWER, MOVE_HYPER_VOICE, MOVE_BLOOD_MOON, FALSE, FALSE, TYPE_NORMAL
 # 490 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
 
-Auto_EventScript_Sample_Sets_Pelipper_Page1_3:
+Auto_EventScript_Sample_Sets_Ursaluna_Bloodmoon_Page1_5:
 # 492 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Pelipper_Page1
+	goto Auto_EventScript_Sample_Sets_Ursaluna_Bloodmoon_Page1
 	return
 
-Auto_EventScript_Sample_Sets_Pelipper_Page1_4:
+Auto_EventScript_Sample_Sets_Ursaluna_Bloodmoon_Page1_6:
 # 494 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Pelipper_Page1
+	goto Auto_EventScript_Sample_Sets_Ursaluna_Bloodmoon_Page1
 	return
 
 
-Auto_EventScript_Sample_Sets_Porygon2_Page1::
+Auto_EventScript_Sample_Sets_Roaring_Moon_Page1::
 # 502 "data/scripts/sample_sets_options.pory"
-	multichoice2 0, 0, Auto_Text_Sample_Sets_Porygon2_Page1
+	multichoice2 0, 0, Auto_Text_Sample_Sets_Roaring_Moon_Page1
 # 503 "data/scripts/sample_sets_options.pory"
 	switch VAR_RESULT
 # 505 "data/scripts/sample_sets_options.pory"
-	case 0, Auto_EventScript_Sample_Sets_Porygon2_Page1_2
+	case 0, Auto_EventScript_Sample_Sets_Roaring_Moon_Page1_2
 # 508 "data/scripts/sample_sets_options.pory"
-	case 1, Auto_EventScript_Sample_Sets_Porygon2_Page1_3
-# 511 "data/scripts/sample_sets_options.pory"
-	case MULTI_L_PRESSED, Auto_EventScript_Sample_Sets_Porygon2_Page1_4
+	case MULTI_L_PRESSED, Auto_EventScript_Sample_Sets_Roaring_Moon_Page1_3
+# 510 "data/scripts/sample_sets_options.pory"
+	case MULTI_R_PRESSED, Auto_EventScript_Sample_Sets_Roaring_Moon_Page1_4
 # 513 "data/scripts/sample_sets_options.pory"
-	case MULTI_R_PRESSED, Auto_EventScript_Sample_Sets_Porygon2_Page1_5
-# 516 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Page7
+	goto Auto_EventScript_Sample_Sets_Page10
 	return
 
-Auto_EventScript_Sample_Sets_Porygon2_Page1_2:
+Auto_EventScript_Sample_Sets_Roaring_Moon_Page1_2:
 # 506 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_PORYGON2, 65, ITEM_EVIOLITE, ITEM_SPORT_BALL, NATURE_MODEST, 1, 0, 244, 0, 92, 4, 116, 52, 31, 0, 31, 31, 31, 31, MOVE_TERA_BLAST, MOVE_ICE_BEAM, MOVE_TRICK_ROOM, MOVE_RECOVER, FALSE, FALSE, TYPE_FLYING
+	givemon SPECIES_ROARING_MOON, 65, ITEM_BOOSTER_ENERGY, ITEM_SPORT_BALL, NATURE_JOLLY, 0, 0, 4, 220, 28, 252, 0, 4, 31, 31, 31, 31, 31, 31, MOVE_PROTECT, MOVE_TAILWIND, MOVE_ACROBATICS, MOVE_KNOCK_OFF, FALSE, FALSE, TYPE_FLYING
 # 507 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
 
-Auto_EventScript_Sample_Sets_Porygon2_Page1_3:
+Auto_EventScript_Sample_Sets_Roaring_Moon_Page1_3:
 # 509 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Roaring_Moon_Page1
+	return
+
+Auto_EventScript_Sample_Sets_Roaring_Moon_Page1_4:
+# 511 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Roaring_Moon_Page1
+	return
+
+
+Auto_EventScript_Sample_Sets_Salamence_Page1::
+# 519 "data/scripts/sample_sets_options.pory"
+	multichoice2 0, 0, Auto_Text_Sample_Sets_Salamence_Page1
+# 520 "data/scripts/sample_sets_options.pory"
+	switch VAR_RESULT
+# 522 "data/scripts/sample_sets_options.pory"
+	case 0, Auto_EventScript_Sample_Sets_Salamence_Page1_2
+# 525 "data/scripts/sample_sets_options.pory"
+	case 1, Auto_EventScript_Sample_Sets_Salamence_Page1_3
+# 528 "data/scripts/sample_sets_options.pory"
+	case 2, Auto_EventScript_Sample_Sets_Salamence_Page1_4
+# 531 "data/scripts/sample_sets_options.pory"
+	case MULTI_L_PRESSED, Auto_EventScript_Sample_Sets_Salamence_Page1_5
+# 533 "data/scripts/sample_sets_options.pory"
+	case MULTI_R_PRESSED, Auto_EventScript_Sample_Sets_Salamence_Page1_6
+# 536 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Page10
+	return
+
+Auto_EventScript_Sample_Sets_Salamence_Page1_2:
+# 523 "data/scripts/sample_sets_options.pory"
+	givemon SPECIES_SALAMENCE, 65, ITEM_SALAMENCITE, ITEM_SPORT_BALL, NATURE_NAIVE, 0, 0, 0, 44, 0, 212, 252, 0, 31, 31, 31, 31, 31, 31, MOVE_PROTECT, MOVE_TAILWIND, MOVE_HYPER_VOICE, MOVE_DOUBLE_EDGE, FALSE, FALSE, TYPE_WATER
+# 524 "data/scripts/sample_sets_options.pory"
+	goto Common_EventScript_Sample_Sets_CheckPurchase
+	return
+
+Auto_EventScript_Sample_Sets_Salamence_Page1_3:
+# 526 "data/scripts/sample_sets_options.pory"
+	givemon SPECIES_SALAMENCE, 65, ITEM_SALAMENCITE, ITEM_SPORT_BALL, NATURE_ADAMANT, 0, 0, 252, 36, 4, 92, 0, 124, 31, 31, 31, 31, 31, 31, MOVE_PROTECT, MOVE_ROOST, MOVE_DOUBLE_EDGE, MOVE_DRAGON_DANCE, FALSE, FALSE, TYPE_WATER
+# 527 "data/scripts/sample_sets_options.pory"
+	goto Common_EventScript_Sample_Sets_CheckPurchase
+	return
+
+Auto_EventScript_Sample_Sets_Salamence_Page1_4:
+# 529 "data/scripts/sample_sets_options.pory"
+	givemon SPECIES_SALAMENCE, 65, ITEM_SALAMENCITE, ITEM_SPORT_BALL, NATURE_MODEST, 0, 1, 4, 0, 4, 252, 244, 4, 31, 0, 31, 31, 31, 31, MOVE_PROTECT, MOVE_TAILWIND, MOVE_HYPER_VOICE, MOVE_DRACO_METEOR, FALSE, FALSE, TYPE_WATER
+# 530 "data/scripts/sample_sets_options.pory"
+	goto Common_EventScript_Sample_Sets_CheckPurchase
+	return
+
+Auto_EventScript_Sample_Sets_Salamence_Page1_5:
+# 532 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Salamence_Page1
+	return
+
+Auto_EventScript_Sample_Sets_Salamence_Page1_6:
+# 534 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Salamence_Page1
+	return
+
+
+Auto_EventScript_Sample_Sets_Talonflame_Page1::
+# 542 "data/scripts/sample_sets_options.pory"
+	multichoice2 0, 0, Auto_Text_Sample_Sets_Talonflame_Page1
+# 543 "data/scripts/sample_sets_options.pory"
+	switch VAR_RESULT
+# 545 "data/scripts/sample_sets_options.pory"
+	case 0, Auto_EventScript_Sample_Sets_Talonflame_Page1_2
+# 548 "data/scripts/sample_sets_options.pory"
+	case 1, Auto_EventScript_Sample_Sets_Talonflame_Page1_3
+# 551 "data/scripts/sample_sets_options.pory"
+	case MULTI_L_PRESSED, Auto_EventScript_Sample_Sets_Talonflame_Page1_4
+# 553 "data/scripts/sample_sets_options.pory"
+	case MULTI_R_PRESSED, Auto_EventScript_Sample_Sets_Talonflame_Page1_5
+# 556 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Page10
+	return
+
+Auto_EventScript_Sample_Sets_Talonflame_Page1_2:
+# 546 "data/scripts/sample_sets_options.pory"
+	givemon SPECIES_TALONFLAME, 65, ITEM_CHOICE_BAND, ITEM_SPORT_BALL, NATURE_ADAMANT, 1, 1, 4, 252, 0, 252, 0, 0, 31, 31, 31, 31, 31, 31, MOVE_BRAVE_BIRD, MOVE_FLARE_BLITZ, MOVE_SLEEP_TALK, MOVE_U_TURN, FALSE, FALSE, TYPE_FLYING
+# 547 "data/scripts/sample_sets_options.pory"
+	goto Common_EventScript_Sample_Sets_CheckPurchase
+	return
+
+Auto_EventScript_Sample_Sets_Talonflame_Page1_3:
+# 549 "data/scripts/sample_sets_options.pory"
+	givemon SPECIES_TALONFLAME, 65, ITEM_CHOICE_BAND, ITEM_SPORT_BALL, NATURE_JOLLY, 1, 0, 4, 252, 0, 252, 0, 0, 31, 31, 31, 31, 31, 31, MOVE_BRAVE_BIRD, MOVE_FLARE_BLITZ, MOVE_U_TURN, MOVE_TAUNT, FALSE, FALSE, TYPE_FLYING
+# 550 "data/scripts/sample_sets_options.pory"
+	goto Common_EventScript_Sample_Sets_CheckPurchase
+	return
+
+Auto_EventScript_Sample_Sets_Talonflame_Page1_4:
+# 552 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Talonflame_Page1
+	return
+
+Auto_EventScript_Sample_Sets_Talonflame_Page1_5:
+# 554 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Talonflame_Page1
+	return
+
+
+Auto_EventScript_Sample_Sets_Ting_Lu_Page1::
+# 562 "data/scripts/sample_sets_options.pory"
+	multichoice2 0, 0, Auto_Text_Sample_Sets_Ting_Lu_Page1
+# 563 "data/scripts/sample_sets_options.pory"
+	switch VAR_RESULT
+# 565 "data/scripts/sample_sets_options.pory"
+	case 0, Auto_EventScript_Sample_Sets_Ting_Lu_Page1_2
+# 568 "data/scripts/sample_sets_options.pory"
+	case MULTI_L_PRESSED, Auto_EventScript_Sample_Sets_Ting_Lu_Page1_3
+# 570 "data/scripts/sample_sets_options.pory"
+	case MULTI_R_PRESSED, Auto_EventScript_Sample_Sets_Ting_Lu_Page1_4
+# 573 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Page10
+	return
+
+Auto_EventScript_Sample_Sets_Ting_Lu_Page1_2:
+# 566 "data/scripts/sample_sets_options.pory"
+	givemon SPECIES_TING_LU, 65, ITEM_ROCKY_HELMET, ITEM_SPORT_BALL, NATURE_IMPISH, 0, 0, 52, 4, 196, 4, 0, 252, 31, 31, 31, 31, 31, 31, MOVE_PROTECT, MOVE_SAND_TOMB, MOVE_RUINATION, MOVE_BODY_PRESS, FALSE, FALSE, TYPE_POISON
+# 567 "data/scripts/sample_sets_options.pory"
+	goto Common_EventScript_Sample_Sets_CheckPurchase
+	return
+
+Auto_EventScript_Sample_Sets_Ting_Lu_Page1_3:
+# 569 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Ting_Lu_Page1
+	return
+
+Auto_EventScript_Sample_Sets_Ting_Lu_Page1_4:
+# 571 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Ting_Lu_Page1
+	return
+
+
+Auto_EventScript_Sample_Sets_Tinkaton_Page1::
+# 579 "data/scripts/sample_sets_options.pory"
+	multichoice2 0, 0, Auto_Text_Sample_Sets_Tinkaton_Page1
+# 580 "data/scripts/sample_sets_options.pory"
+	switch VAR_RESULT
+# 582 "data/scripts/sample_sets_options.pory"
+	case 0, Auto_EventScript_Sample_Sets_Tinkaton_Page1_2
+# 585 "data/scripts/sample_sets_options.pory"
+	case MULTI_L_PRESSED, Auto_EventScript_Sample_Sets_Tinkaton_Page1_3
+# 587 "data/scripts/sample_sets_options.pory"
+	case MULTI_R_PRESSED, Auto_EventScript_Sample_Sets_Tinkaton_Page1_4
+# 590 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Page10
+	return
+
+Auto_EventScript_Sample_Sets_Tinkaton_Page1_2:
+# 583 "data/scripts/sample_sets_options.pory"
+	givemon SPECIES_TINKATON, 65, ITEM_ASSAULT_VEST, ITEM_SPORT_BALL, NATURE_CAREFUL, 0, 1, 180, 172, 100, 12, 0, 44, 31, 31, 31, 31, 31, 31, MOVE_GIGATON_HAMMER, MOVE_PLAY_ROUGH, MOVE_FEINT, MOVE_FAKE_OUT, FALSE, FALSE, TYPE_WATER
+# 584 "data/scripts/sample_sets_options.pory"
+	goto Common_EventScript_Sample_Sets_CheckPurchase
+	return
+
+Auto_EventScript_Sample_Sets_Tinkaton_Page1_3:
+# 586 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Tinkaton_Page1
+	return
+
+Auto_EventScript_Sample_Sets_Tinkaton_Page1_4:
+# 588 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Tinkaton_Page1
+	return
+
+
+Auto_EventScript_Sample_Sets_Politoed_Page1::
+# 596 "data/scripts/sample_sets_options.pory"
+	multichoice2 0, 0, Auto_Text_Sample_Sets_Politoed_Page1
+# 597 "data/scripts/sample_sets_options.pory"
+	switch VAR_RESULT
+# 599 "data/scripts/sample_sets_options.pory"
+	case 0, Auto_EventScript_Sample_Sets_Politoed_Page1_2
+# 602 "data/scripts/sample_sets_options.pory"
+	case MULTI_L_PRESSED, Auto_EventScript_Sample_Sets_Politoed_Page1_3
+# 604 "data/scripts/sample_sets_options.pory"
+	case MULTI_R_PRESSED, Auto_EventScript_Sample_Sets_Politoed_Page1_4
+# 607 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Page9
+	return
+
+Auto_EventScript_Sample_Sets_Politoed_Page1_2:
+# 600 "data/scripts/sample_sets_options.pory"
+	givemon SPECIES_POLITOED, 65, ITEM_LEFTOVERS, ITEM_SPORT_BALL, NATURE_CALM, 2, 1, 220, 0, 196, 12, 4, 76, 31, 0, 31, 31, 31, 31, MOVE_PROTECT, MOVE_ENCORE, MOVE_PERISH_SONG, MOVE_SCALD, FALSE, FALSE, TYPE_GRASS
+# 601 "data/scripts/sample_sets_options.pory"
+	goto Common_EventScript_Sample_Sets_CheckPurchase
+	return
+
+Auto_EventScript_Sample_Sets_Politoed_Page1_3:
+# 603 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Politoed_Page1
+	return
+
+Auto_EventScript_Sample_Sets_Politoed_Page1_4:
+# 605 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Politoed_Page1
+	return
+
+
+Auto_EventScript_Sample_Sets_Porygon2_Page1::
+# 613 "data/scripts/sample_sets_options.pory"
+	multichoice2 0, 0, Auto_Text_Sample_Sets_Porygon2_Page1
+# 614 "data/scripts/sample_sets_options.pory"
+	switch VAR_RESULT
+# 616 "data/scripts/sample_sets_options.pory"
+	case 0, Auto_EventScript_Sample_Sets_Porygon2_Page1_2
+# 619 "data/scripts/sample_sets_options.pory"
+	case 1, Auto_EventScript_Sample_Sets_Porygon2_Page1_3
+# 622 "data/scripts/sample_sets_options.pory"
+	case MULTI_L_PRESSED, Auto_EventScript_Sample_Sets_Porygon2_Page1_4
+# 624 "data/scripts/sample_sets_options.pory"
+	case MULTI_R_PRESSED, Auto_EventScript_Sample_Sets_Porygon2_Page1_5
+# 627 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Page9
+	return
+
+Auto_EventScript_Sample_Sets_Porygon2_Page1_2:
+# 617 "data/scripts/sample_sets_options.pory"
+	givemon SPECIES_PORYGON2, 65, ITEM_EVIOLITE, ITEM_SPORT_BALL, NATURE_MODEST, 1, 0, 244, 0, 92, 4, 116, 52, 31, 0, 31, 31, 31, 31, MOVE_TERA_BLAST, MOVE_ICE_BEAM, MOVE_TRICK_ROOM, MOVE_RECOVER, FALSE, FALSE, TYPE_FLYING
+# 618 "data/scripts/sample_sets_options.pory"
+	goto Common_EventScript_Sample_Sets_CheckPurchase
+	return
+
+Auto_EventScript_Sample_Sets_Porygon2_Page1_3:
+# 620 "data/scripts/sample_sets_options.pory"
 	givemon SPECIES_PORYGON2, 65, ITEM_EVIOLITE, ITEM_SPORT_BALL, NATURE_QUIET, 1, 0, 244, 0, 92, 0, 116, 52, 31, 0, 31, 0, 31, 31, MOVE_TERA_BLAST, MOVE_ICE_BEAM, MOVE_TRICK_ROOM, MOVE_RECOVER, FALSE, FALSE, TYPE_FLYING
-# 510 "data/scripts/sample_sets_options.pory"
+# 621 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
 
 Auto_EventScript_Sample_Sets_Porygon2_Page1_4:
-# 512 "data/scripts/sample_sets_options.pory"
+# 623 "data/scripts/sample_sets_options.pory"
 	goto Auto_EventScript_Sample_Sets_Porygon2_Page1
 	return
 
 Auto_EventScript_Sample_Sets_Porygon2_Page1_5:
-# 514 "data/scripts/sample_sets_options.pory"
+# 625 "data/scripts/sample_sets_options.pory"
 	goto Auto_EventScript_Sample_Sets_Porygon2_Page1
 	return
 
 
 Auto_EventScript_Sample_Sets_Raging_Bolt_Page1::
-# 522 "data/scripts/sample_sets_options.pory"
+# 633 "data/scripts/sample_sets_options.pory"
 	multichoice2 0, 0, Auto_Text_Sample_Sets_Raging_Bolt_Page1
-# 523 "data/scripts/sample_sets_options.pory"
+# 634 "data/scripts/sample_sets_options.pory"
 	switch VAR_RESULT
-# 525 "data/scripts/sample_sets_options.pory"
+# 636 "data/scripts/sample_sets_options.pory"
 	case 0, Auto_EventScript_Sample_Sets_Raging_Bolt_Page1_2
-# 528 "data/scripts/sample_sets_options.pory"
+# 639 "data/scripts/sample_sets_options.pory"
 	case 1, Auto_EventScript_Sample_Sets_Raging_Bolt_Page1_3
-# 531 "data/scripts/sample_sets_options.pory"
+# 642 "data/scripts/sample_sets_options.pory"
 	case MULTI_L_PRESSED, Auto_EventScript_Sample_Sets_Raging_Bolt_Page1_4
-# 533 "data/scripts/sample_sets_options.pory"
+# 644 "data/scripts/sample_sets_options.pory"
 	case MULTI_R_PRESSED, Auto_EventScript_Sample_Sets_Raging_Bolt_Page1_5
-# 536 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Page7
+# 647 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Page9
 	return
 
 Auto_EventScript_Sample_Sets_Raging_Bolt_Page1_2:
-# 526 "data/scripts/sample_sets_options.pory"
+# 637 "data/scripts/sample_sets_options.pory"
 	givemon SPECIES_RAGING_BOLT, 65, ITEM_LIFE_ORB, ITEM_SPORT_BALL, NATURE_MODEST, 0, 0, 148, 0, 36, 180, 100, 44, 31, 0, 31, 31, 31, 31, MOVE_PROTECT, MOVE_THUNDERBOLT, MOVE_DRACO_METEOR, MOVE_THUNDERCLAP, FALSE, FALSE, TYPE_ELECTRIC
-# 527 "data/scripts/sample_sets_options.pory"
+# 638 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
 
 Auto_EventScript_Sample_Sets_Raging_Bolt_Page1_3:
-# 529 "data/scripts/sample_sets_options.pory"
+# 640 "data/scripts/sample_sets_options.pory"
 	givemon SPECIES_RAGING_BOLT, 65, ITEM_ASSAULT_VEST, ITEM_SPORT_BALL, NATURE_MODEST, 0, 0, 244, 0, 124, 4, 100, 36, 31, 0, 31, 31, 31, 31, MOVE_SNARL, MOVE_THUNDERBOLT, MOVE_DRACO_METEOR, MOVE_THUNDERCLAP, FALSE, FALSE, TYPE_ELECTRIC
-# 530 "data/scripts/sample_sets_options.pory"
+# 641 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
 
 Auto_EventScript_Sample_Sets_Raging_Bolt_Page1_4:
-# 532 "data/scripts/sample_sets_options.pory"
+# 643 "data/scripts/sample_sets_options.pory"
 	goto Auto_EventScript_Sample_Sets_Raging_Bolt_Page1
 	return
 
 Auto_EventScript_Sample_Sets_Raging_Bolt_Page1_5:
-# 534 "data/scripts/sample_sets_options.pory"
+# 645 "data/scripts/sample_sets_options.pory"
 	goto Auto_EventScript_Sample_Sets_Raging_Bolt_Page1
 	return
 
 
 Auto_EventScript_Sample_Sets_Regidrago_Page1::
-# 542 "data/scripts/sample_sets_options.pory"
+# 653 "data/scripts/sample_sets_options.pory"
 	multichoice2 0, 0, Auto_Text_Sample_Sets_Regidrago_Page1
-# 543 "data/scripts/sample_sets_options.pory"
+# 654 "data/scripts/sample_sets_options.pory"
 	switch VAR_RESULT
-# 545 "data/scripts/sample_sets_options.pory"
+# 656 "data/scripts/sample_sets_options.pory"
 	case 0, Auto_EventScript_Sample_Sets_Regidrago_Page1_2
-# 548 "data/scripts/sample_sets_options.pory"
+# 659 "data/scripts/sample_sets_options.pory"
 	case MULTI_L_PRESSED, Auto_EventScript_Sample_Sets_Regidrago_Page1_3
-# 550 "data/scripts/sample_sets_options.pory"
+# 661 "data/scripts/sample_sets_options.pory"
 	case MULTI_R_PRESSED, Auto_EventScript_Sample_Sets_Regidrago_Page1_4
-# 553 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Page7
+# 664 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Page9
 	return
 
 Auto_EventScript_Sample_Sets_Regidrago_Page1_2:
-# 546 "data/scripts/sample_sets_options.pory"
+# 657 "data/scripts/sample_sets_options.pory"
 	givemon SPECIES_REGIDRAGO, 65, ITEM_DRAGON_FANG, ITEM_SPORT_BALL, NATURE_MODEST, 0, 0, 12, 0, 4, 252, 236, 4, 31, 0, 31, 31, 31, 31, MOVE_PROTECT, MOVE_DRAGON_ENERGY, MOVE_DRACO_METEOR, MOVE_EARTH_POWER, FALSE, FALSE, TYPE_STEEL
-# 547 "data/scripts/sample_sets_options.pory"
+# 658 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
 
 Auto_EventScript_Sample_Sets_Regidrago_Page1_3:
-# 549 "data/scripts/sample_sets_options.pory"
+# 660 "data/scripts/sample_sets_options.pory"
 	goto Auto_EventScript_Sample_Sets_Regidrago_Page1
 	return
 
 Auto_EventScript_Sample_Sets_Regidrago_Page1_4:
-# 551 "data/scripts/sample_sets_options.pory"
+# 662 "data/scripts/sample_sets_options.pory"
 	goto Auto_EventScript_Sample_Sets_Regidrago_Page1
 	return
 
 
 Auto_EventScript_Sample_Sets_Rillaboom_Page1::
-# 559 "data/scripts/sample_sets_options.pory"
+# 670 "data/scripts/sample_sets_options.pory"
 	multichoice2 0, 0, Auto_Text_Sample_Sets_Rillaboom_Page1
-# 560 "data/scripts/sample_sets_options.pory"
+# 671 "data/scripts/sample_sets_options.pory"
 	switch VAR_RESULT
-# 562 "data/scripts/sample_sets_options.pory"
+# 673 "data/scripts/sample_sets_options.pory"
 	case 0, Auto_EventScript_Sample_Sets_Rillaboom_Page1_2
-# 565 "data/scripts/sample_sets_options.pory"
+# 676 "data/scripts/sample_sets_options.pory"
 	case 1, Auto_EventScript_Sample_Sets_Rillaboom_Page1_3
-# 568 "data/scripts/sample_sets_options.pory"
+# 679 "data/scripts/sample_sets_options.pory"
 	case MULTI_L_PRESSED, Auto_EventScript_Sample_Sets_Rillaboom_Page1_4
-# 570 "data/scripts/sample_sets_options.pory"
+# 681 "data/scripts/sample_sets_options.pory"
 	case MULTI_R_PRESSED, Auto_EventScript_Sample_Sets_Rillaboom_Page1_5
-# 573 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Page7
+# 684 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Page9
 	return
 
 Auto_EventScript_Sample_Sets_Rillaboom_Page1_2:
-# 563 "data/scripts/sample_sets_options.pory"
+# 674 "data/scripts/sample_sets_options.pory"
 	givemon SPECIES_RILLABOOM, 65, ITEM_ASSAULT_VEST, ITEM_SPORT_BALL, NATURE_ADAMANT, 1, 1, 140, 116, 12, 4, 0, 236, 31, 31, 31, 31, 31, 31, MOVE_U_TURN, MOVE_WOOD_HAMMER, MOVE_GRASSY_GLIDE, MOVE_FAKE_OUT, FALSE, FALSE, TYPE_FIRE
-# 564 "data/scripts/sample_sets_options.pory"
+# 675 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
 
 Auto_EventScript_Sample_Sets_Rillaboom_Page1_3:
-# 566 "data/scripts/sample_sets_options.pory"
+# 677 "data/scripts/sample_sets_options.pory"
 	givemon SPECIES_RILLABOOM, 65, ITEM_ASSAULT_VEST, ITEM_SPORT_BALL, NATURE_ADAMANT, 1, 1, 140, 196, 12, 4, 0, 156, 31, 31, 31, 31, 31, 31, MOVE_U_TURN, MOVE_WOOD_HAMMER, MOVE_GRASSY_GLIDE, MOVE_FAKE_OUT, FALSE, FALSE, TYPE_FIRE
-# 567 "data/scripts/sample_sets_options.pory"
+# 678 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
 
 Auto_EventScript_Sample_Sets_Rillaboom_Page1_4:
-# 569 "data/scripts/sample_sets_options.pory"
+# 680 "data/scripts/sample_sets_options.pory"
 	goto Auto_EventScript_Sample_Sets_Rillaboom_Page1
 	return
 
 Auto_EventScript_Sample_Sets_Rillaboom_Page1_5:
-# 571 "data/scripts/sample_sets_options.pory"
+# 682 "data/scripts/sample_sets_options.pory"
 	goto Auto_EventScript_Sample_Sets_Rillaboom_Page1
 	return
 
 
-Auto_EventScript_Sample_Sets_Metagross_Page1::
-# 579 "data/scripts/sample_sets_options.pory"
-	multichoice2 0, 0, Auto_Text_Sample_Sets_Metagross_Page1
-# 580 "data/scripts/sample_sets_options.pory"
-	switch VAR_RESULT
-# 582 "data/scripts/sample_sets_options.pory"
-	case 0, Auto_EventScript_Sample_Sets_Metagross_Page1_2
-# 585 "data/scripts/sample_sets_options.pory"
-	case MULTI_L_PRESSED, Auto_EventScript_Sample_Sets_Metagross_Page1_3
-# 587 "data/scripts/sample_sets_options.pory"
-	case MULTI_R_PRESSED, Auto_EventScript_Sample_Sets_Metagross_Page1_4
-# 590 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Page6
-	return
-
-Auto_EventScript_Sample_Sets_Metagross_Page1_2:
-# 583 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_METAGROSS, 65, ITEM_METAGROSSITE, ITEM_SPORT_BALL, NATURE_ADAMANT, 0, 0, 124, 196, 12, 140, 0, 36, 31, 31, 31, 31, 31, 31, MOVE_PROTECT, MOVE_IRON_HEAD, MOVE_ICE_PUNCH, MOVE_STOMPING_TANTRUM, FALSE, FALSE, TYPE_FIRE
-# 584 "data/scripts/sample_sets_options.pory"
-	goto Common_EventScript_Sample_Sets_CheckPurchase
-	return
-
-Auto_EventScript_Sample_Sets_Metagross_Page1_3:
-# 586 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Metagross_Page1
-	return
-
-Auto_EventScript_Sample_Sets_Metagross_Page1_4:
-# 588 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Metagross_Page1
-	return
-
-
 Auto_EventScript_Sample_Sets_Miraidon_Page1::
-# 596 "data/scripts/sample_sets_options.pory"
+# 690 "data/scripts/sample_sets_options.pory"
 	multichoice2 0, 0, Auto_Text_Sample_Sets_Miraidon_Page1
-# 597 "data/scripts/sample_sets_options.pory"
+# 691 "data/scripts/sample_sets_options.pory"
 	switch VAR_RESULT
-# 599 "data/scripts/sample_sets_options.pory"
+# 693 "data/scripts/sample_sets_options.pory"
 	case 0, Auto_EventScript_Sample_Sets_Miraidon_Page1_2
-# 602 "data/scripts/sample_sets_options.pory"
+# 696 "data/scripts/sample_sets_options.pory"
 	case MULTI_L_PRESSED, Auto_EventScript_Sample_Sets_Miraidon_Page1_3
-# 604 "data/scripts/sample_sets_options.pory"
+# 698 "data/scripts/sample_sets_options.pory"
 	case MULTI_R_PRESSED, Auto_EventScript_Sample_Sets_Miraidon_Page1_4
-# 607 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Page6
+# 701 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Page8
 	return
 
 Auto_EventScript_Sample_Sets_Miraidon_Page1_2:
-# 600 "data/scripts/sample_sets_options.pory"
+# 694 "data/scripts/sample_sets_options.pory"
 	givemon SPECIES_MIRAIDON, 65, ITEM_CHOICE_SPECS, ITEM_SPORT_BALL, NATURE_MODEST, 0, 0, 92, 0, 4, 212, 196, 4, 31, 31, 31, 31, 31, 31, MOVE_VOLT_SWITCH, MOVE_ELECTRO_DRIFT, MOVE_DRACO_METEOR, MOVE_DAZZLING_GLEAM, FALSE, FALSE, TYPE_FAIRY
-# 601 "data/scripts/sample_sets_options.pory"
+# 695 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
 
 Auto_EventScript_Sample_Sets_Miraidon_Page1_3:
-# 603 "data/scripts/sample_sets_options.pory"
+# 697 "data/scripts/sample_sets_options.pory"
 	goto Auto_EventScript_Sample_Sets_Miraidon_Page1
 	return
 
 Auto_EventScript_Sample_Sets_Miraidon_Page1_4:
-# 605 "data/scripts/sample_sets_options.pory"
+# 699 "data/scripts/sample_sets_options.pory"
 	goto Auto_EventScript_Sample_Sets_Miraidon_Page1
 	return
 
 
 Auto_EventScript_Sample_Sets_Ogerpon_Cs_Page1::
-# 613 "data/scripts/sample_sets_options.pory"
+# 707 "data/scripts/sample_sets_options.pory"
 	multichoice2 0, 0, Auto_Text_Sample_Sets_Ogerpon_Cs_Page1
-# 614 "data/scripts/sample_sets_options.pory"
+# 708 "data/scripts/sample_sets_options.pory"
 	switch VAR_RESULT
-# 616 "data/scripts/sample_sets_options.pory"
+# 710 "data/scripts/sample_sets_options.pory"
 	case 0, Auto_EventScript_Sample_Sets_Ogerpon_Cs_Page1_2
-# 619 "data/scripts/sample_sets_options.pory"
+# 713 "data/scripts/sample_sets_options.pory"
 	case MULTI_L_PRESSED, Auto_EventScript_Sample_Sets_Ogerpon_Cs_Page1_3
-# 621 "data/scripts/sample_sets_options.pory"
+# 715 "data/scripts/sample_sets_options.pory"
 	case MULTI_R_PRESSED, Auto_EventScript_Sample_Sets_Ogerpon_Cs_Page1_4
-# 624 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Page6
+# 718 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Page8
 	return
 
 Auto_EventScript_Sample_Sets_Ogerpon_Cs_Page1_2:
-# 617 "data/scripts/sample_sets_options.pory"
+# 711 "data/scripts/sample_sets_options.pory"
 	givemon SPECIES_OGERPON_CORNERSTONE, 65, ITEM_CORNERSTONE_MASK, ITEM_SPORT_BALL, NATURE_JOLLY, 0, 1, 0, 252, 4, 252, 0, 0, 31, 31, 31, 31, 31, 31, MOVE_SPIKY_SHIELD, MOVE_FOLLOW_ME, MOVE_POWER_WHIP, MOVE_IVY_CUDGEL, FALSE, FALSE, TYPE_ROCK
-# 618 "data/scripts/sample_sets_options.pory"
+# 712 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
 
 Auto_EventScript_Sample_Sets_Ogerpon_Cs_Page1_3:
-# 620 "data/scripts/sample_sets_options.pory"
+# 714 "data/scripts/sample_sets_options.pory"
 	goto Auto_EventScript_Sample_Sets_Ogerpon_Cs_Page1
 	return
 
 Auto_EventScript_Sample_Sets_Ogerpon_Cs_Page1_4:
-# 622 "data/scripts/sample_sets_options.pory"
+# 716 "data/scripts/sample_sets_options.pory"
 	goto Auto_EventScript_Sample_Sets_Ogerpon_Cs_Page1
 	return
 
 
 Auto_EventScript_Sample_Sets_Ogerpon_Hf_Page1::
-# 630 "data/scripts/sample_sets_options.pory"
+# 724 "data/scripts/sample_sets_options.pory"
 	multichoice2 0, 0, Auto_Text_Sample_Sets_Ogerpon_Hf_Page1
-# 631 "data/scripts/sample_sets_options.pory"
+# 725 "data/scripts/sample_sets_options.pory"
 	switch VAR_RESULT
-# 633 "data/scripts/sample_sets_options.pory"
+# 727 "data/scripts/sample_sets_options.pory"
 	case 0, Auto_EventScript_Sample_Sets_Ogerpon_Hf_Page1_2
-# 636 "data/scripts/sample_sets_options.pory"
+# 730 "data/scripts/sample_sets_options.pory"
 	case 1, Auto_EventScript_Sample_Sets_Ogerpon_Hf_Page1_3
-# 639 "data/scripts/sample_sets_options.pory"
+# 733 "data/scripts/sample_sets_options.pory"
 	case MULTI_L_PRESSED, Auto_EventScript_Sample_Sets_Ogerpon_Hf_Page1_4
-# 641 "data/scripts/sample_sets_options.pory"
+# 735 "data/scripts/sample_sets_options.pory"
 	case MULTI_R_PRESSED, Auto_EventScript_Sample_Sets_Ogerpon_Hf_Page1_5
-# 644 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Page6
+# 738 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Page8
 	return
 
 Auto_EventScript_Sample_Sets_Ogerpon_Hf_Page1_2:
-# 634 "data/scripts/sample_sets_options.pory"
+# 728 "data/scripts/sample_sets_options.pory"
 	givemon SPECIES_OGERPON_HEARTHFLAME, 65, ITEM_HEARTHFLAME_MASK, ITEM_SPORT_BALL, NATURE_ADAMANT, 0, 1, 188, 76, 52, 188, 0, 4, 31, 31, 31, 31, 31, 31, MOVE_SPIKY_SHIELD, MOVE_FOLLOW_ME, MOVE_WOOD_HAMMER, MOVE_IVY_CUDGEL, FALSE, FALSE, TYPE_FIRE
-# 635 "data/scripts/sample_sets_options.pory"
+# 729 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
 
 Auto_EventScript_Sample_Sets_Ogerpon_Hf_Page1_3:
-# 637 "data/scripts/sample_sets_options.pory"
+# 731 "data/scripts/sample_sets_options.pory"
 	givemon SPECIES_OGERPON_HEARTHFLAME, 65, ITEM_HEARTHFLAME_MASK, ITEM_SPORT_BALL, NATURE_JOLLY, 0, 1, 28, 220, 4, 252, 0, 4, 31, 31, 31, 31, 31, 31, MOVE_SPIKY_SHIELD, MOVE_FOLLOW_ME, MOVE_WOOD_HAMMER, MOVE_IVY_CUDGEL, FALSE, FALSE, TYPE_FIRE
-# 638 "data/scripts/sample_sets_options.pory"
+# 732 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
 
 Auto_EventScript_Sample_Sets_Ogerpon_Hf_Page1_4:
-# 640 "data/scripts/sample_sets_options.pory"
+# 734 "data/scripts/sample_sets_options.pory"
 	goto Auto_EventScript_Sample_Sets_Ogerpon_Hf_Page1
 	return
 
 Auto_EventScript_Sample_Sets_Ogerpon_Hf_Page1_5:
-# 642 "data/scripts/sample_sets_options.pory"
+# 736 "data/scripts/sample_sets_options.pory"
 	goto Auto_EventScript_Sample_Sets_Ogerpon_Hf_Page1
 	return
 
 
 Auto_EventScript_Sample_Sets_Ogerpon_Ws_Page1::
-# 650 "data/scripts/sample_sets_options.pory"
+# 744 "data/scripts/sample_sets_options.pory"
 	multichoice2 0, 0, Auto_Text_Sample_Sets_Ogerpon_Ws_Page1
-# 651 "data/scripts/sample_sets_options.pory"
+# 745 "data/scripts/sample_sets_options.pory"
 	switch VAR_RESULT
-# 653 "data/scripts/sample_sets_options.pory"
+# 747 "data/scripts/sample_sets_options.pory"
 	case 0, Auto_EventScript_Sample_Sets_Ogerpon_Ws_Page1_2
-# 656 "data/scripts/sample_sets_options.pory"
+# 750 "data/scripts/sample_sets_options.pory"
 	case MULTI_L_PRESSED, Auto_EventScript_Sample_Sets_Ogerpon_Ws_Page1_3
-# 658 "data/scripts/sample_sets_options.pory"
+# 752 "data/scripts/sample_sets_options.pory"
 	case MULTI_R_PRESSED, Auto_EventScript_Sample_Sets_Ogerpon_Ws_Page1_4
-# 661 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Page6
+# 755 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Page8
 	return
 
 Auto_EventScript_Sample_Sets_Ogerpon_Ws_Page1_2:
-# 654 "data/scripts/sample_sets_options.pory"
+# 748 "data/scripts/sample_sets_options.pory"
 	givemon SPECIES_OGERPON_WELLSPRING, 65, ITEM_WELLSPRING_MASK, ITEM_SPORT_BALL, NATURE_JOLLY, 0, 1, 220, 60, 44, 180, 0, 4, 31, 31, 31, 31, 31, 31, MOVE_SPIKY_SHIELD, MOVE_FOLLOW_ME, MOVE_IVY_CUDGEL, MOVE_HORN_LEECH, FALSE, FALSE, TYPE_WATER
-# 655 "data/scripts/sample_sets_options.pory"
+# 749 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
 
 Auto_EventScript_Sample_Sets_Ogerpon_Ws_Page1_3:
-# 657 "data/scripts/sample_sets_options.pory"
+# 751 "data/scripts/sample_sets_options.pory"
 	goto Auto_EventScript_Sample_Sets_Ogerpon_Ws_Page1
 	return
 
 Auto_EventScript_Sample_Sets_Ogerpon_Ws_Page1_4:
-# 659 "data/scripts/sample_sets_options.pory"
+# 753 "data/scripts/sample_sets_options.pory"
 	goto Auto_EventScript_Sample_Sets_Ogerpon_Ws_Page1
 	return
 
 
-Auto_EventScript_Sample_Sets_Kyogre_Page1::
-# 667 "data/scripts/sample_sets_options.pory"
-	multichoice2 0, 0, Auto_Text_Sample_Sets_Kyogre_Page1
-# 668 "data/scripts/sample_sets_options.pory"
+Auto_EventScript_Sample_Sets_Pelipper_Page1::
+# 761 "data/scripts/sample_sets_options.pory"
+	multichoice2 0, 0, Auto_Text_Sample_Sets_Pelipper_Page1
+# 762 "data/scripts/sample_sets_options.pory"
 	switch VAR_RESULT
-# 670 "data/scripts/sample_sets_options.pory"
-	case 0, Auto_EventScript_Sample_Sets_Kyogre_Page1_2
-# 673 "data/scripts/sample_sets_options.pory"
-	case 1, Auto_EventScript_Sample_Sets_Kyogre_Page1_3
-# 676 "data/scripts/sample_sets_options.pory"
-	case 2, Auto_EventScript_Sample_Sets_Kyogre_Page1_4
-# 679 "data/scripts/sample_sets_options.pory"
-	case MULTI_L_PRESSED, Auto_EventScript_Sample_Sets_Kyogre_Page1_5
-# 681 "data/scripts/sample_sets_options.pory"
-	case MULTI_R_PRESSED, Auto_EventScript_Sample_Sets_Kyogre_Page1_6
-# 684 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Page5
+# 764 "data/scripts/sample_sets_options.pory"
+	case 0, Auto_EventScript_Sample_Sets_Pelipper_Page1_2
+# 767 "data/scripts/sample_sets_options.pory"
+	case MULTI_L_PRESSED, Auto_EventScript_Sample_Sets_Pelipper_Page1_3
+# 769 "data/scripts/sample_sets_options.pory"
+	case MULTI_R_PRESSED, Auto_EventScript_Sample_Sets_Pelipper_Page1_4
+# 772 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Page8
 	return
 
-Auto_EventScript_Sample_Sets_Kyogre_Page1_2:
-# 671 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_KYOGRE, 65, ITEM_MYSTIC_WATER, ITEM_SPORT_BALL, NATURE_MODEST, 0, 0, 252, 0, 132, 44, 76, 4, 31, 0, 31, 31, 31, 31, MOVE_PROTECT, MOVE_WATER_SPOUT, MOVE_ORIGIN_PULSE, MOVE_ICE_BEAM, FALSE, FALSE, TYPE_GRASS
-# 672 "data/scripts/sample_sets_options.pory"
+Auto_EventScript_Sample_Sets_Pelipper_Page1_2:
+# 765 "data/scripts/sample_sets_options.pory"
+	givemon SPECIES_PELIPPER, 65, ITEM_FOCUS_SASH, ITEM_SPORT_BALL, NATURE_MODEST, 1, 0, 0, 0, 4, 252, 252, 0, 31, 31, 31, 31, 31, 31, MOVE_PROTECT, MOVE_WIDE_GUARD, MOVE_WEATHER_BALL, MOVE_HURRICANE, FALSE, FALSE, TYPE_GHOST
+# 766 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
 
-Auto_EventScript_Sample_Sets_Kyogre_Page1_3:
-# 674 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_KYOGRE, 65, ITEM_BLUE_ORB, ITEM_SPORT_BALL, NATURE_MODEST, 0, 0, 252, 0, 164, 12, 76, 4, 31, 0, 31, 31, 31, 31, MOVE_PROTECT, MOVE_WATER_SPOUT, MOVE_ORIGIN_PULSE, MOVE_ICE_BEAM, FALSE, FALSE, TYPE_GRASS
-# 675 "data/scripts/sample_sets_options.pory"
-	goto Common_EventScript_Sample_Sets_CheckPurchase
+Auto_EventScript_Sample_Sets_Pelipper_Page1_3:
+# 768 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Pelipper_Page1
 	return
 
-Auto_EventScript_Sample_Sets_Kyogre_Page1_4:
-# 677 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_KYOGRE, 65, ITEM_CHOICE_SCARF, ITEM_SPORT_BALL, NATURE_MODEST, 0, 0, 4, 0, 4, 252, 244, 4, 31, 0, 31, 31, 31, 31, MOVE_WATER_SPOUT, MOVE_ORIGIN_PULSE, MOVE_SCALD, MOVE_THUNDER, FALSE, FALSE, FALSE
-# 678 "data/scripts/sample_sets_options.pory"
-	goto Common_EventScript_Sample_Sets_CheckPurchase
-	return
-
-Auto_EventScript_Sample_Sets_Kyogre_Page1_5:
-# 680 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Kyogre_Page1
-	return
-
-Auto_EventScript_Sample_Sets_Kyogre_Page1_6:
-# 682 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Kyogre_Page1
+Auto_EventScript_Sample_Sets_Pelipper_Page1_4:
+# 770 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Pelipper_Page1
 	return
 
 
-Auto_EventScript_Sample_Sets_Lando_T_Page1::
-# 690 "data/scripts/sample_sets_options.pory"
-	multichoice2 0, 0, Auto_Text_Sample_Sets_Lando_T_Page1
-# 691 "data/scripts/sample_sets_options.pory"
+Auto_EventScript_Sample_Sets_Latias_Page1::
+# 778 "data/scripts/sample_sets_options.pory"
+	multichoice2 0, 0, Auto_Text_Sample_Sets_Latias_Page1
+# 779 "data/scripts/sample_sets_options.pory"
 	switch VAR_RESULT
-# 693 "data/scripts/sample_sets_options.pory"
-	case 0, Auto_EventScript_Sample_Sets_Lando_T_Page1_2
-# 696 "data/scripts/sample_sets_options.pory"
-	case 1, Auto_EventScript_Sample_Sets_Lando_T_Page1_3
-# 699 "data/scripts/sample_sets_options.pory"
-	case 2, Auto_EventScript_Sample_Sets_Lando_T_Page1_4
-# 702 "data/scripts/sample_sets_options.pory"
-	case MULTI_L_PRESSED, Auto_EventScript_Sample_Sets_Lando_T_Page1_5
-# 704 "data/scripts/sample_sets_options.pory"
-	case MULTI_R_PRESSED, Auto_EventScript_Sample_Sets_Lando_T_Page1_6
-# 707 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Page5
+# 781 "data/scripts/sample_sets_options.pory"
+	case 0, Auto_EventScript_Sample_Sets_Latias_Page1_2
+# 784 "data/scripts/sample_sets_options.pory"
+	case MULTI_L_PRESSED, Auto_EventScript_Sample_Sets_Latias_Page1_3
+# 786 "data/scripts/sample_sets_options.pory"
+	case MULTI_R_PRESSED, Auto_EventScript_Sample_Sets_Latias_Page1_4
+# 789 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Page7
 	return
 
-Auto_EventScript_Sample_Sets_Lando_T_Page1_2:
-# 694 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_LANDORUS_THERIAN, 65, ITEM_CHOICE_SCARF, ITEM_SPORT_BALL, NATURE_ADAMANT, 0, 0, 12, 196, 4, 252, 0, 44, 31, 31, 31, 31, 31, 31, MOVE_U_TURN, MOVE_STOMPING_TANTRUM, MOVE_ROCK_SLIDE, MOVE_TERA_BLAST, FALSE, FALSE, TYPE_FLYING
-# 695 "data/scripts/sample_sets_options.pory"
+Auto_EventScript_Sample_Sets_Latias_Page1_2:
+# 782 "data/scripts/sample_sets_options.pory"
+	givemon SPECIES_LATIAS, 65, ITEM_LATIASITE, ITEM_SPORT_BALL, NATURE_MODEST, 0, 1, 252, 0, 60, 108, 76, 12, 31, 0, 31, 31, 31, 31, MOVE_PSYSHOCK, MOVE_ICE_BEAM, MOVE_CALM_MIND, MOVE_RECOVER, FALSE, FALSE, FALSE
+# 783 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
 
-Auto_EventScript_Sample_Sets_Lando_T_Page1_3:
-# 697 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_LANDORUS_THERIAN, 65, ITEM_ASSAULT_VEST, ITEM_SPORT_BALL, NATURE_ADAMANT, 0, 0, 12, 196, 4, 252, 0, 44, 31, 31, 31, 31, 31, 31, MOVE_U_TURN, MOVE_EARTHQUAKE, MOVE_ROCK_SLIDE, MOVE_SUPERPOWER, FALSE, FALSE, TYPE_GROUND
-# 698 "data/scripts/sample_sets_options.pory"
-	goto Common_EventScript_Sample_Sets_CheckPurchase
+Auto_EventScript_Sample_Sets_Latias_Page1_3:
+# 785 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Latias_Page1
 	return
 
-Auto_EventScript_Sample_Sets_Lando_T_Page1_4:
-# 700 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_LANDORUS_THERIAN, 65, ITEM_GROUNDIUM_Z, ITEM_SPORT_BALL, NATURE_ADAMANT, 0, 0, 156, 116, 36, 92, 0, 108, 31, 31, 31, 31, 31, 31, MOVE_PROTECT, MOVE_SWORDS_DANCE, MOVE_EARTHQUAKE, MOVE_ROCK_SLIDE, FALSE, FALSE, TYPE_GROUND
-# 701 "data/scripts/sample_sets_options.pory"
-	goto Common_EventScript_Sample_Sets_CheckPurchase
-	return
-
-Auto_EventScript_Sample_Sets_Lando_T_Page1_5:
-# 703 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Lando_T_Page1
-	return
-
-Auto_EventScript_Sample_Sets_Lando_T_Page1_6:
-# 705 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Lando_T_Page1
-	return
-
-
-Auto_EventScript_Sample_Sets_Landorus_Page1::
-# 713 "data/scripts/sample_sets_options.pory"
-	multichoice2 0, 0, Auto_Text_Sample_Sets_Landorus_Page1
-# 714 "data/scripts/sample_sets_options.pory"
-	switch VAR_RESULT
-# 716 "data/scripts/sample_sets_options.pory"
-	case 0, Auto_EventScript_Sample_Sets_Landorus_Page1_2
-# 719 "data/scripts/sample_sets_options.pory"
-	case 1, Auto_EventScript_Sample_Sets_Landorus_Page1_3
-# 722 "data/scripts/sample_sets_options.pory"
-	case MULTI_L_PRESSED, Auto_EventScript_Sample_Sets_Landorus_Page1_4
-# 724 "data/scripts/sample_sets_options.pory"
-	case MULTI_R_PRESSED, Auto_EventScript_Sample_Sets_Landorus_Page1_5
-# 727 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Page5
-	return
-
-Auto_EventScript_Sample_Sets_Landorus_Page1_2:
-# 717 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_LANDORUS, 65, ITEM_LIFE_ORB, ITEM_SPORT_BALL, NATURE_MODEST, 1, 0, 132, 0, 4, 252, 116, 4, 31, 0, 31, 31, 31, 31, MOVE_PROTECT, MOVE_SANDSEAR_STORM, MOVE_EARTH_POWER, MOVE_SLUDGE_BOMB, FALSE, FALSE, TYPE_POISON
-# 718 "data/scripts/sample_sets_options.pory"
-	goto Common_EventScript_Sample_Sets_CheckPurchase
-	return
-
-Auto_EventScript_Sample_Sets_Landorus_Page1_3:
-# 720 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_LANDORUS, 65, ITEM_FOCUS_SASH, ITEM_SPORT_BALL, NATURE_TIMID, 1, 0, 4, 0, 0, 252, 252, 0, 31, 0, 31, 31, 31, 31, MOVE_PROTECT, MOVE_SANDSEAR_STORM, MOVE_EARTH_POWER, MOVE_SLUDGE_BOMB, FALSE, FALSE, TYPE_POISON
-# 721 "data/scripts/sample_sets_options.pory"
-	goto Common_EventScript_Sample_Sets_CheckPurchase
-	return
-
-Auto_EventScript_Sample_Sets_Landorus_Page1_4:
-# 723 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Landorus_Page1
-	return
-
-Auto_EventScript_Sample_Sets_Landorus_Page1_5:
-# 725 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Landorus_Page1
+Auto_EventScript_Sample_Sets_Latias_Page1_4:
+# 787 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Latias_Page1
 	return
 
 
 Auto_EventScript_Sample_Sets_Lunala_Page1::
-# 733 "data/scripts/sample_sets_options.pory"
+# 795 "data/scripts/sample_sets_options.pory"
 	multichoice2 0, 0, Auto_Text_Sample_Sets_Lunala_Page1
-# 734 "data/scripts/sample_sets_options.pory"
+# 796 "data/scripts/sample_sets_options.pory"
 	switch VAR_RESULT
-# 736 "data/scripts/sample_sets_options.pory"
+# 798 "data/scripts/sample_sets_options.pory"
 	case 0, Auto_EventScript_Sample_Sets_Lunala_Page1_2
-# 739 "data/scripts/sample_sets_options.pory"
+# 801 "data/scripts/sample_sets_options.pory"
 	case MULTI_L_PRESSED, Auto_EventScript_Sample_Sets_Lunala_Page1_3
-# 741 "data/scripts/sample_sets_options.pory"
+# 803 "data/scripts/sample_sets_options.pory"
 	case MULTI_R_PRESSED, Auto_EventScript_Sample_Sets_Lunala_Page1_4
-# 744 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Page5
+# 806 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Page7
 	return
 
 Auto_EventScript_Sample_Sets_Lunala_Page1_2:
-# 737 "data/scripts/sample_sets_options.pory"
+# 799 "data/scripts/sample_sets_options.pory"
 	givemon SPECIES_LUNALA, 65, ITEM_POWER_HERB, ITEM_SPORT_BALL, NATURE_MODEST, 0, 0, 140, 0, 132, 52, 180, 4, 31, 0, 31, 31, 31, 31, MOVE_WIDE_GUARD, MOVE_MOONGEIST_BEAM, MOVE_METEOR_BEAM, MOVE_TRICK_ROOM, FALSE, FALSE, TYPE_DARK
-# 738 "data/scripts/sample_sets_options.pory"
+# 800 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
 
 Auto_EventScript_Sample_Sets_Lunala_Page1_3:
-# 740 "data/scripts/sample_sets_options.pory"
+# 802 "data/scripts/sample_sets_options.pory"
 	goto Auto_EventScript_Sample_Sets_Lunala_Page1
 	return
 
 Auto_EventScript_Sample_Sets_Lunala_Page1_4:
-# 742 "data/scripts/sample_sets_options.pory"
+# 804 "data/scripts/sample_sets_options.pory"
 	goto Auto_EventScript_Sample_Sets_Lunala_Page1
 	return
 
 
 Auto_EventScript_Sample_Sets_Manectric_Page1::
-# 750 "data/scripts/sample_sets_options.pory"
+# 812 "data/scripts/sample_sets_options.pory"
 	multichoice2 0, 0, Auto_Text_Sample_Sets_Manectric_Page1
-# 751 "data/scripts/sample_sets_options.pory"
+# 813 "data/scripts/sample_sets_options.pory"
 	switch VAR_RESULT
-# 753 "data/scripts/sample_sets_options.pory"
+# 815 "data/scripts/sample_sets_options.pory"
 	case 0, Auto_EventScript_Sample_Sets_Manectric_Page1_2
-# 756 "data/scripts/sample_sets_options.pory"
+# 818 "data/scripts/sample_sets_options.pory"
 	case MULTI_L_PRESSED, Auto_EventScript_Sample_Sets_Manectric_Page1_3
-# 758 "data/scripts/sample_sets_options.pory"
+# 820 "data/scripts/sample_sets_options.pory"
 	case MULTI_R_PRESSED, Auto_EventScript_Sample_Sets_Manectric_Page1_4
-# 761 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Page5
+# 823 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Page7
 	return
 
 Auto_EventScript_Sample_Sets_Manectric_Page1_2:
-# 754 "data/scripts/sample_sets_options.pory"
+# 816 "data/scripts/sample_sets_options.pory"
 	givemon SPECIES_MANECTRIC, 65, ITEM_MANECTITE, ITEM_SPORT_BALL, NATURE_TIMID, 1, 1, 244, 0, 4, 220, 36, 4, 31, 31, 31, 31, 31, 31, MOVE_PROTECT, MOVE_VOLT_SWITCH, MOVE_OVERHEAT, MOVE_SNARL, FALSE, FALSE, TYPE_GRASS
-# 755 "data/scripts/sample_sets_options.pory"
+# 817 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
 
 Auto_EventScript_Sample_Sets_Manectric_Page1_3:
-# 757 "data/scripts/sample_sets_options.pory"
+# 819 "data/scripts/sample_sets_options.pory"
 	goto Auto_EventScript_Sample_Sets_Manectric_Page1
 	return
 
 Auto_EventScript_Sample_Sets_Manectric_Page1_4:
-# 759 "data/scripts/sample_sets_options.pory"
+# 821 "data/scripts/sample_sets_options.pory"
 	goto Auto_EventScript_Sample_Sets_Manectric_Page1
 	return
 
 
-Auto_EventScript_Sample_Sets_Indeedee_F_Page1::
-# 767 "data/scripts/sample_sets_options.pory"
-	multichoice2 0, 0, Auto_Text_Sample_Sets_Indeedee_F_Page1
-# 768 "data/scripts/sample_sets_options.pory"
+Auto_EventScript_Sample_Sets_Mawile_Page1::
+# 829 "data/scripts/sample_sets_options.pory"
+	multichoice2 0, 0, Auto_Text_Sample_Sets_Mawile_Page1
+# 830 "data/scripts/sample_sets_options.pory"
 	switch VAR_RESULT
-# 770 "data/scripts/sample_sets_options.pory"
-	case 0, Auto_EventScript_Sample_Sets_Indeedee_F_Page1_2
-# 773 "data/scripts/sample_sets_options.pory"
-	case MULTI_L_PRESSED, Auto_EventScript_Sample_Sets_Indeedee_F_Page1_3
-# 775 "data/scripts/sample_sets_options.pory"
-	case MULTI_R_PRESSED, Auto_EventScript_Sample_Sets_Indeedee_F_Page1_4
-# 778 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Page4
+# 832 "data/scripts/sample_sets_options.pory"
+	case 0, Auto_EventScript_Sample_Sets_Mawile_Page1_2
+# 835 "data/scripts/sample_sets_options.pory"
+	case 1, Auto_EventScript_Sample_Sets_Mawile_Page1_3
+# 838 "data/scripts/sample_sets_options.pory"
+	case MULTI_L_PRESSED, Auto_EventScript_Sample_Sets_Mawile_Page1_4
+# 840 "data/scripts/sample_sets_options.pory"
+	case MULTI_R_PRESSED, Auto_EventScript_Sample_Sets_Mawile_Page1_5
+# 843 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Page7
 	return
 
-Auto_EventScript_Sample_Sets_Indeedee_F_Page1_2:
-# 771 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_INDEEDEE_F, 65, ITEM_PSYCHIC_SEED, ITEM_SPORT_BALL, NATURE_CALM, 2, 1, 252, 0, 204, 4, 4, 44, 31, 31, 31, 31, 31, 31, MOVE_FOLLOW_ME, MOVE_HELPING_HAND, MOVE_TRICK_ROOM, MOVE_PSYCHIC, FALSE, FALSE, TYPE_WATER
-# 772 "data/scripts/sample_sets_options.pory"
+Auto_EventScript_Sample_Sets_Mawile_Page1_2:
+# 833 "data/scripts/sample_sets_options.pory"
+	givemon SPECIES_MAWILE, 65, ITEM_MAWILITE, ITEM_SPORT_BALL, NATURE_BRAVE, 1, 1, 156, 196, 0, 0, 0, 156, 31, 31, 31, 0, 31, 31, MOVE_PROTECT, MOVE_IRON_HEAD, MOVE_PLAY_ROUGH, MOVE_SUCKER_PUNCH, FALSE, FALSE, TYPE_FIRE
+# 834 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
 
-Auto_EventScript_Sample_Sets_Indeedee_F_Page1_3:
-# 774 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Indeedee_F_Page1
+Auto_EventScript_Sample_Sets_Mawile_Page1_3:
+# 836 "data/scripts/sample_sets_options.pory"
+	givemon SPECIES_MAWILE, 65, ITEM_MAWILITE, ITEM_SPORT_BALL, NATURE_ADAMANT, 1, 0, 156, 196, 4, 4, 0, 148, 31, 31, 31, 31, 31, 31, MOVE_PROTECT, MOVE_IRON_HEAD, MOVE_PLAY_ROUGH, MOVE_SUCKER_PUNCH, FALSE, FALSE, TYPE_FIRE
+# 837 "data/scripts/sample_sets_options.pory"
+	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
 
-Auto_EventScript_Sample_Sets_Indeedee_F_Page1_4:
-# 776 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Indeedee_F_Page1
+Auto_EventScript_Sample_Sets_Mawile_Page1_4:
+# 839 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Mawile_Page1
+	return
+
+Auto_EventScript_Sample_Sets_Mawile_Page1_5:
+# 841 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Mawile_Page1
 	return
 
 
-Auto_EventScript_Sample_Sets_Iron_Hands_Page1::
-# 784 "data/scripts/sample_sets_options.pory"
-	multichoice2 0, 0, Auto_Text_Sample_Sets_Iron_Hands_Page1
-# 785 "data/scripts/sample_sets_options.pory"
+Auto_EventScript_Sample_Sets_Metagross_Page1::
+# 849 "data/scripts/sample_sets_options.pory"
+	multichoice2 0, 0, Auto_Text_Sample_Sets_Metagross_Page1
+# 850 "data/scripts/sample_sets_options.pory"
 	switch VAR_RESULT
-# 787 "data/scripts/sample_sets_options.pory"
-	case 0, Auto_EventScript_Sample_Sets_Iron_Hands_Page1_2
-# 790 "data/scripts/sample_sets_options.pory"
-	case 1, Auto_EventScript_Sample_Sets_Iron_Hands_Page1_3
-# 793 "data/scripts/sample_sets_options.pory"
-	case MULTI_L_PRESSED, Auto_EventScript_Sample_Sets_Iron_Hands_Page1_4
-# 795 "data/scripts/sample_sets_options.pory"
-	case MULTI_R_PRESSED, Auto_EventScript_Sample_Sets_Iron_Hands_Page1_5
-# 798 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Page4
+# 852 "data/scripts/sample_sets_options.pory"
+	case 0, Auto_EventScript_Sample_Sets_Metagross_Page1_2
+# 855 "data/scripts/sample_sets_options.pory"
+	case MULTI_L_PRESSED, Auto_EventScript_Sample_Sets_Metagross_Page1_3
+# 857 "data/scripts/sample_sets_options.pory"
+	case MULTI_R_PRESSED, Auto_EventScript_Sample_Sets_Metagross_Page1_4
+# 860 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Page7
 	return
 
-Auto_EventScript_Sample_Sets_Iron_Hands_Page1_2:
-# 788 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_IRON_HANDS, 65, ITEM_ASSAULT_VEST, ITEM_SPORT_BALL, NATURE_BRAVE, 0, 0, 100, 156, 0, 0, 0, 252, 31, 31, 31, 31, 31, 31, MOVE_DRAIN_PUNCH, MOVE_WILD_CHARGE, MOVE_HEAVY_SLAM, MOVE_FAKE_OUT, FALSE, FALSE, TYPE_GRASS
-# 789 "data/scripts/sample_sets_options.pory"
+Auto_EventScript_Sample_Sets_Metagross_Page1_2:
+# 853 "data/scripts/sample_sets_options.pory"
+	givemon SPECIES_METAGROSS, 65, ITEM_METAGROSSITE, ITEM_SPORT_BALL, NATURE_ADAMANT, 0, 0, 124, 196, 12, 140, 0, 36, 31, 31, 31, 31, 31, 31, MOVE_PROTECT, MOVE_IRON_HEAD, MOVE_ICE_PUNCH, MOVE_STOMPING_TANTRUM, FALSE, FALSE, TYPE_FIRE
+# 854 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
 
-Auto_EventScript_Sample_Sets_Iron_Hands_Page1_3:
-# 791 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_IRON_HANDS, 65, ITEM_ASSAULT_VEST, ITEM_SPORT_BALL, NATURE_ADAMANT, 0, 0, 60, 156, 36, 4, 0, 252, 31, 31, 31, 31, 31, 31, MOVE_DRAIN_PUNCH, MOVE_WILD_CHARGE, MOVE_HEAVY_SLAM, MOVE_FAKE_OUT, FALSE, FALSE, TYPE_GRASS
-# 792 "data/scripts/sample_sets_options.pory"
-	goto Common_EventScript_Sample_Sets_CheckPurchase
+Auto_EventScript_Sample_Sets_Metagross_Page1_3:
+# 856 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Metagross_Page1
 	return
 
-Auto_EventScript_Sample_Sets_Iron_Hands_Page1_4:
-# 794 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Iron_Hands_Page1
-	return
-
-Auto_EventScript_Sample_Sets_Iron_Hands_Page1_5:
-# 796 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Iron_Hands_Page1
-	return
-
-
-Auto_EventScript_Sample_Sets_Kangaskhan_Page1::
-# 804 "data/scripts/sample_sets_options.pory"
-	multichoice2 0, 0, Auto_Text_Sample_Sets_Kangaskhan_Page1
-# 805 "data/scripts/sample_sets_options.pory"
-	switch VAR_RESULT
-# 807 "data/scripts/sample_sets_options.pory"
-	case 0, Auto_EventScript_Sample_Sets_Kangaskhan_Page1_2
-# 810 "data/scripts/sample_sets_options.pory"
-	case MULTI_L_PRESSED, Auto_EventScript_Sample_Sets_Kangaskhan_Page1_3
-# 812 "data/scripts/sample_sets_options.pory"
-	case MULTI_R_PRESSED, Auto_EventScript_Sample_Sets_Kangaskhan_Page1_4
-# 815 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Page4
-	return
-
-Auto_EventScript_Sample_Sets_Kangaskhan_Page1_2:
-# 808 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_KANGASKHAN, 65, ITEM_KANGASKHANITE, ITEM_SPORT_BALL, NATURE_ADAMANT, 1, 1, 36, 196, 20, 20, 0, 236, 31, 31, 31, 31, 31, 31, MOVE_RETURN, MOVE_LOW_KICK, MOVE_SUCKER_PUNCH, MOVE_FAKE_OUT, FALSE, FALSE, TYPE_GHOST
-# 809 "data/scripts/sample_sets_options.pory"
-	goto Common_EventScript_Sample_Sets_CheckPurchase
-	return
-
-Auto_EventScript_Sample_Sets_Kangaskhan_Page1_3:
-# 811 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Kangaskhan_Page1
-	return
-
-Auto_EventScript_Sample_Sets_Kangaskhan_Page1_4:
-# 813 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Kangaskhan_Page1
+Auto_EventScript_Sample_Sets_Metagross_Page1_4:
+# 858 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Metagross_Page1
 	return
 
 
 Auto_EventScript_Sample_Sets_Kingambit_Page1::
-# 821 "data/scripts/sample_sets_options.pory"
+# 866 "data/scripts/sample_sets_options.pory"
 	multichoice2 0, 0, Auto_Text_Sample_Sets_Kingambit_Page1
-# 822 "data/scripts/sample_sets_options.pory"
+# 867 "data/scripts/sample_sets_options.pory"
 	switch VAR_RESULT
-# 824 "data/scripts/sample_sets_options.pory"
+# 869 "data/scripts/sample_sets_options.pory"
 	case 0, Auto_EventScript_Sample_Sets_Kingambit_Page1_2
-# 827 "data/scripts/sample_sets_options.pory"
+# 872 "data/scripts/sample_sets_options.pory"
 	case 1, Auto_EventScript_Sample_Sets_Kingambit_Page1_3
-# 830 "data/scripts/sample_sets_options.pory"
+# 875 "data/scripts/sample_sets_options.pory"
 	case MULTI_L_PRESSED, Auto_EventScript_Sample_Sets_Kingambit_Page1_4
-# 832 "data/scripts/sample_sets_options.pory"
+# 877 "data/scripts/sample_sets_options.pory"
 	case MULTI_R_PRESSED, Auto_EventScript_Sample_Sets_Kingambit_Page1_5
-# 835 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Page4
+# 880 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Page6
 	return
 
 Auto_EventScript_Sample_Sets_Kingambit_Page1_2:
-# 825 "data/scripts/sample_sets_options.pory"
+# 870 "data/scripts/sample_sets_options.pory"
 	givemon SPECIES_KINGAMBIT, 65, ITEM_BLACK_GLASSES, ITEM_SPORT_BALL, NATURE_ADAMANT, 0, 1, 204, 196, 4, 12, 0, 92, 31, 31, 31, 31, 31, 31, MOVE_PROTECT, MOVE_SWORDS_DANCE, MOVE_KOWTOW_CLEAVE, MOVE_SUCKER_PUNCH, FALSE, FALSE, TYPE_DARK
-# 826 "data/scripts/sample_sets_options.pory"
+# 871 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
 
 Auto_EventScript_Sample_Sets_Kingambit_Page1_3:
-# 828 "data/scripts/sample_sets_options.pory"
+# 873 "data/scripts/sample_sets_options.pory"
 	givemon SPECIES_KINGAMBIT, 65, ITEM_ASSAULT_VEST, ITEM_SPORT_BALL, NATURE_ADAMANT, 0, 0, 204, 196, 4, 12, 0, 92, 31, 31, 31, 31, 31, 31, MOVE_KOWTOW_CLEAVE, MOVE_SUCKER_PUNCH, MOVE_TERA_BLAST, MOVE_IRON_HEAD, FALSE, FALSE, TYPE_FLYING
-# 829 "data/scripts/sample_sets_options.pory"
+# 874 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
 
 Auto_EventScript_Sample_Sets_Kingambit_Page1_4:
-# 831 "data/scripts/sample_sets_options.pory"
+# 876 "data/scripts/sample_sets_options.pory"
 	goto Auto_EventScript_Sample_Sets_Kingambit_Page1
 	return
 
 Auto_EventScript_Sample_Sets_Kingambit_Page1_5:
-# 833 "data/scripts/sample_sets_options.pory"
+# 878 "data/scripts/sample_sets_options.pory"
 	goto Auto_EventScript_Sample_Sets_Kingambit_Page1
 	return
 
 
 Auto_EventScript_Sample_Sets_Koraidon_Page1::
-# 841 "data/scripts/sample_sets_options.pory"
+# 886 "data/scripts/sample_sets_options.pory"
 	multichoice2 0, 0, Auto_Text_Sample_Sets_Koraidon_Page1
-# 842 "data/scripts/sample_sets_options.pory"
+# 887 "data/scripts/sample_sets_options.pory"
 	switch VAR_RESULT
-# 844 "data/scripts/sample_sets_options.pory"
+# 889 "data/scripts/sample_sets_options.pory"
 	case 0, Auto_EventScript_Sample_Sets_Koraidon_Page1_2
-# 847 "data/scripts/sample_sets_options.pory"
+# 892 "data/scripts/sample_sets_options.pory"
 	case 1, Auto_EventScript_Sample_Sets_Koraidon_Page1_3
-# 850 "data/scripts/sample_sets_options.pory"
+# 895 "data/scripts/sample_sets_options.pory"
 	case MULTI_L_PRESSED, Auto_EventScript_Sample_Sets_Koraidon_Page1_4
-# 852 "data/scripts/sample_sets_options.pory"
+# 897 "data/scripts/sample_sets_options.pory"
 	case MULTI_R_PRESSED, Auto_EventScript_Sample_Sets_Koraidon_Page1_5
-# 855 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Page4
+# 900 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Page6
 	return
 
 Auto_EventScript_Sample_Sets_Koraidon_Page1_2:
-# 845 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_KORAIDON, 50, ITEM_LIFE_ORB, ITEM_SPORT_BALL, NATURE_ADAMANT, 0, 0, 108, 116, 4, 212, 0, 68, 31, 31, 31, 31, 31, 31, MOVE_PROTECT, MOVE_FLAME_CHARGE, MOVE_CLOSE_COMBAT, MOVE_FLARE_BLITZ, FALSE, FALSE, TYPE_FIRE
-# 846 "data/scripts/sample_sets_options.pory"
+# 890 "data/scripts/sample_sets_options.pory"
+	givemon SPECIES_KORAIDON, 65, ITEM_LIFE_ORB, ITEM_SPORT_BALL, NATURE_ADAMANT, 0, 0, 108, 116, 4, 212, 0, 68, 31, 31, 31, 31, 31, 31, MOVE_PROTECT, MOVE_FLAME_CHARGE, MOVE_CLOSE_COMBAT, MOVE_FLARE_BLITZ, FALSE, FALSE, TYPE_FIRE
+# 891 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
 
 Auto_EventScript_Sample_Sets_Koraidon_Page1_3:
-# 848 "data/scripts/sample_sets_options.pory"
+# 893 "data/scripts/sample_sets_options.pory"
 	givemon SPECIES_KORAIDON, 65, ITEM_LIFE_ORB, ITEM_SPORT_BALL, NATURE_JOLLY, 0, 0, 28, 220, 4, 252, 0, 4, 31, 31, 31, 31, 31, 31, MOVE_PROTECT, MOVE_FLAME_CHARGE, MOVE_CLOSE_COMBAT, MOVE_FLARE_BLITZ, FALSE, FALSE, TYPE_FIRE
-# 849 "data/scripts/sample_sets_options.pory"
+# 894 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
 
 Auto_EventScript_Sample_Sets_Koraidon_Page1_4:
-# 851 "data/scripts/sample_sets_options.pory"
+# 896 "data/scripts/sample_sets_options.pory"
 	goto Auto_EventScript_Sample_Sets_Koraidon_Page1
 	return
 
 Auto_EventScript_Sample_Sets_Koraidon_Page1_5:
-# 853 "data/scripts/sample_sets_options.pory"
+# 898 "data/scripts/sample_sets_options.pory"
 	goto Auto_EventScript_Sample_Sets_Koraidon_Page1
 	return
 
 
-Auto_EventScript_Sample_Sets_Gengar_Page1::
-# 861 "data/scripts/sample_sets_options.pory"
-	multichoice2 0, 0, Auto_Text_Sample_Sets_Gengar_Page1
-# 862 "data/scripts/sample_sets_options.pory"
+Auto_EventScript_Sample_Sets_Kyogre_Page1::
+# 906 "data/scripts/sample_sets_options.pory"
+	multichoice2 0, 0, Auto_Text_Sample_Sets_Kyogre_Page1
+# 907 "data/scripts/sample_sets_options.pory"
 	switch VAR_RESULT
-# 864 "data/scripts/sample_sets_options.pory"
-	case 0, Auto_EventScript_Sample_Sets_Gengar_Page1_2
-# 867 "data/scripts/sample_sets_options.pory"
-	case MULTI_L_PRESSED, Auto_EventScript_Sample_Sets_Gengar_Page1_3
-# 869 "data/scripts/sample_sets_options.pory"
-	case MULTI_R_PRESSED, Auto_EventScript_Sample_Sets_Gengar_Page1_4
-# 872 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Page3
+# 909 "data/scripts/sample_sets_options.pory"
+	case 0, Auto_EventScript_Sample_Sets_Kyogre_Page1_2
+# 912 "data/scripts/sample_sets_options.pory"
+	case 1, Auto_EventScript_Sample_Sets_Kyogre_Page1_3
+# 915 "data/scripts/sample_sets_options.pory"
+	case 2, Auto_EventScript_Sample_Sets_Kyogre_Page1_4
+# 918 "data/scripts/sample_sets_options.pory"
+	case MULTI_L_PRESSED, Auto_EventScript_Sample_Sets_Kyogre_Page1_5
+# 920 "data/scripts/sample_sets_options.pory"
+	case MULTI_R_PRESSED, Auto_EventScript_Sample_Sets_Kyogre_Page1_6
+# 923 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Page6
 	return
 
-Auto_EventScript_Sample_Sets_Gengar_Page1_2:
-# 865 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_GENGAR, 65, ITEM_GENGARITE, ITEM_SPORT_BALL, NATURE_TIMID, 0, 1, 252, 0, 68, 180, 4, 4, 31, 0, 31, 31, 31, 31, MOVE_PROTECT, MOVE_SHADOW_BALL, MOVE_PERISH_SONG, MOVE_DISABLE, FALSE, FALSE, TYPE_WATER
-# 866 "data/scripts/sample_sets_options.pory"
+Auto_EventScript_Sample_Sets_Kyogre_Page1_2:
+# 910 "data/scripts/sample_sets_options.pory"
+	givemon SPECIES_KYOGRE, 65, ITEM_MYSTIC_WATER, ITEM_SPORT_BALL, NATURE_MODEST, 0, 0, 252, 0, 132, 44, 76, 4, 31, 0, 31, 31, 31, 31, MOVE_PROTECT, MOVE_WATER_SPOUT, MOVE_ORIGIN_PULSE, MOVE_ICE_BEAM, FALSE, FALSE, TYPE_GRASS
+# 911 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
 
-Auto_EventScript_Sample_Sets_Gengar_Page1_3:
-# 868 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Gengar_Page1
+Auto_EventScript_Sample_Sets_Kyogre_Page1_3:
+# 913 "data/scripts/sample_sets_options.pory"
+	givemon SPECIES_KYOGRE, 65, ITEM_BLUE_ORB, ITEM_SPORT_BALL, NATURE_MODEST, 0, 0, 252, 0, 164, 12, 76, 4, 31, 0, 31, 31, 31, 31, MOVE_PROTECT, MOVE_WATER_SPOUT, MOVE_ORIGIN_PULSE, MOVE_ICE_BEAM, FALSE, FALSE, TYPE_GRASS
+# 914 "data/scripts/sample_sets_options.pory"
+	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
 
-Auto_EventScript_Sample_Sets_Gengar_Page1_4:
-# 870 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Gengar_Page1
+Auto_EventScript_Sample_Sets_Kyogre_Page1_4:
+# 916 "data/scripts/sample_sets_options.pory"
+	givemon SPECIES_KYOGRE, 65, ITEM_CHOICE_SCARF, ITEM_SPORT_BALL, NATURE_MODEST, 0, 0, 4, 0, 4, 252, 244, 4, 31, 0, 31, 31, 31, 31, MOVE_WATER_SPOUT, MOVE_ORIGIN_PULSE, MOVE_SCALD, MOVE_THUNDER, FALSE, FALSE, FALSE
+# 917 "data/scripts/sample_sets_options.pory"
+	goto Common_EventScript_Sample_Sets_CheckPurchase
+	return
+
+Auto_EventScript_Sample_Sets_Kyogre_Page1_5:
+# 919 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Kyogre_Page1
+	return
+
+Auto_EventScript_Sample_Sets_Kyogre_Page1_6:
+# 921 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Kyogre_Page1
+	return
+
+
+Auto_EventScript_Sample_Sets_Lando_T_Page1::
+# 929 "data/scripts/sample_sets_options.pory"
+	multichoice2 0, 0, Auto_Text_Sample_Sets_Lando_T_Page1
+# 930 "data/scripts/sample_sets_options.pory"
+	switch VAR_RESULT
+# 932 "data/scripts/sample_sets_options.pory"
+	case 0, Auto_EventScript_Sample_Sets_Lando_T_Page1_2
+# 935 "data/scripts/sample_sets_options.pory"
+	case 1, Auto_EventScript_Sample_Sets_Lando_T_Page1_3
+# 938 "data/scripts/sample_sets_options.pory"
+	case 2, Auto_EventScript_Sample_Sets_Lando_T_Page1_4
+# 941 "data/scripts/sample_sets_options.pory"
+	case 3, Auto_EventScript_Sample_Sets_Lando_T_Page1_5
+# 944 "data/scripts/sample_sets_options.pory"
+	case MULTI_L_PRESSED, Auto_EventScript_Sample_Sets_Lando_T_Page1_6
+# 946 "data/scripts/sample_sets_options.pory"
+	case MULTI_R_PRESSED, Auto_EventScript_Sample_Sets_Lando_T_Page1_7
+# 949 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Page6
+	return
+
+Auto_EventScript_Sample_Sets_Lando_T_Page1_2:
+# 933 "data/scripts/sample_sets_options.pory"
+	givemon SPECIES_LANDORUS_THERIAN, 65, ITEM_CHOICE_SCARF, ITEM_SPORT_BALL, NATURE_ADAMANT, 0, 0, 12, 196, 4, 252, 0, 44, 31, 31, 31, 31, 31, 31, MOVE_U_TURN, MOVE_STOMPING_TANTRUM, MOVE_ROCK_SLIDE, MOVE_TERA_BLAST, FALSE, FALSE, TYPE_FLYING
+# 934 "data/scripts/sample_sets_options.pory"
+	goto Common_EventScript_Sample_Sets_CheckPurchase
+	return
+
+Auto_EventScript_Sample_Sets_Lando_T_Page1_3:
+# 936 "data/scripts/sample_sets_options.pory"
+	givemon SPECIES_LANDORUS_THERIAN, 65, ITEM_ASSAULT_VEST, ITEM_SPORT_BALL, NATURE_ADAMANT, 0, 0, 12, 196, 4, 252, 0, 44, 31, 31, 31, 31, 31, 31, MOVE_U_TURN, MOVE_EARTHQUAKE, MOVE_ROCK_SLIDE, MOVE_SUPERPOWER, FALSE, FALSE, TYPE_WATER
+# 937 "data/scripts/sample_sets_options.pory"
+	goto Common_EventScript_Sample_Sets_CheckPurchase
+	return
+
+Auto_EventScript_Sample_Sets_Lando_T_Page1_4:
+# 939 "data/scripts/sample_sets_options.pory"
+	givemon SPECIES_LANDORUS_THERIAN, 65, ITEM_GROUNDIUM_Z, ITEM_SPORT_BALL, NATURE_ADAMANT, 0, 0, 156, 116, 36, 92, 0, 108, 31, 31, 31, 31, 31, 31, MOVE_PROTECT, MOVE_SWORDS_DANCE, MOVE_EARTHQUAKE, MOVE_ROCK_SLIDE, FALSE, FALSE, TYPE_WATER
+# 940 "data/scripts/sample_sets_options.pory"
+	goto Common_EventScript_Sample_Sets_CheckPurchase
+	return
+
+Auto_EventScript_Sample_Sets_Lando_T_Page1_5:
+# 942 "data/scripts/sample_sets_options.pory"
+	givemon SPECIES_LANDORUS_THERIAN, 65, ITEM_GROUNDIUM_Z, ITEM_SPORT_BALL, NATURE_ADAMANT, 0, 0, 20, 164, 4, 252, 0, 68, 31, 31, 31, 31, 31, 31, MOVE_PROTECT, MOVE_EARTHQUAKE, MOVE_ROCK_SLIDE, MOVE_SUPERPOWER, FALSE, FALSE, TYPE_WATER
+# 943 "data/scripts/sample_sets_options.pory"
+	goto Common_EventScript_Sample_Sets_CheckPurchase
+	return
+
+Auto_EventScript_Sample_Sets_Lando_T_Page1_6:
+# 945 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Lando_T_Page1
+	return
+
+Auto_EventScript_Sample_Sets_Lando_T_Page1_7:
+# 947 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Lando_T_Page1
+	return
+
+
+Auto_EventScript_Sample_Sets_Landorus_Page1::
+# 955 "data/scripts/sample_sets_options.pory"
+	multichoice2 0, 0, Auto_Text_Sample_Sets_Landorus_Page1
+# 956 "data/scripts/sample_sets_options.pory"
+	switch VAR_RESULT
+# 958 "data/scripts/sample_sets_options.pory"
+	case 0, Auto_EventScript_Sample_Sets_Landorus_Page1_2
+# 961 "data/scripts/sample_sets_options.pory"
+	case 1, Auto_EventScript_Sample_Sets_Landorus_Page1_3
+# 964 "data/scripts/sample_sets_options.pory"
+	case MULTI_L_PRESSED, Auto_EventScript_Sample_Sets_Landorus_Page1_4
+# 966 "data/scripts/sample_sets_options.pory"
+	case MULTI_R_PRESSED, Auto_EventScript_Sample_Sets_Landorus_Page1_5
+# 969 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Page6
+	return
+
+Auto_EventScript_Sample_Sets_Landorus_Page1_2:
+# 959 "data/scripts/sample_sets_options.pory"
+	givemon SPECIES_LANDORUS, 65, ITEM_LIFE_ORB, ITEM_SPORT_BALL, NATURE_MODEST, 1, 0, 132, 0, 4, 252, 116, 4, 31, 0, 31, 31, 31, 31, MOVE_PROTECT, MOVE_SANDSEAR_STORM, MOVE_EARTH_POWER, MOVE_SLUDGE_BOMB, FALSE, FALSE, TYPE_POISON
+# 960 "data/scripts/sample_sets_options.pory"
+	goto Common_EventScript_Sample_Sets_CheckPurchase
+	return
+
+Auto_EventScript_Sample_Sets_Landorus_Page1_3:
+# 962 "data/scripts/sample_sets_options.pory"
+	givemon SPECIES_LANDORUS, 65, ITEM_FOCUS_SASH, ITEM_SPORT_BALL, NATURE_TIMID, 1, 0, 4, 0, 0, 252, 252, 0, 31, 0, 31, 31, 31, 31, MOVE_PROTECT, MOVE_SANDSEAR_STORM, MOVE_EARTH_POWER, MOVE_SLUDGE_BOMB, FALSE, FALSE, TYPE_POISON
+# 963 "data/scripts/sample_sets_options.pory"
+	goto Common_EventScript_Sample_Sets_CheckPurchase
+	return
+
+Auto_EventScript_Sample_Sets_Landorus_Page1_4:
+# 965 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Landorus_Page1
+	return
+
+Auto_EventScript_Sample_Sets_Landorus_Page1_5:
+# 967 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Landorus_Page1
+	return
+
+
+Auto_EventScript_Sample_Sets_Indeedee_F_Page1::
+# 975 "data/scripts/sample_sets_options.pory"
+	multichoice2 0, 0, Auto_Text_Sample_Sets_Indeedee_F_Page1
+# 976 "data/scripts/sample_sets_options.pory"
+	switch VAR_RESULT
+# 978 "data/scripts/sample_sets_options.pory"
+	case 0, Auto_EventScript_Sample_Sets_Indeedee_F_Page1_2
+# 981 "data/scripts/sample_sets_options.pory"
+	case MULTI_L_PRESSED, Auto_EventScript_Sample_Sets_Indeedee_F_Page1_3
+# 983 "data/scripts/sample_sets_options.pory"
+	case MULTI_R_PRESSED, Auto_EventScript_Sample_Sets_Indeedee_F_Page1_4
+# 986 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Page5
+	return
+
+Auto_EventScript_Sample_Sets_Indeedee_F_Page1_2:
+# 979 "data/scripts/sample_sets_options.pory"
+	givemon SPECIES_INDEEDEE_F, 65, ITEM_PSYCHIC_SEED, ITEM_SPORT_BALL, NATURE_CALM, 2, 1, 252, 0, 204, 4, 4, 44, 31, 31, 31, 31, 31, 31, MOVE_FOLLOW_ME, MOVE_HELPING_HAND, MOVE_TRICK_ROOM, MOVE_PSYCHIC, FALSE, FALSE, TYPE_WATER
+# 980 "data/scripts/sample_sets_options.pory"
+	goto Common_EventScript_Sample_Sets_CheckPurchase
+	return
+
+Auto_EventScript_Sample_Sets_Indeedee_F_Page1_3:
+# 982 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Indeedee_F_Page1
+	return
+
+Auto_EventScript_Sample_Sets_Indeedee_F_Page1_4:
+# 984 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Indeedee_F_Page1
+	return
+
+
+Auto_EventScript_Sample_Sets_Iron_Bundle_Page1::
+# 992 "data/scripts/sample_sets_options.pory"
+	multichoice2 0, 0, Auto_Text_Sample_Sets_Iron_Bundle_Page1
+# 993 "data/scripts/sample_sets_options.pory"
+	switch VAR_RESULT
+# 995 "data/scripts/sample_sets_options.pory"
+	case 0, Auto_EventScript_Sample_Sets_Iron_Bundle_Page1_2
+# 998 "data/scripts/sample_sets_options.pory"
+	case MULTI_L_PRESSED, Auto_EventScript_Sample_Sets_Iron_Bundle_Page1_3
+# 1000 "data/scripts/sample_sets_options.pory"
+	case MULTI_R_PRESSED, Auto_EventScript_Sample_Sets_Iron_Bundle_Page1_4
+# 1003 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Page5
+	return
+
+Auto_EventScript_Sample_Sets_Iron_Bundle_Page1_2:
+# 996 "data/scripts/sample_sets_options.pory"
+	givemon SPECIES_IRON_BUNDLE, 65, ITEM_FOCUS_SASH, ITEM_SPORT_BALL, NATURE_TIMID, 0, 0, 0, 0, 0, 252, 252, 4, 31, 0, 31, 31, 31, 31, MOVE_PROTECT, MOVE_ICY_WIND, MOVE_FREEZE_DRY, MOVE_HYDRO_PUMP, FALSE, FALSE, TYPE_GRASS
+# 997 "data/scripts/sample_sets_options.pory"
+	goto Common_EventScript_Sample_Sets_CheckPurchase
+	return
+
+Auto_EventScript_Sample_Sets_Iron_Bundle_Page1_3:
+# 999 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Iron_Bundle_Page1
+	return
+
+Auto_EventScript_Sample_Sets_Iron_Bundle_Page1_4:
+# 1001 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Iron_Bundle_Page1
+	return
+
+
+Auto_EventScript_Sample_Sets_Iron_Hands_Page1::
+# 1009 "data/scripts/sample_sets_options.pory"
+	multichoice2 0, 0, Auto_Text_Sample_Sets_Iron_Hands_Page1
+# 1010 "data/scripts/sample_sets_options.pory"
+	switch VAR_RESULT
+# 1012 "data/scripts/sample_sets_options.pory"
+	case 0, Auto_EventScript_Sample_Sets_Iron_Hands_Page1_2
+# 1015 "data/scripts/sample_sets_options.pory"
+	case 1, Auto_EventScript_Sample_Sets_Iron_Hands_Page1_3
+# 1018 "data/scripts/sample_sets_options.pory"
+	case MULTI_L_PRESSED, Auto_EventScript_Sample_Sets_Iron_Hands_Page1_4
+# 1020 "data/scripts/sample_sets_options.pory"
+	case MULTI_R_PRESSED, Auto_EventScript_Sample_Sets_Iron_Hands_Page1_5
+# 1023 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Page5
+	return
+
+Auto_EventScript_Sample_Sets_Iron_Hands_Page1_2:
+# 1013 "data/scripts/sample_sets_options.pory"
+	givemon SPECIES_IRON_HANDS, 65, ITEM_ASSAULT_VEST, ITEM_SPORT_BALL, NATURE_BRAVE, 0, 0, 100, 156, 0, 0, 0, 252, 31, 31, 31, 31, 31, 31, MOVE_DRAIN_PUNCH, MOVE_WILD_CHARGE, MOVE_HEAVY_SLAM, MOVE_FAKE_OUT, FALSE, FALSE, TYPE_GRASS
+# 1014 "data/scripts/sample_sets_options.pory"
+	goto Common_EventScript_Sample_Sets_CheckPurchase
+	return
+
+Auto_EventScript_Sample_Sets_Iron_Hands_Page1_3:
+# 1016 "data/scripts/sample_sets_options.pory"
+	givemon SPECIES_IRON_HANDS, 65, ITEM_ASSAULT_VEST, ITEM_SPORT_BALL, NATURE_ADAMANT, 0, 0, 60, 156, 36, 4, 0, 252, 31, 31, 31, 31, 31, 31, MOVE_DRAIN_PUNCH, MOVE_WILD_CHARGE, MOVE_HEAVY_SLAM, MOVE_FAKE_OUT, FALSE, FALSE, TYPE_GRASS
+# 1017 "data/scripts/sample_sets_options.pory"
+	goto Common_EventScript_Sample_Sets_CheckPurchase
+	return
+
+Auto_EventScript_Sample_Sets_Iron_Hands_Page1_4:
+# 1019 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Iron_Hands_Page1
+	return
+
+Auto_EventScript_Sample_Sets_Iron_Hands_Page1_5:
+# 1021 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Iron_Hands_Page1
+	return
+
+
+Auto_EventScript_Sample_Sets_Kangaskhan_Page1::
+# 1029 "data/scripts/sample_sets_options.pory"
+	multichoice2 0, 0, Auto_Text_Sample_Sets_Kangaskhan_Page1
+# 1030 "data/scripts/sample_sets_options.pory"
+	switch VAR_RESULT
+# 1032 "data/scripts/sample_sets_options.pory"
+	case 0, Auto_EventScript_Sample_Sets_Kangaskhan_Page1_2
+# 1035 "data/scripts/sample_sets_options.pory"
+	case MULTI_L_PRESSED, Auto_EventScript_Sample_Sets_Kangaskhan_Page1_3
+# 1037 "data/scripts/sample_sets_options.pory"
+	case MULTI_R_PRESSED, Auto_EventScript_Sample_Sets_Kangaskhan_Page1_4
+# 1040 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Page5
+	return
+
+Auto_EventScript_Sample_Sets_Kangaskhan_Page1_2:
+# 1033 "data/scripts/sample_sets_options.pory"
+	givemon SPECIES_KANGASKHAN, 65, ITEM_KANGASKHANITE, ITEM_SPORT_BALL, NATURE_ADAMANT, 1, 1, 36, 196, 20, 20, 0, 236, 31, 31, 31, 31, 31, 31, MOVE_RETURN, MOVE_LOW_KICK, MOVE_SUCKER_PUNCH, MOVE_FAKE_OUT, FALSE, FALSE, TYPE_GHOST
+# 1034 "data/scripts/sample_sets_options.pory"
+	goto Common_EventScript_Sample_Sets_CheckPurchase
+	return
+
+Auto_EventScript_Sample_Sets_Kangaskhan_Page1_3:
+# 1036 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Kangaskhan_Page1
+	return
+
+Auto_EventScript_Sample_Sets_Kangaskhan_Page1_4:
+# 1038 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Kangaskhan_Page1
+	return
+
+
+Auto_EventScript_Sample_Sets_Kartana_Page1::
+# 1046 "data/scripts/sample_sets_options.pory"
+	multichoice2 0, 0, Auto_Text_Sample_Sets_Kartana_Page1
+# 1047 "data/scripts/sample_sets_options.pory"
+	switch VAR_RESULT
+# 1049 "data/scripts/sample_sets_options.pory"
+	case 0, Auto_EventScript_Sample_Sets_Kartana_Page1_2
+# 1052 "data/scripts/sample_sets_options.pory"
+	case MULTI_L_PRESSED, Auto_EventScript_Sample_Sets_Kartana_Page1_3
+# 1054 "data/scripts/sample_sets_options.pory"
+	case MULTI_R_PRESSED, Auto_EventScript_Sample_Sets_Kartana_Page1_4
+# 1057 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Page5
+	return
+
+Auto_EventScript_Sample_Sets_Kartana_Page1_2:
+# 1050 "data/scripts/sample_sets_options.pory"
+	givemon SPECIES_KARTANA, 65, ITEM_FOCUS_SASH, ITEM_SPORT_BALL, NATURE_JOLLY, 0, 0, 4, 252, 0, 252, 0, 0, 31, 31, 31, 31, 31, 31, MOVE_LEAF_BLADE, MOVE_SACRED_SWORD, MOVE_TAILWIND, MOVE_DETECT, FALSE, FALSE, FALSE
+# 1051 "data/scripts/sample_sets_options.pory"
+	goto Common_EventScript_Sample_Sets_CheckPurchase
+	return
+
+Auto_EventScript_Sample_Sets_Kartana_Page1_3:
+# 1053 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Kartana_Page1
+	return
+
+Auto_EventScript_Sample_Sets_Kartana_Page1_4:
+# 1055 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Kartana_Page1
 	return
 
 
 Auto_EventScript_Sample_Sets_Gholdengo_Page1::
-# 878 "data/scripts/sample_sets_options.pory"
+# 1063 "data/scripts/sample_sets_options.pory"
 	multichoice2 0, 0, Auto_Text_Sample_Sets_Gholdengo_Page1
-# 879 "data/scripts/sample_sets_options.pory"
+# 1064 "data/scripts/sample_sets_options.pory"
 	switch VAR_RESULT
-# 881 "data/scripts/sample_sets_options.pory"
+# 1066 "data/scripts/sample_sets_options.pory"
 	case 0, Auto_EventScript_Sample_Sets_Gholdengo_Page1_2
-# 884 "data/scripts/sample_sets_options.pory"
+# 1069 "data/scripts/sample_sets_options.pory"
 	case 1, Auto_EventScript_Sample_Sets_Gholdengo_Page1_3
-# 887 "data/scripts/sample_sets_options.pory"
+# 1072 "data/scripts/sample_sets_options.pory"
 	case 2, Auto_EventScript_Sample_Sets_Gholdengo_Page1_4
-# 890 "data/scripts/sample_sets_options.pory"
+# 1075 "data/scripts/sample_sets_options.pory"
 	case MULTI_L_PRESSED, Auto_EventScript_Sample_Sets_Gholdengo_Page1_5
-# 892 "data/scripts/sample_sets_options.pory"
+# 1077 "data/scripts/sample_sets_options.pory"
 	case MULTI_R_PRESSED, Auto_EventScript_Sample_Sets_Gholdengo_Page1_6
-# 895 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Page3
+# 1080 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Page4
 	return
 
 Auto_EventScript_Sample_Sets_Gholdengo_Page1_2:
-# 882 "data/scripts/sample_sets_options.pory"
+# 1067 "data/scripts/sample_sets_options.pory"
 	givemon SPECIES_GHOLDENGO, 65, ITEM_LIFE_ORB, ITEM_SPORT_BALL, NATURE_MODEST, 0, 0, 212, 0, 4, 60, 212, 20, 31, 0, 31, 31, 31, 31, MOVE_PROTECT, MOVE_NASTY_PLOT, MOVE_SHADOW_BALL, MOVE_MAKE_IT_RAIN, FALSE, FALSE, TYPE_WATER
-# 883 "data/scripts/sample_sets_options.pory"
+# 1068 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
 
 Auto_EventScript_Sample_Sets_Gholdengo_Page1_3:
-# 885 "data/scripts/sample_sets_options.pory"
+# 1070 "data/scripts/sample_sets_options.pory"
 	givemon SPECIES_GHOLDENGO, 65, ITEM_LEFTOVERS, ITEM_SPORT_BALL, NATURE_MODEST, 0, 0, 244, 0, 4, 36, 212, 12, 31, 0, 31, 31, 31, 31, MOVE_PROTECT, MOVE_NASTY_PLOT, MOVE_SHADOW_BALL, MOVE_MAKE_IT_RAIN, FALSE, FALSE, TYPE_WATER
-# 886 "data/scripts/sample_sets_options.pory"
+# 1071 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
 
 Auto_EventScript_Sample_Sets_Gholdengo_Page1_4:
-# 888 "data/scripts/sample_sets_options.pory"
+# 1073 "data/scripts/sample_sets_options.pory"
 	givemon SPECIES_GHOLDENGO, 65, ITEM_CHOICE_SPECS, ITEM_SPORT_BALL, NATURE_MODEST, 0, 0, 36, 0, 4, 252, 212, 4, 31, 0, 31, 31, 31, 31, MOVE_STEEL_BEAM, MOVE_SHADOW_BALL, MOVE_MAKE_IT_RAIN, MOVE_DAZZLING_GLEAM, FALSE, FALSE, TYPE_STEEL
-# 889 "data/scripts/sample_sets_options.pory"
+# 1074 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
 
 Auto_EventScript_Sample_Sets_Gholdengo_Page1_5:
-# 891 "data/scripts/sample_sets_options.pory"
+# 1076 "data/scripts/sample_sets_options.pory"
 	goto Auto_EventScript_Sample_Sets_Gholdengo_Page1
 	return
 
 Auto_EventScript_Sample_Sets_Gholdengo_Page1_6:
-# 893 "data/scripts/sample_sets_options.pory"
+# 1078 "data/scripts/sample_sets_options.pory"
 	goto Auto_EventScript_Sample_Sets_Gholdengo_Page1
 	return
 
 
 Auto_EventScript_Sample_Sets_Groudon_Page1::
-# 901 "data/scripts/sample_sets_options.pory"
+# 1086 "data/scripts/sample_sets_options.pory"
 	multichoice2 0, 0, Auto_Text_Sample_Sets_Groudon_Page1
-# 902 "data/scripts/sample_sets_options.pory"
+# 1087 "data/scripts/sample_sets_options.pory"
 	switch VAR_RESULT
-# 904 "data/scripts/sample_sets_options.pory"
+# 1089 "data/scripts/sample_sets_options.pory"
 	case 0, Auto_EventScript_Sample_Sets_Groudon_Page1_2
-# 907 "data/scripts/sample_sets_options.pory"
+# 1092 "data/scripts/sample_sets_options.pory"
 	case 1, Auto_EventScript_Sample_Sets_Groudon_Page1_3
-# 910 "data/scripts/sample_sets_options.pory"
+# 1095 "data/scripts/sample_sets_options.pory"
 	case 2, Auto_EventScript_Sample_Sets_Groudon_Page1_4
-# 913 "data/scripts/sample_sets_options.pory"
+# 1098 "data/scripts/sample_sets_options.pory"
 	case MULTI_L_PRESSED, Auto_EventScript_Sample_Sets_Groudon_Page1_5
-# 915 "data/scripts/sample_sets_options.pory"
+# 1100 "data/scripts/sample_sets_options.pory"
 	case MULTI_R_PRESSED, Auto_EventScript_Sample_Sets_Groudon_Page1_6
-# 918 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Page3
+# 1103 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Page4
 	return
 
 Auto_EventScript_Sample_Sets_Groudon_Page1_2:
-# 905 "data/scripts/sample_sets_options.pory"
+# 1090 "data/scripts/sample_sets_options.pory"
 	givemon SPECIES_GROUDON, 65, ITEM_CLEAR_AMULET, ITEM_SPORT_BALL, NATURE_ADAMANT, 0, 0, 252, 156, 4, 12, 0, 84, 31, 31, 31, 31, 31, 31, MOVE_PROTECT, MOVE_BULK_UP, MOVE_PRECIPICE_BLADES, MOVE_HEAT_CRASH, FALSE, FALSE, TYPE_FIRE
-# 906 "data/scripts/sample_sets_options.pory"
+# 1091 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
 
 Auto_EventScript_Sample_Sets_Groudon_Page1_3:
-# 908 "data/scripts/sample_sets_options.pory"
+# 1093 "data/scripts/sample_sets_options.pory"
 	givemon SPECIES_GROUDON, 65, ITEM_RED_ORB, ITEM_SPORT_BALL, NATURE_ADAMANT, 0, 0, 252, 156, 4, 12, 0, 84, 31, 31, 31, 31, 31, 31, MOVE_PROTECT, MOVE_SWORDS_DANCE, MOVE_PRECIPICE_BLADES, MOVE_FIRE_PUNCH, FALSE, FALSE, FALSE
-# 909 "data/scripts/sample_sets_options.pory"
+# 1094 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
 
 Auto_EventScript_Sample_Sets_Groudon_Page1_4:
-# 911 "data/scripts/sample_sets_options.pory"
+# 1096 "data/scripts/sample_sets_options.pory"
 	givemon SPECIES_GROUDON, 65, ITEM_RED_ORB, ITEM_SPORT_BALL, NATURE_TIMID, 0, 0, 4, 0, 4, 252, 244, 4, 31, 0, 31, 31, 31, 31, MOVE_PROTECT, MOVE_EARTH_POWER, MOVE_ERUPTION, MOVE_ROAR, FALSE, FALSE, FALSE
-# 912 "data/scripts/sample_sets_options.pory"
+# 1097 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
 
 Auto_EventScript_Sample_Sets_Groudon_Page1_5:
-# 914 "data/scripts/sample_sets_options.pory"
+# 1099 "data/scripts/sample_sets_options.pory"
 	goto Auto_EventScript_Sample_Sets_Groudon_Page1
 	return
 
 Auto_EventScript_Sample_Sets_Groudon_Page1_6:
-# 916 "data/scripts/sample_sets_options.pory"
+# 1101 "data/scripts/sample_sets_options.pory"
 	goto Auto_EventScript_Sample_Sets_Groudon_Page1
 	return
 
 
 Auto_EventScript_Sample_Sets_Hatterene_Page1::
-# 924 "data/scripts/sample_sets_options.pory"
+# 1109 "data/scripts/sample_sets_options.pory"
 	multichoice2 0, 0, Auto_Text_Sample_Sets_Hatterene_Page1
-# 925 "data/scripts/sample_sets_options.pory"
+# 1110 "data/scripts/sample_sets_options.pory"
 	switch VAR_RESULT
-# 927 "data/scripts/sample_sets_options.pory"
+# 1112 "data/scripts/sample_sets_options.pory"
 	case 0, Auto_EventScript_Sample_Sets_Hatterene_Page1_2
-# 930 "data/scripts/sample_sets_options.pory"
+# 1115 "data/scripts/sample_sets_options.pory"
 	case MULTI_L_PRESSED, Auto_EventScript_Sample_Sets_Hatterene_Page1_3
-# 932 "data/scripts/sample_sets_options.pory"
+# 1117 "data/scripts/sample_sets_options.pory"
 	case MULTI_R_PRESSED, Auto_EventScript_Sample_Sets_Hatterene_Page1_4
-# 935 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Page3
+# 1120 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Page4
 	return
 
 Auto_EventScript_Sample_Sets_Hatterene_Page1_2:
-# 928 "data/scripts/sample_sets_options.pory"
+# 1113 "data/scripts/sample_sets_options.pory"
 	givemon SPECIES_HATTERENE, 65, ITEM_LIFE_ORB, ITEM_SPORT_BALL, NATURE_QUIET, 2, 1, 212, 0, 84, 0, 188, 20, 31, 0, 31, 0, 31, 31, MOVE_PROTECT, MOVE_TRICK_ROOM, MOVE_EXPANDING_FORCE, MOVE_DAZZLING_GLEAM, FALSE, FALSE, TYPE_WATER
-# 929 "data/scripts/sample_sets_options.pory"
+# 1114 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
 
 Auto_EventScript_Sample_Sets_Hatterene_Page1_3:
-# 931 "data/scripts/sample_sets_options.pory"
+# 1116 "data/scripts/sample_sets_options.pory"
 	goto Auto_EventScript_Sample_Sets_Hatterene_Page1
 	return
 
 Auto_EventScript_Sample_Sets_Hatterene_Page1_4:
-# 933 "data/scripts/sample_sets_options.pory"
+# 1118 "data/scripts/sample_sets_options.pory"
 	goto Auto_EventScript_Sample_Sets_Hatterene_Page1
 	return
 
 
-Auto_EventScript_Sample_Sets_Incineroar_Page1::
-# 941 "data/scripts/sample_sets_options.pory"
-	multichoice2 0, 0, Auto_Text_Sample_Sets_Incineroar_Page1
-# 942 "data/scripts/sample_sets_options.pory"
+Auto_EventScript_Sample_Sets_Heatran_Page1::
+# 1126 "data/scripts/sample_sets_options.pory"
+	multichoice2 0, 0, Auto_Text_Sample_Sets_Heatran_Page1
+# 1127 "data/scripts/sample_sets_options.pory"
 	switch VAR_RESULT
-# 944 "data/scripts/sample_sets_options.pory"
+# 1129 "data/scripts/sample_sets_options.pory"
+	case 0, Auto_EventScript_Sample_Sets_Heatran_Page1_2
+# 1132 "data/scripts/sample_sets_options.pory"
+	case 1, Auto_EventScript_Sample_Sets_Heatran_Page1_3
+# 1135 "data/scripts/sample_sets_options.pory"
+	case MULTI_L_PRESSED, Auto_EventScript_Sample_Sets_Heatran_Page1_4
+# 1137 "data/scripts/sample_sets_options.pory"
+	case MULTI_R_PRESSED, Auto_EventScript_Sample_Sets_Heatran_Page1_5
+# 1140 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Page4
+	return
+
+Auto_EventScript_Sample_Sets_Heatran_Page1_2:
+# 1130 "data/scripts/sample_sets_options.pory"
+	givemon SPECIES_HEATRAN, 65, ITEM_SHUCA_BERRY, ITEM_SPORT_BALL, NATURE_MODEST, 0, 1, 244, 0, 4, 20, 236, 4, 31, 0, 31, 31, 31, 31, MOVE_HEAT_WAVE, MOVE_EARTH_POWER, MOVE_SUBSTITUTE, MOVE_PROTECT, FALSE, FALSE, TYPE_GRASS
+# 1131 "data/scripts/sample_sets_options.pory"
+	goto Common_EventScript_Sample_Sets_CheckPurchase
+	return
+
+Auto_EventScript_Sample_Sets_Heatran_Page1_3:
+# 1133 "data/scripts/sample_sets_options.pory"
+	givemon SPECIES_HEATRAN, 65, ITEM_LEFTOVERS, ITEM_SPORT_BALL, NATURE_MODEST, 0, 1, 252, 0, 36, 36, 180, 4, 31, 0, 31, 31, 31, 31, MOVE_PROTECT, MOVE_EARTH_POWER, MOVE_TERA_BLAST, MOVE_HEAT_WAVE, FALSE, FALSE, TYPE_GRASS
+# 1134 "data/scripts/sample_sets_options.pory"
+	goto Common_EventScript_Sample_Sets_CheckPurchase
+	return
+
+Auto_EventScript_Sample_Sets_Heatran_Page1_4:
+# 1136 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Heatran_Page1
+	return
+
+Auto_EventScript_Sample_Sets_Heatran_Page1_5:
+# 1138 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Heatran_Page1
+	return
+
+
+Auto_EventScript_Sample_Sets_Incineroar_Page1::
+# 1146 "data/scripts/sample_sets_options.pory"
+	multichoice2 0, 0, Auto_Text_Sample_Sets_Incineroar_Page1
+# 1147 "data/scripts/sample_sets_options.pory"
+	switch VAR_RESULT
+# 1149 "data/scripts/sample_sets_options.pory"
 	case 0, Auto_EventScript_Sample_Sets_Incineroar_Page1_2
-# 947 "data/scripts/sample_sets_options.pory"
+# 1152 "data/scripts/sample_sets_options.pory"
 	case 1, Auto_EventScript_Sample_Sets_Incineroar_Page1_3
-# 950 "data/scripts/sample_sets_options.pory"
-	case MULTI_L_PRESSED, Auto_EventScript_Sample_Sets_Incineroar_Page1_4
-# 952 "data/scripts/sample_sets_options.pory"
-	case MULTI_R_PRESSED, Auto_EventScript_Sample_Sets_Incineroar_Page1_5
-# 955 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Page3
+# 1155 "data/scripts/sample_sets_options.pory"
+	case 2, Auto_EventScript_Sample_Sets_Incineroar_Page1_4
+# 1158 "data/scripts/sample_sets_options.pory"
+	case MULTI_L_PRESSED, Auto_EventScript_Sample_Sets_Incineroar_Page1_5
+# 1160 "data/scripts/sample_sets_options.pory"
+	case MULTI_R_PRESSED, Auto_EventScript_Sample_Sets_Incineroar_Page1_6
+# 1163 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Page4
 	return
 
 Auto_EventScript_Sample_Sets_Incineroar_Page1_2:
-# 945 "data/scripts/sample_sets_options.pory"
+# 1150 "data/scripts/sample_sets_options.pory"
 	givemon SPECIES_INCINEROAR, 65, ITEM_SITRUS_BERRY, ITEM_SPORT_BALL, NATURE_ADAMANT, 1, 1, 236, 36, 4, 28, 0, 204, 31, 31, 31, 31, 31, 31, MOVE_PARTING_SHOT, MOVE_FLARE_BLITZ, MOVE_KNOCK_OFF, MOVE_FAKE_OUT, FALSE, FALSE, TYPE_GHOST
-# 946 "data/scripts/sample_sets_options.pory"
+# 1151 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
 
 Auto_EventScript_Sample_Sets_Incineroar_Page1_3:
-# 948 "data/scripts/sample_sets_options.pory"
+# 1153 "data/scripts/sample_sets_options.pory"
 	givemon SPECIES_INCINEROAR, 65, ITEM_ROCKY_HELMET, ITEM_SPORT_BALL, NATURE_ADAMANT, 1, 1, 236, 4, 236, 4, 0, 28, 31, 31, 31, 31, 31, 31, MOVE_PARTING_SHOT, MOVE_WILL_O_WISP, MOVE_KNOCK_OFF, MOVE_FAKE_OUT, FALSE, FALSE, TYPE_GHOST
-# 949 "data/scripts/sample_sets_options.pory"
+# 1154 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
 
 Auto_EventScript_Sample_Sets_Incineroar_Page1_4:
-# 951 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Incineroar_Page1
+# 1156 "data/scripts/sample_sets_options.pory"
+	givemon SPECIES_INCINEROAR, 65, ITEM_SAFETY_GOGGLES, ITEM_SPORT_BALL, NATURE_ADAMANT, 1, 0, 244, 36, 4, 4, 0, 220, 31, 31, 31, 31, 31, 31, MOVE_PARTING_SHOT, MOVE_FLARE_BLITZ, MOVE_KNOCK_OFF, MOVE_FAKE_OUT, FALSE, FALSE, TYPE_GHOST
+# 1157 "data/scripts/sample_sets_options.pory"
+	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
 
 Auto_EventScript_Sample_Sets_Incineroar_Page1_5:
-# 953 "data/scripts/sample_sets_options.pory"
+# 1159 "data/scripts/sample_sets_options.pory"
 	goto Auto_EventScript_Sample_Sets_Incineroar_Page1
 	return
 
-
-Auto_EventScript_Sample_Sets_Chien_Pao_Page1::
-# 961 "data/scripts/sample_sets_options.pory"
-	multichoice2 0, 0, Auto_Text_Sample_Sets_Chien_Pao_Page1
-# 962 "data/scripts/sample_sets_options.pory"
-	switch VAR_RESULT
-# 964 "data/scripts/sample_sets_options.pory"
-	case 0, Auto_EventScript_Sample_Sets_Chien_Pao_Page1_2
-# 967 "data/scripts/sample_sets_options.pory"
-	case MULTI_L_PRESSED, Auto_EventScript_Sample_Sets_Chien_Pao_Page1_3
-# 969 "data/scripts/sample_sets_options.pory"
-	case MULTI_R_PRESSED, Auto_EventScript_Sample_Sets_Chien_Pao_Page1_4
-# 972 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Page2
-	return
-
-Auto_EventScript_Sample_Sets_Chien_Pao_Page1_2:
-# 965 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_CHIEN_PAO, 65, ITEM_FOCUS_SASH, ITEM_SPORT_BALL, NATURE_JOLLY, 0, 0, 0, 252, 4, 252, 0, 0, 31, 31, 31, 31, 31, 31, MOVE_PROTECT, MOVE_ICICLE_CRASH, MOVE_SACRED_SWORD, MOVE_SUCKER_PUNCH, FALSE, FALSE, TYPE_GHOST
-# 966 "data/scripts/sample_sets_options.pory"
-	goto Common_EventScript_Sample_Sets_CheckPurchase
-	return
-
-Auto_EventScript_Sample_Sets_Chien_Pao_Page1_3:
-# 968 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Chien_Pao_Page1
-	return
-
-Auto_EventScript_Sample_Sets_Chien_Pao_Page1_4:
-# 970 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Chien_Pao_Page1
-	return
-
-
-Auto_EventScript_Sample_Sets_Cresselia_Page1::
-# 978 "data/scripts/sample_sets_options.pory"
-	multichoice2 0, 0, Auto_Text_Sample_Sets_Cresselia_Page1
-# 979 "data/scripts/sample_sets_options.pory"
-	switch VAR_RESULT
-# 981 "data/scripts/sample_sets_options.pory"
-	case 0, Auto_EventScript_Sample_Sets_Cresselia_Page1_2
-# 984 "data/scripts/sample_sets_options.pory"
-	case 1, Auto_EventScript_Sample_Sets_Cresselia_Page1_3
-# 987 "data/scripts/sample_sets_options.pory"
-	case 2, Auto_EventScript_Sample_Sets_Cresselia_Page1_4
-# 990 "data/scripts/sample_sets_options.pory"
-	case MULTI_L_PRESSED, Auto_EventScript_Sample_Sets_Cresselia_Page1_5
-# 992 "data/scripts/sample_sets_options.pory"
-	case MULTI_R_PRESSED, Auto_EventScript_Sample_Sets_Cresselia_Page1_6
-# 995 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Page2
-	return
-
-Auto_EventScript_Sample_Sets_Cresselia_Page1_2:
-# 982 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_CRESSELIA, 65, ITEM_ROCKY_HELMET, ITEM_SPORT_BALL, NATURE_BOLD, 0, 1, 252, 0, 156, 4, 4, 76, 31, 0, 31, 31, 31, 31, MOVE_LUNAR_BLESSING, MOVE_TRICK_ROOM, MOVE_HELPING_HAND, MOVE_MOONBLAST, FALSE, FALSE, TYPE_FAIRY
-# 983 "data/scripts/sample_sets_options.pory"
-	goto Common_EventScript_Sample_Sets_CheckPurchase
-	return
-
-Auto_EventScript_Sample_Sets_Cresselia_Page1_3:
-# 985 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_CRESSELIA, 65, ITEM_SAFETY_GOGGLES, ITEM_SPORT_BALL, NATURE_CALM, 0, 1, 252, 0, 172, 4, 4, 76, 31, 0, 31, 31, 31, 31, MOVE_LUNAR_BLESSING, MOVE_TRICK_ROOM, MOVE_HELPING_HAND, MOVE_MOONBLAST, FALSE, FALSE, TYPE_FAIRY
-# 986 "data/scripts/sample_sets_options.pory"
-	goto Common_EventScript_Sample_Sets_CheckPurchase
-	return
-
-Auto_EventScript_Sample_Sets_Cresselia_Page1_4:
-# 988 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_CRESSELIA, 65, ITEM_SAFETY_GOGGLES, ITEM_SPORT_BALL, NATURE_SASSY, 0, 1, 252, 0, 180, 0, 0, 76, 31, 0, 31, 0, 31, 31, MOVE_LUNAR_BLESSING, MOVE_TRICK_ROOM, MOVE_HELPING_HAND, MOVE_MOONBLAST, FALSE, FALSE, TYPE_FAIRY
-# 989 "data/scripts/sample_sets_options.pory"
-	goto Common_EventScript_Sample_Sets_CheckPurchase
-	return
-
-Auto_EventScript_Sample_Sets_Cresselia_Page1_5:
-# 991 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Cresselia_Page1
-	return
-
-Auto_EventScript_Sample_Sets_Cresselia_Page1_6:
-# 993 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Cresselia_Page1
+Auto_EventScript_Sample_Sets_Incineroar_Page1_6:
+# 1161 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Incineroar_Page1
 	return
 
 
 Auto_EventScript_Sample_Sets_Farigiraf_Page1::
-# 1001 "data/scripts/sample_sets_options.pory"
+# 1169 "data/scripts/sample_sets_options.pory"
 	multichoice2 0, 0, Auto_Text_Sample_Sets_Farigiraf_Page1
-# 1002 "data/scripts/sample_sets_options.pory"
+# 1170 "data/scripts/sample_sets_options.pory"
 	switch VAR_RESULT
-# 1004 "data/scripts/sample_sets_options.pory"
+# 1172 "data/scripts/sample_sets_options.pory"
 	case 0, Auto_EventScript_Sample_Sets_Farigiraf_Page1_2
-# 1007 "data/scripts/sample_sets_options.pory"
+# 1175 "data/scripts/sample_sets_options.pory"
 	case MULTI_L_PRESSED, Auto_EventScript_Sample_Sets_Farigiraf_Page1_3
-# 1009 "data/scripts/sample_sets_options.pory"
+# 1177 "data/scripts/sample_sets_options.pory"
 	case MULTI_R_PRESSED, Auto_EventScript_Sample_Sets_Farigiraf_Page1_4
-# 1012 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Page2
+# 1180 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Page3
 	return
 
 Auto_EventScript_Sample_Sets_Farigiraf_Page1_2:
-# 1005 "data/scripts/sample_sets_options.pory"
+# 1173 "data/scripts/sample_sets_options.pory"
 	givemon SPECIES_FARIGIRAF, 65, ITEM_SITRUS_BERRY, ITEM_SPORT_BALL, NATURE_CALM, 1, 1, 228, 0, 116, 4, 4, 156, 31, 0, 31, 31, 31, 31, MOVE_TRICK_ROOM, MOVE_HELPING_HAND, MOVE_HYPER_VOICE, MOVE_PSYCHIC, FALSE, FALSE, TYPE_WATER
-# 1006 "data/scripts/sample_sets_options.pory"
+# 1174 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
 
 Auto_EventScript_Sample_Sets_Farigiraf_Page1_3:
-# 1008 "data/scripts/sample_sets_options.pory"
+# 1176 "data/scripts/sample_sets_options.pory"
 	goto Auto_EventScript_Sample_Sets_Farigiraf_Page1
 	return
 
 Auto_EventScript_Sample_Sets_Farigiraf_Page1_4:
-# 1010 "data/scripts/sample_sets_options.pory"
+# 1178 "data/scripts/sample_sets_options.pory"
 	goto Auto_EventScript_Sample_Sets_Farigiraf_Page1
 	return
 
 
 Auto_EventScript_Sample_Sets_Flutter_Mane_Page1::
-# 1018 "data/scripts/sample_sets_options.pory"
+# 1186 "data/scripts/sample_sets_options.pory"
 	multichoice2 0, 0, Auto_Text_Sample_Sets_Flutter_Mane_Page1
-# 1019 "data/scripts/sample_sets_options.pory"
+# 1187 "data/scripts/sample_sets_options.pory"
 	switch VAR_RESULT
-# 1021 "data/scripts/sample_sets_options.pory"
+# 1189 "data/scripts/sample_sets_options.pory"
 	case 0, Auto_EventScript_Sample_Sets_Flutter_Mane_Page1_2
-# 1024 "data/scripts/sample_sets_options.pory"
+# 1192 "data/scripts/sample_sets_options.pory"
 	case 1, Auto_EventScript_Sample_Sets_Flutter_Mane_Page1_3
-# 1027 "data/scripts/sample_sets_options.pory"
+# 1195 "data/scripts/sample_sets_options.pory"
 	case 2, Auto_EventScript_Sample_Sets_Flutter_Mane_Page1_4
-# 1030 "data/scripts/sample_sets_options.pory"
+# 1198 "data/scripts/sample_sets_options.pory"
 	case MULTI_L_PRESSED, Auto_EventScript_Sample_Sets_Flutter_Mane_Page1_5
-# 1032 "data/scripts/sample_sets_options.pory"
+# 1200 "data/scripts/sample_sets_options.pory"
 	case MULTI_R_PRESSED, Auto_EventScript_Sample_Sets_Flutter_Mane_Page1_6
-# 1035 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Page2
+# 1203 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Page3
 	return
 
 Auto_EventScript_Sample_Sets_Flutter_Mane_Page1_2:
-# 1022 "data/scripts/sample_sets_options.pory"
+# 1190 "data/scripts/sample_sets_options.pory"
 	givemon SPECIES_FLUTTER_MANE, 65, ITEM_FOCUS_SASH, ITEM_SPORT_BALL, NATURE_TIMID, 0, 0, 0, 0, 4, 252, 252, 0, 31, 0, 31, 31, 31, 31, MOVE_PROTECT, MOVE_ICY_WIND, MOVE_MOONBLAST, MOVE_SHADOW_BALL, FALSE, FALSE, TYPE_FAIRY
-# 1023 "data/scripts/sample_sets_options.pory"
+# 1191 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
 
 Auto_EventScript_Sample_Sets_Flutter_Mane_Page1_3:
-# 1025 "data/scripts/sample_sets_options.pory"
+# 1193 "data/scripts/sample_sets_options.pory"
 	givemon SPECIES_FLUTTER_MANE, 65, ITEM_CHOICE_SPECS, ITEM_SPORT_BALL, NATURE_MODEST, 0, 0, 116, 0, 156, 196, 36, 4, 31, 0, 31, 31, 31, 31, MOVE_DAZZLING_GLEAM, MOVE_SHADOW_BALL, MOVE_MOONBLAST, MOVE_ICY_WIND, FALSE, FALSE, TYPE_FAIRY
-# 1026 "data/scripts/sample_sets_options.pory"
+# 1194 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
 
 Auto_EventScript_Sample_Sets_Flutter_Mane_Page1_4:
-# 1028 "data/scripts/sample_sets_options.pory"
+# 1196 "data/scripts/sample_sets_options.pory"
 	givemon SPECIES_FLUTTER_MANE, 65, ITEM_BOOSTER_ENERGY, ITEM_SPORT_BALL, NATURE_TIMID, 0, 0, 228, 0, 204, 68, 4, 4, 31, 0, 31, 31, 31, 31, MOVE_PROTECT, MOVE_ICY_WIND, MOVE_MOONBLAST, MOVE_SHADOW_BALL, FALSE, FALSE, TYPE_FAIRY
-# 1029 "data/scripts/sample_sets_options.pory"
+# 1197 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
 
 Auto_EventScript_Sample_Sets_Flutter_Mane_Page1_5:
-# 1031 "data/scripts/sample_sets_options.pory"
+# 1199 "data/scripts/sample_sets_options.pory"
 	goto Auto_EventScript_Sample_Sets_Flutter_Mane_Page1
 	return
 
 Auto_EventScript_Sample_Sets_Flutter_Mane_Page1_6:
-# 1033 "data/scripts/sample_sets_options.pory"
+# 1201 "data/scripts/sample_sets_options.pory"
 	goto Auto_EventScript_Sample_Sets_Flutter_Mane_Page1
 	return
 
 
 Auto_EventScript_Sample_Sets_Gardevoir_Page1::
-# 1041 "data/scripts/sample_sets_options.pory"
+# 1209 "data/scripts/sample_sets_options.pory"
 	multichoice2 0, 0, Auto_Text_Sample_Sets_Gardevoir_Page1
-# 1042 "data/scripts/sample_sets_options.pory"
+# 1210 "data/scripts/sample_sets_options.pory"
 	switch VAR_RESULT
-# 1044 "data/scripts/sample_sets_options.pory"
+# 1212 "data/scripts/sample_sets_options.pory"
 	case 0, Auto_EventScript_Sample_Sets_Gardevoir_Page1_2
-# 1047 "data/scripts/sample_sets_options.pory"
+# 1215 "data/scripts/sample_sets_options.pory"
 	case MULTI_L_PRESSED, Auto_EventScript_Sample_Sets_Gardevoir_Page1_3
-# 1049 "data/scripts/sample_sets_options.pory"
+# 1217 "data/scripts/sample_sets_options.pory"
 	case MULTI_R_PRESSED, Auto_EventScript_Sample_Sets_Gardevoir_Page1_4
-# 1052 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Page2
+# 1220 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Page3
 	return
 
 Auto_EventScript_Sample_Sets_Gardevoir_Page1_2:
-# 1045 "data/scripts/sample_sets_options.pory"
+# 1213 "data/scripts/sample_sets_options.pory"
 	givemon SPECIES_GARDEVOIR, 65, ITEM_GARDEVOIRITE, ITEM_SPORT_BALL, NATURE_MODEST, 0, 0, 244, 0, 196, 28, 36, 4, 31, 0, 31, 31, 31, 31, MOVE_PROTECT, MOVE_HYPER_VOICE, MOVE_TRICK_ROOM, MOVE_PSYCHIC, FALSE, FALSE, TYPE_WATER
-# 1046 "data/scripts/sample_sets_options.pory"
+# 1214 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
 
 Auto_EventScript_Sample_Sets_Gardevoir_Page1_3:
-# 1048 "data/scripts/sample_sets_options.pory"
+# 1216 "data/scripts/sample_sets_options.pory"
 	goto Auto_EventScript_Sample_Sets_Gardevoir_Page1
 	return
 
 Auto_EventScript_Sample_Sets_Gardevoir_Page1_4:
-# 1050 "data/scripts/sample_sets_options.pory"
+# 1218 "data/scripts/sample_sets_options.pory"
 	goto Auto_EventScript_Sample_Sets_Gardevoir_Page1
 	return
 
 
-Auto_EventScript_Sample_Sets_Amoonguss_Page1::
-# 1058 "data/scripts/sample_sets_options.pory"
-	multichoice2 0, 0, Auto_Text_Sample_Sets_Amoonguss_Page1
-# 1059 "data/scripts/sample_sets_options.pory"
+Auto_EventScript_Sample_Sets_Garganacl_Page1::
+# 1226 "data/scripts/sample_sets_options.pory"
+	multichoice2 0, 0, Auto_Text_Sample_Sets_Garganacl_Page1
+# 1227 "data/scripts/sample_sets_options.pory"
 	switch VAR_RESULT
-# 1061 "data/scripts/sample_sets_options.pory"
-	case 0, Auto_EventScript_Sample_Sets_Amoonguss_Page1_2
-# 1064 "data/scripts/sample_sets_options.pory"
-	case 1, Auto_EventScript_Sample_Sets_Amoonguss_Page1_3
-# 1067 "data/scripts/sample_sets_options.pory"
-	case 2, Auto_EventScript_Sample_Sets_Amoonguss_Page1_4
-# 1070 "data/scripts/sample_sets_options.pory"
-	case MULTI_L_PRESSED, Auto_EventScript_Sample_Sets_Amoonguss_Page1_5
-# 1072 "data/scripts/sample_sets_options.pory"
-	case MULTI_R_PRESSED, Auto_EventScript_Sample_Sets_Amoonguss_Page1_6
-# 1075 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Page1
+# 1229 "data/scripts/sample_sets_options.pory"
+	case 0, Auto_EventScript_Sample_Sets_Garganacl_Page1_2
+# 1232 "data/scripts/sample_sets_options.pory"
+	case 1, Auto_EventScript_Sample_Sets_Garganacl_Page1_3
+# 1235 "data/scripts/sample_sets_options.pory"
+	case MULTI_L_PRESSED, Auto_EventScript_Sample_Sets_Garganacl_Page1_4
+# 1237 "data/scripts/sample_sets_options.pory"
+	case MULTI_R_PRESSED, Auto_EventScript_Sample_Sets_Garganacl_Page1_5
+# 1240 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Page3
 	return
 
-Auto_EventScript_Sample_Sets_Amoonguss_Page1_2:
-# 1062 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_AMOONGUSS, 65, ITEM_ROCKY_HELMET, ITEM_SPORT_BALL, NATURE_RELAXED, 1, 1, 236, 0, 236, 0, 0, 36, 31, 0, 31, 0, 31, 31, MOVE_PROTECT, MOVE_POLLEN_PUFF, MOVE_RAGE_POWDER, MOVE_SPORE, FALSE, FALSE, TYPE_WATER
-# 1063 "data/scripts/sample_sets_options.pory"
+Auto_EventScript_Sample_Sets_Garganacl_Page1_2:
+# 1230 "data/scripts/sample_sets_options.pory"
+	givemon SPECIES_GARGANACL, 65, ITEM_LEFTOVERS, ITEM_SPORT_BALL, NATURE_SASSY, 0, 0, 252, 0, 20, 0, 0, 236, 31, 31, 31, 0, 31, 31, MOVE_PROTECT, MOVE_WIDE_GUARD, MOVE_SALT_CURE, MOVE_RECOVER, FALSE, FALSE, TYPE_GHOST
+# 1231 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
 
-Auto_EventScript_Sample_Sets_Amoonguss_Page1_3:
-# 1065 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_AMOONGUSS, 65, ITEM_SITRUS_BERRY, ITEM_SPORT_BALL, NATURE_SASSY, 1, 1, 244, 0, 108, 0, 0, 156, 31, 0, 31, 0, 31, 31, MOVE_PROTECT, MOVE_POLLEN_PUFF, MOVE_RAGE_POWDER, MOVE_SPORE, FALSE, FALSE, TYPE_WATER
-# 1066 "data/scripts/sample_sets_options.pory"
+Auto_EventScript_Sample_Sets_Garganacl_Page1_3:
+# 1233 "data/scripts/sample_sets_options.pory"
+	givemon SPECIES_GARGANACL, 65, ITEM_LEFTOVERS, ITEM_SPORT_BALL, NATURE_CAREFUL, 0, 1, 252, 4, 12, 4, 0, 236, 31, 31, 31, 31, 31, 31, MOVE_PROTECT, MOVE_WIDE_GUARD, MOVE_SALT_CURE, MOVE_RECOVER, FALSE, FALSE, TYPE_GHOST
+# 1234 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
 
-Auto_EventScript_Sample_Sets_Amoonguss_Page1_4:
-# 1068 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_AMOONGUSS, 65, ITEM_SITRUS_BERRY, ITEM_SPORT_BALL, NATURE_SASSY, 1, 1, 252, 0, 20, 0, 0, 236, 31, 0, 31, 0, 31, 31, MOVE_PROTECT, MOVE_POLLEN_PUFF, MOVE_RAGE_POWDER, MOVE_SPORE, FALSE, FALSE, TYPE_WATER
-# 1069 "data/scripts/sample_sets_options.pory"
-	goto Common_EventScript_Sample_Sets_CheckPurchase
+Auto_EventScript_Sample_Sets_Garganacl_Page1_4:
+# 1236 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Garganacl_Page1
 	return
 
-Auto_EventScript_Sample_Sets_Amoonguss_Page1_5:
-# 1071 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Amoonguss_Page1
-	return
-
-Auto_EventScript_Sample_Sets_Amoonguss_Page1_6:
-# 1073 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Amoonguss_Page1
+Auto_EventScript_Sample_Sets_Garganacl_Page1_5:
+# 1238 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Garganacl_Page1
 	return
 
 
-Auto_EventScript_Sample_Sets_Archaludon_Page1::
-# 1081 "data/scripts/sample_sets_options.pory"
-	multichoice2 0, 0, Auto_Text_Sample_Sets_Archaludon_Page1
-# 1082 "data/scripts/sample_sets_options.pory"
+Auto_EventScript_Sample_Sets_Gengar_Page1::
+# 1246 "data/scripts/sample_sets_options.pory"
+	multichoice2 0, 0, Auto_Text_Sample_Sets_Gengar_Page1
+# 1247 "data/scripts/sample_sets_options.pory"
 	switch VAR_RESULT
-# 1084 "data/scripts/sample_sets_options.pory"
-	case 0, Auto_EventScript_Sample_Sets_Archaludon_Page1_2
-# 1087 "data/scripts/sample_sets_options.pory"
-	case 1, Auto_EventScript_Sample_Sets_Archaludon_Page1_3
-# 1090 "data/scripts/sample_sets_options.pory"
-	case MULTI_L_PRESSED, Auto_EventScript_Sample_Sets_Archaludon_Page1_4
-# 1092 "data/scripts/sample_sets_options.pory"
-	case MULTI_R_PRESSED, Auto_EventScript_Sample_Sets_Archaludon_Page1_5
-# 1095 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Page1
+# 1249 "data/scripts/sample_sets_options.pory"
+	case 0, Auto_EventScript_Sample_Sets_Gengar_Page1_2
+# 1252 "data/scripts/sample_sets_options.pory"
+	case 1, Auto_EventScript_Sample_Sets_Gengar_Page1_3
+# 1255 "data/scripts/sample_sets_options.pory"
+	case MULTI_L_PRESSED, Auto_EventScript_Sample_Sets_Gengar_Page1_4
+# 1257 "data/scripts/sample_sets_options.pory"
+	case MULTI_R_PRESSED, Auto_EventScript_Sample_Sets_Gengar_Page1_5
+# 1260 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Page3
 	return
 
-Auto_EventScript_Sample_Sets_Archaludon_Page1_2:
-# 1085 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_ARCHALUDON, 65, ITEM_POWER_HERB, ITEM_SPORT_BALL, NATURE_MODEST, 1, 0, 0, 0, 0, 252, 252, 4, 31, 31, 31, 31, 31, 31, MOVE_PROTECT, MOVE_ELECTRO_SHOT, MOVE_FLASH_CANNON, MOVE_DRACO_METEOR, FALSE, FALSE, TYPE_ELECTRIC
-# 1086 "data/scripts/sample_sets_options.pory"
+Auto_EventScript_Sample_Sets_Gengar_Page1_2:
+# 1250 "data/scripts/sample_sets_options.pory"
+	givemon SPECIES_GENGAR, 65, ITEM_GENGARITE, ITEM_SPORT_BALL, NATURE_TIMID, 0, 0, 252, 0, 68, 180, 4, 4, 31, 0, 31, 31, 31, 31, MOVE_PROTECT, MOVE_SHADOW_BALL, MOVE_PERISH_SONG, MOVE_DISABLE, FALSE, FALSE, TYPE_WATER
+# 1251 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
 
-Auto_EventScript_Sample_Sets_Archaludon_Page1_3:
-# 1088 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_ARCHALUDON, 65, ITEM_ASSAULT_VEST, ITEM_SPORT_BALL, NATURE_MODEST, 0, 1, 252, 0, 4, 4, 44, 204, 31, 31, 31, 31, 31, 31, MOVE_ELECTRO_SHOT, MOVE_FLASH_CANNON, MOVE_DRAGON_PULSE, MOVE_BODY_PRESS, FALSE, FALSE, TYPE_GRASS
-# 1089 "data/scripts/sample_sets_options.pory"
+Auto_EventScript_Sample_Sets_Gengar_Page1_3:
+# 1253 "data/scripts/sample_sets_options.pory"
+	givemon SPECIES_GENGAR, 65, ITEM_GENGARITE, ITEM_SPORT_BALL, NATURE_TIMID, 0, 1, 76, 0, 28, 180, 220, 4, 31, 0, 31, 31, 31, 31, MOVE_SHADOW_BALL, MOVE_SLUDGE_BOMB, MOVE_DISABLE, MOVE_PROTECT, FALSE, FALSE, TYPE_WATER
+# 1254 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
 
-Auto_EventScript_Sample_Sets_Archaludon_Page1_4:
-# 1091 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Archaludon_Page1
+Auto_EventScript_Sample_Sets_Gengar_Page1_4:
+# 1256 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Gengar_Page1
 	return
 
-Auto_EventScript_Sample_Sets_Archaludon_Page1_5:
-# 1093 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Archaludon_Page1
+Auto_EventScript_Sample_Sets_Gengar_Page1_5:
+# 1258 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Gengar_Page1
 	return
 
 
 Auto_EventScript_Sample_Sets_Calyrex_Page1::
-# 1101 "data/scripts/sample_sets_options.pory"
+# 1266 "data/scripts/sample_sets_options.pory"
 	multichoice2 0, 0, Auto_Text_Sample_Sets_Calyrex_Page1
-# 1102 "data/scripts/sample_sets_options.pory"
+# 1267 "data/scripts/sample_sets_options.pory"
 	switch VAR_RESULT
-# 1104 "data/scripts/sample_sets_options.pory"
+# 1269 "data/scripts/sample_sets_options.pory"
 	case 0, Auto_EventScript_Sample_Sets_Calyrex_Page1_2
-# 1107 "data/scripts/sample_sets_options.pory"
+# 1272 "data/scripts/sample_sets_options.pory"
 	case 1, Auto_EventScript_Sample_Sets_Calyrex_Page1_3
-# 1110 "data/scripts/sample_sets_options.pory"
+# 1275 "data/scripts/sample_sets_options.pory"
 	case 2, Auto_EventScript_Sample_Sets_Calyrex_Page1_4
-# 1113 "data/scripts/sample_sets_options.pory"
+# 1278 "data/scripts/sample_sets_options.pory"
 	case 3, Auto_EventScript_Sample_Sets_Calyrex_Page1_5
-# 1116 "data/scripts/sample_sets_options.pory"
+# 1281 "data/scripts/sample_sets_options.pory"
 	case MULTI_L_PRESSED, Auto_EventScript_Sample_Sets_Calyrex_Page1_6
-# 1118 "data/scripts/sample_sets_options.pory"
+# 1283 "data/scripts/sample_sets_options.pory"
 	case MULTI_R_PRESSED, Auto_EventScript_Sample_Sets_Calyrex_Page1_7
-# 1121 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Page1
+# 1286 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Page2
 	return
 
 Auto_EventScript_Sample_Sets_Calyrex_Page1_2:
-# 1105 "data/scripts/sample_sets_options.pory"
+# 1270 "data/scripts/sample_sets_options.pory"
 	givemon SPECIES_CALYREX, 65, ITEM_FOCUS_SASH, ITEM_SPORT_BALL, NATURE_TIMID, 0, 0, 0, 0, 4, 252, 252, 0, 31, 0, 31, 31, 31, 31, MOVE_PROTECT, MOVE_NASTY_PLOT, MOVE_PSYCHIC, MOVE_NONE, FALSE, FALSE, TYPE_GHOST
-# 1106 "data/scripts/sample_sets_options.pory"
+# 1271 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
 
 Auto_EventScript_Sample_Sets_Calyrex_Page1_3:
-# 1108 "data/scripts/sample_sets_options.pory"
+# 1273 "data/scripts/sample_sets_options.pory"
 	givemon SPECIES_CALYREX, 65, ITEM_LIFE_ORB, ITEM_SPORT_BALL, NATURE_TIMID, 0, 0, 20, 0, 4, 252, 220, 4, 31, 0, 31, 31, 31, 31, MOVE_PROTECT, MOVE_NASTY_PLOT, MOVE_PSYCHIC, MOVE_NONE, FALSE, FALSE, TYPE_GHOST
-# 1109 "data/scripts/sample_sets_options.pory"
+# 1274 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
 
 Auto_EventScript_Sample_Sets_Calyrex_Page1_4:
-# 1111 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_CALYREX, 50, ITEM_CLEAR_AMULET, ITEM_SPORT_BALL, NATURE_BRAVE, 0, 0, 252, 116, 0, 0, 0, 140, 31, 31, 31, 0, 31, 31, MOVE_PROTECT, MOVE_TRICK_ROOM, MOVE_CLOSE_COMBAT, MOVE_NONE, FALSE, FALSE, TYPE_FIRE
-# 1112 "data/scripts/sample_sets_options.pory"
+# 1276 "data/scripts/sample_sets_options.pory"
+	givemon SPECIES_CALYREX, 65, ITEM_CLEAR_AMULET, ITEM_SPORT_BALL, NATURE_BRAVE, 0, 0, 252, 116, 0, 0, 0, 140, 31, 31, 31, 0, 31, 31, MOVE_PROTECT, MOVE_TRICK_ROOM, MOVE_CLOSE_COMBAT, MOVE_NONE, FALSE, FALSE, TYPE_FIRE
+# 1277 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
 
 Auto_EventScript_Sample_Sets_Calyrex_Page1_5:
-# 1114 "data/scripts/sample_sets_options.pory"
-	givemon SPECIES_CALYREX, 50, ITEM_CLEAR_AMULET, ITEM_SPORT_BALL, NATURE_ADAMANT, 0, 0, 252, 116, 4, 12, 0, 124, 31, 31, 31, 31, 31, 31, MOVE_PROTECT, MOVE_TRICK_ROOM, MOVE_CLOSE_COMBAT, MOVE_NONE, FALSE, FALSE, TYPE_FIRE
-# 1115 "data/scripts/sample_sets_options.pory"
+# 1279 "data/scripts/sample_sets_options.pory"
+	givemon SPECIES_CALYREX, 65, ITEM_CLEAR_AMULET, ITEM_SPORT_BALL, NATURE_ADAMANT, 0, 0, 252, 116, 4, 12, 0, 124, 31, 31, 31, 31, 31, 31, MOVE_PROTECT, MOVE_TRICK_ROOM, MOVE_CLOSE_COMBAT, MOVE_NONE, FALSE, FALSE, TYPE_FIRE
+# 1280 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
 
 Auto_EventScript_Sample_Sets_Calyrex_Page1_6:
-# 1117 "data/scripts/sample_sets_options.pory"
+# 1282 "data/scripts/sample_sets_options.pory"
 	goto Auto_EventScript_Sample_Sets_Calyrex_Page1
 	return
 
 Auto_EventScript_Sample_Sets_Calyrex_Page1_7:
-# 1119 "data/scripts/sample_sets_options.pory"
+# 1284 "data/scripts/sample_sets_options.pory"
 	goto Auto_EventScript_Sample_Sets_Calyrex_Page1
 	return
 
 
 Auto_EventScript_Sample_Sets_Charizard_Page1::
-# 1127 "data/scripts/sample_sets_options.pory"
+# 1292 "data/scripts/sample_sets_options.pory"
 	multichoice2 0, 0, Auto_Text_Sample_Sets_Charizard_Page1
-# 1128 "data/scripts/sample_sets_options.pory"
+# 1293 "data/scripts/sample_sets_options.pory"
 	switch VAR_RESULT
-# 1130 "data/scripts/sample_sets_options.pory"
+# 1295 "data/scripts/sample_sets_options.pory"
 	case 0, Auto_EventScript_Sample_Sets_Charizard_Page1_2
-# 1133 "data/scripts/sample_sets_options.pory"
-	case MULTI_L_PRESSED, Auto_EventScript_Sample_Sets_Charizard_Page1_3
-# 1135 "data/scripts/sample_sets_options.pory"
-	case MULTI_R_PRESSED, Auto_EventScript_Sample_Sets_Charizard_Page1_4
-# 1138 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Page1
+# 1298 "data/scripts/sample_sets_options.pory"
+	case 1, Auto_EventScript_Sample_Sets_Charizard_Page1_3
+# 1301 "data/scripts/sample_sets_options.pory"
+	case MULTI_L_PRESSED, Auto_EventScript_Sample_Sets_Charizard_Page1_4
+# 1303 "data/scripts/sample_sets_options.pory"
+	case MULTI_R_PRESSED, Auto_EventScript_Sample_Sets_Charizard_Page1_5
+# 1306 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Page2
 	return
 
 Auto_EventScript_Sample_Sets_Charizard_Page1_2:
-# 1131 "data/scripts/sample_sets_options.pory"
+# 1296 "data/scripts/sample_sets_options.pory"
 	givemon SPECIES_CHARIZARD, 65, ITEM_CHARIZARDITE_Y, ITEM_SPORT_BALL, NATURE_MODEST, 0, 1, 204, 0, 108, 188, 4, 4, 31, 0, 31, 31, 31, 31, MOVE_PROTECT, MOVE_SCORCHING_SANDS, MOVE_FLAMETHROWER, MOVE_SOLAR_BEAM, FALSE, FALSE, TYPE_GRASS
-# 1132 "data/scripts/sample_sets_options.pory"
+# 1297 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
 
 Auto_EventScript_Sample_Sets_Charizard_Page1_3:
-# 1134 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Charizard_Page1
+# 1299 "data/scripts/sample_sets_options.pory"
+	givemon SPECIES_CHARIZARD, 65, ITEM_CHARIZARDITE_X, ITEM_SPORT_BALL, NATURE_JOLLY, 0, 0, 236, 44, 4, 220, 0, 4, 31, 31, 31, 31, 31, 31, MOVE_PROTECT, MOVE_FLARE_BLITZ, MOVE_WILL_O_WISP, MOVE_ROOST, FALSE, FALSE, TYPE_GRASS
+# 1300 "data/scripts/sample_sets_options.pory"
+	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
 
 Auto_EventScript_Sample_Sets_Charizard_Page1_4:
-# 1136 "data/scripts/sample_sets_options.pory"
+# 1302 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Charizard_Page1
+	return
+
+Auto_EventScript_Sample_Sets_Charizard_Page1_5:
+# 1304 "data/scripts/sample_sets_options.pory"
 	goto Auto_EventScript_Sample_Sets_Charizard_Page1
 	return
 
 
 Auto_EventScript_Sample_Sets_Chi_Yu_Page1::
-# 1144 "data/scripts/sample_sets_options.pory"
+# 1312 "data/scripts/sample_sets_options.pory"
 	multichoice2 0, 0, Auto_Text_Sample_Sets_Chi_Yu_Page1
-# 1145 "data/scripts/sample_sets_options.pory"
+# 1313 "data/scripts/sample_sets_options.pory"
 	switch VAR_RESULT
-# 1147 "data/scripts/sample_sets_options.pory"
+# 1315 "data/scripts/sample_sets_options.pory"
 	case 0, Auto_EventScript_Sample_Sets_Chi_Yu_Page1_2
-# 1150 "data/scripts/sample_sets_options.pory"
+# 1318 "data/scripts/sample_sets_options.pory"
 	case 1, Auto_EventScript_Sample_Sets_Chi_Yu_Page1_3
-# 1153 "data/scripts/sample_sets_options.pory"
+# 1321 "data/scripts/sample_sets_options.pory"
 	case MULTI_L_PRESSED, Auto_EventScript_Sample_Sets_Chi_Yu_Page1_4
-# 1155 "data/scripts/sample_sets_options.pory"
+# 1323 "data/scripts/sample_sets_options.pory"
 	case MULTI_R_PRESSED, Auto_EventScript_Sample_Sets_Chi_Yu_Page1_5
-# 1158 "data/scripts/sample_sets_options.pory"
-	goto Auto_EventScript_Sample_Sets_Page1
+# 1326 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Page2
 	return
 
 Auto_EventScript_Sample_Sets_Chi_Yu_Page1_2:
-# 1148 "data/scripts/sample_sets_options.pory"
+# 1316 "data/scripts/sample_sets_options.pory"
 	givemon SPECIES_CHI_YU, 65, ITEM_FOCUS_SASH, ITEM_SPORT_BALL, NATURE_TIMID, 0, 0, 4, 0, 0, 252, 252, 0, 31, 31, 31, 31, 31, 31, MOVE_PROTECT, MOVE_HEAT_WAVE, MOVE_DARK_PULSE, MOVE_SNARL, FALSE, FALSE, TYPE_GHOST
-# 1149 "data/scripts/sample_sets_options.pory"
+# 1317 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
 
 Auto_EventScript_Sample_Sets_Chi_Yu_Page1_3:
-# 1151 "data/scripts/sample_sets_options.pory"
+# 1319 "data/scripts/sample_sets_options.pory"
 	givemon SPECIES_CHI_YU, 65, ITEM_CHOICE_SCARF, ITEM_SPORT_BALL, NATURE_MODEST, 0, 0, 52, 0, 4, 252, 196, 4, 31, 31, 31, 31, 31, 31, MOVE_HEAT_WAVE, MOVE_DARK_PULSE, MOVE_OVERHEAT, MOVE_SNARL, FALSE, FALSE, TYPE_GHOST
-# 1152 "data/scripts/sample_sets_options.pory"
+# 1320 "data/scripts/sample_sets_options.pory"
 	goto Common_EventScript_Sample_Sets_CheckPurchase
 	return
 
 Auto_EventScript_Sample_Sets_Chi_Yu_Page1_4:
-# 1154 "data/scripts/sample_sets_options.pory"
+# 1322 "data/scripts/sample_sets_options.pory"
 	goto Auto_EventScript_Sample_Sets_Chi_Yu_Page1
 	return
 
 Auto_EventScript_Sample_Sets_Chi_Yu_Page1_5:
-# 1156 "data/scripts/sample_sets_options.pory"
+# 1324 "data/scripts/sample_sets_options.pory"
 	goto Auto_EventScript_Sample_Sets_Chi_Yu_Page1
+	return
+
+
+Auto_EventScript_Sample_Sets_Chien_Pao_Page1::
+# 1332 "data/scripts/sample_sets_options.pory"
+	multichoice2 0, 0, Auto_Text_Sample_Sets_Chien_Pao_Page1
+# 1333 "data/scripts/sample_sets_options.pory"
+	switch VAR_RESULT
+# 1335 "data/scripts/sample_sets_options.pory"
+	case 0, Auto_EventScript_Sample_Sets_Chien_Pao_Page1_2
+# 1338 "data/scripts/sample_sets_options.pory"
+	case MULTI_L_PRESSED, Auto_EventScript_Sample_Sets_Chien_Pao_Page1_3
+# 1340 "data/scripts/sample_sets_options.pory"
+	case MULTI_R_PRESSED, Auto_EventScript_Sample_Sets_Chien_Pao_Page1_4
+# 1343 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Page2
+	return
+
+Auto_EventScript_Sample_Sets_Chien_Pao_Page1_2:
+# 1336 "data/scripts/sample_sets_options.pory"
+	givemon SPECIES_CHIEN_PAO, 65, ITEM_FOCUS_SASH, ITEM_SPORT_BALL, NATURE_JOLLY, 0, 0, 0, 252, 4, 252, 0, 0, 31, 31, 31, 31, 31, 31, MOVE_PROTECT, MOVE_ICICLE_CRASH, MOVE_SACRED_SWORD, MOVE_SUCKER_PUNCH, FALSE, FALSE, TYPE_GHOST
+# 1337 "data/scripts/sample_sets_options.pory"
+	goto Common_EventScript_Sample_Sets_CheckPurchase
+	return
+
+Auto_EventScript_Sample_Sets_Chien_Pao_Page1_3:
+# 1339 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Chien_Pao_Page1
+	return
+
+Auto_EventScript_Sample_Sets_Chien_Pao_Page1_4:
+# 1341 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Chien_Pao_Page1
+	return
+
+
+Auto_EventScript_Sample_Sets_Cresselia_Page1::
+# 1349 "data/scripts/sample_sets_options.pory"
+	multichoice2 0, 0, Auto_Text_Sample_Sets_Cresselia_Page1
+# 1350 "data/scripts/sample_sets_options.pory"
+	switch VAR_RESULT
+# 1352 "data/scripts/sample_sets_options.pory"
+	case 0, Auto_EventScript_Sample_Sets_Cresselia_Page1_2
+# 1355 "data/scripts/sample_sets_options.pory"
+	case 1, Auto_EventScript_Sample_Sets_Cresselia_Page1_3
+# 1358 "data/scripts/sample_sets_options.pory"
+	case 2, Auto_EventScript_Sample_Sets_Cresselia_Page1_4
+# 1361 "data/scripts/sample_sets_options.pory"
+	case MULTI_L_PRESSED, Auto_EventScript_Sample_Sets_Cresselia_Page1_5
+# 1363 "data/scripts/sample_sets_options.pory"
+	case MULTI_R_PRESSED, Auto_EventScript_Sample_Sets_Cresselia_Page1_6
+# 1366 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Page2
+	return
+
+Auto_EventScript_Sample_Sets_Cresselia_Page1_2:
+# 1353 "data/scripts/sample_sets_options.pory"
+	givemon SPECIES_CRESSELIA, 65, ITEM_ROCKY_HELMET, ITEM_SPORT_BALL, NATURE_BOLD, 0, 1, 252, 0, 156, 4, 4, 76, 31, 0, 31, 31, 31, 31, MOVE_LUNAR_BLESSING, MOVE_TRICK_ROOM, MOVE_HELPING_HAND, MOVE_MOONBLAST, FALSE, FALSE, TYPE_FAIRY
+# 1354 "data/scripts/sample_sets_options.pory"
+	goto Common_EventScript_Sample_Sets_CheckPurchase
+	return
+
+Auto_EventScript_Sample_Sets_Cresselia_Page1_3:
+# 1356 "data/scripts/sample_sets_options.pory"
+	givemon SPECIES_CRESSELIA, 65, ITEM_SAFETY_GOGGLES, ITEM_SPORT_BALL, NATURE_CALM, 0, 1, 252, 0, 172, 4, 4, 76, 31, 0, 31, 31, 31, 31, MOVE_LUNAR_BLESSING, MOVE_TRICK_ROOM, MOVE_HELPING_HAND, MOVE_MOONBLAST, FALSE, FALSE, TYPE_FAIRY
+# 1357 "data/scripts/sample_sets_options.pory"
+	goto Common_EventScript_Sample_Sets_CheckPurchase
+	return
+
+Auto_EventScript_Sample_Sets_Cresselia_Page1_4:
+# 1359 "data/scripts/sample_sets_options.pory"
+	givemon SPECIES_CRESSELIA, 65, ITEM_SAFETY_GOGGLES, ITEM_SPORT_BALL, NATURE_SASSY, 0, 1, 252, 0, 180, 0, 0, 76, 31, 0, 31, 0, 31, 31, MOVE_LUNAR_BLESSING, MOVE_TRICK_ROOM, MOVE_HELPING_HAND, MOVE_MOONBLAST, FALSE, FALSE, TYPE_FAIRY
+# 1360 "data/scripts/sample_sets_options.pory"
+	goto Common_EventScript_Sample_Sets_CheckPurchase
+	return
+
+Auto_EventScript_Sample_Sets_Cresselia_Page1_5:
+# 1362 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Cresselia_Page1
+	return
+
+Auto_EventScript_Sample_Sets_Cresselia_Page1_6:
+# 1364 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Cresselia_Page1
+	return
+
+
+Auto_EventScript_Sample_Sets_Aegislash_Page1::
+# 1372 "data/scripts/sample_sets_options.pory"
+	multichoice2 0, 0, Auto_Text_Sample_Sets_Aegislash_Page1
+# 1373 "data/scripts/sample_sets_options.pory"
+	switch VAR_RESULT
+# 1375 "data/scripts/sample_sets_options.pory"
+	case 0, Auto_EventScript_Sample_Sets_Aegislash_Page1_2
+# 1378 "data/scripts/sample_sets_options.pory"
+	case 1, Auto_EventScript_Sample_Sets_Aegislash_Page1_3
+# 1381 "data/scripts/sample_sets_options.pory"
+	case 2, Auto_EventScript_Sample_Sets_Aegislash_Page1_4
+# 1384 "data/scripts/sample_sets_options.pory"
+	case MULTI_L_PRESSED, Auto_EventScript_Sample_Sets_Aegislash_Page1_5
+# 1386 "data/scripts/sample_sets_options.pory"
+	case MULTI_R_PRESSED, Auto_EventScript_Sample_Sets_Aegislash_Page1_6
+# 1389 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Page1
+	return
+
+Auto_EventScript_Sample_Sets_Aegislash_Page1_2:
+# 1376 "data/scripts/sample_sets_options.pory"
+	givemon SPECIES_AEGISLASH, 65, ITEM_GHOSTIUM_Z, ITEM_SPORT_BALL, NATURE_MODEST, 0, 0, 140, 0, 0, 116, 252, 0, 31, 0, 31, 31, 31, 31, MOVE_KINGS_SHIELD, MOVE_SUBSTITUTE, MOVE_SHADOW_BALL, MOVE_FLASH_CANNON, FALSE, FALSE, FALSE
+# 1377 "data/scripts/sample_sets_options.pory"
+	goto Common_EventScript_Sample_Sets_CheckPurchase
+	return
+
+Auto_EventScript_Sample_Sets_Aegislash_Page1_3:
+# 1379 "data/scripts/sample_sets_options.pory"
+	givemon SPECIES_AEGISLASH, 65, ITEM_LEFTOVERS, ITEM_SPORT_BALL, NATURE_MODEST, 0, 1, 236, 0, 0, 20, 252, 0, 31, 0, 31, 31, 31, 31, MOVE_SHADOW_BALL, MOVE_KINGS_SHIELD, MOVE_FLASH_CANNON, MOVE_SUBSTITUTE, FALSE, FALSE, TYPE_WATER
+# 1380 "data/scripts/sample_sets_options.pory"
+	goto Common_EventScript_Sample_Sets_CheckPurchase
+	return
+
+Auto_EventScript_Sample_Sets_Aegislash_Page1_4:
+# 1382 "data/scripts/sample_sets_options.pory"
+	givemon SPECIES_AEGISLASH, 65, ITEM_WEAKNESS_POLICY, ITEM_SPORT_BALL, NATURE_QUIET, 0, 0, 252, 0, 4, 0, 180, 68, 31, 0, 31, 0, 31, 31, MOVE_SHADOW_BALL, MOVE_FLASH_CANNON, MOVE_WIDE_GUARD, MOVE_KINGS_SHIELD, FALSE, FALSE, FALSE
+# 1383 "data/scripts/sample_sets_options.pory"
+	goto Common_EventScript_Sample_Sets_CheckPurchase
+	return
+
+Auto_EventScript_Sample_Sets_Aegislash_Page1_5:
+# 1385 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Aegislash_Page1
+	return
+
+Auto_EventScript_Sample_Sets_Aegislash_Page1_6:
+# 1387 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Aegislash_Page1
+	return
+
+
+Auto_EventScript_Sample_Sets_Amoonguss_Page1::
+# 1395 "data/scripts/sample_sets_options.pory"
+	multichoice2 0, 0, Auto_Text_Sample_Sets_Amoonguss_Page1
+# 1396 "data/scripts/sample_sets_options.pory"
+	switch VAR_RESULT
+# 1398 "data/scripts/sample_sets_options.pory"
+	case 0, Auto_EventScript_Sample_Sets_Amoonguss_Page1_2
+# 1401 "data/scripts/sample_sets_options.pory"
+	case 1, Auto_EventScript_Sample_Sets_Amoonguss_Page1_3
+# 1404 "data/scripts/sample_sets_options.pory"
+	case 2, Auto_EventScript_Sample_Sets_Amoonguss_Page1_4
+# 1407 "data/scripts/sample_sets_options.pory"
+	case 3, Auto_EventScript_Sample_Sets_Amoonguss_Page1_5
+# 1410 "data/scripts/sample_sets_options.pory"
+	case MULTI_L_PRESSED, Auto_EventScript_Sample_Sets_Amoonguss_Page1_6
+# 1412 "data/scripts/sample_sets_options.pory"
+	case MULTI_R_PRESSED, Auto_EventScript_Sample_Sets_Amoonguss_Page1_7
+# 1415 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Page1
+	return
+
+Auto_EventScript_Sample_Sets_Amoonguss_Page1_2:
+# 1399 "data/scripts/sample_sets_options.pory"
+	givemon SPECIES_AMOONGUSS, 65, ITEM_ROCKY_HELMET, ITEM_SPORT_BALL, NATURE_RELAXED, 1, 1, 236, 0, 236, 0, 0, 36, 31, 0, 31, 0, 31, 31, MOVE_PROTECT, MOVE_POLLEN_PUFF, MOVE_RAGE_POWDER, MOVE_SPORE, FALSE, FALSE, TYPE_WATER
+# 1400 "data/scripts/sample_sets_options.pory"
+	goto Common_EventScript_Sample_Sets_CheckPurchase
+	return
+
+Auto_EventScript_Sample_Sets_Amoonguss_Page1_3:
+# 1402 "data/scripts/sample_sets_options.pory"
+	givemon SPECIES_AMOONGUSS, 65, ITEM_SITRUS_BERRY, ITEM_SPORT_BALL, NATURE_SASSY, 1, 1, 244, 0, 108, 0, 0, 156, 31, 0, 31, 0, 31, 31, MOVE_PROTECT, MOVE_POLLEN_PUFF, MOVE_RAGE_POWDER, MOVE_SPORE, FALSE, FALSE, TYPE_WATER
+# 1403 "data/scripts/sample_sets_options.pory"
+	goto Common_EventScript_Sample_Sets_CheckPurchase
+	return
+
+Auto_EventScript_Sample_Sets_Amoonguss_Page1_4:
+# 1405 "data/scripts/sample_sets_options.pory"
+	givemon SPECIES_AMOONGUSS, 65, ITEM_EJECT_BUTTON, ITEM_SPORT_BALL, NATURE_SASSY, 1, 1, 252, 0, 180, 0, 0, 76, 31, 0, 31, 0, 31, 31, MOVE_PROTECT, MOVE_POLLEN_PUFF, MOVE_SPORE, MOVE_RAGE_POWDER, FALSE, FALSE, TYPE_WATER
+# 1406 "data/scripts/sample_sets_options.pory"
+	goto Common_EventScript_Sample_Sets_CheckPurchase
+	return
+
+Auto_EventScript_Sample_Sets_Amoonguss_Page1_5:
+# 1408 "data/scripts/sample_sets_options.pory"
+	givemon SPECIES_AMOONGUSS, 65, ITEM_SITRUS_BERRY, ITEM_SPORT_BALL, NATURE_SASSY, 1, 1, 252, 0, 20, 0, 0, 236, 31, 0, 31, 0, 31, 31, MOVE_PROTECT, MOVE_POLLEN_PUFF, MOVE_RAGE_POWDER, MOVE_SPORE, FALSE, FALSE, TYPE_WATER
+# 1409 "data/scripts/sample_sets_options.pory"
+	goto Common_EventScript_Sample_Sets_CheckPurchase
+	return
+
+Auto_EventScript_Sample_Sets_Amoonguss_Page1_6:
+# 1411 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Amoonguss_Page1
+	return
+
+Auto_EventScript_Sample_Sets_Amoonguss_Page1_7:
+# 1413 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Amoonguss_Page1
+	return
+
+
+Auto_EventScript_Sample_Sets_Arcanine_Page1::
+# 1421 "data/scripts/sample_sets_options.pory"
+	multichoice2 0, 0, Auto_Text_Sample_Sets_Arcanine_Page1
+# 1422 "data/scripts/sample_sets_options.pory"
+	switch VAR_RESULT
+# 1424 "data/scripts/sample_sets_options.pory"
+	case 0, Auto_EventScript_Sample_Sets_Arcanine_Page1_2
+# 1427 "data/scripts/sample_sets_options.pory"
+	case 1, Auto_EventScript_Sample_Sets_Arcanine_Page1_3
+# 1430 "data/scripts/sample_sets_options.pory"
+	case MULTI_L_PRESSED, Auto_EventScript_Sample_Sets_Arcanine_Page1_4
+# 1432 "data/scripts/sample_sets_options.pory"
+	case MULTI_R_PRESSED, Auto_EventScript_Sample_Sets_Arcanine_Page1_5
+# 1435 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Page1
+	return
+
+Auto_EventScript_Sample_Sets_Arcanine_Page1_2:
+# 1425 "data/scripts/sample_sets_options.pory"
+	givemon SPECIES_ARCANINE, 65, ITEM_SAFETY_GOGGLES, ITEM_SPORT_BALL, NATURE_JOLLY, 0, 1, 236, 68, 4, 196, 0, 4, 31, 31, 31, 31, 31, 31, MOVE_PROTECT, MOVE_EXTREME_SPEED, MOVE_WILL_O_WISP, MOVE_FLARE_BLITZ, FALSE, FALSE, TYPE_FLYING
+# 1426 "data/scripts/sample_sets_options.pory"
+	goto Common_EventScript_Sample_Sets_CheckPurchase
+	return
+
+Auto_EventScript_Sample_Sets_Arcanine_Page1_3:
+# 1428 "data/scripts/sample_sets_options.pory"
+	givemon SPECIES_ARCANINE, 65, ITEM_SAFETY_GOGGLES, ITEM_SPORT_BALL, NATURE_ADAMANT, 0, 1, 252, 68, 4, 76, 0, 108, 31, 31, 31, 31, 31, 31, MOVE_PROTECT, MOVE_WILL_O_WISP, MOVE_FLARE_BLITZ, MOVE_SNARL, FALSE, FALSE, TYPE_WATER
+# 1429 "data/scripts/sample_sets_options.pory"
+	goto Common_EventScript_Sample_Sets_CheckPurchase
+	return
+
+Auto_EventScript_Sample_Sets_Arcanine_Page1_4:
+# 1431 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Arcanine_Page1
+	return
+
+Auto_EventScript_Sample_Sets_Arcanine_Page1_5:
+# 1433 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Arcanine_Page1
+	return
+
+
+Auto_EventScript_Sample_Sets_Archaludon_Page1::
+# 1441 "data/scripts/sample_sets_options.pory"
+	multichoice2 0, 0, Auto_Text_Sample_Sets_Archaludon_Page1
+# 1442 "data/scripts/sample_sets_options.pory"
+	switch VAR_RESULT
+# 1444 "data/scripts/sample_sets_options.pory"
+	case 0, Auto_EventScript_Sample_Sets_Archaludon_Page1_2
+# 1447 "data/scripts/sample_sets_options.pory"
+	case 1, Auto_EventScript_Sample_Sets_Archaludon_Page1_3
+# 1450 "data/scripts/sample_sets_options.pory"
+	case MULTI_L_PRESSED, Auto_EventScript_Sample_Sets_Archaludon_Page1_4
+# 1452 "data/scripts/sample_sets_options.pory"
+	case MULTI_R_PRESSED, Auto_EventScript_Sample_Sets_Archaludon_Page1_5
+# 1455 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Page1
+	return
+
+Auto_EventScript_Sample_Sets_Archaludon_Page1_2:
+# 1445 "data/scripts/sample_sets_options.pory"
+	givemon SPECIES_ARCHALUDON, 65, ITEM_POWER_HERB, ITEM_SPORT_BALL, NATURE_MODEST, 1, 0, 0, 0, 0, 252, 252, 4, 31, 31, 31, 31, 31, 31, MOVE_PROTECT, MOVE_ELECTRO_SHOT, MOVE_FLASH_CANNON, MOVE_DRACO_METEOR, FALSE, FALSE, TYPE_ELECTRIC
+# 1446 "data/scripts/sample_sets_options.pory"
+	goto Common_EventScript_Sample_Sets_CheckPurchase
+	return
+
+Auto_EventScript_Sample_Sets_Archaludon_Page1_3:
+# 1448 "data/scripts/sample_sets_options.pory"
+	givemon SPECIES_ARCHALUDON, 65, ITEM_ASSAULT_VEST, ITEM_SPORT_BALL, NATURE_MODEST, 0, 1, 252, 0, 4, 4, 44, 204, 31, 31, 31, 31, 31, 31, MOVE_ELECTRO_SHOT, MOVE_FLASH_CANNON, MOVE_DRAGON_PULSE, MOVE_BODY_PRESS, FALSE, FALSE, TYPE_GRASS
+# 1449 "data/scripts/sample_sets_options.pory"
+	goto Common_EventScript_Sample_Sets_CheckPurchase
+	return
+
+Auto_EventScript_Sample_Sets_Archaludon_Page1_4:
+# 1451 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Archaludon_Page1
+	return
+
+Auto_EventScript_Sample_Sets_Archaludon_Page1_5:
+# 1453 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Archaludon_Page1
+	return
+
+
+Auto_EventScript_Sample_Sets_Basculegion_Page1::
+# 1461 "data/scripts/sample_sets_options.pory"
+	multichoice2 0, 0, Auto_Text_Sample_Sets_Basculegion_Page1
+# 1462 "data/scripts/sample_sets_options.pory"
+	switch VAR_RESULT
+# 1464 "data/scripts/sample_sets_options.pory"
+	case 0, Auto_EventScript_Sample_Sets_Basculegion_Page1_2
+# 1467 "data/scripts/sample_sets_options.pory"
+	case MULTI_L_PRESSED, Auto_EventScript_Sample_Sets_Basculegion_Page1_3
+# 1469 "data/scripts/sample_sets_options.pory"
+	case MULTI_R_PRESSED, Auto_EventScript_Sample_Sets_Basculegion_Page1_4
+# 1472 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Page1
+	return
+
+Auto_EventScript_Sample_Sets_Basculegion_Page1_2:
+# 1465 "data/scripts/sample_sets_options.pory"
+	givemon SPECIES_BASCULEGION, 65, ITEM_CHOICE_BAND, ITEM_SPORT_BALL, NATURE_ADAMANT, 0, 0, 164, 220, 4, 116, 0, 4, 31, 31, 31, 31, 31, 31, MOVE_FLIP_TURN, MOVE_AQUA_JET, MOVE_WAVE_CRASH, MOVE_LAST_RESPECTS, FALSE, FALSE, TYPE_WATER
+# 1466 "data/scripts/sample_sets_options.pory"
+	goto Common_EventScript_Sample_Sets_CheckPurchase
+	return
+
+Auto_EventScript_Sample_Sets_Basculegion_Page1_3:
+# 1468 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Basculegion_Page1
+	return
+
+Auto_EventScript_Sample_Sets_Basculegion_Page1_4:
+# 1470 "data/scripts/sample_sets_options.pory"
+	goto Auto_EventScript_Sample_Sets_Basculegion_Page1
 	return
 
 
@@ -2491,68 +3176,88 @@ Auto_EventScript_Sample_Sets_Controls_Text_0:
 	.string "L: Previous Page                    R: Next Page\nA: Confirm                    B: Go Back$"
 
 Auto_Text_Sample_Sets_Page1::
-# 1162 "data/scripts/sample_sets_options.pory"
+# 1476 "data/scripts/sample_sets_options.pory"
+	.string "AEGISLASH$"
 	.string "AMOONGUSS$"
+	.string "ARCANINE$"
 	.string "ARCHALUDON$"
-	.string "CALYREX$"
-	.string "CHARIZARD$"
-	.string "CHI-YU$"
+	.string "BASCULEGION$"
 	.string "Go Back$"
 	.string "$"
 
 Auto_Text_Sample_Sets_Page2::
-# 1173 "data/scripts/sample_sets_options.pory"
+# 1487 "data/scripts/sample_sets_options.pory"
+	.string "CALYREX$"
+	.string "CHARIZARD$"
+	.string "CHI-YU$"
 	.string "CHIEN-PAO$"
 	.string "CRESSELIA$"
-	.string "FARIGIRAF$"
-	.string "FLUTTER MANE$"
-	.string "GARDEVOIR$"
 	.string "Go Back$"
 	.string "$"
 
 Auto_Text_Sample_Sets_Page3::
-# 1184 "data/scripts/sample_sets_options.pory"
+# 1498 "data/scripts/sample_sets_options.pory"
+	.string "FARIGIRAF$"
+	.string "FLUTTER MANE$"
+	.string "GARDEVOIR$"
+	.string "GARGANACL$"
 	.string "GENGAR$"
-	.string "GHOLDENGO$"
-	.string "GROUDON$"
-	.string "HATTERENE$"
-	.string "INCINEROAR$"
 	.string "Go Back$"
 	.string "$"
 
 Auto_Text_Sample_Sets_Page4::
-# 1195 "data/scripts/sample_sets_options.pory"
-	.string "INDEEDEE-F$"
-	.string "IRON HANDS$"
-	.string "KANGASKHAN$"
-	.string "KINGAMBIT$"
-	.string "KORAIDON$"
+# 1509 "data/scripts/sample_sets_options.pory"
+	.string "GHOLDENGO$"
+	.string "GROUDON$"
+	.string "HATTERENE$"
+	.string "HEATRAN$"
+	.string "INCINEROAR$"
 	.string "Go Back$"
 	.string "$"
 
 Auto_Text_Sample_Sets_Page5::
-# 1206 "data/scripts/sample_sets_options.pory"
-	.string "KYOGRE$"
-	.string "LANDO-T$"
-	.string "LANDORUS$"
-	.string "LUNALA$"
-	.string "MANECTRIC$"
+# 1520 "data/scripts/sample_sets_options.pory"
+	.string "INDEEDEE-F$"
+	.string "IRON BUNDLE$"
+	.string "IRON HANDS$"
+	.string "KANGASKHAN$"
+	.string "KARTANA$"
 	.string "Go Back$"
 	.string "$"
 
 Auto_Text_Sample_Sets_Page6::
-# 1217 "data/scripts/sample_sets_options.pory"
-	.string "METAGROSS$"
-	.string "MIRAIDON$"
-	.string "OGERPON-CS$"
-	.string "OGERPON-HF$"
-	.string "OGERPON-WS$"
+# 1531 "data/scripts/sample_sets_options.pory"
+	.string "KINGAMBIT$"
+	.string "KORAIDON$"
+	.string "KYOGRE$"
+	.string "LANDO-T$"
+	.string "LANDORUS$"
 	.string "Go Back$"
 	.string "$"
 
 Auto_Text_Sample_Sets_Page7::
-# 1228 "data/scripts/sample_sets_options.pory"
+# 1542 "data/scripts/sample_sets_options.pory"
+	.string "LATIAS$"
+	.string "LUNALA$"
+	.string "MANECTRIC$"
+	.string "MAWILE$"
+	.string "METAGROSS$"
+	.string "Go Back$"
+	.string "$"
+
+Auto_Text_Sample_Sets_Page8::
+# 1553 "data/scripts/sample_sets_options.pory"
+	.string "MIRAIDON$"
+	.string "OGERPON-CS$"
+	.string "OGERPON-HF$"
+	.string "OGERPON-WS$"
 	.string "PELIPPER$"
+	.string "Go Back$"
+	.string "$"
+
+Auto_Text_Sample_Sets_Page9::
+# 1564 "data/scripts/sample_sets_options.pory"
+	.string "POLITOED$"
 	.string "PORYGON2$"
 	.string "RAGING BOLT$"
 	.string "REGIDRAGO$"
@@ -2560,63 +3265,38 @@ Auto_Text_Sample_Sets_Page7::
 	.string "Go Back$"
 	.string "$"
 
-Auto_Text_Sample_Sets_Page8::
-# 1239 "data/scripts/sample_sets_options.pory"
+Auto_Text_Sample_Sets_Page10::
+# 1575 "data/scripts/sample_sets_options.pory"
 	.string "ROARING MOON$"
 	.string "SALAMENCE$"
+	.string "TALONFLAME$"
 	.string "TING-LU$"
-	.string "TORKOAL$"
-	.string "TORNADUS$"
+	.string "TINKATON$"
 	.string "Go Back$"
 	.string "$"
 
-Auto_Text_Sample_Sets_Page9::
-# 1250 "data/scripts/sample_sets_options.pory"
+Auto_Text_Sample_Sets_Page11::
+# 1586 "data/scripts/sample_sets_options.pory"
+	.string "TORKOAL$"
+	.string "TORNADUS$"
+	.string "TYRANITAR$"
 	.string "URSALUNA$"
 	.string "URSALUNA-BLOODMOON$"
+	.string "Go Back$"
+	.string "$"
+
+Auto_Text_Sample_Sets_Page12::
+# 1597 "data/scripts/sample_sets_options.pory"
 	.string "URSHIFU-RS$"
 	.string "URSHIFU-SS$"
 	.string "XERNEAS$"
-	.string "Go Back$"
-	.string "$"
-
-Auto_Text_Sample_Sets_Page10::
-# 1261 "data/scripts/sample_sets_options.pory"
 	.string "ZACIAN$"
 	.string "ZAMAZENTA$"
 	.string "Go Back$"
 	.string "$"
 
-Auto_Text_Sample_Sets_Zacian_Page1::
-# 1269 "data/scripts/sample_sets_options.pory"
-	.string "252/76+/4/0-/12/164 (GROUND)$"
-	.string "252/76+/4/0-/12/164 (STELLAR)$"
-	.string "Go Back$"
-	.string "$"
-
-Auto_Text_Sample_Sets_Zamazenta_Page1::
-# 1277 "data/scripts/sample_sets_options.pory"
-	.string "76/0/244+/0-/0/188$"
-	.string "Go Back$"
-	.string "$"
-
-Auto_Text_Sample_Sets_Ursaluna_Page1::
-# 1284 "data/scripts/sample_sets_options.pory"
-	.string "140/236+/0/0/132/0-$"
-	.string "140/236+/4/0-/116/12$"
-	.string "Go Back$"
-	.string "$"
-
-Auto_Text_Sample_Sets_Ursaluna_Bloodmoon_Page1::
-# 1292 "data/scripts/sample_sets_options.pory"
-	.string "244/0-/4/196+/52/12 (ORB)$"
-	.string "244/0/0/196+/68/0- (ORB)$"
-	.string "4/0-/4/196+/52/252 (ORB)$"
-	.string "Go Back$"
-	.string "$"
-
 Auto_Text_Sample_Sets_Urshifu_Rs_Page1::
-# 1301 "data/scripts/sample_sets_options.pory"
+# 1608 "data/scripts/sample_sets_options.pory"
 	.string "0/252+/0/0-/4/252 (SASH)$"
 	.string "12/156+/4/0-/84/252 (MYSTIC)$"
 	.string "12/156+/4/0-/84/252 (SCARF)$"
@@ -2624,119 +3304,212 @@ Auto_Text_Sample_Sets_Urshifu_Rs_Page1::
 	.string "$"
 
 Auto_Text_Sample_Sets_Urshifu_Ss_Page1::
-# 1310 "data/scripts/sample_sets_options.pory"
+# 1617 "data/scripts/sample_sets_options.pory"
 	.string "0/236+/0/0-/20/252 (BAND)$"
 	.string "0/252+/0/0-/4/252 (SASH)$"
 	.string "Go Back$"
 	.string "$"
 
 Auto_Text_Sample_Sets_Xerneas_Page1::
-# 1318 "data/scripts/sample_sets_options.pory"
+# 1625 "data/scripts/sample_sets_options.pory"
 	.string "4/0-/4/244/4/252+$"
 	.string "44/0-/20/188/4/252+$"
 	.string "Go Back$"
 	.string "$"
 
-Auto_Text_Sample_Sets_Roaring_Moon_Page1::
-# 1326 "data/scripts/sample_sets_options.pory"
-	.string "4/220/28/0-/4/252+ (BOOSTER)$"
+Auto_Text_Sample_Sets_Zacian_Page1::
+# 1633 "data/scripts/sample_sets_options.pory"
+	.string "252/76+/4/0-/12/164 (GROUND)$"
+	.string "252/76+/4/0-/12/164 (STELLAR)$"
 	.string "Go Back$"
 	.string "$"
 
-Auto_Text_Sample_Sets_Salamence_Page1::
-# 1333 "data/scripts/sample_sets_options.pory"
-	.string "0/44/0/252/0-/212+ (MEGA)$"
-	.string "252/36+/4/0-/124/92 (MEGA)$"
-	.string "Go Back$"
-	.string "$"
-
-Auto_Text_Sample_Sets_Ting_Lu_Page1::
-# 1341 "data/scripts/sample_sets_options.pory"
-	.string "52/4/196+/0-/252/4 (HELMET)$"
+Auto_Text_Sample_Sets_Zamazenta_Page1::
+# 1641 "data/scripts/sample_sets_options.pory"
+	.string "76/0/244+/0-/0/188$"
 	.string "Go Back$"
 	.string "$"
 
 Auto_Text_Sample_Sets_Torkoal_Page1::
-# 1348 "data/scripts/sample_sets_options.pory"
+# 1648 "data/scripts/sample_sets_options.pory"
 	.string "204/0/0/196+/108/0-$"
 	.string "204/0/0/196+/108/0- (SPECS)$"
 	.string "Go Back$"
 	.string "$"
 
 Auto_Text_Sample_Sets_Tornadus_Page1::
-# 1356 "data/scripts/sample_sets_options.pory"
+# 1656 "data/scripts/sample_sets_options.pory"
 	.string "196/0-/228+/4/76/4 (CLOAK)$"
 	.string "196/0-/228+/4/76/4 (HELMET)$"
 	.string "4/0-/0/252/0/252+ (SASH)$"
 	.string "Go Back$"
 	.string "$"
 
-Auto_Text_Sample_Sets_Pelipper_Page1::
-# 1365 "data/scripts/sample_sets_options.pory"
-	.string "0/0-/4/252+/0/252 (SASH)$"
+Auto_Text_Sample_Sets_Tyranitar_Page1::
+# 1665 "data/scripts/sample_sets_options.pory"
+	.string "44/164/20/0-/28/252+$"
+	.string "Go Back$"
+	.string "$"
+
+Auto_Text_Sample_Sets_Ursaluna_Page1::
+# 1672 "data/scripts/sample_sets_options.pory"
+	.string "140/236+/0/0/132/0-$"
+	.string "140/236+/4/0-/116/12$"
+	.string "Go Back$"
+	.string "$"
+
+Auto_Text_Sample_Sets_Ursaluna_Bloodmoon_Page1::
+# 1680 "data/scripts/sample_sets_options.pory"
+	.string "244/0-/4/196+/52/12 (ORB)$"
+	.string "244/0/0/196+/68/0- (ORB)$"
+	.string "4/0-/4/196+/52/252 (ORB)$"
+	.string "Go Back$"
+	.string "$"
+
+Auto_Text_Sample_Sets_Roaring_Moon_Page1::
+# 1689 "data/scripts/sample_sets_options.pory"
+	.string "4/220/28/0-/4/252+ (BOOSTER)$"
+	.string "Go Back$"
+	.string "$"
+
+Auto_Text_Sample_Sets_Salamence_Page1::
+# 1696 "data/scripts/sample_sets_options.pory"
+	.string "0/44/0/252/0-/212+ (MEGA)$"
+	.string "252/36+/4/0-/124/92 (MEGA)$"
+	.string "4/0-/4/244+/4/252$"
+	.string "Go Back$"
+	.string "$"
+
+Auto_Text_Sample_Sets_Talonflame_Page1::
+# 1705 "data/scripts/sample_sets_options.pory"
+	.string "4/252+/0/0-/0/252 (BANDED)$"
+	.string "4/252/0/0-/0/252+ (BANDED)$"
+	.string "Go Back$"
+	.string "$"
+
+Auto_Text_Sample_Sets_Ting_Lu_Page1::
+# 1713 "data/scripts/sample_sets_options.pory"
+	.string "52/4/196+/0-/252/4 (HELMET)$"
+	.string "Go Back$"
+	.string "$"
+
+Auto_Text_Sample_Sets_Tinkaton_Page1::
+# 1720 "data/scripts/sample_sets_options.pory"
+	.string "180/172/100/0-/44+/12$"
+	.string "Go Back$"
+	.string "$"
+
+Auto_Text_Sample_Sets_Politoed_Page1::
+# 1727 "data/scripts/sample_sets_options.pory"
+	.string "220/0-/196/4/76+/12$"
 	.string "Go Back$"
 	.string "$"
 
 Auto_Text_Sample_Sets_Porygon2_Page1::
-# 1372 "data/scripts/sample_sets_options.pory"
+# 1734 "data/scripts/sample_sets_options.pory"
 	.string "244/0-/92/116+/52/4$"
 	.string "244/0/92/116+/52/0-$"
 	.string "Go Back$"
 	.string "$"
 
 Auto_Text_Sample_Sets_Raging_Bolt_Page1::
-# 1380 "data/scripts/sample_sets_options.pory"
+# 1742 "data/scripts/sample_sets_options.pory"
 	.string "148/0-/36/100+/44/180 (ORB)$"
 	.string "244/0-/124/100+/36/4 (VEST)$"
 	.string "Go Back$"
 	.string "$"
 
 Auto_Text_Sample_Sets_Regidrago_Page1::
-# 1388 "data/scripts/sample_sets_options.pory"
+# 1750 "data/scripts/sample_sets_options.pory"
 	.string "12/0-/4/236+/4/252$"
 	.string "Go Back$"
 	.string "$"
 
 Auto_Text_Sample_Sets_Rillaboom_Page1::
-# 1395 "data/scripts/sample_sets_options.pory"
+# 1757 "data/scripts/sample_sets_options.pory"
 	.string "140/116+/12/0-/236/4 (VEST)$"
 	.string "140/196+/12/0-/156/4 (VEST)$"
 	.string "Go Back$"
 	.string "$"
 
-Auto_Text_Sample_Sets_Metagross_Page1::
-# 1403 "data/scripts/sample_sets_options.pory"
-	.string "124/196+/12/0-/36/140 (MEGA)$"
-	.string "Go Back$"
-	.string "$"
-
 Auto_Text_Sample_Sets_Miraidon_Page1::
-# 1410 "data/scripts/sample_sets_options.pory"
+# 1765 "data/scripts/sample_sets_options.pory"
 	.string "92/0-/4/196+/4/212 (SPECS)$"
 	.string "Go Back$"
 	.string "$"
 
 Auto_Text_Sample_Sets_Ogerpon_Cs_Page1::
-# 1417 "data/scripts/sample_sets_options.pory"
+# 1772 "data/scripts/sample_sets_options.pory"
 	.string "0/252/4/0-/0/252+$"
 	.string "Go Back$"
 	.string "$"
 
 Auto_Text_Sample_Sets_Ogerpon_Hf_Page1::
-# 1424 "data/scripts/sample_sets_options.pory"
+# 1779 "data/scripts/sample_sets_options.pory"
 	.string "188/76+/52/0-/4/188$"
 	.string "28/220/4/0-/4/252+$"
 	.string "Go Back$"
 	.string "$"
 
 Auto_Text_Sample_Sets_Ogerpon_Ws_Page1::
-# 1432 "data/scripts/sample_sets_options.pory"
+# 1787 "data/scripts/sample_sets_options.pory"
 	.string "220/60/44/0-/4/180+$"
 	.string "Go Back$"
 	.string "$"
 
+Auto_Text_Sample_Sets_Pelipper_Page1::
+# 1794 "data/scripts/sample_sets_options.pory"
+	.string "0/0-/4/252+/0/252 (SASH)$"
+	.string "Go Back$"
+	.string "$"
+
+Auto_Text_Sample_Sets_Latias_Page1::
+# 1801 "data/scripts/sample_sets_options.pory"
+	.string "252/0-/60/76+/12/108$"
+	.string "Go Back$"
+	.string "$"
+
+Auto_Text_Sample_Sets_Lunala_Page1::
+# 1808 "data/scripts/sample_sets_options.pory"
+	.string "140/0-/132/180+/4/52 (HERB)$"
+	.string "Go Back$"
+	.string "$"
+
+Auto_Text_Sample_Sets_Manectric_Page1::
+# 1815 "data/scripts/sample_sets_options.pory"
+	.string "244/0-/4/36/4/220+ (MEGA)$"
+	.string "Go Back$"
+	.string "$"
+
+Auto_Text_Sample_Sets_Mawile_Page1::
+# 1822 "data/scripts/sample_sets_options.pory"
+	.string "156/196+/0/0/156/0- (MEGA)$"
+	.string "156/196+/4/0-/148/4 (MEGA)$"
+	.string "Go Back$"
+	.string "$"
+
+Auto_Text_Sample_Sets_Metagross_Page1::
+# 1830 "data/scripts/sample_sets_options.pory"
+	.string "124/196+/12/0-/36/140 (MEGA)$"
+	.string "Go Back$"
+	.string "$"
+
+Auto_Text_Sample_Sets_Kingambit_Page1::
+# 1837 "data/scripts/sample_sets_options.pory"
+	.string "204/196+/4/0-/92/12$"
+	.string "204/196+/4/0-/92/12 (VEST)$"
+	.string "Go Back$"
+	.string "$"
+
+Auto_Text_Sample_Sets_Koraidon_Page1::
+# 1845 "data/scripts/sample_sets_options.pory"
+	.string "108/116+/4/0-/68/212 (ORB)$"
+	.string "28/220/4/0-/4/252+ (ORB)$"
+	.string "Go Back$"
+	.string "$"
+
 Auto_Text_Sample_Sets_Kyogre_Page1::
-# 1439 "data/scripts/sample_sets_options.pory"
+# 1853 "data/scripts/sample_sets_options.pory"
 	.string "252/0-/132/76+/4/44 (MYSTIC)$"
 	.string "252/0-/164/76+/4/12 (PRIMAL)$"
 	.string "4/0-/4/244+/4/252 (SCARF)$"
@@ -2744,73 +3517,54 @@ Auto_Text_Sample_Sets_Kyogre_Page1::
 	.string "$"
 
 Auto_Text_Sample_Sets_Lando_T_Page1::
-# 1448 "data/scripts/sample_sets_options.pory"
+# 1862 "data/scripts/sample_sets_options.pory"
 	.string "12/196+/4/0-/44/252 (SCARF)$"
 	.string "12/196+/4/0-/44/252 (VEST)$"
-	.string "156/116+/36/0-/108/92 (Z MOVE)$"
+	.string "156/116+/36/0-/108/92 (GROUND Z)$"
+	.string "20/164+/4/0-/68/252 (GROUND Z)$"
 	.string "Go Back$"
 	.string "$"
 
 Auto_Text_Sample_Sets_Landorus_Page1::
-# 1457 "data/scripts/sample_sets_options.pory"
+# 1872 "data/scripts/sample_sets_options.pory"
 	.string "132/0-/4/116+/4/252 (ORB)$"
 	.string "4/0-/0/252/0/252+ (SASH)$"
 	.string "Go Back$"
 	.string "$"
 
-Auto_Text_Sample_Sets_Lunala_Page1::
-# 1465 "data/scripts/sample_sets_options.pory"
-	.string "140/0-/132/180+/4/52 (HERB)$"
-	.string "Go Back$"
-	.string "$"
-
-Auto_Text_Sample_Sets_Manectric_Page1::
-# 1472 "data/scripts/sample_sets_options.pory"
-	.string "244/0-/4/36/4/220+ (MEGA)$"
-	.string "Go Back$"
-	.string "$"
-
 Auto_Text_Sample_Sets_Indeedee_F_Page1::
-# 1479 "data/scripts/sample_sets_options.pory"
+# 1880 "data/scripts/sample_sets_options.pory"
 	.string "252/0-/204/4/44+/4 (SEED)$"
 	.string "Go Back$"
 	.string "$"
 
+Auto_Text_Sample_Sets_Iron_Bundle_Page1::
+# 1887 "data/scripts/sample_sets_options.pory"
+	.string "0/0-/0/252/4/252+$"
+	.string "Go Back$"
+	.string "$"
+
 Auto_Text_Sample_Sets_Iron_Hands_Page1::
-# 1486 "data/scripts/sample_sets_options.pory"
+# 1894 "data/scripts/sample_sets_options.pory"
 	.string "100/156+/0/0/252/0- (VEST)$"
 	.string "60/156+/36/0-/252/4 (VEST)$"
 	.string "Go Back$"
 	.string "$"
 
 Auto_Text_Sample_Sets_Kangaskhan_Page1::
-# 1494 "data/scripts/sample_sets_options.pory"
+# 1902 "data/scripts/sample_sets_options.pory"
 	.string "36/196+/20/0-/236/20 (MEGA)$"
 	.string "Go Back$"
 	.string "$"
 
-Auto_Text_Sample_Sets_Kingambit_Page1::
-# 1501 "data/scripts/sample_sets_options.pory"
-	.string "204/196+/4/0-/92/12$"
-	.string "204/196+/4/0-/92/12 (VEST)$"
-	.string "Go Back$"
-	.string "$"
-
-Auto_Text_Sample_Sets_Koraidon_Page1::
-# 1509 "data/scripts/sample_sets_options.pory"
-	.string "108/116+/4/0-/68/212 (ORB)$"
-	.string "28/220/4/0-/4/252+ (ORB)$"
-	.string "Go Back$"
-	.string "$"
-
-Auto_Text_Sample_Sets_Gengar_Page1::
-# 1517 "data/scripts/sample_sets_options.pory"
-	.string "252/0-/68/4/4/180+ (MEGA)$"
+Auto_Text_Sample_Sets_Kartana_Page1::
+# 1909 "data/scripts/sample_sets_options.pory"
+	.string "4/252/0/0-/0/252+$"
 	.string "Go Back$"
 	.string "$"
 
 Auto_Text_Sample_Sets_Gholdengo_Page1::
-# 1524 "data/scripts/sample_sets_options.pory"
+# 1916 "data/scripts/sample_sets_options.pory"
 	.string "212/0-/4/212+/20/60 (ORB)$"
 	.string "244/0-/4/212+/12/36 (LEFTYS)$"
 	.string "36/0-/4/212+/4/252 (SPECS)$"
@@ -2818,7 +3572,7 @@ Auto_Text_Sample_Sets_Gholdengo_Page1::
 	.string "$"
 
 Auto_Text_Sample_Sets_Groudon_Page1::
-# 1533 "data/scripts/sample_sets_options.pory"
+# 1925 "data/scripts/sample_sets_options.pory"
 	.string "252/156+/4/0-/84/12 (AMULET)$"
 	.string "252/156+/4/0-/84/12 (PRIMAL)$"
 	.string "4/0-/4/244/4/252+ (PRIMAL)$"
@@ -2826,40 +3580,34 @@ Auto_Text_Sample_Sets_Groudon_Page1::
 	.string "$"
 
 Auto_Text_Sample_Sets_Hatterene_Page1::
-# 1542 "data/scripts/sample_sets_options.pory"
+# 1934 "data/scripts/sample_sets_options.pory"
 	.string "212/0/84/188+/20/0- (ORB)$"
 	.string "Go Back$"
 	.string "$"
 
+Auto_Text_Sample_Sets_Heatran_Page1::
+# 1941 "data/scripts/sample_sets_options.pory"
+	.string "244/0-/4/236+/4/20 (SHUCA)$"
+	.string "252/0-/36/180+/4/36 (LEFTYS)$"
+	.string "Go Back$"
+	.string "$"
+
 Auto_Text_Sample_Sets_Incineroar_Page1::
-# 1549 "data/scripts/sample_sets_options.pory"
+# 1949 "data/scripts/sample_sets_options.pory"
 	.string "236/36+/4/0-/204/28 (SITRUS)$"
 	.string "236/4+/236/0-/28/4 (HELMET)$"
-	.string "Go Back$"
-	.string "$"
-
-Auto_Text_Sample_Sets_Chien_Pao_Page1::
-# 1557 "data/scripts/sample_sets_options.pory"
-	.string "0/252/4/0-/0/252+ (SASH)$"
-	.string "Go Back$"
-	.string "$"
-
-Auto_Text_Sample_Sets_Cresselia_Page1::
-# 1564 "data/scripts/sample_sets_options.pory"
-	.string "252/0-/156+/4/76/4 (HELMET)$"
-	.string "252/0-/172/4/76+/4 (GOGGLES)$"
-	.string "252/0/180/0/76+/0- (GOGGLES)$"
+	.string "244/36+/4/0-/220/4 (GOGGLES)$"
 	.string "Go Back$"
 	.string "$"
 
 Auto_Text_Sample_Sets_Farigiraf_Page1::
-# 1573 "data/scripts/sample_sets_options.pory"
+# 1958 "data/scripts/sample_sets_options.pory"
 	.string "228/0-/116/4/156+/4 (SITRUS)$"
 	.string "Go Back$"
 	.string "$"
 
 Auto_Text_Sample_Sets_Flutter_Mane_Page1::
-# 1580 "data/scripts/sample_sets_options.pory"
+# 1965 "data/scripts/sample_sets_options.pory"
 	.string "0/0-/4/252/0/252+ (SASH)$"
 	.string "116/0-/156/36+/4/196 (SPECS)$"
 	.string "228/0-/204/4/4/68+ (BOOSTER)$"
@@ -2867,28 +3615,27 @@ Auto_Text_Sample_Sets_Flutter_Mane_Page1::
 	.string "$"
 
 Auto_Text_Sample_Sets_Gardevoir_Page1::
-# 1589 "data/scripts/sample_sets_options.pory"
+# 1974 "data/scripts/sample_sets_options.pory"
 	.string "244/0-/196/36+/4/28 (MEGA)$"
 	.string "Go Back$"
 	.string "$"
 
-Auto_Text_Sample_Sets_Amoonguss_Page1::
-# 1596 "data/scripts/sample_sets_options.pory"
-	.string "236/0/236+/0/36/0- (HELMET)$"
-	.string "244/0/108/0/156+/0- (SITRUS)$"
-	.string "252/0/20/0/236+/0- (SITRUS)$"
+Auto_Text_Sample_Sets_Garganacl_Page1::
+# 1981 "data/scripts/sample_sets_options.pory"
+	.string "252/0/20/0/236+/0-$"
+	.string "252/4/12/0-/236+/4$"
 	.string "Go Back$"
 	.string "$"
 
-Auto_Text_Sample_Sets_Archaludon_Page1::
-# 1605 "data/scripts/sample_sets_options.pory"
-	.string "0/0-/0/252+/4/252 (HERB)$"
-	.string "252/0-/4/44+/204/4 (VEST)$"
+Auto_Text_Sample_Sets_Gengar_Page1::
+# 1989 "data/scripts/sample_sets_options.pory"
+	.string "252/0-/68/4/4/180+ (PERISH)$"
+	.string "76/0-/28/220/4/180+ (CONTROL)$"
 	.string "Go Back$"
 	.string "$"
 
 Auto_Text_Sample_Sets_Calyrex_Page1::
-# 1613 "data/scripts/sample_sets_options.pory"
+# 1997 "data/scripts/sample_sets_options.pory"
 	.string "0/0-/4/252/0/252+ (SHADOW)$"
 	.string "20/0-/4/220/4/252+ (SHADOW)$"
 	.string "252/116+/0/0/140/0- (ICE)$"
@@ -2897,14 +3644,66 @@ Auto_Text_Sample_Sets_Calyrex_Page1::
 	.string "$"
 
 Auto_Text_Sample_Sets_Charizard_Page1::
-# 1623 "data/scripts/sample_sets_options.pory"
-	.string "204/0-/108/4+/4/188 (MEGA)$"
+# 2007 "data/scripts/sample_sets_options.pory"
+	.string "204/0-/108/4+/4/188 (MEGA Y)$"
+	.string "236/44/4/0-/4/220+ (MEGA X)$"
 	.string "Go Back$"
 	.string "$"
 
 Auto_Text_Sample_Sets_Chi_Yu_Page1::
-# 1630 "data/scripts/sample_sets_options.pory"
+# 2015 "data/scripts/sample_sets_options.pory"
 	.string "4/0-/0/252/0/252+ (SASH)$"
 	.string "52/0-/4/196+/4/252 (SCARF)$"
+	.string "Go Back$"
+	.string "$"
+
+Auto_Text_Sample_Sets_Chien_Pao_Page1::
+# 2023 "data/scripts/sample_sets_options.pory"
+	.string "0/252/4/0-/0/252+ (SASH)$"
+	.string "Go Back$"
+	.string "$"
+
+Auto_Text_Sample_Sets_Cresselia_Page1::
+# 2030 "data/scripts/sample_sets_options.pory"
+	.string "252/0-/156+/4/76/4 (HELMET)$"
+	.string "252/0-/172/4/76+/4 (GOGGLES)$"
+	.string "252/0/180/0/76+/0- (GOGGLES)$"
+	.string "Go Back$"
+	.string "$"
+
+Auto_Text_Sample_Sets_Aegislash_Page1::
+# 2039 "data/scripts/sample_sets_options.pory"
+	.string "140/0-/0/252+/0/116 (GHOST Z)$"
+	.string "236/0-/0/252+/0/20 (LEFTYS)$"
+	.string "252/0/4/180+/68/0- (POLICY)$"
+	.string "Go Back$"
+	.string "$"
+
+Auto_Text_Sample_Sets_Amoonguss_Page1::
+# 2048 "data/scripts/sample_sets_options.pory"
+	.string "236/0/236+/0/36/0- (HELMET)$"
+	.string "244/0/108/0/156+/0- (SITRUS)$"
+	.string "252/0/180/0/76+/0- (EJECT)$"
+	.string "252/0/20/0/236+/0- (SITRUS)$"
+	.string "Go Back$"
+	.string "$"
+
+Auto_Text_Sample_Sets_Arcanine_Page1::
+# 2058 "data/scripts/sample_sets_options.pory"
+	.string "236/68/4/0-/4/196+ (GOGGLES)$"
+	.string "252/68+/4/0-/108/76 (GOGGLES)$"
+	.string "Go Back$"
+	.string "$"
+
+Auto_Text_Sample_Sets_Archaludon_Page1::
+# 2066 "data/scripts/sample_sets_options.pory"
+	.string "0/0-/0/252+/4/252 (HERB)$"
+	.string "252/0-/4/44+/204/4 (VEST)$"
+	.string "Go Back$"
+	.string "$"
+
+Auto_Text_Sample_Sets_Basculegion_Page1::
+# 2074 "data/scripts/sample_sets_options.pory"
+	.string "164/220+/4/0-/4/116$"
 	.string "Go Back$"
 	.string "$"

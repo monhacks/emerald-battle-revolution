@@ -224,7 +224,7 @@ void NewGameInitData(void)
     ClearFollowerNPCData();
     
     // EBR Quick Start
-    EbrQuickStart();
+    InitQuickStart();
 }
 
 static void ResetMiniGamesRecords(void)

@@ -3,6 +3,22 @@
 Please see below for the Emerald Battle Revolution project changelog. For changes related to
 the PokeEmerald Expanded project, please see the [PokeEmerald Changelog](./CHANGELOG.md).
 
+## Ver. 3.2.1
+
+Sample teams / sets restructure, added new doubles sets and teams
+
+## Ver. 3.2.0
+
+Added RefreshQuickStart NPC to the Battle Frontier Underground Pokemon Center, for ensuring that older 
+players get the up-to-date items, flags, etc. set the same as new save files
+
+Moved Battle Frontier Underground Pokemon Center special NPCs (Gentleman, Gigantamax Factor Teacher) to
+the vacant store at the bottom-right hand corner of the Battle Frontier Underground
+
+Updated Birch speech, some other NPC text lines
+
+Updated readme for current features
+
 ## Ver. 3.1.3
 
 Updated config, increased hard-mode battle point earnings
