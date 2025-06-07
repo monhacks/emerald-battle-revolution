@@ -2411,7 +2411,7 @@ Auto_EventScript_Legendary_Shop_Fairy_Page2_7:
 
 Auto_EventScript_Legendary_Shop_Controls_Text_0:
 # 5 "data/scripts/legendary_shop_options.pory"
-	.string "L: Previous Page                    R: Next Page\nA: Confirm                    B: Go Back$"
+	.string "L: Previous Page                    R: Next Page\nA: Confirm                               B: Go Back$"
 
 Auto_Text_Legendary_Shop_Page1::
 # 1038 "data/scripts/legendary_shop_options.pory"

@@ -153,13 +153,13 @@ Auto_EventScript_Sample_Teams_Doubles_Page2::
 
 Auto_EventScript_Sample_Teams_Doubles_Page2_2:
 # 75 "data/scripts/sample_teams_options.pory"
-	givemon SPECIES_GENGAR, 65, ITEM_GENGARITE, ITEM_SPORT_BALL, NATURE_TIMID, 0, 0, 252, 0, 68, 180, 4, 4, 31, 0, 31, 31, 31, 31, MOVE_PROTECT, MOVE_SHADOW_BALL, MOVE_PERISH_SONG, MOVE_DISABLE, FALSE, FALSE, TYPE_WATER
+	givemon SPECIES_GENGAR, 65, ITEM_GENGARITE, ITEM_SPORT_BALL, NATURE_TIMID, 0, 1, 252, 0, 68, 180, 4, 4, 31, 0, 31, 31, 31, 31, MOVE_PROTECT, MOVE_PERISH_SONG, MOVE_SHADOW_BALL, MOVE_DISABLE, FALSE, FALSE, TYPE_WATER
 # 76 "data/scripts/sample_teams_options.pory"
-	givemon SPECIES_INCINEROAR, 65, ITEM_SITRUS_BERRY, ITEM_SPORT_BALL, NATURE_ADAMANT, 1, 1, 236, 36, 4, 28, 0, 204, 31, 31, 31, 31, 31, 31, MOVE_PARTING_SHOT, MOVE_FLARE_BLITZ, MOVE_KNOCK_OFF, MOVE_FAKE_OUT, FALSE, FALSE, TYPE_GHOST
+	givemon SPECIES_INCINEROAR, 65, ITEM_SAFETY_GOGGLES, ITEM_SPORT_BALL, NATURE_ADAMANT, 1, 0, 244, 36, 4, 4, 0, 220, 31, 31, 31, 31, 31, 31, MOVE_PROTECT, MOVE_PARTING_SHOT, MOVE_KNOCK_OFF, MOVE_FAKE_OUT, FALSE, FALSE, TYPE_GHOST
 # 77 "data/scripts/sample_teams_options.pory"
-	givemon SPECIES_POLITOED, 65, ITEM_LEFTOVERS, ITEM_SPORT_BALL, NATURE_CALM, 2, 1, 220, 0, 196, 12, 4, 76, 31, 0, 31, 31, 31, 31, MOVE_PROTECT, MOVE_ENCORE, MOVE_PERISH_SONG, MOVE_SCALD, FALSE, FALSE, TYPE_GRASS
+	givemon SPECIES_POLITOED, 65, ITEM_LEFTOVERS, ITEM_SPORT_BALL, NATURE_CALM, 2, 0, 220, 0, 196, 12, 4, 76, 31, 0, 31, 31, 31, 31, MOVE_PROTECT, MOVE_PERISH_SONG, MOVE_ENCORE, MOVE_SCALD, FALSE, FALSE, TYPE_GRASS
 # 78 "data/scripts/sample_teams_options.pory"
-	givemon SPECIES_AMOONGUSS, 65, ITEM_EJECT_BUTTON, ITEM_SPORT_BALL, NATURE_SASSY, 1, 1, 252, 0, 180, 0, 0, 76, 31, 0, 31, 0, 31, 31, MOVE_PROTECT, MOVE_POLLEN_PUFF, MOVE_SPORE, MOVE_RAGE_POWDER, FALSE, FALSE, TYPE_WATER
+	givemon SPECIES_GOTHITELLE, 50, ITEM_SITRUS_BERRY, ITEM_SPORT_BALL, NATURE_CALM, 2, 1, 244, 0, 180, 4, 4, 76, 31, 0, 31, 31, 31, 31, MOVE_PROTECT, MOVE_TRICK_ROOM, MOVE_PSYCHIC, MOVE_FAKE_OUT, FALSE, FALSE, TYPE_WATER
 # 79 "data/scripts/sample_teams_options.pory"
 	goto Common_EventScript_Sample_Team_CheckPurchase
 	return
@@ -177,7 +177,7 @@ Auto_EventScript_Sample_Teams_Doubles_Page2_4:
 
 Auto_EventScript_Sample_Teams_Controls_Text_0:
 # 5 "data/scripts/sample_teams_options.pory"
-	.string "L: Previous Page                    R: Next Page\nA: Confirm                    B: Go Back$"
+	.string "L: Previous Page                    R: Next Page\nA: Confirm                               B: Go Back$"
 
 Auto_Text_Sample_Teams_Page1::
 # 89 "data/scripts/sample_teams_options.pory"
@@ -188,10 +188,10 @@ Auto_Text_Sample_Teams_Page1::
 Auto_Text_Sample_Teams_Doubles_Page1::
 # 96 "data/scripts/sample_teams_options.pory"
 	.string "KOMMO CONTROL$"
-	.string "M CHARIZARD Y$"
-	.string "M GARDEVOIR$"
-	.string "M METAGROSS$"
-	.string "M SALAMENCE$"
+	.string "MEGA CHARIZARD Y$"
+	.string "MEGA GARDEVOIR$"
+	.string "MEGA METAGROSS$"
+	.string "MEGA SALAMENCE$"
 	.string "Go Back$"
 	.string "$"
 

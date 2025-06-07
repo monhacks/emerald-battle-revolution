@@ -3,6 +3,12 @@
 Please see below for the Emerald Battle Revolution project changelog. For changes related to
 the PokeEmerald Expanded project, please see the [PokeEmerald Changelog](./CHANGELOG.md).
 
+## Ver. 3.3.0
+
+Money box window is now hidden while multichoice menus are displayed, increasing the available size
+of the window and avoiding clipping issues. The controls dialog box now fits the entire chat window.
+Sample sets have been restructured, and some teams have been improved.
+
 ## Ver. 3.2.1
 
 Sample teams / sets restructure, added new doubles sets and teams
