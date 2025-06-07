@@ -1,8 +1,8 @@
 Urshifu-Rapid-Strike @ Focus Sash
 Ability: Unseen Fist
-EVs: 4 HP / 244 Atk / 4 Def / 4 SpD / 252 Spe
-Tera type: Water
-Jolly nature
+EVs: 252 Atk / 4 SpD / 252 Spe
+Tera Type: Water
+Adamant Nature
 - Protect
 - Surging Strikes
 - Close Combat
@@ -12,18 +12,19 @@ Salamence @ Salamencite
 Ability: Intimidate
 IVs: 0 Atk
 EVs: 4 HP / 4 Def / 244 SpA / 4 SpD / 252 Spe
-Tera type: Water
-Modest nature
+Tera Type: Water
+Modest Nature
 - Protect
 - Tailwind
-- Draco Meteor
 - Hyper Voice
+- Draco Meteor
 
 Incineroar @ Sitrus Berry
 Ability: Intimidate
+Tera Type: Ghost
+Note: Sitrus
 EVs: 236 HP / 36 Atk / 4 Def / 204 SpD / 28 Spe
-Tera type: Ghost
-Adamant nature
+Adamant Nature
 - Parting Shot
 - Flare Blitz
 - Knock Off
@@ -31,9 +32,9 @@ Adamant nature
 
 Rillaboom @ Assault Vest
 Ability: Grassy Surge
-EVs: 132 HP / 36 Atk / 60 Def / 212 SpD / 68 Spe
-Tera type: Fire
-Adamant nature
+EVs: 140 HP / 116 Atk / 12 Def / 236 SpD / 4 Spe
+Tera Type: Fire
+Adamant Nature
 - U-Turn
 - Wood Hammer
 - Grassy Glide

@@ -3,6 +3,10 @@
 Please see below for the Emerald Battle Revolution project changelog. For changes related to
 the PokeEmerald Expanded project, please see the [PokeEmerald Changelog](./CHANGELOG.md).
 
+## Ver. 3.2.1
+
+Sample teams / sets restructure, added new doubles sets and teams
+
 ## Ver. 3.2.0
 
 Added RefreshQuickStart NPC to the Battle Frontier Underground Pokemon Center, for ensuring that older 

@@ -11,19 +11,19 @@ Adamant nature
 Tapu Fini @ Leftovers
 Ability: Misty Surge
 IVs: 0 Atk
-EVs: 244 HP / 4 Def / 196 SpA / 12 SpD / 52 Spe
-Tera type: Fairy
-Modest nature
+EVs: 252 HP / 92 Def / 68 SpA / 76 SpD / 20 Spe
+Tera type: Steel
+Calm Nature
 - Protect
 - Calm Mind
-- Muddy Water
 - Moonblast
+- Muddy Water
 
 Incineroar @ Sitrus Berry
 Ability: Intimidate
 EVs: 188 HP / 36 Atk / 4 Def / 252 SpD / 28 Spe
 Tera type: Ghost
-Adamant nature
+Adamant Nature
 - Parting Shot
 - Flare Blitz
 - Knock Off
@@ -31,11 +31,11 @@ Adamant nature
 
 Amoonguss @ Rocky Helmet
 Ability: Regenerator
-IVs: 0 Atk
-EVs: 252 HP / 172 Def / 4 SpA / 76 SpD / 4 Spe
-Tera type: Ghost
-Calm nature
+Tera Type: Water
+EVs: 236 HP / 236 Def / 36 SpD
+IVs: 0 Atk / 0 Spe
+Relaxed Nature
 - Protect
-- Rage Powder
 - Pollen Puff
+- Rage Powder
 - Spore
