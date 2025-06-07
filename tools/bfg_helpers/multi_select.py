@@ -33,7 +33,7 @@ MENU_X = 0 # X-Coordinate
 MENU_Y = 0 # Y-Coordinate
 
 # Controls
-CONTROLS = 'msgbox("L: Previous Page                    R: Next Page\\nA: Confirm                    B: Go Back")'
+CONTROLS = 'msgbox("L: Previous Page                    R: Next Page\\nA: Confirm                               B: Go Back")'
 
 # Argument Prefixes
 PREFIX = "Auto" # Auto-Generated Prefix

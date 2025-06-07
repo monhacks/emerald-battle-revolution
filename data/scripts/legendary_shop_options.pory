@@ -2,7 +2,7 @@
 
 script Auto_EventScript_Legendary_Shop_Controls
 {
-    msgbox("L: Previous Page                    R: Next Page\nA: Confirm                    B: Go Back")
+    msgbox("L: Previous Page                    R: Next Page\nA: Confirm                               B: Go Back")
     goto(Auto_EventScript_Legendary_Shop_Page1)
 }
 

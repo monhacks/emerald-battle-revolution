@@ -9953,7 +9953,7 @@ Auto_EventScript_Pokemon_Shop_Fairy_Page6_5:
 
 Auto_EventScript_Pokemon_Shop_Controls_Text_0:
 # 5 "data/scripts/pokemon_shop_options.pory"
-	.string "L: Previous Page                    R: Next Page\nA: Confirm                    B: Go Back$"
+	.string "L: Previous Page                    R: Next Page\nA: Confirm                               B: Go Back$"
 
 Auto_Text_Pokemon_Shop_Page1::
 # 4218 "data/scripts/pokemon_shop_options.pory"

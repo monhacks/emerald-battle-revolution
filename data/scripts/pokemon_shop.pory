@@ -37,8 +37,8 @@ script Common_EventScript_Pokemon_Shop_CheckGoldBottleCap {
         setflag(P_FLAG_FORCE_NO_SHINY)
         clearflag(P_FLAG_FORCE_SHINY)
     }
-
     msgbox(format("What are you looking for today?"))
+    hidemoneybox
     goto(Auto_EventScript_Pokemon_Shop_Controls)
 }
 
@@ -63,7 +63,6 @@ script Common_EventScript_Pokemon_Shop_CheckPurchase {
     }
     msgbox(format("I'll take your payment now, please."))
     removemoney(4000)
-    updatemoneybox
     playse(SE_SHOP)
     waitse
     if (flag(P_FLAG_FORCE_SHINY) == TRUE){

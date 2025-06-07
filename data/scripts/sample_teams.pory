@@ -11,7 +11,9 @@ script Common_EventScript_Sample_Team_CheckMoney {
     showmoneybox(18, 0)
     checkmoney(50000)
     if (var(VAR_RESULT) == TRUE) {
-        msgbox(format("All teams cost a mere ¥50000. What would you like?"))
+        msgbox(format("All teams cost a mere ¥50000."))
+        msgbox(format("What are you looking for today?"))
+        hidemoneybox
         goto(Auto_EventScript_Sample_Teams_Controls)
     }
     else # Player does not have enough money
@@ -42,7 +44,6 @@ script Common_EventScript_Sample_Team_CheckPurchase {
     }
     msgbox(format("I'll take your payment now, please."))
     removemoney(50000)
-    updatemoneybox
     playse(SE_SHOP)
     waitse
     msgbox(format("Thanks for your business!"))
