@@ -19,6 +19,32 @@ BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_Nurse::
 	end
 `
 
+script BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_QuickStart {
+	lock
+	faceplayer
+	msgbox(format("Hello! I'm here to update your save data if a new version is released."))
+	msgbox(format("You shouldn't have any issues, but don't use me unless you need to!"))
+	msgbox(format("Do you want me to update your save?"))
+	yesnobox(0, 8)
+	if (var(VAR_RESULT) == YES) {
+        goto(BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_QuickStartRefresh)
+    }
+    goto(BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_QuickStartEnd)
+}
+
+script BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_QuickStartRefresh {
+	msgbox(format("Okay! Lets get started ..."))
+	special(RefreshQuickStart)
+	msgbox(format("All done!"))
+	goto(BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_QuickStartEnd)
+}
+
+script BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_QuickStartEnd {
+	msgbox(format("Come back next time!"))
+    release
+    end
+}
+
 script BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_Gentleman {
     lock
 	faceplayer

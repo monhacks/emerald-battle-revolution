@@ -4,12 +4,10 @@
 
 ## About
 
-Emerald Battle Revolution is a Pokémon Emerald decompilation project 
-which uses the PokeEmerald Expansion project as a base. The goal for 
-this project is to create a sandbox for players to enjoy the incredible 
-post-game content in Emerald such as the Battle Frontier and other 
-facilities using new Pokémon and simple methods for obtaining properly 
-trained, competitive Pokémon easily without the need for modifying save files.
+Emerald Battle Revolution is a Pokémon Emerald decompilation project which uses the PokeEmerald Expansion project as a base. 
+The goal for this project is to create a sandbox for players to enjoy the incredible post-game content in Emerald such as 
+the Battle Frontier and other facilities using new Pokémon and simple methods for obtaining properly trained, competitive 
+Pokémon easily without the need for modifying save files.
 
 ## Key Features
 
@@ -20,29 +18,29 @@ If you experience an issue and would like to report it, please open an issue [he
 For more information about the pokeemerald-expanded project, please 
 check out their [github repository](https://github.com/rh-hideout/pokeemerald-expansion).
 
-### Sandbox Mode
+### Quick Start
 
-When starting the game, you may choose to be transferred to the battle
-frontier with the story completed up to becoming the champion.
+When starting the game you will be given $500,000 and a Volcarona for ingame battling and 
+Flame Body, as well as a Smeargle for using HMs (Waterfall, Dive, Surf, Fly). You will spawn
+outside the Battle Tower, with the story completed up to becoming the champion. 
 
-You will be given $300,000 to start the game, as well as a Swampert and
-Talonflame for using important HMs such as Fly, Surf, Waterfall, etc.
+### Battl
+
+All essential items can be purchased from the Battle Frontier Underground, for which the closest
+entrance is immediately South of the Battle Tower Entrance.
 
 All TMs / HMs / Key Items can be purchased in the Battle Frontier
 Underground. 
 
 ### Battle Frontier Underground
 
-The Battle Frontier Underground is a new underground shopping area in the
-Battle Frontier, which allows the players to buy pretty much anything you
-could need for making a competitive team. This includes, but is not limited to:
+The Battle Frontier Underground is a new underground shopping area in the Battle Frontier, which 
+allows the players to buy pretty much anything you could need for making a competitive team. 
 
-#### Top Row
+This includes, but is not limited to:
 
-* Elevator to Battle Dome
-
-* Legendary Pokémon Shop (Purchase unobtainable legendaries for $12,000)
-* Legendary Forme-Changing Item Shop (Both Key Items and Held Items)
+* Legendary Pokémon Shop
+* Legendary Forme-Changing Item Shop
 
 * Pokémon Day Care, containing the following:
   * Pokémon Breeder (Purchase any level 1 first evolution for $4,000)
@@ -52,11 +50,10 @@ could need for making a competitive team. This includes, but is not limited to:
 * Nature Mint Shop
 
 * Training Item Shop (Rare/XP Candy, Macho/Power Items, etc.)
-* Tera Shard Shop
+* Tera Shard Shop (Can be used directly on Pokémon to change Tera Type)
 
 * Pokémon Center, containing the following:
-  * High-value item trader (Cherish/Gold Bottle Caps for BP)
-  * Gigantamax Expert (Change Pokémon Gigantamax Factor)
+  * Quick Start Refresh NPC, for updating any missing values from newer EBR versions
 
 * IV Berry Shop (IV Increasing / Decreasing Berries)
 * EV Berry Shop (EV Mochi / EV Decreasing Berries)
@@ -64,12 +61,8 @@ could need for making a competitive team. This includes, but is not limited to:
 * Games Corner, containing the following:
   * Bi-directional currency Converter between $ and coins
 
-#### Middle Row
-
 * Mega Stone Shop
 * Z-Crystal Shop
-
-* Battle Tower Elevator
 
 * Common Battle Item Shop (Choice Items, Life Orb, Assault Vest, etc.)
 * Uncommon / Signature Battle Item Shop (Big Root, Light Ball, etc.)
@@ -77,17 +70,11 @@ could need for making a competitive team. This includes, but is not limited to:
 * Type-Specific Battle Item Shop (Silk Scarf, Mystic Water, etc.)
 * Battle Gem Shop (Normal Gem, Fire Gem, etc.)
 
-* Battle Pyramid Elevator
-
 * Battle Status Berry Shop (e.g. Lum Berry, Sitrus Berry, etc.)
 * Battle Resist Berry Shop (e.g. Coba Berry, Yache Berry, etc.)
 
-#### Bottom Row
-
-* TM/HM Shop (TM01-25, HM0-4)
-* TM/HM Shop (TM26-50, HM5-8)
-
-* Battle Factory Elevator
+* TM/HM Shop (TM01-25)
+* TM/HM Shop (TM26-50)
 
 * Move Tutor (Relearnable Moves, including ones not learnt yet)
 * Move Tutor (Teachable Moves, e.g. Egg/Tutor Moves, other gen TR/TMs, etc.)
@@ -95,10 +82,8 @@ could need for making a competitive team. This includes, but is not limited to:
 * Standard Pokemart
 * All Pokeballs (Including Apricorn Balls)
 
-* Battle Palace Elevator
-
-* Ingame Key Items Shop (Acro Bike, Exp.Share, Coin Case, etc.)
-* New Key Items Shop (Dynamax Band, Tera Orb, Mega Ring, etc.)
+* High-value item trader (Cherish/Gold Bottle Caps for BP)
+* Gigantamax Expert (Change Pokémon Gigantamax Factor)
 
 The Battle Frontier underground is also filled with machines which
 you can use to convert between Battle Points and $, at an exchange
@@ -106,22 +91,11 @@ rate of $9800 to 1 BP.
 
 ### Quality of Life Improvements
 
-#### Story
-* Z Crystal Unlocked after Gym 2
-* Mega Ring Unlocked after Gym 4
-* Dynamax Band Unlocked after Gym 6
-* Tera Orb Unlocked after Gym 8
-
 #### Battle
-* Return / Frustration Power in Summary Menu
-* Correct Hidden Power Type in Summary Menu / Battle Menu
 * EV Feathers give 4 EVs per use, Drugs/Mochis give 28 EVs
 * EV decreasing berries reduce by 28 evs
 * IV increasing/decreasing berries added for all types
 * Bottle Cap can be used on a Pokémon to max out all IVs
-* EVs/IVs are now displayed in Summary Menu Stats Page
-  * Click Left Bumper to see EVs, Right Bumper to see IVs
-  * Click Start Button to return to regular stats menu
 * Dynamaxing can be turned on or off from the bag menu
   * Use the Dynamax Band to enable or disable dynamaxing
     * While the band is turned on, you will be unable to use Z-Moves/Megas/Tera
@@ -130,14 +104,10 @@ rate of $9800 to 1 BP.
 #### Overworld / Other
 * Pokeballs can be swapped by using them on a Pokémon from the bag menu
 * Gold Bottle Cap can be exchanged for shiny Pokémon at Pokémon Shops
-* Pokémon can be nicknamed from the Party Menu
-* Party slots can be swapped with Select
 * Move Relearner can teach pre-evolution moves
-* Move Relearner (basic) added to Party Menu
-* Two-In-One-Bike (Swap moves using Right Bumper)
 
 #### Battle Frontier
-* NPCs can be found in all battle facilities for changing battle bgm
+* NPCs can be found in all battle facilities for changing battle rules, bgm, etc.
 * Pokémon above or below level 50 will be scaled to level 50
   * This means over-levelled Pokémon can now compete in level 50 battles
 * Open Level ruleset has also been scaled down to level 50
@@ -169,8 +139,7 @@ Please see below for the list of features which are supported in each Battle Ten
 For a list of future changes which are intended for this project, 
 please check the [issues page](https://github.com/damon-murdoch/pokeemerald-expansion/issues). 
 
-Please note, that this list is subject to change and planned 
-features may be added or removed at any time.
+Please note, that this list is subject to change and planned features may be added or removed at any time.
 
 ### Bug Fixes / Suggestions
 If you experience any issues with the application, or would like to suggest improvements you can [open an issue](https://github.com/damon-murdoch/emerald-battle-revolution/issues/new/choose) or please feel free to contact me on twitter at [@SirScrubbington](https://twitter.com/SirScrubbington).
@@ -186,8 +155,8 @@ If you experience any issues with the application, or would like to suggest impr
 
 ## Credits
 
-Not all of the below features have persisted in the latest version, but these tutorials helped 
-me learn the codebase and otherwise contributed to development of the project greatly. 
+Not all of the below features have persisted in the latest version, but these tutorials helped me learn the
+codebase and otherwise contributed to development of the project greatly.
 
 * The entire [PokeEmerald-Expansion development team](https://github.com/rh-hideout/pokeemerald-expansion/wiki/Credits/_edit), for developing and maintaining the incredible source image this project uses
 
@@ -237,8 +206,6 @@ me learn the codebase and otherwise contributed to development of the project gr
 * `PokemonCrazy`, for creating the [Show EVs / IVs in Summary](https://www.pokecommunity.com/showpost.php?p=10161688&postcount=77) tutorial
 
 * `huderlem`, for creating [Poryscript](https://github.com/huderlem/poryscript)
-
-## Branches
 
 ## Changelog
 

@@ -37,358 +37,431 @@ BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_Nurse::
 # 19 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
 	end
 
-BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_Gentleman::
+BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_QuickStart::
 # 23 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
 	lock
 # 24 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
 	faceplayer
 # 25 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
-	msgbox BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_Gentleman_Text_0
+	msgbox BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_QuickStart_Text_0
 # 26 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
+	msgbox BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_QuickStart_Text_1
+# 27 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
+	msgbox BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_QuickStart_Text_2
+# 28 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
+	yesnobox 0, 8
+# 29 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
+	compare VAR_RESULT, YES
+	goto_if_eq BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_QuickStart_2
+BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_QuickStart_1:
+# 32 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
+	goto BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_QuickStartEnd
+	return
+
+BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_QuickStart_2:
+# 30 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
+	goto BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_QuickStartRefresh
+	goto BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_QuickStart_1
+
+
+BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_QuickStartRefresh::
+# 36 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
+	msgbox BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_QuickStartRefresh_Text_0
+# 37 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
+	special RefreshQuickStart
+# 38 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
+	msgbox BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_QuickStartRefresh_Text_1
+# 39 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
+	goto BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_QuickStartEnd
+	return
+
+
+BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_QuickStartEnd::
+# 43 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
+	msgbox BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_QuickStartEnd_Text_0
+# 44 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
+	release
+	end
+
+
+BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_Gentleman::
+# 49 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
+	lock
+# 50 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
+	faceplayer
+# 51 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
+	msgbox BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_Gentleman_Text_0
+# 52 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
 	goto BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GentlemanCheckBattlePoints
 	return
 
 
 BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GentlemanCheckBattlePoints::
-# 30 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
+# 56 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
 	specialvar VAR_TEMP_1, GetFrontierBattlePoints
-# 31 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
+# 57 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
 	compare VAR_TEMP_1, 50
 	goto_if_ge BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GentlemanCheckBattlePoints_2
 BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GentlemanCheckBattlePoints_1:
-# 34 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
+# 60 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
 	msgbox BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GentlemanCheckBattlePoints_Text_0
-# 35 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
+# 61 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
 	goto BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GentlemanEnd
 	return
 
 BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GentlemanCheckBattlePoints_2:
-# 32 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
+# 58 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
 	goto BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GentlemanCheckSelection
 	goto BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GentlemanCheckBattlePoints_1
 
 
 BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GentlemanCheckSelection::
-# 39 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
+# 65 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
 	msgbox BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GentlemanCheckSelection_Text_0
-# 40 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
+# 66 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
 	special ShowBattlePointsWindow
-# 41 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
+# 67 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
 	multichoice2 18, 0, BattleFrontier_Underground_B2F_PokeCenter_1F_Text_Gentleman
-# 42 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
+# 68 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
 	switch VAR_RESULT
-# 43 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
+# 69 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
 	case 0, BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GentlemanCheckSelection_3
-# 45 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
+# 71 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
 	case 1, BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GentlemanCheckSelection_4
-# 48 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
+# 74 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
 	special CloseBattlePointsWindow
-# 49 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
+# 75 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
 	goto BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GentlemanEnd
 BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GentlemanCheckSelection_1:
-# 51 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
+# 77 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
 	setvar VAR_0x8004, 50
-# 52 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
+# 78 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
 	msgbox BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GentlemanCheckSelection_Text_1
-# 53 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
+# 79 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
 	special TakeFrontierBattlePoints
-# 54 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
+# 80 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
 	playse SE_SHOP
-# 55 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
+# 81 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
 	special UpdateBattlePointsWindow
-# 56 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
+# 82 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
 	waitse
-# 57 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
+# 83 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
 	special CloseBattlePointsWindow
-# 58 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
+# 84 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
 	msgbox BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GentlemanCheckSelection_Text_2
-# 59 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
+# 85 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
 	msgbox BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GentlemanCheckSelection_Text_3
-# 60 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
+# 86 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
 	yesnobox 0, 8
-# 61 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
+# 87 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GentlemanCheckSelection_7
 BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GentlemanCheckSelection_6:
-# 64 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
+# 90 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
 	goto BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GentlemanEnd
 	return
 
 BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GentlemanCheckSelection_3:
-# 44 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
+# 70 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
 	giveitem ITEM_CHERISH_BALL
 	goto BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GentlemanCheckSelection_1
 
 BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GentlemanCheckSelection_4:
-# 46 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
+# 72 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
 	giveitem ITEM_GOLD_BOTTLE_CAP
 	goto BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GentlemanCheckSelection_1
 
 BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GentlemanCheckSelection_7:
-# 62 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
+# 88 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
 	goto BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GentlemanCheckBattlePoints
 	goto BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GentlemanCheckSelection_6
 
 
 BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GentlemanEnd::
-# 68 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
+# 94 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
 	msgbox BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GentlemanEnd_Text_0
-# 69 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
+# 95 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
 	release
 	end
 
 
 BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpert::
-# 74 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
+# 100 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
 	lock
-# 75 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
+# 101 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
 	faceplayer
-# 76 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
+# 102 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
 	msgbox BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpert_Text_0
-# 77 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
+# 103 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
 	msgbox BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpert_Text_1
-# 78 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
+# 104 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
 	goto BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpertCheckMoney
 	return
 
 
 BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpertCheckMoney::
-# 82 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
+# 108 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
 	showmoneybox 0, 0
-# 83 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
+# 109 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
 	checkmoney 500
-# 84 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
+# 110 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
 	compare VAR_RESULT, TRUE
 	goto_if_eq BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpertCheckMoney_2
 BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpertCheckMoney_1:
-# 87 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
+# 113 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
 	goto BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpertCantAfford
 	return
 
 BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpertCheckMoney_2:
-# 85 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
+# 111 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
 	goto BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpertSelectMon
 	goto BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpertCheckMoney_1
 
 
 BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpertSelectMon::
-# 91 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
+# 117 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
 	msgbox BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpertSelectMon_Text_0
-# 92 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
+# 118 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
 	special ChooseMonForMoveRelearner
-# 93 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
+# 119 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
 	waitstate
-# 96 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
+# 122 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
 	showmoneybox 0, 0
-# 99 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
+# 125 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
 	compare VAR_0x8004, PARTY_NOTHING_CHOSEN
 	goto_if_eq BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpertSelectMon_2
 BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpertSelectMon_1:
-# 104 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
+# 130 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
 	special IsSelectedMonEgg
-# 107 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
+# 133 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
 	compare VAR_RESULT, TRUE
 	goto_if_eq BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpertSelectMon_5
 BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpertSelectMon_4:
-# 112 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
+# 138 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
 	hasgigantamaxfactor VAR_0x8004
-# 114 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
+# 140 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
 	compare VAR_RESULT, TRUE
 	goto_if_eq BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpertSelectMon_8
-# 118 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
+# 144 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
 	msgbox BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpertSelectMon_Text_2
 BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpertSelectMon_7:
-# 120 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
+# 146 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
 	yesnobox 0, 8
-# 121 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
+# 147 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpertSelectMon_12
-# 139 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
+# 165 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
 	hidemoneybox
-# 140 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
+# 166 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
 	goto BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpertEnd
 BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpertSelectMon_11:
-# 142 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
+# 168 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
 	hidemoneybox
-# 143 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
+# 169 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
 	goto BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpertAsk
 	return
 
 BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpertSelectMon_2:
-# 100 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
+# 126 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
 	goto BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpertEnd
 	goto BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpertSelectMon_1
 
 BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpertSelectMon_5:
-# 108 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
+# 134 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
 	goto BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpertCantTeachEgg
 	goto BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpertSelectMon_4
 
 BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpertSelectMon_8:
-# 115 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
+# 141 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
 	msgbox BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpertSelectMon_Text_1
 	goto BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpertSelectMon_7
 
 BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpertSelectMon_12:
-# 124 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
+# 150 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
 	togglegigantamaxfactor VAR_0x8004
-# 126 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
+# 152 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
 	compare VAR_RESULT, TRUE
 	goto_if_eq BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpertSelectMon_15
-# 136 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
+# 162 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
 	msgbox BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpertSelectMon_Text_5
 	goto BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpertSelectMon_11
 
 BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpertSelectMon_15:
-# 127 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
+# 153 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
 	msgbox BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpertSelectMon_Text_3
-# 128 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
+# 154 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
 	msgbox BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpertSelectMon_Text_4
-# 129 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
+# 155 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
 	removemoney 500
-# 130 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
+# 156 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
 	playse SE_SHOP
-# 131 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
+# 157 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
 	updatemoneybox
-# 132 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
+# 158 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
 	waitse
 	goto BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpertSelectMon_11
 
 
 BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpertAsk::
-# 147 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
+# 173 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
 	msgbox BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpertAsk_Text_0
-# 148 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
+# 174 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
 	yesnobox 0, 8
-# 149 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
+# 175 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpertAsk_1
-# 152 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
+# 178 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
 	goto BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpertEnd
 	return
 
 BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpertAsk_1:
-# 150 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
+# 176 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
 	goto BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpertCheckMoney
 	return
 
 
 BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpertCantAfford::
-# 157 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
+# 183 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
 	msgbox BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpertCantAfford_Text_0
-# 158 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
+# 184 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
 	goto FallarborTown_MoveRelearnersHouse_EventScript_MoveTutorEnd
 	return
 
 
 BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpertCantTeachEgg::
-# 162 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
+# 188 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
 	msgbox BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpertCantTeachEgg_Text_0
-# 163 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
+# 189 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
 	goto BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpertEnd
 	return
 
 
 BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpertEnd::
-# 167 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
+# 193 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
 	msgbox BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpertEnd_Text_0
-# 168 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
+# 194 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
 	release
 	end
 
 
-BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_Gentleman_Text_0:
+BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_QuickStart_Text_0:
 # 25 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
+	.string "Hello! I'm here to update your save data\n"
+	.string "if a new version is released.$"
+
+BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_QuickStart_Text_1:
+# 26 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
+	.string "You shouldn't have any issues, but\n"
+	.string "don't use me unless you need to!$"
+
+BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_QuickStart_Text_2:
+# 27 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
+	.string "Do you want me to update your save?$"
+
+BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_QuickStartRefresh_Text_0:
+# 36 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
+	.string "Okay! Lets get started ...$"
+
+BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_QuickStartRefresh_Text_1:
+# 38 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
+	.string "All done!$"
+
+BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_QuickStartEnd_Text_0:
+# 43 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
+	.string "Come back next time!$"
+
+BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_Gentleman_Text_0:
+# 51 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
 	.string "Good to see you. I offer rare items in\n"
 	.string "exchange for battle points.$"
 
 BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GentlemanCheckBattlePoints_Text_0:
-# 34 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
+# 60 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
 	.string "You'll need at least 50 BP before you\n"
 	.string "can buy anything from me.$"
 
 BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GentlemanCheckSelection_Text_0:
-# 39 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
+# 65 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
 	.string "What would you like? All of my items\n"
 	.string "cost 50 BP.$"
 
 BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GentlemanCheckSelection_Text_1:
-# 52 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
+# 78 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
 	.string "I'll take your payment now, please.$"
 
 BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GentlemanCheckSelection_Text_2:
-# 58 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
+# 84 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
 	.string "Thank you for that.$"
 
 BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GentlemanCheckSelection_Text_3:
-# 59 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
+# 85 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
 	.string "Would you like anything else?$"
 
 BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GentlemanEnd_Text_0:
-# 68 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
+# 94 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
 	.string "Please come see me again.$"
 
 BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpert_Text_0:
-# 76 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
+# 102 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
 	.string "Hello, I'm the Gigantamax Expert! I can\n"
 	.string "change the gigantamax factor of your\l"
 	.string "POKéMON.$"
 
 BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpert_Text_1:
-# 77 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
+# 103 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
 	.string "My services cost a mere ¥500 per\n"
 	.string "POKéMON.$"
 
 BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpertSelectMon_Text_0:
-# 91 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
+# 117 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
 	.string "Which POKéMON would you like me to\n"
 	.string "change?$"
 
 BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpertSelectMon_Text_1:
-# 115 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
+# 141 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
 	.string "Would you like me to remove the\n"
 	.string "Gigantamax factor from this POKéMON?$"
 
 BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpertSelectMon_Text_2:
-# 118 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
+# 144 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
 	.string "Would you like me to add the Gigantamax\n"
 	.string "factor to this POKéMON?$"
 
 BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpertSelectMon_Text_3:
-# 127 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
+# 153 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
 	.string "Done! Your POKéMON's gigantamax factor\n"
 	.string "has been changed.$"
 
 BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpertSelectMon_Text_4:
-# 128 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
+# 154 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
 	.string "I'll accept your payment now, please.$"
 
 BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpertSelectMon_Text_5:
-# 136 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
+# 162 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
 	.string "Sorry, I was unable to change the\n"
 	.string "gigantamax factor of this POKéMON!$"
 
 BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpertAsk_Text_0:
-# 147 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
+# 173 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
 	.string "Would you like me to teach anything\n"
 	.string "else?$"
 
 BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpertCantAfford_Text_0:
-# 157 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
+# 183 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
 	.string "Sorry, you need ¥500 for me to change\n"
 	.string "your POKéMON's gigantamax state!$"
 
 BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpertCantTeachEgg_Text_0:
-# 162 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
+# 188 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
 	.string "I can't change the gigantamax status\n"
 	.string "of an egg!$"
 
 BattleFrontier_Underground_B2F_PokeCenter_1F_EventScript_GigantamaxExpertEnd_Text_0:
-# 167 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
+# 193 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
 	.string "Please come back again soon!$"
 
 BattleFrontier_Underground_B2F_PokeCenter_1F_Text_Gentleman::
-# 172 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
+# 198 "data/maps/BattleFrontier_Underground_B2F_PokeCenter_1F/scripts.pory"
 	.string "CHERISH BALL$"
 	.string "GOLD BOTTLE CAP$"
 	.string "NOTHING$"
