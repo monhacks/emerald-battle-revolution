@@ -2997,6 +2997,9 @@ bool32 GenerateTrainerPokemonHandleForme(struct Pokemon * mon, u16 speciesId, st
     return GenerateTrainerPokemon(mon, speciesId, forme, move, item, properties);
 }
 
+#define GetAbilityName(abilityId) (gAbilitiesInfo[abilityId].name)
+#define GetNatureName(nature) (gNatureNamePointers[nature])
+
 void DebugPrintMonData(struct Pokemon * mon) 
 {
     u8 i;
@@ -3005,15 +3008,27 @@ void DebugPrintMonData(struct Pokemon * mon)
     u16 speciesId = GetMonData(mon, MON_DATA_SPECIES);
     u8 abilityNum = GetMonData(mon,MON_DATA_ABILITY_NUM);
     u16 abilityId = gSpeciesInfo[speciesId].abilities[abilityNum];
+
     u16 itemId = GetMonData(mon,MON_DATA_HELD_ITEM);
 
+    #if BFG_TEST_PRINT_AS_STRING
+    DebugPrintf("%S & %S", GetSpeciesName(speciesId), GetItemName(itemId));
+    DebugPrintf("Ability: %d (%S)", abilityNum, GetAbilityName(abilityId));
+    DebugPrintf("%S nature", GetNatureName(GetNature(mon)));
+    #else
     DebugPrintf("%d @ %d", speciesId, itemId);
     DebugPrintf("Ability: %d (%d)", abilityNum, abilityId);
+    DebugPrintf("%d nature", GetNature(mon));
+    #endif
     DebugPrintf("IVs: %d HP / %d Atk / %d Def / %d SpA / %d SpD / %d Spe", GetMonData(mon,MON_DATA_HP_IV),GetMonData(mon,MON_DATA_ATK_IV), GetMonData(mon,MON_DATA_DEF_IV), GetMonData(mon,MON_DATA_SPATK_IV), GetMonData(mon,MON_DATA_SPDEF_IV), GetMonData(mon,MON_DATA_SPEED_IV));
     DebugPrintf("EVs: %d HP / %d Atk / %d Def / %d SpA / %d SpD / %d Spe", GetMonData(mon,MON_DATA_HP_EV),GetMonData(mon,MON_DATA_ATK_EV), GetMonData(mon,MON_DATA_DEF_EV), GetMonData(mon,MON_DATA_SPATK_EV), GetMonData(mon,MON_DATA_SPDEF_EV), GetMonData(mon,MON_DATA_SPEED_EV));
-    DebugPrintf("%d nature", GetNature(mon));
-    for(i=0; i<MAX_MON_MOVES; i++)
-        DebugPrintf("- %d", GetMonData(mon, MON_DATA_MOVE1 + i));
+    for(i=0; i<MAX_MON_MOVES; i++) {
+    #if BFG_TEST_PRINT_AS_STRING
+    DebugPrintf("- %S", GetMoveName(GetMonData(mon, MON_DATA_MOVE1 + i)));
+    #else
+    DebugPrintf("- %d", GetMonData(mon, MON_DATA_MOVE1 + i));
+    #endif
+    }
 }
 
 void InitGeneratorProperties(struct GeneratorProperties * properties, u8 level, u8 fixedIV)
