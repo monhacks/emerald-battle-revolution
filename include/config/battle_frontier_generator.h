@@ -251,6 +251,9 @@
 #define BFG_EV_INVEST_HIGHER_STATS TRUE // Invest EVs in highest 2 stats
 #define BFG_EV_HP_OFFSET 30             // Increase chances of investing in HP
 
+#define BFG_EV_SIMPLE   TRUE    // Use simple EV generation method
+
+
 #endif
 
 // *** MOVES *** 

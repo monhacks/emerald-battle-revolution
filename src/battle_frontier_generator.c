@@ -715,7 +715,6 @@ static u8 GetSpeciesEVs(u16 speciesId, u8 natureId)
     u8 evs = 0;
     u8 stat1, stat2;
 
-    // Get the method for selecting the moves
     u8 method = GetTeamGenerationMethod();
     
     const struct SpeciesInfo * species = &(gSpeciesInfo[speciesId]);
@@ -739,6 +738,7 @@ static u8 GetSpeciesEVs(u16 speciesId, u8 natureId)
 
             for(i = STAT_HP; i < NUM_STATS; i++)
             {
+                // Don't invest in neg stat
                 if (i == nature->negStat)
                     continue;
                 switch(i)
@@ -819,6 +819,124 @@ static u8 GetSpeciesEVs(u16 speciesId, u8 natureId)
         evs |= F_EV_SPREAD_SPEED;
 
     return evs;
+}
+
+static void SetMonEVs(struct Pokemon * mon) {
+                
+    u8 i;
+
+    u8 stat1,stat2,stat3;
+
+    u8 method = GetTeamGenerationMethod();
+
+    u16 speciesId = GetMonData(mon, MON_DATA_SPECIES);
+    const struct SpeciesInfo * species = &(gSpeciesInfo[speciesId]);
+
+    switch(method) {
+        case BFG_TEAM_GENERATOR_FILTERED:
+        case BFG_TEAM_GENERATOR_FILTERED_ATTACKS_ONLY:
+        case BFG_TEAM_GENERATOR_FILTERED_RANKING:
+        case BFG_TEAM_GENERATOR_FILTERED_RANKING_ATTACKS_ONLY: {
+
+            u16 val1 = 0; 
+            u16 val2 = 0; 
+            u16 val3 = 0;
+            
+            // ValT: Temp (Current Stat)
+            // ValR: Random (Current Stat + Random Offset)
+            // ValS: Secondary (Backup for replaced stats)
+            u16 valT, valR, valS;
+
+            const struct Nature * nature = &(gNatureInfo[natureId]);
+
+            // Default Values
+            stat1 = 0xFF;
+            stat2 = 0xFF;
+            stat3 = 0xFF;
+
+            for(i = STAT_HP; i < NUM_STATS; i++)
+            {
+                // Don't invest in neg stat
+                if (i == nature->negStat)
+                    continue;
+                switch(i)
+                {
+                    case STAT_HP:
+                        valT = (species->baseHP) + BFG_EV_HP_OFFSET;
+                        break;
+                    case STAT_ATK:
+                        valT = species->baseAttack;
+                        break;
+                    case STAT_DEF:
+                        valT = species->baseDefense;
+                        break;
+                    case STAT_SPATK:
+                        valT = species->baseSpAttack;
+                        break;
+                    case STAT_SPDEF:
+                        valT = species->baseSpDefense;
+                        break;
+                    case STAT_SPEED:
+                        valT = species->baseSpeed;
+                        break;
+                }
+
+                // For calculating with offset
+                valR = (valT + RANDOM_OFFSET());
+
+                // If stat 1 is undefined, or new stat is greater
+                if (stat1 == 0xFF || ((val2 > val1) && (valR > (val1 + RANDOM_OFFSET())))) 
+                {
+                    stat1 = i; 
+                    val1 = valT;
+                }
+                // If stat 2 is undefined, or new stat is greater
+                else if (stat2 == 0xFF || ((val2 < val1) && (valR > (val2 + RANDOM_OFFSET())))) 
+                {
+                    stat2 = i; 
+                    val2 = valT;
+                }
+                // Both stat 1 and stat 2 match
+                else if ((val2 == val1) && (valR > (val2 + RANDOM_OFFSET()))) 
+                {
+                    // Replace stat1
+                    if (RANDOM_BOOL()) 
+                    {
+                        stat1 = i; 
+                        val1 = valT;
+                    }
+                    else // Replace stat2
+                    {
+                        stat2 = i; 
+                        val2 = valT;
+                    }
+                }
+            }
+        }
+    }
+
+    // Loop over the stats
+    for(i=STAT_HP; i<NUM_STATS; i++) {
+        // Get the mon stat index
+        u8 monDataIndex = i + 33;
+
+        // Evs to apply
+        u8 evs = 0;
+
+        // Primary stats, 252 evs
+        if (stat1 == i || stat2 == i) 
+        {
+            evs = 252; // Main
+        } 
+        // Third stat, 4 evs
+        else if (stat3 == i) 
+        {
+            evs = 4; // Leftovers
+        }
+
+        // Update the EVs for the stat
+        SetMonData(mon, monDataIndex, &evs);
+    }
 }
 
 static u8 GetSpreadType(u8 natureId, u8 evs){
@@ -2288,13 +2406,23 @@ bool32 GenerateTrainerPokemon(struct Pokemon * mon, u16 speciesId, u8 formeIndex
 
     // Calculate species nature, evs
     nature = GetSpeciesNature(formeId);
+
+    #if BFG_EV_SIMPLE == TRUE
+    // Generate 252/252 Spread (Default)
     evs = GetSpeciesEVs(formeId, nature);
+    #else
+    evs = 0; // No EVs, calculated later
+    #endif
 
     // Place the chosen pokemon into the trainer's party
     CreateMonWithEVSpreadNatureOTID(
         mon, speciesId, (properties->level), 
         nature, (properties->fixedIV), evs, (properties->otID)
     );
+
+    #if BFG_EV_SIMPLE == FALSE
+    SetMonEVs(mon); // Generate 252/252/4 Spread
+    #endif
 
     // If this species has a hidden ability
     if (
