@@ -568,7 +568,7 @@ static u8 GetNatureFromStats(u8 posStat, u8 negStat)
     return NATURE_HARDY;
 }
 
-static u8 GetSpeciesNature(u16 speciesId) 
+static u8 GetSpeciesNature(u16 speciesId, struct GeneratorProperties * properties) 
 {
     // Get the method for selecting the moves
     u8 method = GetTeamGenerationMethod();
@@ -595,37 +595,38 @@ static u8 GetSpeciesNature(u16 speciesId)
             u16 temp1 = ((species->baseAttack) + RANDOM_OFFSET());
             u16 temp2 = ((species->baseSpAttack) + RANDOM_OFFSET());
 
-            // If both attack and special attack stats match
-            if (temp1 == temp2)
+            // The team is a trick Room team
+            if (properties->speedControl == GSC_TRICK_ROOM) {
+                negStat = STAT_SPEED;
+                negStatValue = species->baseSpeed;
+            }
+            else // The team is NOT a trick room team
             {
-                // prioritise special attack
-                if (RANDOM_BOOL())
+                // If both attack and special attack stats match
+                if (temp1 == temp2)
                 {
-                    negStat = STAT_ATK;
-                    negStatValue = species->baseAttack;
+                    // prioritise special attack
+                    if (RANDOM_BOOL())
+                    {
+                        negStat = STAT_ATK;
+                        negStatValue = species->baseAttack;
+                    }
+                    else // Prioritise attack
+                    {
+                        negStat = STAT_SPATK;
+                        negStatValue = species->baseSpAttack;
+                    }
                 }
-                else // Prioritise attack
+                else if (temp1 > temp2) 
                 {
                     negStat = STAT_SPATK;
                     negStatValue = species->baseSpAttack;
                 }
-            }
-            else if (temp1 > temp2) 
-            {
-                negStat = STAT_SPATK;
-                negStatValue = species->baseSpAttack;
-            }
-            else // Special attack is greater than attack
-            {
-                negStat = STAT_ATK;
-                negStatValue = species->baseAttack; 
-            }
-
-            // If negative speed natures are allowed
-            if (BFG_PRIORITISE_ATK_SPA_OVER_SPE && negStatValue > species->baseSpeed) 
-            {
-                negStat = STAT_SPEED;
-                negStatValue = species->baseSpeed;
+                else // Special attack is greater than attack
+                {
+                    negStat = STAT_ATK;
+                    negStatValue = species->baseAttack; 
+                }
             }
 
             // Loop over the stats (pick best stat)
@@ -664,7 +665,7 @@ static u8 GetSpeciesNature(u16 speciesId)
                         if ((temp2 > temp1) || ((temp2 == temp1) && (
                             ((posStat == STAT_DEF || posStat == STAT_SPDEF) && BFG_PRIORITISE_ATK_SPA_OVER_DEF_SPD) || 
                             (posStat == STAT_SPEED && BFG_PRIORITISE_ATK_SPA_OVER_SPE)
-                        ))) 
+                        )))
                         {
                             posStat = STAT_SPATK;
                             posStatValue = species->baseSpAttack;
@@ -711,6 +712,7 @@ static u8 GetSpeciesNature(u16 speciesId)
 
 static u8 GetSpeciesEVs(u16 speciesId, u8 natureId) 
 {
+    u8 i;
 
     u8 evs = 0;
     u8 stat1, stat2;
@@ -725,7 +727,6 @@ static u8 GetSpeciesEVs(u16 speciesId, u8 natureId)
         case BFG_TEAM_GENERATOR_FILTERED_RANKING:
         case BFG_TEAM_GENERATOR_FILTERED_RANKING_ATTACKS_ONLY: {
 
-            u8 i;
             u16 val1 = 0; 
             u16 val2 = 0; 
             u16 valT, valR;
@@ -821,16 +822,25 @@ static u8 GetSpeciesEVs(u16 speciesId, u8 natureId)
     return evs;
 }
 
+#define EVS_NONE 0xFF
+#define EV_STATS 3
+
 static void SetMonEVs(struct Pokemon * mon) {
                 
-    u8 i;
+    u8 i, j, k;
 
-    u8 stat1,stat2,stat3;
+    u8 stats[EV_STATS] = {EVS_NONE, EVS_NONE, EVS_NONE};
+    u8 vals[EV_STATS] = {0, 0, 0};
 
     u8 method = GetTeamGenerationMethod();
 
     u16 speciesId = GetMonData(mon, MON_DATA_SPECIES);
     const struct SpeciesInfo * species = &(gSpeciesInfo[speciesId]);
+
+    u8 natureId = GetNature(mon);
+    const struct Nature * nature = &(gNatureInfo[natureId]);
+
+    bool8 repeat;
 
     switch(method) {
         case BFG_TEAM_GENERATOR_FILTERED:
@@ -838,77 +848,66 @@ static void SetMonEVs(struct Pokemon * mon) {
         case BFG_TEAM_GENERATOR_FILTERED_RANKING:
         case BFG_TEAM_GENERATOR_FILTERED_RANKING_ATTACKS_ONLY: {
 
-            u16 val1 = 0; 
-            u16 val2 = 0; 
-            u16 val3 = 0;
-            
             // ValT: Temp (Current Stat)
             // ValR: Random (Current Stat + Random Offset)
-            // ValS: Secondary (Backup for replaced stats)
-            u16 valT, valR, valS;
+            // ValT: Temp (Backup for replaced stats)
+            u16 valT, valR
 
-            const struct Nature * nature = &(gNatureInfo[natureId]);
+            // Pick the top stats
+            for(i=0; i<EV_STATS; i++) {
+                // Loop over each stat
+                for(j=STAT_HP; j<NUM_STATS; j++) {
+                    // Skip if reducing nature
+                    if (j == nature->negStat)
+                        continue;
 
-            // Default Values
-            stat1 = 0xFF;
-            stat2 = 0xFF;
-            stat3 = 0xFF;
+                    // Check for repeats
+                    repeat = FALSE;
+                    for(k=0; k<i; k++)
+                        if (stats[k] == j)
+                            repeat = TRUE;
+                    // Skip repeats
+                    if (repeat) 
+                        continue;
 
-            for(i = STAT_HP; i < NUM_STATS; i++)
-            {
-                // Don't invest in neg stat
-                if (i == nature->negStat)
-                    continue;
-                switch(i)
-                {
-                    case STAT_HP:
-                        valT = (species->baseHP) + BFG_EV_HP_OFFSET;
-                        break;
-                    case STAT_ATK:
-                        valT = species->baseAttack;
-                        break;
-                    case STAT_DEF:
-                        valT = species->baseDefense;
-                        break;
-                    case STAT_SPATK:
-                        valT = species->baseSpAttack;
-                        break;
-                    case STAT_SPDEF:
-                        valT = species->baseSpDefense;
-                        break;
-                    case STAT_SPEED:
-                        valT = species->baseSpeed;
-                        break;
-                }
-
-                // For calculating with offset
-                valR = (valT + RANDOM_OFFSET());
-
-                // If stat 1 is undefined, or new stat is greater
-                if (stat1 == 0xFF || ((val2 > val1) && (valR > (val1 + RANDOM_OFFSET())))) 
-                {
-                    stat1 = i; 
-                    val1 = valT;
-                }
-                // If stat 2 is undefined, or new stat is greater
-                else if (stat2 == 0xFF || ((val2 < val1) && (valR > (val2 + RANDOM_OFFSET())))) 
-                {
-                    stat2 = i; 
-                    val2 = valT;
-                }
-                // Both stat 1 and stat 2 match
-                else if ((val2 == val1) && (valR > (val2 + RANDOM_OFFSET()))) 
-                {
-                    // Replace stat1
-                    if (RANDOM_BOOL()) 
+                    switch(j) 
                     {
-                        stat1 = i; 
-                        val1 = valT;
+                        case STAT_HP:
+                            valT = (species->baseHP) + BFG_EV_HP_OFFSET;
+                            break;
+                        case STAT_ATK:
+                            valT = species->baseAttack;
+                            break;
+                        case STAT_DEF:
+                            valT = species->baseDefense;
+                            break;
+                        case STAT_SPATK:
+                            valT = species->baseSpAttack;
+                            break;
+                        case STAT_SPDEF:
+                            valT = species->baseSpDefense;
+                            break;
+                        case STAT_SPEED:
+                            valT = species->baseSpeed;
+                            break;
                     }
-                    else // Replace stat2
-                    {
-                        stat2 = i; 
-                        val2 = valT;
+
+                    // For calculating with offset
+                    valR = (valI + RANDOM_OFFSET());
+
+                    // Series of conditions:
+                    // Current stat is undefined, 
+                    // New stat is the nature-boosted stat, 
+                    // New stat is higher than the current stat, 
+                    // New stat is the same as the current stat, with a 50% chance
+                    if (
+                        (stats[i] == EVS_NONE) || 
+                        (j == nature->posStat) || 
+                        (valR > (vals[i] + RANDOM_OFFSET())) || 
+                        ((valR == (vals[i] + RANDOM_OFFSET())) && RANDOM_BOOL())
+                    ) {
+                        stats[i] = j;
+                        vals[i] = valT;
                     }
                 }
             }
@@ -924,12 +923,12 @@ static void SetMonEVs(struct Pokemon * mon) {
         u8 evs = 0;
 
         // Primary stats, 252 evs
-        if (stat1 == i || stat2 == i) 
+        if (stats[0] == i || stats[1] == i) 
         {
             evs = 252; // Main
         } 
         // Third stat, 4 evs
-        else if (stat3 == i) 
+        else if (stats[2] == i) 
         {
             evs = 4; // Leftovers
         }
@@ -2409,7 +2408,7 @@ bool32 GenerateTrainerPokemon(struct Pokemon * mon, u16 speciesId, u8 formeIndex
 
     #if BFG_EV_SIMPLE == TRUE
     // Generate 252/252 Spread (Default)
-    evs = GetSpeciesEVs(formeId, nature);
+    evs = GetSpeciesEVs(formeId, nature, properties);
     #else
     evs = 0; // No EVs, calculated later
     #endif
@@ -2420,8 +2419,23 @@ bool32 GenerateTrainerPokemon(struct Pokemon * mon, u16 speciesId, u8 formeIndex
         nature, (properties->fixedIV), evs, (properties->otID)
     );
 
+    #if BFG_OPTIMIZE_IVS == TRUE
+    u8 iv = 0; 
+    // Switch on nature-reduced stat
+    switch(gNatureInfo[nature].negStat) {
+        case STAT_SPEED: {
+            SetMonData(mon, MON_DATA_SPEED_IV, iv);
+        }; break;
+        case STAT_ATK: {
+            SetMonData(mon, MON_DATA_ATK_IV, iv);
+        }; break;
+        default: 
+        break;
+    }
+    #endif
+
     #if BFG_EV_SIMPLE == FALSE
-    SetMonEVs(mon); // Generate 252/252/4 Spread
+    SetMonEVs(mon, properties); // Generate 252/252/4 Spread
     #endif
 
     // If this species has a hidden ability
@@ -3168,6 +3182,9 @@ void InitGeneratorProperties(struct GeneratorProperties * properties, u8 level, 
     properties->level = level;
     properties->fixedIV = fixedIV;
 
+    // Generated mon index
+    properties->index = 0;
+
     // Min & Max. BSTs
     properties->minBST = BFG_BST_MIN;
     properties->maxBST = BFG_BST_MAX;
@@ -3176,6 +3193,9 @@ void InitGeneratorProperties(struct GeneratorProperties * properties, u8 level, 
     properties->allowZMove = TRUE;
     properties->allowGmax = TRUE;
     properties->allowMega = TRUE;
+
+    // Speed Control Method
+    properties->speedControl = GSC_NONE;
 }
 
 void InitGeneratorForLvlMode(struct GeneratorProperties * properties, u8 lvlMode)
@@ -3255,7 +3275,9 @@ void UpdateGeneratorForLvlMode(struct GeneratorProperties * properties, u8 lvlMo
 }
 
 void GenerateTrainerParty(u16 trainerId, u8 firstMonId, u8 monCount, u8 level)
-{
+{    
+    struct SpeciesInfo * species;
+
     u16 speciesId, bst;
     u8 i,j;
 
@@ -3305,6 +3327,9 @@ void GenerateTrainerParty(u16 trainerId, u8 firstMonId, u8 monCount, u8 level)
         properties.minBST = fixedIVMinBSTLookup[properties.fixedIV];
         properties.maxBST = fixedIVMaxBSTLookup[properties.fixedIV];
 
+        // Current mon index
+        properties.index = i;
+
         // Sample random species from the mon count
         if (((BFG_LVL_50_ALLOW_BANNED_SPECIES && GET_LVL_MODE() == FRONTIER_LVL_50) || (BFG_LVL_OPEN_ALLOW_BANNED_SPECIES && GET_LVL_MODE() == FRONTIER_LVL_OPEN) || (BFG_LVL_TENT_ALLOW_BANNED_SPECIES && GET_LVL_MODE() == FRONTIER_LVL_TENT)) && (i % 2 == 1))
         {
@@ -3325,6 +3350,21 @@ void GenerateTrainerParty(u16 trainerId, u8 firstMonId, u8 monCount, u8 level)
 
         // Check BST limits
         if ((bst < (properties.minBST)) || (bst > (properties.maxBST)))
+            continue; // Next species
+
+        // Get the species info
+        species = gSpeciesInfo[speciesId];
+
+        DebugPrintf("Checking speed control restrictions ...");
+
+        // Check speed limits
+
+        // Team has tailwind, and mon is below the tailwind speed limit
+        if ((properties.hasTailwind) && (species->baseSpeed < BFG_MIN_TAILWIND_SPEED))
+            continue; // Next species
+
+        // Team has trick room, and mon is above the trick room speed limit
+        if ((properties.hasTrickRoom) && (species->baseSpeed > BFG_MAX_TRICK_ROOM_SPEED))
             continue; // Next species
 
         DebugPrintf("Checking species validity for frontier level ...");

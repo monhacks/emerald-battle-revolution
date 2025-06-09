@@ -46,16 +46,27 @@
 
 #define GET_CHALLENGE_NUM(battleMode, lvlMode) ((gSaveBlock2Ptr->frontier.factoryWinStreaks[battleMode][lvlMode]) / FRONTIER_STAGES_PER_CHALLENGE)
 
+// Generator speed control methods
+enum GeneratorSpeedControl {
+    GSC_NONE,
+    GSC_TAILWIND,
+    GSC_TRICK_ROOM
+};
+
 // Species Generator Properties
 struct GeneratorProperties {
     u32 otID;
-    u8 level; 
+    u8 level;
+    u8 index;
     u8 fixedIV;
     u16 minBST;
     u16 maxBST;
+    // Rules
     bool8 allowZMove;
     bool8 allowGmax;
     bool8 allowMega;
+    // Speed Control Method
+    enum GeneratorSpeedControl speedControl;
 };
 
 // Forme / Gimmick not allowed

@@ -246,13 +246,23 @@
 #if BFG_STAT_SELECT_RANDOM == FALSE
 
 #define BFG_PRIORITISE_ATK_SPA_OVER_DEF_SPD FALSE   // Prioritise atk/spatk attack over def/spdef
-#define BFG_PRIORITISE_ATK_SPA_OVER_SPE FALSE       // Prioritise atk/spa over speed
+#define BFG_PRIORITISE_ATK_SPA_OVER_SPE             // Prioritise atk/spatk over speed
 
-#define BFG_EV_INVEST_HIGHER_STATS TRUE // Invest EVs in highest 2 stats
-#define BFG_EV_HP_OFFSET 30             // Increase chances of investing in HP
+#define BFG_SPEED_CONTROL_FIRST_ONLY    TRUE    // If this is set to true, only the first
+                                                // Pokemon can run speed control moves 
+                                                // (excl. icy wind / bulldoze)
 
-#define BFG_EV_SIMPLE   TRUE    // Use simple EV generation method
+#define BFG_MAX_TRICK_ROOM_SPEED    80  // Highest base speed for trick room teams
+#define BFG_MIN_TAILWIND_SPEED      80  // Lowest base speed for tailwind teams
 
+#define BFG_EV_HP_OFFSET    50      // Increase chances of investing in HP
+#define BFG_EV_SIMPLE       TRUE    // Use simple EV generation method (two stats)
+                                    // if set to false, a third stat will be 
+                                    // allocated the remaining 4 evs
+
+#define BFG_OPTIMIZE_IVS    TRUE    // If set to true, ivs will be optimised
+                                    // i.e. attack and speed ivs will be set
+                                    // to 0 if a reducing nature is used
 
 #endif
 
