@@ -4,9 +4,9 @@
 // *** GENERAL ***
 #define BFG_FLAG_FRONTIER_GENERATOR FLAG_UNUSED_0x020 // Flag to enable or disable random generator
 
-#define BFG_TEST_SET_GENERATION TRUE // Test set generation
-#define BFG_TEST_PRINT_RESULTS TRUE // Print test results
-#define BFG_TEST_FIXED_RNG TRUE // Force fixed RNG for testing
+#define BFG_TEST_SET_GENERATION TRUE    // Test set generation
+#define BFG_TEST_PRINT_RESULTS  TRUE    // Print test results
+#define BFG_TEST_SETS_PER_MON   3       // Generate 'n' sets per Pokemon
 
 #define BFG_TEST_PRINT_AS_STRING TRUE // Test print sets as string
 
@@ -32,9 +32,11 @@
 // Run 'trainer_mons.py' as part of build pipeline
 #define BFG_GENERATE_TRAINER_MONS TRUE    // Generate battle_frontier_generator_trainer_class_mons.h
 
-#define BFG_RANDOM_RANGE_FIXED FALSE    // Fixed value for RANDOM_RANGE()
-#define BFG_RANDOM_CHANCE_FIXED FALSE   // Fixed value for RANDOM_CHANCE()
-#define BFG_RANDOM_BOOL_FIXED FALSE     // Fixed value for RANDOM_BOOL()
+// Comment out if unused
+
+// #define BFG_RANDOM_RANGE_FIXED FALSE    // Fixed value for RANDOM_RANGE()
+// #define BFG_RANDOM_CHANCE_FIXED FALSE   // Fixed value for RANDOM_CHANCE()
+// #define BFG_RANDOM_BOOL_FIXED FALSE     // Fixed value for RANDOM_BOOL()
 
 #define BFG_RANDOM_STAB_TERA_CHANCE 2   // 1/2 chance for stab tera
 #define BFG_RANDOM_TERA_CHANCE 4        // 1/4 chance for non-stab tera
@@ -42,8 +44,8 @@
 #define BFG_RANDOM_GIGANTAMAX_CHANCE 1  // 1/x Chance for a Pokemon to Gigantamax
 #define BFG_RANDOM_DYNAMAX_CHANCE 4     // 1/x Chance for a Pokemon to Dynamax
 
-#define BFG_RANDOM_OFFSET_MIN 0        // Min. Value for RANDOM_OFFSET()
-#define BFG_RANDOM_OFFSET_MAX 0        // Max. Value for RANDOM_OFFSET()
+#define BFG_RANDOM_OFFSET_MIN 0         // Min. Value for RANDOM_OFFSET()
+#define BFG_RANDOM_OFFSET_MAX 20        // Max. Value for RANDOM_OFFSET()
 
 // *** BATTLE FACTORY ***
 
@@ -254,6 +256,10 @@
 
 #define BFG_MAX_TRICK_ROOM_SPEED    80  // Highest base speed for trick room teams
 #define BFG_MIN_TAILWIND_SPEED      80  // Lowest base speed for tailwind teams
+
+#define BFG_EV_METHOD_SIMPLE        0   // Invest in nature-boosted stat, then hp (if def avg. is higher) or speed (if speed is higher than def avg.)
+#define BFG_EV_METHOD_HIGHEST_FIRST 1   // Loop over each stat, investing in the highest base stats first (including nature-boosted stat)
+#define BFG_EV_METHOD               BFG_EV_METHOD_SIMPLE
 
 #define BFG_EV_HP_OFFSET 13   //  HP selection chance is multiplied by (n * mod) / 10;
                                 //  e.g. (80 * 13) / 10 = 104

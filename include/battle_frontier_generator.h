@@ -1,6 +1,8 @@
 #ifndef GUARD_BATTLE_FRONTIER_GENERATOR_H
 #define GUARD_BATTLE_FRONTIER_GENERATOR_H
 
+#include "config/battle_frontier_generator.h"
+
 // *** UTILITY ***
 
 #define IN_INCLUSIVE_RANGE(a,b,n) (((n) >= (a)) && ((n) <= (b)))
@@ -35,7 +37,7 @@
 #if BFG_RANDOM_OFFSET_MIN == BFG_RANDOM_OFFSET_MAX
 #define RANDOM_OFFSET() (BFG_RANDOM_OFFSET_MIN)
 #else
-#define RANDOM_OFFSET() RANDOM_RANGE(BFG_RANDOM_OFFSET_MIN, BFG_RANDOM_OFFSET_MAX)
+#define RANDOM_OFFSET(n) (n + (RANDOM_RANGE(BFG_RANDOM_OFFSET_MIN, BFG_RANDOM_OFFSET_MAX)))
 #endif
 
 #define GET_TRAINER_ID() (gSaveBlock2Ptr->playerTrainerId[0] + gSaveBlock2Ptr->playerTrainerId[1] + gSaveBlock2Ptr->playerTrainerId[2] + gSaveBlock2Ptr->playerTrainerId[3])

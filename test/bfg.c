@@ -15,25 +15,6 @@
 
 #if BFG_TEST_SET_GENERATION == TRUE
 
-// Set fixed random number generators
-
-#if BFG_TEST_FIXED_RNG == TRUE
-#ifndef BFG_RANDOM_RANGE_FIXED
-#define BFG_RANDOM_RANGE_FIXED FALSE
-#define UNDEF_BFG_RANDOM_RANGE_FIXED
-#endif 
-
-#ifndef BFG_RANDOM_CHANCE_FIXED
-#define BFG_RANDOM_CHANCE_FIXED FALSE
-#define UNDEF_BFG_RANDOM_CHANCE_FIXED
-#endif 
-
-#ifndef BFG_RANDOM_BOOL_FIXED
-#define BFG_RANDOM_BOOL_FIXED FALSE
-#define UNDEF_BFG_RANDOM_BOOL_FIXED
-#endif 
-#endif // BFG_TEST_FIXED_RNG == TRUE
-
 bool8 TestRandomPokemonGenerator(struct Pokemon * mon, u16 speciesId, u8 level, u8 lvlMode, u8 fixedIV, bool8 allowForme, u8 battleMode)
 {
     // Store original battle mode
@@ -56,17 +37,6 @@ bool8 TestRandomPokemonGenerator(struct Pokemon * mon, u16 speciesId, u8 level, 
 
     if (success)
     {
-/*
-// Allocate remaining items
-for(i=0; i < monCount; i++)
-{
-    if (((items[i]) == ITEM_NONE) && (!(RANDOM_CHANCE(BFG_NO_ITEM_SELECTION_CHANCE))))
-    {
-        items[i] = GetSpeciesItem(&gEnemyParty[i + firstMonId], items, PARTY_SIZE);
-        SetMonData(&gEnemyParty[i + firstMonId], MON_DATA_HELD_ITEM, &(items[i]));
-    }
-}
-*/
         // Get the held item
         u16 items[] = {GetMonData(mon, MON_DATA_HELD_ITEM)};
 
@@ -132,43 +102,43 @@ for(i=0; i < monCount; i++)
     return success;
 }
 
-TEST("Generate Random Ogerpon (Lvl. 50, 31 IVs)")
+// Legendaries
+
+TEST("Generate Random Ogerpon (Doubles, Lvl. 50, 31 IVs)")
 {
     struct Pokemon mon;
-    TestRandomPokemonGenerator(&mon, SPECIES_OGERPON, 50, FRONTIER_LVL_50, 31, FALSE, FRONTIER_MODE_DOUBLES);
-    // TODO: Test has spiky shield, ivy cudgel
+    for(int i=0; i<BFG_TEST_SETS_PER_MON; i++) {
+        TestRandomPokemonGenerator(&mon, SPECIES_OGERPON, 50, FRONTIER_LVL_50, 31, FALSE, FRONTIER_MODE_DOUBLES);
+
+        // TODO: Test has spiky shield, ivy cudgel
+    }
 }
 
-TEST("Generate Random Chien-Pao (Lvl. 50, 31 IVs)")
+TEST("Generate Random Chien-Pao (Doubles, Lvl. 50, 31 IVs)")
 {
     struct Pokemon mon;
-    TestRandomPokemonGenerator(&mon, SPECIES_CHIEN_PAO, 50, FRONTIER_LVL_50, 31, FALSE, FRONTIER_MODE_DOUBLES);
+    for(int i=0; i<BFG_TEST_SETS_PER_MON; i++) {
+        TestRandomPokemonGenerator(&mon, SPECIES_CHIEN_PAO, 50, FRONTIER_LVL_50, 31, FALSE, FRONTIER_MODE_DOUBLES);
+    }
 }
 
-TEST("Generate Random Cresselia (Lvl. 50, 31 IVs)")
+TEST("Generate Random Cresselia (Doubles, Lvl. 50, 31 IVs)")
 {
     struct Pokemon mon;
-    TestRandomPokemonGenerator(&mon, SPECIES_CRESSELIA, 50, FRONTIER_LVL_50, 31, FALSE, FRONTIER_MODE_DOUBLES);
+    for(int i=0; i<BFG_TEST_SETS_PER_MON; i++) {
+        TestRandomPokemonGenerator(&mon, SPECIES_CRESSELIA, 50, FRONTIER_LVL_50, 31, FALSE, FRONTIER_MODE_DOUBLES);
+    }
 }
 
-// Cleanup modified defines
+// Restricteds
 
-#if BFG_TEST_FIXED_RNG == TRUE
-#ifdef UNDEF_BFG_RANDOM_RANGE_FIXED
-#undef BFG_RANDOM_RANGE_FIXED
-#undef UNDEF_BFG_RANDOM_RANGE_FIXED
-#endif 
-
-#ifdef UNDEF_BFG_RANDOM_CHANCE_FIXED
-#undef BFG_RANDOM_CHANCE_FIXED
-#undef UNDEF_BFG_RANDOM_CHANCE_FIXED
-#endif 
-
-#ifdef UNDEF_BFG_RANDOM_BOOL_FIXED
-#undef BFG_RANDOM_BOOL_FIXED
-#undef UNDEF_BFG_RANDOM_BOOL_FIXED
-#endif 
-#endif // BFG_TEST_FIXED_RNG == TRUE
+TEST("Generate Random Zamazenta (Doubles, Lvl. 50, 31 IVs)")
+{
+    struct Pokemon mon;
+    for(int i=0; i<BFG_TEST_SETS_PER_MON; i++) {
+        TestRandomPokemonGenerator(&mon, SPECIES_ZAMAZENTA, 50, FRONTIER_LVL_50, 31, TRUE, FRONTIER_MODE_DOUBLES);
+    }
+}
 
 #endif // BFG_TEST_SET_GENERATION == TRUE
 

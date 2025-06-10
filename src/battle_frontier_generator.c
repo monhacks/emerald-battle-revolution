@@ -11,7 +11,6 @@
 #include "frontier_util.h"
 #include "battle_ai_util.h"
 #include "battle_frontier_generator.h"
-#include "config/battle_frontier_generator.h"
 
 #include "constants/battle_frontier_generator.h"
 #include "constants/battle_move_effects.h"
@@ -591,8 +590,8 @@ static u8 GetSpeciesNature(u16 speciesId, struct GeneratorProperties * propertie
             u8 posStat = 0;
             u8 posStatValue = 0;
 
-            u16 temp1 = ((species->baseAttack) + RANDOM_OFFSET());
-            u16 temp2 = ((species->baseSpAttack) + RANDOM_OFFSET());
+            u16 temp1 = (RANDOM_OFFSET(species->baseAttack));
+            u16 temp2 = (RANDOM_OFFSET(species->baseSpAttack));
 
             // The team is a trick Room team
             if (properties->speedControl == GSC_TRICK_ROOM) {
@@ -628,12 +627,12 @@ static u8 GetSpeciesNature(u16 speciesId, struct GeneratorProperties * propertie
                 if (i == negStat)
                     continue; 
 
-                temp1 = (posStatValue + RANDOM_OFFSET());
+                temp1 = RANDOM_OFFSET(posStatValue);
 
                 switch(i) 
                 {
                     case STAT_ATK: {
-                        temp2 = ((species->baseAttack) + RANDOM_OFFSET());
+                        temp2 = RANDOM_OFFSET(species->baseAttack);
                         if ((temp2 > temp1) || ((temp2 == temp1) && (
                             ((posStat == STAT_DEF || posStat == STAT_SPDEF) && BFG_PRIORITISE_ATK_SPA_OVER_DEF_SPD) || 
                             (posStat == STAT_SPEED && BFG_PRIORITISE_ATK_SPA_OVER_SPE)
@@ -644,7 +643,7 @@ static u8 GetSpeciesNature(u16 speciesId, struct GeneratorProperties * propertie
                         }
                     }; break;
                     case STAT_DEF: {
-                        temp2 = ((species->baseDefense) + RANDOM_OFFSET());
+                        temp2 = RANDOM_OFFSET(species->baseDefense);
                         if ((temp2 > temp1) || ((temp2 == temp1) && (
                             (((posStat == STAT_ATK || posStat == STAT_SPATK) && (BFG_PRIORITISE_ATK_SPA_OVER_DEF_SPD == FALSE)) || 
                             (posStat == STAT_SPDEF && RANDOM_BOOL()))
@@ -655,7 +654,7 @@ static u8 GetSpeciesNature(u16 speciesId, struct GeneratorProperties * propertie
                         }
                     }; break;
                     case STAT_SPATK: {
-                        temp2 = ((species->baseSpAttack) + RANDOM_OFFSET());
+                        temp2 = RANDOM_OFFSET(species->baseSpAttack);
                         if ((temp2 > temp1) || ((temp2 == temp1) && (
                             ((posStat == STAT_DEF || posStat == STAT_SPDEF) && BFG_PRIORITISE_ATK_SPA_OVER_DEF_SPD) || 
                             (posStat == STAT_SPEED && BFG_PRIORITISE_ATK_SPA_OVER_SPE)
@@ -666,7 +665,7 @@ static u8 GetSpeciesNature(u16 speciesId, struct GeneratorProperties * propertie
                         }
                     }; break;
                     case STAT_SPDEF: {
-                        temp2 = ((species->baseSpDefense) + RANDOM_OFFSET());
+                        temp2 = RANDOM_OFFSET(species->baseSpDefense);
                         if ((temp2 > temp1) || ((temp2 == temp1) && (
                             (((posStat == STAT_ATK || posStat == STAT_SPATK) && (BFG_PRIORITISE_ATK_SPA_OVER_DEF_SPD == FALSE)) || 
                             (posStat == STAT_DEF && RANDOM_BOOL()))
@@ -677,7 +676,7 @@ static u8 GetSpeciesNature(u16 speciesId, struct GeneratorProperties * propertie
                         }
                     }; break;
                     case STAT_SPEED: {
-                        temp2 = ((species->baseSpeed) + RANDOM_OFFSET());
+                        temp2 = RANDOM_OFFSET(species->baseSpeed);
                         if ((temp2 > temp1) || ((temp2 == temp1) && (
                             ((posStat == STAT_ATK || posStat == STAT_SPATK) && (BFG_PRIORITISE_ATK_SPA_OVER_SPE == FALSE)) || 
                             (posStat == STAT_DEF || posStat == STAT_SPDEF)
@@ -704,120 +703,6 @@ static u8 GetSpeciesNature(u16 speciesId, struct GeneratorProperties * propertie
     }
 }
 
-/*
-static u8 GetSpeciesEVs(u16 speciesId, u8 natureId) 
-{
-    u8 i;
-
-    u8 evs = 0;
-    u8 stat1, stat2;
-
-    u8 method = GetTeamGenerationMethod();
-    
-    const struct SpeciesInfo * species = &(gSpeciesInfo[speciesId]);
-
-    switch(method){
-        case BFG_TEAM_GENERATOR_FILTERED:
-        case BFG_TEAM_GENERATOR_FILTERED_ATTACKS_ONLY:
-        case BFG_TEAM_GENERATOR_FILTERED_RANKING:
-        case BFG_TEAM_GENERATOR_FILTERED_RANKING_ATTACKS_ONLY: {
-
-            u16 val1 = 0; 
-            u16 val2 = 0; 
-            u16 valT, valR;
-
-            const struct Nature * nature = &(gNatureInfo[natureId]);
-
-            // Default Values
-            stat1 = 0xFF;
-            stat2 = 0xFF;
-
-            for(i = STAT_HP; i < NUM_STATS; i++)
-            {
-                // Don't invest in neg stat
-                if (i == nature->negStat)
-                    continue;
-                switch(i)
-                {
-                    case STAT_HP:
-                        valT = (species->baseHP) + BFG_EV_HP_OFFSET;
-                        break;
-                    case STAT_ATK:
-                        valT = species->baseAttack;
-                        break;
-                    case STAT_DEF:
-                        valT = species->baseDefense;
-                        break;
-                    case STAT_SPATK:
-                        valT = species->baseSpAttack;
-                        break;
-                    case STAT_SPDEF:
-                        valT = species->baseSpDefense;
-                        break;
-                    case STAT_SPEED:
-                        valT = species->baseSpeed;
-                        break;
-                }
-
-                // For calculating with offset
-                valR = (valT + RANDOM_OFFSET());
-
-                // If stat 1 is undefined, or new stat is greater
-                if (stat1 == 0xFF || ((val2 > val1) && (valR > (val1 + RANDOM_OFFSET())))) 
-                {
-                    stat1 = i; 
-                    val1 = valT;
-                }
-                // If stat 2 is undefined, or new stat is greater
-                else if (stat2 == 0xFF || ((val2 < val1) && (valR > (val2 + RANDOM_OFFSET())))) 
-                {
-                    stat2 = i; 
-                    val2 = valT;
-                }
-                // Both stat 1 and stat 2 match
-                else if ((val2 == val1) && (valR > (val2 + RANDOM_OFFSET()))) 
-                {
-                    // Replace stat1
-                    if (RANDOM_BOOL()) 
-                    {
-                        stat1 = i; 
-                        val1 = valT;
-                    }
-                    else // Replace stat2
-                    {
-                        stat2 = i; 
-                        val2 = valT;
-                    }
-                }
-            }
-        }; break;
-        default: 
-            DebugPrintf("Unhandled team generation method: %d, falling back to default method ...", method);
-        case BFG_TEAM_GENERATOR_DEFAULT:
-        case BFG_TEAM_GENERATOR_RANDOM: {
-           stat1 = STAT_HP;
-           stat2 = RANDOM_BOOL() ? STAT_DEF : STAT_SPDEF;
-        }; break;
-    }
-
-    // Apply stat bitmasks to evs
-    if (stat1 == STAT_HP || stat2 == STAT_HP)
-        evs |= F_EV_SPREAD_HP;
-    if (stat1 == STAT_ATK || stat2 == STAT_ATK)
-        evs |= F_EV_SPREAD_ATTACK;
-    if (stat1 == STAT_DEF || stat2 == STAT_DEF)
-        evs |= F_EV_SPREAD_DEFENSE;
-    if (stat1 == STAT_SPATK || stat2 == STAT_SPATK)
-        evs |= F_EV_SPREAD_SP_ATTACK;
-    if (stat1 == STAT_SPDEF || stat2 == STAT_SPDEF)
-        evs |= F_EV_SPREAD_SP_DEFENSE;
-    if (stat1 == STAT_SPEED || stat2 == STAT_SPEED)
-        evs |= F_EV_SPREAD_SPEED;
-
-    return evs;
-}
-*/
-
 #if BFG_EV_INVEST_NUM_STATS != BFG_EV_INVEST_NO_STATS
 #define EVS_NONE 0xFF
 
@@ -835,8 +720,6 @@ static void SetMonEVs(struct Pokemon * mon, struct GeneratorProperties * propert
         vals[i] = 0;
     }
 
-    u8 method = GetTeamGenerationMethod();
-
     u16 speciesId = GetMonData(mon, MON_DATA_SPECIES);
     const struct SpeciesInfo * species = &(gSpeciesInfo[speciesId]);
 
@@ -845,73 +728,111 @@ static void SetMonEVs(struct Pokemon * mon, struct GeneratorProperties * propert
 
     bool8 repeat;
 
-    switch(method) {
-        case BFG_TEAM_GENERATOR_FILTERED:
-        case BFG_TEAM_GENERATOR_FILTERED_ATTACKS_ONLY:
-        case BFG_TEAM_GENERATOR_FILTERED_RANKING:
-        case BFG_TEAM_GENERATOR_FILTERED_RANKING_ATTACKS_ONLY: {
+    // ValT: Temp (Current Stat)
+    // ValR: Random (Current Stat + Random Offset)
+    // Val0: Offset (For prev. entry being checked)
+    u16 valT, valR, valO; 
 
-            // ValT: Temp (Current Stat)
-            // ValR: Random (Current Stat + Random Offset)
-            u16 valT, valR; 
+    // Simplifies the selection of the main 2 stats
+    #if BFG_EV_METHOD == BFG_EV_METHOD_SIMPLE
+    #define INVEST_SPEED(species) ((RANDOM_OFFSET(species->baseHP) + RANDOM_OFFSET(species->baseDefense) + RANDOM_OFFSET(species->baseSpDefense)) < (RANDOM_OFFSET(species->baseSpeed) * 3))
+    #define INVEST_OFFENSE(species) (RANDOM_OFFSET(MAX(species->baseAttack, species->baseSpAttack)) >= RANDOM_OFFSET(MAX(species->baseDefense, species->baseSpDefense)))
 
-            // Pick the top stats
-            for(i=0; i<BFG_EV_INVEST_NUM_STATS; i++) {
-                // Loop over each stat
-                for(j=STAT_HP; j<NUM_STATS; j++) {
-                    // Skip if reducing nature
-                    if (j == nature->negStat)
-                        continue;
+    // Always invest in posStat
+    stats[0] = nature->posStat;
 
-                    // Check for repeats
-                    repeat = FALSE;
-                    for(k=0; k<i; k++)
-                        if (stats[k] == j)
-                            repeat = TRUE;
-                    // Skip repeats
-                    if (repeat) 
-                        continue;
+    // If pos. stat is not speed, and speed is higher than bulk
+    if (nature->posStat != STAT_SPEED && INVEST_SPEED(species))
+        stats[1] = STAT_SPEED; // Invest in speed
 
-                    switch(j) 
-                    {
-                        case STAT_HP:
-                            valT = GetHPOffset(species->baseHP);
-                            break;
-                        case STAT_ATK:
-                            valT = species->baseAttack;
-                            break;
-                        case STAT_DEF:
-                            valT = species->baseDefense;
-                            break;
-                        case STAT_SPATK:
-                            valT = species->baseSpAttack;
-                            break;
-                        case STAT_SPDEF:
-                            valT = species->baseSpDefense;
-                            break;
-                        case STAT_SPEED:
-                            valT = species->baseSpeed;
-                            break;
-                    }
+    // If pos. stat is not atk/spatk, and highest one is higher than highest bulk stat
+    else if ((!((nature->posStat == STAT_ATK) || (nature->posStat == STAT_SPATK))) && INVEST_OFFENSE(species)) {
+        // Switch on reduced stat
+        switch(nature->negStat) {
+            // -atk
+            case STAT_ATK: 
+                stats[1] = STAT_SPATK;
+            break;
+            // -spatk
+            case STAT_SPATK:
+                stats[1] = STAT_ATK; 
+            break;
+            // -spe
+            default:
+                // Precalculate offsets for both values
+                valT = RANDOM_OFFSET(species->baseAttack);
+                valO = RANDOM_OFFSET(species->baseSpAttack);
 
-                    // For calculating with offset
-                    valR = (valT + RANDOM_OFFSET());
+                // Atk is higher, or both match (and 50% chance)
+                if ((valT > valO) || ((valT == valO) && RANDOM_BOOL()))
+                    stats[1] = STAT_ATK; // Invest in Atk
+                else
+                    stats[1] = STAT_SPATK; // Invest in SpA
+            break;
+        }
+    }
+    else // Boosted stat must be either Def/SpD, and species is not offensive
+        stats[1] = STAT_HP; // Invest in HP
+    // Can skip the first 2 stats
+    for(i=2; i<BFG_EV_INVEST_NUM_STATS; i++) {
+    #else
+    // Pick the top stats
+    for(i=0; i<BFG_EV_INVEST_NUM_STATS; i++) {
+    #endif
+        // Loop over each stat
+        for(j=STAT_HP; j<NUM_STATS; j++) {
+            // Skip if reducing nature
+            if (j == nature->negStat)
+                continue;
 
-                    // Series of conditions:
-                    // Current stat is undefined, 
-                    // New stat is the nature-boosted stat, 
-                    // New stat is higher than the current stat, 
-                    // New stat is the same as the current stat, with a 50% chance
-                    if (
-                        (stats[i] == EVS_NONE) || 
-                        (j == nature->posStat) || 
-                        (valR > (vals[i] + RANDOM_OFFSET())) || 
-                        ((valR == (vals[i] + RANDOM_OFFSET())) && RANDOM_BOOL())
-                    ) {
-                        stats[i] = j;
-                        vals[i] = valT;
-                    }
-                }
+            // Check for repeats
+            repeat = FALSE;
+            for(k=0; k<i; k++)
+                if (stats[k] == j)
+                    repeat = TRUE;
+            // Skip repeats
+            if (repeat) 
+                continue;
+
+            switch(j) 
+            {
+                case STAT_HP:
+                    valT = GetHPOffset(species->baseHP);
+                    break;
+                case STAT_ATK:
+                    valT = species->baseAttack;
+                    break;
+                case STAT_DEF:
+                    valT = species->baseDefense;
+                    break;
+                case STAT_SPATK:
+                    valT = species->baseSpAttack;
+                    break;
+                case STAT_SPDEF:
+                    valT = species->baseSpDefense;
+                    break;
+                case STAT_SPEED:
+                    valT = species->baseSpeed;
+                    break;
+            }
+
+            // For calculating with offset
+            valR = RANDOM_OFFSET(valT);
+            valO = RANDOM_OFFSET(vals[i]);
+
+            // Series of conditions:
+            // Current stat is undefined, 
+            // New stat is the nature-boosted stat, 
+            // New stat is higher than the current stat, 
+            // New stat is the same as the current stat, with a 50% chance
+            if (
+                (stats[i] == EVS_NONE) || 
+                (j == nature->posStat) || 
+                (valR > valO) || 
+                ((valR == valO) && RANDOM_BOOL())
+            ) {
+                stats[i] = j;
+                vals[i] = valT;
             }
         }
     }
@@ -3182,7 +3103,7 @@ void DebugPrintMonData(struct Pokemon * mon)
     u16 itemId = GetMonData(mon,MON_DATA_HELD_ITEM);
 
     #if BFG_TEST_PRINT_AS_STRING
-    DebugPrintf("%S & %S", GetSpeciesName(speciesId), GetItemName(itemId));
+    DebugPrintf("%S @ %S", GetSpeciesName(speciesId), GetItemName(itemId));
     DebugPrintf("Ability: %d (%S)", abilityNum, GetAbilityName(abilityId));
     DebugPrintf("%S nature", GetNatureName(GetNature(mon)));
     #else
