@@ -65,6 +65,7 @@ struct GeneratorProperties {
     bool8 allowZMove;
     bool8 allowGmax;
     bool8 allowMega;
+    bool8 allowForme;
     // Speed Control Method
     enum GeneratorSpeedControl speedControl;
 };
