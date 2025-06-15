@@ -59,7 +59,6 @@ enum GeneratorSpeedControl {
 struct GeneratorProperties {
     u32 otID;
     u8 level;
-    u8 index;
     u8 fixedIV;
     u16 minBST;
     u16 maxBST;
@@ -68,15 +67,14 @@ struct GeneratorProperties {
     bool8 allowGmax;
     bool8 allowMega;
     bool8 allowForme;
-    // Speed Control Method
-    enum GeneratorSpeedControl speedControl;
 };
 
 // Forme / Gimmick not allowed
 #define BFG_ITEM_IV_BANNED 32
 
-bool32 GenerateTrainerPokemonHandleForme(struct Pokemon * mon, u16 speciesId, struct GeneratorProperties * properties);
+bool8 HasPhysicalMove(struct Pokemon * mon);
 bool32 GenerateTrainerPokemon(struct Pokemon * mon, u16 speciesId, u8 formeIndex, u16 move, u16 item, struct GeneratorProperties * properties);
+bool32 GenerateTrainerPokemonHandleForme(struct Pokemon * mon, u16 speciesId, struct GeneratorProperties * properties);
 
 bool32 GetSpeciesItemCheckUnique(u16 itemId, u16 * items, u8 itemCount);
 u16 GetSpeciesItem(struct Pokemon * mon, u16 * items, u8 itemCount);

@@ -2,14 +2,24 @@ from datetime import datetime
 
 CONFIG_FILE = "./include/config/battle_frontier_generator.h"
 
-def get_timestamp(time = datetime.now()):
+# Moves to ignore, effectively a banlist for moves
+# used for both move_ratings.py and move_options.py
+MOVE_EXCLUSIONS = [
+
+]
+
+def get_timestamp(time=datetime.now()):
     return time.strftime("%d-%m-%y %H:%M:%S")
 
-def convert_const_to_camel(const):
+
+def convert_const_to_camel_case(const):
     parts = const.split("_")
     return parts[0].lower() + "".join(word.capitalize() for word in parts[1:])
 
-def get_constant(string):
+def convert_const_to_move_id(const):
+    return const.lower().replace("_", "").replace("move", "", 1)
+
+def convert_string_to_const(string):
 
     # Convert to upper case
     constant = string.upper()
@@ -25,32 +35,46 @@ def get_constant(string):
 
     return constant
 
-def get_species_constant(species_name):
-    
+def convert_const_to_species_id(const):
+    if const.startswith("SPECIES_"):
+        const = const[len("SPECIES_") :]
+    parts = const.split("_")
+    return "".join(part.capitalize() for part in parts)
+
+
+def convert_species_name_to_const(species_name):
+
     # Convert to generic constant
-    constant = get_constant(species_name)
+    constant = convert_string_to_const(species_name)
 
     # Update characers / constants
-    constant = (
-        constant.replace("É", "E")
-    )
+    constant = constant.replace("É", "E")
 
     return f"SPECIES_{constant}"
 
-def get_species_id(species_name):
+
+def convert_species_name_to_species_id(species_name):
 
     # Convert species name to lower case
     constant = species_name.lower()
 
     # Update formatting
-    return constant.replace(" ", "").replace("-", "").replace("'", "").replace(":", "").replace("_","")
+    return (
+        constant.replace(" ", "")
+        .replace("-", "")
+        .replace("'", "")
+        .replace(":", "")
+        .replace("_", "")
+    )
+
 
 def parse_gender(gender_string):
     gender = gender_string.lower()
-    if gender == "m" or gender == "n": # Male
+    if gender == "m" or gender == "n":  # Male
         return 0
-    elif gender == "f": # Female
+    elif gender == "f":  # Female
         return 1
+
 
 def is_tagged(species, tag):
     return "tags" in species and tag in species["tags"]

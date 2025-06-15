@@ -80,10 +80,11 @@ bool8 TestRandomPokemonGenerator(struct Pokemon * mon, u16 speciesId, u8 level, 
         // Optimised IVs
         u8 nature = GetNature(mon);
         // Attack stat should be 0, if reducing
-        if (gNatureInfo[nature].negStat == STAT_ATK)
+        if ((gNatureInfo[nature].negStat == STAT_ATK) || (!HasPhysicalMove(mon)))
             EXPECT_EQ(GetMonData(mon, MON_DATA_ATK_IV), 0);
-        else
+        else 
             EXPECT_EQ(GetMonData(mon, MON_DATA_ATK_IV), fixedIV);
+        
         // Speed stat should be 0, if reducing
         if (gNatureInfo[nature].negStat == STAT_SPEED)
             EXPECT_EQ(GetMonData(mon, MON_DATA_SPEED_IV), 0);
@@ -102,43 +103,27 @@ bool8 TestRandomPokemonGenerator(struct Pokemon * mon, u16 speciesId, u8 level, 
     return success;
 }
 
+// Worker Macro
+#define BFG_TEST(text,s,l,m,i,f,t,r) TEST(text){struct Pokemon mon; for(u8 n=0; n<r; n++){TestRandomPokemonGenerator(&mon,s,l,m,i,f,t);}}
+
+// Standard
+
+BFG_TEST("Generate Random Incineroar (D,LVL50,31IV)",SPECIES_INCINEROAR, 50, FRONTIER_LVL_50, 31, FALSE, FRONTIER_MODE_DOUBLES, 3);
+BFG_TEST("Generate Random Amoonguss (D,LVL50,31IV)",SPECIES_AMOONGUSS, 50, FRONTIER_LVL_50, 31, FALSE, FRONTIER_MODE_DOUBLES, 3);
+BFG_TEST("Generate Random Clefairy (D,LVL50,31IV)",SPECIES_CLEFAIRY, 50, FRONTIER_LVL_50, 31, FALSE, FRONTIER_MODE_DOUBLES, 3);
+
 // Legendaries
 
-TEST("Generate Random Ogerpon (Doubles, Lvl. 50, 31 IVs)")
-{
-    struct Pokemon mon;
-    for(int i=0; i<BFG_TEST_SETS_PER_MON; i++) {
-        TestRandomPokemonGenerator(&mon, SPECIES_OGERPON, 50, FRONTIER_LVL_50, 31, FALSE, FRONTIER_MODE_DOUBLES);
+BFG_TEST("Generate Random Cresselia (D,LVL50,31IV)",SPECIES_CRESSELIA, 50, FRONTIER_LVL_50, 31, FALSE, FRONTIER_MODE_DOUBLES, 3);
+BFG_TEST("Generate Random Chien-Pao (D,LVL50,31IV)",SPECIES_CHIEN_PAO, 50, FRONTIER_LVL_50, 31, FALSE, FRONTIER_MODE_DOUBLES, 3);
+BFG_TEST("Generate Random Ogerpon (D,LVL50,31IV)",SPECIES_OGERPON, 50, FRONTIER_LVL_50, 31, FALSE, FRONTIER_MODE_DOUBLES, 3);
 
-        // TODO: Test has spiky shield, ivy cudgel
-    }
-}
+// Forme Changes
 
-TEST("Generate Random Chien-Pao (Doubles, Lvl. 50, 31 IVs)")
-{
-    struct Pokemon mon;
-    for(int i=0; i<BFG_TEST_SETS_PER_MON; i++) {
-        TestRandomPokemonGenerator(&mon, SPECIES_CHIEN_PAO, 50, FRONTIER_LVL_50, 31, FALSE, FRONTIER_MODE_DOUBLES);
-    }
-}
+BFG_TEST("Generate Random Zamazenta (D,LVL50,31IV)",SPECIES_ZAMAZENTA, 50, FRONTIER_LVL_50, 31, TRUE, FRONTIER_MODE_DOUBLES, 3);
+BFG_TEST("Generate Random Zacian (D,LVL50,31IV)",SPECIES_ZACIAN, 50, FRONTIER_LVL_50, 31, TRUE, FRONTIER_MODE_DOUBLES, 3);
 
-TEST("Generate Random Cresselia (Doubles, Lvl. 50, 31 IVs)")
-{
-    struct Pokemon mon;
-    for(int i=0; i<BFG_TEST_SETS_PER_MON; i++) {
-        TestRandomPokemonGenerator(&mon, SPECIES_CRESSELIA, 50, FRONTIER_LVL_50, 31, FALSE, FRONTIER_MODE_DOUBLES);
-    }
-}
-
-// Restricteds
-
-TEST("Generate Random Zamazenta (Doubles, Lvl. 50, 31 IVs)")
-{
-    struct Pokemon mon;
-    for(int i=0; i<BFG_TEST_SETS_PER_MON; i++) {
-        TestRandomPokemonGenerator(&mon, SPECIES_ZAMAZENTA, 50, FRONTIER_LVL_50, 31, TRUE, FRONTIER_MODE_DOUBLES);
-    }
-}
+BFG_TEST("Generate Random Ogerpon (Any) (D,LVL50,31IV)",SPECIES_OGERPON, 50, FRONTIER_LVL_50, 31, TRUE, FRONTIER_MODE_DOUBLES, 3);
 
 #endif // BFG_TEST_SET_GENERATION == TRUE
 

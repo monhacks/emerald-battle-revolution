@@ -6,9 +6,6 @@
 
 #define BFG_TEST_SET_GENERATION TRUE    // Test set generation
 #define BFG_TEST_PRINT_RESULTS  TRUE    // Print test results
-#define BFG_TEST_SETS_PER_MON   3       // Generate 'n' sets per Pokemon
-
-#define BFG_TEST_PRINT_AS_STRING TRUE // Test print sets as string
 
 #define BFG_FLAG_FRONTIER_ALLOW_MEGA 0 // Flag to enable or disable Mega Evolution
 #define BFG_FLAG_FRONTIER_ALLOW_GMAX 0 // Flag to enable or disable Gigantamax
@@ -26,11 +23,9 @@
 
 #define BFG_FLAG_FRONTIER_FIXED_IV 0 // Flag to enable or disable fixed IVs
 
-// Run 'move_ratings.py' as part of build pipeline
-#define BFG_GENERATE_MOVE_RATINGS TRUE    // Generate battle_frontier_generator_move_ratings.h
-
-// Run 'trainer_mons.py' as part of build pipeline
-#define BFG_GENERATE_TRAINER_MONS TRUE    // Generate battle_frontier_generator_trainer_class_mons.h
+// Worker Python Scripts
+#define BFG_GENERATE_MOVE_RATINGS   TRUE    // Generate data/battle_frontier/battle_frontier_generator_move_ratings.h
+#define BFG_GENERATE_TRAINER_MONS   TRUE    // Generate battle_frontier_generator_trainer_class_mons.h
 
 // Comment out if unused
 
@@ -47,7 +42,7 @@
 #define BFG_RANDOM_OFFSET_MIN 0         // Min. Value for RANDOM_OFFSET()
 #define BFG_RANDOM_OFFSET_MAX 20        // Max. Value for RANDOM_OFFSET()
 
-// *** BATTLE FACTORY ***
+// ** Levels **
 
 #define BFG_IV_LVL_TENT 0
 
@@ -103,38 +98,39 @@
 // Attack Power Scaling
 
 #define BFG_IV_MIN_ATK_0 BFG_ATK_MIN
-#define BFG_IV_MIN_ATK_3 BFG_ATK_MIN
-#define BFG_IV_MIN_ATK_6 BFG_ATK_MIN
-#define BFG_IV_MIN_ATK_9 BFG_ATK_MIN
-#define BFG_IV_MIN_ATK_12 BFG_ATK_MIN
-#define BFG_IV_MIN_ATK_15 BFG_ATK_MIN
-#define BFG_IV_MIN_ATK_18 BFG_ATK_MIN
-#define BFG_IV_MIN_ATK_21 BFG_ATK_MIN
-#define BFG_IV_MIN_ATK_MAX BFG_ATK_MIN
+#define BFG_IV_MIN_ATK_3 5
+#define BFG_IV_MIN_ATK_6 10
+#define BFG_IV_MIN_ATK_9 15
+#define BFG_IV_MIN_ATK_12 20
+#define BFG_IV_MIN_ATK_15 30
+#define BFG_IV_MIN_ATK_18 40
+#define BFG_IV_MIN_ATK_21 50
+#define BFG_IV_MIN_ATK_MAX 60
 
-#define BFG_IV_MAX_ATK_0 BFG_ATK_MAX
-#define BFG_IV_MAX_ATK_3 BFG_ATK_MAX
-#define BFG_IV_MAX_ATK_6 BFG_ATK_MAX
-#define BFG_IV_MAX_ATK_9 BFG_ATK_MAX
-#define BFG_IV_MAX_ATK_12 BFG_ATK_MAX
-#define BFG_IV_MAX_ATK_15 BFG_ATK_MAX
-#define BFG_IV_MAX_ATK_18 BFG_ATK_MAX
-#define BFG_IV_MAX_ATK_21 BFG_ATK_MAX
-#define BFG_IV_MAX_ATK_MAX BFG_ATK_MAX
+#define BFG_IV_MAX_ATK_0 60
+#define BFG_IV_MAX_ATK_3 85
+#define BFG_IV_MAX_ATK_6 110
+#define BFG_IV_MAX_ATK_9 135
+#define BFG_IV_MAX_ATK_12 160
+#define BFG_IV_MAX_ATK_15 185
+#define BFG_IV_MAX_ATK_18 210
+#define BFG_IV_MAX_ATK_21 235
+#define BFG_IV_MAX_ATK_MAX 255
 
 // Hidden Ability Scaling
 
-#define BFG_IV_HA_CHANCE_0 0 // 0% Chance
-#define BFG_IV_HA_CHANCE_3 24 // 1/24
-#define BFG_IV_HA_CHANCE_6 21 // 1/21
-#define BFG_IV_HA_CHANCE_9 18 // 1/18
-#define BFG_IV_HA_CHANCE_12 15 // 1/15
+#define BFG_IV_HA_CHANCE_0 32 // 1/32% Chance
+#define BFG_IV_HA_CHANCE_3 28 // 1/28
+#define BFG_IV_HA_CHANCE_6 24 // 1/24
+#define BFG_IV_HA_CHANCE_9 20 // 1/20
+#define BFG_IV_HA_CHANCE_12 16 // 1/16
 #define BFG_IV_HA_CHANCE_15 12 // 1/12
-#define BFG_IV_HA_CHANCE_18 9 // 1/9
-#define BFG_IV_HA_CHANCE_21 6 // 1/6
-#define BFG_IV_HA_CHANCE_MAX 3 // 1/3
+#define BFG_IV_HA_CHANCE_18 8 // 1/8
+#define BFG_IV_HA_CHANCE_21 4 // 1/4
+#define BFG_IV_HA_CHANCE_MAX 2 // 1/2
 
 // *** SPECIES ***
+
 #define BFG_LVL_50_ALLOW_BANNED_SPECIES FALSE   // Allow banned species (e.g. Kyogre,Groudon) in Frontier Lvl. 50 Mode
 #define BFG_LVL_OPEN_ALLOW_BANNED_SPECIES TRUE  // Allow banned species (e.g. Kyogre,Groudon) in Frontier Open Level Mode
 #define BFG_LVL_TENT_ALLOW_BANNED_SPECIES FALSE // Allow banned species (e.g. Kyogre,Groudon) in Battle Tent
@@ -212,7 +208,7 @@
 #define BFG_ZMOVE_CHANCE_PIKASHUNIUM_Z 4
 #define BFG_ZMOVE_CHANCE_ULTRANECROZIUM_Z 2
 
-#define BFG_ZMOVE_CHANCE_ARCEUS 2 // Use Z-Crystal instead of Plate
+#define BFG_ZMOVE_CHANCE_ARCEUS 2   // Use Z-Crystal instead of Plate
 #define BFG_ZMOVE_CHANCE_SILVALLY 2 // Use Z-Crystal instead of Memory
 #define BFG_ZMOVE_CHANCE_NECROZMA 2 // Use Solganium/Lunalium on Necrozma formes
 
@@ -250,12 +246,7 @@
 #define BFG_PRIORITISE_ATK_SPA_OVER_DEF_SPD     FALSE   // Prioritise atk/spatk attack over def/spdef
 #define BFG_PRIORITISE_ATK_SPA_OVER_SPE         TRUE    // Prioritise atk/spatk over speed
 
-#define BFG_SPEED_CONTROL_FIRST_ONLY    TRUE    // If this is set to true, only the first
-                                                // Pokemon can run speed control moves 
-                                                // (excl. icy wind / bulldoze)
-
-#define BFG_MAX_TRICK_ROOM_SPEED    80  // Highest base speed for trick room teams
-#define BFG_MIN_TAILWIND_SPEED      80  // Lowest base speed for tailwind teams
+#define BFG_NATURE_NEG_SPE_BASE     50  // Any mons below this base speed stat will be given 0spe, reducing natures (set to 0 to ignore this value)
 
 #define BFG_EV_METHOD_SIMPLE        0   // Invest in nature-boosted stat, then hp (if def avg. is higher) or speed (if speed is higher than def avg.)
 #define BFG_EV_METHOD_HIGHEST_FIRST 1   // Loop over each stat, investing in the highest base stats first (including nature-boosted stat)
@@ -275,6 +266,11 @@
                                     // i.e. attack and speed ivs will be set
                                     // to 0 if a reducing nature is used
 
+                                    #define BFG_OPTIMISE_IVS_NO_ATTACKS TRUE    // If set to true, the attack stat will
+                                            // be set to 0 if the mon does not have
+                                            // any physical attacks (and has not 
+                                            // previously been set to 0.)
+
 #endif
 
 // *** MOVES *** 
@@ -285,7 +281,7 @@
 // Number of times 'filtered' move selection can fail
 #define BFG_TEAM_GENERATOR_FILTERED_FAILURE_LIMIT 4
 
-#define BFG_TEAM_GENERATOR_MINIMUM 1       // Minumum number of moves allowed
+#define BFG_TEAM_GENERATOR_MIN_MOVES 1       // Minumum number of moves allowed
 
 #define BFG_MOVE_RATING_LIST_SIZE_ATTACK 0x20
 #define BFG_MOVE_RATING_LIST_SIZE_STATUS 0x20
@@ -388,7 +384,6 @@
 #define BFG_ITEM_FLAME_ORB_SELECTION_CHANCE 1
 
 // Move-Specific Items
-
 
 #define BFG_ITEM_BLUNDER_POLICY_SELECTION_CHANCE 3  // numInaccurate
 #define BFG_ITEM_PUNCHING_GLOVE_SELECTION_CHANCE 2  // numPunch

@@ -38,10 +38,10 @@
 
 // *** MOVES ***
 
-#define CATEGORY(m) (gMovesInfo[m].category)
-#define POWER(m) (gMovesInfo[m].power)
-#define TYPE(m) (gMovesInfo[m].type)
-#define HITS(m) (gMovesInfo[m].strikeCount)
+#define CATEGORY(m) (gMovesInfo[SanitizeMoveId(m)].category)
+#define POWER(m) (gMovesInfo[SanitizeMoveId(m)].power)
+#define TYPE(m) (gMovesInfo[SanitizeMoveId(m)].type)
+#define HITS(m) (gMovesInfo[SanitizeMoveId(m)].strikeCount)
 
 #define HAS_SPEED(n,e) ((gNatureInfo[n].posStat == STAT_SPEED) || (CHECK_EVS(e,F_EV_SPREAD_SPEED)))
 #define IS_STAB(s,t) (((gSpeciesInfo[s].types[0]) == (t)) || ((gSpeciesInfo[s].types[1]) == (t)))
@@ -70,8 +70,9 @@
 
 #define IS_TERRAIN_ABILITY(a) (IS_MISTY_ABILITY(a) || IS_GRASSY_ABILITY(a) || IS_PSYCHIC_ABILITY(a) || IS_ELECTRIC_ABILITY(a))
 
-// Abilities which trigger at the end of each turn
 #define IS_END_OF_TURN_ABILITY(a) ((a == ABILITY_MOODY) || (a == ABILITY_POISON_HEAL) || (a == ABILITY_SPEED_BOOST))
+
+#define HAS_HIDDEN_ABILITY(species) (species->abilities[2] != ABILITY_NONE)
 
 #define IS_SPEED_CONTROL_EFFECT(e) (((e) == EFFECT_TRICK_ROOM) || ((e) == EFFECT_TAILWIND))
 #define IS_STAT_REDUCING_EFFECT(e) (((e) == MOVE_EFFECT_ATK_MINUS_1) || ((e) == MOVE_EFFECT_DEF_MINUS_1) || ((e) == MOVE_EFFECT_SPD_MINUS_1) ||  ((e) == MOVE_EFFECT_SP_ATK_MINUS_1) || ((e) == MOVE_EFFECT_SP_ATK_MINUS_2) || ((e) == MOVE_EFFECT_V_CREATE) || ((e) == MOVE_EFFECT_ATK_DEF_DOWN) || ((e) == MOVE_EFFECT_DEF_SPDEF_DOWN) || ((e) == MOVE_EFFECT_SP_DEF_MINUS_1) || ((e) == MOVE_EFFECT_SP_DEF_MINUS_2))
@@ -593,8 +594,8 @@ static u8 GetSpeciesNature(u16 speciesId, struct GeneratorProperties * propertie
             u16 temp1 = (RANDOM_OFFSET(species->baseAttack));
             u16 temp2 = (RANDOM_OFFSET(species->baseSpAttack));
 
-            // The team is a trick Room team
-            if (properties->speedControl == GSC_TRICK_ROOM) {
+            // If the mon's base speed is below the target
+            if (species->baseSpeed < BFG_NATURE_NEG_SPE_BASE) {
                 negStat = STAT_SPEED;
             }
             else // The team is NOT a trick room team
@@ -1065,7 +1066,7 @@ static u8 GetFrontierMoveType(u32 moveId, u16 abilityId)
                 type = TYPE_ELECTRIC;
             break;
         case ABILITY_LIQUID_VOICE: 
-            if ((gMovesInfo[moveId].soundMove) == TRUE) 
+            if ((gMovesInfo[SanitizeMoveId(moveId)].soundMove) == TRUE) 
                 type = TYPE_WATER;
             break;
     }
@@ -1074,7 +1075,7 @@ static u8 GetFrontierMoveType(u32 moveId, u16 abilityId)
 
 static u16 GetAttackRating(u16 speciesId, u32 moveId, u16 abilityId, u8 type)
 {    
-    const struct MoveInfo* move = &(gMovesInfo[moveId]);
+    const struct MoveInfo* move = &(gMovesInfo[SanitizeMoveId(moveId)]);
 
     // Baseline move rating
     u16 rating = gBattleFrontierAttackRatings[moveId];
@@ -1743,7 +1744,7 @@ u16 GetSpeciesItem(struct Pokemon * mon, u16 * items, u8 itemCount)
     for (i = 0; i < MAX_MON_MOVES; i++) 
     {
         moveId = GetMonData(mon, (MON_DATA_MOVE1 + i));
-        move = &(gMovesInfo[moveId]);
+        move = &(gMovesInfo[SanitizeMoveId(moveId)]);
 
         // Set move flags (offensive and status)
 
@@ -2328,6 +2329,26 @@ u16 GetSpeciesItem(struct Pokemon * mon, u16 * items, u8 itemCount)
     return ITEM_NONE;
 }
 
+bool8 HasPhysicalMove(struct Pokemon * mon) 
+{
+    // Check for physical moves
+    u16 currentMove = MOVE_NONE; 
+
+    // Loop over the moves
+    for(u8 i=0; i<MAX_MON_MOVES; i++) {
+        // Get the current move data
+        currentMove = GetMonMoveSlot(mon, i);
+
+        // If the current move category is physical, return TRUE
+        if ((currentMove != MOVE_NONE) && (CATEGORY(currentMove) == DAMAGE_CATEGORY_PHYSICAL)) {
+            return TRUE; 
+        }
+    }
+
+    // No physical moves
+    return FALSE;
+}
+
 bool32 GenerateTrainerPokemon(struct Pokemon * mon, u16 speciesId, u8 formeIndex, u16 move, u16 item, struct GeneratorProperties * properties)
 {
     const struct SpeciesInfo * species = &(gSpeciesInfo[speciesId]);
@@ -2384,13 +2405,9 @@ bool32 GenerateTrainerPokemon(struct Pokemon * mon, u16 speciesId, u8 formeIndex
     SetMonEVs(mon, properties); // Generate ev spread
     #endif
 
-    // If this species has a hidden ability
-    if (
-        ((species->abilities[1] != ABILITY_NONE) && 
-        (species->abilities[2] != ABILITY_NONE)) && 
-        RANDOM_CHANCE(fixedIVHiddenAbilityLookup[properties->fixedIV])
-    ) {
-        abilityNum = 3; // Hidden ability index
+    // Species has hidden ability, and random selection chance is triggered
+    if (HAS_HIDDEN_ABILITY(species) && RANDOM_CHANCE(fixedIVHiddenAbilityLookup[properties->fixedIV])) {
+        abilityNum = 2; // Hidden ability index
         SetMonData(mon, MON_DATA_ABILITY_NUM, &abilityNum);
     }
 
@@ -2413,8 +2430,24 @@ bool32 GenerateTrainerPokemon(struct Pokemon * mon, u16 speciesId, u8 formeIndex
     
     DebugPrintf("Moves found: %d ...", moveCount);
 
+    #if BFG_OPTIMIZE_IVS && BFG_OPTIMISE_IVS_NO_ATTACKS
+    // If the atk iv for the mon is greater than 0, and it has no physical moves
+    if ((GetMonData(mon, MON_DATA_ATK_IV) > 0) && (!HasPhysicalMove(mon))) {
+        // Set the atk iv for the mon to 0
+        SetMonData(mon, MON_DATA_ATK_IV, &iv);
+        
+        // This section may be faster without the check? 
+
+        // Mon has any attack investment
+        if (GetMonData(mon, MON_DATA_ATK_EV) > 0) {
+            // Set the attack investment to 0
+            SetMonData(mon, MON_DATA_ATK_EV, &iv);
+        }
+    }
+    #endif
+
     // Meets the minimum number of moves to accept
-    if (moveCount >= BFG_TEAM_GENERATOR_MINIMUM) 
+    if (moveCount >= BFG_TEAM_GENERATOR_MIN_MOVES) 
         return TRUE;
 
     // Generation failed
@@ -3102,23 +3135,13 @@ void DebugPrintMonData(struct Pokemon * mon)
 
     u16 itemId = GetMonData(mon,MON_DATA_HELD_ITEM);
 
-    #if BFG_TEST_PRINT_AS_STRING
     DebugPrintf("%S @ %S", GetSpeciesName(speciesId), GetItemName(itemId));
     DebugPrintf("Ability: %d (%S)", abilityNum, GetAbilityName(abilityId));
     DebugPrintf("%S nature", GetNatureName(GetNature(mon)));
-    #else
-    DebugPrintf("%d @ %d", speciesId, itemId);
-    DebugPrintf("Ability: %d (%d)", abilityNum, abilityId);
-    DebugPrintf("%d nature", GetNature(mon));
-    #endif
     DebugPrintf("IVs: %d HP / %d Atk / %d Def / %d SpA / %d SpD / %d Spe", GetMonData(mon,MON_DATA_HP_IV),GetMonData(mon,MON_DATA_ATK_IV), GetMonData(mon,MON_DATA_DEF_IV), GetMonData(mon,MON_DATA_SPATK_IV), GetMonData(mon,MON_DATA_SPDEF_IV), GetMonData(mon,MON_DATA_SPEED_IV));
     DebugPrintf("EVs: %d HP / %d Atk / %d Def / %d SpA / %d SpD / %d Spe", GetMonData(mon,MON_DATA_HP_EV),GetMonData(mon,MON_DATA_ATK_EV), GetMonData(mon,MON_DATA_DEF_EV), GetMonData(mon,MON_DATA_SPATK_EV), GetMonData(mon,MON_DATA_SPDEF_EV), GetMonData(mon,MON_DATA_SPEED_EV));
     for(i=0; i<MAX_MON_MOVES; i++) {
-    #if BFG_TEST_PRINT_AS_STRING
-    DebugPrintf("- %S", GetMoveName(GetMonData(mon, MON_DATA_MOVE1 + i)));
-    #else
-    DebugPrintf("- %d", GetMonData(mon, MON_DATA_MOVE1 + i));
-    #endif
+        DebugPrintf("- %S", GetMoveName(GetMonData(mon, MON_DATA_MOVE1 + i)));
     }
 }
 
@@ -3131,9 +3154,6 @@ void InitGeneratorProperties(struct GeneratorProperties * properties, u8 level, 
     properties->level = level;
     properties->fixedIV = fixedIV;
 
-    // Generated mon index
-    properties->index = 0;
-
     // Min & Max. BSTs
     properties->minBST = BFG_BST_MIN;
     properties->maxBST = BFG_BST_MAX;
@@ -3143,9 +3163,6 @@ void InitGeneratorProperties(struct GeneratorProperties * properties, u8 level, 
     properties->allowGmax = TRUE;
     properties->allowMega = TRUE;
     properties->allowForme = TRUE;
-
-    // Speed Control Method
-    properties->speedControl = GSC_NONE;
 }
 
 void InitGeneratorForLvlMode(struct GeneratorProperties * properties, u8 lvlMode)
@@ -3226,8 +3243,6 @@ void UpdateGeneratorForLvlMode(struct GeneratorProperties * properties, u8 lvlMo
 
 void GenerateTrainerParty(u16 trainerId, u8 firstMonId, u8 monCount, u8 level)
 {
-    const struct SpeciesInfo * species;
-
     u16 speciesId, bst;
     u8 i,j;
 
@@ -3277,9 +3292,6 @@ void GenerateTrainerParty(u16 trainerId, u8 firstMonId, u8 monCount, u8 level)
         properties.minBST = fixedIVMinBSTLookup[properties.fixedIV];
         properties.maxBST = fixedIVMaxBSTLookup[properties.fixedIV];
 
-        // Current mon index
-        properties.index = i;
-
         // Sample random species from the mon count
         if (((BFG_LVL_50_ALLOW_BANNED_SPECIES && GET_LVL_MODE() == FRONTIER_LVL_50) || (BFG_LVL_OPEN_ALLOW_BANNED_SPECIES && GET_LVL_MODE() == FRONTIER_LVL_OPEN) || (BFG_LVL_TENT_ALLOW_BANNED_SPECIES && GET_LVL_MODE() == FRONTIER_LVL_TENT)) && (i % 2 == 1))
         {
@@ -3301,29 +3313,6 @@ void GenerateTrainerParty(u16 trainerId, u8 firstMonId, u8 monCount, u8 level)
         // Check BST limits
         if ((bst < (properties.minBST)) || (bst > (properties.maxBST)))
             continue; // Next species
-
-        // Get the species info
-        species = &(gSpeciesInfo[speciesId]);
-
-        DebugPrintf("Checking speed control restrictions ...");
-
-        // Check speed control methods
-        switch(properties.speedControl) {
-            case GSC_TAILWIND: {
-                // Skip if below tailwind speed limit
-                if (species->baseSpeed < BFG_MIN_TAILWIND_SPEED)
-                    continue;
-            }; break;
-            case GSC_TRICK_ROOM: {
-                // Skip if above trick room speed limit
-                if (species->baseSpeed > BFG_MAX_TRICK_ROOM_SPEED)
-                    continue;
-            }; break;
-            case GSC_NONE: 
-            default: {
-                // No action required
-            }; break;
-        }
 
         DebugPrintf("Checking species validity for frontier level ...");
 
