@@ -284,8 +284,9 @@
 #define BFG_MOVE_RATING_LIST_SIZE_ATTACK 0x20
 #define BFG_MOVE_RATING_LIST_SIZE_STATUS 0x20
 
-#define BFG_MOVE_ALLOW_LEVEL_UP TRUE    // Allow level-up moves to be used
+#define BFG_MOVE_ALLOW_LEVEL_UP  TRUE   // Allow level-up moves to be used
 #define BFG_MOVE_ALLOW_TEACHABLE TRUE   // Allow teachable moves to be used
+#define BFG_MOVE_ALLOW_EGG_MOVES TRUE   // Allow egg moves to be used
 
 #define BFG_MOVE_IGNORE_TYPE_COUNT FALSE // Ignore 1-per-type limit for moves
 #define BFG_MOVE_DEFAULT_RATING 60       // Default rating for moves which do not have one

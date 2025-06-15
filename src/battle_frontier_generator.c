@@ -1255,10 +1255,11 @@ static u8 GetSpeciesMoves(struct Pokemon * mon, u16 speciesId, u8 nature, u8 evs
     };
 
     const struct LevelUpMove* levelUpLearnset;
-    const u16 * teachableLearnset;
+    const u16 * teachableLearnset, * eggMoveLearnset;
 
-    u16 levelUpMoves = 0;
-    u16 teachableMoves = 0;
+    u8 levelUpMoves = 0;
+    u8 teachableMoves = 0;
+    u8 eggMoves = 0;
 
     #if BFG_MOVE_ALLOW_LEVEL_UP == TRUE
     levelUpLearnset = GetSpeciesLevelUpLearnset(speciesId);
@@ -1272,7 +1273,16 @@ static u8 GetSpeciesMoves(struct Pokemon * mon, u16 speciesId, u8 nature, u8 evs
         teachableMoves++;
     #endif
 
-    DebugPrintf("%d level up moves, %d teachable moves ...", levelUpMoves, teachableMoves);
+    #if BFG_MOVE_ALLOW_EGG_MOVES == TRUE
+    eggMoveLearnset = GetSpeciesEggMoves(speciesId);
+    while(eggMoveLearnset[eggMoves] != MOVE_UNAVAILABLE)
+        eggMoves++;
+    #endif
+
+    // Total number of moves
+    u8 totalMoves = levelUpMoves + teachableMoves + eggMoves;
+
+    DebugPrintf("%d level up moves, %d teachable moves, %d egg moves (%d total) ...", levelUpMoves, teachableMoves, eggMoves, totalMoves);
 
     // Duplicate move tracker
     u16 failures = 0;
