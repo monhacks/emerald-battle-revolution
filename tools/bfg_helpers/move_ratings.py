@@ -197,7 +197,7 @@ def get_move_ratings(MOVES):
                     raise Exception("Move with moveId not found!")
 
             except Exception as e:
-                print(f"Failed for moveId '{moveId}': {str(e)}")
+                print(f"Skipped '{moveId}': {str(e)}")
 
         # Move Ratings
         ratings = {}
