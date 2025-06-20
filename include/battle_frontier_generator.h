@@ -69,6 +69,24 @@ struct GeneratorProperties {
     bool8 allowForme;
 };
 
+// Allowed Moves Struct
+struct GeneratorMoves {
+    // Selected move data
+    u16 moves[MAX_MON_MOVES];
+    u8 moveCount; 
+
+    // Indexed array of move types
+    u8 types[NUMBER_OF_MON_TYPES];
+
+    // Allowed Status Moves
+    u16 allowedStatusMoves[BFG_MOVE_RATING_LIST_SIZE_STATUS];
+    u8 numAllowedStatusMoves;
+
+    // Allowed Attacking Moves
+    u16 allowedAttackingMoves[BFG_MOVE_RATING_LIST_SIZE_ATTACK];
+    u8 numAllowedAttackingMoves;
+};
+
 // Forme / Gimmick not allowed
 #define BFG_ITEM_IV_BANNED 32
 
@@ -80,6 +98,7 @@ bool32 GetSpeciesItemCheckUnique(u16 itemId, u16 * items, u8 itemCount);
 u16 GetSpeciesItem(struct Pokemon * mon, u16 * items, u8 itemCount);
 
 void DebugPrintMonData(struct Pokemon * mon);
+void InitGeneratorMoves(struct GeneratorMoves * moves);
 void InitGeneratorProperties(struct GeneratorProperties * properties, u8 level, u8 fixedIV);
 void InitGeneratorForLvlMode(struct GeneratorProperties * properties, u8 lvlMode); 
 void UpdateGeneratorForLvlMode(struct GeneratorProperties * properties, u8 lvlMode); 

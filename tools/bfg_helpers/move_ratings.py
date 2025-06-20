@@ -53,11 +53,11 @@ SECONDARY_EFFECT_STATUS_MODIFIERS = {
     "sparklingaria": 1,
     "syrupbomb": 1,
     # Negative
-    "mustrecharge": -3,
+    "mustrecharge": -2,
     "glaiverush": 0,
-    "lockedmove": -3,
-    "rage": -5,
-    "uproar": -5,
+    "lockedmove": -2,
+    "rage": -4,
+    "uproar": -4,
     # Default
     "default": 0,
 }
@@ -65,10 +65,10 @@ SECONDARY_EFFECT_STATUS_MODIFIERS = {
 # Move Flag Modifiers
 MOVE_FLAG_EFFECT_MODIFIERS = {
     # Negative Flags
-    "charge": -2,
-    "recharge": -2,
-    "cantusetwice": -2,
-    "futuremove": -3,
+    "charge": -1,
+    "recharge": -1,
+    "cantusetwice": -1,
+    "futuremove": -2,
     # Relevant Flags
     "heal": 2,
     "sound": 1,
@@ -112,8 +112,8 @@ MOVE_FLAG_MODIFIER = 10
 MOVE_POWER_MODIFIER = 1
 
 # Power Modifiers
-MOVE_OHKO_POWER = 0x7F
-MOVE_HALF_POWER = 0x3F
+MOVE_OHKO_POWER = 127
+MOVE_HALF_POWER = 63
 
 # Negative Effect Modifiers
 MOVE_SELF_KO_MODIFIER = 0

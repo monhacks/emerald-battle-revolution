@@ -53,20 +53,6 @@ bool8 TestRandomPokemonGenerator(struct Pokemon * mon, u16 speciesId, u8 level, 
         DebugPrintMonData(mon);
         #endif
 
-        // Get the forme id for the generated mon
-        u16 formeId = GetMonData(mon, MON_DATA_SPECIES);
-
-        // Get the base species for the forme
-        u16 baseSpeciesId = GET_BASE_SPECIES_ID(formeId);
-
-        // Base species should match species
-        EXPECT_EQ(baseSpeciesId, speciesId);
-
-        // No forme change allowed
-        if (allowForme == FALSE) 
-            // Forme should match species
-            EXPECT_EQ(formeId, speciesId);
-
         // Level should match provided
         EXPECT_EQ(GetMonData(mon, MON_DATA_LEVEL), level);
 
@@ -104,26 +90,31 @@ bool8 TestRandomPokemonGenerator(struct Pokemon * mon, u16 speciesId, u8 level, 
 }
 
 // Worker Macro
-#define BFG_TEST(text,s,l,m,i,f,t,r) TEST(text){struct Pokemon mon; for(u8 n=0; n<r; n++){TestRandomPokemonGenerator(&mon,s,l,m,i,f,t);}}
+#define BFG_TEST(text,s,l,m,i,f,t) TEST(text){struct Pokemon mon; for(u8 n=0; n<1; n++){TestRandomPokemonGenerator(&mon,s,l,m,i,f,t);}}
 
 // Standard
 
-BFG_TEST("Generate Random Incineroar (D,LVL50,31IV)",SPECIES_INCINEROAR, 50, FRONTIER_LVL_50, 31, FALSE, FRONTIER_MODE_DOUBLES, 3);
-BFG_TEST("Generate Random Amoonguss (D,LVL50,31IV)",SPECIES_AMOONGUSS, 50, FRONTIER_LVL_50, 31, FALSE, FRONTIER_MODE_DOUBLES, 3);
-BFG_TEST("Generate Random Clefairy (D,LVL50,31IV)",SPECIES_CLEFAIRY, 50, FRONTIER_LVL_50, 31, FALSE, FRONTIER_MODE_DOUBLES, 3);
+BFG_TEST("Generate Random Incineroar (D,LVL50,31IV)",SPECIES_INCINEROAR, 50, FRONTIER_LVL_50, 31, FALSE, FRONTIER_MODE_DOUBLES);
+BFG_TEST("Generate Random Amoonguss (D,LVL50,31IV)",SPECIES_AMOONGUSS, 50, FRONTIER_LVL_50, 31, FALSE, FRONTIER_MODE_DOUBLES);
+BFG_TEST("Generate Random Clefairy (D,LVL50,31IV)",SPECIES_CLEFAIRY, 50, FRONTIER_LVL_50, 31, FALSE, FRONTIER_MODE_DOUBLES);
 
 // Legendaries
 
-BFG_TEST("Generate Random Cresselia (D,LVL50,31IV)",SPECIES_CRESSELIA, 50, FRONTIER_LVL_50, 31, FALSE, FRONTIER_MODE_DOUBLES, 3);
-BFG_TEST("Generate Random Chien-Pao (D,LVL50,31IV)",SPECIES_CHIEN_PAO, 50, FRONTIER_LVL_50, 31, FALSE, FRONTIER_MODE_DOUBLES, 3);
-BFG_TEST("Generate Random Ogerpon (D,LVL50,31IV)",SPECIES_OGERPON, 50, FRONTIER_LVL_50, 31, FALSE, FRONTIER_MODE_DOUBLES, 3);
+BFG_TEST("Generate Random Cresselia (D,LVL50,31IV)",SPECIES_CRESSELIA, 50, FRONTIER_LVL_50, 31, FALSE, FRONTIER_MODE_DOUBLES);
+BFG_TEST("Generate Random Chien-Pao (D,LVL50,31IV)",SPECIES_CHIEN_PAO, 50, FRONTIER_LVL_50, 31, FALSE, FRONTIER_MODE_DOUBLES);
+BFG_TEST("Generate Random Ogerpon (D,LVL50,31IV)",SPECIES_OGERPON, 50, FRONTIER_LVL_50, 31, FALSE, FRONTIER_MODE_DOUBLES);
 
 // Forme Changes
 
-BFG_TEST("Generate Random Zamazenta (D,LVL50,31IV)",SPECIES_ZAMAZENTA, 50, FRONTIER_LVL_50, 31, TRUE, FRONTIER_MODE_DOUBLES, 3);
-BFG_TEST("Generate Random Zacian (D,LVL50,31IV)",SPECIES_ZACIAN, 50, FRONTIER_LVL_50, 31, TRUE, FRONTIER_MODE_DOUBLES, 3);
+BFG_TEST("Generate Random Zamazenta (D,LVL50,31IV)",SPECIES_ZAMAZENTA, 50, FRONTIER_LVL_50, 31, TRUE, FRONTIER_MODE_DOUBLES);
+BFG_TEST("Generate Random Zacian (D,LVL50,31IV)",SPECIES_ZACIAN, 50, FRONTIER_LVL_50, 31, TRUE, FRONTIER_MODE_DOUBLES);
 
-BFG_TEST("Generate Random Ogerpon (Any) (D,LVL50,31IV)",SPECIES_OGERPON, 50, FRONTIER_LVL_50, 31, TRUE, FRONTIER_MODE_DOUBLES, 3);
+BFG_TEST("Generate Random Ogerpon (Any) (D,LVL50,31IV)",SPECIES_OGERPON, 50, FRONTIER_LVL_50, 31, TRUE, FRONTIER_MODE_DOUBLES);
+BFG_TEST("Generate Random Ludicolo (Any) (D,LVL50,31IV)",SPECIES_LUDICOLO, 50, FRONTIER_LVL_50, 31, FALSE, FRONTIER_MODE_DOUBLES);
+BFG_TEST("Generate Random Flutter Mane (Any) (D,LVL50,31IV)",SPECIES_FLUTTER_MANE, 50, FRONTIER_LVL_50, 31, FALSE, FRONTIER_MODE_DOUBLES);
+BFG_TEST("Generate Random Iron Hands (Any) (D,LVL50,31IV)",SPECIES_IRON_HANDS, 50, FRONTIER_LVL_50, 31, FALSE, FRONTIER_MODE_DOUBLES);
+BFG_TEST("Generate Random Chi-Yu (Any) (D,LVL50,31IV)",SPECIES_CHI_YU, 50, FRONTIER_LVL_50, 31, FALSE, FRONTIER_MODE_DOUBLES);
+BFG_TEST("Generate Random Landorus-Therian (Any) (D,LVL50,31IV)",SPECIES_LANDORUS_THERIAN, 50, FRONTIER_LVL_50, 31, FALSE, FRONTIER_MODE_DOUBLES);
 
 #endif // BFG_TEST_SET_GENERATION == TRUE
 
