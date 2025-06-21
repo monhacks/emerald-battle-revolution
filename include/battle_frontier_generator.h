@@ -1,6 +1,8 @@
 #ifndef GUARD_BATTLE_FRONTIER_GENERATOR_H
 #define GUARD_BATTLE_FRONTIER_GENERATOR_H
 
+#include "config/battle_frontier_generator.h"
+
 // *** UTILITY ***
 
 #define IN_INCLUSIVE_RANGE(a,b,n) (((n) >= (a)) && ((n) <= (b)))
@@ -35,7 +37,7 @@
 #if BFG_RANDOM_OFFSET_MIN == BFG_RANDOM_OFFSET_MAX
 #define RANDOM_OFFSET() (BFG_RANDOM_OFFSET_MIN)
 #else
-#define RANDOM_OFFSET() RANDOM_RANGE(BFG_RANDOM_OFFSET_MIN, BFG_RANDOM_OFFSET_MAX)
+#define RANDOM_OFFSET(n) (n + (RANDOM_RANGE(BFG_RANDOM_OFFSET_MIN, BFG_RANDOM_OFFSET_MAX)))
 #endif
 
 #define GET_TRAINER_ID() (gSaveBlock2Ptr->playerTrainerId[0] + gSaveBlock2Ptr->playerTrainerId[1] + gSaveBlock2Ptr->playerTrainerId[2] + gSaveBlock2Ptr->playerTrainerId[3])
@@ -46,28 +48,57 @@
 
 #define GET_CHALLENGE_NUM(battleMode, lvlMode) ((gSaveBlock2Ptr->frontier.factoryWinStreaks[battleMode][lvlMode]) / FRONTIER_STAGES_PER_CHALLENGE)
 
+// Generator speed control methods
+enum GeneratorSpeedControl {
+    GSC_NONE,
+    GSC_TAILWIND,
+    GSC_TRICK_ROOM
+};
+
 // Species Generator Properties
 struct GeneratorProperties {
     u32 otID;
-    u8 level; 
+    u8 level;
     u8 fixedIV;
     u16 minBST;
     u16 maxBST;
+    // Rules
     bool8 allowZMove;
     bool8 allowGmax;
     bool8 allowMega;
+    bool8 allowForme;
+};
+
+// Allowed Moves Struct
+struct GeneratorMoves {
+    // Selected move data
+    u16 moves[MAX_MON_MOVES];
+    u8 moveCount; 
+
+    // Indexed array of move types
+    u8 types[NUMBER_OF_MON_TYPES];
+
+    // Allowed Status Moves
+    u16 allowedStatusMoves[BFG_MOVE_RATING_LIST_SIZE_STATUS];
+    u8 numAllowedStatusMoves;
+
+    // Allowed Attacking Moves
+    u16 allowedAttackingMoves[BFG_MOVE_RATING_LIST_SIZE_ATTACK];
+    u8 numAllowedAttackingMoves;
 };
 
 // Forme / Gimmick not allowed
 #define BFG_ITEM_IV_BANNED 32
 
-bool32 GenerateTrainerPokemonHandleForme(struct Pokemon * mon, u16 speciesId, struct GeneratorProperties * properties);
+bool8 HasPhysicalMove(struct Pokemon * mon);
 bool32 GenerateTrainerPokemon(struct Pokemon * mon, u16 speciesId, u8 formeIndex, u16 move, u16 item, struct GeneratorProperties * properties);
+bool32 GenerateTrainerPokemonHandleForme(struct Pokemon * mon, u16 speciesId, struct GeneratorProperties * properties);
 
 bool32 GetSpeciesItemCheckUnique(u16 itemId, u16 * items, u8 itemCount);
 u16 GetSpeciesItem(struct Pokemon * mon, u16 * items, u8 itemCount);
 
 void DebugPrintMonData(struct Pokemon * mon);
+void InitGeneratorMoves(struct GeneratorMoves * moves);
 void InitGeneratorProperties(struct GeneratorProperties * properties, u8 level, u8 fixedIV);
 void InitGeneratorForLvlMode(struct GeneratorProperties * properties, u8 lvlMode); 
 void UpdateGeneratorForLvlMode(struct GeneratorProperties * properties, u8 lvlMode); 

@@ -1979,6 +1979,11 @@ u16 GiveMoveToBattleMon(struct BattlePokemon *mon, u16 move)
     return MON_HAS_MAX_MOVES;
 }
 
+u16 GetMonMoveSlot(struct Pokemon *mon, u8 slot)
+{
+    return GetMonData(mon, MON_DATA_MOVE1 + slot);
+}
+
 void SetMonMoveSlot(struct Pokemon *mon, u16 move, u8 slot)
 {
     SetMonData(mon, MON_DATA_MOVE1 + slot, &move);
