@@ -231,8 +231,8 @@ script Auto_EventScript_Pokemon_Shop_Rock_Page5
         case 3: # NACLI
             givemon(SPECIES_NACLI,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 4: # NOSEPASS
-            givemon(SPECIES_NOSEPASS,1)
+        case 4: # NIHILEGO
+            givemon(SPECIES_NIHILEGO,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
         case MULTI_L_PRESSED:
             goto(Auto_EventScript_Pokemon_Shop_Rock_Page4)
@@ -248,20 +248,20 @@ script Auto_EventScript_Pokemon_Shop_Rock_Page6
     multichoice2(0,0,Auto_Text_Pokemon_Shop_Rock_Page6)
     switch(var(VAR_RESULT))
     {
-        case 0: # OMANYTE
+        case 0: # NOSEPASS
+            givemon(SPECIES_NOSEPASS,1)
+            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
+        case 1: # OMANYTE
             givemon(SPECIES_OMANYTE,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 1: # ONIX
+        case 2: # ONIX
             givemon(SPECIES_ONIX,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 2: # RELICANTH
+        case 3: # RELICANTH
             givemon(SPECIES_RELICANTH,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 3: # RHYHORN
+        case 4: # RHYHORN
             givemon(SPECIES_RHYHORN,1)
-            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 4: # ROCKRUFF
-            givemon(SPECIES_ROCKRUFF,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
         case MULTI_L_PRESSED:
             goto(Auto_EventScript_Pokemon_Shop_Rock_Page5)
@@ -277,20 +277,20 @@ script Auto_EventScript_Pokemon_Shop_Rock_Page7
     multichoice2(0,0,Auto_Text_Pokemon_Shop_Rock_Page7)
     switch(var(VAR_RESULT))
     {
-        case 0: # ROGGENROLA
+        case 0: # ROCKRUFF
+            givemon(SPECIES_ROCKRUFF,1)
+            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
+        case 1: # ROGGENROLA
             givemon(SPECIES_ROGGENROLA,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 1: # ROLYCOLY
+        case 2: # ROLYCOLY
             givemon(SPECIES_ROLYCOLY,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 2: # SHIELDON
+        case 3: # SHIELDON
             givemon(SPECIES_SHIELDON,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 3: # SHUCKLE
+        case 4: # SHUCKLE
             givemon(SPECIES_SHUCKLE,1)
-            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 4: # SOLROCK
-            givemon(SPECIES_SOLROCK,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
         case MULTI_L_PRESSED:
             goto(Auto_EventScript_Pokemon_Shop_Rock_Page6)
@@ -306,13 +306,19 @@ script Auto_EventScript_Pokemon_Shop_Rock_Page8
     multichoice2(0,0,Auto_Text_Pokemon_Shop_Rock_Page8)
     switch(var(VAR_RESULT))
     {
-        case 0: # STONJOURNER
+        case 0: # SOLROCK
+            givemon(SPECIES_SOLROCK,1)
+            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
+        case 1: # STAKATAKA
+            givemon(SPECIES_STAKATAKA,1)
+            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
+        case 2: # STONJOURNER
             givemon(SPECIES_STONJOURNER,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 1: # TIRTOUGA
+        case 3: # TIRTOUGA
             givemon(SPECIES_TIRTOUGA,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 2: # TYRUNT
+        case 4: # TYRUNT
             givemon(SPECIES_TYRUNT,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
         case MULTI_L_PRESSED:
@@ -338,14 +344,14 @@ script Auto_EventScript_Pokemon_Shop_Steel_Page1
         case 2: # BRONZOR
             givemon(SPECIES_BRONZOR,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 3: # CUFANT
+        case 3: # CELESTEELA
+            givemon(SPECIES_CELESTEELA,1)
+            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
+        case 4: # CUFANT
             givemon(SPECIES_CUFANT,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 4: # DIGLETT-ALOLA
-            givemon(SPECIES_DIGLETT_ALOLA,1)
-            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
         case MULTI_L_PRESSED:
-            goto(Auto_EventScript_Pokemon_Shop_Steel_Page5)
+            goto(Auto_EventScript_Pokemon_Shop_Steel_Page6)
         case MULTI_R_PRESSED:
             goto(Auto_EventScript_Pokemon_Shop_Steel_Page2)
         default:
@@ -358,20 +364,20 @@ script Auto_EventScript_Pokemon_Shop_Steel_Page2
     multichoice2(0,0,Auto_Text_Pokemon_Shop_Steel_Page2)
     switch(var(VAR_RESULT))
     {
-        case 0: # DURALUDON
+        case 0: # DIGLETT-ALOLA
+            givemon(SPECIES_DIGLETT_ALOLA,1)
+            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
+        case 1: # DURALUDON
             givemon(SPECIES_DURALUDON,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 1: # DURANT
+        case 2: # DURANT
             givemon(SPECIES_DURANT,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 2: # FERROSEED
+        case 3: # FERROSEED
             givemon(SPECIES_FERROSEED,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 3: # HONEDGE
+        case 4: # HONEDGE
             givemon(SPECIES_HONEDGE,1)
-            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 4: # IRON CROWN
-            givemon(SPECIES_IRON_CROWN,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
         case MULTI_L_PRESSED:
             goto(Auto_EventScript_Pokemon_Shop_Steel_Page1)
@@ -387,20 +393,20 @@ script Auto_EventScript_Pokemon_Shop_Steel_Page3
     multichoice2(0,0,Auto_Text_Pokemon_Shop_Steel_Page3)
     switch(var(VAR_RESULT))
     {
-        case 0: # IRON TREADS
+        case 0: # IRON CROWN
+            givemon(SPECIES_IRON_CROWN,1)
+            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
+        case 1: # IRON TREADS
             givemon(SPECIES_IRON_TREADS,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 1: # KLEFKI
+        case 2: # KARTANA
+            givemon(SPECIES_KARTANA,1)
+            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
+        case 3: # KLEFKI
             givemon(SPECIES_KLEFKI,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 2: # KLINK
+        case 4: # KLINK
             givemon(SPECIES_KLINK,1)
-            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 3: # MAGNEMITE
-            givemon(SPECIES_MAGNEMITE,1)
-            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 4: # MAWILE
-            givemon(SPECIES_MAWILE,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
         case MULTI_L_PRESSED:
             goto(Auto_EventScript_Pokemon_Shop_Steel_Page2)
@@ -416,20 +422,20 @@ script Auto_EventScript_Pokemon_Shop_Steel_Page4
     multichoice2(0,0,Auto_Text_Pokemon_Shop_Steel_Page4)
     switch(var(VAR_RESULT))
     {
-        case 0: # MEOWTH-GALAR
+        case 0: # MAGNEMITE
+            givemon(SPECIES_MAGNEMITE,1)
+            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
+        case 1: # MAWILE
+            givemon(SPECIES_MAWILE,1)
+            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
+        case 2: # MEOWTH-GALAR
             givemon(SPECIES_MEOWTH_GALAR,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 1: # ORTHWORM
+        case 3: # ORTHWORM
             givemon(SPECIES_ORTHWORM,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 2: # PAWNIARD
+        case 4: # PAWNIARD
             givemon(SPECIES_PAWNIARD,1)
-            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 3: # SANDSHREW-ALOLA
-            givemon(SPECIES_SANDSHREW_ALOLA,1)
-            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 4: # SHIELDON
-            givemon(SPECIES_SHIELDON,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
         case MULTI_L_PRESSED:
             goto(Auto_EventScript_Pokemon_Shop_Steel_Page3)
@@ -445,23 +451,46 @@ script Auto_EventScript_Pokemon_Shop_Steel_Page5
     multichoice2(0,0,Auto_Text_Pokemon_Shop_Steel_Page5)
     switch(var(VAR_RESULT))
     {
-        case 0: # SKARMORY
+        case 0: # SANDSHREW-ALOLA
+            givemon(SPECIES_SANDSHREW_ALOLA,1)
+            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
+        case 1: # SHIELDON
+            givemon(SPECIES_SHIELDON,1)
+            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
+        case 2: # SKARMORY
             givemon(SPECIES_SKARMORY,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 1: # STUNFISK-GALAR
+        case 3: # STAKATAKA
+            givemon(SPECIES_STAKATAKA,1)
+            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
+        case 4: # STUNFISK-GALAR
             givemon(SPECIES_STUNFISK_GALAR,1)
-            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 2: # TINKATINK
-            givemon(SPECIES_TINKATINK,1)
-            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 3: # TOGEDEMARU
-            givemon(SPECIES_TOGEDEMARU,1)
-            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 4: # VAROOM
-            givemon(SPECIES_VAROOM,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
         case MULTI_L_PRESSED:
             goto(Auto_EventScript_Pokemon_Shop_Steel_Page4)
+        case MULTI_R_PRESSED:
+            goto(Auto_EventScript_Pokemon_Shop_Steel_Page6)
+        default:
+            goto(Auto_EventScript_Pokemon_Shop_Page4)
+    }
+}
+
+script Auto_EventScript_Pokemon_Shop_Steel_Page6
+{
+    multichoice2(0,0,Auto_Text_Pokemon_Shop_Steel_Page6)
+    switch(var(VAR_RESULT))
+    {
+        case 0: # TINKATINK
+            givemon(SPECIES_TINKATINK,1)
+            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
+        case 1: # TOGEDEMARU
+            givemon(SPECIES_TOGEDEMARU,1)
+            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
+        case 2: # VAROOM
+            givemon(SPECIES_VAROOM,1)
+            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
+        case MULTI_L_PRESSED:
+            goto(Auto_EventScript_Pokemon_Shop_Steel_Page5)
         case MULTI_R_PRESSED:
             goto(Auto_EventScript_Pokemon_Shop_Steel_Page1)
         default:
@@ -1688,20 +1717,20 @@ script Auto_EventScript_Pokemon_Shop_Poison_Page2
     multichoice2(0,0,Auto_Text_Pokemon_Shop_Poison_Page2)
     switch(var(VAR_RESULT))
     {
-        case 0: # FEZANDIPITI
-            givemon(SPECIES_FEZANDIPITI,1)
-            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 1: # FOONGUS
+        case 0: # FOONGUS
             givemon(SPECIES_FOONGUS,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 2: # GASTLY
+        case 1: # GASTLY
             givemon(SPECIES_GASTLY,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 3: # GLIMMET
+        case 2: # GLIMMET
             givemon(SPECIES_GLIMMET,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 4: # GRIMER
+        case 3: # GRIMER
             givemon(SPECIES_GRIMER,1)
+            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
+        case 4: # GRIMER-ALOLA
+            givemon(SPECIES_GRIMER_ALOLA,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
         case MULTI_L_PRESSED:
             goto(Auto_EventScript_Pokemon_Shop_Poison_Page1)
@@ -1717,20 +1746,20 @@ script Auto_EventScript_Pokemon_Shop_Poison_Page3
     multichoice2(0,0,Auto_Text_Pokemon_Shop_Poison_Page3)
     switch(var(VAR_RESULT))
     {
-        case 0: # GRIMER-ALOLA
-            givemon(SPECIES_GRIMER_ALOLA,1)
-            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 1: # GULPIN
+        case 0: # GULPIN
             givemon(SPECIES_GULPIN,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 2: # IRON MOTH
+        case 1: # IRON MOTH
             givemon(SPECIES_IRON_MOTH,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 3: # KOFFING
+        case 2: # KOFFING
             givemon(SPECIES_KOFFING,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 4: # MAREANIE
+        case 3: # MAREANIE
             givemon(SPECIES_MAREANIE,1)
+            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
+        case 4: # NIDORAN-F
+            givemon(SPECIES_NIDORAN_F,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
         case MULTI_L_PRESSED:
             goto(Auto_EventScript_Pokemon_Shop_Poison_Page2)
@@ -1746,20 +1775,20 @@ script Auto_EventScript_Pokemon_Shop_Poison_Page4
     multichoice2(0,0,Auto_Text_Pokemon_Shop_Poison_Page4)
     switch(var(VAR_RESULT))
     {
-        case 0: # MUNKIDORI
-            givemon(SPECIES_MUNKIDORI,1)
-            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 1: # NIDORAN-F
-            givemon(SPECIES_NIDORAN_F,1)
-            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 2: # NIDORAN-M
+        case 0: # NIDORAN-M
             givemon(SPECIES_NIDORAN_M,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 3: # ODDISH
+        case 1: # NIHILEGO
+            givemon(SPECIES_NIHILEGO,1)
+            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
+        case 2: # ODDISH
             givemon(SPECIES_ODDISH,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 4: # OKIDOGI
-            givemon(SPECIES_OKIDOGI,1)
+        case 3: # POIPOLE
+            givemon(SPECIES_POIPOLE,1)
+            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
+        case 4: # QWILFISH
+            givemon(SPECIES_QWILFISH,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
         case MULTI_L_PRESSED:
             goto(Auto_EventScript_Pokemon_Shop_Poison_Page3)
@@ -1775,20 +1804,20 @@ script Auto_EventScript_Pokemon_Shop_Poison_Page5
     multichoice2(0,0,Auto_Text_Pokemon_Shop_Poison_Page5)
     switch(var(VAR_RESULT))
     {
-        case 0: # QWILFISH
-            givemon(SPECIES_QWILFISH,1)
-            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 1: # QWILFISH-HISUI
+        case 0: # QWILFISH-HISUI
             givemon(SPECIES_QWILFISH_HISUI,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 2: # SALANDIT
+        case 1: # SALANDIT
             givemon(SPECIES_SALANDIT,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 3: # SEVIPER
+        case 2: # SEVIPER
             givemon(SPECIES_SEVIPER,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 4: # SHROODLE
+        case 3: # SHROODLE
             givemon(SPECIES_SHROODLE,1)
+            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
+        case 4: # SKORUPI
+            givemon(SPECIES_SKORUPI,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
         case MULTI_L_PRESSED:
             goto(Auto_EventScript_Pokemon_Shop_Poison_Page4)
@@ -1804,20 +1833,20 @@ script Auto_EventScript_Pokemon_Shop_Poison_Page6
     multichoice2(0,0,Auto_Text_Pokemon_Shop_Poison_Page6)
     switch(var(VAR_RESULT))
     {
-        case 0: # SKORUPI
-            givemon(SPECIES_SKORUPI,1)
-            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 1: # SKRELP
+        case 0: # SKRELP
             givemon(SPECIES_SKRELP,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 2: # SNEASEL-HISUI
+        case 1: # SNEASEL-HISUI
             givemon(SPECIES_SNEASEL_HISUI,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 3: # SPINARAK
+        case 2: # SPINARAK
             givemon(SPECIES_SPINARAK,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 4: # STUNKY
+        case 3: # STUNKY
             givemon(SPECIES_STUNKY,1)
+            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
+        case 4: # TENTACOOL
+            givemon(SPECIES_TENTACOOL,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
         case MULTI_L_PRESSED:
             goto(Auto_EventScript_Pokemon_Shop_Poison_Page5)
@@ -1833,20 +1862,20 @@ script Auto_EventScript_Pokemon_Shop_Poison_Page7
     multichoice2(0,0,Auto_Text_Pokemon_Shop_Poison_Page7)
     switch(var(VAR_RESULT))
     {
-        case 0: # TENTACOOL
-            givemon(SPECIES_TENTACOOL,1)
-            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 1: # TOXEL
+        case 0: # TOXEL
             givemon(SPECIES_TOXEL,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 2: # TRUBBISH
+        case 1: # TRUBBISH
             givemon(SPECIES_TRUBBISH,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 3: # VAROOM
+        case 2: # VAROOM
             givemon(SPECIES_VAROOM,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 4: # VENIPEDE
+        case 3: # VENIPEDE
             givemon(SPECIES_VENIPEDE,1)
+            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
+        case 4: # VENONAT
+            givemon(SPECIES_VENONAT,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
         case MULTI_L_PRESSED:
             goto(Auto_EventScript_Pokemon_Shop_Poison_Page6)
@@ -1862,16 +1891,13 @@ script Auto_EventScript_Pokemon_Shop_Poison_Page8
     multichoice2(0,0,Auto_Text_Pokemon_Shop_Poison_Page8)
     switch(var(VAR_RESULT))
     {
-        case 0: # VENONAT
-            givemon(SPECIES_VENONAT,1)
-            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 1: # WEEDLE
+        case 0: # WEEDLE
             givemon(SPECIES_WEEDLE,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 2: # WOOPER-PALDEA
+        case 1: # WOOPER-PALDEA
             givemon(SPECIES_WOOPER_PALDEA,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 3: # ZUBAT
+        case 2: # ZUBAT
             givemon(SPECIES_ZUBAT,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
         case MULTI_L_PRESSED:
@@ -1904,7 +1930,7 @@ script Auto_EventScript_Pokemon_Shop_Psychic_Page1
             givemon(SPECIES_BRONZOR,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
         case MULTI_L_PRESSED:
-            goto(Auto_EventScript_Pokemon_Shop_Psychic_Page9)
+            goto(Auto_EventScript_Pokemon_Shop_Psychic_Page8)
         case MULTI_R_PRESSED:
             goto(Auto_EventScript_Pokemon_Shop_Psychic_Page2)
         default:
@@ -2013,11 +2039,11 @@ script Auto_EventScript_Pokemon_Shop_Psychic_Page5
         case 2: # MIME JR.
             givemon(SPECIES_MIME_JR,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 3: # MUNKIDORI
-            givemon(SPECIES_MUNKIDORI,1)
-            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 4: # MUNNA
+        case 3: # MUNNA
             givemon(SPECIES_MUNNA,1)
+            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
+        case 4: # NATU
+            givemon(SPECIES_NATU,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
         case MULTI_L_PRESSED:
             goto(Auto_EventScript_Pokemon_Shop_Psychic_Page4)
@@ -2033,20 +2059,20 @@ script Auto_EventScript_Pokemon_Shop_Psychic_Page6
     multichoice2(0,0,Auto_Text_Pokemon_Shop_Psychic_Page6)
     switch(var(VAR_RESULT))
     {
-        case 0: # NATU
-            givemon(SPECIES_NATU,1)
-            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 1: # ORANGURU
+        case 0: # ORANGURU
             givemon(SPECIES_ORANGURU,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 2: # PONYTA-GALAR
+        case 1: # PONYTA-GALAR
             givemon(SPECIES_PONYTA_GALAR,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 3: # RALTS
+        case 2: # RALTS
             givemon(SPECIES_RALTS,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 4: # SCREAM TAIL
+        case 3: # SCREAM TAIL
             givemon(SPECIES_SCREAM_TAIL,1)
+            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
+        case 4: # SIGILYPH
+            givemon(SPECIES_SIGILYPH,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
         case MULTI_L_PRESSED:
             goto(Auto_EventScript_Pokemon_Shop_Psychic_Page5)
@@ -2062,20 +2088,20 @@ script Auto_EventScript_Pokemon_Shop_Psychic_Page7
     multichoice2(0,0,Auto_Text_Pokemon_Shop_Psychic_Page7)
     switch(var(VAR_RESULT))
     {
-        case 0: # SIGILYPH
-            givemon(SPECIES_SIGILYPH,1)
-            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 1: # SLOWPOKE
+        case 0: # SLOWPOKE
             givemon(SPECIES_SLOWPOKE,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 2: # SLOWPOKE-GALAR
+        case 1: # SLOWPOKE-GALAR
             givemon(SPECIES_SLOWPOKE_GALAR,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 3: # SMOOCHUM
+        case 2: # SMOOCHUM
             givemon(SPECIES_SMOOCHUM,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 4: # SOLOSIS
+        case 3: # SOLOSIS
             givemon(SPECIES_SOLOSIS,1)
+            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
+        case 4: # SOLROCK
+            givemon(SPECIES_SOLROCK,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
         case MULTI_L_PRESSED:
             goto(Auto_EventScript_Pokemon_Shop_Psychic_Page6)
@@ -2091,40 +2117,23 @@ script Auto_EventScript_Pokemon_Shop_Psychic_Page8
     multichoice2(0,0,Auto_Text_Pokemon_Shop_Psychic_Page8)
     switch(var(VAR_RESULT))
     {
-        case 0: # SOLROCK
-            givemon(SPECIES_SOLROCK,1)
-            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 1: # SPOINK
+        case 0: # SPOINK
             givemon(SPECIES_SPOINK,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 2: # UNOWN
+        case 1: # UNOWN
             givemon(SPECIES_UNOWN,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 3: # VELUZA
+        case 2: # VELUZA
             givemon(SPECIES_VELUZA,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 4: # WOOBAT
+        case 3: # WOOBAT
             givemon(SPECIES_WOOBAT,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case MULTI_L_PRESSED:
-            goto(Auto_EventScript_Pokemon_Shop_Psychic_Page7)
-        case MULTI_R_PRESSED:
-            goto(Auto_EventScript_Pokemon_Shop_Psychic_Page9)
-        default:
-            goto(Auto_EventScript_Pokemon_Shop_Page3)
-    }
-}
-
-script Auto_EventScript_Pokemon_Shop_Psychic_Page9
-{
-    multichoice2(0,0,Auto_Text_Pokemon_Shop_Psychic_Page9)
-    switch(var(VAR_RESULT))
-    {
-        case 0: # WYNAUT
+        case 4: # WYNAUT
             givemon(SPECIES_WYNAUT,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
         case MULTI_L_PRESSED:
-            goto(Auto_EventScript_Pokemon_Shop_Psychic_Page8)
+            goto(Auto_EventScript_Pokemon_Shop_Psychic_Page7)
         case MULTI_R_PRESSED:
             goto(Auto_EventScript_Pokemon_Shop_Psychic_Page1)
         default:
@@ -2137,20 +2146,20 @@ script Auto_EventScript_Pokemon_Shop_Fighting_Page1
     multichoice2(0,0,Auto_Text_Pokemon_Shop_Fighting_Page1)
     switch(var(VAR_RESULT))
     {
-        case 0: # CLOBBOPUS
+        case 0: # BUZZWOLE
+            givemon(SPECIES_BUZZWOLE,1)
+            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
+        case 1: # CLOBBOPUS
             givemon(SPECIES_CLOBBOPUS,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 1: # CRABRAWLER
+        case 2: # CRABRAWLER
             givemon(SPECIES_CRABRAWLER,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 2: # CROAGUNK
+        case 3: # CROAGUNK
             givemon(SPECIES_CROAGUNK,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 3: # FALINKS
+        case 4: # FALINKS
             givemon(SPECIES_FALINKS,1)
-            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 4: # FARFETCHD-GALAR
-            givemon(SPECIES_FARFETCHD_GALAR,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
         case MULTI_L_PRESSED:
             goto(Auto_EventScript_Pokemon_Shop_Fighting_Page6)
@@ -2166,20 +2175,20 @@ script Auto_EventScript_Pokemon_Shop_Fighting_Page2
     multichoice2(0,0,Auto_Text_Pokemon_Shop_Fighting_Page2)
     switch(var(VAR_RESULT))
     {
-        case 0: # FLAMIGO
+        case 0: # FARFETCHD-GALAR
+            givemon(SPECIES_FARFETCHD_GALAR,1)
+            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
+        case 1: # FLAMIGO
             givemon(SPECIES_FLAMIGO,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 1: # GREAT TUSK
+        case 2: # GREAT TUSK
             givemon(SPECIES_GREAT_TUSK,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 2: # HAWLUCHA
+        case 3: # HAWLUCHA
             givemon(SPECIES_HAWLUCHA,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 3: # HERACROSS
+        case 4: # HERACROSS
             givemon(SPECIES_HERACROSS,1)
-            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 4: # IRON HANDS
-            givemon(SPECIES_IRON_HANDS,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
         case MULTI_L_PRESSED:
             goto(Auto_EventScript_Pokemon_Shop_Fighting_Page1)
@@ -2195,20 +2204,20 @@ script Auto_EventScript_Pokemon_Shop_Fighting_Page3
     multichoice2(0,0,Auto_Text_Pokemon_Shop_Fighting_Page3)
     switch(var(VAR_RESULT))
     {
-        case 0: # IRON VALIANT
+        case 0: # IRON HANDS
+            givemon(SPECIES_IRON_HANDS,1)
+            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
+        case 1: # IRON VALIANT
             givemon(SPECIES_IRON_VALIANT,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 1: # MACHOP
+        case 2: # MACHOP
             givemon(SPECIES_MACHOP,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 2: # MAKUHITA
+        case 3: # MAKUHITA
             givemon(SPECIES_MAKUHITA,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 3: # MANKEY
+        case 4: # MANKEY
             givemon(SPECIES_MANKEY,1)
-            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 4: # MEDITITE
-            givemon(SPECIES_MEDITITE,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
         case MULTI_L_PRESSED:
             goto(Auto_EventScript_Pokemon_Shop_Fighting_Page2)
@@ -2224,11 +2233,11 @@ script Auto_EventScript_Pokemon_Shop_Fighting_Page4
     multichoice2(0,0,Auto_Text_Pokemon_Shop_Fighting_Page4)
     switch(var(VAR_RESULT))
     {
-        case 0: # MIENFOO
-            givemon(SPECIES_MIENFOO,1)
+        case 0: # MEDITITE
+            givemon(SPECIES_MEDITITE,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 1: # OKIDOGI
-            givemon(SPECIES_OKIDOGI,1)
+        case 1: # MIENFOO
+            givemon(SPECIES_MIENFOO,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
         case 2: # PANCHAM
             givemon(SPECIES_PANCHAM,1)
@@ -2236,8 +2245,8 @@ script Auto_EventScript_Pokemon_Shop_Fighting_Page4
         case 3: # PASSIMIAN
             givemon(SPECIES_PASSIMIAN,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 4: # RIOLU
-            givemon(SPECIES_RIOLU,1)
+        case 4: # PHEROMOSA
+            givemon(SPECIES_PHEROMOSA,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
         case MULTI_L_PRESSED:
             goto(Auto_EventScript_Pokemon_Shop_Fighting_Page3)
@@ -2253,20 +2262,20 @@ script Auto_EventScript_Pokemon_Shop_Fighting_Page5
     multichoice2(0,0,Auto_Text_Pokemon_Shop_Fighting_Page5)
     switch(var(VAR_RESULT))
     {
-        case 0: # SAWK
+        case 0: # RIOLU
+            givemon(SPECIES_RIOLU,1)
+            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
+        case 1: # SAWK
             givemon(SPECIES_SAWK,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 1: # SCRAGGY
+        case 2: # SCRAGGY
             givemon(SPECIES_SCRAGGY,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 2: # SLITHER WING
+        case 3: # SLITHER WING
             givemon(SPECIES_SLITHER_WING,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 3: # SNEASEL-HISUI
+        case 4: # SNEASEL-HISUI
             givemon(SPECIES_SNEASEL_HISUI,1)
-            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 4: # STUFFUL
-            givemon(SPECIES_STUFFUL,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
         case MULTI_L_PRESSED:
             goto(Auto_EventScript_Pokemon_Shop_Fighting_Page4)
@@ -2282,16 +2291,19 @@ script Auto_EventScript_Pokemon_Shop_Fighting_Page6
     multichoice2(0,0,Auto_Text_Pokemon_Shop_Fighting_Page6)
     switch(var(VAR_RESULT))
     {
-        case 0: # THROH
+        case 0: # STUFFUL
+            givemon(SPECIES_STUFFUL,1)
+            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
+        case 1: # THROH
             givemon(SPECIES_THROH,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 1: # TIMBURR
+        case 2: # TIMBURR
             givemon(SPECIES_TIMBURR,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 2: # TYROGUE
+        case 3: # TYROGUE
             givemon(SPECIES_TYROGUE,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 3: # ZAPDOS-GALAR
+        case 4: # ZAPDOS-GALAR
             givemon(SPECIES_ZAPDOS_GALAR,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
         case MULTI_L_PRESSED:
@@ -2308,20 +2320,20 @@ script Auto_EventScript_Pokemon_Shop_Fire_Page1
     multichoice2(0,0,Auto_Text_Pokemon_Shop_Fire_Page1)
     switch(var(VAR_RESULT))
     {
-        case 0: # CHARCADET
+        case 0: # BLACEPHALON
+            givemon(SPECIES_BLACEPHALON,1)
+            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
+        case 1: # CHARCADET
             givemon(SPECIES_CHARCADET,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 1: # CHARMANDER
+        case 2: # CHARMANDER
             givemon(SPECIES_CHARMANDER,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 2: # CHIMCHAR
+        case 3: # CHIMCHAR
             givemon(SPECIES_CHIMCHAR,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 3: # CYNDAQUIL
+        case 4: # CYNDAQUIL
             givemon(SPECIES_CYNDAQUIL,1)
-            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 4: # DARUMAKA
-            givemon(SPECIES_DARUMAKA,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
         case MULTI_L_PRESSED:
             goto(Auto_EventScript_Pokemon_Shop_Fire_Page7)
@@ -2337,20 +2349,20 @@ script Auto_EventScript_Pokemon_Shop_Fire_Page2
     multichoice2(0,0,Auto_Text_Pokemon_Shop_Fire_Page2)
     switch(var(VAR_RESULT))
     {
-        case 0: # FENNEKIN
+        case 0: # DARUMAKA
+            givemon(SPECIES_DARUMAKA,1)
+            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
+        case 1: # FENNEKIN
             givemon(SPECIES_FENNEKIN,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 1: # FUECOCO
+        case 2: # FUECOCO
             givemon(SPECIES_FUECOCO,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 2: # GOUGING FIRE
+        case 3: # GOUGING FIRE
             givemon(SPECIES_GOUGING_FIRE,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 3: # GROWLITHE
+        case 4: # GROWLITHE
             givemon(SPECIES_GROWLITHE,1)
-            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 4: # GROWLITHE-HISUI
-            givemon(SPECIES_GROWLITHE_HISUI,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
         case MULTI_L_PRESSED:
             goto(Auto_EventScript_Pokemon_Shop_Fire_Page1)
@@ -2366,20 +2378,20 @@ script Auto_EventScript_Pokemon_Shop_Fire_Page3
     multichoice2(0,0,Auto_Text_Pokemon_Shop_Fire_Page3)
     switch(var(VAR_RESULT))
     {
-        case 0: # HEATMOR
+        case 0: # GROWLITHE-HISUI
+            givemon(SPECIES_GROWLITHE_HISUI,1)
+            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
+        case 1: # HEATMOR
             givemon(SPECIES_HEATMOR,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 1: # HOUNDOUR
+        case 2: # HOUNDOUR
             givemon(SPECIES_HOUNDOUR,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 2: # IRON MOTH
+        case 3: # IRON MOTH
             givemon(SPECIES_IRON_MOTH,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 3: # LARVESTA
+        case 4: # LARVESTA
             givemon(SPECIES_LARVESTA,1)
-            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 4: # LITLEO
-            givemon(SPECIES_LITLEO,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
         case MULTI_L_PRESSED:
             goto(Auto_EventScript_Pokemon_Shop_Fire_Page2)
@@ -2395,20 +2407,20 @@ script Auto_EventScript_Pokemon_Shop_Fire_Page4
     multichoice2(0,0,Auto_Text_Pokemon_Shop_Fire_Page4)
     switch(var(VAR_RESULT))
     {
-        case 0: # LITTEN
+        case 0: # LITLEO
+            givemon(SPECIES_LITLEO,1)
+            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
+        case 1: # LITTEN
             givemon(SPECIES_LITTEN,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 1: # LITWICK
+        case 2: # LITWICK
             givemon(SPECIES_LITWICK,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 2: # MAGBY
+        case 3: # MAGBY
             givemon(SPECIES_MAGBY,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 3: # NUMEL
+        case 4: # NUMEL
             givemon(SPECIES_NUMEL,1)
-            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 4: # ORICORIO
-            givemon(SPECIES_ORICORIO,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
         case MULTI_L_PRESSED:
             goto(Auto_EventScript_Pokemon_Shop_Fire_Page3)
@@ -2424,20 +2436,20 @@ script Auto_EventScript_Pokemon_Shop_Fire_Page5
     multichoice2(0,0,Auto_Text_Pokemon_Shop_Fire_Page5)
     switch(var(VAR_RESULT))
     {
-        case 0: # PANSEAR
+        case 0: # ORICORIO
+            givemon(SPECIES_ORICORIO,1)
+            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
+        case 1: # PANSEAR
             givemon(SPECIES_PANSEAR,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 1: # PONYTA
+        case 2: # PONYTA
             givemon(SPECIES_PONYTA,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 2: # SALANDIT
+        case 3: # SALANDIT
             givemon(SPECIES_SALANDIT,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 3: # SCORBUNNY
+        case 4: # SCORBUNNY
             givemon(SPECIES_SCORBUNNY,1)
-            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 4: # SIZZLIPEDE
-            givemon(SPECIES_SIZZLIPEDE,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
         case MULTI_L_PRESSED:
             goto(Auto_EventScript_Pokemon_Shop_Fire_Page4)
@@ -2453,20 +2465,20 @@ script Auto_EventScript_Pokemon_Shop_Fire_Page6
     multichoice2(0,0,Auto_Text_Pokemon_Shop_Fire_Page6)
     switch(var(VAR_RESULT))
     {
-        case 0: # SLUGMA
+        case 0: # SIZZLIPEDE
+            givemon(SPECIES_SIZZLIPEDE,1)
+            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
+        case 1: # SLUGMA
             givemon(SPECIES_SLUGMA,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 1: # TEPIG
+        case 2: # TEPIG
             givemon(SPECIES_TEPIG,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 2: # TORCHIC
+        case 3: # TORCHIC
             givemon(SPECIES_TORCHIC,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 3: # TORKOAL
+        case 4: # TORKOAL
             givemon(SPECIES_TORKOAL,1)
-            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 4: # TURTONATOR
-            givemon(SPECIES_TURTONATOR,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
         case MULTI_L_PRESSED:
             goto(Auto_EventScript_Pokemon_Shop_Fire_Page5)
@@ -2482,7 +2494,10 @@ script Auto_EventScript_Pokemon_Shop_Fire_Page7
     multichoice2(0,0,Auto_Text_Pokemon_Shop_Fire_Page7)
     switch(var(VAR_RESULT))
     {
-        case 0: # VULPIX
+        case 0: # TURTONATOR
+            givemon(SPECIES_TURTONATOR,1)
+            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
+        case 1: # VULPIX
             givemon(SPECIES_VULPIX,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
         case MULTI_L_PRESSED:
@@ -2511,11 +2526,11 @@ script Auto_EventScript_Pokemon_Shop_Flying_Page1
         case 3: # BOMBIRDIER
             givemon(SPECIES_BOMBIRDIER,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 4: # CHATOT
-            givemon(SPECIES_CHATOT,1)
+        case 4: # CELESTEELA
+            givemon(SPECIES_CELESTEELA,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
         case MULTI_L_PRESSED:
-            goto(Auto_EventScript_Pokemon_Shop_Flying_Page10)
+            goto(Auto_EventScript_Pokemon_Shop_Flying_Page11)
         case MULTI_R_PRESSED:
             goto(Auto_EventScript_Pokemon_Shop_Flying_Page2)
         default:
@@ -2528,20 +2543,20 @@ script Auto_EventScript_Pokemon_Shop_Flying_Page2
     multichoice2(0,0,Auto_Text_Pokemon_Shop_Flying_Page2)
     switch(var(VAR_RESULT))
     {
-        case 0: # COMBEE
+        case 0: # CHATOT
+            givemon(SPECIES_CHATOT,1)
+            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
+        case 1: # COMBEE
             givemon(SPECIES_COMBEE,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 1: # CRAMORANT
+        case 2: # CRAMORANT
             givemon(SPECIES_CRAMORANT,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 2: # DELIBIRD
+        case 3: # DELIBIRD
             givemon(SPECIES_DELIBIRD,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 3: # DODUO
+        case 4: # DODUO
             givemon(SPECIES_DODUO,1)
-            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 4: # DRIFLOON
-            givemon(SPECIES_DRIFLOON,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
         case MULTI_L_PRESSED:
             goto(Auto_EventScript_Pokemon_Shop_Flying_Page1)
@@ -2557,20 +2572,20 @@ script Auto_EventScript_Pokemon_Shop_Flying_Page3
     multichoice2(0,0,Auto_Text_Pokemon_Shop_Flying_Page3)
     switch(var(VAR_RESULT))
     {
-        case 0: # DUCKLETT
+        case 0: # DRIFLOON
+            givemon(SPECIES_DRIFLOON,1)
+            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
+        case 1: # DUCKLETT
             givemon(SPECIES_DUCKLETT,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 1: # EMOLGA
+        case 2: # EMOLGA
             givemon(SPECIES_EMOLGA,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 2: # FARFETCHD
+        case 3: # FARFETCHD
             givemon(SPECIES_FARFETCHD,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 3: # FLAMIGO
+        case 4: # FLAMIGO
             givemon(SPECIES_FLAMIGO,1)
-            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 4: # FLETCHLING
-            givemon(SPECIES_FLETCHLING,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
         case MULTI_L_PRESSED:
             goto(Auto_EventScript_Pokemon_Shop_Flying_Page2)
@@ -2586,20 +2601,20 @@ script Auto_EventScript_Pokemon_Shop_Flying_Page4
     multichoice2(0,0,Auto_Text_Pokemon_Shop_Flying_Page4)
     switch(var(VAR_RESULT))
     {
-        case 0: # GLIGAR
+        case 0: # FLETCHLING
+            givemon(SPECIES_FLETCHLING,1)
+            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
+        case 1: # GLIGAR
             givemon(SPECIES_GLIGAR,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 1: # HAWLUCHA
+        case 2: # HAWLUCHA
             givemon(SPECIES_HAWLUCHA,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 2: # HOOTHOOT
+        case 3: # HOOTHOOT
             givemon(SPECIES_HOOTHOOT,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 3: # HOPPIP
+        case 4: # HOPPIP
             givemon(SPECIES_HOPPIP,1)
-            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 4: # IRON JUGULIS
-            givemon(SPECIES_IRON_JUGULIS,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
         case MULTI_L_PRESSED:
             goto(Auto_EventScript_Pokemon_Shop_Flying_Page3)
@@ -2615,20 +2630,20 @@ script Auto_EventScript_Pokemon_Shop_Flying_Page5
     multichoice2(0,0,Auto_Text_Pokemon_Shop_Flying_Page5)
     switch(var(VAR_RESULT))
     {
-        case 0: # LEDYBA
+        case 0: # IRON JUGULIS
+            givemon(SPECIES_IRON_JUGULIS,1)
+            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
+        case 1: # LEDYBA
             givemon(SPECIES_LEDYBA,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 1: # MANTYKE
+        case 2: # MANTYKE
             givemon(SPECIES_MANTYKE,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 2: # MINIOR
+        case 3: # MINIOR
             givemon(SPECIES_MINIOR,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 3: # MOLTRES-GALAR
+        case 4: # MOLTRES-GALAR
             givemon(SPECIES_MOLTRES_GALAR,1)
-            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 4: # MURKROW
-            givemon(SPECIES_MURKROW,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
         case MULTI_L_PRESSED:
             goto(Auto_EventScript_Pokemon_Shop_Flying_Page4)
@@ -2644,20 +2659,20 @@ script Auto_EventScript_Pokemon_Shop_Flying_Page6
     multichoice2(0,0,Auto_Text_Pokemon_Shop_Flying_Page6)
     switch(var(VAR_RESULT))
     {
-        case 0: # NATU
+        case 0: # MURKROW
+            givemon(SPECIES_MURKROW,1)
+            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
+        case 1: # NATU
             givemon(SPECIES_NATU,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 1: # NOIBAT
+        case 2: # NOIBAT
             givemon(SPECIES_NOIBAT,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 2: # ORICORIO
+        case 3: # ORICORIO
             givemon(SPECIES_ORICORIO,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 3: # PIDGEY
+        case 4: # PIDGEY
             givemon(SPECIES_PIDGEY,1)
-            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 4: # PIDOVE
-            givemon(SPECIES_PIDOVE,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
         case MULTI_L_PRESSED:
             goto(Auto_EventScript_Pokemon_Shop_Flying_Page5)
@@ -2673,20 +2688,20 @@ script Auto_EventScript_Pokemon_Shop_Flying_Page7
     multichoice2(0,0,Auto_Text_Pokemon_Shop_Flying_Page7)
     switch(var(VAR_RESULT))
     {
-        case 0: # PIKIPEK
+        case 0: # PIDOVE
+            givemon(SPECIES_PIDOVE,1)
+            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
+        case 1: # PIKIPEK
             givemon(SPECIES_PIKIPEK,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 1: # ROOKIDEE
+        case 2: # ROOKIDEE
             givemon(SPECIES_ROOKIDEE,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 2: # ROWLET
+        case 3: # ROWLET
             givemon(SPECIES_ROWLET,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 3: # RUFFLET
+        case 4: # RUFFLET
             givemon(SPECIES_RUFFLET,1)
-            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 4: # SCYTHER
-            givemon(SPECIES_SCYTHER,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
         case MULTI_L_PRESSED:
             goto(Auto_EventScript_Pokemon_Shop_Flying_Page6)
@@ -2702,20 +2717,20 @@ script Auto_EventScript_Pokemon_Shop_Flying_Page8
     multichoice2(0,0,Auto_Text_Pokemon_Shop_Flying_Page8)
     switch(var(VAR_RESULT))
     {
-        case 0: # SIGILYPH
+        case 0: # SCYTHER
+            givemon(SPECIES_SCYTHER,1)
+            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
+        case 1: # SIGILYPH
             givemon(SPECIES_SIGILYPH,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 1: # SKARMORY
+        case 2: # SKARMORY
             givemon(SPECIES_SKARMORY,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 2: # SPEAROW
+        case 3: # SPEAROW
             givemon(SPECIES_SPEAROW,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 3: # SQUAWKABILLY
+        case 4: # SQUAWKABILLY
             givemon(SPECIES_SQUAWKABILLY,1)
-            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 4: # STARLY
-            givemon(SPECIES_STARLY,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
         case MULTI_L_PRESSED:
             goto(Auto_EventScript_Pokemon_Shop_Flying_Page7)
@@ -2731,20 +2746,20 @@ script Auto_EventScript_Pokemon_Shop_Flying_Page9
     multichoice2(0,0,Auto_Text_Pokemon_Shop_Flying_Page9)
     switch(var(VAR_RESULT))
     {
-        case 0: # SWABLU
+        case 0: # STARLY
+            givemon(SPECIES_STARLY,1)
+            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
+        case 1: # SWABLU
             givemon(SPECIES_SWABLU,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 1: # TAILLOW
+        case 2: # TAILLOW
             givemon(SPECIES_TAILLOW,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 2: # TROPIUS
+        case 3: # TROPIUS
             givemon(SPECIES_TROPIUS,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 3: # VULLABY
+        case 4: # VULLABY
             givemon(SPECIES_VULLABY,1)
-            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 4: # WATTREL
-            givemon(SPECIES_WATTREL,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
         case MULTI_L_PRESSED:
             goto(Auto_EventScript_Pokemon_Shop_Flying_Page8)
@@ -2760,23 +2775,40 @@ script Auto_EventScript_Pokemon_Shop_Flying_Page10
     multichoice2(0,0,Auto_Text_Pokemon_Shop_Flying_Page10)
     switch(var(VAR_RESULT))
     {
-        case 0: # WINGULL
+        case 0: # WATTREL
+            givemon(SPECIES_WATTREL,1)
+            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
+        case 1: # WINGULL
             givemon(SPECIES_WINGULL,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 1: # WOOBAT
+        case 2: # WOOBAT
             givemon(SPECIES_WOOBAT,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 2: # YANMA
+        case 3: # YANMA
             givemon(SPECIES_YANMA,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 3: # ZAPDOS-GALAR
+        case 4: # ZAPDOS-GALAR
             givemon(SPECIES_ZAPDOS_GALAR,1)
-            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 4: # ZUBAT
-            givemon(SPECIES_ZUBAT,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
         case MULTI_L_PRESSED:
             goto(Auto_EventScript_Pokemon_Shop_Flying_Page9)
+        case MULTI_R_PRESSED:
+            goto(Auto_EventScript_Pokemon_Shop_Flying_Page11)
+        default:
+            goto(Auto_EventScript_Pokemon_Shop_Page2)
+    }
+}
+
+script Auto_EventScript_Pokemon_Shop_Flying_Page11
+{
+    multichoice2(0,0,Auto_Text_Pokemon_Shop_Flying_Page11)
+    switch(var(VAR_RESULT))
+    {
+        case 0: # ZUBAT
+            givemon(SPECIES_ZUBAT,1)
+            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
+        case MULTI_L_PRESSED:
+            goto(Auto_EventScript_Pokemon_Shop_Flying_Page10)
         case MULTI_R_PRESSED:
             goto(Auto_EventScript_Pokemon_Shop_Flying_Page1)
         default:
@@ -2789,20 +2821,20 @@ script Auto_EventScript_Pokemon_Shop_Ghost_Page1
     multichoice2(0,0,Auto_Text_Pokemon_Shop_Ghost_Page1)
     switch(var(VAR_RESULT))
     {
-        case 0: # BRAMBLIN
+        case 0: # BLACEPHALON
+            givemon(SPECIES_BLACEPHALON,1)
+            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
+        case 1: # BRAMBLIN
             givemon(SPECIES_BRAMBLIN,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 1: # CORSOLA-GALAR
+        case 2: # CORSOLA-GALAR
             givemon(SPECIES_CORSOLA_GALAR,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 2: # DHELMISE
+        case 3: # DHELMISE
             givemon(SPECIES_DHELMISE,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 3: # DREEPY
+        case 4: # DREEPY
             givemon(SPECIES_DREEPY,1)
-            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 4: # DRIFLOON
-            givemon(SPECIES_DRIFLOON,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
         case MULTI_L_PRESSED:
             goto(Auto_EventScript_Pokemon_Shop_Ghost_Page6)
@@ -2818,20 +2850,20 @@ script Auto_EventScript_Pokemon_Shop_Ghost_Page2
     multichoice2(0,0,Auto_Text_Pokemon_Shop_Ghost_Page2)
     switch(var(VAR_RESULT))
     {
-        case 0: # DUSKULL
+        case 0: # DRIFLOON
+            givemon(SPECIES_DRIFLOON,1)
+            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
+        case 1: # DUSKULL
             givemon(SPECIES_DUSKULL,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 1: # FLUTTER MANE
+        case 2: # FLUTTER MANE
             givemon(SPECIES_FLUTTER_MANE,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 2: # FRILLISH
+        case 3: # FRILLISH
             givemon(SPECIES_FRILLISH,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 3: # GASTLY
+        case 4: # GASTLY
             givemon(SPECIES_GASTLY,1)
-            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 4: # GIMMIGHOUL
-            givemon(SPECIES_GIMMIGHOUL,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
         case MULTI_L_PRESSED:
             goto(Auto_EventScript_Pokemon_Shop_Ghost_Page1)
@@ -2847,20 +2879,20 @@ script Auto_EventScript_Pokemon_Shop_Ghost_Page3
     multichoice2(0,0,Auto_Text_Pokemon_Shop_Ghost_Page3)
     switch(var(VAR_RESULT))
     {
-        case 0: # GOLETT
+        case 0: # GIMMIGHOUL
+            givemon(SPECIES_GIMMIGHOUL,1)
+            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
+        case 1: # GOLETT
             givemon(SPECIES_GOLETT,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 1: # GREAVARD
+        case 2: # GREAVARD
             givemon(SPECIES_GREAVARD,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 2: # HONEDGE
+        case 3: # HONEDGE
             givemon(SPECIES_HONEDGE,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 3: # LITWICK
+        case 4: # LITWICK
             givemon(SPECIES_LITWICK,1)
-            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 4: # MIMIKYU
-            givemon(SPECIES_MIMIKYU,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
         case MULTI_L_PRESSED:
             goto(Auto_EventScript_Pokemon_Shop_Ghost_Page2)
@@ -2876,20 +2908,20 @@ script Auto_EventScript_Pokemon_Shop_Ghost_Page4
     multichoice2(0,0,Auto_Text_Pokemon_Shop_Ghost_Page4)
     switch(var(VAR_RESULT))
     {
-        case 0: # MISDREAVUS
+        case 0: # MIMIKYU
+            givemon(SPECIES_MIMIKYU,1)
+            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
+        case 1: # MISDREAVUS
             givemon(SPECIES_MISDREAVUS,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 1: # PHANTUMP
+        case 2: # PHANTUMP
             givemon(SPECIES_PHANTUMP,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 2: # POLTCHAGEIST
+        case 3: # POLTCHAGEIST
             givemon(SPECIES_POLTCHAGEIST,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 3: # PUMPKABOO
+        case 4: # PUMPKABOO
             givemon(SPECIES_PUMPKABOO,1)
-            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 4: # ROTOM
-            givemon(SPECIES_ROTOM,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
         case MULTI_L_PRESSED:
             goto(Auto_EventScript_Pokemon_Shop_Ghost_Page3)
@@ -2905,20 +2937,20 @@ script Auto_EventScript_Pokemon_Shop_Ghost_Page5
     multichoice2(0,0,Auto_Text_Pokemon_Shop_Ghost_Page5)
     switch(var(VAR_RESULT))
     {
-        case 0: # SABLEYE
+        case 0: # ROTOM
+            givemon(SPECIES_ROTOM,1)
+            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
+        case 1: # SABLEYE
             givemon(SPECIES_SABLEYE,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 1: # SANDYGAST
+        case 2: # SANDYGAST
             givemon(SPECIES_SANDYGAST,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 2: # SHUPPET
+        case 3: # SHUPPET
             givemon(SPECIES_SHUPPET,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 3: # SINISTEA
+        case 4: # SINISTEA
             givemon(SPECIES_SINISTEA,1)
-            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 4: # SPIRITOMB
-            givemon(SPECIES_SPIRITOMB,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
         case MULTI_L_PRESSED:
             goto(Auto_EventScript_Pokemon_Shop_Ghost_Page4)
@@ -2934,13 +2966,16 @@ script Auto_EventScript_Pokemon_Shop_Ghost_Page6
     multichoice2(0,0,Auto_Text_Pokemon_Shop_Ghost_Page6)
     switch(var(VAR_RESULT))
     {
-        case 0: # YAMASK
+        case 0: # SPIRITOMB
+            givemon(SPECIES_SPIRITOMB,1)
+            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
+        case 1: # YAMASK
             givemon(SPECIES_YAMASK,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 1: # YAMASK-GALAR
+        case 2: # YAMASK-GALAR
             givemon(SPECIES_YAMASK_GALAR,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 2: # ZORUA-HISUI
+        case 3: # ZORUA-HISUI
             givemon(SPECIES_ZORUA_HISUI,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
         case MULTI_L_PRESSED:
@@ -3085,8 +3120,8 @@ script Auto_EventScript_Pokemon_Shop_Grass_Page5
         case 3: # IRON LEAVES
             givemon(SPECIES_IRON_LEAVES,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 4: # LILEEP
-            givemon(SPECIES_LILEEP,1)
+        case 4: # KARTANA
+            givemon(SPECIES_KARTANA,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
         case MULTI_L_PRESSED:
             goto(Auto_EventScript_Pokemon_Shop_Grass_Page4)
@@ -3102,20 +3137,20 @@ script Auto_EventScript_Pokemon_Shop_Grass_Page6
     multichoice2(0,0,Auto_Text_Pokemon_Shop_Grass_Page6)
     switch(var(VAR_RESULT))
     {
-        case 0: # LOTAD
+        case 0: # LILEEP
+            givemon(SPECIES_LILEEP,1)
+            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
+        case 1: # LOTAD
             givemon(SPECIES_LOTAD,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 1: # MARACTUS
+        case 2: # MARACTUS
             givemon(SPECIES_MARACTUS,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 2: # MORELULL
+        case 3: # MORELULL
             givemon(SPECIES_MORELULL,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 3: # ODDISH
+        case 4: # ODDISH
             givemon(SPECIES_ODDISH,1)
-            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 4: # OGERPON
-            givemon(SPECIES_OGERPON,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
         case MULTI_L_PRESSED:
             goto(Auto_EventScript_Pokemon_Shop_Grass_Page5)
@@ -3276,11 +3311,11 @@ script Auto_EventScript_Pokemon_Shop_Bug_Page1
         case 2: # BURMY
             givemon(SPECIES_BURMY,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 3: # CATERPIE
-            givemon(SPECIES_CATERPIE,1)
+        case 3: # BUZZWOLE
+            givemon(SPECIES_BUZZWOLE,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 4: # COMBEE
-            givemon(SPECIES_COMBEE,1)
+        case 4: # CATERPIE
+            givemon(SPECIES_CATERPIE,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
         case MULTI_L_PRESSED:
             goto(Auto_EventScript_Pokemon_Shop_Bug_Page9)
@@ -3296,20 +3331,20 @@ script Auto_EventScript_Pokemon_Shop_Bug_Page2
     multichoice2(0,0,Auto_Text_Pokemon_Shop_Bug_Page2)
     switch(var(VAR_RESULT))
     {
-        case 0: # CUTIEFLY
+        case 0: # COMBEE
+            givemon(SPECIES_COMBEE,1)
+            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
+        case 1: # CUTIEFLY
             givemon(SPECIES_CUTIEFLY,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 1: # DEWPIDER
+        case 2: # DEWPIDER
             givemon(SPECIES_DEWPIDER,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 2: # DURANT
+        case 3: # DURANT
             givemon(SPECIES_DURANT,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 3: # DWEBBLE
+        case 4: # DWEBBLE
             givemon(SPECIES_DWEBBLE,1)
-            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 4: # GRUBBIN
-            givemon(SPECIES_GRUBBIN,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
         case MULTI_L_PRESSED:
             goto(Auto_EventScript_Pokemon_Shop_Bug_Page1)
@@ -3325,20 +3360,20 @@ script Auto_EventScript_Pokemon_Shop_Bug_Page3
     multichoice2(0,0,Auto_Text_Pokemon_Shop_Bug_Page3)
     switch(var(VAR_RESULT))
     {
-        case 0: # HERACROSS
+        case 0: # GRUBBIN
+            givemon(SPECIES_GRUBBIN,1)
+            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
+        case 1: # HERACROSS
             givemon(SPECIES_HERACROSS,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 1: # ILLUMISE
+        case 2: # ILLUMISE
             givemon(SPECIES_ILLUMISE,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 2: # JOLTIK
+        case 3: # JOLTIK
             givemon(SPECIES_JOLTIK,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 3: # KARRABLAST
+        case 4: # KARRABLAST
             givemon(SPECIES_KARRABLAST,1)
-            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 4: # KRICKETOT
-            givemon(SPECIES_KRICKETOT,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
         case MULTI_L_PRESSED:
             goto(Auto_EventScript_Pokemon_Shop_Bug_Page2)
@@ -3354,20 +3389,20 @@ script Auto_EventScript_Pokemon_Shop_Bug_Page4
     multichoice2(0,0,Auto_Text_Pokemon_Shop_Bug_Page4)
     switch(var(VAR_RESULT))
     {
-        case 0: # LARVESTA
+        case 0: # KRICKETOT
+            givemon(SPECIES_KRICKETOT,1)
+            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
+        case 1: # LARVESTA
             givemon(SPECIES_LARVESTA,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 1: # LEDYBA
+        case 2: # LEDYBA
             givemon(SPECIES_LEDYBA,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 2: # NINCADA
+        case 3: # NINCADA
             givemon(SPECIES_NINCADA,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 3: # NYMBLE
+        case 4: # NYMBLE
             givemon(SPECIES_NYMBLE,1)
-            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 4: # PARAS
-            givemon(SPECIES_PARAS,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
         case MULTI_L_PRESSED:
             goto(Auto_EventScript_Pokemon_Shop_Bug_Page3)
@@ -3383,20 +3418,20 @@ script Auto_EventScript_Pokemon_Shop_Bug_Page5
     multichoice2(0,0,Auto_Text_Pokemon_Shop_Bug_Page5)
     switch(var(VAR_RESULT))
     {
-        case 0: # PINECO
+        case 0: # PARAS
+            givemon(SPECIES_PARAS,1)
+            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
+        case 1: # PHEROMOSA
+            givemon(SPECIES_PHEROMOSA,1)
+            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
+        case 2: # PINECO
             givemon(SPECIES_PINECO,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 1: # PINSIR
+        case 3: # PINSIR
             givemon(SPECIES_PINSIR,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 2: # RELLOR
+        case 4: # RELLOR
             givemon(SPECIES_RELLOR,1)
-            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 3: # SCATTERBUG
-            givemon(SPECIES_SCATTERBUG,1)
-            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 4: # SCYTHER
-            givemon(SPECIES_SCYTHER,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
         case MULTI_L_PRESSED:
             goto(Auto_EventScript_Pokemon_Shop_Bug_Page4)
@@ -3412,20 +3447,20 @@ script Auto_EventScript_Pokemon_Shop_Bug_Page6
     multichoice2(0,0,Auto_Text_Pokemon_Shop_Bug_Page6)
     switch(var(VAR_RESULT))
     {
-        case 0: # SEWADDLE
+        case 0: # SCATTERBUG
+            givemon(SPECIES_SCATTERBUG,1)
+            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
+        case 1: # SCYTHER
+            givemon(SPECIES_SCYTHER,1)
+            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
+        case 2: # SEWADDLE
             givemon(SPECIES_SEWADDLE,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 1: # SHELMET
+        case 3: # SHELMET
             givemon(SPECIES_SHELMET,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 2: # SHUCKLE
+        case 4: # SHUCKLE
             givemon(SPECIES_SHUCKLE,1)
-            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 3: # SIZZLIPEDE
-            givemon(SPECIES_SIZZLIPEDE,1)
-            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 4: # SKORUPI
-            givemon(SPECIES_SKORUPI,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
         case MULTI_L_PRESSED:
             goto(Auto_EventScript_Pokemon_Shop_Bug_Page5)
@@ -3441,20 +3476,20 @@ script Auto_EventScript_Pokemon_Shop_Bug_Page7
     multichoice2(0,0,Auto_Text_Pokemon_Shop_Bug_Page7)
     switch(var(VAR_RESULT))
     {
-        case 0: # SLITHER WING
+        case 0: # SIZZLIPEDE
+            givemon(SPECIES_SIZZLIPEDE,1)
+            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
+        case 1: # SKORUPI
+            givemon(SPECIES_SKORUPI,1)
+            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
+        case 2: # SLITHER WING
             givemon(SPECIES_SLITHER_WING,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 1: # SNOM
+        case 3: # SNOM
             givemon(SPECIES_SNOM,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 2: # SPINARAK
+        case 4: # SPINARAK
             givemon(SPECIES_SPINARAK,1)
-            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 3: # SURSKIT
-            givemon(SPECIES_SURSKIT,1)
-            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 4: # TAROUNTULA
-            givemon(SPECIES_TAROUNTULA,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
         case MULTI_L_PRESSED:
             goto(Auto_EventScript_Pokemon_Shop_Bug_Page6)
@@ -3470,20 +3505,20 @@ script Auto_EventScript_Pokemon_Shop_Bug_Page8
     multichoice2(0,0,Auto_Text_Pokemon_Shop_Bug_Page8)
     switch(var(VAR_RESULT))
     {
-        case 0: # VENIPEDE
+        case 0: # SURSKIT
+            givemon(SPECIES_SURSKIT,1)
+            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
+        case 1: # TAROUNTULA
+            givemon(SPECIES_TAROUNTULA,1)
+            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
+        case 2: # VENIPEDE
             givemon(SPECIES_VENIPEDE,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 1: # VENONAT
+        case 3: # VENONAT
             givemon(SPECIES_VENONAT,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 2: # VOLBEAT
+        case 4: # VOLBEAT
             givemon(SPECIES_VOLBEAT,1)
-            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 3: # WEEDLE
-            givemon(SPECIES_WEEDLE,1)
-            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 4: # WIMPOD
-            givemon(SPECIES_WIMPOD,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
         case MULTI_L_PRESSED:
             goto(Auto_EventScript_Pokemon_Shop_Bug_Page7)
@@ -3499,10 +3534,16 @@ script Auto_EventScript_Pokemon_Shop_Bug_Page9
     multichoice2(0,0,Auto_Text_Pokemon_Shop_Bug_Page9)
     switch(var(VAR_RESULT))
     {
-        case 0: # WURMPLE
+        case 0: # WEEDLE
+            givemon(SPECIES_WEEDLE,1)
+            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
+        case 1: # WIMPOD
+            givemon(SPECIES_WIMPOD,1)
+            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
+        case 2: # WURMPLE
             givemon(SPECIES_WURMPLE,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 1: # YANMA
+        case 3: # YANMA
             givemon(SPECIES_YANMA,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
         case MULTI_L_PRESSED:
@@ -3551,17 +3592,17 @@ script Auto_EventScript_Pokemon_Shop_Dark_Page2
         case 0: # GRIMER-ALOLA
             givemon(SPECIES_GRIMER_ALOLA,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 1: # HOUNDOUR
+        case 1: # GUZZLORD
+            givemon(SPECIES_GUZZLORD,1)
+            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
+        case 2: # HOUNDOUR
             givemon(SPECIES_HOUNDOUR,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 2: # IMPIDIMP
+        case 3: # IMPIDIMP
             givemon(SPECIES_IMPIDIMP,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 3: # INKAY
+        case 4: # INKAY
             givemon(SPECIES_INKAY,1)
-            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 4: # IRON JUGULIS
-            givemon(SPECIES_IRON_JUGULIS,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
         case MULTI_L_PRESSED:
             goto(Auto_EventScript_Pokemon_Shop_Dark_Page1)
@@ -3577,20 +3618,20 @@ script Auto_EventScript_Pokemon_Shop_Dark_Page3
     multichoice2(0,0,Auto_Text_Pokemon_Shop_Dark_Page3)
     switch(var(VAR_RESULT))
     {
-        case 0: # MASCHIFF
+        case 0: # IRON JUGULIS
+            givemon(SPECIES_IRON_JUGULIS,1)
+            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
+        case 1: # MASCHIFF
             givemon(SPECIES_MASCHIFF,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 1: # MEOWTH-ALOLA
+        case 2: # MEOWTH-ALOLA
             givemon(SPECIES_MEOWTH_ALOLA,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 2: # MOLTRES-GALAR
+        case 3: # MOLTRES-GALAR
             givemon(SPECIES_MOLTRES_GALAR,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 3: # MORPEKO
+        case 4: # MORPEKO
             givemon(SPECIES_MORPEKO,1)
-            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 4: # MURKROW
-            givemon(SPECIES_MURKROW,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
         case MULTI_L_PRESSED:
             goto(Auto_EventScript_Pokemon_Shop_Dark_Page2)
@@ -3606,20 +3647,20 @@ script Auto_EventScript_Pokemon_Shop_Dark_Page4
     multichoice2(0,0,Auto_Text_Pokemon_Shop_Dark_Page4)
     switch(var(VAR_RESULT))
     {
-        case 0: # NICKIT
+        case 0: # MURKROW
+            givemon(SPECIES_MURKROW,1)
+            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
+        case 1: # NICKIT
             givemon(SPECIES_NICKIT,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 1: # PAWNIARD
+        case 2: # PAWNIARD
             givemon(SPECIES_PAWNIARD,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 2: # POOCHYENA
+        case 3: # POOCHYENA
             givemon(SPECIES_POOCHYENA,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 3: # PURRLOIN
+        case 4: # PURRLOIN
             givemon(SPECIES_PURRLOIN,1)
-            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 4: # QWILFISH-HISUI
-            givemon(SPECIES_QWILFISH_HISUI,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
         case MULTI_L_PRESSED:
             goto(Auto_EventScript_Pokemon_Shop_Dark_Page3)
@@ -3635,20 +3676,20 @@ script Auto_EventScript_Pokemon_Shop_Dark_Page5
     multichoice2(0,0,Auto_Text_Pokemon_Shop_Dark_Page5)
     switch(var(VAR_RESULT))
     {
-        case 0: # RATTATA-ALOLA
+        case 0: # QWILFISH-HISUI
+            givemon(SPECIES_QWILFISH_HISUI,1)
+            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
+        case 1: # RATTATA-ALOLA
             givemon(SPECIES_RATTATA_ALOLA,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 1: # ROARING MOON
+        case 2: # ROARING MOON
             givemon(SPECIES_ROARING_MOON,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 2: # SABLEYE
+        case 3: # SABLEYE
             givemon(SPECIES_SABLEYE,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 3: # SANDILE
+        case 4: # SANDILE
             givemon(SPECIES_SANDILE,1)
-            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 4: # SCRAGGY
-            givemon(SPECIES_SCRAGGY,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
         case MULTI_L_PRESSED:
             goto(Auto_EventScript_Pokemon_Shop_Dark_Page4)
@@ -3664,20 +3705,20 @@ script Auto_EventScript_Pokemon_Shop_Dark_Page6
     multichoice2(0,0,Auto_Text_Pokemon_Shop_Dark_Page6)
     switch(var(VAR_RESULT))
     {
-        case 0: # SNEASEL
+        case 0: # SCRAGGY
+            givemon(SPECIES_SCRAGGY,1)
+            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
+        case 1: # SNEASEL
             givemon(SPECIES_SNEASEL,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 1: # SPIRITOMB
+        case 2: # SPIRITOMB
             givemon(SPECIES_SPIRITOMB,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 2: # STUNKY
+        case 3: # STUNKY
             givemon(SPECIES_STUNKY,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 3: # VULLABY
+        case 4: # VULLABY
             givemon(SPECIES_VULLABY,1)
-            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 4: # ZIGZAGOON-GALAR
-            givemon(SPECIES_ZIGZAGOON_GALAR,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
         case MULTI_L_PRESSED:
             goto(Auto_EventScript_Pokemon_Shop_Dark_Page5)
@@ -3693,7 +3734,10 @@ script Auto_EventScript_Pokemon_Shop_Dark_Page7
     multichoice2(0,0,Auto_Text_Pokemon_Shop_Dark_Page7)
     switch(var(VAR_RESULT))
     {
-        case 0: # ZORUA
+        case 0: # ZIGZAGOON-GALAR
+            givemon(SPECIES_ZIGZAGOON_GALAR,1)
+            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
+        case 1: # ZORUA
             givemon(SPECIES_ZORUA,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
         case MULTI_L_PRESSED:
@@ -3800,17 +3844,17 @@ script Auto_EventScript_Pokemon_Shop_Dragon_Page4
         case 0: # GOUGING FIRE
             givemon(SPECIES_GOUGING_FIRE,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 1: # JANGMO-O
+        case 1: # GUZZLORD
+            givemon(SPECIES_GUZZLORD,1)
+            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
+        case 2: # JANGMO-O
             givemon(SPECIES_JANGMO_O,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 2: # NOIBAT
+        case 3: # NOIBAT
             givemon(SPECIES_NOIBAT,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 3: # RAGING BOLT
+        case 4: # RAGING BOLT
             givemon(SPECIES_RAGING_BOLT,1)
-            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 4: # ROARING MOON
-            givemon(SPECIES_ROARING_MOON,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
         case MULTI_L_PRESSED:
             goto(Auto_EventScript_Pokemon_Shop_Dragon_Page3)
@@ -3826,16 +3870,19 @@ script Auto_EventScript_Pokemon_Shop_Dragon_Page5
     multichoice2(0,0,Auto_Text_Pokemon_Shop_Dragon_Page5)
     switch(var(VAR_RESULT))
     {
-        case 0: # TATSUGIRI
+        case 0: # ROARING MOON
+            givemon(SPECIES_ROARING_MOON,1)
+            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
+        case 1: # TATSUGIRI
             givemon(SPECIES_TATSUGIRI,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 1: # TURTONATOR
+        case 2: # TURTONATOR
             givemon(SPECIES_TURTONATOR,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 2: # TYRUNT
+        case 3: # TYRUNT
             givemon(SPECIES_TYRUNT,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 3: # WALKING WAKE
+        case 4: # WALKING WAKE
             givemon(SPECIES_WALKING_WAKE,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
         case MULTI_L_PRESSED:
@@ -3868,7 +3915,7 @@ script Auto_EventScript_Pokemon_Shop_Electric_Page1
             givemon(SPECIES_DRACOZOLT,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
         case MULTI_L_PRESSED:
-            goto(Auto_EventScript_Pokemon_Shop_Electric_Page7)
+            goto(Auto_EventScript_Pokemon_Shop_Electric_Page8)
         case MULTI_R_PRESSED:
             goto(Auto_EventScript_Pokemon_Shop_Electric_Page2)
         default:
@@ -4038,11 +4085,28 @@ script Auto_EventScript_Pokemon_Shop_Electric_Page7
         case 3: # WATTREL
             givemon(SPECIES_WATTREL,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 4: # YAMPER
-            givemon(SPECIES_YAMPER,1)
+        case 4: # XURKITREE
+            givemon(SPECIES_XURKITREE,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
         case MULTI_L_PRESSED:
             goto(Auto_EventScript_Pokemon_Shop_Electric_Page6)
+        case MULTI_R_PRESSED:
+            goto(Auto_EventScript_Pokemon_Shop_Electric_Page8)
+        default:
+            goto(Auto_EventScript_Pokemon_Shop_Page1)
+    }
+}
+
+script Auto_EventScript_Pokemon_Shop_Electric_Page8
+{
+    multichoice2(0,0,Auto_Text_Pokemon_Shop_Electric_Page8)
+    switch(var(VAR_RESULT))
+    {
+        case 0: # YAMPER
+            givemon(SPECIES_YAMPER,1)
+            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
+        case MULTI_L_PRESSED:
+            goto(Auto_EventScript_Pokemon_Shop_Electric_Page7)
         case MULTI_R_PRESSED:
             goto(Auto_EventScript_Pokemon_Shop_Electric_Page1)
         default:
@@ -4090,14 +4154,14 @@ script Auto_EventScript_Pokemon_Shop_Fairy_Page2
         case 1: # DEDENNE
             givemon(SPECIES_DEDENNE,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 2: # FEZANDIPITI
-            givemon(SPECIES_FEZANDIPITI,1)
-            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 3: # FIDOUGH
+        case 2: # FIDOUGH
             givemon(SPECIES_FIDOUGH,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 4: # FLABEBE
+        case 3: # FLABEBE
             givemon(SPECIES_FLABEBE,1)
+            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
+        case 4: # FLUTTER MANE
+            givemon(SPECIES_FLUTTER_MANE,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
         case MULTI_L_PRESSED:
             goto(Auto_EventScript_Pokemon_Shop_Fairy_Page1)
@@ -4113,20 +4177,20 @@ script Auto_EventScript_Pokemon_Shop_Fairy_Page3
     multichoice2(0,0,Auto_Text_Pokemon_Shop_Fairy_Page3)
     switch(var(VAR_RESULT))
     {
-        case 0: # FLUTTER MANE
-            givemon(SPECIES_FLUTTER_MANE,1)
-            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 1: # IGGLYBUFF
+        case 0: # IGGLYBUFF
             givemon(SPECIES_IGGLYBUFF,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 2: # IMPIDIMP
+        case 1: # IMPIDIMP
             givemon(SPECIES_IMPIDIMP,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 3: # IRON VALIANT
+        case 2: # IRON VALIANT
             givemon(SPECIES_IRON_VALIANT,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 4: # KLEFKI
+        case 3: # KLEFKI
             givemon(SPECIES_KLEFKI,1)
+            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
+        case 4: # MAWILE
+            givemon(SPECIES_MAWILE,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
         case MULTI_L_PRESSED:
             goto(Auto_EventScript_Pokemon_Shop_Fairy_Page2)
@@ -4142,20 +4206,20 @@ script Auto_EventScript_Pokemon_Shop_Fairy_Page4
     multichoice2(0,0,Auto_Text_Pokemon_Shop_Fairy_Page4)
     switch(var(VAR_RESULT))
     {
-        case 0: # MAWILE
-            givemon(SPECIES_MAWILE,1)
-            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 1: # MILCERY
+        case 0: # MILCERY
             givemon(SPECIES_MILCERY,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 2: # MIME JR.
+        case 1: # MIME JR.
             givemon(SPECIES_MIME_JR,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 3: # MIMIKYU
+        case 2: # MIMIKYU
             givemon(SPECIES_MIMIKYU,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 4: # MORELULL
+        case 3: # MORELULL
             givemon(SPECIES_MORELULL,1)
+            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
+        case 4: # RALTS
+            givemon(SPECIES_RALTS,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
         case MULTI_L_PRESSED:
             goto(Auto_EventScript_Pokemon_Shop_Fairy_Page3)
@@ -4171,20 +4235,20 @@ script Auto_EventScript_Pokemon_Shop_Fairy_Page5
     multichoice2(0,0,Auto_Text_Pokemon_Shop_Fairy_Page5)
     switch(var(VAR_RESULT))
     {
-        case 0: # RALTS
-            givemon(SPECIES_RALTS,1)
-            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 1: # SCREAM TAIL
+        case 0: # SCREAM TAIL
             givemon(SPECIES_SCREAM_TAIL,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 2: # SNUBBULL
+        case 1: # SNUBBULL
             givemon(SPECIES_SNUBBULL,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 3: # SPRITZEE
+        case 2: # SPRITZEE
             givemon(SPECIES_SPRITZEE,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 4: # SWIRLIX
+        case 3: # SWIRLIX
             givemon(SPECIES_SWIRLIX,1)
+            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
+        case 4: # TINKATINK
+            givemon(SPECIES_TINKATINK,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
         case MULTI_L_PRESSED:
             goto(Auto_EventScript_Pokemon_Shop_Fairy_Page4)
@@ -4200,10 +4264,7 @@ script Auto_EventScript_Pokemon_Shop_Fairy_Page6
     multichoice2(0,0,Auto_Text_Pokemon_Shop_Fairy_Page6)
     switch(var(VAR_RESULT))
     {
-        case 0: # TINKATINK
-            givemon(SPECIES_TINKATINK,1)
-            goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
-        case 1: # TOGEPI
+        case 0: # TOGEPI
             givemon(SPECIES_TOGEPI,1)
             goto(Common_EventScript_Pokemon_Shop_CheckPurchase)
         case MULTI_L_PRESSED:
@@ -4307,35 +4368,37 @@ text Auto_Text_Pokemon_Shop_Rock_Page5
     "LUNATONE$"
     "MINIOR$"
     "NACLI$"
-    "NOSEPASS$"
+    "NIHILEGO$"
     "Go Back$"
     ""
 }
 
 text Auto_Text_Pokemon_Shop_Rock_Page6
 {
+    "NOSEPASS$"
     "OMANYTE$"
     "ONIX$"
     "RELICANTH$"
     "RHYHORN$"
-    "ROCKRUFF$"
     "Go Back$"
     ""
 }
 
 text Auto_Text_Pokemon_Shop_Rock_Page7
 {
+    "ROCKRUFF$"
     "ROGGENROLA$"
     "ROLYCOLY$"
     "SHIELDON$"
     "SHUCKLE$"
-    "SOLROCK$"
     "Go Back$"
     ""
 }
 
 text Auto_Text_Pokemon_Shop_Rock_Page8
 {
+    "SOLROCK$"
+    "STAKATAKA$"
     "STONJOURNER$"
     "TIRTOUGA$"
     "TYRUNT$"
@@ -4348,49 +4411,58 @@ text Auto_Text_Pokemon_Shop_Steel_Page1
     "ARON$"
     "BELDUM$"
     "BRONZOR$"
+    "CELESTEELA$"
     "CUFANT$"
-    "DIGLETT-ALOLA$"
     "Go Back$"
     ""
 }
 
 text Auto_Text_Pokemon_Shop_Steel_Page2
 {
+    "DIGLETT-ALOLA$"
     "DURALUDON$"
     "DURANT$"
     "FERROSEED$"
     "HONEDGE$"
-    "IRON CROWN$"
     "Go Back$"
     ""
 }
 
 text Auto_Text_Pokemon_Shop_Steel_Page3
 {
+    "IRON CROWN$"
     "IRON TREADS$"
+    "KARTANA$"
     "KLEFKI$"
     "KLINK$"
-    "MAGNEMITE$"
-    "MAWILE$"
     "Go Back$"
     ""
 }
 
 text Auto_Text_Pokemon_Shop_Steel_Page4
 {
+    "MAGNEMITE$"
+    "MAWILE$"
     "MEOWTH-GALAR$"
     "ORTHWORM$"
     "PAWNIARD$"
-    "SANDSHREW-ALOLA$"
-    "SHIELDON$"
     "Go Back$"
     ""
 }
 
 text Auto_Text_Pokemon_Shop_Steel_Page5
 {
+    "SANDSHREW-ALOLA$"
+    "SHIELDON$"
     "SKARMORY$"
+    "STAKATAKA$"
     "STUNFISK-GALAR$"
+    "Go Back$"
+    ""
+}
+
+text Auto_Text_Pokemon_Shop_Steel_Page6
+{
     "TINKATINK$"
     "TOGEDEMARU$"
     "VAROOM$"
@@ -4862,73 +4934,72 @@ text Auto_Text_Pokemon_Shop_Poison_Page1
 
 text Auto_Text_Pokemon_Shop_Poison_Page2
 {
-    "FEZANDIPITI$"
     "FOONGUS$"
     "GASTLY$"
     "GLIMMET$"
     "GRIMER$"
+    "GRIMER-ALOLA$"
     "Go Back$"
     ""
 }
 
 text Auto_Text_Pokemon_Shop_Poison_Page3
 {
-    "GRIMER-ALOLA$"
     "GULPIN$"
     "IRON MOTH$"
     "KOFFING$"
     "MAREANIE$"
+    "NIDORAN-F$"
     "Go Back$"
     ""
 }
 
 text Auto_Text_Pokemon_Shop_Poison_Page4
 {
-    "MUNKIDORI$"
-    "NIDORAN-F$"
     "NIDORAN-M$"
+    "NIHILEGO$"
     "ODDISH$"
-    "OKIDOGI$"
+    "POIPOLE$"
+    "QWILFISH$"
     "Go Back$"
     ""
 }
 
 text Auto_Text_Pokemon_Shop_Poison_Page5
 {
-    "QWILFISH$"
     "QWILFISH-HISUI$"
     "SALANDIT$"
     "SEVIPER$"
     "SHROODLE$"
+    "SKORUPI$"
     "Go Back$"
     ""
 }
 
 text Auto_Text_Pokemon_Shop_Poison_Page6
 {
-    "SKORUPI$"
     "SKRELP$"
     "SNEASEL-HISUI$"
     "SPINARAK$"
     "STUNKY$"
+    "TENTACOOL$"
     "Go Back$"
     ""
 }
 
 text Auto_Text_Pokemon_Shop_Poison_Page7
 {
-    "TENTACOOL$"
     "TOXEL$"
     "TRUBBISH$"
     "VAROOM$"
     "VENIPEDE$"
+    "VENONAT$"
     "Go Back$"
     ""
 }
 
 text Auto_Text_Pokemon_Shop_Poison_Page8
 {
-    "VENONAT$"
     "WEEDLE$"
     "WOOPER-PALDEA$"
     "ZUBAT$"
@@ -4985,47 +5056,40 @@ text Auto_Text_Pokemon_Shop_Psychic_Page5
     "LUNATONE$"
     "MEDITITE$"
     "MIME JR.$"
-    "MUNKIDORI$"
     "MUNNA$"
+    "NATU$"
     "Go Back$"
     ""
 }
 
 text Auto_Text_Pokemon_Shop_Psychic_Page6
 {
-    "NATU$"
     "ORANGURU$"
     "PONYTA-GALAR$"
     "RALTS$"
     "SCREAM TAIL$"
+    "SIGILYPH$"
     "Go Back$"
     ""
 }
 
 text Auto_Text_Pokemon_Shop_Psychic_Page7
 {
-    "SIGILYPH$"
     "SLOWPOKE$"
     "SLOWPOKE-GALAR$"
     "SMOOCHUM$"
     "SOLOSIS$"
+    "SOLROCK$"
     "Go Back$"
     ""
 }
 
 text Auto_Text_Pokemon_Shop_Psychic_Page8
 {
-    "SOLROCK$"
     "SPOINK$"
     "UNOWN$"
     "VELUZA$"
     "WOOBAT$"
-    "Go Back$"
-    ""
-}
-
-text Auto_Text_Pokemon_Shop_Psychic_Page9
-{
     "WYNAUT$"
     "Go Back$"
     ""
@@ -5033,61 +5097,62 @@ text Auto_Text_Pokemon_Shop_Psychic_Page9
 
 text Auto_Text_Pokemon_Shop_Fighting_Page1
 {
+    "BUZZWOLE$"
     "CLOBBOPUS$"
     "CRABRAWLER$"
     "CROAGUNK$"
     "FALINKS$"
-    "FARFETCHD-GALAR$"
     "Go Back$"
     ""
 }
 
 text Auto_Text_Pokemon_Shop_Fighting_Page2
 {
+    "FARFETCHD-GALAR$"
     "FLAMIGO$"
     "GREAT TUSK$"
     "HAWLUCHA$"
     "HERACROSS$"
-    "IRON HANDS$"
     "Go Back$"
     ""
 }
 
 text Auto_Text_Pokemon_Shop_Fighting_Page3
 {
+    "IRON HANDS$"
     "IRON VALIANT$"
     "MACHOP$"
     "MAKUHITA$"
     "MANKEY$"
-    "MEDITITE$"
     "Go Back$"
     ""
 }
 
 text Auto_Text_Pokemon_Shop_Fighting_Page4
 {
+    "MEDITITE$"
     "MIENFOO$"
-    "OKIDOGI$"
     "PANCHAM$"
     "PASSIMIAN$"
-    "RIOLU$"
+    "PHEROMOSA$"
     "Go Back$"
     ""
 }
 
 text Auto_Text_Pokemon_Shop_Fighting_Page5
 {
+    "RIOLU$"
     "SAWK$"
     "SCRAGGY$"
     "SLITHER WING$"
     "SNEASEL-HISUI$"
-    "STUFFUL$"
     "Go Back$"
     ""
 }
 
 text Auto_Text_Pokemon_Shop_Fighting_Page6
 {
+    "STUFFUL$"
     "THROH$"
     "TIMBURR$"
     "TYROGUE$"
@@ -5098,72 +5163,73 @@ text Auto_Text_Pokemon_Shop_Fighting_Page6
 
 text Auto_Text_Pokemon_Shop_Fire_Page1
 {
+    "BLACEPHALON$"
     "CHARCADET$"
     "CHARMANDER$"
     "CHIMCHAR$"
     "CYNDAQUIL$"
-    "DARUMAKA$"
     "Go Back$"
     ""
 }
 
 text Auto_Text_Pokemon_Shop_Fire_Page2
 {
+    "DARUMAKA$"
     "FENNEKIN$"
     "FUECOCO$"
     "GOUGING FIRE$"
     "GROWLITHE$"
-    "GROWLITHE-HISUI$"
     "Go Back$"
     ""
 }
 
 text Auto_Text_Pokemon_Shop_Fire_Page3
 {
+    "GROWLITHE-HISUI$"
     "HEATMOR$"
     "HOUNDOUR$"
     "IRON MOTH$"
     "LARVESTA$"
-    "LITLEO$"
     "Go Back$"
     ""
 }
 
 text Auto_Text_Pokemon_Shop_Fire_Page4
 {
+    "LITLEO$"
     "LITTEN$"
     "LITWICK$"
     "MAGBY$"
     "NUMEL$"
-    "ORICORIO$"
     "Go Back$"
     ""
 }
 
 text Auto_Text_Pokemon_Shop_Fire_Page5
 {
+    "ORICORIO$"
     "PANSEAR$"
     "PONYTA$"
     "SALANDIT$"
     "SCORBUNNY$"
-    "SIZZLIPEDE$"
     "Go Back$"
     ""
 }
 
 text Auto_Text_Pokemon_Shop_Fire_Page6
 {
+    "SIZZLIPEDE$"
     "SLUGMA$"
     "TEPIG$"
     "TORCHIC$"
     "TORKOAL$"
-    "TURTONATOR$"
     "Go Back$"
     ""
 }
 
 text Auto_Text_Pokemon_Shop_Fire_Page7
 {
+    "TURTONATOR$"
     "VULPIX$"
     "Go Back$"
     ""
@@ -5175,105 +5241,112 @@ text Auto_Text_Pokemon_Shop_Flying_Page1
     "ARCHEN$"
     "ARTICUNO-GALAR$"
     "BOMBIRDIER$"
-    "CHATOT$"
+    "CELESTEELA$"
     "Go Back$"
     ""
 }
 
 text Auto_Text_Pokemon_Shop_Flying_Page2
 {
+    "CHATOT$"
     "COMBEE$"
     "CRAMORANT$"
     "DELIBIRD$"
     "DODUO$"
-    "DRIFLOON$"
     "Go Back$"
     ""
 }
 
 text Auto_Text_Pokemon_Shop_Flying_Page3
 {
+    "DRIFLOON$"
     "DUCKLETT$"
     "EMOLGA$"
     "FARFETCHD$"
     "FLAMIGO$"
-    "FLETCHLING$"
     "Go Back$"
     ""
 }
 
 text Auto_Text_Pokemon_Shop_Flying_Page4
 {
+    "FLETCHLING$"
     "GLIGAR$"
     "HAWLUCHA$"
     "HOOTHOOT$"
     "HOPPIP$"
-    "IRON JUGULIS$"
     "Go Back$"
     ""
 }
 
 text Auto_Text_Pokemon_Shop_Flying_Page5
 {
+    "IRON JUGULIS$"
     "LEDYBA$"
     "MANTYKE$"
     "MINIOR$"
     "MOLTRES-GALAR$"
-    "MURKROW$"
     "Go Back$"
     ""
 }
 
 text Auto_Text_Pokemon_Shop_Flying_Page6
 {
+    "MURKROW$"
     "NATU$"
     "NOIBAT$"
     "ORICORIO$"
     "PIDGEY$"
-    "PIDOVE$"
     "Go Back$"
     ""
 }
 
 text Auto_Text_Pokemon_Shop_Flying_Page7
 {
+    "PIDOVE$"
     "PIKIPEK$"
     "ROOKIDEE$"
     "ROWLET$"
     "RUFFLET$"
-    "SCYTHER$"
     "Go Back$"
     ""
 }
 
 text Auto_Text_Pokemon_Shop_Flying_Page8
 {
+    "SCYTHER$"
     "SIGILYPH$"
     "SKARMORY$"
     "SPEAROW$"
     "SQUAWKABILLY$"
-    "STARLY$"
     "Go Back$"
     ""
 }
 
 text Auto_Text_Pokemon_Shop_Flying_Page9
 {
+    "STARLY$"
     "SWABLU$"
     "TAILLOW$"
     "TROPIUS$"
     "VULLABY$"
-    "WATTREL$"
     "Go Back$"
     ""
 }
 
 text Auto_Text_Pokemon_Shop_Flying_Page10
 {
+    "WATTREL$"
     "WINGULL$"
     "WOOBAT$"
     "YANMA$"
     "ZAPDOS-GALAR$"
+    "Go Back$"
+    ""
+}
+
+text Auto_Text_Pokemon_Shop_Flying_Page11
+{
     "ZUBAT$"
     "Go Back$"
     ""
@@ -5281,61 +5354,62 @@ text Auto_Text_Pokemon_Shop_Flying_Page10
 
 text Auto_Text_Pokemon_Shop_Ghost_Page1
 {
+    "BLACEPHALON$"
     "BRAMBLIN$"
     "CORSOLA-GALAR$"
     "DHELMISE$"
     "DREEPY$"
-    "DRIFLOON$"
     "Go Back$"
     ""
 }
 
 text Auto_Text_Pokemon_Shop_Ghost_Page2
 {
+    "DRIFLOON$"
     "DUSKULL$"
     "FLUTTER MANE$"
     "FRILLISH$"
     "GASTLY$"
-    "GIMMIGHOUL$"
     "Go Back$"
     ""
 }
 
 text Auto_Text_Pokemon_Shop_Ghost_Page3
 {
+    "GIMMIGHOUL$"
     "GOLETT$"
     "GREAVARD$"
     "HONEDGE$"
     "LITWICK$"
-    "MIMIKYU$"
     "Go Back$"
     ""
 }
 
 text Auto_Text_Pokemon_Shop_Ghost_Page4
 {
+    "MIMIKYU$"
     "MISDREAVUS$"
     "PHANTUMP$"
     "POLTCHAGEIST$"
     "PUMPKABOO$"
-    "ROTOM$"
     "Go Back$"
     ""
 }
 
 text Auto_Text_Pokemon_Shop_Ghost_Page5
 {
+    "ROTOM$"
     "SABLEYE$"
     "SANDYGAST$"
     "SHUPPET$"
     "SINISTEA$"
-    "SPIRITOMB$"
     "Go Back$"
     ""
 }
 
 text Auto_Text_Pokemon_Shop_Ghost_Page6
 {
+    "SPIRITOMB$"
     "YAMASK$"
     "YAMASK-GALAR$"
     "ZORUA-HISUI$"
@@ -5393,18 +5467,18 @@ text Auto_Text_Pokemon_Shop_Grass_Page5
     "GROOKEY$"
     "HOPPIP$"
     "IRON LEAVES$"
-    "LILEEP$"
+    "KARTANA$"
     "Go Back$"
     ""
 }
 
 text Auto_Text_Pokemon_Shop_Grass_Page6
 {
+    "LILEEP$"
     "LOTAD$"
     "MARACTUS$"
     "MORELULL$"
     "ODDISH$"
-    "OGERPON$"
     "Go Back$"
     ""
 }
@@ -5466,91 +5540,93 @@ text Auto_Text_Pokemon_Shop_Bug_Page1
     "ANORITH$"
     "BLIPBUG$"
     "BURMY$"
+    "BUZZWOLE$"
     "CATERPIE$"
-    "COMBEE$"
     "Go Back$"
     ""
 }
 
 text Auto_Text_Pokemon_Shop_Bug_Page2
 {
+    "COMBEE$"
     "CUTIEFLY$"
     "DEWPIDER$"
     "DURANT$"
     "DWEBBLE$"
-    "GRUBBIN$"
     "Go Back$"
     ""
 }
 
 text Auto_Text_Pokemon_Shop_Bug_Page3
 {
+    "GRUBBIN$"
     "HERACROSS$"
     "ILLUMISE$"
     "JOLTIK$"
     "KARRABLAST$"
-    "KRICKETOT$"
     "Go Back$"
     ""
 }
 
 text Auto_Text_Pokemon_Shop_Bug_Page4
 {
+    "KRICKETOT$"
     "LARVESTA$"
     "LEDYBA$"
     "NINCADA$"
     "NYMBLE$"
-    "PARAS$"
     "Go Back$"
     ""
 }
 
 text Auto_Text_Pokemon_Shop_Bug_Page5
 {
+    "PARAS$"
+    "PHEROMOSA$"
     "PINECO$"
     "PINSIR$"
     "RELLOR$"
-    "SCATTERBUG$"
-    "SCYTHER$"
     "Go Back$"
     ""
 }
 
 text Auto_Text_Pokemon_Shop_Bug_Page6
 {
+    "SCATTERBUG$"
+    "SCYTHER$"
     "SEWADDLE$"
     "SHELMET$"
     "SHUCKLE$"
-    "SIZZLIPEDE$"
-    "SKORUPI$"
     "Go Back$"
     ""
 }
 
 text Auto_Text_Pokemon_Shop_Bug_Page7
 {
+    "SIZZLIPEDE$"
+    "SKORUPI$"
     "SLITHER WING$"
     "SNOM$"
     "SPINARAK$"
-    "SURSKIT$"
-    "TAROUNTULA$"
     "Go Back$"
     ""
 }
 
 text Auto_Text_Pokemon_Shop_Bug_Page8
 {
+    "SURSKIT$"
+    "TAROUNTULA$"
     "VENIPEDE$"
     "VENONAT$"
     "VOLBEAT$"
-    "WEEDLE$"
-    "WIMPOD$"
     "Go Back$"
     ""
 }
 
 text Auto_Text_Pokemon_Shop_Bug_Page9
 {
+    "WEEDLE$"
+    "WIMPOD$"
     "WURMPLE$"
     "YANMA$"
     "Go Back$"
@@ -5571,60 +5647,61 @@ text Auto_Text_Pokemon_Shop_Dark_Page1
 text Auto_Text_Pokemon_Shop_Dark_Page2
 {
     "GRIMER-ALOLA$"
+    "GUZZLORD$"
     "HOUNDOUR$"
     "IMPIDIMP$"
     "INKAY$"
-    "IRON JUGULIS$"
     "Go Back$"
     ""
 }
 
 text Auto_Text_Pokemon_Shop_Dark_Page3
 {
+    "IRON JUGULIS$"
     "MASCHIFF$"
     "MEOWTH-ALOLA$"
     "MOLTRES-GALAR$"
     "MORPEKO$"
-    "MURKROW$"
     "Go Back$"
     ""
 }
 
 text Auto_Text_Pokemon_Shop_Dark_Page4
 {
+    "MURKROW$"
     "NICKIT$"
     "PAWNIARD$"
     "POOCHYENA$"
     "PURRLOIN$"
-    "QWILFISH-HISUI$"
     "Go Back$"
     ""
 }
 
 text Auto_Text_Pokemon_Shop_Dark_Page5
 {
+    "QWILFISH-HISUI$"
     "RATTATA-ALOLA$"
     "ROARING MOON$"
     "SABLEYE$"
     "SANDILE$"
-    "SCRAGGY$"
     "Go Back$"
     ""
 }
 
 text Auto_Text_Pokemon_Shop_Dark_Page6
 {
+    "SCRAGGY$"
     "SNEASEL$"
     "SPIRITOMB$"
     "STUNKY$"
     "VULLABY$"
-    "ZIGZAGOON-GALAR$"
     "Go Back$"
     ""
 }
 
 text Auto_Text_Pokemon_Shop_Dark_Page7
 {
+    "ZIGZAGOON-GALAR$"
     "ZORUA$"
     "Go Back$"
     ""
@@ -5666,16 +5743,17 @@ text Auto_Text_Pokemon_Shop_Dragon_Page3
 text Auto_Text_Pokemon_Shop_Dragon_Page4
 {
     "GOUGING FIRE$"
+    "GUZZLORD$"
     "JANGMO-O$"
     "NOIBAT$"
     "RAGING BOLT$"
-    "ROARING MOON$"
     "Go Back$"
     ""
 }
 
 text Auto_Text_Pokemon_Shop_Dragon_Page5
 {
+    "ROARING MOON$"
     "TATSUGIRI$"
     "TURTONATOR$"
     "TYRUNT$"
@@ -5756,6 +5834,13 @@ text Auto_Text_Pokemon_Shop_Electric_Page7
     "VOLTORB$"
     "VOLTORB-HISUI$"
     "WATTREL$"
+    "XURKITREE$"
+    "Go Back$"
+    ""
+}
+
+text Auto_Text_Pokemon_Shop_Electric_Page8
+{
     "YAMPER$"
     "Go Back$"
     ""
@@ -5776,49 +5861,48 @@ text Auto_Text_Pokemon_Shop_Fairy_Page2
 {
     "CUTIEFLY$"
     "DEDENNE$"
-    "FEZANDIPITI$"
     "FIDOUGH$"
     "FLABEBE$"
+    "FLUTTER MANE$"
     "Go Back$"
     ""
 }
 
 text Auto_Text_Pokemon_Shop_Fairy_Page3
 {
-    "FLUTTER MANE$"
     "IGGLYBUFF$"
     "IMPIDIMP$"
     "IRON VALIANT$"
     "KLEFKI$"
+    "MAWILE$"
     "Go Back$"
     ""
 }
 
 text Auto_Text_Pokemon_Shop_Fairy_Page4
 {
-    "MAWILE$"
     "MILCERY$"
     "MIME JR.$"
     "MIMIKYU$"
     "MORELULL$"
+    "RALTS$"
     "Go Back$"
     ""
 }
 
 text Auto_Text_Pokemon_Shop_Fairy_Page5
 {
-    "RALTS$"
     "SCREAM TAIL$"
     "SNUBBULL$"
     "SPRITZEE$"
     "SWIRLIX$"
+    "TINKATINK$"
     "Go Back$"
     ""
 }
 
 text Auto_Text_Pokemon_Shop_Fairy_Page6
 {
-    "TINKATINK$"
     "TOGEPI$"
     "Go Back$"
     ""

@@ -15,6 +15,10 @@
         "action": "givemon(SPECIES_BURMY,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
       },
       {
+        "name": "Buzzwole",
+        "action": "givemon(SPECIES_BUZZWOLE,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
+      },
+      {
         "name": "Caterpie",
         "action": "givemon(SPECIES_CATERPIE,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
       },
@@ -81,6 +85,10 @@
       {
         "name": "Paras",
         "action": "givemon(SPECIES_PARAS,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
+      },
+      {
+        "name": "Pheromosa",
+        "action": "givemon(SPECIES_PHEROMOSA,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
       },
       {
         "name": "Pineco",
@@ -198,6 +206,10 @@
       {
         "name": "Grimer-Alola",
         "action": "givemon(SPECIES_GRIMER_ALOLA,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
+      },
+      {
+        "name": "Guzzlord",
+        "action": "givemon(SPECIES_GUZZLORD,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
       },
       {
         "name": "Houndour",
@@ -367,6 +379,10 @@
       {
         "name": "Gouging Fire",
         "action": "givemon(SPECIES_GOUGING_FIRE,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
+      },
+      {
+        "name": "Guzzlord",
+        "action": "givemon(SPECIES_GUZZLORD,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
       },
       {
         "name": "Jangmo-o",
@@ -542,6 +558,10 @@
         "action": "givemon(SPECIES_WATTREL,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
       },
       {
+        "name": "Xurkitree",
+        "action": "givemon(SPECIES_XURKITREE,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
+      },
+      {
         "name": "Yamper",
         "action": "givemon(SPECIES_YAMPER,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
       }
@@ -577,10 +597,6 @@
       {
         "name": "Dedenne",
         "action": "givemon(SPECIES_DEDENNE,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
-      },
-      {
-        "name": "Fezandipiti",
-        "action": "givemon(SPECIES_FEZANDIPITI,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
       },
       {
         "name": "Fidough",
@@ -664,6 +680,10 @@
     "name": "Fighting",
     "action": [
       {
+        "name": "Buzzwole",
+        "action": "givemon(SPECIES_BUZZWOLE,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
+      },
+      {
         "name": "Clobbopus",
         "action": "givemon(SPECIES_CLOBBOPUS,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
       },
@@ -728,16 +748,16 @@
         "action": "givemon(SPECIES_MIENFOO,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
       },
       {
-        "name": "Okidogi",
-        "action": "givemon(SPECIES_OKIDOGI,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
-      },
-      {
         "name": "Pancham",
         "action": "givemon(SPECIES_PANCHAM,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
       },
       {
         "name": "Passimian",
         "action": "givemon(SPECIES_PASSIMIAN,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
+      },
+      {
+        "name": "Pheromosa",
+        "action": "givemon(SPECIES_PHEROMOSA,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
       },
       {
         "name": "Riolu",
@@ -784,6 +804,10 @@
   {
     "name": "Fire",
     "action": [
+      {
+        "name": "Blacephalon",
+        "action": "givemon(SPECIES_BLACEPHALON,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
+      },
       {
         "name": "Charcadet",
         "action": "givemon(SPECIES_CHARCADET,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
@@ -928,6 +952,10 @@
       {
         "name": "Bombirdier",
         "action": "givemon(SPECIES_BOMBIRDIER,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
+      },
+      {
+        "name": "Celesteela",
+        "action": "givemon(SPECIES_CELESTEELA,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
       },
       {
         "name": "Chatot",
@@ -1118,6 +1146,10 @@
   {
     "name": "Ghost",
     "action": [
+      {
+        "name": "Blacephalon",
+        "action": "givemon(SPECIES_BLACEPHALON,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
+      },
       {
         "name": "Bramblin",
         "action": "givemon(SPECIES_BRAMBLIN,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
@@ -1332,6 +1364,10 @@
         "action": "givemon(SPECIES_IRON_LEAVES,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
       },
       {
+        "name": "Kartana",
+        "action": "givemon(SPECIES_KARTANA,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
+      },
+      {
         "name": "Lileep",
         "action": "givemon(SPECIES_LILEEP,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
       },
@@ -1350,10 +1386,6 @@
       {
         "name": "Oddish",
         "action": "givemon(SPECIES_ODDISH,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
-      },
-      {
-        "name": "Ogerpon",
-        "action": "givemon(SPECIES_OGERPON,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
       },
       {
         "name": "Pansage",
@@ -1992,10 +2024,6 @@
         "action": "givemon(SPECIES_EKANS,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
       },
       {
-        "name": "Fezandipiti",
-        "action": "givemon(SPECIES_FEZANDIPITI,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
-      },
-      {
         "name": "Foongus",
         "action": "givemon(SPECIES_FOONGUS,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
       },
@@ -2032,10 +2060,6 @@
         "action": "givemon(SPECIES_MAREANIE,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
       },
       {
-        "name": "Munkidori",
-        "action": "givemon(SPECIES_MUNKIDORI,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
-      },
-      {
         "name": "Nidoran-F",
         "action": "givemon(SPECIES_NIDORAN_F,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
       },
@@ -2044,12 +2068,16 @@
         "action": "givemon(SPECIES_NIDORAN_M,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
       },
       {
+        "name": "Nihilego",
+        "action": "givemon(SPECIES_NIHILEGO,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
+      },
+      {
         "name": "Oddish",
         "action": "givemon(SPECIES_ODDISH,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
       },
       {
-        "name": "Okidogi",
-        "action": "givemon(SPECIES_OKIDOGI,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
+        "name": "Poipole",
+        "action": "givemon(SPECIES_POIPOLE,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
       },
       {
         "name": "Qwilfish",
@@ -2225,10 +2253,6 @@
         "action": "givemon(SPECIES_MIME_JR,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
       },
       {
-        "name": "Munkidori",
-        "action": "givemon(SPECIES_MUNKIDORI,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
-      },
-      {
         "name": "Munna",
         "action": "givemon(SPECIES_MUNNA,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
       },
@@ -2398,6 +2422,10 @@
         "action": "givemon(SPECIES_NACLI,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
       },
       {
+        "name": "Nihilego",
+        "action": "givemon(SPECIES_NIHILEGO,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
+      },
+      {
         "name": "Nosepass",
         "action": "givemon(SPECIES_NOSEPASS,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
       },
@@ -2442,6 +2470,10 @@
         "action": "givemon(SPECIES_SOLROCK,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
       },
       {
+        "name": "Stakataka",
+        "action": "givemon(SPECIES_STAKATAKA,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
+      },
+      {
         "name": "Stonjourner",
         "action": "givemon(SPECIES_STONJOURNER,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
       },
@@ -2469,6 +2501,10 @@
       {
         "name": "Bronzor",
         "action": "givemon(SPECIES_BRONZOR,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
+      },
+      {
+        "name": "Celesteela",
+        "action": "givemon(SPECIES_CELESTEELA,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
       },
       {
         "name": "Cufant",
@@ -2501,6 +2537,10 @@
       {
         "name": "Iron Treads",
         "action": "givemon(SPECIES_IRON_TREADS,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
+      },
+      {
+        "name": "Kartana",
+        "action": "givemon(SPECIES_KARTANA,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
       },
       {
         "name": "Klefki",
@@ -2541,6 +2581,10 @@
       {
         "name": "Skarmory",
         "action": "givemon(SPECIES_SKARMORY,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
+      },
+      {
+        "name": "Stakataka",
+        "action": "givemon(SPECIES_STAKATAKA,1);goto(Common_EventScript_Pokemon_Shop_CheckPurchase)"
       },
       {
         "name": "Stunfisk-Galar",
