@@ -100,7 +100,7 @@ if __name__ == "__main__":
                         break
 
             # Get the species constant
-            constant = common.get_species_constant(name)
+            constant = common.convert_species_name_to_const(name)
 
             # Generate givemon string
             givemon_str = f"givemon({constant},{level})"

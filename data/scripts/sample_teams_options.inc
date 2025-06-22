@@ -127,50 +127,11 @@ Auto_EventScript_Sample_Teams_Doubles_Page1_6:
 
 Auto_EventScript_Sample_Teams_Doubles_Page1_7:
 # 61 "data/scripts/sample_teams_options.pory"
-	goto Auto_EventScript_Sample_Teams_Doubles_Page2
+	goto Auto_EventScript_Sample_Teams_Doubles_Page1
 	return
 
 Auto_EventScript_Sample_Teams_Doubles_Page1_8:
 # 63 "data/scripts/sample_teams_options.pory"
-	goto Auto_EventScript_Sample_Teams_Doubles_Page2
-	return
-
-
-Auto_EventScript_Sample_Teams_Doubles_Page2::
-# 71 "data/scripts/sample_teams_options.pory"
-	multichoice2 0, 0, Auto_Text_Sample_Teams_Doubles_Page2
-# 72 "data/scripts/sample_teams_options.pory"
-	switch VAR_RESULT
-# 74 "data/scripts/sample_teams_options.pory"
-	case 0, Auto_EventScript_Sample_Teams_Doubles_Page2_2
-# 80 "data/scripts/sample_teams_options.pory"
-	case MULTI_L_PRESSED, Auto_EventScript_Sample_Teams_Doubles_Page2_3
-# 82 "data/scripts/sample_teams_options.pory"
-	case MULTI_R_PRESSED, Auto_EventScript_Sample_Teams_Doubles_Page2_4
-# 85 "data/scripts/sample_teams_options.pory"
-	goto Auto_EventScript_Sample_Teams_Page1
-	return
-
-Auto_EventScript_Sample_Teams_Doubles_Page2_2:
-# 75 "data/scripts/sample_teams_options.pory"
-	givemon SPECIES_GENGAR, 65, ITEM_GENGARITE, ITEM_SPORT_BALL, NATURE_TIMID, 0, 1, 252, 0, 68, 180, 4, 4, 31, 0, 31, 31, 31, 31, MOVE_PROTECT, MOVE_PERISH_SONG, MOVE_SHADOW_BALL, MOVE_DISABLE, FALSE, FALSE, TYPE_WATER
-# 76 "data/scripts/sample_teams_options.pory"
-	givemon SPECIES_INCINEROAR, 65, ITEM_SAFETY_GOGGLES, ITEM_SPORT_BALL, NATURE_ADAMANT, 1, 0, 244, 36, 4, 4, 0, 220, 31, 31, 31, 31, 31, 31, MOVE_PROTECT, MOVE_PARTING_SHOT, MOVE_KNOCK_OFF, MOVE_FAKE_OUT, FALSE, FALSE, TYPE_GHOST
-# 77 "data/scripts/sample_teams_options.pory"
-	givemon SPECIES_POLITOED, 65, ITEM_LEFTOVERS, ITEM_SPORT_BALL, NATURE_CALM, 2, 0, 220, 0, 196, 12, 4, 76, 31, 0, 31, 31, 31, 31, MOVE_PROTECT, MOVE_PERISH_SONG, MOVE_ENCORE, MOVE_SCALD, FALSE, FALSE, TYPE_GRASS
-# 78 "data/scripts/sample_teams_options.pory"
-	givemon SPECIES_GOTHITELLE, 50, ITEM_SITRUS_BERRY, ITEM_SPORT_BALL, NATURE_CALM, 2, 1, 244, 0, 180, 4, 4, 76, 31, 0, 31, 31, 31, 31, MOVE_PROTECT, MOVE_TRICK_ROOM, MOVE_PSYCHIC, MOVE_FAKE_OUT, FALSE, FALSE, TYPE_WATER
-# 79 "data/scripts/sample_teams_options.pory"
-	goto Common_EventScript_Sample_Team_CheckPurchase
-	return
-
-Auto_EventScript_Sample_Teams_Doubles_Page2_3:
-# 81 "data/scripts/sample_teams_options.pory"
-	goto Auto_EventScript_Sample_Teams_Doubles_Page1
-	return
-
-Auto_EventScript_Sample_Teams_Doubles_Page2_4:
-# 83 "data/scripts/sample_teams_options.pory"
 	goto Auto_EventScript_Sample_Teams_Doubles_Page1
 	return
 
@@ -180,23 +141,17 @@ Auto_EventScript_Sample_Teams_Controls_Text_0:
 	.string "L: Previous Page                    R: Next Page\nA: Confirm                               B: Go Back$"
 
 Auto_Text_Sample_Teams_Page1::
-# 89 "data/scripts/sample_teams_options.pory"
+# 69 "data/scripts/sample_teams_options.pory"
 	.string "DOUBLES$"
 	.string "Go Back$"
 	.string "$"
 
 Auto_Text_Sample_Teams_Doubles_Page1::
-# 96 "data/scripts/sample_teams_options.pory"
-	.string "KOMMO CONTROL$"
+# 76 "data/scripts/sample_teams_options.pory"
+	.string "KOMMOIUM Z$"
 	.string "MEGA CHARIZARD Y$"
 	.string "MEGA GARDEVOIR$"
 	.string "MEGA METAGROSS$"
 	.string "MEGA SALAMENCE$"
-	.string "Go Back$"
-	.string "$"
-
-Auto_Text_Sample_Teams_Doubles_Page2::
-# 107 "data/scripts/sample_teams_options.pory"
-	.string "PERISH TRAP$"
 	.string "Go Back$"
 	.string "$"

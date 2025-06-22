@@ -40,7 +40,7 @@ def get_givemon_str(pokemon):
 
     # Get species name / id
     species = pokemon["species"]
-    species_id = common.get_species_id(species)
+    species_id = common.convert_species_name_to_species_id(species)
 
     species_data = None
     if species_id in POKEMON:
@@ -56,7 +56,7 @@ def get_givemon_str(pokemon):
     other = pokemon["other"]
 
     # Generate species constant
-    species_constant = common.get_species_constant(species)
+    species_constant = common.convert_species_name_to_const(species)
 
     # If species is 'Mega'
     if species_constant.endswith("_MEGA") or species_constant in data.MULTI_FORM_MEGAS:
@@ -82,19 +82,19 @@ def get_givemon_str(pokemon):
 
     # Held Item
     if "item" in pokemon:
-        args.append(f"ITEM_{common.get_constant(pokemon['item'])}")
+        args.append(f"ITEM_{common.convert_string_to_const(pokemon['item'])}")
     else:
         args.append(f"ITEM_NONE")
 
     # Pokeball
     if "ball" in other:
-        args.append(common.get_constant(other["ball"]))
+        args.append(common.convert_string_to_const(other["ball"]))
     else: # No ball selected
         args.append(DEFAULT_POKEBALL)
 
     # Nature
     if "nature" in pokemon and pokemon["nature"] != "":
-        args.append(f"NATURE_{common.get_constant(pokemon['nature'])}")
+        args.append(f"NATURE_{common.convert_string_to_const(pokemon['nature'])}")
     else:
         args.append(DEFAULT_NATURE)
 
@@ -156,7 +156,7 @@ def get_givemon_str(pokemon):
         if "hidden power" in move:  # Hidden Power Variant
             args.append("MOVE_HIDDEN_POWER")
         else:
-            args.append(f"MOVE_{common.get_constant(move)}")
+            args.append(f"MOVE_{common.convert_string_to_const(move)}")
         move_count += 1
 
     # Pad extra moves until 4 slots

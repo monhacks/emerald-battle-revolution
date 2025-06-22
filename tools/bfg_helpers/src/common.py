@@ -9,6 +9,12 @@ CONFIG_FILE = "./include/config/battle_frontier_generator.h"
 # Species filename, for retrieving species constants
 SPECIES_FILE = "./include/constants/species.h"
 
+# Moves to ignore, effectively a banlist for moves
+# used for both move_ratings.py and move_options.py
+MOVE_EXCLUSIONS = [
+
+]
+
 def get_set_spread(set):
 
     # Spread string
@@ -91,16 +97,13 @@ def get_species_constants():
     # Return species table
     return species
 
-
 def remove_accented_chars(text):
     normalized_text = unicodedata.normalize('NFKD', text)
     ascii_text = normalized_text.encode('ascii', 'ignore').decode('utf-8')
     return ascii_text
 
-
 def get_timestamp(time=datetime.now()):
     return time.strftime("%d-%m-%y %H:%M:%S")
-
 
 def pory_format(string, delim="_"):
 
@@ -130,13 +133,14 @@ def pory_format(string, delim="_"):
     # Return rejoined string
     return delim.join(split)
 
-
-def convert_const_to_camel(const):
+def convert_const_to_camel_case(const):
     parts = const.split("_")
     return parts[0].lower() + "".join(word.capitalize() for word in parts[1:])
 
+def convert_const_to_move_id(const):
+    return const.lower().replace("_", "").replace("move", "", 1)
 
-def get_constant(string):
+def convert_string_to_const(string):
 
     # Convert to upper case
     constant = string.upper()
@@ -159,26 +163,28 @@ def get_constant(string):
     # Return as-is
     return constant
 
+def convert_const_to_species_id(const):
+    if const.startswith("SPECIES_"):
+        const = const[len("SPECIES_") :]
+    parts = const.split("_")
+    return "".join(part.capitalize() for part in parts)
 
-def get_species_constant(species_name):
+
+def convert_species_name_to_const(species_name):
 
     # Convert to generic constant
-    constant = get_constant(species_name)
+    constant = convert_string_to_const(species_name)
 
     # Update characers / constants
     constant = constant.replace("É", "E")
 
-    # Return the constant string
     return f"SPECIES_{constant}"
 
 
-def get_species_id(species_name):
+def convert_species_name_to_species_id(species_name):
 
     # Convert species name to lower case
     constant = species_name.lower()
-
-    # Remove accented characters
-    constant = remove_accented_chars(constant)
 
     # Update formatting
     return (
