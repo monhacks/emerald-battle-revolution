@@ -1,11 +1,18 @@
-echo "Updating move ratings ..."
+#!/bin/bash
 
-python3 tools/bfg_helpers/move_ratings.py
+# Get the directory of the current script
+SCRIPT_DIR="$(dirname "$(realpath "$0")")"
 
-echo "Updating trainer mons ..."
+echo "Running ebr build scripts ... "
 
-python3 tools/bfg_helpers/trainer_mons.py
+# Both BFG and EBR-Only Scripts
+python3 "$SCRIPT_DIR/tools/bfg_helpers/move_ratings.py"
+python3 "$SCRIPT_DIR/tools/bfg_helpers/trainer_mons.py"
+python3 "$SCRIPT_DIR/tools/bfg_helpers/npc_builder.py"
+python3 "$SCRIPT_DIR/tools/bfg_helpers/shop_builder.py"
+python3 "$SCRIPT_DIR/tools/bfg_helpers/sample_builder.py"
+python3 "$SCRIPT_DIR/tools/bfg_helpers/multi_select.py"
 
-echo "Building rom ..."
+echo "Running makefile ... "
 
 make
