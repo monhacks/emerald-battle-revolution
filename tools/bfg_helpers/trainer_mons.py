@@ -5,31 +5,22 @@ import src.showdown as showdown
 import src.common as common
 
 # Built-in libs
-import os, re, json
+import os, json
 
+# Output Data Directory
 OUTPUT_DIRECTORY = "src/data/battle_frontier"
 OUTPUT_FILENAME = "battle_frontier_generator_trainer_class_mons.h"
 
-# Set to true if you want ingame frontier trainer mon data
-DUMP_TRAINER_DATA = False
+# Ingame frontier trainer mon data
 TRAINER_FILENAME = "battle_frontier_trainer_mons.h"
 TRAINER_OUTFILE = "ingame_trainer_mons_types.json"
 
-# Set to true if you want to dump mon coverage data
-DUMP_MON_COVERAGE = False
+# Dump mon coverage data
 DATA_DIRECTORY = "tools/bfg_helpers"
 DATA_FILENAME = "trainer_mons_coverage.json"
 
 # Ignored species
 ignore_species = ["cosmog", "cosmoem", "meltan"]
-
-# Include Box Legends/Mythicals in Restricted List
-# INCLUDE_BOX_LEGEND = True
-INCLUDE_MYTHICAL = True
-
-# Include special cases
-# i.e. protosynthesis mons for ruin maniacs
-SPECIAL_CASES = True
 
 # Custom Restricteds
 restricteds = ["deoxys", "arceus"]
@@ -270,7 +261,7 @@ trainer_class_types = {
         "TRAINER_CLASS_COOLTRAINER",
         "TRAINER_CLASS_PKMN_RANGER",
         "TRAINER_CLASS_DRAGON_TAMER",
-        "TRAINER_CLASS_PKMN_BREEDER"
+        "TRAINER_CLASS_PKMN_BREEDER",
     ],
     "Electric": [
         "TRAINER_CLASS_YOUNGSTER",
@@ -290,7 +281,7 @@ trainer_class_types = {
         "TRAINER_CLASS_COLLECTOR",
         "TRAINER_CLASS_BEAUTY",
         "TRAINER_CLASS_COOLTRAINER",
-        "TRAINER_CLASS_PKMN_BREEDER"
+        "TRAINER_CLASS_PKMN_BREEDER",
     ],
     "Flying": [
         "TRAINER_CLASS_YOUNGSTER",
@@ -339,7 +330,7 @@ trainer_class_types = {
         "TRAINER_CLASS_COOLTRAINER",
         "TRAINER_CLASS_PKMN_RANGER",
         "TRAINER_CLASS_POKEFAN",
-        "TRAINER_CLASS_PKMN_BREEDER"
+        "TRAINER_CLASS_PKMN_BREEDER",
     ],
     "Poison": [
         "TRAINER_CLASS_YOUNGSTER",
@@ -479,8 +470,8 @@ trainer_class_types = {
         "TRAINER_CLASS_CAMPER",
         "TRAINER_CLASS_PICNICKER",
         "TRAINER_CLASS_TUBER_M",
-        "TRAINER_CLASS_TUBER_F",     
-        "TRAINER_CLASS_POKEFAN",   
+        "TRAINER_CLASS_TUBER_F",
+        "TRAINER_CLASS_POKEFAN",
         "TRAINER_CLASS_BUG_CATCHER",
         "TRAINER_CLASS_NINJA_BOY",
         "TRAINER_CLASS_RUIN_MANIAC",
@@ -492,8 +483,8 @@ trainer_class_types = {
         "TRAINER_CLASS_BATTLE_GIRL",
         "TRAINER_CLASS_EXPERT",
         "TRAINER_CLASS_PSYCHIC",
-        "TRAINER_CLASS_HEX_MANIAC" ,
-        "TRAINER_CLASS_POKEMANIAC" ,
+        "TRAINER_CLASS_HEX_MANIAC",
+        "TRAINER_CLASS_POKEMANIAC",
         "TRAINER_CLASS_GENTLEMAN",
         "TRAINER_CLASS_COLLECTOR",
         "TRAINER_CLASS_BEAUTY",
@@ -537,7 +528,7 @@ trainer_class_types = {
         "TRAINER_CLASS_GUITARIST",
         "TRAINER_CLASS_TRIATHLETE",
         "TRAINER_CLASS_BLACK_BELT",
-        "TRAINER_CLASS_BATTLE_GIRL", # Manually Added
+        "TRAINER_CLASS_BATTLE_GIRL",  # Manually Added
         "TRAINER_CLASS_EXPERT",
         "TRAINER_CLASS_PSYCHIC",
         "TRAINER_CLASS_HEX_MANIAC",
@@ -561,7 +552,7 @@ trainer_class_types = {
         "TRAINER_CLASS_POKEFAN",
         "TRAINER_CLASS_NINJA_BOY",
         "TRAINER_CLASS_AROMA_LADY",
-        "TRAINER_CLASS_PARASOL_LADY", # Manually added
+        "TRAINER_CLASS_PARASOL_LADY",  # Manually added
         "TRAINER_CLASS_GUITARIST",
         "TRAINER_CLASS_BIRD_KEEPER",
         "TRAINER_CLASS_KINDLER",
@@ -595,6 +586,7 @@ trainer_class_types = {
     ],
 }
 
+
 def get_frontier_mon_types(POKEMON):
 
     # path to the battle_frontier_trainer_mons.h file
@@ -613,23 +605,23 @@ def get_frontier_mon_types(POKEMON):
         for line in lines:
             content = line.strip()
             if content.startswith("#define "):
-                trainer_class = content[22:][:-2].strip().rsplit('_', 1)[0]
+                trainer_class = content[22:][:-2].strip().rsplit("_", 1)[0]
                 if trainer_class not in trainer_classes:
                     trainer_classes[trainer_class] = []
             if content.startswith("FRONTIER_MON_"):
-                mon = content[13:][:-1].strip()[:-1].rsplit('_', 1)[0]
+                mon = content[13:][:-1].strip()[:-1].rsplit("_", 1)[0]
                 id = common.convert_const_to_species_id(mon).lower()
 
                 try:
                     species = POKEMON[id]
                     new_type = True
 
-                    for type in species['types']:
+                    for type in species["types"]:
                         if type in trainer_classes[trainer_class]:
                             new_type = False
 
                     if new_type == True:
-                        trainer_classes[trainer_class] += species['types']
+                        trainer_classes[trainer_class] += species["types"]
                 except Exception as e:
                     print(f"Failed for species '{mon}': {str(e)}")
 
@@ -644,21 +636,7 @@ def get_frontier_mon_types(POKEMON):
     # Two different indexing methods
     return types, trainer_classes
 
-# Main Process
-if __name__ == "__main__":
-
-    # Before all else, abort if the config is off
-    with open(common.CONFIG_FILE, "r") as file:
-        rating_config = re.findall(
-            "#define BFG_GENERATE_TRAINER_MONS *([^ ]*)", file.read()
-        )
-        if len(rating_config) != 1:
-            quit()
-        if rating_config[0] != "TRUE":
-            quit()
-
-    # Get showdown data files
-    MOVES, POKEMON = showdown.get_showdown_data()
+def get_pokemon_ids(POKEMON):
 
     # List of valid Pokemon
     # Excludes alt. Formes, etc.
@@ -686,123 +664,10 @@ if __name__ == "__main__":
         # Add species id to list
         pokemon.append(speciesId)
 
-    # Class species table
-    classes = {}
-    classes_mega = {}
-    classes_restricted = {}
+    # Pokemon keys
+    return pokemon
 
-    classes_lookup = {}
-
-    # Initialise lists
-    for trainer_class in trainer_classes:
-        classes[trainer_class] = []
-        classes_mega[trainer_class] = []
-        classes_restricted[trainer_class] = []
-
-        classes_lookup[trainer_class] = common.convert_const_to_camel_case(
-            f"G_SPECIES_LIST_{trainer_class}"
-        )
-
-    # Lookup table of species which have appeared
-    # in at least one facility class species list
-    coverage = {}
-
-    def add_species(speciesId, trainer_class):
-        if speciesId in megas:
-            classes_mega[trainer_class].append(speciesId)
-        if (
-            speciesId in restricteds
-            or common.is_tagged(species, "Restricted Legendary")
-            or (INCLUDE_MYTHICAL and common.is_tagged(species, "Mythical"))
-        ):
-            classes_restricted[trainer_class].append(speciesId)
-        else:
-            classes[trainer_class].append(speciesId)
-        coverage[speciesId] += 1
-
-    # Loop over species
-    for speciesId in pokemon:
-        
-        coverage[speciesId] = 0
-        species = POKEMON[speciesId]
-
-        # Default Trainer Class (Contains All Species)
-        add_species(speciesId, "TRAINER_CLASS_DEFAULT")
-
-        # Process classes based on types
-        for type in species["types"]:
-            for trainer_class in trainer_class_types[type]:
-                add_species(speciesId, trainer_class)
-
-        # Special cases for specific trainer classes
-        # TODO: Expand this for random trainers only having 
-        # pseudo-legends, eeveelutions, paradox mons, etc. :)
-        if SPECIAL_CASES == True:
-
-            # Sub-Legendaries
-            if common.is_tagged(speciesId, "Sub-Legendary"):
-                for trainer_class in [
-                    "TRAINER_CLASS_EXPERT",
-                    "TRAINER_CLASS_COOLTRAINER",
-                    # "TRAINER_CLASS_COOLTRAINER_2",
-                    "TRAINER_CLASS_GENTLEMAN",
-                ]:
-                    add_species(speciesId, trainer_class)
-
-            # Regirock / Regice / Registeel
-            if speciesId in regis:
-                for trainer_class in [
-                    "TRAINER_CLASS_RUIN_MANIAC",
-                    "TRAINER_CLASS_EXPERT",
-                    "TRAINER_CLASS_PSYCHIC",
-                ]:
-                    add_species(speciesId, trainer_class)
-
-            # Eeveelutions
-            if speciesId in eevees:
-                for trainer_class in [
-                    "TRAINER_CLASS_LADY",
-                    "TRAINER_CLASS_RICH_BOY",
-                    "TRAINER_CLASS_BEAUTY",
-                ]:
-                    add_species(speciesId, trainer_class)
-
-            # Levitating
-            if "Levitate" in species["abilities"].values():
-                for trainer_class in [
-                    "TRAINER_CLASS_EXPERT",
-                    "TRAINER_CLASS_GENTLEMAN",
-                    "TRAINER_CLASS_COOLTRAINER",
-                    "TRAINER_CLASS_RUIN_MANIAC",
-                    "TRAINER_CLASS_EXPERT",
-                    "TRAINER_CLASS_PSYCHIC",
-                    "TRAINER_CLASS_BIRD_KEEPER",
-                ]:
-                    add_species(speciesId, trainer_class)
-
-            # Hisuian Formes
-            if common.is_forme(species, "Hisui"):
-                for trainer_class in [
-                    "TRAINER_CLASS_RUIN_MANIAC",
-                ]:
-                    add_species(speciesId, trainer_class)
-
-            # Paradox Pokemon
-            if common.is_tagged(species, "Paradox"):
-                for trainer_class in [
-                    "TRAINER_CLASS_EXPERT",
-                    "TRAINER_CLASS_COOLTRAINER",
-                    # "TRAINER_CLASS_COOLTRAINER_2",
-                    "TRAINER_CLASS_RUIN_MANIAC",
-                    "TRAINER_CLASS_GENTLEMAN",
-                ]:
-                    add_species(speciesId, trainer_class)
-
-    # Create output content
-    output = [
-        "// File Auto-Generated By tools/bfg_helpers/trainer_mons.py",
-        "",
-    ]
+def generate_pokemon_data():
 
     # Add Trainer Class Lists
 
@@ -839,7 +704,8 @@ if __name__ == "__main__":
         # Create mega table (#define, contents)
         output.append(f"#define {mega_constant} {len(mega_list)}")
         output.append(
-            f"const u16 {classes_lookup[trainer_class]}Mega[{mega_constant}] = " + "{"
+            f"const u16 {classes_lookup[trainer_class]}Mega[{mega_constant}] = "
+            + "{"
         )
         for speciesId in mega_list:
             species = POKEMON[speciesId]
@@ -867,24 +733,179 @@ if __name__ == "__main__":
             output.append(f"\t{constant},")
         output.append("};\n")
 
-    os.makedirs(OUTPUT_DIRECTORY, exist_ok=True)
-    outpath = os.path.join(OUTPUT_DIRECTORY, OUTPUT_FILENAME)
 
-    with open(outpath, "w+", encoding="utf8") as f:
-        f.write("\n".join(output))
 
-    if DUMP_MON_COVERAGE:
-        os.makedirs(DATA_DIRECTORY, exist_ok=True)
-        datapath = os.path.join(DATA_DIRECTORY, DATA_FILENAME)
 
-        with open(datapath, "w+", encoding="utf8") as f:
-            json.dump(coverage, f, indent=2)
+# Main Process
+if __name__ == "__main__":
 
-    # Generate trainer data
-    if DUMP_TRAINER_DATA:
-        trainer_types = get_frontier_mon_types(POKEMON)
-        trainerpath = os.path.join(DATA_DIRECTORY, TRAINER_OUTFILE)
+    # Get Game Config
+    config = common.get_config()
 
-        with open(trainerpath, "w+", encoding="utf8") as f:
-            json.dump(trainer_types, f, indent=2)
+    # If Trainer Mon Set Generation is Enabled
+    if config["BFG_TM_GENERATE_TRAINER_MONS"] == True:
+
+        # Get showdown data files
+        MOVES, POKEMON = showdown.get_showdown_data()
+
+        # Check if mythicals should be included or not
+        include_mythical = config["BFG_TM_INCLUDE_MYTHICAL"] == True
+
+        # Get all of the pokemon ids
+        pokemon = get_pokemon_ids(POKEMON)
+
+        ### Trainer Classes ###
+
+        # Class species table
+        classes = {}
+        classes_mega = {}
+        classes_restricted = {}
+
+        # Class lookup table
+        classes_lookup = {}
+
+        # Initialise lists
+        for trainer_class in trainer_classes:
+            classes[trainer_class] = []
+            classes_mega[trainer_class] = []
+            classes_restricted[trainer_class] = []
+
+            classes_lookup[trainer_class] = common.convert_const_to_camel_case(
+                f"G_SPECIES_LIST_{trainer_class}"
+            )
+
+        ### Monotype ###
+
+        # Types species table
+        types = {}
+        types_mega = {}
+        types_restricted = {}
+
+        # Monotype lookup table
+        types_lookup = {}
+
+        # Initialise type lists
+        for type in trainer_class_types:
+
+            types[type] = []
+            types_mega[type] = []
+            types_restricted[type] = []
+
+            types_lookup[type] = common.convert_const_to_camel_case(
+                f"G_SPECIES_LIST_{type}"
+            )
+
+        ### Special ###
+
+        # Special species lists
+        special = {
+            "FUTURE_PARADOX": [],
+            "PAST_PARADOX": [],
+            "PSEUDO_LEGEND": [],
+            "EEVEELUTION": [],
+        }
+
+        # Special lookup table
+        special_lookup = {}
+
+        # Initialise type lists
+        for category in special:
+
+            special_lookup[category] = common.convert_const_to_camel_case(
+                f"G_SPECIES_LIST_{category}"
+            )
+
+        # Lookup table of species which have appeared
+        # in at least one facility class species list
+        coverage = {}
+
+        def add_species(speciesId, trainer_class):
+            
+            species = POKEMON[speciesId]
+
+            # If the species is NOT a mythical, or mythicals are excluded
+            if (not ((include_mythical == False) and common.is_tagged(species, "Mythical"))):
+
+                # Mega Evolutions
+                if speciesId in megas:
+                    classes_mega[trainer_class].append(speciesId)
+                    for type in species["types"]:
+                        types_mega[type].append(speciesId)
+
+                
+                # Restricted Pokemon
+                if (speciesId in restricteds or common.is_tagged(species, "Restricted Legendary")):
+                    classes_restricted[trainer_class].append(speciesId)
+                    for type in species["types"]:
+                        types_restricted[type].append(speciesId)
+
+                # Everything else
+                else: 
+                    classes[trainer_class].append(speciesId)
+                    for type in species["types"]:
+                        types[type].append(speciesId)
+
+                # Increment mon coverage
+                coverage[speciesId] += 1
+
+                # Generate special trainer mon lists
+                if config['BFG_TM_SPECIAL_TRAINER_MONS'] == True:
+
+                    # Species is a Pseudo-legendary
+                    if common.is_tagged(species, "Sub-Legendary"):
+                        special["PSEUDO_LEGEND"].append(speciesId)
+                    # Species is a Paradox pokemon
+                    if common.is_tagged(species, "Paradox"):
+                        # Future Paradox
+                        if species["abilities"]["0"] == "Quark Drive":
+                            special["FUTURE_PARADOX"].append(speciesId)
+                        else: # Past Paradox
+                            special["PAST_PARADOX"].append(speciesId)
+                    # Species is an eeveelution
+                    if speciesId in eevees:
+                        special["EEVEELUTION"].append(speciesId)
+                    
+                    # TODO: Add more special classes :)
+
+        # Loop over species
+        for speciesId in pokemon:
+
+            coverage[speciesId] = 0
+            species = POKEMON[speciesId]
+
+            # Default Trainer Class (Contains All Species)
+            add_species(speciesId, "TRAINER_CLASS_DEFAULT")
+
+            # Process classes based on types
+            for type in species["types"]:
+                for trainer_class in trainer_class_types[type]:
+                    add_species(speciesId, trainer_class)
+
+        # Create output content
+        output = [
+            "// File Auto-Generated By tools/bfg_helpers/trainer_mons.py",
+            "",
+        ]
+
         
+        os.makedirs(OUTPUT_DIRECTORY, exist_ok=True)
+        outpath = os.path.join(OUTPUT_DIRECTORY, OUTPUT_FILENAME)
+
+        with open(outpath, "w+", encoding="utf8") as f:
+            f.write("\n".join(output))
+
+        # Dump Coverage Data
+        if config["BFG_TM_DUMP_COVERAGE_DATA"] == True:
+            os.makedirs(DATA_DIRECTORY, exist_ok=True)
+            datapath = os.path.join(DATA_DIRECTORY, DATA_FILENAME)
+
+            with open(datapath, "w+", encoding="utf8") as f:
+                json.dump(coverage, f, indent=2)
+
+        # Generate Trainer Data
+        if config["BFG_TM_DUMP_TRAINER_DATA"] == True:
+            trainer_types = get_frontier_mon_types(POKEMON)
+            trainerpath = os.path.join(DATA_DIRECTORY, TRAINER_OUTFILE)
+
+            with open(trainerpath, "w+", encoding="utf8") as f:
+                json.dump(trainer_types, f, indent=2)

@@ -18,6 +18,11 @@ def parse_defines(content):
             if clean.startswith('#define'):
                 # Remove the '#define' from the start
                 define = clean.replace("#define ", "")
+
+                # Remove any comments from line
+                define = define.split("//")[0].strip()
+
+                # Split line into parts
                 parts = re.split(RE_DEFINE, define, maxsplit=1)
 
                 # Key only
@@ -33,6 +38,12 @@ def parse_defines(content):
                     if v.isdigit():
                         # Convert
                         v = int(v)
+                    
+                    # Value is boolean
+                    elif v == 'TRUE':
+                        v = True
+                    elif v == 'FALSE':
+                        v = False
 
                     # Add to table
                     data[k] = v

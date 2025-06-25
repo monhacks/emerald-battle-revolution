@@ -1,4 +1,5 @@
 from datetime import datetime
+import src.cparser as cparser
 
 CONFIG_FILE = "./include/config/battle_frontier_generator.h"
 
@@ -7,6 +8,10 @@ CONFIG_FILE = "./include/config/battle_frontier_generator.h"
 MOVE_EXCLUSIONS = [
 
 ]
+
+def get_config():
+    with open(CONFIG_FILE, "r") as f:
+        return cparser.parse_defines(f.readlines())
 
 def get_timestamp(time=datetime.now()):
     return time.strftime("%d-%m-%y %H:%M:%S")

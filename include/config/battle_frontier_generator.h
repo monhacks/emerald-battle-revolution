@@ -25,9 +25,34 @@
 
 #define BFG_FLAG_FRONTIER_FIXED_IV 0 // Flag to enable or disable fixed IVs
 
-// Worker Python Scripts
+// Move Ratings
 #define BFG_GENERATE_MOVE_RATINGS   TRUE    // Generate data/battle_frontier/battle_frontier_generator_move_ratings.h
-#define BFG_GENERATE_TRAINER_MONS   TRUE    // Generate battle_frontier_generator_trainer_class_mons.h
+
+// Trainer Mons
+#define BFG_TM_GENERATE_TRAINER_MONS    TRUE // Generate battle_frontier_generator_trainer_class_mons.h
+
+#define BFG_TM_INCLUDE_MYTHICAL         TRUE // Allow mythical pokemon to be selected
+
+#define BFG_TM_SPECIAL_TRAINER_MONS     TRUE   // Special trainer mon sets (i.e. Eeveelutions, etc.)
+#define BFG_TM_CHANCE_FUTURE_PARADOX    8       // Chance for Future Paradox team to be selected by Collector trainers
+#define BFG_TM_CHANCE_PAST_PARADOX      8       // Chance for Past Paradox team to be selected by Ruin Maniac trainers
+#define BFG_TM_CHANCE_PSEUDO_LEGEND     8       // Chance for Pseudo-legend team to be selected by Expert trainers
+#define BFG_TM_CHANCE_EEVEELUTION       8       // Chance for Eeveelution team to be selected by Beauty trainers
+// #define BFG_TM_CHANCE_ULTRA_BEAST    8       // Chance for x team to be selected by 
+// #define BFG_TM_CHANCE_MYTHICAL       8       // Chance for x team to be selected by 
+// #define BFG_TM_CHANCE_STARTER        8       // Chance for x team to be selected by 
+// #define BFG_TM_CHANCE_FOSSIL         8       // Chance for x team to be selected by 
+
+#define BFG_TM_CHANCE_MONO_TYPE          8       // Chance for Eeveelution team to be selected by Beauty trainers
+
+
+#define BFG_TM_DUMP_COVERAGE_DATA  FALSE   // Set to true if you want to dump mon coverage data
+#define BFG_TM_DUMP_TRAINER_DATA   FALSE   // Set to true if you want ingame frontier trainer mon data
+
+
+// *** Trainers ***
+
+
 
 // Comment out if unused
 
