@@ -667,27 +667,43 @@ def get_pokemon_ids(POKEMON):
     # Pokemon keys
     return pokemon
 
-def generate_pokemon_data():
+def generate_pokemon_list(list, key, lookup):
+
+    output = [
+        f"#define {standard_constant} {len(standard)}",
+        f"const u16 {lookup[trainer_class]}[{standard_constant}] = " + "{"
+    ]
+
+    for speciesId in standard:
+        species = POKEMON[speciesId]
+        constant = common.convert_species_name_to_const(species["name"])
+        output.append(f"\t{constant},")
+    
+    output.append("};\n")
+    return output
+
+
+def generate_pokemon_data(standard, mega, restricted, lookup, constant):
 
     # Add Trainer Class Lists
 
     # Loop over the trainer classes
-    for trainer_class in trainer_classes:
+    # for trainer_class in trainer_classes:
 
         # Sort species list, remove duplicates
-        class_list = sorted(list(set(classes[trainer_class])))
+        # class_list = sorted(list(set(classes[trainer_class])))
 
         # Trainer Class Constant
-        class_constant = f"SPECIES_LIST_{trainer_class}_COUNT"
+        standard_constant = f"SPECIES_LIST_{constant}_COUNT"
 
         ### Standard ###
 
         # Create standard table (#define, contents)
-        output.append(f"#define {class_constant} {len(class_list)}")
+        output.append(f"#define {standard_constant} {len(standard)}")
         output.append(
-            f"const u16 {classes_lookup[trainer_class]}[{class_constant}] = " + "{"
+            f"const u16 {lookup[trainer_class]}[{standard_constant}] = " + "{"
         )
-        for speciesId in class_list:
+        for speciesId in standard:
             species = POKEMON[speciesId]
             constant = common.convert_species_name_to_const(species["name"])
             output.append(f"\t{constant},")
@@ -696,7 +712,7 @@ def generate_pokemon_data():
         ### Megas ###
 
         # Sort megas list, remove duplicates
-        mega_list = sorted(list(set(classes_mega[trainer_class])))
+        # mega_list = sorted(list(set(classes_mega[trainer_class])))
 
         # Trainer Class Megas Constant
         mega_constant = f"SPECIES_LIST_{trainer_class}_MEGA_COUNT"
@@ -704,7 +720,7 @@ def generate_pokemon_data():
         # Create mega table (#define, contents)
         output.append(f"#define {mega_constant} {len(mega_list)}")
         output.append(
-            f"const u16 {classes_lookup[trainer_class]}Mega[{mega_constant}] = "
+            f"const u16 {lookup[trainer_class]}Mega[{mega_constant}] = "
             + "{"
         )
         for speciesId in mega_list:
@@ -716,7 +732,7 @@ def generate_pokemon_data():
         ### Restricteds ###
 
         # Sort restricted list, remove duplicates
-        restricted_list = sorted(list(set(classes_restricted[trainer_class])))
+        # restricted_list = sorted(list(set(classes_restricted[trainer_class])))
 
         # Trainer Class Restricted Constant
         restricted_constant = f"SPECIES_LIST_{trainer_class}_RESTRICTED_COUNT"
@@ -724,7 +740,7 @@ def generate_pokemon_data():
         # Create restricted table (#define, contents)
         output.append(f"#define {restricted_constant} {len(restricted_list)}")
         output.append(
-            f"const u16 {classes_lookup[trainer_class]}Restricted[{restricted_constant}] = "
+            f"const u16 {lookup[trainer_class]}Restricted[{restricted_constant}] = "
             + "{"
         )
         for speciesId in restricted_list:
