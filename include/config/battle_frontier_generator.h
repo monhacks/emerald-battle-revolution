@@ -38,10 +38,11 @@
 #define BFG_TM_CHANCE_PAST_PARADOX      8       // Chance for Past Paradox team to be selected by Ruin Maniac trainers
 #define BFG_TM_CHANCE_PSEUDO_LEGEND     8       // Chance for Pseudo-legend team to be selected by Expert trainers
 #define BFG_TM_CHANCE_EEVEELUTION       8       // Chance for Eeveelution team to be selected by Beauty trainers
-// #define BFG_TM_CHANCE_ULTRA_BEAST    8       // Chance for x team to be selected by 
-// #define BFG_TM_CHANCE_MYTHICAL       8       // Chance for x team to be selected by 
+#define BFG_TM_CHANCE_REGIONAL          8       // Chance for regional forme team to be selected by various trainers
+#define BFG_TM_CHANCE_ULTRA_BEAST       8       // Chance for x team to be selected by 
+#define BFG_TM_CHANCE_MYTHICAL          8       // Chance for x team to be selected by 
 // #define BFG_TM_CHANCE_STARTER        8       // Chance for x team to be selected by 
-// #define BFG_TM_CHANCE_FOSSIL         8       // Chance for x team to be selected by 
+#define BFG_TM_CHANCE_FOSSIL         8       // Chance for x team to be selected by 
 
 #define BFG_TM_CHANCE_MONO_TYPE          8       // Chance for Eeveelution team to be selected by Beauty trainers
 

@@ -9,10 +9,6 @@ MOVE_EXCLUSIONS = [
 
 ]
 
-def get_config():
-    with open(CONFIG_FILE, "r") as f:
-        return cparser.parse_defines(f.readlines())
-
 def get_timestamp(time=datetime.now()):
     return time.strftime("%d-%m-%y %H:%M:%S")
 
@@ -87,3 +83,15 @@ def is_tagged(species, tag):
 
 def is_forme(species, forme):
     return "forme" in species and species["forme"] == forme
+
+
+def get_config():
+    with open(CONFIG_FILE, "r") as f:
+        return cparser.parse_defines(f.readlines())
+
+CONFIG = get_config()
+
+def check_config(value):
+    if value in CONFIG:
+        return CONFIG[value]
+    return False
