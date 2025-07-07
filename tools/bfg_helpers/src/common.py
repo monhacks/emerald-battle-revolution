@@ -12,6 +12,18 @@ MOVE_EXCLUSIONS = [
 def get_timestamp(time=datetime.now()):
     return time.strftime("%d-%m-%y %H:%M:%S")
 
+def convert_str_to_capital_case(string):
+
+    list = []
+    tokens = string.split(" ")
+    for t in tokens:
+
+        a = t[:1]
+        b = t[1:]
+
+        list.append(f"{a.upper()}{b}")
+
+    return " ".join(list)
 
 def convert_const_to_camel_case(const):
     parts = const.split("_")

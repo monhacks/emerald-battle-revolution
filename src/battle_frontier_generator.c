@@ -298,86 +298,86 @@ u16 GetTrainerClassSpecies(u16 trainerClass)
     switch(trainerClass)
     {
         case TRAINER_CLASS_HIKER:
-            return gSpeciesListTrainerClassHiker[Random() % SPECIES_LIST_TRAINER_CLASS_HIKER_COUNT];
+            return gSpeciesListTrainerClassHikerStandard[Random() % SPECIES_LIST_TRAINER_CLASS_HIKER_STANDARD_COUNT];
         case TRAINER_CLASS_PKMN_BREEDER:
-            return gSpeciesListTrainerClassPkmnBreeder[Random() % SPECIES_LIST_TRAINER_CLASS_PKMN_BREEDER_COUNT];
+            return gSpeciesListTrainerClassPkmnBreederStandard[Random() % SPECIES_LIST_TRAINER_CLASS_PKMN_BREEDER_STANDARD_COUNT];
         case TRAINER_CLASS_COOLTRAINER:
         case TRAINER_CLASS_COOLTRAINER_2:
-            return gSpeciesListTrainerClassCooltrainer[Random() % SPECIES_LIST_TRAINER_CLASS_COOLTRAINER_COUNT];
+            return gSpeciesListTrainerClassCooltrainerStandard[Random() % SPECIES_LIST_TRAINER_CLASS_COOLTRAINER_STANDARD_COUNT];
         case TRAINER_CLASS_BIRD_KEEPER:
-            return gSpeciesListTrainerClassBirdKeeper[Random() % SPECIES_LIST_TRAINER_CLASS_BIRD_KEEPER_COUNT];
+            return gSpeciesListTrainerClassBirdKeeperStandard[Random() % SPECIES_LIST_TRAINER_CLASS_BIRD_KEEPER_STANDARD_COUNT];
         case TRAINER_CLASS_SWIMMER_M:
-            return gSpeciesListTrainerClassSwimmerM[Random() % SPECIES_LIST_TRAINER_CLASS_SWIMMER_M_COUNT];
+            return gSpeciesListTrainerClassSwimmerMStandard[Random() % SPECIES_LIST_TRAINER_CLASS_SWIMMER_M_STANDARD_COUNT];
         case TRAINER_CLASS_SWIMMER_F:
-            return gSpeciesListTrainerClassSwimmerF[Random() % SPECIES_LIST_TRAINER_CLASS_SWIMMER_F_COUNT];
+            return gSpeciesListTrainerClassSwimmerFStandard[Random() % SPECIES_LIST_TRAINER_CLASS_SWIMMER_F_STANDARD_COUNT];
         case TRAINER_CLASS_EXPERT:
-            return gSpeciesListTrainerClassExpert[Random() % SPECIES_LIST_TRAINER_CLASS_EXPERT_COUNT];
+            return gSpeciesListTrainerClassExpertStandard[Random() % SPECIES_LIST_TRAINER_CLASS_EXPERT_STANDARD_COUNT];
         case TRAINER_CLASS_BLACK_BELT:
-            return gSpeciesListTrainerClassBlackBelt[Random() % SPECIES_LIST_TRAINER_CLASS_BLACK_BELT_COUNT];
+            return gSpeciesListTrainerClassBlackBeltStandard[Random() % SPECIES_LIST_TRAINER_CLASS_BLACK_BELT_STANDARD_COUNT];
         case TRAINER_CLASS_HEX_MANIAC:
-            return gSpeciesListTrainerClassHexManiac[Random() % SPECIES_LIST_TRAINER_CLASS_HEX_MANIAC_COUNT];
+            return gSpeciesListTrainerClassHexManiacStandard[Random() % SPECIES_LIST_TRAINER_CLASS_HEX_MANIAC_STANDARD_COUNT];
         case TRAINER_CLASS_AROMA_LADY:
-            return gSpeciesListTrainerClassAromaLady[Random() % SPECIES_LIST_TRAINER_CLASS_AROMA_LADY_COUNT];
+            return gSpeciesListTrainerClassAromaLadyStandard[Random() % SPECIES_LIST_TRAINER_CLASS_AROMA_LADY_STANDARD_COUNT];
         case TRAINER_CLASS_RUIN_MANIAC:
-            return gSpeciesListTrainerClassRuinManiac[Random() % SPECIES_LIST_TRAINER_CLASS_RUIN_MANIAC_COUNT];
+            return gSpeciesListTrainerClassRuinManiacStandard[Random() % SPECIES_LIST_TRAINER_CLASS_RUIN_MANIAC_STANDARD_COUNT];
         case TRAINER_CLASS_TUBER_M:
-            return gSpeciesListTrainerClassTuberM[Random() % SPECIES_LIST_TRAINER_CLASS_TUBER_M_COUNT];
+            return gSpeciesListTrainerClassTuberMStandard[Random() % SPECIES_LIST_TRAINER_CLASS_TUBER_M_STANDARD_COUNT];
         case TRAINER_CLASS_TUBER_F:
-            return gSpeciesListTrainerClassTuberF[Random() % SPECIES_LIST_TRAINER_CLASS_TUBER_F_COUNT];
+            return gSpeciesListTrainerClassTuberFStandard[Random() % SPECIES_LIST_TRAINER_CLASS_TUBER_F_STANDARD_COUNT];
         case TRAINER_CLASS_LADY:
-            return gSpeciesListTrainerClassLady[Random() % SPECIES_LIST_TRAINER_CLASS_LADY_COUNT];
+            return gSpeciesListTrainerClassLadyStandard[Random() % SPECIES_LIST_TRAINER_CLASS_LADY_STANDARD_COUNT];
         case TRAINER_CLASS_BEAUTY:
-            return gSpeciesListTrainerClassBeauty[Random() % SPECIES_LIST_TRAINER_CLASS_BEAUTY_COUNT];
+            return gSpeciesListTrainerClassBeautyStandard[Random() % SPECIES_LIST_TRAINER_CLASS_BEAUTY_STANDARD_COUNT];
         case TRAINER_CLASS_RICH_BOY:
-            return gSpeciesListTrainerClassRichBoy[Random() % SPECIES_LIST_TRAINER_CLASS_RICH_BOY_COUNT];
+            return gSpeciesListTrainerClassRichBoyStandard[Random() % SPECIES_LIST_TRAINER_CLASS_RICH_BOY_STANDARD_COUNT];
         case TRAINER_CLASS_POKEMANIAC:
-            return gSpeciesListTrainerClassPokemaniac[Random() % SPECIES_LIST_TRAINER_CLASS_POKEMANIAC_COUNT];
+            return gSpeciesListTrainerClassPokemaniacStandard[Random() % SPECIES_LIST_TRAINER_CLASS_POKEMANIAC_STANDARD_COUNT];
         case TRAINER_CLASS_GUITARIST:
-            return gSpeciesListTrainerClassGuitarist[Random() % SPECIES_LIST_TRAINER_CLASS_GUITARIST_COUNT];
+            return gSpeciesListTrainerClassGuitaristStandard[Random() % SPECIES_LIST_TRAINER_CLASS_GUITARIST_STANDARD_COUNT];
         case TRAINER_CLASS_KINDLER:
-            return gSpeciesListTrainerClassKindler[Random() % SPECIES_LIST_TRAINER_CLASS_KINDLER_COUNT];
+            return gSpeciesListTrainerClassKindlerStandard[Random() % SPECIES_LIST_TRAINER_CLASS_KINDLER_STANDARD_COUNT];
         case TRAINER_CLASS_CAMPER:
-            return gSpeciesListTrainerClassCamper[Random() % SPECIES_LIST_TRAINER_CLASS_CAMPER_COUNT];
+            return gSpeciesListTrainerClassCamperStandard[Random() % SPECIES_LIST_TRAINER_CLASS_CAMPER_STANDARD_COUNT];
         case TRAINER_CLASS_PICNICKER:
-            return gSpeciesListTrainerClassPicnicker[Random() % SPECIES_LIST_TRAINER_CLASS_PICNICKER_COUNT];
+            return gSpeciesListTrainerClassPicnickerStandard[Random() % SPECIES_LIST_TRAINER_CLASS_PICNICKER_STANDARD_COUNT];
         case TRAINER_CLASS_BUG_MANIAC:
-            return gSpeciesListTrainerClassBugManiac[Random() % SPECIES_LIST_TRAINER_CLASS_BUG_MANIAC_COUNT];
+            return gSpeciesListTrainerClassBugManiacStandard[Random() % SPECIES_LIST_TRAINER_CLASS_BUG_MANIAC_STANDARD_COUNT];
         case TRAINER_CLASS_PSYCHIC:
-            return gSpeciesListTrainerClassPsychic[Random() % SPECIES_LIST_TRAINER_CLASS_PSYCHIC_COUNT];
+            return gSpeciesListTrainerClassPsychicStandard[Random() % SPECIES_LIST_TRAINER_CLASS_PSYCHIC_STANDARD_COUNT];
         case TRAINER_CLASS_GENTLEMAN:
-            return gSpeciesListTrainerClassGentleman[Random() % SPECIES_LIST_TRAINER_CLASS_GENTLEMAN_COUNT];
+            return gSpeciesListTrainerClassGentlemanStandard[Random() % SPECIES_LIST_TRAINER_CLASS_GENTLEMAN_STANDARD_COUNT];
         case TRAINER_CLASS_SCHOOL_KID:
-            return gSpeciesListTrainerClassSchoolKid[Random() % SPECIES_LIST_TRAINER_CLASS_SCHOOL_KID_COUNT];
+            return gSpeciesListTrainerClassSchoolKidStandard[Random() % SPECIES_LIST_TRAINER_CLASS_SCHOOL_KID_STANDARD_COUNT];
         case TRAINER_CLASS_POKEFAN:
-            return gSpeciesListTrainerClassPokefan[Random() % SPECIES_LIST_TRAINER_CLASS_POKEFAN_COUNT];
+            return gSpeciesListTrainerClassPokefanStandard[Random() % SPECIES_LIST_TRAINER_CLASS_POKEFAN_STANDARD_COUNT];
         case TRAINER_CLASS_YOUNGSTER:
-            return gSpeciesListTrainerClassYoungster[Random() % SPECIES_LIST_TRAINER_CLASS_YOUNGSTER_COUNT];
+            return gSpeciesListTrainerClassYoungsterStandard[Random() % SPECIES_LIST_TRAINER_CLASS_YOUNGSTER_STANDARD_COUNT];
         case TRAINER_CLASS_FISHERMAN:
-            return gSpeciesListTrainerClassFisherman[Random() % SPECIES_LIST_TRAINER_CLASS_FISHERMAN_COUNT];
+            return gSpeciesListTrainerClassFishermanStandard[Random() % SPECIES_LIST_TRAINER_CLASS_FISHERMAN_STANDARD_COUNT];
         case TRAINER_CLASS_TRIATHLETE:
-            return gSpeciesListTrainerClassTriathlete[Random() % SPECIES_LIST_TRAINER_CLASS_TRIATHLETE_COUNT];
+            return gSpeciesListTrainerClassTriathleteStandard[Random() % SPECIES_LIST_TRAINER_CLASS_TRIATHLETE_STANDARD_COUNT];
         case TRAINER_CLASS_DRAGON_TAMER:
-            return gSpeciesListTrainerClassDragonTamer[Random() % SPECIES_LIST_TRAINER_CLASS_DRAGON_TAMER_COUNT];
+            return gSpeciesListTrainerClassDragonTamerStandard[Random() % SPECIES_LIST_TRAINER_CLASS_DRAGON_TAMER_STANDARD_COUNT];
         case TRAINER_CLASS_NINJA_BOY:
-            return gSpeciesListTrainerClassNinjaBoy[Random() % SPECIES_LIST_TRAINER_CLASS_NINJA_BOY_COUNT];
+            return gSpeciesListTrainerClassNinjaBoyStandard[Random() % SPECIES_LIST_TRAINER_CLASS_NINJA_BOY_STANDARD_COUNT];
         case TRAINER_CLASS_BATTLE_GIRL:
-            return gSpeciesListTrainerClassBattleGirl[Random() % SPECIES_LIST_TRAINER_CLASS_BATTLE_GIRL_COUNT];
+            return gSpeciesListTrainerClassBattleGirlStandard[Random() % SPECIES_LIST_TRAINER_CLASS_BATTLE_GIRL_STANDARD_COUNT];
         case TRAINER_CLASS_PARASOL_LADY:
-            return gSpeciesListTrainerClassParasolLady[Random() % SPECIES_LIST_TRAINER_CLASS_PARASOL_LADY_COUNT];
+            return gSpeciesListTrainerClassParasolLadyStandard[Random() % SPECIES_LIST_TRAINER_CLASS_PARASOL_LADY_STANDARD_COUNT];
         case TRAINER_CLASS_SAILOR:
-            return gSpeciesListTrainerClassSailor[Random() % SPECIES_LIST_TRAINER_CLASS_SAILOR_COUNT];
+            return gSpeciesListTrainerClassSailorStandard[Random() % SPECIES_LIST_TRAINER_CLASS_SAILOR_STANDARD_COUNT];
         case TRAINER_CLASS_BUG_CATCHER:
-            return gSpeciesListTrainerClassBugCatcher[Random() % SPECIES_LIST_TRAINER_CLASS_BUG_CATCHER_COUNT];
+            return gSpeciesListTrainerClassBugCatcherStandard[Random() % SPECIES_LIST_TRAINER_CLASS_BUG_CATCHER_STANDARD_COUNT];
         case TRAINER_CLASS_PKMN_RANGER:
-            return gSpeciesListTrainerClassPkmnRanger[Random() % SPECIES_LIST_TRAINER_CLASS_PKMN_RANGER_COUNT];
+            return gSpeciesListTrainerClassPkmnRangerStandard[Random() % SPECIES_LIST_TRAINER_CLASS_PKMN_RANGER_STANDARD_COUNT];
         case TRAINER_CLASS_LASS:
-            return gSpeciesListTrainerClassLass[Random() % SPECIES_LIST_TRAINER_CLASS_LASS_COUNT];
+            return gSpeciesListTrainerClassLassStandard[Random() % SPECIES_LIST_TRAINER_CLASS_LASS_STANDARD_COUNT];
         case TRAINER_CLASS_COLLECTOR:
-            return gSpeciesListTrainerClassCollector[Random() % SPECIES_LIST_TRAINER_CLASS_COLLECTOR_COUNT];
+            return gSpeciesListTrainerClassCollectorStandard[Random() % SPECIES_LIST_TRAINER_CLASS_COLLECTOR_STANDARD_COUNT];
         default:
             DebugPrintf("Warning: Unhandled trainer class '%d' ...", trainerClass);
         case TRAINER_CLASS_DEFAULT: 
-            return gSpeciesListTrainerClassDefault[Random() % SPECIES_LIST_TRAINER_CLASS_DEFAULT_COUNT];
+            return gSpeciesListTrainerClassDefaultStandard[Random() % SPECIES_LIST_TRAINER_CLASS_DEFAULT_STANDARD_COUNT];
     }
 }
 
