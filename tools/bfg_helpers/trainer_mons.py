@@ -699,16 +699,27 @@ def get_output_from_lists(lists, lookup):
             # Convert category to capital case
             category_str = common.convert_str_to_capital_case(category)
 
-            # Create standard table (#define, contents)
-            output.append(f"#define {constant} {len(species_list)}")
-            output.append(
+            # Create array (#define, contents)
+            output += [
+                f"// {common.convert_str_to_capital_case(key)}",
+                "", 
+                f"#define {constant} {len(species_list)}", 
+                f"#if {constant} != 0", 
                 f"const u16 {lookup[list]}{category_str}[{constant}] = " + "{"
-            )
+            ]
+
+            # Add array contents
             for speciesId in species_list:
                 species = POKEMON[speciesId]
-                constant = common.convert_species_name_to_const(species["name"])
-                output.append(f"\t{constant},")
-            output.append("};\n")
+                species_constant = common.convert_species_name_to_const(species["name"])
+                output.append(f"\t{species_constant},")
+
+            # Close array
+            output += [
+                "};",
+                f"#endif // {constant} != 0",
+                ""
+            ]
 
     return output
 
@@ -741,13 +752,26 @@ def get_trainer_class_type_output(lookup):
         # Convert trainer class name to constant
         constant = f"{trainer_class.upper()}_TYPE_COUNT"
 
-        # Create standard table (#define, contents)
-        output.append(f"#define {constant} {len(type_list)}")
-        output.append(f"const u16 {lookup[trainer_class]}Type[{constant}] = " + "{")
+        # Create array (#define, contents)
+        output = [
+            f"// {common.convert_str_to_capital_case(trainer_class)}",
+            "", 
+            f"#define {constant} {len(type_list)}", 
+            f"#if {constant} != 0", 
+            f"const u16 {lookup[trainer_class]}Type[{constant}] = " + "{"
+        ]
+
+        # Add array contents
         for type in type_list:
             constant = f"TYPE_{type.upper()}"
             output.append(f"\t{constant},")
-        output.append("};\n")
+            
+        # Close array
+        output += [
+            "};",
+            f"#endif // {constant} != 0",
+            ""
+        ]
 
     return output
 
@@ -822,8 +846,9 @@ def add_species_to_lists(speciesId, lists):
     # Add mon to special lists
     if common.check_config("BFG_TM_SPECIAL_TRAINER_MONS") == True:
 
-        # Species has no evolutions
-        if "evos" not in species:
+        # Check if previous evolutions are allowed, or if the species has no evolutions
+        if common.check_config("BFG_TM_SPECIAL_INCLUDE_PREVO") == True or "evos" not in species:
+
             # Species is a Pseudo-legendary
             if common.is_tagged(species, "Sub-Legendary"):
                 add_species_to_list(speciesId, "PSEUDO_LEGEND", lists)
@@ -853,19 +878,19 @@ def add_species_to_lists(speciesId, lists):
                 if forme in REGIONALS:
                     add_species_to_list(speciesId, forme, lists)
 
-                # TODO: Other forme handling?
+            # Species is a Paradox pokemon
+            if common.is_tagged(species, "Paradox"):
+                # Future Paradox
+                if species["abilities"]["0"] == "Quark Drive":
+                    add_species_to_list(speciesId, "FUTURE_PARADOX", lists)
+                else:  # Past Paradox
+                    add_species_to_list(speciesId, "PAST_PARADOX", lists)
 
-        # Species is a Paradox pokemon
-        if common.is_tagged(species, "Paradox"):
-            # Future Paradox
-            if species["abilities"]["0"] == "Quark Drive":
-                add_species_to_list(speciesId, "FUTURE_PARADOX", lists)
-            else:  # Past Paradox
-                add_species_to_list(speciesId, "PAST_PARADOX", lists)
+            # Species is an eevee
+            if is_eevee(species):
+                add_species_to_list(speciesId, "EEVEELUTION", lists)
 
-        # Species is an eevee
-        if is_eevee(species):
-            add_species_to_list(speciesId, "EEVEELUTION", lists)
+        # Mon skipped
 
 
 def add_key_to_lists(key, lists, lookup):

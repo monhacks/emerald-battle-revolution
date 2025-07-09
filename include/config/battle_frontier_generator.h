@@ -34,6 +34,10 @@
 #define BFG_TM_INCLUDE_MYTHICAL         TRUE // Allow mythical pokemon to be selected
 
 #define BFG_TM_SPECIAL_TRAINER_MONS     TRUE   // Special trainer mon sets (i.e. Eeveelutions, etc.)
+
+#define BFG_TM_SPECIAL_MIN_IV           31      // Min. IVs before special mon sets are allowed
+#define BFG_TM_SPECIAL_INCLUDE_PREVO    FALSE   // Include pre-evolutions in the selectable mon sets
+
 #define BFG_TM_CHANCE_FUTURE_PARADOX    8       // Chance for Future Paradox team to be selected by Collector trainers
 #define BFG_TM_CHANCE_PAST_PARADOX      8       // Chance for Past Paradox team to be selected by Ruin Maniac trainers
 #define BFG_TM_CHANCE_PSEUDO_LEGEND     8       // Chance for Pseudo-legend team to be selected by Expert trainers
