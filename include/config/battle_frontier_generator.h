@@ -4,7 +4,8 @@
 // *** GENERAL ***
 #define BFG_FLAG_FRONTIER_GENERATOR FLAG_UNUSED_0x020 // Flag to enable or disable random generator
 
-#define BFG_TEST_SET_GENERATION     TRUE    // Test set generation
+#define BFG_TEST_SET_GENERATION     FALSE   // Test set generation
+#define BFG_TEST_MON_SELECTION      TRUE    // Test mon selection
 #define BFG_TEST_PRINT_RESULTS      TRUE    // Print test results
 #define BFG_TEST_PRINT_MOVES        FALSE   // Test print move selection
 #define BFG_TEST_PRINT_WEAKNESS     TRUE    // Test print mon weaknesses
@@ -31,27 +32,32 @@
 // Trainer Mons
 #define BFG_TM_GENERATE_TRAINER_MONS    TRUE // Generate battle_frontier_generator_trainer_class_mons.h
 
-#define BFG_TM_INCLUDE_MYTHICAL         TRUE // Allow mythical pokemon to be selected
+#define BFG_TM_INCLUDE_MYTHICAL         TRUE // Allow mythical pokemon to be selected (used by generator script)
 
-#define BFG_TM_SPECIAL_TRAINER_MONS     TRUE   // Special trainer mon sets (i.e. Eeveelutions, etc.)
+#define BFG_TM_OPTIONS_STANDARD_MIN     4   // Min. Number of mons required before fallback is used
+#define BFG_TM_OPTIONS_RESTRICTED_MIN   2   // Min. Number of restricteds required before fallback is used
 
+// Mono-Type Teams
+#define BFG_TM_MONOTYPE_MIN_IV  0       // Min. IVs before monotype teams are allowed
+#define BFG_TM_MONOTYPE_OPEN    TRUE    // Allow Monotype teams in open rules (Restricteds)
+#define BFG_TM_MONOTYPE_CHANCE  8       // Chance for monotype teams to be selected by any trainer
+
+// Special Teams (Limited)
 #define BFG_TM_SPECIAL_MIN_IV           31      // Min. IVs before special mon sets are allowed
+#define BFG_TM_SPECIAL_OPEN             FALSE   // Allow special teams in open rules (Restricteds)
 #define BFG_TM_SPECIAL_INCLUDE_PREVO    FALSE   // Include pre-evolutions in the selectable mon sets
 
-#define BFG_TM_CHANCE_FUTURE_PARADOX    8       // Chance for Future Paradox team to be selected by Collector trainers
-#define BFG_TM_CHANCE_PAST_PARADOX      8       // Chance for Past Paradox team to be selected by Ruin Maniac trainers
-#define BFG_TM_CHANCE_PSEUDO_LEGEND     8       // Chance for Pseudo-legend team to be selected by Expert trainers
+#define BFG_TM_CHANCE_FUTURE_PARADOX    8       // Chance for Future Paradox team to be selected by Collectors
+#define BFG_TM_CHANCE_PAST_PARADOX      8       // Chance for Past Paradox team to be selected by Ruin Maniacs
+#define BFG_TM_CHANCE_PSEUDO_LEGEND     8       // Chance for Pseudo-legend team to be selected by Expert, Veteran, Gentleman, Cooltrainers
 #define BFG_TM_CHANCE_EEVEELUTION       8       // Chance for Eeveelution team to be selected by Beauty trainers
-#define BFG_TM_CHANCE_REGIONAL          8       // Chance for regional forme team to be selected by various trainers
-#define BFG_TM_CHANCE_ULTRA_BEAST       8       // Chance for x team to be selected by 
-#define BFG_TM_CHANCE_MYTHICAL          8       // Chance for x team to be selected by 
-// #define BFG_TM_CHANCE_STARTER        8       // Chance for x team to be selected by 
-#define BFG_TM_CHANCE_FOSSIL         8       // Chance for x team to be selected by 
 
-#define BFG_TM_CHANCE_MONO_TYPE          8       // Chance for Eeveelution team to be selected by Beauty trainers
+#define BFG_TM_CHANCE_REGIONAL          8       // Chance for x team to be selected by y
+#define BFG_TM_CHANCE_ULTRA_BEAST       8       // Chance for x team to be selected by y
+#define BFG_TM_CHANCE_STARTER           8       // Chance for x team to be selected by y
 
+#define BFG_TM_CHANCE_FOSSIL            8       // Chance for Fossil teams to be selected by Hikers
 
-#define BFG_TM_DUMP_COVERAGE_DATA  FALSE   // Set to true if you want to dump mon coverage data
 #define BFG_TM_DUMP_TRAINER_DATA   FALSE   // Set to true if you want ingame frontier trainer mon data
 
 

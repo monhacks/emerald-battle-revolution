@@ -118,8 +118,8 @@ MOVE_HALF_POWER = 63
 # Negative Effect Modifiers
 MOVE_SELF_KO_MODIFIER = 0
 
-def get_secondary_effect_rating(effect, self=False):
 
+def get_secondary_effect_rating(effect, self=False):
     effect_rating = EFFECT_RATING_DEFAULT
     if effect == None or effect == {}:
         return 0  # No effect
@@ -158,8 +158,8 @@ def get_secondary_effect_rating(effect, self=False):
 
     return effect_rating
 
-def get_move_ratings(MOVES): 
 
+def get_move_ratings(MOVES):
     # Filtered moves
     moves = []
 
@@ -169,7 +169,6 @@ def get_move_ratings(MOVES):
 
         # Loop over the constants
         for const_move in const_moves:
-
             # Convert const to moveId
             moveId = common.convert_const_to_move_id(const_move)
 
@@ -180,7 +179,6 @@ def get_move_ratings(MOVES):
 
                 # Move data found
                 if moveId in MOVES:
-
                     # Dereference move data
                     move = MOVES[moveId]
 
@@ -207,7 +205,6 @@ def get_move_ratings(MOVES):
 
         # Loop over filtered moves
         for moveId in moves:
-
             # Default Move Rating
             rating = MOVE_RATING_DEFAULT
 
@@ -298,14 +295,15 @@ def get_move_ratings(MOVES):
 
 # Main Process
 if __name__ == "__main__":
-
     # Before all else, abort if the config is off
     with open(common.CONFIG_FILE, "r") as file:
-        rating_config = re.findall("#define BFG_GENERATE_MOVE_RATINGS *([^ ]*)", file.read())
+        rating_config = re.findall(
+            "#define BFG_GENERATE_MOVE_RATINGS *([^ ]*)", file.read()
+        )
         if len(rating_config) != 1:
             quit()
         if rating_config[0] != "TRUE":
-            quit() 
+            quit()
 
     # Get showdown data files
     MOVES, POKEMON = showdown.get_showdown_data()
@@ -332,9 +330,7 @@ if __name__ == "__main__":
         move = ratings_sorted[i]
         moveData = MOVES[move[0]]
         moveName = f"MOVE_{common.convert_string_to_const(moveData['name'])}"
-        output.append(
-            f"\t[{moveName}] = {math.floor(move[1] * normalizer)},"
-        )
+        output.append(f"\t[{moveName}] = {math.floor(move[1] * normalizer)},")
 
     output.append("};\n")
 

@@ -32,7 +32,7 @@
 #include "constants/songs.h"
 #include "constants/rgb.h"
 
-// #include "constants/battle_frontier_generator.h"
+#include "constants/battle_frontier_generator.h"
 #include "config/battle_frontier_generator.h"
 #include "battle_frontier_generator.h"
 

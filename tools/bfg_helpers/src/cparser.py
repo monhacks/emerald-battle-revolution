@@ -1,10 +1,10 @@
 # #define regular expression
-RE_DEFINE = r'\s+'
+RE_DEFINE = r"\s+"
 
 import re
 
-def parse_defines(content):
 
+def parse_defines(content):
     # Output data
     data = {}
 
@@ -15,7 +15,7 @@ def parse_defines(content):
         # Non-empty string
         if len(clean) > 0:
             # #define at start of line
-            if clean.startswith('#define'):
+            if clean.startswith("#define"):
                 # Remove the '#define' from the start
                 define = clean.replace("#define ", "")
 
@@ -32,17 +32,17 @@ def parse_defines(content):
 
                 # Key/Value pair
                 elif len(parts) == 2:
-                    k,v = parts
+                    k, v = parts
 
                     # Value is int
                     if v.isdigit():
                         # Convert
                         v = int(v)
-                    
+
                     # Value is boolean
-                    elif v == 'TRUE':
+                    elif v == "TRUE":
                         v = True
-                    elif v == 'FALSE':
+                    elif v == "FALSE":
                         v = False
 
                     # Add to table
@@ -50,8 +50,8 @@ def parse_defines(content):
 
     return data
 
-def parse_level_up_learnsets(content):
 
+def parse_level_up_learnsets(content):
     # Output data
     data = {}
 
@@ -76,21 +76,25 @@ def parse_level_up_learnsets(content):
                     moves = []
 
                 # Isolate the species name from the declaration
-                species = clean.split("LevelUpMove s")[1].split('LevelUp')[0]
+                species = clean.split("LevelUpMove s")[1].split("LevelUp")[0]
 
             # Line contains a move
             if clean.startswith("LEVEL_UP_MOVE("):
-
                 # Parse the move name from the level-up move data
-                move = clean.replace("LEVEL_UP_MOVE(", "").split(",")[1].replace(")", "").strip()
+                move = (
+                    clean.replace("LEVEL_UP_MOVE(", "")
+                    .split(",")[1]
+                    .replace(")", "")
+                    .strip()
+                )
 
                 # Add sanitised move to the list
                 moves.append(move)
 
     return data
 
-def parse_learnsets(content, type = 'Teachable'):
 
+def parse_learnsets(content, type="Teachable"):
     # Output data
     data = {}
 
@@ -120,20 +124,20 @@ def parse_learnsets(content, type = 'Teachable'):
             # Line contains a move
             if clean.startswith("MOVE_"):
                 # Add sanitised move to the list
-                moves.append(clean.replace(',', ''))
+                moves.append(clean.replace(",", ""))
 
     return data
 
-if __name__ == "__main__":
 
+if __name__ == "__main__":
     with open("include\\constants\\species.h") as f:
         species = parse_defines(f.readlines())
 
     with open("src\\data\\pokemon\\teachable_learnsets.h") as f:
-        teachable = parse_learnsets(f.readlines(), 'Teachable')
+        teachable = parse_learnsets(f.readlines(), "Teachable")
 
     with open("src\\data\\pokemon\\egg_moves.h") as f:
-        eggmoves = parse_learnsets(f.readlines(), 'EggMove')
+        eggmoves = parse_learnsets(f.readlines(), "EggMove")
 
     with open("src\\data\\pokemon\\level_up_learnsets\\gen_2.h") as f:
         levelup = parse_level_up_learnsets(f.readlines())
