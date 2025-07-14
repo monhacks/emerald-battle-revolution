@@ -826,8 +826,10 @@ void InitGeneratorSpecialForTrainerClass(struct GeneratorSpecies * species, u8 t
         // case TRAINER_CLASS_SAILOR:
         // case TRAINER_CLASS_HIKER:
         // case TRAINER_CLASS_GUITARIST:
+        // case TRAINER_CLASS_HEX_MANIAC:
         // case TRAINER_CLASS_SCHOOL_KID:
 
+        #if BFG_TM_CHANCE_PSEUDO_LEGEND != 0
         // Pseudo Legends
         case TRAINER_CLASS_COOLTRAINER:
         case TRAINER_CLASS_COOLTRAINER_2:
@@ -847,12 +849,14 @@ void InitGeneratorSpecialForTrainerClass(struct GeneratorSpecies * species, u8 t
             }
             // Otherwise, leave as-is
         break;
+        #endif
+        #if BFG_TM_CHANCE_ALOLA != 0
         // Alolan
         case TRAINER_CLASS_SWIMMER_M:
         case TRAINER_CLASS_SWIMMER_F:
         case TRAINER_CLASS_TUBER_M:
         case TRAINER_CLASS_TUBER_F:
-            if (force || RANDOM_CHANCE(BFG_TM_CHANCE_REGIONAL)) {
+            if (force || RANDOM_CHANCE(BFG_TM_CHANCE_ALOLA)) {
                 // Standard
                 #if SPECIES_LIST_ALOLA_STANDARD_COUNT >= BFG_TM_OPTIONS_STANDARD_MIN
                 species->species = gSpeciesListAlolaStandard;
@@ -866,10 +870,12 @@ void InitGeneratorSpecialForTrainerClass(struct GeneratorSpecies * species, u8 t
             }
             // Otherwise, leave as-is
         break;
+        #endif
+        #if BFG_TM_CHANCE_GALAR != 0
         // Galarian
         case TRAINER_CLASS_RICH_BOY:
         case TRAINER_CLASS_LADY:
-            if (force || RANDOM_CHANCE(BFG_TM_CHANCE_REGIONAL)) {
+            if (force || RANDOM_CHANCE(BFG_TM_CHANCE_GALAR)) {
                 // Standard
                 #if SPECIES_LIST_GALAR_STANDARD_COUNT >= BFG_TM_OPTIONS_STANDARD_MIN
                 species->species = gSpeciesListGalarStandard;
@@ -883,10 +889,11 @@ void InitGeneratorSpecialForTrainerClass(struct GeneratorSpecies * species, u8 t
             }
             // Otherwise, leave as-is
         break;
+        #endif
+        #if BFG_TM_CHANCE_HISUI != 0
         // Hisuian
-        case TRAINER_CLASS_PKMN_BREEDER:
-        case TRAINER_CLASS_PKMN_RANGER:
-            if (force || RANDOM_CHANCE(BFG_TM_CHANCE_REGIONAL)) {
+        case TRAINER_CLASS_NINJA_BOY: 
+            if (force || RANDOM_CHANCE(BFG_TM_CHANCE_HISUI)) {
                 // Standard
                 #if SPECIES_LIST_HISUI_STANDARD_COUNT >= BFG_TM_OPTIONS_STANDARD_MIN
                 species->species = gSpeciesListHisuiStandard;
@@ -900,8 +907,9 @@ void InitGeneratorSpecialForTrainerClass(struct GeneratorSpecies * species, u8 t
             }
             // Otherwise, leave as-is
         break;
+        #endif
+        #if BFG_TM_CHANCE_ULTRA_BEAST != 0
         // Ultra Beast
-        case TRAINER_CLASS_HEX_MANIAC:
         case TRAINER_CLASS_PSYCHIC:
             if (force || RANDOM_CHANCE(BFG_TM_CHANCE_ULTRA_BEAST)) {
                 // Standard
@@ -917,7 +925,11 @@ void InitGeneratorSpecialForTrainerClass(struct GeneratorSpecies * species, u8 t
             }
             // Otherwise, leave as-is
         break;
+        #endif
+        #if BFG_TM_CHANCE_STARTER != 0
         // Starters
+        case TRAINER_CLASS_PKMN_BREEDER:
+        case TRAINER_CLASS_PKMN_RANGER:
         case TRAINER_CLASS_YOUNGSTER:
         case TRAINER_CLASS_LASS:
             if (force || RANDOM_CHANCE(BFG_TM_CHANCE_STARTER)) {
@@ -934,6 +946,8 @@ void InitGeneratorSpecialForTrainerClass(struct GeneratorSpecies * species, u8 t
             }
             // Otherwise, leave as-is
         break;
+        #endif
+        #if BFG_TM_CHANCE_EEVEELUTION != 0
         // Eeveelutions
         case TRAINER_CLASS_POKEFAN:
         case TRAINER_CLASS_BEAUTY:
@@ -951,6 +965,8 @@ void InitGeneratorSpecialForTrainerClass(struct GeneratorSpecies * species, u8 t
             }
             // Otherwise, leave as-is
         break;
+        #endif
+        #if BFG_TM_CHANCE_FUTURE_PARADOX != 0
         // Future Paradox
         case TRAINER_CLASS_COLLECTOR:
             if (force || RANDOM_CHANCE(BFG_TM_CHANCE_FUTURE_PARADOX)) {
@@ -967,6 +983,8 @@ void InitGeneratorSpecialForTrainerClass(struct GeneratorSpecies * species, u8 t
             }
             // Otherwise, leave as-is
         break;
+        #endif
+        #if BFG_TM_CHANCE_PAST_PARADOX != 0
         // Past Paradox
         case TRAINER_CLASS_POKEMANIAC:
             if (force || RANDOM_CHANCE(BFG_TM_CHANCE_PAST_PARADOX)) {
@@ -983,6 +1001,8 @@ void InitGeneratorSpecialForTrainerClass(struct GeneratorSpecies * species, u8 t
             }
             // Otherwise, leave as-is
         break;
+        #endif
+        #if BFG_TM_CHANCE_FOSSIL != 0
         // Fossil
         case TRAINER_CLASS_RUIN_MANIAC:
             if (force || RANDOM_CHANCE(BFG_TM_CHANCE_FOSSIL)) {
@@ -999,6 +1019,7 @@ void InitGeneratorSpecialForTrainerClass(struct GeneratorSpecies * species, u8 t
             }
             // Otherwise, leave as-is
         break;
+        #endif
     }
 }
 

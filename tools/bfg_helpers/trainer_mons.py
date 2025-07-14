@@ -191,7 +191,7 @@ TRAINER_CLASS_TYPES = {
         "TRAINER_CLASS_COOLTRAINER",
         "TRAINER_CLASS_PKMN_RANGER",
         "TRAINER_CLASS_PKMN_BREEDER",
-        "TRAINER_CLASS_DEFAULT"
+        "TRAINER_CLASS_DEFAULT",
     ],
     "Water": [
         "TRAINER_CLASS_YOUNGSTER",
@@ -220,7 +220,7 @@ TRAINER_CLASS_TYPES = {
         "TRAINER_CLASS_COOLTRAINER",
         "TRAINER_CLASS_DRAGON_TAMER",
         "TRAINER_CLASS_PKMN_BREEDER",
-        "TRAINER_CLASS_DEFAULT"
+        "TRAINER_CLASS_DEFAULT",
     ],
     "Fire": [
         "TRAINER_CLASS_YOUNGSTER",
@@ -243,7 +243,7 @@ TRAINER_CLASS_TYPES = {
         "TRAINER_CLASS_COOLTRAINER",
         "TRAINER_CLASS_DRAGON_TAMER",
         "TRAINER_CLASS_PKMN_BREEDER",
-        "TRAINER_CLASS_DEFAULT"
+        "TRAINER_CLASS_DEFAULT",
     ],
     "Grass": [
         "TRAINER_CLASS_YOUNGSTER",
@@ -269,7 +269,7 @@ TRAINER_CLASS_TYPES = {
         "TRAINER_CLASS_PKMN_RANGER",
         "TRAINER_CLASS_DRAGON_TAMER",
         "TRAINER_CLASS_PKMN_BREEDER",
-        "TRAINER_CLASS_DEFAULT"
+        "TRAINER_CLASS_DEFAULT",
     ],
     "Electric": [
         "TRAINER_CLASS_YOUNGSTER",
@@ -290,7 +290,7 @@ TRAINER_CLASS_TYPES = {
         "TRAINER_CLASS_BEAUTY",
         "TRAINER_CLASS_COOLTRAINER",
         "TRAINER_CLASS_PKMN_BREEDER",
-        "TRAINER_CLASS_DEFAULT"
+        "TRAINER_CLASS_DEFAULT",
     ],
     "Flying": [
         "TRAINER_CLASS_YOUNGSTER",
@@ -316,7 +316,7 @@ TRAINER_CLASS_TYPES = {
         "TRAINER_CLASS_PKMN_RANGER",
         "TRAINER_CLASS_DRAGON_TAMER",
         "TRAINER_CLASS_PKMN_BREEDER",
-        "TRAINER_CLASS_DEFAULT"
+        "TRAINER_CLASS_DEFAULT",
     ],
     "Fighting": [
         "TRAINER_CLASS_YOUNGSTER",
@@ -341,7 +341,7 @@ TRAINER_CLASS_TYPES = {
         "TRAINER_CLASS_PKMN_RANGER",
         "TRAINER_CLASS_POKEFAN",
         "TRAINER_CLASS_PKMN_BREEDER",
-        "TRAINER_CLASS_DEFAULT"
+        "TRAINER_CLASS_DEFAULT",
     ],
     "Poison": [
         "TRAINER_CLASS_YOUNGSTER",
@@ -363,7 +363,7 @@ TRAINER_CLASS_TYPES = {
         "TRAINER_CLASS_BEAUTY",
         "TRAINER_CLASS_COOLTRAINER",
         "TRAINER_CLASS_PKMN_BREEDER",
-        "TRAINER_CLASS_DEFAULT"
+        "TRAINER_CLASS_DEFAULT",
     ],
     "Ground": [
         "TRAINER_CLASS_YOUNGSTER",
@@ -393,7 +393,7 @@ TRAINER_CLASS_TYPES = {
         "TRAINER_CLASS_COOLTRAINER",
         "TRAINER_CLASS_DRAGON_TAMER",
         "TRAINER_CLASS_PKMN_BREEDER",
-        "TRAINER_CLASS_DEFAULT"
+        "TRAINER_CLASS_DEFAULT",
     ],
     "Rock": [
         "TRAINER_CLASS_SCHOOL_KID",
@@ -414,7 +414,7 @@ TRAINER_CLASS_TYPES = {
         "TRAINER_CLASS_COOLTRAINER",
         "TRAINER_CLASS_DRAGON_TAMER",
         "TRAINER_CLASS_PKMN_BREEDER",
-        "TRAINER_CLASS_DEFAULT"
+        "TRAINER_CLASS_DEFAULT",
     ],
     "Bug": [
         "TRAINER_CLASS_YOUNGSTER",
@@ -435,7 +435,7 @@ TRAINER_CLASS_TYPES = {
         "TRAINER_CLASS_COOLTRAINER",
         "TRAINER_CLASS_PKMN_RANGER",
         "TRAINER_CLASS_PKMN_BREEDER",
-        "TRAINER_CLASS_DEFAULT"
+        "TRAINER_CLASS_DEFAULT",
     ],
     "Ghost": [
         "TRAINER_CLASS_YOUNGSTER",
@@ -454,7 +454,7 @@ TRAINER_CLASS_TYPES = {
         "TRAINER_CLASS_BEAUTY",
         "TRAINER_CLASS_COOLTRAINER",
         "TRAINER_CLASS_PKMN_BREEDER",
-        "TRAINER_CLASS_DEFAULT"
+        "TRAINER_CLASS_DEFAULT",
     ],
     "Steel": [
         "TRAINER_CLASS_SCHOOL_KID",
@@ -476,7 +476,7 @@ TRAINER_CLASS_TYPES = {
         "TRAINER_CLASS_COOLTRAINER",
         "TRAINER_CLASS_DRAGON_TAMER",
         "TRAINER_CLASS_PKMN_BREEDER",
-        "TRAINER_CLASS_DEFAULT"
+        "TRAINER_CLASS_DEFAULT",
     ],
     "Psychic": [
         "TRAINER_CLASS_YOUNGSTER",
@@ -508,7 +508,7 @@ TRAINER_CLASS_TYPES = {
         "TRAINER_CLASS_COOLTRAINER",
         "TRAINER_CLASS_DRAGON_TAMER",
         "TRAINER_CLASS_PKMN_BREEDER",
-        "TRAINER_CLASS_DEFAULT"
+        "TRAINER_CLASS_DEFAULT",
     ],
     "Ice": [
         "TRAINER_CLASS_YOUNGSTER",
@@ -534,7 +534,7 @@ TRAINER_CLASS_TYPES = {
         "TRAINER_CLASS_COOLTRAINER",
         "TRAINER_CLASS_DRAGON_TAMER",
         "TRAINER_CLASS_PKMN_BREEDER",
-        "TRAINER_CLASS_DEFAULT"
+        "TRAINER_CLASS_DEFAULT",
     ],
     "Dark": [
         "TRAINER_CLASS_YOUNGSTER",
@@ -557,7 +557,7 @@ TRAINER_CLASS_TYPES = {
         "TRAINER_CLASS_BEAUTY",
         "TRAINER_CLASS_COOLTRAINER",
         "TRAINER_CLASS_PKMN_BREEDER",
-        "TRAINER_CLASS_DEFAULT"
+        "TRAINER_CLASS_DEFAULT",
     ],
     "Fairy": [
         "TRAINER_CLASS_YOUNGSTER",
@@ -585,7 +585,7 @@ TRAINER_CLASS_TYPES = {
         "TRAINER_CLASS_COOLTRAINER",
         "TRAINER_CLASS_PKMN_RANGER",
         "TRAINER_CLASS_PKMN_BREEDER",
-        "TRAINER_CLASS_DEFAULT"
+        "TRAINER_CLASS_DEFAULT",
     ],
     "Dragon": [
         "TRAINER_CLASS_SCHOOL_KID",
@@ -604,7 +604,7 @@ TRAINER_CLASS_TYPES = {
         "TRAINER_CLASS_DRAGON_TAMER",
         "TRAINER_CLASS_BEAUTY",
         "TRAINER_CLASS_PKMN_BREEDER",
-        "TRAINER_CLASS_DEFAULT"
+        "TRAINER_CLASS_DEFAULT",
     ],
 }
 
@@ -809,6 +809,32 @@ def is_eevee(species):
     )
 
 
+def is_regional_forme(species):
+    # Species is a forme
+    if "forme" in species:
+        # Get forme key (capitals)
+        forme = species["forme"].upper()
+
+        # Forme is a regional forme
+        if forme in REGIONALS:
+            # Return forme
+            return forme
+
+    # Recirsion is enabled, and forme has a previous evolution
+    # This is much slower, but allows new evolutions of regional variants (i.e. Basculegion)
+    # to be selected.
+    elif common.check_config("BFG_TM_CHECK_RECURSIVE") == True and "prevo" in species:
+        # Get data for prev. evolution
+        prevoId = common.convert_species_name_to_species_id(species["prevo"])
+        prevo = POKEMON[prevoId]
+
+        # Check recursively for formes
+        return is_regional_forme(prevo)
+
+    # No forme
+    return None
+
+
 def add_species_to_lists(speciesId, lists):
     species = POKEMON[speciesId]
 
@@ -845,14 +871,10 @@ def add_species_to_lists(speciesId, lists):
         if speciesId in FOSSILS:
             add_species_to_list(speciesId, "FOSSIL", lists)
 
-        # Species is a forme
-        if "forme" in species:
-            # Get forme key (capitals)
-            forme = species["forme"].upper()
-
-            # Forme is a regional forme
-            if forme in REGIONALS:
-                add_species_to_list(speciesId, forme, lists)
+        # Species is a regional forme
+        forme = is_regional_forme(species)
+        if forme != None:
+            add_species_to_list(speciesId, forme, lists)
 
         # Species is a Paradox pokemon
         if common.is_tagged(species, "Paradox"):
@@ -865,7 +887,6 @@ def add_species_to_lists(speciesId, lists):
         # Species is an eevee
         if is_eevee(species):
             add_species_to_list(speciesId, "EEVEELUTION", lists)
-
 
 
 def add_key_to_lists(key, lists, lookup):

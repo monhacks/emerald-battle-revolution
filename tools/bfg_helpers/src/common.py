@@ -1,6 +1,8 @@
 from datetime import datetime
 import src.cparser as cparser
 
+import re, unicodedata
+
 CONFIG_FILE = "./include/config/battle_frontier_generator.h"
 
 # Moves to ignore, effectively a banlist for moves
@@ -67,17 +69,15 @@ def convert_species_name_to_const(species_name):
 
 
 def convert_species_name_to_species_id(species_name):
-    # Convert species name to lower case
-    constant = species_name.lower()
-
-    # Update formatting
-    return (
-        constant.replace(" ", "")
-        .replace("-", "")
-        .replace("'", "")
-        .replace(":", "")
-        .replace("_", "")
+    # Convert non-ascii characters to their ascii equivalent
+    normalised = (
+        unicodedata.normalize("NFKD", species_name.lower())
+        .encode("ASCII", "ignore")
+        .decode()
     )
+
+    # Strip illegal characters from normalised string
+    return re.sub(r"[ \-':_.]", "", normalised)
 
 
 def parse_gender(gender_string):

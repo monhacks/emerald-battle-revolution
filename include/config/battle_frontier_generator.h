@@ -32,7 +32,8 @@
 // Trainer Mons
 #define BFG_TM_GENERATE_TRAINER_MONS    TRUE // Generate battle_frontier_generator_trainer_class_mons.h
 
-#define BFG_TM_INCLUDE_MYTHICAL         TRUE // Allow mythical pokemon to be selected (used by generator script)
+#define BFG_TM_INCLUDE_MYTHICAL TRUE // Allow mythical pokemon to be selected
+#define BFG_TM_CHECK_RECURSIVE  TRUE // Check recursively for regional formes
 
 #define BFG_TM_OPTIONS_STANDARD_MIN     4   // Min. Number of mons required before fallback is used
 #define BFG_TM_OPTIONS_RESTRICTED_MIN   2   // Min. Number of restricteds required before fallback is used
@@ -47,16 +48,19 @@
 #define BFG_TM_SPECIAL_OPEN             FALSE   // Allow special teams in open rules (Restricteds)
 #define BFG_TM_SPECIAL_INCLUDE_PREVO    FALSE   // Include pre-evolutions in the selectable mon sets
 
-#define BFG_TM_CHANCE_FUTURE_PARADOX    8       // Chance for Future Paradox team to be selected by Collectors
-#define BFG_TM_CHANCE_PAST_PARADOX      8       // Chance for Past Paradox team to be selected by Ruin Maniacs
-#define BFG_TM_CHANCE_PSEUDO_LEGEND     8       // Chance for Pseudo-legend team to be selected by Expert, Veteran, Gentleman, Cooltrainers
-#define BFG_TM_CHANCE_EEVEELUTION       8       // Chance for Eeveelution team to be selected by Beauty trainers
+// General Rule: Selection Chance = 7 * (Number of Classes which can pull this set)
 
-#define BFG_TM_CHANCE_REGIONAL          8       // Chance for x team to be selected by y
-#define BFG_TM_CHANCE_ULTRA_BEAST       8       // Chance for x team to be selected by y
-#define BFG_TM_CHANCE_STARTER           8       // Chance for x team to be selected by y
+#define BFG_TM_CHANCE_FUTURE_PARADOX    7       // Chance for Future Paradox team to be selected
+#define BFG_TM_CHANCE_PAST_PARADOX      7       // Chance for Past Paradox team to be selected
+#define BFG_TM_CHANCE_PSEUDO_LEGEND     28      // Chance for Pseudo-legend team to be selected
+#define BFG_TM_CHANCE_EEVEELUTION       14      // Chance for Eeveelution team to be selected
+#define BFG_TM_CHANCE_FOSSIL            7       // Chance for Fossil teams to be selected
+#define BFG_TM_CHANCE_ULTRA_BEAST       7       // Chance for Ultra Beast team to be selected
+#define BFG_TM_CHANCE_STARTER           28      // Chance for Starter team to be selected
+#define BFG_TM_CHANCE_ALOLA             28      // Chance for Alolan team to be selected
+#define BFG_TM_CHANCE_GALAR             14      // Chance for Galarian team to be selected
+#define BFG_TM_CHANCE_HISUI             7       // Chance for Hisuian team to be selected
 
-#define BFG_TM_CHANCE_FOSSIL            8       // Chance for Fossil teams to be selected by Hikers
 
 #define BFG_TM_DUMP_TRAINER_DATA   FALSE   // Set to true if you want ingame frontier trainer mon data
 
