@@ -4,6 +4,7 @@ from datetime import datetime
 import re, unicodedata
 
 import src.config as config
+import src.data as data
 
 # Species filename, for retrieving species constants
 SPECIES_FILE = "./include/constants/species.h"
