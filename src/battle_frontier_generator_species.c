@@ -804,7 +804,7 @@ void InitGeneratorSpeciesForTrainerClass(struct GeneratorSpecies * species, u8 t
     }
 }
 
-void InitGeneratorSpecialForTrainerClass(struct GeneratorSpecies * species, u8 trainerClass, bool8 force)
+bool8 InitGeneratorSpecialForTrainerClass(struct GeneratorSpecies * species, u8 trainerClass, bool8 force)
 {
     switch(trainerClass) {
         // No special cases
@@ -846,6 +846,8 @@ void InitGeneratorSpecialForTrainerClass(struct GeneratorSpecies * species, u8 t
                 species->restricted = gSpeciesListPseudoLegendRestricted;
                 species->restrictedCount = SPECIES_LIST_PSEUDO_LEGEND_RESTRICTED_COUNT;
                 #endif
+                // Changed
+                return TRUE;
             }
             // Otherwise, leave as-is
         break;
@@ -867,6 +869,8 @@ void InitGeneratorSpecialForTrainerClass(struct GeneratorSpecies * species, u8 t
                 species->restricted = gSpeciesListAlolaRestricted;
                 species->restrictedCount = SPECIES_LIST_ALOLA_RESTRICTED_COUNT;
                 #endif
+                // Changed
+                return TRUE;
             }
             // Otherwise, leave as-is
         break;
@@ -886,6 +890,8 @@ void InitGeneratorSpecialForTrainerClass(struct GeneratorSpecies * species, u8 t
                 species->restricted = gSpeciesListGalarRestricted;
                 species->restrictedCount = SPECIES_LIST_GALAR_RESTRICTED_COUNT;
                 #endif
+                // Changed
+                return TRUE;
             }
             // Otherwise, leave as-is
         break;
@@ -904,6 +910,8 @@ void InitGeneratorSpecialForTrainerClass(struct GeneratorSpecies * species, u8 t
                 species->restricted = gSpeciesListHisuiRestricted;
                 species->restrictedCount = SPECIES_LIST_HISUI_RESTRICTED_COUNT;
                 #endif
+                // Changed
+                return TRUE;
             }
             // Otherwise, leave as-is
         break;
@@ -922,6 +930,8 @@ void InitGeneratorSpecialForTrainerClass(struct GeneratorSpecies * species, u8 t
                 species->restricted = gSpeciesListUltraBeastRestricted;
                 species->restrictedCount = SPECIES_LIST_ULTRA_BEAST_RESTRICTED_COUNT;
                 #endif 
+                // Changed
+                return TRUE;
             }
             // Otherwise, leave as-is
         break;
@@ -943,6 +953,8 @@ void InitGeneratorSpecialForTrainerClass(struct GeneratorSpecies * species, u8 t
                 species->restricted = gSpeciesListStarterRestricted;
                 species->restrictedCount = SPECIES_LIST_STARTER_RESTRICTED_COUNT;
                 #endif 
+                // Changed
+                return TRUE;
             }
             // Otherwise, leave as-is
         break;
@@ -962,6 +974,8 @@ void InitGeneratorSpecialForTrainerClass(struct GeneratorSpecies * species, u8 t
                 species->restricted = gSpeciesListEeveelutionRestricted;
                 species->restrictedCount = SPECIES_LIST_EEVEELUTION_RESTRICTED_COUNT;
                 #endif 
+                // Changed
+                return TRUE;
             }
             // Otherwise, leave as-is
         break;
@@ -980,6 +994,8 @@ void InitGeneratorSpecialForTrainerClass(struct GeneratorSpecies * species, u8 t
                 species->restricted = gSpeciesListFutureParadoxRestricted;
                 species->restrictedCount = SPECIES_LIST_FUTURE_PARADOX_RESTRICTED_COUNT;
                 #endif 
+                // Changed
+                return TRUE;
             }
             // Otherwise, leave as-is
         break;
@@ -998,6 +1014,8 @@ void InitGeneratorSpecialForTrainerClass(struct GeneratorSpecies * species, u8 t
                 species->restricted = gSpeciesListPastParadoxRestricted;
                 species->restrictedCount = SPECIES_LIST_PAST_PARADOX_RESTRICTED_COUNT;
                 #endif 
+                // Changed
+                return TRUE;
             }
             // Otherwise, leave as-is
         break;
@@ -1015,12 +1033,17 @@ void InitGeneratorSpecialForTrainerClass(struct GeneratorSpecies * species, u8 t
                 #if SPECIES_LIST_FOSSIL_RESTRICTED_COUNT >= BFG_TM_OPTIONS_RESTRICTED_MIN
                 species->restricted = gSpeciesListFossilRestricted;
                 species->restrictedCount = SPECIES_LIST_FOSSIL_RESTRICTED_COUNT;
-                #endif 
+                #endif
+                // Changed
+                return TRUE;
             }
             // Otherwise, leave as-is
         break;
         #endif
     }
+
+    // Not changed
+    return FALSE;
 }
 
 u16 GetGeneratorSpecies(struct GeneratorSpecies * species)

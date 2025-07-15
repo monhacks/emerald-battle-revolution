@@ -3285,12 +3285,15 @@ void GenerateTrainerParty(u16 trainerId, u8 firstMonId, u8 monCount, u8 level)
 
     // If there are not enough species for the type, the current values will be used
 
+    // Special mon set tracker
+    bool8 specialMons = FALSE;
+
     // If special teams are allowed for this lvl mode, and  min. IVs for monotype teams is reached, and the random monotype chance is met
     if (((lvlMode != FRONTIER_LVL_OPEN) || BFG_TM_MONOTYPE_OPEN) && (properties.fixedIV >= BFG_TM_MONOTYPE_MIN_IV) && RANDOM_CHANCE(BFG_TM_MONOTYPE_CHANCE))
         InitGeneratorMonotype(&species);
-    // If special teams are allowed for this lvl mode, and min. IVs for special teams is reached
+    // If special teams are allowed for this lvl mode, and min. IVs for special teams is reached, check special mon set
     else if (((lvlMode != FRONTIER_LVL_OPEN) || BFG_TM_SPECIAL_OPEN) && (properties.fixedIV >= BFG_TM_SPECIAL_MIN_IV))
-        InitGeneratorSpecialForTrainerClass(&species, trainerClass, FALSE); // Not forced
+        specialMons = InitGeneratorSpecialForTrainerClass(&species, trainerClass, BFG_TM_SPECIAL_FORCE);
 
     // Allocate team items
     u16 items [PARTY_SIZE] = {
@@ -3312,9 +3315,18 @@ void GenerateTrainerParty(u16 trainerId, u8 firstMonId, u8 monCount, u8 level)
     {
         DebugPrintf("Generating mon number %d ...", i);
 
-        // Get min/max bst value from lookup table
-        properties.minBST = fixedIVMinBSTLookup[properties.fixedIV];
-        properties.maxBST = fixedIVMaxBSTLookup[properties.fixedIV];
+        // Special mons switch set
+        if (specialMons) {
+            // Ignore min/max. requirements
+            properties.minBST = BFG_BST_MIN;
+            properties.maxBST = BFG_BST_MAX;
+        } 
+        else // Standard mon set
+        {
+            // Get min/max bst value from lookup table
+            properties.minBST = fixedIVMinBSTLookup[properties.fixedIV];
+            properties.maxBST = fixedIVMaxBSTLookup[properties.fixedIV];
+        }
 
         // Sample random species from the mon count
         if (((BFG_LVL_50_ALLOW_BANNED_SPECIES && GET_LVL_MODE() == FRONTIER_LVL_50) || (BFG_LVL_OPEN_ALLOW_BANNED_SPECIES && GET_LVL_MODE() == FRONTIER_LVL_OPEN) || (BFG_LVL_TENT_ALLOW_BANNED_SPECIES && GET_LVL_MODE() == FRONTIER_LVL_TENT)) && (i % 2 == 1))

@@ -1,9 +1,7 @@
 from datetime import datetime
-import src.cparser as cparser
-
 import re, unicodedata
 
-CONFIG_FILE = "./include/config/battle_frontier_generator.h"
+import src.config as config
 
 # Moves to ignore, effectively a banlist for moves
 # used for both move_ratings.py and move_options.py
@@ -95,16 +93,6 @@ def is_tagged(species, tag):
 def is_forme(species, forme):
     return "forme" in species and species["forme"] == forme
 
-
-def get_config():
-    with open(CONFIG_FILE, "r") as f:
-        return cparser.parse_defines(f.readlines())
-
-
-CONFIG = get_config()
-
-
-def check_config(value):
-    if value in CONFIG:
-        return CONFIG[value]
-    return False
+def log_error(message):
+    if config.check_config("BFG_PY_LOG_ERRORS") == True:
+        print(message)

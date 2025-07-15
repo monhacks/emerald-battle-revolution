@@ -4,11 +4,11 @@
 // *** GENERAL ***
 #define BFG_FLAG_FRONTIER_GENERATOR FLAG_UNUSED_0x020 // Flag to enable or disable random generator
 
-#define BFG_TEST_SET_GENERATION     FALSE   // Test set generation
+#define BFG_TEST_SET_GENERATION     TRUE    // Test set generation
 #define BFG_TEST_MON_SELECTION      TRUE    // Test mon selection
-#define BFG_TEST_PRINT_RESULTS      TRUE    // Print test results
+
 #define BFG_TEST_PRINT_MOVES        FALSE   // Test print move selection
-#define BFG_TEST_PRINT_WEAKNESS     TRUE    // Test print mon weaknesses
+#define BFG_TEST_PRINT_RESULTS      TRUE    // Print test results
 
 #define BFG_FLAG_FRONTIER_ALLOW_MEGA    0   // Flag to enable or disable Mega Evolution
 #define BFG_FLAG_FRONTIER_ALLOW_GMAX    0   // Flag to enable or disable Gigantamax
@@ -26,14 +26,17 @@
 
 #define BFG_FLAG_FRONTIER_FIXED_IV 0 // Flag to enable or disable fixed IVs
 
+// *** Python Scripts ***
+#define BFG_PY_LOG_ERRORS   FALSE  // Enable logging for python scripts
+
 // Move Ratings
 #define BFG_GENERATE_MOVE_RATINGS   TRUE    // Generate data/battle_frontier/battle_frontier_generator_move_ratings.h
 
-// Trainer Mons
-#define BFG_TM_GENERATE_TRAINER_MONS    TRUE // Generate battle_frontier_generator_trainer_class_mons.h
+// *** Trainer Mons ***
+#define BFG_GENERATE_TRAINER_MONS    TRUE // Generate battle_frontier_generator_trainer_class_mons.h
 
-#define BFG_TM_INCLUDE_MYTHICAL TRUE // Allow mythical pokemon to be selected
-#define BFG_TM_CHECK_RECURSIVE  TRUE // Check recursively for regional formes
+#define BFG_TM_INCLUDE_MYTHICAL TRUE   // Allow mythical pokemon to be selected
+#define BFG_TM_CHECK_RECURSIVE  TRUE   // Check recursively for regional formes
 
 #define BFG_TM_OPTIONS_STANDARD_MIN     4   // Min. Number of mons required before fallback is used
 #define BFG_TM_OPTIONS_RESTRICTED_MIN   2   // Min. Number of restricteds required before fallback is used
@@ -44,6 +47,7 @@
 #define BFG_TM_MONOTYPE_CHANCE  8       // Chance for monotype teams to be selected by any trainer
 
 // Special Teams (Limited)
+#define BFG_TM_SPECIAL_FORCE            FALSE   // Special mon set force-enabled (for testing)
 #define BFG_TM_SPECIAL_MIN_IV           31      // Min. IVs before special mon sets are allowed
 #define BFG_TM_SPECIAL_OPEN             FALSE   // Allow special teams in open rules (Restricteds)
 #define BFG_TM_SPECIAL_INCLUDE_PREVO    FALSE   // Include pre-evolutions in the selectable mon sets
@@ -66,8 +70,6 @@
 
 
 // *** Trainers ***
-
-
 
 // Comment out if unused
 

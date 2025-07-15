@@ -53,30 +53,28 @@ bool8 TestFrontierGeneratorSpecies(u8 trainerClass, u8 count, bool8 restricted, 
 // Backup Existing Config Value
 
 // No Monotype
-BFG_FrontierGeneratorSpecies_Test("Generate Random Fisherman Pokemon (3x)", TRAINER_CLASS_FISHERMAN, 3, FALSE, FALSE, FALSE);
-BFG_FrontierGeneratorSpecies_Test("Generate Random Fisherman Pokemon (3x, Restricted)", TRAINER_CLASS_FISHERMAN, 3, TRUE, FALSE, FALSE);
-
-BFG_FrontierGeneratorSpecies_Test("Generate Random Bug Catcher Pokemon (3x)", TRAINER_CLASS_BUG_CATCHER, 3, FALSE, FALSE, FALSE);
-BFG_FrontierGeneratorSpecies_Test("Generate Random Bug Catcher Pokemon (3x, Restricted)", TRAINER_CLASS_BUG_CATCHER, 3, TRUE, FALSE, FALSE);
+BFG_FrontierGeneratorSpecies_Test("Generate Random Fisherman Pokemon (3x)", TRAINER_CLASS_FISHERMAN, 4, FALSE, FALSE, FALSE);
+BFG_FrontierGeneratorSpecies_Test("Generate Random Fisherman Pokemon (3x, Restricted)", TRAINER_CLASS_FISHERMAN, 4, TRUE, FALSE, FALSE);
+BFG_FrontierGeneratorSpecies_Test("Generate Random Bug Catcher Pokemon (3x)", TRAINER_CLASS_BUG_CATCHER, 4, FALSE, FALSE, FALSE);
+BFG_FrontierGeneratorSpecies_Test("Generate Random Bug Catcher Pokemon (3x, Restricted)", TRAINER_CLASS_BUG_CATCHER, 4, TRUE, FALSE, FALSE);
 
 // Monotype
-BFG_FrontierGeneratorSpecies_Test("Generate Random Fisherman Pokemon (3x, Monotype)", TRAINER_CLASS_FISHERMAN, 3, FALSE, TRUE, FALSE);
-BFG_FrontierGeneratorSpecies_Test("Generate Random Fisherman Pokemon (3x, Monotype, Restricted)", TRAINER_CLASS_FISHERMAN, 3, TRUE, TRUE, FALSE);
-
-BFG_FrontierGeneratorSpecies_Test("Generate Random Bug Catcher Pokemon (3x, Monotype)", TRAINER_CLASS_BUG_CATCHER, 3, FALSE, TRUE, FALSE);
-BFG_FrontierGeneratorSpecies_Test("Generate Random Bug Catcher Pokemon (3x, Monotype, Restricted)", TRAINER_CLASS_BUG_CATCHER, 3, TRUE, TRUE, FALSE);
+BFG_FrontierGeneratorSpecies_Test("Generate Random Fisherman Pokemon (3x, Monotype)", TRAINER_CLASS_FISHERMAN, 4, FALSE, TRUE, FALSE);
+BFG_FrontierGeneratorSpecies_Test("Generate Random Fisherman Pokemon (3x, Monotype, Restricted)", TRAINER_CLASS_FISHERMAN, 4, TRUE, TRUE, FALSE);
+BFG_FrontierGeneratorSpecies_Test("Generate Random Bug Catcher Pokemon (3x, Monotype)", TRAINER_CLASS_BUG_CATCHER, 4, FALSE, TRUE, FALSE);
+BFG_FrontierGeneratorSpecies_Test("Generate Random Bug Catcher Pokemon (3x, Monotype, Restricted)", TRAINER_CLASS_BUG_CATCHER, 4, TRUE, TRUE, FALSE);
 
 // Special
-BFG_FrontierGeneratorSpecies_Test("Generate Random Cool Trainer Pokemon (3x, Special)", TRAINER_CLASS_COOLTRAINER, 3, FALSE, FALSE, TRUE);
-BFG_FrontierGeneratorSpecies_Test("Generate Random Swimmer (M) Pokemon (3x, Special)", TRAINER_CLASS_SWIMMER_M, 3, FALSE, FALSE, TRUE);
-BFG_FrontierGeneratorSpecies_Test("Generate Random Rich Boy Pokemon (3x, Special)", TRAINER_CLASS_RICH_BOY, 3, FALSE, FALSE, TRUE);
-BFG_FrontierGeneratorSpecies_Test("Generate Random Ninja Boy Pokemon (3x, Special)", TRAINER_CLASS_NINJA_BOY, 3, FALSE, FALSE, TRUE);
-BFG_FrontierGeneratorSpecies_Test("Generate Random Psychic Pokemon (3x, Special)", TRAINER_CLASS_PSYCHIC, 3, FALSE, FALSE, TRUE);
-BFG_FrontierGeneratorSpecies_Test("Generate Random PKMN Breeder Pokemon (3x, Special)", TRAINER_CLASS_PKMN_BREEDER, 3, FALSE, FALSE, TRUE);
-BFG_FrontierGeneratorSpecies_Test("Generate Random Pokefan Pokemon (3x, Special)", TRAINER_CLASS_POKEFAN, 3, FALSE, FALSE, TRUE);
-BFG_FrontierGeneratorSpecies_Test("Generate Random Collector Pokemon (3x, Special)", TRAINER_CLASS_COLLECTOR, 3, FALSE, FALSE, TRUE);
-BFG_FrontierGeneratorSpecies_Test("Generate Random Pokemaniac Pokemon (3x, Special)", TRAINER_CLASS_POKEMANIAC, 3, FALSE, FALSE, TRUE);
-BFG_FrontierGeneratorSpecies_Test("Generate Random Ruin Maniac Pokemon (3x, Special)", TRAINER_CLASS_RUIN_MANIAC, 3, FALSE, FALSE, TRUE);
+BFG_FrontierGeneratorSpecies_Test("Generate Random Cool Trainer Pokemon (3x, Special)", TRAINER_CLASS_COOLTRAINER, 4, FALSE, FALSE, TRUE);
+BFG_FrontierGeneratorSpecies_Test("Generate Random Swimmer (M) Pokemon (3x, Special)", TRAINER_CLASS_SWIMMER_M, 4, FALSE, FALSE, TRUE);
+BFG_FrontierGeneratorSpecies_Test("Generate Random Rich Boy Pokemon (3x, Special)", TRAINER_CLASS_RICH_BOY, 4, FALSE, FALSE, TRUE);
+BFG_FrontierGeneratorSpecies_Test("Generate Random Ninja Boy Pokemon (3x, Special)", TRAINER_CLASS_NINJA_BOY, 4, FALSE, FALSE, TRUE);
+BFG_FrontierGeneratorSpecies_Test("Generate Random Psychic Pokemon (3x, Special)", TRAINER_CLASS_PSYCHIC, 4, FALSE, FALSE, TRUE);
+BFG_FrontierGeneratorSpecies_Test("Generate Random PKMN Breeder Pokemon (3x, Special)", TRAINER_CLASS_PKMN_BREEDER, 4, FALSE, FALSE, TRUE);
+BFG_FrontierGeneratorSpecies_Test("Generate Random Pokefan Pokemon (3x, Special)", TRAINER_CLASS_POKEFAN, 4, FALSE, FALSE, TRUE);
+BFG_FrontierGeneratorSpecies_Test("Generate Random Collector Pokemon (3x, Special)", TRAINER_CLASS_COLLECTOR, 4, FALSE, FALSE, TRUE);
+BFG_FrontierGeneratorSpecies_Test("Generate Random Pokemaniac Pokemon (3x, Special)", TRAINER_CLASS_POKEMANIAC, 4, FALSE, FALSE, TRUE);
+BFG_FrontierGeneratorSpecies_Test("Generate Random Ruin Maniac Pokemon (3x, Special)", TRAINER_CLASS_RUIN_MANIAC, 4, FALSE, FALSE, TRUE);
 
 #endif
 #if BFG_TEST_SET_GENERATION == TRUE

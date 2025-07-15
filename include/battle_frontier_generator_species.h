@@ -16,7 +16,7 @@ struct GeneratorSpecies {
 u8 InitGeneratorMonotype(struct GeneratorSpecies * species);
 void InitGeneratorSpeciesDefault(struct GeneratorSpecies * species);
 void InitGeneratorSpeciesForTrainerClass(struct GeneratorSpecies * species, u8 trainerClass);
-void InitGeneratorSpecialForTrainerClass(struct GeneratorSpecies * species, u8 trainerClass, bool8 force);
+bool8 InitGeneratorSpecialForTrainerClass(struct GeneratorSpecies * species, u8 trainerClass, bool8 force);
 
 u16 GetGeneratorSpecies(struct GeneratorSpecies * species);
 u16 GetGeneratorRestricted(struct GeneratorSpecies * species);

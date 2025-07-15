@@ -4,6 +4,9 @@ import src.showdown as showdown
 # Common Library
 import src.common as common
 
+# Config File
+import src.config as config
+
 # Built-in libs
 import os, json
 
@@ -644,7 +647,7 @@ def get_frontier_mon_types(POKEMON):
                     if new_type == True:
                         trainer_classes[trainer_class] += species["types"]
                 except Exception as e:
-                    print(f"Failed for species '{mon}': {str(e)}")
+                    common.log_error(f"Failed for species '{mon}': {str(e)}")
 
     types = {}
     for trainer_class in trainer_classes:
@@ -823,7 +826,7 @@ def is_regional_forme(species):
     # Recirsion is enabled, and forme has a previous evolution
     # This is much slower, but allows new evolutions of regional variants (i.e. Basculegion)
     # to be selected.
-    elif common.check_config("BFG_TM_CHECK_RECURSIVE") == True and "prevo" in species:
+    elif config.check_config("BFG_TM_CHECK_RECURSIVE") == True and "prevo" in species:
         # Get data for prev. evolution
         prevoId = common.convert_species_name_to_species_id(species["prevo"])
         prevo = POKEMON[prevoId]
@@ -852,7 +855,7 @@ def add_species_to_lists(speciesId, lists):
 
     # Check if previous evolutions are allowed, or if the species has no evolutions
     if (
-        common.check_config("BFG_TM_SPECIAL_INCLUDE_PREVO") == True
+        config.check_config("BFG_TM_SPECIAL_INCLUDE_PREVO") == True
         or "evos" not in species
     ):
         # Species is a Pseudo-legendary
@@ -898,12 +901,13 @@ def add_key_to_lists(key, lists, lookup):
 # Main Process
 if __name__ == "__main__":
     # If Trainer Mon Set Generation is Enabled
-    if common.check_config("BFG_TM_GENERATE_TRAINER_MONS") == True:
+    if config.check_config("BFG_TM_GENERATE_TRAINER_MONS") == True:
+        
         # Get showdown data files
         MOVES, POKEMON = showdown.get_showdown_data()
 
         # Check if mythicals should be included or not
-        include_mythical = common.check_config("BFG_TM_INCLUDE_MYTHICAL") == True
+        include_mythical = config.check_config("BFG_TM_INCLUDE_MYTHICAL") == True
 
         # Get all of the pokemon ids
         pokemon = get_pokemon_ids(POKEMON)
@@ -949,7 +953,7 @@ if __name__ == "__main__":
             f.write("\n".join(output))
 
         # Generate Trainer Data
-        if common.check_config("BFG_TM_DUMP_TRAINER_DATA") == True:
+        if config.check_config("BFG_TM_DUMP_TRAINER_DATA") == True:
             trainer_types = get_frontier_mon_types(POKEMON)
             trainerpath = os.path.join(DATA_DIRECTORY, TRAINER_OUTFILE)
 
