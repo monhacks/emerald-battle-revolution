@@ -1,41 +1,41 @@
-Charizard @ Charizardite Y
-Ability: Blaze
-IVs: 0 Atk
-EVs: 204 HP / 108 Def / 4 SpA / 4 SpD / 188 Spe
-Tera type: Grass
-Modest Nature
-- Protect
-- Scorching Sands
-- Flamethrower
-- Solar Beam
+Charizard @ Charizardite Y  
+Ability: Blaze  
+Tera Type: Water  
+EVs: 204 HP / 108 Def / 4 SpA / 4 SpD / 188 Spe  
+Modest Nature  
+IVs: 0 Atk  
+- Protect  
+- Scorching Sands  
+- Flamethrower  
+- Solar Beam  
 
-Landorus-Therian @ Choice Scarf
-Ability: Intimidate
-EVs: 4 HP / 196 Atk / 4 Def / 52 SpD / 252 Spe
-Tera type: Flying
-Adamant Nature
-- U-Turn
-- Earthquake
-- Rock Slide
-- Tera Blast
+Flutter Mane @ Fairium Z  
+Ability: Protosynthesis  
+Tera Type: Fairy  
+EVs: 164 HP / 204 Def / 124 SpA / 4 SpD / 12 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Protect  
+- Shadow Ball  
+- Moonblast  
+- Icy Wind  
 
-Flutter Mane @ Fairium Z
-Ability: Protosynthesis
-IVs: 0 Atk
-EVs: 140 HP / 188 Def / 36 SpA / 4 SpD / 140 Spe
-Tera type: Fairy
-Modest Nature
-- Protect
-- Dazzling Gleam
-- Shadow Ball
-- Moonblast
+Brute Bonnet @ Rocky Helmet  
+Ability: Protosynthesis  
+Tera Type: Water  
+EVs: 244 HP / 4 Atk / 164 Def / 92 SpD / 4 Spe  
+Impish Nature  
+- Rage Powder  
+- Sucker Punch  
+- Seed Bomb  
+- Spore  
 
-Iron Hands @ Assault Vest
-Ability: Quark Drive
-EVs: 60 HP / 156 Atk / 36 Def / 252 SpD / 4 Spe
-Tera type: Grass
-Adamant Nature
-- Drain Punch
-- Wild Charge
-- Heavy Slam
-- Fake Out
+Iron Hands @ Assault Vest  
+Ability: Quark Drive  
+Tera Type: Grass  
+EVs: 60 HP / 156 Atk / 36 Def / 252 SpD / 4 Spe  
+Adamant Nature  
+- Drain Punch  
+- Wild Charge  
+- Heavy Slam  
+- Fake Out  
