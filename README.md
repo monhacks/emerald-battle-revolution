@@ -20,17 +20,12 @@ check out their [github repository](https://github.com/rh-hideout/pokeemerald-ex
 
 ### Quick Start
 
-When starting the game you will be given $500,000 and a Volcarona for ingame battling and 
-Flame Body, as well as a Smeargle for using HMs (Waterfall, Dive, Surf, Fly). You will spawn
-outside the Battle Tower, with the story completed up to becoming the champion. 
+When starting the game you will be given $500,000 and a Volcarona for ingame battling and Flame Body, 
+as well as a Smeargle for using HMs (Waterfall, Dive, Surf, Fly). You will spawn outside the 
+Battle Tower, with the story completed up to becoming the champion.
 
-### Battl
-
-All essential items can be purchased from the Battle Frontier Underground, for which the closest
-entrance is immediately South of the Battle Tower Entrance.
-
-All TMs / HMs / Key Items can be purchased in the Battle Frontier
-Underground. 
+All essential items can be purchased from the Battle Frontier Underground, for which the 
+closest entrance is immediately South of the Battle Tower.
 
 ### Battle Frontier Underground
 
