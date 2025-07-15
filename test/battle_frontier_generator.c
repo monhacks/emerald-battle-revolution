@@ -8,13 +8,76 @@
 #include "test/battle.h"
 
 #include "config/battle_frontier_generator.h"
+
+#include "battle_frontier_generator_species.h"
 #include "battle_frontier_generator.h"
+
+// 
 
 // Battle Frontier Generator is configured
 #if BFG_FLAG_FRONTIER_GENERATOR != 0
+#if BFG_TEST_MON_SELECTION == TRUE
+bool8 TestFrontierGeneratorSpecies(u8 trainerClass, u8 count, bool8 restricted, bool8 monotype, bool8 special)
+{
+    struct GeneratorSpecies species;
+    InitGeneratorSpeciesForTrainerClass(&species, trainerClass);
 
+    DebugPrintf("Generating %d species for trainer class '%d' ...", count, trainerClass);
+    if (restricted)
+        DebugPrintf("Restricted: Yes");
+    else
+        DebugPrintf("Restricted: No");
+    
+    // Special cases
+
+    if (monotype) {
+        // Monotype switch set
+        InitGeneratorMonotype(&species);
+    } else if (special) {
+        // Special switch set
+        InitGeneratorSpecialForTrainerClass(&species, trainerClass, TRUE);
+    }
+
+    u8 i;
+    for(i=0; i<count; i++) {
+        // If 'restricted' switch is set, select restricted mon - Otherwise, select standard species
+        u16 speciesId = (restricted) ? GetGeneratorRestricted(&species) : GetGeneratorSpecies(&species);
+        DebugPrintf("%d: %S", i, GetSpeciesName(speciesId));
+    }
+
+    return TRUE;
+}
+
+#define BFG_FrontierGeneratorSpecies_Test(text,t,c,r,m,s) TEST(text){TestFrontierGeneratorSpecies(t,c,r,m,s);}
+
+// Backup Existing Config Value
+
+// No Monotype
+BFG_FrontierGeneratorSpecies_Test("Generate Random Fisherman Pokemon (3x)", TRAINER_CLASS_FISHERMAN, 4, FALSE, FALSE, FALSE);
+BFG_FrontierGeneratorSpecies_Test("Generate Random Fisherman Pokemon (3x, Restricted)", TRAINER_CLASS_FISHERMAN, 4, TRUE, FALSE, FALSE);
+BFG_FrontierGeneratorSpecies_Test("Generate Random Bug Catcher Pokemon (3x)", TRAINER_CLASS_BUG_CATCHER, 4, FALSE, FALSE, FALSE);
+BFG_FrontierGeneratorSpecies_Test("Generate Random Bug Catcher Pokemon (3x, Restricted)", TRAINER_CLASS_BUG_CATCHER, 4, TRUE, FALSE, FALSE);
+
+// Monotype
+BFG_FrontierGeneratorSpecies_Test("Generate Random Fisherman Pokemon (3x, Monotype)", TRAINER_CLASS_FISHERMAN, 4, FALSE, TRUE, FALSE);
+BFG_FrontierGeneratorSpecies_Test("Generate Random Fisherman Pokemon (3x, Monotype, Restricted)", TRAINER_CLASS_FISHERMAN, 4, TRUE, TRUE, FALSE);
+BFG_FrontierGeneratorSpecies_Test("Generate Random Bug Catcher Pokemon (3x, Monotype)", TRAINER_CLASS_BUG_CATCHER, 4, FALSE, TRUE, FALSE);
+BFG_FrontierGeneratorSpecies_Test("Generate Random Bug Catcher Pokemon (3x, Monotype, Restricted)", TRAINER_CLASS_BUG_CATCHER, 4, TRUE, TRUE, FALSE);
+
+// Special
+BFG_FrontierGeneratorSpecies_Test("Generate Random Cool Trainer Pokemon (3x, Special)", TRAINER_CLASS_COOLTRAINER, 4, FALSE, FALSE, TRUE);
+BFG_FrontierGeneratorSpecies_Test("Generate Random Swimmer (M) Pokemon (3x, Special)", TRAINER_CLASS_SWIMMER_M, 4, FALSE, FALSE, TRUE);
+BFG_FrontierGeneratorSpecies_Test("Generate Random Rich Boy Pokemon (3x, Special)", TRAINER_CLASS_RICH_BOY, 4, FALSE, FALSE, TRUE);
+BFG_FrontierGeneratorSpecies_Test("Generate Random Ninja Boy Pokemon (3x, Special)", TRAINER_CLASS_NINJA_BOY, 4, FALSE, FALSE, TRUE);
+BFG_FrontierGeneratorSpecies_Test("Generate Random Psychic Pokemon (3x, Special)", TRAINER_CLASS_PSYCHIC, 4, FALSE, FALSE, TRUE);
+BFG_FrontierGeneratorSpecies_Test("Generate Random PKMN Breeder Pokemon (3x, Special)", TRAINER_CLASS_PKMN_BREEDER, 4, FALSE, FALSE, TRUE);
+BFG_FrontierGeneratorSpecies_Test("Generate Random Pokefan Pokemon (3x, Special)", TRAINER_CLASS_POKEFAN, 4, FALSE, FALSE, TRUE);
+BFG_FrontierGeneratorSpecies_Test("Generate Random Collector Pokemon (3x, Special)", TRAINER_CLASS_COLLECTOR, 4, FALSE, FALSE, TRUE);
+BFG_FrontierGeneratorSpecies_Test("Generate Random Pokemaniac Pokemon (3x, Special)", TRAINER_CLASS_POKEMANIAC, 4, FALSE, FALSE, TRUE);
+BFG_FrontierGeneratorSpecies_Test("Generate Random Ruin Maniac Pokemon (3x, Special)", TRAINER_CLASS_RUIN_MANIAC, 4, FALSE, FALSE, TRUE);
+
+#endif
 #if BFG_TEST_SET_GENERATION == TRUE
-
 bool8 TestRandomPokemonGenerator(struct Pokemon * mon, u16 speciesId, u8 level, u8 lvlMode, u8 fixedIV, bool8 allowForme, u8 battleMode)
 {
     // Store original battle mode
@@ -90,32 +153,30 @@ bool8 TestRandomPokemonGenerator(struct Pokemon * mon, u16 speciesId, u8 level, 
 }
 
 // Worker Macro
-#define BFG_TEST(text,s,l,m,i,f,t) TEST(text){struct Pokemon mon; for(u8 n=0; n<1; n++){TestRandomPokemonGenerator(&mon,s,l,m,i,f,t);}}
+#define BFG_RandomPokemonGenerator_Test(text,s,l,m,i,f,t,c) TEST(text){struct Pokemon mon; for(u8 n=0; n<c; n++){TestRandomPokemonGenerator(&mon,s,l,m,i,f,t);}}
 
 // Standard
 
-BFG_TEST("Generate Random Incineroar (D,LVL50,31IV)",SPECIES_INCINEROAR, 50, FRONTIER_LVL_50, 31, FALSE, FRONTIER_MODE_DOUBLES);
-BFG_TEST("Generate Random Amoonguss (D,LVL50,31IV)",SPECIES_AMOONGUSS, 50, FRONTIER_LVL_50, 31, FALSE, FRONTIER_MODE_DOUBLES);
-BFG_TEST("Generate Random Clefairy (D,LVL50,31IV)",SPECIES_CLEFAIRY, 50, FRONTIER_LVL_50, 31, FALSE, FRONTIER_MODE_DOUBLES);
+BFG_RandomPokemonGenerator_Test("Generate Random Incineroar (D,LVL50,31IV)",SPECIES_INCINEROAR, 50, FRONTIER_LVL_50, 31, FALSE, FRONTIER_MODE_DOUBLES,1);
+BFG_RandomPokemonGenerator_Test("Generate Random Amoonguss (D,LVL50,31IV)",SPECIES_AMOONGUSS, 50, FRONTIER_LVL_50, 31, FALSE, FRONTIER_MODE_DOUBLES,1);
+BFG_RandomPokemonGenerator_Test("Generate Random Clefairy (D,LVL50,31IV)",SPECIES_CLEFAIRY, 50, FRONTIER_LVL_50, 31, FALSE, FRONTIER_MODE_DOUBLES,1);
 
 // Legendaries
 
-BFG_TEST("Generate Random Cresselia (D,LVL50,31IV)",SPECIES_CRESSELIA, 50, FRONTIER_LVL_50, 31, FALSE, FRONTIER_MODE_DOUBLES);
-BFG_TEST("Generate Random Chien-Pao (D,LVL50,31IV)",SPECIES_CHIEN_PAO, 50, FRONTIER_LVL_50, 31, FALSE, FRONTIER_MODE_DOUBLES);
-BFG_TEST("Generate Random Ogerpon (D,LVL50,31IV)",SPECIES_OGERPON, 50, FRONTIER_LVL_50, 31, FALSE, FRONTIER_MODE_DOUBLES);
+BFG_RandomPokemonGenerator_Test("Generate Random Cresselia (D,LVL50,31IV)",SPECIES_CRESSELIA, 50, FRONTIER_LVL_50, 31, FALSE, FRONTIER_MODE_DOUBLES,1);
+BFG_RandomPokemonGenerator_Test("Generate Random Chien-Pao (D,LVL50,31IV)",SPECIES_CHIEN_PAO, 50, FRONTIER_LVL_50, 31, FALSE, FRONTIER_MODE_DOUBLES,1);
+BFG_RandomPokemonGenerator_Test("Generate Random Ogerpon (D,LVL50,31IV)",SPECIES_OGERPON, 50, FRONTIER_LVL_50, 31, FALSE, FRONTIER_MODE_DOUBLES,1);
 
 // Forme Changes
 
-BFG_TEST("Generate Random Zamazenta (D,LVL50,31IV)",SPECIES_ZAMAZENTA, 50, FRONTIER_LVL_50, 31, TRUE, FRONTIER_MODE_DOUBLES);
-BFG_TEST("Generate Random Zacian (D,LVL50,31IV)",SPECIES_ZACIAN, 50, FRONTIER_LVL_50, 31, TRUE, FRONTIER_MODE_DOUBLES);
+BFG_RandomPokemonGenerator_Test("Generate Random Zamazenta (D,LVL50,31IV)",SPECIES_ZAMAZENTA, 50, FRONTIER_LVL_50, 31, TRUE, FRONTIER_MODE_DOUBLES,1);
+BFG_RandomPokemonGenerator_Test("Generate Random Zacian (D,LVL50,31IV)",SPECIES_ZACIAN, 50, FRONTIER_LVL_50, 31, TRUE, FRONTIER_MODE_DOUBLES,1);
 
-BFG_TEST("Generate Random Ogerpon (Any) (D,LVL50,31IV)",SPECIES_OGERPON, 50, FRONTIER_LVL_50, 31, TRUE, FRONTIER_MODE_DOUBLES);
-BFG_TEST("Generate Random Ludicolo (Any) (D,LVL50,31IV)",SPECIES_LUDICOLO, 50, FRONTIER_LVL_50, 31, FALSE, FRONTIER_MODE_DOUBLES);
-BFG_TEST("Generate Random Flutter Mane (Any) (D,LVL50,31IV)",SPECIES_FLUTTER_MANE, 50, FRONTIER_LVL_50, 31, FALSE, FRONTIER_MODE_DOUBLES);
-BFG_TEST("Generate Random Iron Hands (Any) (D,LVL50,31IV)",SPECIES_IRON_HANDS, 50, FRONTIER_LVL_50, 31, FALSE, FRONTIER_MODE_DOUBLES);
-BFG_TEST("Generate Random Chi-Yu (Any) (D,LVL50,31IV)",SPECIES_CHI_YU, 50, FRONTIER_LVL_50, 31, FALSE, FRONTIER_MODE_DOUBLES);
-BFG_TEST("Generate Random Landorus-Therian (Any) (D,LVL50,31IV)",SPECIES_LANDORUS_THERIAN, 50, FRONTIER_LVL_50, 31, FALSE, FRONTIER_MODE_DOUBLES);
-
+BFG_RandomPokemonGenerator_Test("Generate Random Ogerpon (Any) (D,LVL50,31IV)",SPECIES_OGERPON, 50, FRONTIER_LVL_50, 31, TRUE, FRONTIER_MODE_DOUBLES,1);
+BFG_RandomPokemonGenerator_Test("Generate Random Ludicolo (Any) (D,LVL50,31IV)",SPECIES_LUDICOLO, 50, FRONTIER_LVL_50, 31, FALSE, FRONTIER_MODE_DOUBLES,1);
+BFG_RandomPokemonGenerator_Test("Generate Random Flutter Mane (Any) (D,LVL50,31IV)",SPECIES_FLUTTER_MANE, 50, FRONTIER_LVL_50, 31, FALSE, FRONTIER_MODE_DOUBLES,1);
+BFG_RandomPokemonGenerator_Test("Generate Random Iron Hands (Any) (D,LVL50,31IV)",SPECIES_IRON_HANDS, 50, FRONTIER_LVL_50, 31, FALSE, FRONTIER_MODE_DOUBLES,1);
+BFG_RandomPokemonGenerator_Test("Generate Random Chi-Yu (Any) (D,LVL50,31IV)",SPECIES_CHI_YU, 50, FRONTIER_LVL_50, 31, FALSE, FRONTIER_MODE_DOUBLES,1);
+BFG_RandomPokemonGenerator_Test("Generate Random Landorus-Therian (Any) (D,LVL50,31IV)",SPECIES_LANDORUS_THERIAN, 50, FRONTIER_LVL_50, 31, FALSE, FRONTIER_MODE_DOUBLES,1);
 #endif // BFG_TEST_SET_GENERATION == TRUE
-
 #endif // BFG_FLAG_FRONTIER_GENERATOR != 0

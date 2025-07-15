@@ -5,9 +5,10 @@
 #define BFG_FLAG_FRONTIER_GENERATOR FLAG_BATTLE_FRONTIER_GENERATOR // Flag to enable or disable random generator
 
 #define BFG_TEST_SET_GENERATION     TRUE    // Test set generation
-#define BFG_TEST_PRINT_RESULTS      TRUE    // Print test results
+#define BFG_TEST_MON_SELECTION      TRUE    // Test mon selection
+
 #define BFG_TEST_PRINT_MOVES        FALSE   // Test print move selection
-#define BFG_TEST_PRINT_WEAKNESS     TRUE    // Test print mon weaknesses
+#define BFG_TEST_PRINT_RESULTS      TRUE    // Print test results
 
 #define BFG_FLAG_FRONTIER_ALLOW_MEGA FLAG_BATTLE_FRONTIER_ALLOW_MEGA // Flag to enable or disable Mega Evolution
 #define BFG_FLAG_FRONTIER_ALLOW_GMAX FLAG_BATTLE_FRONTIER_ALLOW_GMAX // Flag to enable or disable Gigantamax
@@ -29,8 +30,52 @@
 // Run 'move_ratings.py' as part of build pipeline
 #define BFG_GENERATE_MOVE_RATINGS TRUE    // Generate battle_frontier_generator_move_ratings.h
 
-// Run 'trainer_mons.py' as part of build pipeline
-#define BFG_GENERATE_TRAINER_MONS TRUE    // Generate battle_frontier_generator_trainer_class_mons.h
+// *** Python Scripts ***
+#define BFG_PY_LOG_ERRORS   FALSE  // Enable logging for python scripts
+
+// Move Ratings
+#define BFG_GENERATE_MOVE_RATINGS   TRUE    // Generate data/battle_frontier/battle_frontier_generator_move_ratings.h
+
+// *** Trainer Mons ***
+#define BFG_GENERATE_TRAINER_MONS    TRUE // Generate battle_frontier_generator_trainer_class_mons.h
+
+#define BFG_TM_INCLUDE_MYTHICAL TRUE   // Allow mythical pokemon to be selected
+#define BFG_TM_CHECK_RECURSIVE  TRUE   // Check recursively for regional formes
+
+#define BFG_TM_OPTIONS_STANDARD_MIN     4   // Min. Number of mons required before fallback is used
+#define BFG_TM_OPTIONS_RESTRICTED_MIN   2   // Min. Number of restricteds required before fallback is used
+
+// Mono-Type Teams
+#define BFG_TM_MONOTYPE_MIN_IV  0       // Min. IVs before monotype teams are allowed
+#define BFG_TM_MONOTYPE_OPEN    TRUE    // Allow Monotype teams in open rules (Restricteds)
+#define BFG_TM_MONOTYPE_CHANCE  8       // Chance for monotype teams to be selected by any trainer
+
+// Special Teams (Limited)
+#define BFG_TM_SPECIAL_FORCE            FALSE   // Special mon set force-enabled (for testing)
+#define BFG_TM_SPECIAL_MIN_IV           31      // Min. IVs before special mon sets are allowed
+#define BFG_TM_SPECIAL_OPEN             FALSE   // Allow special teams in open rules (Restricteds)
+#define BFG_TM_SPECIAL_INCLUDE_PREVO    FALSE   // Include pre-evolutions in the selectable mon sets
+
+// General Rule: Selection Chance = 7 * (Number of Classes which can pull this set)
+
+#define BFG_TM_CHANCE_FUTURE_PARADOX    7       // Chance for Future Paradox team to be selected
+#define BFG_TM_CHANCE_PAST_PARADOX      7       // Chance for Past Paradox team to be selected
+#define BFG_TM_CHANCE_PSEUDO_LEGEND     28      // Chance for Pseudo-legend team to be selected
+#define BFG_TM_CHANCE_EEVEELUTION       14      // Chance for Eeveelution team to be selected
+#define BFG_TM_CHANCE_FOSSIL            7       // Chance for Fossil teams to be selected
+#define BFG_TM_CHANCE_ULTRA_BEAST       7       // Chance for Ultra Beast team to be selected
+#define BFG_TM_CHANCE_STARTER           28      // Chance for Starter team to be selected
+#define BFG_TM_CHANCE_ALOLA             28      // Chance for Alolan team to be selected
+#define BFG_TM_CHANCE_GALAR             14      // Chance for Galarian team to be selected
+#define BFG_TM_CHANCE_HISUI             7       // Chance for Hisuian team to be selected
+
+
+#define BFG_TM_DUMP_TRAINER_DATA   FALSE   // Set to true if you want ingame frontier trainer mon data
+
+
+// *** Trainers ***
+
+// Comment out if unused
 
 // #define BFG_RANDOM_RANGE_FIXED FALSE    // Fixed value for RANDOM_RANGE()
 // #define BFG_RANDOM_CHANCE_FIXED FALSE   // Fixed value for RANDOM_CHANCE()

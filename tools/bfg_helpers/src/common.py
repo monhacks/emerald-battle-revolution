@@ -1,19 +1,17 @@
 import unicodedata
 
 from datetime import datetime
+import re, unicodedata
 
-import src.data as data
-
-CONFIG_FILE = "./include/config/battle_frontier_generator.h"
+import src.config as config
 
 # Species filename, for retrieving species constants
 SPECIES_FILE = "./include/constants/species.h"
 
 # Moves to ignore, effectively a banlist for moves
 # used for both move_ratings.py and move_options.py
-MOVE_EXCLUSIONS = [
+MOVE_EXCLUSIONS = []
 
-]
 
 def get_set_spread(set):
 
@@ -133,15 +131,28 @@ def pory_format(string, delim="_"):
     # Return rejoined string
     return delim.join(split)
 
+def convert_str_to_capital_case(string):
+    list = []
+    tokens = string.split(" ")
+    for t in tokens:
+        a = t[:1]
+        b = t[1:]
+
+        list.append(f"{a.upper()}{b}")
+
+    return " ".join(list)
+
+
 def convert_const_to_camel_case(const):
     parts = const.split("_")
     return parts[0].lower() + "".join(word.capitalize() for word in parts[1:])
 
+
 def convert_const_to_move_id(const):
     return const.lower().replace("_", "").replace("move", "", 1)
 
-def convert_string_to_const(string):
 
+def convert_string_to_const(string):
     # Convert to upper case
     constant = string.upper()
 
@@ -163,6 +174,7 @@ def convert_string_to_const(string):
     # Return as-is
     return constant
 
+
 def convert_const_to_species_id(const):
     if const.startswith("SPECIES_"):
         const = const[len("SPECIES_") :]
@@ -171,7 +183,6 @@ def convert_const_to_species_id(const):
 
 
 def convert_species_name_to_const(species_name):
-
     # Convert to generic constant
     constant = convert_string_to_const(species_name)
 
@@ -182,19 +193,15 @@ def convert_species_name_to_const(species_name):
 
 
 def convert_species_name_to_species_id(species_name):
-
-    # Convert species name to lower case
-    constant = species_name.lower()
-
-    # Update formatting
-    return (
-        constant.replace(" ", "")
-        .replace("-", "")
-        .replace("'", "")
-        .replace(":", "")
-        .replace("_", "")
-        .replace(".", "")
+    # Convert non-ascii characters to their ascii equivalent
+    normalised = (
+        unicodedata.normalize("NFKD", species_name.lower())
+        .encode("ASCII", "ignore")
+        .decode()
     )
+
+    # Strip illegal characters from normalised string
+    return re.sub(r"[ \-':_.]", "", normalised)
 
 
 def parse_gender(gender_string):
@@ -296,3 +303,7 @@ def insert_data(data, path, value):
                     data.insert(index, template)
                 else:  # Insert key and continue
                     data.append(template)
+
+def log_error(message):
+    if config.check_config("BFG_PY_LOG_ERRORS") == True:
+        print(message)

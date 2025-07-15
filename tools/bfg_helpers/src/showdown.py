@@ -8,8 +8,8 @@ DATA_DIR = "./tools/bfg_helpers/data"
 # Custom Move / Species Data Directory
 CUSTOM_DIR = "./tools/bfg_helpers/custom"
 
+
 def pull_move_data(moves_file):
-    
     # Require requests module
     import requests
 
@@ -26,8 +26,8 @@ def pull_move_data(moves_file):
         # Write json data to file
         JSON.dump(moves, file)
 
+
 def pull_dex_data(dex_file):
-    
     # Require requests module
     import requests
 
@@ -44,8 +44,8 @@ def pull_dex_data(dex_file):
         # Write json data to file
         JSON.dump(dex, file)
 
-def get_custom_data():
 
+def get_custom_data():
     # Create the custom directory
     os.makedirs(CUSTOM_DIR, exist_ok=True)
 
@@ -57,12 +57,12 @@ def get_custom_data():
 
     # Source moves file is not present
     if not os.path.exists(moves_file):
-        JSON.dump(moves, moves_file) # Create placeholder file
+        JSON.dump(moves, moves_file)  # Create placeholder file
 
     with open(moves_file, "r") as file:
         # Read json data from file
         moves = JSON.load(file)
-    
+
     # Pokedex data
     dex = {}
 
@@ -71,7 +71,7 @@ def get_custom_data():
 
     # Source dex file is not present
     if not os.path.exists(dex_file):
-        JSON.dump(dex, dex_file) # Create placeholder file
+        JSON.dump(dex, dex_file)  # Create placeholder file
 
     with open(dex_file, "r") as file:
         # Read json data from file
@@ -80,8 +80,8 @@ def get_custom_data():
     # Return custom data
     return moves, dex
 
-def get_showdown_data(force=False):
 
+def get_showdown_data(force=False):
     # Create the data directory
     os.makedirs(DATA_DIR, exist_ok=True)
 
