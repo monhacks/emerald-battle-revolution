@@ -1,23 +1,22 @@
-Metagross @ Metagrossite
-Ability: Clear Body
-Tera type: Fire
-EVs: 28 HP / 220 Atk / 4 Def / 4 SpD / 252 Spe
-Jolly Nature
-- Protect
-- Iron Head
-- Ice Punch
-- Stomping Tantrum
-
-Zapdos @ Electrium Z
-Ability: Pressure
+Manectric @ Manectite
+Ability: Lightning Rod
 Tera Type: Grass
-IVs: 0 Atk
-EVs: 252 HP / 116 Def / 116 SpA / 4 SpD / 20 Spe
-Modest Nature
+EVs: 244 HP / 4 Def / 36 SpA / 4 SpD / 220 Spe
+Timid Nature
 - Protect
-- Tailwind
-- Heat Wave
-- Thunderbolt
+- Volt Switch
+- Overheat 
+- Snarl
+
+Landorus-Therian (M) @ Groundium Z
+Ability: Intimidate
+Tera Type: Water
+EVs: 156 HP / 116 Atk / 36 Def / 108 SpD / 92 Spe
+Adamant Nature
+- Protect
+- Swords Dance
+- Earthquake
+- Rock Slide
 
 Tapu Fini @ Leftovers
 Ability: Misty Surge

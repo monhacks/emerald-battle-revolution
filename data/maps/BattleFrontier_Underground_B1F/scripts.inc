@@ -468,994 +468,990 @@ BattleFrontier_Underground_B1F_Mart_PokemonShopItemClerk:
 # 277 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_LUSTROUS_GLOBE
 # 278 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
-	.2byte ITEM_SCROLL_OF_DARKNESS
-# 279 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
-	.2byte ITEM_SCROLL_OF_WATERS
-# 280 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_CORNERSTONE_MASK
-# 281 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 279 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_WELLSPRING_MASK
-# 282 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 280 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_HEARTHFLAME_MASK
 	.2byte ITEM_NONE
 
 	.align 2
-# 285 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 283 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 BattleFrontier_Underground_B1F_Mart_BerryShopIVTrainingClerk:
-# 286 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 284 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_DURIN_BERRY
-# 287 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 285 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_BELUE_BERRY
-# 288 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 286 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_RAZZ_BERRY
-# 289 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 287 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_BLUK_BERRY
-# 290 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 288 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_NANAB_BERRY
-# 291 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 289 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_WEPEAR_BERRY
-# 292 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 290 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_PINAP_BERRY
-# 293 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 291 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_CORNN_BERRY
-# 294 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 292 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_MAGOST_BERRY
-# 295 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 293 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_RABUTA_BERRY
-# 296 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 294 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_NOMEL_BERRY
-# 297 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 295 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_SPELON_BERRY
-# 298 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 296 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_PAMTRE_BERRY
-# 299 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 297 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_WATMEL_BERRY
 	.2byte ITEM_NONE
 
 	.align 2
-# 302 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 300 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 BattleFrontier_Underground_B1F_Mart_BerryShopEVTrainingClerk:
-# 303 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 301 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_HEALTH_MOCHI
-# 304 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 302 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_MUSCLE_MOCHI
-# 305 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 303 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_RESIST_MOCHI
-# 306 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 304 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_GENIUS_MOCHI
-# 307 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 305 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_CLEVER_MOCHI
-# 308 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 306 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_SWIFT_MOCHI
-# 309 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 307 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_FRESH_START_MOCHI
-# 310 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 308 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_POMEG_BERRY
-# 311 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 309 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_KELPSY_BERRY
-# 312 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 310 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_QUALOT_BERRY
-# 313 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 311 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_HONDEW_BERRY
-# 314 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 312 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_GREPA_BERRY
-# 315 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 313 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_TAMATO_BERRY
 	.2byte ITEM_NONE
 
 	.align 2
-# 318 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 316 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 BattleFrontier_Underground_B1F_Mart_TrainingShopVitaminClerk:
-# 319 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 317 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_HP_UP
-# 320 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 318 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_HEALTH_FEATHER
-# 321 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 319 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_PROTEIN
-# 322 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 320 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_MUSCLE_FEATHER
-# 323 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 321 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_IRON
-# 324 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 322 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_RESIST_FEATHER
-# 325 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 323 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_CALCIUM
-# 326 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 324 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_GENIUS_FEATHER
-# 327 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 325 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_ZINC
-# 328 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 326 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_CLEVER_FEATHER
-# 329 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 327 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_CARBOS
-# 330 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 328 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_SWIFT_FEATHER
-# 331 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 329 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_PP_UP
-# 332 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 330 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_PP_MAX
-# 333 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 331 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_BOTTLE_CAP
-# 334 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 332 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_ABILITY_CAPSULE
-# 335 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 333 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_ABILITY_PATCH
 	.2byte ITEM_NONE
 
 	.align 2
-# 338 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 336 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 BattleFrontier_Underground_B1F_Mart_TrainingShopMintClerk:
-# 339 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 337 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_LONELY_MINT
-# 340 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 338 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_ADAMANT_MINT
-# 341 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 339 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_NAUGHTY_MINT
-# 342 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 340 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_BRAVE_MINT
-# 343 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 341 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_BOLD_MINT
-# 344 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 342 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_IMPISH_MINT
-# 345 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 343 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_LAX_MINT
-# 346 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 344 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_RELAXED_MINT
-# 347 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 345 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_MODEST_MINT
-# 348 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 346 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_MILD_MINT
-# 349 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 347 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_RASH_MINT
-# 350 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 348 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_QUIET_MINT
-# 351 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 349 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_CALM_MINT
-# 352 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 350 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_GENTLE_MINT
-# 353 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 351 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_CAREFUL_MINT
-# 354 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 352 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_SASSY_MINT
-# 355 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 353 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_TIMID_MINT
-# 356 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 354 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_HASTY_MINT
-# 357 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 355 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_JOLLY_MINT
-# 358 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 356 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_NAIVE_MINT
-# 359 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 357 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_SERIOUS_MINT
 	.2byte ITEM_NONE
 
 	.align 2
-# 362 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 360 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 BattleFrontier_Underground_B1F_Mart_TrainingShopOtherClerk:
-# 363 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 361 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_RARE_CANDY
-# 364 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 362 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_EXP_CANDY_XS
-# 365 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 363 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_EXP_CANDY_S
-# 366 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 364 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_EXP_CANDY_M
-# 367 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 365 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_EXP_CANDY_L
-# 368 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 366 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_EXP_CANDY_XL
-# 369 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 367 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_DYNAMAX_CANDY
-# 370 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 368 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_MACHO_BRACE
-# 371 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 369 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_POWER_WEIGHT
-# 372 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 370 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_POWER_BRACER
-# 373 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 371 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_POWER_BELT
-# 374 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 372 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_POWER_LENS
-# 375 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 373 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_POWER_BAND
-# 376 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 374 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_POWER_ANKLET
-# 377 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 375 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_AMULET_COIN
-# 378 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 376 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_LUCKY_EGG
 	.2byte ITEM_NONE
 
 	.align 2
-# 381 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 379 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 BattleFrontier_Underground_B1F_Mart_TrainingShopTeraClerk:
-# 382 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 380 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_BUG_TERA_SHARD
-# 383 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 381 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_DARK_TERA_SHARD
-# 384 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 382 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_DRAGON_TERA_SHARD
-# 385 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 383 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_ELECTRIC_TERA_SHARD
-# 386 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 384 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_FAIRY_TERA_SHARD
-# 387 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 385 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_FIGHTING_TERA_SHARD
-# 388 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 386 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_FIRE_TERA_SHARD
-# 389 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 387 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_FLYING_TERA_SHARD
-# 390 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 388 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_GHOST_TERA_SHARD
-# 391 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 389 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_GRASS_TERA_SHARD
-# 392 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 390 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_GROUND_TERA_SHARD
-# 393 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 391 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_ICE_TERA_SHARD
-# 394 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 392 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_NORMAL_TERA_SHARD
-# 395 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 393 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_POISON_TERA_SHARD
-# 396 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 394 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_PSYCHIC_TERA_SHARD
-# 397 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 395 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_ROCK_TERA_SHARD
-# 398 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 396 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_STEEL_TERA_SHARD
-# 399 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 397 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_WATER_TERA_SHARD
 	.2byte ITEM_NONE
 
 	.align 2
-# 402 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 400 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 BattleFrontier_Underground_B1F_Mart_BattleShopMegaClerk:
-# 403 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 401 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_VENUSAURITE
-# 404 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 402 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_CHARIZARDITE_X
-# 405 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 403 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_CHARIZARDITE_Y
-# 406 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 404 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_BLASTOISINITE
-# 407 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 405 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_BEEDRILLITE
-# 408 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 406 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_PIDGEOTITE
-# 409 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 407 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_ALAKAZITE
-# 410 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 408 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_SLOWBRONITE
-# 411 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 409 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_GENGARITE
-# 412 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 410 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_KANGASKHANITE
-# 413 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 411 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_PINSIRITE
-# 414 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 412 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_GYARADOSITE
-# 415 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 413 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_AERODACTYLITE
-# 416 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 414 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_MEWTWONITE_X
-# 417 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 415 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_MEWTWONITE_Y
-# 418 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 416 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_AMPHAROSITE
-# 419 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 417 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_STEELIXITE
-# 420 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 418 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_SCIZORITE
-# 421 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 419 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_HERACRONITE
-# 422 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 420 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_HOUNDOOMINITE
-# 423 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 421 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_TYRANITARITE
-# 424 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 422 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_SCEPTILITE
-# 425 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 423 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_BLAZIKENITE
-# 426 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 424 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_SWAMPERTITE
-# 427 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 425 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_GARDEVOIRITE
-# 428 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 426 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_SABLENITE
-# 429 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 427 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_MAWILITE
-# 430 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 428 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_AGGRONITE
-# 431 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 429 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_MEDICHAMITE
-# 432 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 430 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_MANECTITE
-# 433 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 431 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_SHARPEDONITE
-# 434 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 432 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_CAMERUPTITE
-# 435 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 433 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_ALTARIANITE
-# 436 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 434 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_BANETTITE
-# 437 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 435 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_ABSOLITE
-# 438 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 436 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_GLALITITE
-# 439 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 437 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_SALAMENCITE
-# 440 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 438 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_METAGROSSITE
-# 441 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 439 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_LATIASITE
-# 442 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 440 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_LATIOSITE
-# 443 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 441 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_LOPUNNITE
-# 444 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 442 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_GARCHOMPITE
-# 445 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 443 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_LUCARIONITE
-# 446 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 444 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_ABOMASITE
-# 447 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 445 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_GALLADITE
-# 448 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 446 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_AUDINITE
-# 449 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 447 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_DIANCITE
-# 450 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 448 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_RED_ORB
-# 451 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 449 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_BLUE_ORB
 	.2byte ITEM_NONE
 
 	.align 2
-# 454 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 452 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 BattleFrontier_Underground_B1F_Mart_BattleShopZCrystalClerk:
-# 455 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 453 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_NORMALIUM_Z
-# 456 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 454 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_FIRIUM_Z
-# 457 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 455 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_WATERIUM_Z
-# 458 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 456 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_ELECTRIUM_Z
-# 459 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 457 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_GRASSIUM_Z
-# 460 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 458 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_ICIUM_Z
-# 461 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 459 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_FIGHTINIUM_Z
-# 462 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 460 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_POISONIUM_Z
-# 463 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 461 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_GROUNDIUM_Z
-# 464 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 462 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_FLYINIUM_Z
-# 465 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 463 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_PSYCHIUM_Z
-# 466 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 464 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_BUGINIUM_Z
-# 467 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 465 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_ROCKIUM_Z
-# 468 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 466 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_GHOSTIUM_Z
-# 469 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 467 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_DRAGONIUM_Z
-# 470 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 468 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_DARKINIUM_Z
-# 471 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 469 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_STEELIUM_Z
-# 472 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 470 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_FAIRIUM_Z
-# 473 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 471 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_PIKANIUM_Z
-# 474 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 472 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_EEVIUM_Z
-# 475 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 473 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_SNORLIUM_Z
-# 476 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 474 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_MEWNIUM_Z
-# 477 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 475 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_DECIDIUM_Z
-# 478 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 476 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_INCINIUM_Z
-# 479 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 477 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_PRIMARIUM_Z
-# 480 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 478 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_LYCANIUM_Z
-# 481 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 479 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_MIMIKIUM_Z
-# 482 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 480 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_KOMMONIUM_Z
-# 483 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 481 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_TAPUNIUM_Z
-# 484 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 482 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_SOLGANIUM_Z
-# 485 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 483 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_LUNALIUM_Z
-# 486 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 484 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_MARSHADIUM_Z
-# 487 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 485 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_ALORAICHIUM_Z
-# 488 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 486 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_PIKASHUNIUM_Z
-# 489 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 487 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_ULTRANECROZIUM_Z
 	.2byte ITEM_NONE
 
 	.align 2
-# 492 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 490 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 BattleFrontier_Underground_B1F_Mart_BattleShopCommonClerk:
-# 493 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 491 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_CHOICE_BAND
-# 494 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 492 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_CHOICE_SPECS
-# 495 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 493 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_CHOICE_SCARF
-# 496 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 494 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_FLAME_ORB
-# 497 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 495 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_TOXIC_ORB
-# 498 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 496 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_ELECTRIC_SEED
-# 499 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 497 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_PSYCHIC_SEED
-# 500 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 498 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_MISTY_SEED
-# 501 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 499 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_GRASSY_SEED
-# 502 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 500 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_MENTAL_HERB
-# 503 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 501 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_LEFTOVERS
-# 504 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 502 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_EXPERT_BELT
-# 505 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 503 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_LIGHT_CLAY
-# 506 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 504 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_LIFE_ORB
-# 507 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 505 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_POWER_HERB
-# 508 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 506 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_FOCUS_SASH
-# 509 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 507 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_LAGGING_TAIL
-# 510 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 508 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_IRON_BALL
-# 511 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 509 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_SHED_SHELL
-# 512 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 510 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_EVIOLITE
-# 513 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 511 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_ROCKY_HELMET
-# 514 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 512 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_AIR_BALLOON
-# 515 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 513 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_RED_CARD
-# 516 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 514 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_EJECT_BUTTON
-# 517 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 515 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_WEAKNESS_POLICY
-# 518 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 516 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_ASSAULT_VEST
-# 519 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 517 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_SAFETY_GOGGLES
-# 520 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 518 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_ADRENALINE_ORB
-# 521 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 519 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_TERRAIN_EXTENDER
-# 522 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 520 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_PROTECTIVE_PADS
-# 523 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 521 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_THROAT_SPRAY
-# 524 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 522 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_EJECT_PACK
-# 525 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 523 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_HEAVY_DUTY_BOOTS
-# 526 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 524 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_BLUNDER_POLICY
-# 527 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 525 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_ROOM_SERVICE
-# 528 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 526 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_UTILITY_UMBRELLA
-# 529 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 527 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_ABILITY_SHIELD
-# 530 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 528 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_CLEAR_AMULET
-# 531 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 529 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_PUNCHING_GLOVE
-# 532 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 530 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_COVERT_CLOAK
-# 533 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 531 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_LOADED_DICE
-# 534 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 532 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_BOOSTER_ENERGY
-# 535 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 533 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_MIRROR_HERB
 	.2byte ITEM_NONE
 
 	.align 2
-# 538 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 536 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 BattleFrontier_Underground_B1F_Mart_BattleShopUncommonClerk:
-# 539 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 537 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_DAMP_ROCK
-# 540 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 538 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_HEAT_ROCK
-# 541 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 539 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_SMOOTH_ROCK
-# 542 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 540 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_ICY_ROCK
-# 543 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 541 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_ABSORB_BULB
-# 544 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 542 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_CELL_BATTERY
-# 545 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 543 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_LUMINOUS_MOSS
-# 546 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 544 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_SNOWBALL
-# 547 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 545 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_BRIGHT_POWDER
-# 548 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 546 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_WHITE_HERB
-# 549 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 547 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_QUICK_CLAW
-# 550 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 548 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_SOOTHE_BELL
-# 551 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 549 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_AMULET_COIN
-# 552 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 550 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_CLEANSE_TAG
-# 553 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 551 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_SMOKE_BALL
-# 554 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 552 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_FOCUS_BAND
-# 555 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 553 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_LUCKY_EGG
-# 556 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 554 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_SCOPE_LENS
-# 557 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 555 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_SHELL_BELL
-# 558 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 556 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_WIDE_LENS
-# 559 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 557 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_MUSCLE_BAND
-# 560 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 558 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_WISE_GLASSES
-# 561 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 559 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_BLACK_SLUDGE
-# 562 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 560 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_GRIP_CLAW
-# 563 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 561 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_STICKY_BARB
-# 564 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 562 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_BIG_ROOT
-# 565 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 563 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_FLOAT_STONE
-# 566 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 564 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_RING_TARGET
-# 567 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 565 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_DESTINY_KNOT
-# 568 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 566 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_BINDING_BAND
-# 569 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 567 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_ZOOM_LENS
-# 570 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 568 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_METRONOME
-# 571 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 569 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_LIGHT_BALL
-# 572 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 570 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_LEEK
-# 573 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 571 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_THICK_CLUB
-# 574 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 572 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_LUCKY_PUNCH
-# 575 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 573 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_BERSERK_GENE
-# 576 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 574 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_METAL_POWDER
-# 577 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 575 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_QUICK_POWDER
-# 578 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 576 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_SEA_INCENSE
-# 579 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 577 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_LAX_INCENSE
-# 580 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 578 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_ODD_INCENSE
-# 581 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 579 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_ROCK_INCENSE
-# 582 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 580 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_FULL_INCENSE
-# 583 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 581 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_WAVE_INCENSE
-# 584 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 582 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_ROSE_INCENSE
-# 585 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 583 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_LUCK_INCENSE
-# 586 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 584 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_PURE_INCENSE
 	.2byte ITEM_NONE
 
 	.align 2
-# 589 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 587 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 BattleFrontier_Underground_B1F_Mart_BattleShopTypeItemClerk:
-# 590 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 588 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_SILK_SCARF
-# 591 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 589 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_CHARCOAL
-# 592 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 590 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_MYSTIC_WATER
-# 593 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 591 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_MAGNET
-# 594 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 592 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_MIRACLE_SEED
-# 595 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 593 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_NEVER_MELT_ICE
-# 596 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 594 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_BLACK_BELT
-# 597 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 595 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_POISON_BARB
-# 598 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 596 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_SOFT_SAND
-# 599 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 597 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_SHARP_BEAK
-# 600 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 598 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_TWISTED_SPOON
-# 601 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 599 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_SILVER_POWDER
-# 602 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 600 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_HARD_STONE
-# 603 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 601 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_SPELL_TAG
-# 604 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 602 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_DRAGON_FANG
-# 605 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 603 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_BLACK_GLASSES
-# 606 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 604 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_METAL_COAT
-# 607 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 605 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_FAIRY_FEATHER
 	.2byte ITEM_NONE
 
 	.align 2
-# 610 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 608 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 BattleFrontier_Underground_B1F_Mart_BattleShopGemstoneClerk:
-# 611 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 609 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_NORMAL_GEM
-# 612 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 610 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_FIRE_GEM
-# 613 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 611 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_WATER_GEM
-# 614 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 612 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_ELECTRIC_GEM
-# 615 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 613 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_GRASS_GEM
-# 616 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 614 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_ICE_GEM
-# 617 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 615 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_FIGHTING_GEM
-# 618 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 616 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_POISON_GEM
-# 619 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 617 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_GROUND_GEM
-# 620 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 618 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_FLYING_GEM
-# 621 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 619 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_PSYCHIC_GEM
-# 622 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 620 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_BUG_GEM
-# 623 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 621 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_ROCK_GEM
-# 624 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 622 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_GHOST_GEM
-# 625 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 623 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_DRAGON_GEM
-# 626 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 624 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_DARK_GEM
-# 627 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 625 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_STEEL_GEM
-# 628 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 626 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_FAIRY_GEM
 	.2byte ITEM_NONE
 
 	.align 2
-# 631 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 629 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 BattleFrontier_Underground_B1F_Mart_BattleShopBerryClerk:
-# 632 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 630 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_CHERI_BERRY
-# 633 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 631 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_CHESTO_BERRY
-# 634 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 632 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_PECHA_BERRY
-# 635 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 633 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_RAWST_BERRY
-# 636 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 634 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_ASPEAR_BERRY
-# 637 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 635 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_LEPPA_BERRY
-# 638 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 636 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_ORAN_BERRY
-# 639 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 637 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_PERSIM_BERRY
-# 640 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 638 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_LUM_BERRY
-# 641 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 639 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_SITRUS_BERRY
-# 642 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 640 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_FIGY_BERRY
-# 643 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 641 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_WIKI_BERRY
-# 644 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 642 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_MAGO_BERRY
-# 645 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 643 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_AGUAV_BERRY
-# 646 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 644 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_IAPAPA_BERRY
-# 647 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 645 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_LIECHI_BERRY
-# 648 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 646 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_GANLON_BERRY
-# 649 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 647 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_SALAC_BERRY
-# 650 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 648 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_PETAYA_BERRY
-# 651 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 649 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_APICOT_BERRY
-# 652 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 650 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_LANSAT_BERRY
-# 653 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 651 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_STARF_BERRY
-# 654 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 652 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_ENIGMA_BERRY
-# 655 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 653 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_MICLE_BERRY
-# 656 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 654 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_CUSTAP_BERRY
-# 657 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 655 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_JABOCA_BERRY
-# 658 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 656 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_ROWAP_BERRY
-# 659 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 657 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_KEE_BERRY
-# 660 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 658 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_MARANGA_BERRY
 	.2byte ITEM_NONE
 
 	.align 2
-# 663 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 661 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 BattleFrontier_Underground_B1F_Mart_BattleShopResistClerk:
-# 664 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 662 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_CHILAN_BERRY
-# 665 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 663 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_OCCA_BERRY
-# 666 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 664 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_PASSHO_BERRY
-# 667 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 665 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_WACAN_BERRY
-# 668 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 666 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_RINDO_BERRY
-# 669 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 667 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_YACHE_BERRY
-# 670 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 668 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_CHOPLE_BERRY
-# 671 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 669 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_KEBIA_BERRY
-# 672 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 670 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_SHUCA_BERRY
-# 673 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 671 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_COBA_BERRY
-# 674 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 672 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_PAYAPA_BERRY
-# 675 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 673 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_TANGA_BERRY
-# 676 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 674 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_CHARTI_BERRY
-# 677 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 675 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_KASIB_BERRY
-# 678 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 676 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_HABAN_BERRY
-# 679 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 677 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_COLBUR_BERRY
-# 680 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 678 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_BABIRI_BERRY
-# 681 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 679 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_ROSELI_BERRY
 	.2byte ITEM_NONE
 
 	.align 2
-# 684 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 682 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 BattleFrontier_Underground_B1F_Mart_TMHMClerk1:
-# 685 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 683 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_TM01
-# 686 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 684 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_TM02
-# 687 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 685 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_TM03
-# 688 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 686 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_TM04
-# 689 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 687 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_TM05
-# 690 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 688 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_TM06
-# 691 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 689 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_TM07
-# 692 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 690 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_TM08
-# 693 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 691 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_TM09
-# 694 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 692 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_TM10
-# 695 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 693 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_TM11
-# 696 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 694 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_TM12
-# 697 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 695 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_TM13
-# 698 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 696 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_TM14
-# 699 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 697 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_TM15
-# 700 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 698 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_TM16
-# 701 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 699 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_TM17
-# 702 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 700 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_TM18
-# 703 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 701 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_TM19
-# 704 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 702 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_TM20
-# 705 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 703 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_TM21
-# 706 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 704 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_TM22
-# 707 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 705 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_TM23
-# 708 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 706 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_TM24
-# 709 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 707 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_TM25
 	.2byte ITEM_NONE
 
 	.align 2
-# 711 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 709 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 BattleFrontier_Underground_B1F_Mart_TMHMClerk2:
-# 712 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 710 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_TM26
-# 713 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 711 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_TM27
-# 714 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 712 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_TM28
-# 715 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 713 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_TM29
-# 716 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 714 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_TM30
-# 717 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 715 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_TM31
-# 718 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 716 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_TM32
-# 719 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 717 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_TM33
-# 720 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 718 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_TM34
-# 721 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 719 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_TM35
-# 722 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 720 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_TM36
-# 723 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 721 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_TM37
-# 724 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 722 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_TM38
-# 725 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 723 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_TM39
-# 726 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 724 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_TM40
-# 727 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 725 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_TM41
-# 728 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 726 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_TM42
-# 729 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 727 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_TM43
-# 730 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 728 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_TM44
-# 731 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 729 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_TM45
-# 732 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 730 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_TM46
-# 733 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 731 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_TM47
-# 734 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 732 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_TM48
-# 735 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 733 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_TM49
-# 736 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 734 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_TM50
 	.2byte ITEM_NONE
 
 	.align 2
-# 739 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 737 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 BattleFrontier_Underground_B1F_Mart_GeneralClerk:
-# 740 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 738 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_POKE_BALL
-# 741 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 739 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_GREAT_BALL
-# 742 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 740 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_ULTRA_BALL
-# 743 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 741 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_HYPER_POTION
-# 744 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 742 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_MAX_POTION
-# 745 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 743 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_FULL_RESTORE
-# 746 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 744 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_FULL_HEAL
-# 747 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 745 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_REVIVE
-# 748 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 746 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_MAX_REPEL
-# 749 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 747 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_PROTEIN
-# 750 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 748 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_CALCIUM
-# 751 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 749 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_IRON
-# 752 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 750 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_ZINC
-# 753 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 751 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_CARBOS
-# 754 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 752 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_HP_UP
 	.2byte ITEM_NONE
 
 	.align 2
-# 757 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 755 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 BattleFrontier_Underground_B1F_Mart_PokeballClerk:
-# 758 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 756 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_MASTER_BALL
-# 759 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 757 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_PREMIER_BALL
-# 760 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 758 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_HEAL_BALL
-# 761 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 759 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_NET_BALL
-# 762 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 760 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_NEST_BALL
-# 763 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 761 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_DIVE_BALL
-# 764 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 762 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_DUSK_BALL
-# 765 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 763 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_TIMER_BALL
-# 766 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 764 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_QUICK_BALL
-# 767 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 765 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_REPEAT_BALL
-# 768 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 766 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_LUXURY_BALL
-# 769 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 767 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_LEVEL_BALL
-# 770 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 768 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_LURE_BALL
-# 771 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 769 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_MOON_BALL
-# 772 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 770 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_FRIEND_BALL
-# 773 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 771 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_LOVE_BALL
-# 774 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 772 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_FAST_BALL
-# 775 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 773 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_HEAVY_BALL
-# 776 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 774 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_DREAM_BALL
-# 777 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 775 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_SAFARI_BALL
-# 778 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 776 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_SPORT_BALL
-# 779 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 777 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_PARK_BALL
-# 780 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
+# 778 "data/maps/BattleFrontier_Underground_B1F/scripts.pory"
 	.2byte ITEM_BEAST_BALL
 	.2byte ITEM_NONE
 

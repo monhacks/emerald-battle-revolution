@@ -1,7 +1,7 @@
 Urshifu-Rapid-Strike @ Focus Sash
 Ability: Unseen Fist
-EVs: 252 Atk / 4 SpD / 252 Spe
 Tera Type: Water
+EVs: 252 Atk / 4 SpD / 252 Spe
 Adamant Nature
 - Protect
 - Surging Strikes
@@ -10,9 +10,9 @@ Adamant Nature
 
 Salamence @ Salamencite
 Ability: Intimidate
+Tera Type: Water
 IVs: 0 Atk
 EVs: 4 HP / 4 Def / 244 SpA / 4 SpD / 252 Spe
-Tera Type: Water
 Modest Nature
 - Protect
 - Tailwind
@@ -21,8 +21,7 @@ Modest Nature
 
 Incineroar @ Sitrus Berry
 Ability: Intimidate
-Tera Type: Ghost
-Note: Sitrus
+Tera Type: Grass
 EVs: 236 HP / 36 Atk / 4 Def / 204 SpD / 28 Spe
 Adamant Nature
 - Parting Shot
