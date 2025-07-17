@@ -573,6 +573,8 @@ static void GiveQuickStartItems(void)
     AddBagItemIfNotOwned(ITEM_N_SOLARIZER);
     AddBagItemIfNotOwned(ITEM_N_LUNARIZER);
     AddBagItemIfNotOwned(ITEM_REINS_OF_UNITY);
+    AddBagItemIfNotOwned(ITEM_SCROLL_OF_DARKNESS);
+	AddBagItemIfNotOwned(ITEM_SCROLL_OF_WATERS);
 
     // Story / Other Key Items
     AddBagItemIfNotOwned(ITEM_EXP_SHARE);
